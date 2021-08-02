@@ -16,7 +16,9 @@ export const HomePage: React.FC<Props> = () => {
         title={t('home:page.title')}
         description="See https://github.com/contredanse/life-art"
       />
-      <MainLayout>Hello</MainLayout>
+      <MainLayout>
+        <h1>Hello word</h1>
+      </MainLayout>
     </>
   );
 };
