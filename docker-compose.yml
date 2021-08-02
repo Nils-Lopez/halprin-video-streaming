@@ -43,7 +43,7 @@ services:
     depends_on:
       - main-db
 
-  main-db:
+  db-main:
     image: postgres:13-alpine
     ports:
       - target: 5432

@@ -7,14 +7,12 @@ done through atlassian/changesets.
 ```
 .
 ├── apps
-│   ├── blog-app        
-│   │   └── CHANGELOG.md
-│   ├── web-app  
+│   ├── life-art 
 │   │   └── CHANGELOG.md
 └── packages
-    ├── core-lib
+    ├── common
     │   └── CHANGELOG.md
-    └── ui-lib                   
+    └── db-main                   
         └── CHANGELOG.md
 ```
 

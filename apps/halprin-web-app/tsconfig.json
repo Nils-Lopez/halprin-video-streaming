@@ -1,0 +1,28 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@/test-utils": ["../config/jest/test-utils"],
+      "@/backend/*": ["./backend/*"],
+      "@/components/*": ["./components/*"],
+      "@contredanse/common/*": ["../../../packages/common/src/*"],
+      "@contredanse/common": ["../../../packages/common/src/index"],
+      "@contredanse/db-main/*": ["../../../packages/db-main/src/*"],
+      "@contredanse/db-main": ["../../../packages/db-main/src/index"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.json"
+  ]
+}

@@ -1,31 +1,31 @@
 <div align="center">
-  <h1 align="center"><a aria-label="NextJs Monorepo" href="https://github.com/belgattitude/nextjs-monorepo-example">NextJs Monorepo</a></h1>
+  <h1 align="center"><a aria-label="NextJs Monorepo" href="https://github.com/contredanse/life-art">NextJs Monorepo</a></h1>
   <p align="center"><strong>Monorepo concepts, tips and tricks oriented around NextJs</strong></p>
 </div>
 <p align="center">
-  <a aria-label="Build" href="https://github.com/belgattitude/nextjs-monorepo-example/actions?query=workflow%3ACI">
-    <img alt="build" src="https://img.shields.io/github/workflow/status/belgattitude/nextjs-monorepo-example/CI-web-app/main?label=CI&logo=github&style=flat-quare&labelColor=000000" />
+  <a aria-label="Build" href="https://github.com/contredanse/life-art/actions?query=workflow%3ACI">
+    <img alt="build" src="https://img.shields.io/github/workflow/status/contredanse/life-art/CI-web-app/main?label=CI&logo=github&style=flat-quare&labelColor=000000" />
   </a>
-  <a aria-label="Codefactor grade" href=https://www.codefactor.io/repository/github/belgattitude/nextjs-monorepo-example">
-    <img alt="Codefactor" src="https://img.shields.io/codefactor/grade/github/belgattitude/nextjs-monorepo-example?label=Codefactor&logo=codefactor&style=flat-quare&labelColor=000000" />
+  <a aria-label="Codefactor grade" href=https://www.codefactor.io/repository/github/contredanse/life-art">
+    <img alt="Codefactor" src="https://img.shields.io/codefactor/grade/github/contredanse/life-art?label=Codefactor&logo=codefactor&style=flat-quare&labelColor=000000" />
   </a>
-  <a aria-label="CodeClimate maintainability" href="https://codeclimate.com/github/belgattitude/nextjs-monorepo-example">
-    <img alt="Maintainability" src="https://img.shields.io/codeclimate/maintainability/belgattitude/nextjs-monorepo-example?label=Maintainability&logo=code-climate&style=flat-quare&labelColor=000000" />
+  <a aria-label="CodeClimate maintainability" href="https://codeclimate.com/github/contredanse/life-art">
+    <img alt="Maintainability" src="https://img.shields.io/codeclimate/maintainability/contredanse/life-art?label=Maintainability&logo=code-climate&style=flat-quare&labelColor=000000" />
   </a>
-  <a aria-label="CodeClimate technical debt" href="https://codeclimate.com/github/belgattitude/nextjs-monorepo-example">
-    <img alt="Techdebt" src="https://img.shields.io/codeclimate/tech-debt/belgattitude/nextjs-monorepo-example?label=TechDebt&logo=code-climate&style=flat-quare&labelColor=000000" />
+  <a aria-label="CodeClimate technical debt" href="https://codeclimate.com/github/contredanse/life-art">
+    <img alt="Techdebt" src="https://img.shields.io/codeclimate/tech-debt/contredanse/life-art?label=TechDebt&logo=code-climate&style=flat-quare&labelColor=000000" />
   </a>
-  <a aria-label="Codacy grade" href="https://www.codacy.com/gh/belgattitude/nextjs-monorepo-example/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=belgattitude/nextjs-monorepo-example&amp;utm_campaign=Badge_Grade">
+  <a aria-label="Codacy grade" href="https://www.codacy.com/gh/contredanse/life-art/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=contredanse/life-art&amp;utm_campaign=Badge_Grade">
     <img alt="Codacy grade" src="https://img.shields.io/codacy/grade/dff9c944af284a0fad4e165eb1727467?logo=codacy&style=flat-square&labelColor=000&label=Codacy">
   </a>
   <a aria-label="LoC">  
-    <img alt="LoC" src="https://img.shields.io/tokei/lines/github/belgattitude/nextjs-monorepo-example?style=flat-quare&labelColor=000000" />
+    <img alt="LoC" src="https://img.shields.io/tokei/lines/github/contredanse/life-art?style=flat-quare&labelColor=000000" />
   </a>
-  <a aria-label="Top language" href="https://github.com/belgattitude/nextjs-monorepo-example/search?l=typescript">
-    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/belgattitude/nextjs-monorepo-example?style=flat-square&labelColor=000&color=blue">
+  <a aria-label="Top language" href="https://github.com/contredanse/life-art/search?l=typescript">
+    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/contredanse/life-art?style=flat-square&labelColor=000&color=blue">
   </a>
-  <a aria-label="Licence" href="https://github.com/belgattitude/nextjs-monorepo-example/blob/main/LICENSE">
-    <img alt="Licence" src="https://img.shields.io/github/license/belgattitude/nextjs-monorepo-example?style=flat-quare&labelColor=000000" />
+  <a aria-label="Licence" href="https://github.com/contredanse/life-art/blob/main/LICENSE">
+    <img alt="Licence" src="https://img.shields.io/github/license/contredanse/life-art?style=flat-quare&labelColor=000000" />
   </a>
 </p>
 
@@ -47,7 +47,7 @@ Useful to
 > in others tools. Code is shared through typescript aliases (no build necessary), topology and
 > dependency graph handled by the package manager, caches by NextJs. See also the FAQ about differences.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/belgattitude/nextjs-monorepo-example)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/contredanse/life-art)
 
 ## 1. Structure
 
@@ -56,15 +56,15 @@ tailwind, prisma 2... add or remove as much as you like.
 
 #### Two apps
 
-- [apps/web-app](./apps/web-app): SSR and API. [README](./apps/web-app/README.md) | [DEMO/Vercel](https://nextjs-monorepo-example-web-app.vercel.app) | [CHANGELOG](./apps/web-app/CHANGELOG.md)
+- [apps/web-app](apps/halprin-web-app): SSR and API. [README](apps/halprin-web-app/README.md) | [DEMO/Vercel](https://nextjs-monorepo-example-web-app.vercel.app) | [CHANGELOG](apps/halprin-web-app/CHANGELOG.md)
 - [apps/blog-app](./apps/blog-app): SSG. [README](./apps/blog-app/README.md) | [DEMO/Vercel](https://nextjs-monorepo-example-blog-app.vercel.app) | [CHANGELOG](./apps/blog-app/CHANGELOG.md)
 
 > Apps should not depend on apps, they can depend on packages
 
 #### Some shared code
 
-- [packages/core-lib](./packages/core-lib): used by web-app and blog-app, publishable. [README](./packages/core-lib/README.md) | [CHANGELOG](./packages/core-lib/CHANGELOG.md)
-- [packages/db-main-prisma](./packages/db-main-prisma): used by web-app. [README](./packages/db-main-prisma/README.md) | [CHANGELOG](./packages/db-main-prisma/CHANGELOG.md)
+- [packages/core-lib](packages/common): used by web-app and blog-app, publishable. [README](packages/common/README.md) | [CHANGELOG](packages/common/CHANGELOG.md)
+- [packages/db-main-prisma](packages/db-main): used by web-app. [README](packages/db-main/README.md) | [CHANGELOG](packages/db-main/CHANGELOG.md)
 - [packages/ui-lib](./packages/ui-lib): used by web-app and blog-app, publishable. [README](./packages/ui-lib/README.md) | [CHANGELOG](./packages/ui-lib/CHANGELOG.md)
 
 > Apps can depend on packages, packages can depend on each others...
@@ -159,11 +159,11 @@ yarn dev
    you might need (tsconfig.json...). Place sources in the `magnificent-poney/src` folder.
 
 4. To use it in an app first declare the dependency in its package.json deps by adding
-   `"@your-org/magnificent-poney": "workspace:*"`. Inspiration in [web-app/package.json](./apps/web-app/package.json).
+   `"@your-org/magnificent-poney": "workspace:*"`. Inspiration in [web-app/package.json](apps/halprin-web-app/package.json).
 
 5. Run `yarn install` to update the workspace and create symlinks.
 
-6. Add tsconfig paths in the app `tsconfig.json`, take an example in [web-app/tsconfig.json](./apps/web-app/tsconfig.json)
+6. Add tsconfig paths in the app `tsconfig.json`, take an example in [web-app/tsconfig.json](apps/halprin-web-app/tsconfig.json)
 
    ```json5
    {
@@ -182,7 +182,7 @@ yarn dev
    > PS: The packages aliases should be declared per app (not in the tsconfig.base.json), so
    > to keep being explicit with the dependencies.
 
-7. Be sure your next.config.js app overrides webpack like in [nextjs.config.js](./apps/web-app/next.config.js):
+7. Be sure your next.config.js app overrides webpack like in [nextjs.config.js](apps/halprin-web-app/next.config.js):
 
    ```js
    webpack: (config, { defaultLoaders }) => {
@@ -295,7 +295,7 @@ They are based on the excellent [npm-check-updates](https://github.com/raineorsh
 ### 5.1 Linters
 
 An example of base eslint configuration can be found in [./.eslint.base.json](./.eslintrc.base.json), apps
-and packages extends it in their own root folder, as an example see [./apps/web-app/.eslintrc.json](./apps/web-app/.eslintrc.json).
+and packages extends it in their own root folder, as an example see [./apps/web-app/.eslintrc.json](apps/halprin-web-app/.eslintrc.json).
 Prettier is included in eslint configuration as well as [eslint-config-next](https://nextjs.org/docs/basic-features/eslint) for nextjs apps.
 
 ### 5.2 Hooks / Lint-staged
@@ -307,7 +307,7 @@ that lint and prettier are applied automatically on commit and/or pushes.
 
 Tests relies on ts-jest with support for typescript path aliases. React-testing-library is enabled
 whenever react is involved. Configuration lives in the root folder of each apps/packages. As an
-example see [./apps/web-app/jest.config.js](./apps/web-app/jest.config.js).
+example see [./apps/web-app/jest.config.js](apps/halprin-web-app/jest.config.js).
 
 ### 5.4 CI
 
@@ -397,4 +397,4 @@ See here a quick comparison:
 
 ## License
 
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fbelgattitude%2Fnextjs-monorepo-example.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fbelgattitude%2Fnextjs-monorepo-example?ref=badge_large)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcontredanse%2Flife-art.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fbelgattitude%2Fnextjs-monorepo-example?ref=badge_large)
