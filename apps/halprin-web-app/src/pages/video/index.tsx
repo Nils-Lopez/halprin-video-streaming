@@ -1,7 +1,7 @@
 import { GetServerSideProps } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { BadRequest } from '@tsed/exceptions';
-import { MainVideoPage } from '@/features/video/main-video.page';
+import { MainVideoPage } from '@/features/video/main-video-page';
 import { videoConfig } from '@/features/video/video.config';
 
 export default function HomeRoute() {
