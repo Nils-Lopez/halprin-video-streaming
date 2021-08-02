@@ -1,6 +1,6 @@
-import { NextSeo } from 'next-seo';
 import { MainLayout } from '@/components/layout/main-layout';
 import { useTranslation } from 'next-i18next';
+import { Video } from './components/video';
 import { homeConfig } from './home.config';
 
 type Props = {
@@ -12,12 +12,9 @@ export const HomePage: React.FC<Props> = () => {
 
   return (
     <>
-      <NextSeo
-        title={t('home:page.title')}
-        description="See https://github.com/contredanse/life-art"
-      />
       <MainLayout>
-        <h1>Hello word</h1>
+        <h1>Hello word {t('home:page.test')}</h1>
+        <Video />
       </MainLayout>
     </>
   );

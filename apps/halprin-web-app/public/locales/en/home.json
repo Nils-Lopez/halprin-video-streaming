@@ -1,6 +1,7 @@
 {
   "page": {
-    "title": "Home | Web-app | nextjs-monorepo-example"
+    "title": "Home | Web-app | nextjs-monorepo-example",
+    "test": "hello world !"
   },
   "btn": {
     "getStarted": "Get started",
