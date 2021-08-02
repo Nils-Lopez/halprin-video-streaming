@@ -4,7 +4,7 @@ import { BadRequest } from '@tsed/exceptions';
 import { MainVideoPage } from '@/features/video/main-video-page';
 import { videoConfig } from '@/features/video/video.config';
 
-export default function HomeRoute() {
+export default function VideoRoute() {
   return <MainVideoPage />;
 }
 
