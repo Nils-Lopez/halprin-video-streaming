@@ -36,6 +36,6 @@ module.exports = [
   {
     name: 'CSS',
     path: ['.next/static/css/**/*.css'],
-    limit: '10 kB',
+    limit: '50 kB',
   },
 ];
