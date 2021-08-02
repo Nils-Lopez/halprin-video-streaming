@@ -13,7 +13,7 @@ export const HomePage: React.FC<Props> = () => {
   return (
     <>
       <MainLayout>
-        <h1>Hello word {t('home:page.test')}</h1>
+        <h1>Hello word {t('app:page.test')}</h1>
         <Video />
       </MainLayout>
     </>

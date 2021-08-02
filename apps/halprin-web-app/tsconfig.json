@@ -11,6 +11,7 @@
       "@/test-utils": ["../config/jest/test-utils"],
       "@/backend/*": ["./backend/*"],
       "@/components/*": ["./components/*"],
+      "@/features/*": ["./features/*"],
       "@contredanse/common/*": ["../../../packages/common/src/*"],
       "@contredanse/common": ["../../../packages/common/src/index"],
       "@contredanse/db-main/*": ["../../../packages/db-main/src/*"],
