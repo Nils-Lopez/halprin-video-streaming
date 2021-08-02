@@ -12,12 +12,11 @@ try {
 const pages = manifest.pages;
 
 const limitCfg = {
-  defaultSize: '100kb',
+  defaultSize: '140kb',
   pages: {
     '/_app': '120kb',
     '/_error': '100kb',
-    '/': '95kb',
-    '/demo': '95kb',
+    '/': '150kb',
   },
 };
 const getPageLimits = () => {
