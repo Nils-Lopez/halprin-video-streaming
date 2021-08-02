@@ -1,10 +1,15 @@
 import { FC } from 'react';
 import * as S from './video-player.style';
+import ReactPlayer from 'react-player';
 
 type Props = {
-  src: string;
+  url: string;
 };
 export const VideoPlayer: FC<Props> = (props) => {
-  const { src } = props;
-  return <S.Ctn>Here's my video {src}</S.Ctn>;
+  const { url } = props;
+  return (
+    <S.Ctn>
+      <ReactPlayer url={url} />
+    </S.Ctn>
+  );
 };

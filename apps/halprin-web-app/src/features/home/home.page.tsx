@@ -1,6 +1,5 @@
 import { MainLayout } from '@/components/layout/main-layout';
 import { useTranslation } from 'next-i18next';
-import { Video } from './components/video';
 import { homeConfig } from './home.config';
 
 type Props = {
@@ -14,7 +13,6 @@ export const HomePage: React.FC<Props> = () => {
     <>
       <MainLayout>
         <h1>Hello word {t('app:page.test')}</h1>
-        <Video />
       </MainLayout>
     </>
   );
