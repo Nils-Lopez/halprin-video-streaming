@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 
 export const Ctn = styled.div`
-  height: 100%;
+  @media only screen and (max-width: 400px) {
+  }
 `;
