@@ -6,5 +6,11 @@
   "btn": {
     "getStarted": "Démarrer",
     "liveDemo": "Démo"
+  },
+  "loginForm": {
+    "forgottenPasswordQuestion": "Mot de passe oublié ?",
+    "getYourAccess": "Obtenez votre accès",
+    "orConnect": "Ou connectez-vous",
+    "connectBtn": "Se connecter"
   }
 }

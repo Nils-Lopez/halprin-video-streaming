@@ -2,17 +2,13 @@
 
 <p align="left">
   <a aria-label="Build" href="https://github.com/contredanse/life-art/actions?query=workflow%3ACI">
-    <img alt="build" src="https://img.shields.io/github/workflow/status/belgattitude/nextjs-monorepo-example/CI-web-app/main?label=CI&logo=github&style=flat-quare&labelColor=000000" />
+    <img alt="build" src="https://img.shields.io/github/workflow/status/contredanse/life-art/CI-web-app/main?label=CI&logo=github&style=flat-quare&labelColor=000000" />
   </a>
 </p>
 
 ## Intro
 
-Basic demo nextjs web-app, part of the [nextjs-monorepo-example](https://github.com/contredanse/life-art).
-
-- Homepage: [Demo/Vercel english](https://nextjs-monorepo-example-web-app.vercel.app/en/home) | [Demo/vercel french](https://nextjs-monorepo-example-web-app.vercel.app/fr/home)
-- API: [Demo rest/Vercel](https://nextjs-monorepo-example-web-app.vercel.app/api/rest/post/1)
-- [Changelog](https://github.com/contredanse/life-art/blob/main/apps/web-app/CHANGELOG.md)
+Halprin web app
 
 ## Quick start
 
@@ -48,7 +44,6 @@ This app relies on packages in the monorepo, see detailed instructions in [READM
   dependencies: {
     "@contredanse/common": "workspace:*",
     "@contredanse/db-main": "workspace:*",
-    "@your-org/ui-lib": "workspace:*",
   },
 }
 ```
@@ -60,8 +55,6 @@ And their counterparts in [tsconfig.json](./tsconfig.json)
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "@your-org/ui-lib/*": ["../../../packages/ui-lib/src/*"],
-      "@your-org/ui-lib": ["../../../packages/ui-lib/src/index"],
       "@contredanse/common/*": ["../../../packages/core-lib/src/*"],
       "@contredanse/common": ["../../../packages/core-lib/src/index"],
       "@contredanse/db-main/*": ["../../../packages/db-main-prisma/src/*"],
@@ -105,7 +98,7 @@ The keys autocompletion and typechecks are enabled in [./src/typings/react-i18ne
 ```
 .
 ├── apps
-│   └── web-app
+│   └── halprin-web-app
 │       ├── public/
 │       │   └── locales/
 │       ├── src/
@@ -120,10 +113,9 @@ The keys autocompletion and typechecks are enabled in [./src/typings/react-i18ne
 │       ├── next-i18next.config.js
 │       ├── tsconfig.json    (local paths enabled)
 │       └── tailwind.config.js
-└── packages  (monorepo's packages that this app is using)
-    ├── core-lib
-    ├── main-db-prisma
-    └── ui-lib
+└── packages
+    ├── common
+    └── db-main
 ```
 
 ### Develop
