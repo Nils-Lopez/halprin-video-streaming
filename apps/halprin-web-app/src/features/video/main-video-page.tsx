@@ -4,6 +4,9 @@ import { videoConfig } from './video.config';
 import * as S from './main-video-page.style';
 import { VideoPlayer } from '@/features/video/components/video-player';
 import { pageData } from '../../data/page.data';
+import React from 'react';
+import { VideoNavbar } from './components/video-navbar';
+import { VideoFooter } from './components/video-footer';
 
 type Props = {
   children?: never;
@@ -27,8 +30,9 @@ export const MainVideoPage: React.FC<Props> = (props) => {
     <>
       <MainLayout>
         <S.Ctn>
-          <h1>Hello word {t('app:page.title')}</h1>
+          <VideoNavbar categories={['corps', 'esprit', 'mouvement']} />
           <VideoPlayer url={getVideoUrlFromPageId(pageId)} />
+          <VideoFooter />
         </S.Ctn>
       </MainLayout>
     </>

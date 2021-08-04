@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import * as S from './video-player.style';
+import * as S from './menu.style';
 import ReactPlayer from 'react-player';
 
 type Props = {

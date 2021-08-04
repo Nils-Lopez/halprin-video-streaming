@@ -1,5 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Ctn = styled.div`
-  height: 100%;
+  a {
+    margin-right: 10px;
+  }
 `;
