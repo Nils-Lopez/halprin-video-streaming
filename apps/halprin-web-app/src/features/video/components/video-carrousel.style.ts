@@ -10,3 +10,15 @@ export const Ctn = styled.div`
   justify-content: center;
   margin-top: 20px;
 `;
+
+export const Slide = styled.div`
+  width: 300px;
+  img {
+    object-fit: cover;
+  }
+  h5 {
+    color: white;
+    font-size: 2em;
+    position: absolute;
+  }
+`;
