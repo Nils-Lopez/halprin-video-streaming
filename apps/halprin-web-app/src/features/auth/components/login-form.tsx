@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useTranslation } from 'next-i18next';
+import Image from 'next/image';
 import { loginConfig } from '@/features/auth/login.config';
 
 type FormValues = {
@@ -11,15 +12,15 @@ type FormValues = {
 export type LoginFormProps = {
   forgotUrl?: string;
   getAccessUrl?: string;
+  children?: never;
 };
 
 const defaultProps = {
-  /** @todo make this real or from config */
-  forgotUrl: 'https://contredanse.org',
-  getAccessUrl: 'https://contredanse.org',
+  forgotUrl: loginConfig.urls.emailForgotten,
+  getAccessUrl: loginConfig.urls.getAccess,
 };
 
-export const LoginForm: React.FC = (props: LoginFormProps) => {
+export const LoginForm: React.FC<LoginFormProps> = (props) => {
   const { forgotUrl, getAccessUrl } = { ...defaultProps, ...props };
   const {
     register,
@@ -32,6 +33,12 @@ export const LoginForm: React.FC = (props: LoginFormProps) => {
 
   return (
     <div className="w-full max-w-sm">
+      <Image
+        src={'/shared-assets/images/logo-contredanse-white.jpg'}
+        alt={'Contredanse'}
+        width={300}
+        height={300}
+      />
       <p>
         <a href={getAccessUrl} target="_blank" rel={'noopener noreferrer'}>
           {t('app:loginForm.getYourAccess')}
