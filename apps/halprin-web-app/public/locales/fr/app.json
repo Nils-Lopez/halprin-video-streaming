@@ -11,6 +11,7 @@
     "forgottenPasswordQuestion": "Mot de passe oublié ?",
     "getYourAccess": "Obtenez votre accès",
     "orConnect": "Ou connectez-vous",
-    "connectBtn": "Se connecter"
+    "connectBtn": "Se connecter",
+    "h2Message": "Afin de poursuivre la lecture et si vous ne l'avez pas encore fait"
   }
 }

@@ -33,6 +33,8 @@ export const LoginForm: React.FC<LoginFormProps> = (props) => {
 
   return (
     <div className="w-full max-w-sm">
+      <h1>{t('common:welcome')}</h1>
+      <h2>{t('app:loginForm.h2Message')}</h2>
       <Image
         src={'/shared-assets/images/logo-contredanse-white.jpg'}
         alt={'Contredanse'}
