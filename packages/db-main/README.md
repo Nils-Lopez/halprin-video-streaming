@@ -1,21 +1,11 @@
-# @your-org/db-main-prisma
-
-<p align="left">
-  <a aria-label="Build" href="https://github.com/contredanse/life-art/actions?query=workflow%3ACI">
-    <img alt="build" src="https://img.shields.io/github/workflow/status/belgattitude/nextjs-monorepo-example/CI-web-app/main?label=CI&logo=github&style=flat-quare&labelColor=000000" />
-  </a>
-</p>
-
-## Intro
-
-Basic demo of a shared package using [prisma](<(https://prisma.io)>) to handle database access, part of the [nextjs-monorepo-example](https://github.com/contredanse/life-art)
+# @contredanse/db-main
 
 ## Quick start
 
 Start the database with `docker-compose up database` then run
 
 ```bash
-cd packages/db-main-prisma
+cd packages/db-main
 yarn prisma:db:push
 yarn prisma:db:seed
 ```

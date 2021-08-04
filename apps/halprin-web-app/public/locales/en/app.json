@@ -6,5 +6,12 @@
   "btn": {
     "getStarted": "Get started",
     "liveDemo": "Live demo"
+  },
+  "loginForm": {
+    "forgottenPasswordQuestion": "Password forgotten ?",
+    "getYourAccess": "Get your access",
+    "orConnect": "Or connect",
+    "connectBtn": "Submit",
+    "h2Message": "In order to continue and if you don't have one"
   }
 }
