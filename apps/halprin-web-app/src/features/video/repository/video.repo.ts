@@ -40,12 +40,10 @@ export class VideoRepo {
     if (!sortByRelevance) {
       return filtered;
     }
-    const sorted = filtered.sort((a, b) => {
+    return filtered.sort((a, b) => {
       const relevanceA = relevanceMap.get(a.slug) ?? 0;
       const relevanceB = relevanceMap.get(b.slug) ?? 0;
       return relevanceB - relevanceA;
     });
-
-    return sorted;
   };
 }
