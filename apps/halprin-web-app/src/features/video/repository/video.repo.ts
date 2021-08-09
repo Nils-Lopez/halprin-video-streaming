@@ -1,12 +1,14 @@
 import { Media } from '@/data/data.types';
 import { mediaData } from '@/data/media.data';
 
+type SupportedLang = 'en' | 'fr';
+
 type Props = {
-  lang: 'en' | 'fr';
+  lang: SupportedLang;
   videoData?: Media[];
 };
 export class VideoRepo {
-  private lang: 'en' | 'fr';
+  private lang: SupportedLang;
   private data: Media[];
   constructor(props: Props) {
     this.lang = props.lang;
