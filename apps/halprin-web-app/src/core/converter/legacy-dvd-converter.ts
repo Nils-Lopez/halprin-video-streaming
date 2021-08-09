@@ -6,10 +6,28 @@ import { StringConvert } from '@contredanse/common/utils/string-convert';
 import { isNonEmptyString, isSafeInteger } from '@contredanse/common';
 import { stripHtml } from 'string-strip-html';
 import CodeBlockWriter from 'code-block-writer';
-import { Tag } from '@/data/data.types';
+import { Media, Tag } from '@/data/data.types';
 
 type DvdJson = Simplify<{
   dvd: {
+    medias: {
+      media: {
+        $: {
+          favorite: number;
+          path?: string | null;
+          thumb?: string | null;
+          type: number;
+        };
+        tag: {
+          $: {
+            id: number;
+            value: number;
+          };
+        }[];
+        fr: string[];
+        en: string[];
+      }[];
+    }[];
     credits: {
       credit: {
         $: { id: number; index: boolean; year: number };
@@ -30,9 +48,9 @@ type DvdJson = Simplify<{
 export class LegacyDvdConverter {
   xmltoDvdJson = async (xmlFile: string): Promise<DvdJson> => {
     const xmlString = fs.readFileSync(xmlFile);
-    const json = await parseStringPromise(xmlString, {});
-
-    //console.log(JSON.stringify(json, null, 4));
+    const json = await parseStringPromise(xmlString, {
+      trim: true,
+    });
     return json;
   };
 
@@ -65,16 +83,66 @@ export class LegacyDvdConverter {
         },
       });
     });
-    //console.log(JSON.stringify(tags, null, 4));
     return tags;
+  };
+
+  getMedia = (dvdJson: DvdJson, tags: Tag[]): Media[] => {
+    const media = dvdJson.dvd.medias[0].media;
+    console.log(JSON.stringify(media[0]['$']));
+    //return [];
+    const data: Media[] = [];
+    const slugs: string[] = [];
+    media.map((medium) => {
+      const slug = slugify(stripHtml(medium.en[0]).result.trim());
+      if (!isNonEmptyString(slug)) {
+        throw new Error('media label is empty');
+      }
+      if (slugs.includes(slug)) {
+        throw new Error('media slug already defined');
+      }
+      slugs.push(slug);
+
+      const normalizedTags: Media['tags'] = [];
+
+      medium.tag.forEach((tag) => {
+        const current = tags.filter(
+          (t) => t.id === StringConvert.toSafeInteger(tag.$.id)
+        )?.[0];
+        if (current) {
+          normalizedTags.push({
+            slug: current?.slug,
+            relevance: StringConvert.toSafeInteger(tag.$.value) ?? 0,
+          });
+        }
+      });
+
+      data.push({
+        slug: slug,
+        title: {
+          fr: stripHtml(medium.fr[0]).result,
+          en: stripHtml(medium.en[0]).result,
+        },
+        type: 0,
+        thumbnail: medium.$.thumb?.trim() ?? undefined,
+        video_url: medium.$.path?.trim(),
+        tags: normalizedTags,
+      });
+    });
+    return data;
   };
 
   convert = async (xmlFile: string, jsonFile: string): Promise<void> => {
     const json = await this.xmltoDvdJson(xmlFile);
     const tags = this.getTags(json);
+    const media = this.getMedia(json, tags);
+    console.log('media', JSON.stringify(media, null, 2));
   };
 
-  writeTypescriptFile = (data: unknown, type: 'Tag', fileName: string) => {
+  writeTypescriptFile = (
+    data: unknown,
+    type: 'Tag' | 'Media',
+    fileName: string
+  ) => {
     const writer = new CodeBlockWriter({
       newLine: '\n',
       indentNumberOfSpaces: 2, // default: 4
