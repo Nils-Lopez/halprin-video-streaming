@@ -152,7 +152,11 @@ export class LegacyDvdConverter {
     writer.writeLine(`import { ${type} } from './data.types';`);
     writer.writeLine('');
     writer.write(
-      `export const tagData: ${type}[] = ${JSON.stringify(data, null, 2)};`
+      `export const ${type.toLowerCase()}Data: ${type}[] = ${JSON.stringify(
+        data,
+        null,
+        2
+      )};`
     );
     fs.writeFileSync(fileName, writer.toString());
   };

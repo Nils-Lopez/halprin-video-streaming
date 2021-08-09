@@ -1,6 +1,6 @@
 import { Media } from './data.types';
 
-export const tagData: Media[] = [
+export const mediaData: Media[] = [
   {
     slug: 'to-the-roots-of-dance',
     title: {
