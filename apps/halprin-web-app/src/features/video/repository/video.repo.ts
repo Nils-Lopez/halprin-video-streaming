@@ -14,6 +14,9 @@ export class VideoRepo {
     this.lang = props.lang;
     this.data = props.videoData ?? mediaData;
   }
+  findBySlug = (slug: string): Media | null => {
+    return this.data.filter((media) => media.slug === slug)?.[0] ?? null;
+  };
   findByTags = (
     tagSlugs: string[] | string,
     sortByRelevance = true
