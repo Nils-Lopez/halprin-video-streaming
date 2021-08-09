@@ -1,0 +1,2903 @@
+<dvd debug="true">
+
+    <!--
+******************************************************************************
+******************************************************************************
+								S T R I N G S
+******************************************************************************
+******************************************************************************
+-->
+
+
+    <strings>
+        <string id="language">
+            <en><![CDATA[Anna Halprin - The life/art Workshop / EN]]></en>
+            <fr><![CDATA[Anna Halprin - L'atelier art/vie / FR]]></fr>
+        </string>
+        <string id="score1">
+            <en>
+                <part><![CDATA[Score 1]]></part>
+                <part><![CDATA[What is your intention by watching this DVD ?]]></part>
+            </en>
+            <fr>
+                <part><![CDATA[Score 1]]></part>
+                <part><![CDATA[What is your intention by watching this DVD ?]]></part>
+            </fr>
+        </string>
+
+        <!-- ================= -->
+        <!-- HOME MENU CONTENT -->
+        <!-- ================= -->
+
+        <string id="menu-lifeart">
+            <en><![CDATA[MY LIFE & ART THEMES
+Some of the important moments when my life has nourished my art and when my art has nourished my life.]]></en>
+            <fr><![CDATA[MA VIE & L'ART
+Voici les étapes importantes de ma vie qui ont influencé ma pratique artistique et comment l'art a nourri ma vie.]]></fr>
+        </string>
+
+        <string id="menu-index">
+            <en><![CDATA[INDEX
+A list of keywords relating to my life and work that will help you identify particular topics you would like to explore.]]></en>
+            <fr><![CDATA[INDEX
+Une liste complète de mots-clés, liés à mon travail et ma vie, vous permet d'identifier une thématique particulière ou de simplement naviguer au gré de votre curiosité.]]></fr>
+        </string>
+
+        <string id="menu-roadmaps">
+            <en><![CDATA[ROADMAPS
+For my artistic work and teaching, I have developed a series of tools that generate creativity. Here are the ideas behind these practices relating to the body, the community and our planet.]]></en>
+            <fr><![CDATA[FEUILLES DE ROUTE
+Pour ma pratique artistique et mon enseignement, j'ai développé une série de dispositifs qui éveille à la créativité. Voici la théorie de ces outils s'adressant au corps, à la communauté et à notre planète.]]></fr>
+        </string>
+
+        <string id="menu-workshop">
+            <en><![CDATA[A WORKSHOP: PARIS 2010
+In this workshop we discover different methods for exploring how art and life meet.]]></en>
+            <fr><![CDATA[UN ATELIER : PARIS 2010
+Dans cet atelier, nous découvrons différentes méthodes pour explorer comment art et vie se rencontrent.]]></fr>
+        </string>
+
+    </strings>
+
+
+    <!--
+******************************************************************************
+******************************************************************************
+								T Y P E S
+******************************************************************************
+******************************************************************************
+-->
+
+
+    <types>
+
+        <type id="1" color="709DD3" hoverColor="FFAAFF" show="true"> <!-- oeil -->
+            <en><![CDATA[My Life & Art Themes]]></en>
+            <fr><![CDATA[Ma vie & l'art]]></fr>
+        </type>
+        <type id="2" color="E6CE7A" hoverColor="AAFFFF" show="true"> <!-- main -->
+            <en><![CDATA[Roadmaps]]></en>
+            <fr><![CDATA[Feuilles de route]]></fr>
+        </type>
+        <type id="3" color="F9B6AE" hoverColor="FFFFAA" show="true"> <!-- community -->
+            <en><![CDATA[A Workshop: Paris 2010]]></en>
+            <fr><![CDATA[Un atelier : Paris 2010]]></fr>
+        </type>
+        <type id="m" mid="Media" color="E43E3A" hoverColor="AAFFFF" show="false"> <!-- bouche -->
+            <en><![CDATA[Archives]]></en>
+            <fr><![CDATA[Archives]]></fr>
+        </type>
+        <type id="index" mid="Index" color="FFFFFF" hoverColor="AAFFFF" show="true">
+            <en><![CDATA[Index]]></en>
+            <fr><![CDATA[Index]]></fr>
+        </type>
+        <type id="topics" mid="Topics" color="FFFFFF" hoverColor="AAFFFF" show="false">
+            <en><![CDATA[By way of introduction]]></en>
+            <fr><![CDATA[En introduction]]></fr>
+        </type>
+        <!--
+******
+		<type id="31" color="00FFFF" hoverColor="AAFFFF" show="false">
+			<en><![CDATA[Archive]]></en>
+			<fr><![CDATA[Archive]]></fr>
+		</type>
+******
+-->
+    </types>
+
+
+    <!--
+	******************************************************************************
+	******************************************************************************
+							C R E D I T S
+	******************************************************************************
+	******************************************************************************
+	-->
+    <credits>
+
+        <credit id="1" year="1971" index="true">
+            <fr>
+                <![CDATA[<b><i>Ann: A Portrait</i></b><br>Filmé et réalisé par Coni Beeson, son : Richard Friendman, produit par American Film Institute, 21 minutes, noir et blanc, 1971. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></fr>
+            <en>
+                <![CDATA[<b><i>Ann: A Portrait</i></b><br>Filmed and directed by Coni Beeson, sound by Richard Friendman, produced by American Film Institute, 21 minutes, black and white, 1971. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></en>
+        </credit>
+
+        <credit id="2" year="1970" index="true">
+            <fr>
+                <![CDATA[<b><i>A workshop. Ann Halprin</i></b><br>Réalisé par Eton E. Churchill, noir et blanc, 20 minutes, 1970. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></fr>
+            <en>
+                <![CDATA[<b><i>A workshop. Ann Halprin</i></b><br>Directed by Eton E. Churchill, black and white, 20 minutes, 1970. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></en>
+        </credit>
+        <credit id="3" year="1980" index="true">
+            <fr>
+                <![CDATA[<b><i>ADF lecture</i></b><br>Une conférence par Anna Halprin, couleur, date inconnue. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></fr>
+            <en>
+                <![CDATA[<b><i>ADF lecture</i></b><br>A lecture by Anna Halprin, color, unknown date. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></en>
+        </credit>
+        <credit id="4" year="2009" index="true">
+            <fr>
+                <![CDATA[<b><i>Breath Made Visible</i></b><br>Réalisé par Ruedi Gerber, produit par Zas Film, 82 minutes, couleur, 2009. <br><a href="http://www.breathmadevisible.com">www.breathmadevisible.com</a>]]></fr>
+            <en>
+                <![CDATA[<b><i>Breath Made Visible</i></b><br>Directed by Ruedi Gerber, produced by Zas Film, 82 minutes, color, 2009. <br><a href="http://www.breathmadevisible.com">www.breathmadevisible.com</a>]]></en>
+        </credit>
+        <credit id="5" year="2013">
+            <fr>
+                <![CDATA[<b><i>Explorations</i></b><br>Par Anna Halprin, enregistrée par Matt Krush, 2013. Doublage Florence Corin, enregistrée par Aurélien Lebourg, 2014.]]></fr>
+            <en><![CDATA[<b><i>Explorations</i></b><br>By Anna Halprin, recorded by Matt Krush, 2013.]]></en>
+        </credit>
+        <credit id="6" year="2013">
+            <fr><![CDATA[<b><i>Voix off</i></b><br>Par Anna Halprin, enregistrée par Matt Krush, 2013.]]></fr>
+            <en><![CDATA[<b><i>Voice Over</i></b><br>By Anna Halprin, recorded by Matt Krush, 2013.]]></en>
+        </credit>
+
+        <credit id="7" year="1976" index="true">
+            <fr>
+                <![CDATA[<b><i>How Sweet It Is</i></b> <br>Avec le San Francisco Dancers' Workshop. Réalisé par Lawrence Halprin, produit par RoundHouse, 12 minutes, couleur, 1976. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></fr>
+            <en>
+                <![CDATA[<b><i>How Sweet It Is</i></b> <br>With the San Francisco Dancers' Workshop. Directed by Lawrence Halprin, produced by RoundHouse, 12 minutes, color, 1976. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></en>
+        </credit>
+        <credit id="8" year="1991" index="true">
+            <fr>
+                <![CDATA[<b><i>Inner Landscapes</i></b><br>Réalisé par Joan Saffer, produit par KQED-TV, 60 minutes, couleur, 1991. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></fr>
+            <en>
+                <![CDATA[<b><i>Inner Landscapes</i></b><br>Directed by Joan Saffer, produced by KQED-TV, 60 minutes, color, 1991. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></en>
+        </credit>
+
+        <credit id="10" year="1986" index="true">
+            <fr>
+                <![CDATA[<b><i>Lawrence Halprin at the Museum of Modern Art</i></b><br>San Francisco, 80 minutes, color, 1986. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></fr>
+            <en>
+                <![CDATA[<b><i>Lawrence Halprin at the Museum of Modern Art</i></b><br>San Francisco, 80 minutes, color, 1986.<br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></en>
+        </credit>
+        <credit id="11" year="1984" index="true">
+            <fr>
+                <![CDATA[<b><i>Dance with Life. Anna, a Living Legend</i></b><br>Réalisé par Coni Beeson, produit par le National Endowment for the Arts et le Tamalpa Institute, couleur, 40 minutes, 1984.  <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></fr>
+            <en>
+                <![CDATA[<b><i>Dance with Life. Anna, a Living Legend</i></b><br>Edited by Coni Beeson, funded by the National Endowment for the Arts and Tamalpa Institute, color, 40 minutes, 1984.  <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></en>
+        </credit>
+
+        <credit id="12" year="2003" index="true">
+            <fr>
+                <![CDATA[<b><i>Returning Home</i></b><br>Réalisé par Andy Abrahams Wilson, produit par Open Eye Pictures, 45 minutes, couleur, 2003.<br><a href="http://openeyepictures.com">www.openeyepictures.com</a>]]></fr>
+            <en>
+                <![CDATA[<b><i>Returning Home</i></b><br>Directed by Andy Abrahams Wilson, produced by Open Eye Pictures, 45 minutes, color, 2003.<br><a href="http://openeyepictures.com">www.openeyepictures.com</a>]]></en>
+        </credit>
+
+        <credit id="15" year="1987" index="true">
+            <fr>
+                <![CDATA[<b><i>An Evening Lecture by Anna Halprin</i></b> <br>95 minutes, couleur, date inconnue. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></fr>
+            <en>
+                <![CDATA[<b><i>An Evening Lecture by Anna Halprin</i></b> <br>95 minutes, color, unknown date. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></en>
+        </credit>
+        <credit id="16" year="1977" index="true">
+            <fr>
+                <![CDATA[<b><i>Exorcism of Cancer</i></b><br>Réalisé par Coni Beeson, 23 minutes, noir et blanc, 1977.  <br><a href="http://www.annahalprin.org">www.annahalprin.org</a> ]]></fr>
+            <en>
+                <![CDATA[<b><i>Exorcism of Cancer</i></b><br>Directed by Coni Beeson, 23 minutes, black and white, 1977.  <br><a href="http://www.annahalprin.org">www.annahalprin.org</a> ]]></en>
+        </credit>
+        <credit id="17" year="1988" index="true">
+            <fr>
+                <![CDATA[<b><i>Living Myths and Rituals, Circle the Earth</i></b><br>Produit par Tamalpa Institute, 20 minutes, couleur, 1988. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></fr>
+            <en>
+                <![CDATA[<b><i>Living Myths and Rituals, Circle the Earth</i></b> <br>Produced by Tamalpa Institute, 20 minutes, color, 1988. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></en>
+        </credit>
+        <credit id="18" year="1988" index="true">
+            <fr>
+                <![CDATA[<b><i>Dance for your Life</i></b><br>Avec the Steps Theater Company. Réalisé par David A. Karp, produit par Audio/Video Access Productions, 15 minutes, couleur, 1988. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></fr>
+            <en>
+                <![CDATA[<b><i>Dance for your Life</i></b><br>With the Steps Theater Company. Directed by David A. Karp, produced by Audio/Video Access Productions, 15 minutes, color, 1988. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></en>
+        </credit>
+        <credit id="19" year="1989" index="true">
+            <fr>
+                <![CDATA[<b><i>Circle the Earth: Dancing with Life on the Line</i></b><br>Réalisé par Anna Halprin, produit par Media Arts West, 36 minutes, couleur, 1989. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></fr>
+            <en>
+                <![CDATA[<b><i>Circle the Earth: Dancing with Life on the Line</i></b> <br>Directed by Anna Halprin, produced by Media Arts West, 36 minutes, color, 1989. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></en>
+        </credit>
+        <credit id="20" year="2010" index="true">
+            <fr>
+                <![CDATA[<b><i>Atelier : Paris 2010</i></b> <br>Conduit par Anna Halprin. Assistantes : Noémie Lanier, Chloé Noble & Ivola Demange. Environnement sonore et musicale : Sergio Bacalhau. Filmé par Peter Hulton. Organisé par Contredanse, 2010.]]></fr>
+            <en>
+                <![CDATA[<b><i>Workshop: Paris 2010</i></b> <br>Directed by Anna Halprin. Assistants: Noémie Lanier, Chloé Noble & Ivola Demange. Sound and music environment: Sergio Bacalhau. Filmed by Peter Hulton. Organized by Contredanse, 2010.]]></en>
+        </credit>
+
+        <credit id="200" year="2010" index="true">
+            <fr>
+                <![CDATA[<b><i>Rencontre du soir</i></b> <br>Conduit par Anna Halprin, filmé par Peter Hulton, organisé par Contredanse, Paris, 2010.]]></fr>
+            <en>
+                <![CDATA[<b><i>Evening lecture</i></b> <br>Directed by Anna Halprin, filmed by Peter Hulton, organized by Contredanse, Paris, 2010.]]></en>
+        </credit>
+
+
+        <credit id="22" year="2011" index="true">
+            <fr>
+                <![CDATA[<b><i>Rencontres avec Anna Halprin</i></b><br>Filmé par Contredanse, novembre 2010 et juin 2011.]]></fr>
+            <en>
+                <![CDATA[<b><i>Encounterings with Anna Halprin </i></b> <br>Filmed by Contredanse, November 2010 and June 2011.]]></en>
+        </credit>
+        <credit id="23" year="2011" index="true">
+            <fr><![CDATA[<b><i>Anna Halprin, à Sea Ranch</i></b> <br>Filmé par Contredanse, juin 2011.]]></fr>
+            <en><![CDATA[<b><i>Anna Halprin, at Sea Ranch </i></b> <br>Filmed by Contredanse, June 2011.]]></en>
+        </credit>
+
+
+        <credit id="25" year="1991" index="true">
+            <fr>
+                <![CDATA[<b><i>Positive Motion</i></b> <br>Réalisé par Abrahams Wilson, produit par Open Eye Pictures, 37 minutes, couleur, 1991. <br><a href="http://openeyepictures.com">www.openeyepictures.com</a>]]></fr>
+            <en>
+                <![CDATA[<b><i>Positive Motion </i></b> <br>Directed by Abrahams Wilson, produced by Open Eye Pictures, 37 minutes, color, 1991. <br><a href="http://openeyepictures.com">www.openeyepictures.com</a>]]></en>
+        </credit>
+        <credit id="26" year="1970" index="true">
+            <fr>
+                <![CDATA[<b><i>Right On </i> </b> <br>(Ceremony of Us) with the San Francisco Dancers' Workshop. Un film de Seth Hill, sous la direction de Ann Halprin, produit par KQED-TV, 31 minutes, noir et blanc, 1970. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></fr>
+            <en>
+                <![CDATA[<b><i>Right On </i></b> <br>(Ceremony of Us) with the San Francisco Dancers' Workshop. A film by Seth Hill, directed by Ann Halprin, produced by KQED-TV, 31 minutes, black and white, 1970. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></en>
+        </credit>
+
+
+        <credit id="28" year="1966" index="true">
+            <fr>
+                <![CDATA[<b><i>Parades and Changes</i></b><br>Réalisé par Arne Arneborn, produit par National Swedish Television, 35 minutes, noir et blanc, 1966. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></fr>
+            <en>
+                <![CDATA[<b><i>Parades and Changes</i></b> <br>Directed by Arne Arneborn, produced by National Swedish Television, 35 minutes, black and white, 1966. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></en>
+
+        </credit>
+        <credit id="29" year="1988" index="true">
+            <fr>
+                <![CDATA[<b><i>Anna Halprin, Theater as Ritual</i></b> <br>Réalisé par David. A. Karp, produit par Audio/Video Access Productions, 80 minutes, couleur, 1988. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></fr>
+            <en>
+                <![CDATA[<b><i>Anna Halprin, Theater as Ritual</i></b> <br>Directed by David. A. Karp, produced by Audio/Video Access Productions, 80 minutes, color, 1988. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></en>
+
+        </credit>
+        <credit id="30" year="1999" index="true">
+            <fr>
+                <![CDATA[<b><i>Grandfather Dances </i></b><br>Réalisé par D. Rosenberg, 20 minutes, couleur, 1999. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></fr>
+            <en>
+                <![CDATA[<b><i>Grandfather Dances </i></b><br>Directed by D. Rosenberg, 20 minutes, color, 1999. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></en>
+
+        </credit>
+        <credit id="31" year="2003" index="true">
+            <fr>
+                <![CDATA[<b><i>Une Planetary Dance en 2003</i></b><br>Filmé par John Veltryt, produit par Earthalive Communications, couleur, 2003. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></fr>
+            <en>
+                <![CDATA[<b><i>A Planetary Dance in 2003</i></b><br>Filmed by John Veltryt, produced by Earthalive Communications, color, 2003. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></en>
+
+        </credit>
+        <credit id="32" year="2005">
+            <fr><![CDATA[<b><i>Planetary Dance</i></b><br>Photographies de Marguerite Lorimer, 2005.]]></fr>
+            <en><![CDATA[<b><i>Planetary Dance</i></b><br>Photographs by Marguerite Lorimer, 2005.]]></en>
+
+        </credit>
+
+        <credit id="33" year="">
+            <fr><![CDATA[<b><i>Children</i></b><br>Photographe inconnu, date inconnue.]]></fr>
+            <en><![CDATA[<b><i>Children</i></b><br>Unknown photographer, unknown date.]]></en>
+
+        </credit>
+
+        <credit id="38" year="">
+            <fr><![CDATA[<b><i>Margaret H'Doubler</i></b><br>Photographe inconnu, date inconnue.]]></fr>
+            <en><![CDATA[<b><i>Margaret H'Doubler</i></b><br>Unknow photograph, unknown date.]]></en>
+
+        </credit>
+        <credit id="39" year="">
+            <fr><![CDATA[<b><i>Tamalpa Workshop</i></b><br>Photographe inconnu, date inconnue.]]></fr>
+            <en><![CDATA[<b><i>Tamalpa Workshop</i></b><br>Unknow photograph, unknown date.]]></en>
+
+        </credit>
+
+        <credit id="41" year="1971">
+            <fr><![CDATA[<b><i>A class on the dance deck</i></b><br>Photographie de Peter Lawson, 1971.]]></fr>
+            <en><![CDATA[<b><i>A class on the dance deck</i></b><br>Photo by Peter Lawson, 1971.]]></en>
+
+        </credit>
+
+        <credit id="42" year="">
+            <fr><![CDATA[<b><i>Tamalpa Workshop</i></b><br>Photographe inconnu, date inconnue.]]></fr>
+            <en><![CDATA[<b><i>Tamalpa Workshop</i></b><br>Unknow photograph, unknown date.]]></en>
+
+        </credit>
+
+        <credit id="43" year="1969">
+            <fr><![CDATA[<b><i>Ceremony of Us</i></b><br>Photographie de Laurie Grunberg, 1969.]]></fr>
+            <en><![CDATA[<b><i>Ceremony of Us</i></b><br>Photo by Laurie Grunberg, 1969.]]></en>
+
+        </credit>
+        <credit id="44" year="">
+            <fr><![CDATA[<b><i>Anna Portrait</i></b><br>Photographe inconnu, date inconnue.]]></fr>
+            <en><![CDATA[<b><i>Anna Portrait</i></b><br>Unknow photograph, unknown date.]]></en>
+
+        </credit>
+        <credit id="45" year="1947">
+            <fr><![CDATA[<b><i>Ann Halprin</i></b><br>Photographe inconnu, 1947.]]]></fr>
+            <en><![CDATA[<b><i>Ann Halprin</i></b><br>Unknown photographer, 1947.]]></en>
+
+        </credit>
+        <credit id="46" year="">
+            <fr><![CDATA[<b><i>Dance Deck</i></b><br>Photographe inconnu, date inconnue.]]></fr>
+            <en><![CDATA[<b><i>Dance Deck</i></b><br>Unknown photographer, unknown date.]]></en>
+
+        </credit>
+
+        <credit id="47" year="1965">
+            <fr>
+                <![CDATA[<b><i>Appartment 6</i></b><br>Avec le San Francisco Dancers' Workshop. Photographie de Warner Jepson, 1965.]]></fr>
+            <en>
+                <![CDATA[<b><i>Appartment 6</i></b><br>With the San Francisco Dancers' Workshop. Photo by Warner Jepson, 1965.]]></en>
+
+        </credit>
+
+        <credit id="48" year="1967">
+            <fr>
+                <![CDATA[<b><i>10 Myths</i></b><br>Avec le San Francisco Dancers' Workshop. Photographe inconnu, 1967.]]></fr>
+            <en>
+                <![CDATA[<b><i>10 Myths</i></b><br>With the San Francisco Dancers' Workshop. Unknown photographer, 1967.]]></en>
+
+        </credit>
+
+        <credit id="49" year="1977">
+            <fr><![CDATA[<b><i>Citydance</i></b><br>Photographie de Charlene Koonce, 1977.]]></fr>
+            <en><![CDATA[<b><i>Citydance</i></b><br>Photo by Charlene Koonce, 1977.]]></en>
+
+        </credit>
+
+        <credit id="50" year="">
+            <fr><![CDATA[<b><i>Citydance</i></b><br>Photographie de Buck O'Kelly, date inconnue.]]></fr>
+            <en><![CDATA[<b><i>Citydance</i></b><br>Photo by Buck O'Kelly, unkown date.]]></en>
+
+        </credit>
+
+        <credit id="51" year="1989">
+            <fr>
+                <![CDATA[<b><i>Circle the Earth</i></b><br>Avec le San Francisco Dancer's Workshop. Photographie de Paul Fusco, 1989.]]></fr>
+            <en>
+                <![CDATA[<b><i>Circle the Earth</i></b><br>With the San Francisco Dancer's Workshop. Photo by Paul Fusco, 1989.]]></en>
+
+        </credit>
+        <credit id="52" year="1986">
+            <fr><![CDATA[<b><i>Circle the Earth</i></b><br>Photographie de Paul Fusco, 1986.]]></fr>
+            <en><![CDATA[<b><i>Circle the Earth</i></b><br>Photo by Paul Fusco, 1986.]]></en>
+
+        </credit>
+
+        <credit id="53" year="1989">
+            <fr>
+                <![CDATA[<b><i>Circle the Earth</i></b><br>Avec le San Francisco Dancer's Workshop. Photographie de Coni Beeson. 1989.]]></fr>
+            <en>
+                <![CDATA[<b><i>Circle the Earth</i></b><br>With the San Francisco Dancer's Workshop. Photo by Coni Beeson. 1989.]]></en>
+
+        </credit>
+
+        <credit id="56" year="1979">
+            <fr>
+                <![CDATA[<b><i>Movement Ritual 1</i></b><br>Illustration de Charlene Koonce, 1979.<br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></fr>
+            <en>
+                <![CDATA[<b><i>Movement Ritual 1</i></b><br>Illustration by Charlene Koonce, 1979.<br><a href="http://www.annahalprin.org">www.annahalprin.org</a>]]></en>
+
+        </credit>
+
+
+        <credit id="57" year="1989">
+            <fr>
+                <![CDATA[<b><i>Circle the Earth, Dancing with Life on the Line</i></b><br>Avec le San Francisco Dancer's Workshop. Photographe inconnu, 1989.]]></fr>
+            <en>
+                <![CDATA[<b><i>Circle the Earth, Dancing with Life on the Line</i></b><br>With the San Francisco Dancer's Workshop. Unkown photographer, 1989.]]></en>
+
+        </credit>
+        <credit id="58" year="1989">
+            <fr>
+                <![CDATA[<b><i>Circle the Earth, Dancing with Life on the Line</i></b><br>Avec le San Francisco Dancer's Workshop. Photographie de Jay Graham, 1989.]]></fr>
+            <en>
+                <![CDATA[<b><i>Circle the Earth, Dancing with Life on the Line</i></b><br>With the San Francisco Dancer's Workshop. Photo by Jay Graham, 1989.]]></en>
+
+        </credit>
+
+        <credit id="59" year="1989">
+            <fr>
+                <![CDATA[<b><i>Circle the Earth, Dancing with Life on the Line</i></b><br>Avec le San Francisco Dancer's Workshop. Photographie de Jay Graham, 1989.]]></fr>
+            <en>
+                <![CDATA[<b><i>Circle the Earth, Dancing with Life on the Line</i></b><br>With the San Francisco Dancer's Workshop. Photo by Jay Graham, 1989.]]></en>
+
+        </credit>
+
+        <credit id="60" year="1989">
+            <fr>
+                <![CDATA[<b><i>Circle the Earth, Dancing with Life on the Line</i></b><br>Avec le San Francisco Dancer's Workshop. Photographie de Jay Graham, 1989.]]></fr>
+            <en>
+                <![CDATA[<b><i>Circle the Earth, Dancing with Life on the Line</i></b><br>With the San Francisco Dancer's Workshop. Photo by Jay Graham, 1989.]]></en>
+
+        </credit>
+
+        <credit id="61" year="1989">
+            <fr>
+                <![CDATA[<b><i>Circle the Earth, Dancing with Life on the Line</i></b><br>Avec le San Francisco Dancer's Workshop. Photographe inconnu, 1989.]]></fr>
+            <en>
+                <![CDATA[<b><i>Circle the Earth, Dancing with Life on the Line</i></b><br>With the San Francisco Dancer's Workshop. Unkown photographer, 1989.]]></en>
+
+        </credit>
+
+        <credit id="62" year="1989">
+            <fr>
+                <![CDATA[<b><i>Circle the Earth, Dancing with Life on the Line</i></b><br>Avec le San Francisco Dancer's Workshop. Photographie de Jay Graham, 1989.]]></fr>
+            <en>
+                <![CDATA[<b><i>Circle the Earth, Dancing with Life on the Line</i></b><br>With the San Francisco Dancer's Workshop. Photo by Jay Graham, 1989.]]></en>
+
+        </credit>
+        <credit id="63" year="1989">
+            <fr>
+                <![CDATA[<b><i>Circle the Earth, Dancing with Life on the Line</i></b><br>Avec le San Francisco Dancer's Workshop. Photographie de Coni Beeson, 1989.]]></fr>
+            <en>
+                <![CDATA[<b><i>Circle the Earth, Dancing with Life on the Line</i></b><br>With the San Francisco Dancer's Workshop. Photo by Coni Beeson, 1989.]]></en>
+
+        </credit>
+
+        <credit id="64" year="1989">
+            <fr>
+                <![CDATA[<b><i>Circle the Earth, Dancing with Life on the Line</i></b><br>Avec le San Francisco Dancer's Workshop. Photographie de Paul Fusco, 1989.]]></fr>
+            <en>
+                <![CDATA[<b><i>Circle the Earth, Dancing with Life on the Line</i></b><br>With the San Francisco Dancer's Workshop. Photo by Paul Fusco, 1989.]]></en>
+
+        </credit>
+
+        <credit id="65" year="1989">
+            <fr>
+                <![CDATA[<b><i>Circle the Earth, Dancing with Life on the Line</i></b><br>Avec le San Francisco Dancer's Workshop. Photographie de Paul Fusco, 1989.]]></fr>
+            <en>
+                <![CDATA[<b><i>Circle the Earth, Dancing with Life on the Line</i></b><br>With the San Francisco Dancer's Workshop. Photo by Paul Fusco, 1989.]]></en>
+
+        </credit>
+
+        <credit id="66" year="1989">
+            <fr>
+                <![CDATA[<b><i>Circle the Earth, Dancing with Life on the Line</i></b><br>Avec le San Francisco Dancer's Workshop. Photographe inconnu, 1989.]]></fr>
+            <en>
+                <![CDATA[<b><i>Circle the Earth, Dancing with Life on the Line</i></b><br>With the San Francisco Dancer's Workshop. Unkown photographer, 1989.]]></en>
+        </credit>
+
+        <credit id="70" year="2011">
+            <fr><![CDATA[<b><i>L'océan pacifique</i></b><br>Photographie de Contredanse, 2011.]]></fr>
+            <en><![CDATA[<b><i>Pacific Ocean</i></b><br>Photo by Contredanse, 2011.]]></en>
+        </credit>
+        <credit id="71" year="">
+            <fr><![CDATA[<b><i>Le plateau de danse</i></b><br>Photographe inconnu, date inconnue.]]></fr>
+            <en><![CDATA[<b><i>The Dance Deck</i></b><br>Unkown photographer, unknown date.]]></en>
+        </credit>
+        <credit id="72" year="">
+            <fr><![CDATA[<b><i>BranchDance</i></b><br>Photographe inconnu, date inconnue.]]></fr>
+            <en><![CDATA[<b><i>BranchDance</i></b><br>Unkown photographer, unknown date.]]></en>
+        </credit>
+        <credit id="73" year="1965">
+            <fr><![CDATA[<b><i>San Francisco Dancers' Workshop</i></b><br>Photographie de Rudy Bender, 1965.]]></fr>
+            <en><![CDATA[<b><i>San Francisco Dancers' Workshop</i></b><br>Photo by Rudy Bender, 1965.]]></en>
+        </credit>
+        <credit id="74" year="">
+            <fr><![CDATA[<b><i>Citydance</i></b><br>Photographe inconnu, date inconnue.]]></fr>
+            <en><![CDATA[<b><i>Citydance</i></b><br>Unkown photographer, unknown date.]]></en>
+        </credit>
+        <credit id="75" year="1966">
+            <fr><![CDATA[<b><i>Atelier d'été</i></b><br>Photographie de Paul Ryan, 1966.]]></fr>
+            <en><![CDATA[<b><i>Summer Workshop</i></b><br>Photo by Paul Ryan, 1966.]]></en>
+        </credit>
+        <credit id="76" year="1970">
+            <fr><![CDATA[<b><i>Animal Ritual</i></b><br>Photographie de Alan Becker, 1970.]]></fr>
+            <en><![CDATA[<b><i>Animal Ritual</i></b><br>Photo by Alan Becker, 1970.]]></en>
+        </credit>
+        <credit id="77" year="1991">
+            <fr><![CDATA[<b><i>Atelier Moving Towards Life</i></b><br>Photographie de Christine Anderson, 1991.]]></fr>
+            <en><![CDATA[<b><i>Moving Towards Life Workshop</i></b><br>Photo by Christine Anderson, 1991.]]></en>
+        </credit>
+        <credit id="78" year="">
+            <fr><![CDATA[<b><i>Tamalpa Workshop</i></b><br>Photographe inconnu, date inconnue.]]></fr>
+            <en><![CDATA[<b><i>Tamalpa Workshop</i></b><br>Unknown photographer, unknown date.]]></en>
+        </credit>
+        <credit id="79" year="1969">
+            <fr><![CDATA[<b><i>Ceremony of Us</i></b><br>Photographie de Laurie Grunberg, 1969.]]></fr>
+            <en><![CDATA[<b><i>Ceremony of Us</i></b><br>Photo by Laurie Grunberg, 1969.]]></en>
+        </credit>
+        <credit id="80" year="1976">
+            <fr><![CDATA[<b><i>San Francisco Dancers' Workshop</i></b><br>Photographie de Rudy Bender, 1976.]]></fr>
+            <en><![CDATA[<b><i>San Francisco Dancers' Workshop</i></b><br>Photo by Rudy Bender, 1976.]]></en>
+        </credit>
+        <credit id="81" year="1965">
+            <fr><![CDATA[<b><i>Apartment 6</i></b><br>Photographe inconnu, 1965.]]></fr>
+            <en><![CDATA[<b><i>Apartment 6</i></b><br>Unknown photographer, 1965.]]></en>
+        </credit>
+        <credit id="82" year="1976">
+            <fr><![CDATA[<b><i>Male/Female Ritual</i></b><br>Photographie de Alan Becker, 1976.]]></fr>
+            <en><![CDATA[<b><i>Male/Female Ritual</i></b><br>Photo by Alan Becker, 1976.]]></en>
+        </credit>
+        <credit id="83" year="1965">
+            <fr><![CDATA[<b><i>Parades & Changes</i></b><br>Photographie de Ove Alstrom, 1965.]]></fr>
+            <en><![CDATA[<b><i>Parades & Changes</i></b><br>Photo by Ove Alstrom, 1965.]]></en>
+        </credit>
+        <credit id="84" year="1965">
+            <fr><![CDATA[<b><i>Parades & Changes</i></b><br>Photographie de Nanine Clay, 1965.]]></fr>
+            <en><![CDATA[<b><i>Parades & Changes</i></b><br>Photo by Nanine Clay, 1965.]]></en>
+        </credit>
+        <credit id="85" year="1967">
+            <fr><![CDATA[<b><i>Ten Myths</i></b><br>Photographie de Buck O'Kelly, 1967.]]></fr>
+            <en><![CDATA[<b><i>Ten Myths</i></b><br>Photo by Buck O'Kelly, 1967.]]></en>
+        </credit>
+        <credit id="86" year="1979">
+            <fr><![CDATA[<b><i>Citydance</i></b><br>Photographie de Buck O'Kelly, 1979.]]></fr>
+            <en><![CDATA[<b><i>Citydance</i></b><br>Photo by Buck O'Kelly, 1979.]]></en>
+        </credit>
+        <credit id="87" year="1976">
+            <fr><![CDATA[<b><i>Environmental Dance</i></b><br>Photographie de Rudy Bender, 1976.]]></fr>
+            <en><![CDATA[<b><i>Environmental Dance</i></b><br>Photo by Rudy Bender, 1976.]]></en>
+        </credit>
+        <credit id="88" year="2010">
+            <fr>
+                <![CDATA[<b><i>Atelier : Paris 2010</i></b> <br>Conduit par Anna Halprin. Assistantes : Noémie Lanier, Chloé Noble & Ivola Demange. Environnement sonore et musicale : Sergio Bacalhau. Filmé par Peter Hulton. Organisé par Contredanse, 2010.]]></fr>
+            <en>
+                <![CDATA[<b><i>Workshop: Paris 2010</i></b> <br>Directed by Anna Halprin. Assistants: Noémie Lanier, Chloé Noble & Ivola Demange. Sound and music environment: Sergio Bacalhau. Filmed by Peter Hulton. Organized by Contredanse, 2010.]]></en>
+        </credit>
+        <credit id="89" year="2005">
+            <fr><![CDATA[<b><i>Redwood</i></b><br>Photographe inconnu, 2005.]]></fr>
+            <en><![CDATA[<b><i>Redwood</i></b><br>Unknown photographer, 2005.]]></en>
+        </credit>
+        <credit id="90" year="2000">
+            <fr>
+                <![CDATA[<b><i>Still Dance</i></b><br>Photographies de Eeo Stubblefield.<br><a href="http://www.stilldance.net">www.stilldance.net</a>]]></fr>
+            <en>
+                <![CDATA[<b><i>Still Dance</i></b><br>Photos by Eeo Stubblefield.<br><a href="http://www.stilldance.net">www.stilldance.net</a>]]></en>
+        </credit>
+    </credits>
+
+
+    <!--
+	******************************************************************************
+	******************************************************************************
+							M E D I A S
+	******************************************************************************
+	******************************************************************************
+	-->
+    <medias>
+
+        <!-- *************************** my life and art themes ********************************* -->
+
+        <media favorite="0" path="videos/1240_RootsofDance.mp4" thumb="pics/1240_RootsofDance.jpg" type="1">
+            <fr><![CDATA[Aux racines de la danse]]></fr>
+            <en><![CDATA[To the Roots of Dance]]></en>
+            <tag id="7" value="98"/><!--*** ages***-->
+            <tag id="79" value="94"/><!--*** children***-->
+            <tag id="154" value="93"/> <!--*** elders***-->
+            <tag id="27" value="99"/><!--*** influence***-->
+            <tag id="84" value="95"/><!--*** family***-->
+            <tag id="160" value="85"/><!--*** roots***-->
+            <tag id="52" value="65"/><!--*** learning***-->
+            <tag id="114" value="60"/><!--*** teaching***-->
+            <tag id="2" value="50"/><!--*** life/art***-->
+            <tag id="184" value="47"/><!--*** Seniors Rocking***-->
+            <tag id="10" value="45"/><!--*** pulse***-->
+            <tag id="161" value="40"/><!--*** rythm***-->
+            <tag id="129" value="25"/><!--*** culture***-->
+
+            <cd id="23"/><!--*** Anna Sea RAnch***-->
+            <cd id="11"/><!--*** Living Legend***-->
+            <cd id="30"/><!--*** GrandFather DAnce***-->
+            <cd id="31"/><!--*** Planetary 2003***-->
+            <cd id="32"/><!--*** ***-->
+            <cd id="8"/><!--*** Inner Landsc***-->
+            <cd id="33"/><!--*** ***-->
+            <cd id="4"/><!--***Breath Made Visible ***-->
+
+        </media>
+
+        <media favorite="0" path="videos/1200_danceasascience.mp4" thumb="pics/1200_danceasascience.jpg" type="1">
+            <fr><![CDATA[La danse comme science]]></fr>
+            <en><![CDATA[Dance as a Science]]></en>
+            <tag id="28" value="95"/><!--*** anatomy***-->
+            <tag id="74" value="80"/><!--*** H doubler***-->
+            <tag id="27" value="85"/><!--*** influence***-->
+            <tag id="93" value="90"/><!--*** sciences***-->
+            <tag id="56" value="92"/><!--*** body as instrument***-->
+            <tag id="34" value="75"/><!--*** body&mind***-->
+            <tag id="114" value="65"/><!--*** teaching***-->
+            <tag id="65" value="45"/><!--*** meaningful***-->
+            <tag id="167" value="50"/><!--*** dissection***-->
+
+            <cd id="22"/><!--***Interv2 ***-->
+            <cd id="11"/><!--***A living Legend ***-->
+            <cd id="38"/><!--*** ***-->
+            <cd id="39"/><!--*** ***-->
+            <cd id="41"/><!--*** ***-->
+            <cd id="42"/><!--*** ***-->
+            <cd id="43"/><!--*** ***-->
+
+
+        </media>
+        <media favorite="0" path="videos/1210_InTheEnvironment.mp4" thumb="pics/1210_InTheEnvironment.jpg" type="1">
+            <fr><![CDATA[En extérieur]]></fr>
+            <en><![CDATA[In the Environment]]></en>
+            <tag id="155" value="100"/><!--*** environment***-->
+            <tag id="85" value="99"/><!--*** nature***-->
+            <tag id="5" value="75"/><!--*** space***-->
+            <tag id="97" value="85"/><!--*** moving to california***-->
+            <tag id="80" value="70"/><!--*** dance deck***-->
+            <tag id="171" value="60"/><!--*** reel***-->
+            <tag id="84" value="50"/><!--*** family***-->
+            <tag id="126" value="45"/><!--*** relating to a bigger totality***-->
+            <tag id="90" value="40"/><!--*** SF dancers workshop***-->
+            <tag id="125" value="30"/><!--*** social issues***-->
+            <tag id="68" value="20"/><!--*** exposizione***-->
+            <tag id="71" value="42"/><!--*** citydance***-->
+            <tag id="164" value="35"/><!--*** audiance***-->
+            <tag id="2" value="30"/><!--*** life art***-->
+            <tag id="171" value="48"/><!--*** real***-->
+
+            <cd id="44"/><!--*** ***-->
+            <cd id="45"/><!--*** ***-->
+            <cd id="8"/><!--*** Inner landsc***-->
+            <cd id="23"/><!--*** Anna sea Ranch***-->
+            <cd id="46"/><!--*** ***-->
+            <cd id="22"/><!--*** Interv1***-->
+            <cd id="12"/><!--*** Returning Home***-->
+            <cd id="7"/><!--*** How seet it is***-->
+            <cd id="49"/><!--*** ***-->
+
+        </media>
+        <media favorite="0" path="videos/1215_work-shop.mp4" thumb="pics/1215_work-shop.jpg" type="1">
+            <fr><![CDATA[L'atelier]]></fr>
+            <en><![CDATA[Work-shop]]></en>
+            <tag id="25" value="95"/><!--*** workshop***-->
+            <tag id="55" value="86"/><!--*** creativity***-->
+            <tag id="63" value="85"/><!--*** pluridisciplinarity***-->
+            <tag id="27" value="80"/><!--*** influence***-->
+            <tag id="53" value="75"/><!--*** bauhaus***-->
+            <tag id="24" value="70"/><!--*** global approach***-->
+            <tag id="26" value="65"/><!--*** laboratory***-->
+            <tag id="157" value="60"/><!--*** exploration***-->
+            <tag id="44" value="50"/><!--*** myth***-->
+            <tag id="31" value="45"/><!--*** ritual***-->
+            <tag id="125" value="40"/><!--*** social issue***-->
+            <tag id="114" value="35"/><!--*** teaching***-->
+            <tag id="97" value="30"/><!--*** moving to california***-->
+
+            <cd id="22"/><!--*** Interv1***-->
+            <cd id="11"/><!--*** Living Legend***-->
+
+        </media>
+        <media favorite="0" path="videos/1220_asphilosophy.mp4" thumb="pics/1220_asphilosophy.jpg" type="1">
+            <fr><![CDATA[La danse comme philosophie]]></fr>
+            <en><![CDATA[Dance as a Philosophy]]></en>
+            <tag id="55" value="90"/><!--*** generate creativity***-->
+            <tag id="95" value="85"/><!--*** mother of all arts***-->
+            <tag id="56" value="80"/><!--*** as instrument***-->
+            <tag id="51" value="75"/><!--*** creative process***-->
+            <tag id="52" value="70"/><!--*** learning***-->
+            <tag id="94" value="65"/><!--*** philosophy***-->
+            <tag id="2" value="60"/><!--*** life art***-->
+            <tag id="114" value="55"/><!--*** teaching***-->
+            <tag id="125" value="50"/><!--*** social issue***-->
+            <tag id="19" value="45"/><!--*** community***-->
+            <tag id="7" value="40"/><!--*** age***-->
+            <tag id="129" value="35"/><!--*** culture***-->
+
+            <cd id="22"/><!--*** Interv2***-->
+            <cd id="20"/><!--*** Atelier Paris ***-->
+
+        </media>
+        <media favorite="0" path="videos/1230_emotions.mp4" thumb="pics/1230_emotions.jpg" type="1">
+            <fr><![CDATA[Les émotions dans la danse]]></fr>
+            <en><![CDATA[Emotions in Dance]]></en>
+            <tag id="96" value="65"/><!--*** motions***-->
+            <tag id="86" value="90"/><!--*** fritz perls***-->
+            <tag id="27" value="85"/><!--*** influence***-->
+            <tag id="168" value="82"/><!--*** Intensive care***-->
+            <tag id="158" value="65"/><!--*** mvt & feeling process***-->
+            <tag id="99" value="60"/><!--*** apartment 6***-->
+            <tag id="39" value="70"/><!--*** senses***-->
+            <tag id="87" value="75"/><!--*** gestalt therapy***-->
+            <tag id="71" value="55"/><!--*** citydance***-->
+            <tag id="72" value="50"/><!--*** Circle the Earth***-->
+            <tag id="183" value="45"/><!--*** 10 myths***-->
+            <tag id="90" value="35"/><!--***SF dancers workshop***-->
+
+            <cd id="4"/><!--*** Breath Made Visible***-->
+            <cd id="47"/><!--*** ***-->
+            <cd id="48"/><!--*** ***-->
+            <cd id="49"/><!--*** ***-->
+            <cd id="50"/><!--*** ***-->
+            <cd id="51"/><!--*** ***-->
+            <cd id="52"/><!--*** ***-->
+            <cd id="53"/><!--*** ***-->
+
+
+        </media>
+        <media favorite="0" path="videos/1250_socialart.mp4" thumb="pics/1250_socialart.jpg" type="1">
+            <fr><![CDATA[Un art social]]></fr>
+            <en><![CDATA[A Social Art]]></en>
+            <tag id="125" value="100"/><!--*** social issue***-->
+            <tag id="90" value="95"/><!--*** SF dancers workshop***-->
+            <tag id="70" value="90"/><!--*** ceremony of us***-->
+            <tag id="1" value="87"/><!--*** RSVP***-->
+            <tag id="78" value="85"/><!--*** commonalities***-->
+            <tag id="153" value="84"/><!--*** differences***-->
+            <tag id="24" value="83"/><!--*** global approach***-->
+            <tag id="100" value="80"/><!--*** watts***-->
+            <tag id="19" value="70"/><!--*** community***-->
+            <tag id="156" value="69"/><!--*** ethnic***-->
+            <tag id="40" value="67"/><!--*** ressources***-->
+            <tag id="41" value="65"/><!--*** scores-->
+            <tag id="171" value="64"/><!--*** real-->
+            <tag id="12" value="63"/><!--*** eyes***-->
+            <tag id="118" value="62"/><!--*** face***-->
+            <tag id="162" value="60"/><!--*** men&women***-->
+            <tag id="163" value="50"/><!--*** water***-->
+
+            <cd id="26"/><!--*** Right On***-->
+            <cd id="20"/><!--***Atelier Paris ***-->
+            <cd id="8"/><!--*** Inner Landsc***-->
+            <cd id="7"/><!--*** How Seet***-->
+
+
+        </media>
+
+        <media favorite="0" path="videos/1260_healing.mp4" thumb="pics/1260_healing.jpg" type="1">
+            <fr><![CDATA[Un rituel de guérison]]></fr>
+            <en><![CDATA[A Ritual for Healing]]></en>
+            <tag id="77" value="95"/><!--*** cancer***-->
+            <tag id="76" value="94"/><!--*** psychoviz***-->
+            <tag id="4" value="93"/><!--*** 5 part process***-->
+            <tag id="31" value="90"/><!--*** ritual***-->
+            <tag id="30" value="75"/><!--*** healing***-->
+            <tag id="10" value="73"/><!--*** transformation***-->
+            <tag id="181" value="72"/><!--*** deni***-->
+            <tag id="177" value="71"/><!--*** blocage***-->
+            <tag id="2" value="70"/><!--*** lifeart***-->
+            <tag id="115" value="68"/><!--*** drawing***-->
+            <tag id="119" value="67"/><!--*** dark side***-->
+            <tag id="169" value="66"/><!--*** body wisdom***-->
+            <tag id="122" value="65"/><!--*** restoration***-->
+            <tag id="8" value="64"/><!--*** voice***-->
+            <tag id="60" value="63"/><!--*** therapy***-->
+            <tag id="34" value="60"/><!--*** body&mind***-->
+            <tag id="63" value="57"/><!--*** interdisciplinarity***-->
+            <tag id="66" value="55"/><!--*** art***-->
+            <tag id="65" value="50"/><!--*** meaningful***-->
+            <tag id="11" value="45"/><!--*** intention***-->
+            <tag id="72" value="40"/><!--*** Circle The Eart***-->
+
+            <cd id="8"/><!--*** Inner Landsc***-->
+            <cd id="3"/><!--*** Adf***-->
+            <cd id="16"/><!--*** Exorcism of Cancer***-->
+            <cd id="22"/><!--*** Interv 1***-->
+            <cd id="19"/><!--*** Dancing with Life on the Line ***-->
+
+        </media>
+
+        <media favorite="0" path="videos/1270_spiritualcommunity.mp4" thumb="pics/1270_spiritualcommunity.jpg" type="1">
+            <fr><![CDATA[Vers une spiritualité]]></fr>
+            <en><![CDATA[Towards Spirituality]]></en>
+            <tag id="92" value="100"/><!--*** spiritual***-->
+            <tag id="19" value="98"/><!--*** community***-->
+            <tag id="85" value="94"/><!--*** nature***-->
+            <tag id="111" value="90"/><!--*** awareness***-->
+            <tag id="64" value="90"/><!--*** peace***-->
+            <tag id="126" value="89"/><!--*** relating to a bigger***-->
+            <tag id="65" value="89"/><!--*** meaningfull***-->
+            <tag id="11" value="89"/><!--*** intention***-->
+            <tag id="102" value="88"/><!--*** collective body***-->
+            <tag id="101" value="87"/><!--*** pulse***-->
+            <tag id="5" value="85"/><!--*** environment***-->
+            <tag id="31" value="83"/><!--*** ritual***-->
+            <tag id="44" value="82"/><!--*** myth***-->
+            <tag id="55" value="77"/><!--*** generate creativity***-->
+            <tag id="73" value="75"/><!--*** planetary dance***-->
+            <tag id="72" value="73"/><!--*** circle the earth***-->
+            <tag id="6" value="72"/><!--*** feet***-->
+            <tag id="132" value="70"/><!--*** archetype***-->
+            <tag id="76" value="65"/><!--*** psychoviz***-->
+            <tag id="75" value="60"/><!--*** larry***-->
+            <tag id="91" value="57"/><!--*** archetype***-->
+            <tag id="163" value="55"/><!--*** water***-->
+
+            <cd id="12"/><!--*** Returning Home ***-->
+            <cd id="15"/><!--***An evening ***-->
+            <cd id="17"/><!--*** Living Myth & ***-->
+            <cd id="31"/><!--***Planetary Dance 2003 ***-->
+            <cd id="19"/><!--***  Circle the Earth, life on the line***-->
+            <cd id="23"/>
+
+        </media>
+
+
+        <!-- *************************** Roadmaps ********************************* -->
+
+        <media favorite="0" path="videos/1400_MR.mp4" thumb="pics/1400_MR.jpg" type="2">
+            <fr><![CDATA[Rituels de mouvement]]></fr>
+            <en><![CDATA[Movement Rituals]]></en>
+            <tag id="88" value="100"/><!--*** movement ritual***-->
+            <tag id="31" value="95"/><!--*** ritual***-->
+            <tag id="56" value="90"/><!--*** body as instrument***-->
+            <tag id="34" value="85"/><!--*** body&mind***-->
+            <tag id="93" value="80"/><!--*** science***-->
+            <tag id="28" value="75"/><!--*** anatomy***-->
+            <tag id="82" value="70"/><!--*** kinesthetic sense***-->
+            <tag id="29" value="67"/><!--*** skills***-->
+            <tag id="157" value="65"/><!--***exploration***-->
+            <tag id="38" value="60"/><!--***imagination***-->
+            <tag id="50" value="55"/><!--***gravity***-->
+            <tag id="46" value="53"/><!--***release***-->
+            <tag id="107" value="52"/><!--***contraction***-->
+            <tag id="104" value="54"/><!--***spiral***-->
+            <tag id="106" value="50"/><!--***floor***-->
+            <tag id="177" value="48"/><!--***blockage***-->
+            <tag id="165" value="45"/><!--***momentum***-->
+            <tag id="167" value="42"/><!--***dissection***-->
+            <tag id="166" value="41"/><!--***inertia***-->
+            <tag id="105" value="40"/><!--***breath***-->
+            <tag id="42" value="35"/><!--***performance***-->
+            <tag id="16" value="30"/><!--***polarities***-->
+
+            <cd id="22"/><!--***Interv2 ***-->
+            <cd id="11"/><!--*** Living Leg***-->
+            <cd id="56"/><!--*** ***-->
+
+        </media>
+        <media favorite="0" path="videos/1410_feedbackprocess.mp4" thumb="pics/1410_feedbackprocess.jpg" type="2">
+            <fr><![CDATA[Le Processus mouvement / ressenti]]></fr>
+            <en><![CDATA[The Movement / Feeling Process]]></en>
+            <tag id="158" value="100"/><!--*** mvt&feeling process***-->
+            <tag id="18" value="98"/><!--*** feedback process***-->
+            <tag id="22" value="90"/><!--*** feeling***-->
+            <tag id="96" value="90"/><!--*** emotion***-->
+            <tag id="73" value="85"/><!--*** planetary dance***-->
+            <tag id="72" value="80"/><!--*** circle the earth***-->
+            <tag id="70" value="75"/><!--*** ceremony of us***-->
+            <tag id="164" value="70"/><!--*** audiance***-->
+            <tag id="60" value="65"/><!--*** therapy***-->
+            <tag id="66" value="60"/><!--*** art***-->
+            <tag id="56" value="50"/><!--*** body as intsrument***-->
+
+            <cd id="15"/><!--*** An evening***-->
+            <cd id="31"/><!--*** Planet 2003***-->
+            <cd id="22"/><!--*** Interv 1***-->
+            <cd id="12"/><!--***  Returning Home***-->
+
+        </media>
+        <media favorite="0" path="videos/1420_threelevels.mp4" thumb="pics/1420_threelevels.jpg" type="2">
+            <fr><![CDATA[Les Trois Niveaux de conscience]]></fr>
+            <en><![CDATA[The Three Levels of Awareness]]></en>
+            <tag id="3" value="100"/><!--*** 3 levels***-->
+            <tag id="18" value="97"/><!--*** feedback process***-->
+            <tag id="10" value="96"/><!--*** transformation***-->
+            <tag id="36" value="95"/><!--*** physical***-->
+            <tag id="21" value="92"/><!--*** image***-->
+            <tag id="51" value="94"/><!--*** creative process***-->
+            <tag id="96" value="93"/><!--*** emotions***-->
+            <tag id="34" value="90"/><!--*** body/mind***-->
+            <tag id="158" value="87"/><!--*** mvt&feeling process***-->
+            <tag id="169" value="85"/><!--*** body knowledge***-->
+            <tag id="52" value="80"/><!--*** learning***-->
+            <tag id="82" value="78"/><!--*** kinestesic sense***-->
+            <tag id="20" value="75"/><!--*** witness***-->
+            <tag id="25" value="73"/><!--*** workshop***-->
+            <tag id="115" value="70"/><!--*** drawing***-->
+            <tag id="40" value="65"/><!--*** ressources***-->
+            <tag id="89" value="60"/><!--*** breakloose***-->
+            <tag id="22" value="80"/><!--*** emotions***-->
+            <tag id="170" value="50"/><!--*** hands***-->
+            <tag id="127" value="40"/><!--*** John dewey***-->
+
+            <cd id="11"/><!--*** Living Leg***-->
+            <cd id="29"/><!--*** AH Theater Ritual***-->
+
+        </media>
+        <media favorite="0" path="videos/1425_PsychoViz.mp4" thumb="pics/1425_PsychoViz.jpg" type="2">
+            <fr><![CDATA[Le Processus de visualisation psycho-kinétique]]></fr>
+            <en><![CDATA[The PsychoKinetic Visualization Process]]></en>
+            <tag id="3" value="90"/><!--*** 3 levels***-->
+            <tag id="76" value="100"/><!--*** psychoviz***-->
+            <tag id="116" value="98"/><!--*** self portrait***-->
+            <tag id="115" value="96"/><!--*** drawing***-->
+            <tag id="21" value="95"/><!--*** imaging***-->
+            <tag id="51" value="94"/><!--*** creative process***-->
+            <tag id="10" value="91"/><!--*** transformation***-->
+            <tag id="82" value="88"/><!--*** kinestesic sense***-->
+            <tag id="30" value="87"/><!--*** healing***-->
+            <tag id="44" value="85"/><!--*** myth***-->
+            <tag id="34" value="84"/><!--*** body/mind***-->
+            <tag id="119" value="82"/><!--*** dark side***-->
+            <tag id="52" value="80"/><!--*** learning***-->
+            <tag id="178" value="78"/><!--*** language***-->
+            <tag id="16" value="75"/><!--*** polarities***-->
+            <tag id="85" value="72"/><!--*** nature***-->
+            <tag id="126" value="70"/><!--*** bigger totality***-->
+            <tag id="132" value="67"/><!--*** archetype***-->
+            <tag id="43" value="65"/><!--*** diversity***-->
+            <tag id="121" value="64"/><!--*** confrontation***-->
+            <tag id="46" value="63"/><!--*** release***-->
+            <tag id="122" value="62"/><!--*** restoration***-->
+            <tag id="11" value="61"/><!--*** integration***-->
+            <tag id="6" value="60"/><!--*** feet***-->
+            <tag id="181" value="57"/><!--*** denial ***-->
+            <tag id="181" value="56"/><!--*** tamalpa***-->
+            <tag id="118" value="55"/><!--*** face***-->
+            <tag id="29" value="50"/><!--*** skills***-->
+            <tag id="177" value="45"/><!--*** blocage***-->
+            <tag id="4" value="40"/><!--*** 5 parts***-->
+
+            <cd id="3"/><!--*** ADF***-->
+            <cd id="90"/>
+        </media>
+
+        <media favorite="0" path="videos/1430_fivepartprocess.mp4" thumb="pics/1430_fivepartprocess.jpg" type="2">
+            <fr><![CDATA[Le Processus en cinq parties]]></fr>
+            <en><![CDATA[The Five Part Process]]></en>
+            <tag id="4" value="100"/><!--*** 5 parts***-->
+            <tag id="120" value="95"/><!--*** identify***-->
+            <tag id="121" value="94"/><!--*** confrontation***-->
+            <tag id="46" value="93"/><!--*** release***-->
+            <tag id="10" value="92"/><!--*** transformation***-->
+            <tag id="123" value="91"/><!--*** integration***-->
+            <tag id="30" value="85"/><!--*** healing***-->
+            <tag id="77" value="80"/><!--*** cancer***-->
+            <tag id="81" value="75"/><!--*** aids***-->
+            <tag id="2" value="70"/><!--*** life/art process***-->
+            <tag id="90" value="60"/><!--*** SF dancer workshop***-->
+            <tag id="164" value="50"/><!--*** audiance***-->
+
+            <cd id="22"/><!--*** Interv1***-->
+            <cd id="19"/><!--*** ***-->
+            <cd id="57"/><!--*** ***-->
+            <cd id="58"/><!--*** ***-->
+            <cd id="63"/><!--*** ***-->
+            <cd id="64"/><!--*** ***-->
+
+        </media>
+
+        <media favorite="0" path="videos/1450_rsvp.mp4" thumb="pics/1450_rsvp.jpg" type="2">
+            <fr><![CDATA[Les Cycles RSVP]]></fr>
+            <en><![CDATA[The RSVP Cycles]]></en>
+            <tag id="1" value="100"/><!--*** rsvp***-->
+            <tag id="51" value="97"/><!--*** creative process***-->
+            <tag id="75" value="95"/><!--*** larry***-->
+            <tag id="55" value="90"/><!--*** generate creativity***-->
+            <tag id="19" value="87"/><!--*** community***-->
+            <tag id="10" value="86"/><!--*** transformation***-->
+            <tag id="37" value="85"/><!--*** valuaction***-->
+            <tag id="66" value="82"/><!--*** art***-->
+            <tag id="67" value="81"/><!--*** participation***-->
+            <tag id="41" value="80"/><!--*** scores***-->
+            <tag id="89" value="75"/><!--*** brealk loose***-->
+            <tag id="129" value="73"/><!--*** culture***-->
+            <tag id="40" value="70"/><!--*** ressources***-->
+            <tag id="20" value="67"/><!--*** witness***-->
+            <tag id="59" value="66"/><!--*** judgement***-->
+            <tag id="57" value="65"/><!--*** choreography***-->
+            <tag id="58" value="62"/><!--*** improvisation***-->
+            <tag id="90" value="50"/><!--*** SF Dancers Works***-->
+            <tag id="11" value="50"/><!--*** intention***-->
+            <tag id="69" value="45"/><!--*** parades & changes***-->
+            <tag id="72" value="40"/><!--*** Circle The Eart***-->
+
+
+            <cd id="28"/><!--*** Parades & Changes***-->
+            <cd id="8"/><!--*** Inner Landsc***-->
+            <cd id="7"/><!--*** *How sweet it is**-->
+            <cd id="22"/><!--*** Interv2***-->
+            <cd id="19"/><!--*** Circle the Earth, Life on the line***-->
+
+        </media>
+
+
+        <media favorite="0" path="videos/1460_PlanetaryDance.mp4" thumb="pics/1460_PlanetaryDance.jpg" type="2">
+            <fr><![CDATA[La Planetary Dance]]></fr>
+            <en><![CDATA[The Planetary Dance]]></en>
+            <tag id="73" value="100"/><!--*** Planetary dance***-->
+            <tag id="64" value="90"/><!--*** peace***-->
+            <tag id="19" value="89"/><!--*** community***-->
+            <tag id="126" value="85"/><!--*** to a bigger totality***-->
+            <tag id="65" value="84"/><!--*** meaningful***-->
+            <tag id="31" value="82"/><!--*** ritual***-->
+            <tag id="102" value="81"/><!--*** collective body***-->
+            <tag id="11" value="80"/><!--*** intention***-->
+            <tag id="67" value="79"/><!--*** participation***-->
+            <tag id="101" value="75"/><!--*** pulse***-->
+            <tag id="30" value="72"/><!--*** healing***-->
+            <tag id="41" value="70"/><!--*** score***-->
+            <tag id="42" value="68"/><!--*** performance***-->
+            <tag id="35" value="60"/><!--*** namming***-->
+            <tag id="153" value="57"/><!--*** differences***-->
+            <tag id="29" value="39	"/><!--*** skills***-->
+            <tag id="14" value="45"/><!--*** walk***-->
+            <tag id="17" value="40"/><!--*** running***-->
+            <tag id="72" value="35"/><!--*** circle the earth***-->
+
+            <cd id="17"/><!--*** Living Myths & Rituals, CTE***-->
+            <cd id="19"/><!--*** CTE, life on the line***-->
+            <cd id="20"/><!--*** Atelier Paris***-->
+            <cd id="8"/><!--*** Inner Landsc***-->
+            <cd id="31"/><!--*** Planetary Dance 2003***-->
+            <cd id="22"/><!--*** Interv1***-->
+            <cd id="32"/><!--*** ***-->
+
+        </media>
+
+
+        <!-- *************************** Workshop ********************************* -->
+
+
+        <media favorite="0" path="videos/1000_Introduction.mp4" thumb="pics/1000_Introduction.jpg" type="3">
+            <fr><![CDATA[Introduction]]></fr>
+            <en><![CDATA[Introduction]]></en>
+            <tag id="25" value="90"/><!--*** workshop***-->
+            <tag id="11" value="85"/><!--*** intention***-->
+            <tag id="52" value="70"/><!--*** learning***-->
+            <tag id="114" value="65"/><!--*** teaching***-->
+            <tag id="10" value="60"/><!--*** transformation***-->
+
+            <cd id="20"/><!--*** Atel Paris***-->
+            <cd id="22"/><!--*** Interv2 ***-->
+
+        </media>
+
+        <media favorite="0" path="videos/1010_SelfPortrait.mp4" thumb="pics/1010_SelfPortrait.jpg" type="3">
+            <fr><![CDATA[L'autoportrait]]></fr>
+            <en><![CDATA[Self-Portrait]]></en>
+            <tag id="116" value="100"/><!--*** self-portrait***-->
+            <tag id="3" value="96"/><!--*** 3 levels***-->
+            <tag id="76" value="95"/><!--*** psychoviz***-->
+            <tag id="115" value="90"/><!--*** drawing***-->
+            <tag id="44" value="87"/><!--*** myth***-->
+            <tag id="43" value="85"/><!--*** diversity***-->
+            <tag id="172" value="80"/><!--*** word***-->
+            <tag id="21" value="75"/><!--*** image***-->
+            <tag id="22" value="70"/><!--*** feeling***-->
+            <tag id="36" value="69"/><!--*** physical***-->
+            <tag id="47" value="67"/><!--*** partner***-->
+            <tag id="41" value="65"/><!--*** score***-->
+            <tag id="8" value="60"/><!--*** voice***-->
+            <tag id="9" value="59"/><!--*** vibration***-->
+            <tag id="2" value="58"/><!--*** life/art process***-->
+            <tag id="10" value="55"/><!--*** transformation***-->
+
+            <cd id="20"/><!--*** Atel Paris***-->
+        </media>
+
+        <media favorite="0" path="videos/1020_PNspace.mp4" thumb="pics/1020_PNspace.jpg" type="3">
+            <fr><![CDATA[L'espace positif & l'espace négatif]]></fr>
+            <en><![CDATA[Positive & Negative Space]]></en>
+            <tag id="112" value="100"/><!--*** space:positive&negative***-->
+            <tag id="155" value="95"/><!--*** environment***-->
+            <tag id="5" value="90"/><!--*** space***-->
+            <tag id="16" value="85"/><!--*** polarities***-->
+            <tag id="45" value="80"/><!--*** partner relationship***-->
+            <tag id="40" value="75"/><!--*** ressource***-->
+            <tag id="41" value="70"/><!--*** score***-->
+            <tag id="37" value="65"/><!--*** valuaction***-->
+            <tag id="20" value="60"/><!--*** witness***-->
+            <tag id="164" value="55"/><!--*** audiance***-->
+            <tag id="13" value="52"/><!--*** touch***-->
+            <tag id="8" value="53"/><!--*** voice***-->
+            <tag id="55" value="50"/><!--*** generate creativity***-->
+            <tag id="35" value="45"/><!--*** naming***-->
+
+            <cd id="20"/><!--*** Atel Paris***-->
+            <cd id="22"/><!--*** Interv2***-->
+        </media>
+
+        <media favorite="0" path="videos/1030_CollectiveEnergy.mp4" thumb="pics/1030_CollectiveEnergy.jpg" type="3">
+            <fr><![CDATA[L'énergie collective]]></fr>
+            <en><![CDATA[Collective Energy]]></en>
+            <tag id="102" value="100"/><!--*** collective body***-->
+            <tag id="19" value="95"/><!--*** community***-->
+            <tag id="40" value="90"/><!--*** ressource***-->
+            <tag id="101" value="85"/><!--*** pulse***-->
+            <tag id="5" value="80"/><!--*** space***-->
+            <tag id="173" value="70"/><!--*** universal***-->
+            <tag id="11" value="65"/><!--*** intention***-->
+            <tag id="65" value="63"/><!--*** meaningful***-->
+            <tag id="31" value="62"/><!--*** ritual***-->
+            <tag id="94" value="60"/><!--*** philosophy***-->
+            <tag id="12" value="55"/><!--*** eyes***-->
+            <tag id="9" value="52"/><!--*** vibration***-->
+            <tag id="73" value="50"/><!--*** planetary dance***-->
+
+            <cd id="20"/><!--*** Atel Paris***-->
+            <cd id="22"/><!--*** Interv2***-->
+        </media>
+
+        <media favorite="0" path="videos/1040_PassiveActive.mp4" thumb="pics/1040_PassiveActive.jpg" type="3">
+            <fr><![CDATA[Passif & actif]]></fr>
+            <en><![CDATA[Passive & Active]]></en>
+            <tag id="16" value="100"/><!--*** polarities***-->
+            <tag id="113" value="95"/><!--*** polarities:passive/active***-->
+            <tag id="1" value="85"/><!--*** RSVP***-->
+            <tag id="173" value="80"/><!--*** universal***-->
+            <tag id="107" value="76"/><!--*** contraction***-->
+            <tag id="46" value="75"/><!--*** release***-->
+            <tag id="48" value="70"/><!--*** center of the body***-->
+            <tag id="106" value="65"/><!--*** floor***-->
+            <tag id="50" value="64"/><!--*** gravity***-->
+            <tag id="47" value="63"/><!--*** partner releationship***-->
+            <tag id="3" value="62"/><!--*** 3 levels***-->
+            <tag id="174" value="61"/><!--*** blend***-->
+            <tag id="41" value="60"/><!--*** score***-->
+            <tag id="2" value="57"/><!--*** Life/art process***-->
+            <tag id="49" value="55"/><!--*** force***-->
+            <tag id="13" value="50"/><!--*** touch***-->
+            <tag id="5" value="45"/><!--*** space***-->
+            <tag id="108" value="43"/><!--*** trust***-->
+            <tag id="28" value="41"/><!--*** anatomy***-->
+            <tag id="110" value="40"/><!--*** mvt initiation***-->
+            <tag id="22" value="39"/><!--*** feeling***-->
+            <tag id="36" value="38"/><!--*** physical***-->
+            <tag id="29" value="37"/><!--*** skills***-->
+            <tag id="21" value="36"/><!--*** image***-->
+            <tag id="6" value="35"/><!--*** feet***-->
+            <tag id="82" value="33"/><!--*** kinesthésique***-->
+            <tag id="8" value="30"/><!--*** voice***-->
+
+            <cd id="20"/><!--*** WP***-->
+            <cd id="22"/><!--*** Interv 2***-->
+
+
+        </media>
+
+        <media favorite="0" path="videos/1050_MensDance.mp4" thumb="pics/1050_MensDance.jpg" type="3">
+            <fr><![CDATA[Les hommes dansant, les femmes témoins]]></fr>
+            <en><![CDATA[Men Dancing, Women Witnessing]]></en>
+            <tag id="162" value="100"/><!--*** men&women***-->
+            <tag id="16" value="95"/><!--*** polarities***-->
+            <tag id="109" value="90"/><!--*** minority***-->
+            <tag id="153" value="85"/><!--*** differences***-->
+            <tag id="78" value="84"/><!--*** commonalities***-->
+            <tag id="43" value="80"/><!--*** diversity***-->
+            <tag id="20" value="75"/><!--*** witness***-->
+            <tag id="37" value="70"/><!--*** valuaction***-->
+            <tag id="73" value="40"/><!--*** Planetary Dance***-->
+            <tag id="174" value="45"/><!--*** blend***-->
+
+            <cd id="20"/><!--*** WP***-->
+            <cd id="22"/><!--*** Interv june***-->
+        </media>
+
+
+        <media favorite="0" path="videos/1080_Rhythmbreath.mp4" thumb="pics/1080_Rhythmbreath.jpg" type="3">
+            <fr><![CDATA[La pulsation & la respiration]]></fr>
+            <en><![CDATA[Pulse & Breath]]></en>
+            <tag id="101" value="100"/><!--*** pulse***-->
+            <tag id="105" value="100"/><!--*** breath***-->
+            <tag id="16" value="95"/><!--*** polarities***-->
+            <tag id="47" value="94"/><!--*** partnership***-->
+            <tag id="14" value="90"/><!--*** walk***-->
+            <tag id="175" value="85"/><!--*** down/up***-->
+            <tag id="176" value="70"/><!--*** boundaries***-->
+            <tag id="13" value="65"/><!--*** touch***-->
+            <tag id="32" value="60"/><!--*** leonard da vinci***-->
+            <tag id="102" value="55"/><!--*** collective body***-->
+            <tag id="104" value="46"/><!--*** spiral***-->
+            <tag id="48" value="45"/><!--*** center of the body***-->
+            <tag id="34" value="43"/><!--*** body/mind***-->
+            <tag id="22" value="41"/><!--*** feeling***-->
+            <tag id="36" value="40"/><!--*** physical***-->
+            <tag id="179" value="38"/><!--*** spine***-->
+            <tag id="180" value="37"/><!--*** head***-->
+            <tag id="106" value="35"/><!--*** floor***-->
+            <tag id="12" value="30"/><!--*** eyes***-->
+            <tag id="28" value="25"/><!--*** anatomy***-->
+
+            <cd id="20"/><!--*** WP***-->
+            <cd id="22"/><!--*** Interv june***-->
+        </media>
+
+        <media favorite="0" path="videos/1090_MovementRitual.mp4" thumb="pics/1090_MovementRitual.jpg" type="3">
+            <fr><![CDATA[Le Rituel de mouvement I]]></fr>
+            <en><![CDATA[Movement Ritual I]]></en>
+            <tag id="88" value="100"/><!--*** MR***-->
+            <tag id="34" value="95"/><!--*** body/mind***-->
+            <tag id="56" value="90"/><!--*** body as instrument***-->
+            <tag id="28" value="85"/><!--*** anatomy***-->
+            <tag id="167" value="80"/><!--*** dissection***-->
+            <tag id="110" value="77"/><!--*** mvt initiation***-->
+            <tag id="157" value="75"/><!--*** exploration***-->
+            <tag id="46" value="60"/><!--*** release***-->
+            <tag id="107" value="55"/><!--*** contraction***-->
+            <tag id="175" value="50"/><!--*** down/up***-->
+            <tag id="16" value="45"/><!--*** polarities***-->
+            <tag id="104" value="40"/><!--*** spiral***-->
+            <tag id="180" value="39"/><!--*** head***-->
+            <tag id="179" value="38"/><!--*** spine***-->
+            <tag id="1" value="37"/><!--*** rsvp***-->
+            <tag id="41" value="36"/><!--*** score***-->
+            <tag id="40" value="35"/><!--*** ressource***-->
+            <tag id="20" value="34"/><!--*** witness***-->
+            <tag id="106" value="30"/><!--*** floor***-->
+            <tag id="48" value="25"/><!--*** center***-->
+            <tag id="96" value="24"/><!--*** emotion***-->
+            <tag id="3" value="22"/><!--*** 3levels***-->
+
+            <cd id="20"/><!--*** WP***-->
+            <cd id="22"/><!--*** Interv june***-->
+        </media>
+
+        <media favorite="0" path="videos/1100_Talk.mp4" thumb="pics/1100_Talk.jpg" type="3">
+            <fr><![CDATA[Une causerie]]></fr>
+            <en><![CDATA[A Talk]]></en>
+            <tag id="2" value="97"/><!--*** art/life***-->
+            <tag id="31" value="90"/><!--*** ritual***-->
+            <tag id="94" value="87"/><!--*** philo***-->
+            <tag id="65" value="85"/><!--*** meaningfull***-->
+            <tag id="10" value="80"/><!--*** transformative***-->
+            <tag id="56" value="60"/><!--*** body as instr***-->
+            <tag id="77" value="50"/><!--*** cancer***-->
+            <tag id="3" value="45"/><!--*** 3levels***-->
+            <tag id="89" value="35"/><!--*** break down***-->
+            <tag id="176" value="30"/><!--*** boundaries***-->
+
+            <cd id="20"/><!--*** WP***-->
+        </media>
+
+        <media favorite="0" path="videos/1110_PlanetaryDance.mp4" thumb="pics/1110_PlanetaryDance.jpg" type="3">
+            <fr><![CDATA[Une Planetary Dance]]></fr>
+            <en><![CDATA[A Planetary Dance]]></en>
+            <tag id="73" value="100"/><!--*** planetary dance***-->
+            <tag id="64" value="95"/><!--*** peace***-->
+            <tag id="19" value="90"/><!--*** community***-->
+            <tag id="92" value="91"/><!--*** spiritual***-->
+            <tag id="65" value="88"/><!--*** meaningfull***-->
+            <tag id="66" value="85"/><!--*** art***-->
+            <tag id="31" value="80"/><!--*** ritual***-->
+            <tag id="10" value="75"/><!--*** transformative***-->
+            <tag id="41" value="70"/><!--*** score***-->
+            <tag id="61" value="65"/><!--*** circle***-->
+            <tag id="102" value="55"/><!--*** collective body***-->
+            <tag id="160" value="50"/><!--*** roots***-->
+            <tag id="174" value="45"/><!--*** blend***-->
+            <tag id="8" value="30"/><!--*** voice***-->
+            <tag id="9" value="29"/><!--*** vibration***-->
+            <tag id="62" value="28"/><!--*** transe***-->
+            <tag id="16" value="25"/><!--*** polarities***-->
+            <tag id="153" value="24"/><!--*** diffrences***-->
+            <tag id="78" value="23"/><!--*** commonalities***-->
+
+            <cd id="20"/><!--*** WP***-->
+            <cd id="22"/><!--*** Interv june***-->
+        </media>
+
+        <media favorite="0" path="videos/1120_SecSelfPortrait.mp4" thumb="pics/1120_SecSelfPortrait.jpg" type="3">
+            <fr><![CDATA[Le second autoportrait]]></fr>
+            <en><![CDATA[Second Self-Portrait]]></en>
+            <tag id="2" value="95"/><!--*** life/art***-->
+            <tag id="10" value="95"/><!--*** transformation***-->
+            <tag id="3" value="90"/><!--*** 3levcels***-->
+            <tag id="76" value="85"/><!--*** psychoviz***-->
+            <tag id="116" value="83"/><!--*** self portarit***-->
+            <tag id="52" value="80"/><!--*** learning***-->
+            <tag id="115" value="75"/><!--*** drawing***-->
+            <tag id="133" value="29"/><!--*** home***-->
+            <tag id="123" value="60"/><!--*** integration***-->
+            <tag id="177" value="45"/><!--*** blocage***-->
+            <cd id="20"/><!--*** WP***-->
+            <cd id="22"/><!--*** Interv june***-->
+        </media>
+
+        <media favorite="0" path="videos/1130_evening.mp4" thumb="pics/1130_evening.jpg" type="3">
+            <fr><![CDATA[Rencontre du soir]]></fr>
+            <en><![CDATA[An Evening Lecture]]></en>
+            <tag id="101" value="100"/><!--*** pulse***-->
+            <tag id="105" value="100"/><!--*** breath***-->
+            <tag id="16" value="95"/><!--*** polarities***-->
+            <tag id="174" value="90"/><!--*** blend***-->
+            <tag id="2" value="80"/><!--*** life/art***-->
+            <tag id="3" value="79"/><!--*** 3levcels***-->
+            <tag id="76" value="78"/><!--*** psychoviz***-->
+            <tag id="116" value="77"/><!--*** self portarit***-->
+            <tag id="115" value="75"/><!--*** drawing***-->
+            <tag id="172" value="70"/><!--*** word***-->
+            <tag id="21" value="68"/><!--*** image***-->
+            <tag id="8" value="66"/><!--*** voice***-->
+            <tag id="9" value="65"/><!--*** vibration***-->
+            <tag id="181" value="55"/><!--*** tamalpa***-->
+            <tag id="102" value="50"/><!--*** collective body***-->
+            <tag id="62" value="28"/><!--*** transe***-->
+            <cd id="200"/><!--*** Evening***-->
+        </media>
+
+
+        <!-- *************************** medias - hors structure ********************************* -->
+        <media favorite="0" path="videos/Introduction.mp4" thumb="pics/Introduction.jpg" type="topics" moment="intro">
+            <fr><![CDATA[Mes intentions]]></fr>
+            <en><![CDATA[My Intentions]]></en>
+            <tag id="2" value="99"/><!--*** life/art***-->
+            <cd id="70"/>
+            <cd id="71"/>
+            <cd id="72"/>
+            <cd id="73"/>
+            <cd id="74"/>
+            <cd id="75"/>
+            <cd id="76"/>
+            <cd id="77"/>
+            <cd id="78"/>
+            <cd id="79"/>
+            <cd id="80"/>
+            <cd id="81"/>
+            <cd id="82"/>
+            <cd id="83"/>
+            <cd id="84"/>
+            <cd id="85"/>
+            <cd id="86"/>
+            <cd id="87"/>
+            <cd id="88"/>
+            <cd id="89"/>
+            <cd id="6"/>
+        </media>
+
+        <media favorite="0" path="videos/00_Preambule.mp4" thumb="pics/00_Preambule.jpg" type="topics"
+               moment="preambule">
+            <fr><![CDATA[Préambule]]></fr>
+            <en><![CDATA[Preamble]]></en>
+            <tag id="2" value="100"/><!--*** life/art***-->
+            <cd id="23"/>
+            <cd id="6"/>
+        </media>
+
+        <media favorite="0" path_fr="videos/Explo_BreathSelfPortrait_fr.mp4"
+               path_en="videos/Explo_BreathSelfPortrait_en.mp4" thumb="pics/audio.png" type="topics" moment="explo1">
+            <fr><![CDATA[Respiration & autoportrait]]></fr>
+            <en><![CDATA[Breathing Exploration & Self-Portrait]]></en>
+            <tag id="105" value="20"/><!--*** breath***-->
+            <tag id="116" value="15"/><!--*** self portarit***-->
+            <cd id="5"/>
+        </media>
+        <!--
+		<media favorite="0" path_fr="videos/Explo_SecondSelf_fr.mp4" path_en="videos/Explo_SecondSelf_en.mp4" thumb="pics/audio.png" type="topics" moment="explo2">
+			<fr><![CDATA[Pour finir]]></fr>
+			<en><![CDATA[To end]]></en>
+		</media>
+-->
+        <!-- *************************** interview ********************************* -->
+
+        <media favorite="0" path="videos/I_01c_whyteachingnow.mp4" thumb="pics/I_01c_whyteachingnow.jpg" type="m">
+            <fr><![CDATA[Pourquoi enseigner encore ?]]></fr>
+            <en><![CDATA[Why are you still teaching?]]></en>
+            <tag id="1220" value="100"/>
+            <tag id="7" value="30"/><!--*** ages***-->
+            <tag id="51" value="90"/><!--*** creative process***-->
+            <tag id="26" value="85"/><!--*** laboratory***-->
+            <tag id="52" value="95"/><!--*** learning***-->
+            <tag id="114" value="100"/><!--*** teaching***-->
+            <tag id="25" value="80"/><!--*** workshop***-->
+            <cd id="22"/><!--*** Interv nov***-->
+        </media>
+        <media favorite="0" path="videos/I_05_adaptworkshoptopeople.mp4" thumb="pics/I_05_adaptworkshoptopeople.jpg"
+               type="m">
+            <fr><![CDATA[Adapter l'atelier aux participants]]></fr>
+            <en><![CDATA[Adapting workshops to people]]></en>
+            <tag id="114" value="60"/><!--*** teaching***-->
+            <tag id="25" value="80"/><!--*** workshop***-->
+            <tag id="11" value="100"/><!--*** intention***-->
+            <tag id="63" value="45"/><!--*** pluridisciplinarity***-->
+            <cd id="22"/><!--*** Interv nov***-->
+        </media>
+        <media favorite="0" path="videos/I_rsvp_valuaction.mp4" thumb="pics/I_rsvp_valuaction.jpg" type="m">
+            <fr><![CDATA[La valuaction]]></fr>
+            <en><![CDATA[Valuaction]]></en>
+            <tag id="1" value="85"/><!--*** rsvp***-->
+            <tag id="37" value="90"/><!--*** valuaction***-->
+            <tag id="59" value="80"/><!--*** judgement***-->
+            <tag id="52" value="75"/><!--*** learning***-->
+            <tag id="20" value="80"/><!--*** witness***-->
+            <!--***<cd id="20"/>***--> <!--*** workshop paris***-->
+            <cd id="22"/><!--*** Interv nov***-->
+        </media>
+        <media favorite="0" path="videos/I_042c_avoidjudgement.mp4" thumb="pics/I_042c_avoidjudgement.jpg" type="m">
+            <fr><![CDATA[Éviter de juger]]></fr>
+            <en><![CDATA[Avoiding Judgement]]></en>
+            <tag id="1" value="85"/><!--*** rsvp***-->
+            <tag id="37" value="90"/><!--*** valuaction***-->
+            <tag id="59" value="100"/><!--*** judgement***-->
+            <tag id="52" value="75"/><!--*** learning***-->
+            <tag id="22" value="95"/><!--*** feeling***-->
+            <tag id="29" value="70"/><!--*** skills***-->
+            <tag id="20" value="80"/><!--*** witness***-->
+            <tag id="81" value="60"/><!--*** aids***-->
+            <tag id="158" value="92"/><!--*** mvt&feeling process***-->
+            <tag id="11" value="82"/><!--*** intention***-->
+            <tag id="30" value="55"/><!--*** healing***-->
+            <tag id="18" value="65"/><!--*** feedback process***-->
+            <cd id="22"/><!--*** Interv nov***-->
+        </media>
+        <media favorite="0" path="videos/I_043c_feedbackprocess.mp4" thumb="pics/I_043c_feedbackprocess.jpg" type="m">
+            <fr><![CDATA[L'adéquation entre mouvement & ressenti]]></fr>
+            <en><![CDATA[Accuracy between Movement & Feeling]]></en>
+            <tag id="158" value="90"/><!--*** mvt&feeling process***-->
+            <tag id="29" value="95"/><!--*** skills***-->
+            <tag id="18" value="80"/><!--*** feedback process***-->
+            <tag id="56" value="60"/><!--*** body as instrument***-->
+            <tag id="177" value="55"/><!--*** blocage***-->
+            <cd id="22"/><!--*** Interv nov***-->
+        </media>
+        <media favorite="0" path="videos/I_080c_globalapproachmediums.mp4" thumb="pics/I_080c_globalapproachmediums.jpg"
+               type="m">
+            <fr><![CDATA[Une approche globale]]></fr>
+            <en><![CDATA[Global Approach]]></en>
+            <tag id="105" value="75"/><!--*** breath***-->
+            <tag id="56" value="90"/><!--*** body as instrument***-->
+            <tag id="8" value="80"/><!--*** voice***-->
+            <tag id="24" value="100"/><!--*** global approach***-->
+            <tag id="63" value="85"/><!--*** pluridisciplinarity***-->
+            <tag id="21" value="70"/><!--*** image***-->
+            <tag id="36" value="65"/><!--*** physical***-->
+            <tag id="155" value="40"/><!--*** environment***-->
+            <cd id="22"/><!--*** Interv nov***-->
+        </media>
+
+        <media favorite="0" path="videos/I_081c_lifeart.mp4" thumb="pics/I_081c_lifeart.jpg" type="m">
+            <fr><![CDATA[Apprendre sur soi]]></fr>
+            <en><![CDATA[Learning about Us]]></en>
+            <tag id="2" value="95"/><!--*** life/Art***-->
+            <tag id="10" value="90"/><!--*** transformation***-->
+            <tag id="24" value="85"/><!--*** global approach***-->
+            <tag id="18" value="80"/><!--*** feedback process***-->
+            <tag id="51" value="75"/><!--*** creative process***-->
+            <tag id="123" value="55"/><!--*** integrate***-->
+            <tag id="171" value="50"/><!--*** real***-->
+            <tag id="8" value="45"/><!--*** voice***-->
+            <tag id="38" value="42"/><!--*** imagination***-->
+            <tag id="115" value="40"/><!--*** drawing***-->
+            <tag id="21" value="35"/><!--*** image***-->
+            <tag id="56" value="30"/><!--*** body as instrument***-->
+            <cd id="22"/><!--*** Interv nov***-->
+        </media>
+        <media favorite="0" path="videos/I_092c_question-connection.mp4" thumb="pics/I_092c_question-connection.jpg"
+               type="m">
+            <fr><![CDATA[Poser des questions]]></fr>
+            <en><![CDATA[Asking questions]]></en>
+            <tag id="2" value="90"/><!--*** lile/Art***-->
+            <tag id="114" value="85"/><!--*** teaching***-->
+            <tag id="113" value="65"/><!--*** polarities active/passive***-->
+            <cd id="22"/><!--*** Interv nov***-->
+        </media>
+        <media favorite="0" path="videos/I_100c_transformationSP.mp4" thumb="pics/I_100c_transformationSP.jpg" type="m">
+            <fr><![CDATA[Les autoportraits]]></fr>
+            <en><![CDATA[Self-Portraits]]></en>
+            <tag id="10" value="90"/><!--*** transformation***-->
+            <tag id="116" value="100"/><!--*** self-portrait***-->
+            <cd id="22"/><!--*** Interv nov***-->
+        </media>
+        <media favorite="0" path="videos/I_132c_leonarddavinci.mp4" thumb="pics/I_132c_leonarddavinci.jpg" type="m">
+            <fr><![CDATA[Léonard de Vinci]]></fr>
+            <en><![CDATA[Leonardo da Vinci]]></en>
+            <tag id="32" value="100"/><!--*** leonard da vinci***-->
+            <tag id="48" value="95"/><!--*** center of the body***-->
+            <tag id="5" value="90"/><!--*** space***-->
+            <tag id="155" value="75"/><!--*** environement***-->
+            <tag id="61" value="70"/><!--*** circle***-->
+            <tag id="175" value="65"/><!--*** up/down***-->
+            <tag id="112" value="50"/><!--*** positive & negative space***-->
+            <cd id="22"/><!--*** Interv nov***-->
+        </media>
+        <media favorite="0" path="videos/I_143c_fivepartprocess-dwlotl.mp4"
+               thumb="pics/I_143c_fivepartprocess-dwlotl.jpg" type="m">
+            <fr><![CDATA[Les cinq étapes vers la guérison]]></fr>
+            <en><![CDATA[Five Stages to Healing]]></en>
+            <tag id="4" value="90"/><!--*** five part process***-->
+            <tag id="72" value="80"/><!--*** Circle the Earth***-->
+            <tag id="30" value="75"/><!--*** healing***-->
+            <tag id="41" value="55"/><!--*** score***-->
+            <tag id="116" value="45"/><!--*** self portrait***-->
+            <cd id="22"/><!--*** Interv nov***-->
+        </media>
+
+        <!-- *************************** Interview_intentions paris workshop ********************************* -->
+
+        <media favorite="0" path="videos/I_W_activeactive_lifeart.mp4" thumb="pics/I_W_activeactive_lifeart.jpg"
+               type="m">
+            <fr><![CDATA[Les polarités & la vie]]></fr>
+            <en><![CDATA[Polarities & Life]]></en>
+            <tag id="2" value="90"/><!--*** life/art process***-->
+            <tag id="47" value="85"/><!--*** partner relationship***-->
+            <tag id="113" value="80"/><!--*** active/passive***-->
+            <tag id="158" value="75"/><!--*** mvt&feeling process***-->
+            <tag id="41" value="65"/><!--*** score***-->
+            <tag id="30" value="60"/><!--*** healing***-->
+            <tag id="49" value="56"/><!--*** force***-->
+            <tag id="96" value="55"/><!--*** emotion***-->
+            <tag id="22" value="52"/><!--*** feeling***-->
+            <tag id="36" value="50"/><!--*** physical***-->
+            <tag id="177" value="49"/><!--*** blocage***-->
+            <tag id="21" value="48"/><!--*** image***-->
+            <tag id="40" value="40"/><!--*** ressource***-->
+            <tag id="29" value="35"/><!--*** skills***-->
+            <tag id="78" value="25"/><!--*** communality***-->
+            <cd id="22"/><!--*** Interv Juin***-->
+        </media>
+        <media favorite="0" path="videos/I_W_mensdance_witness.mp4" thumb="pics/I_W_mensdance_witness.jpg" type="m">
+            <fr><![CDATA[Être témoin]]></fr>
+            <en><![CDATA[Be the witness]]></en>
+            <tag id="20" value="90"/><!--*** witness***-->
+            <tag id="164" value="85"/><!--*** audiance***-->
+            <tag id="155" value="70"/><!--*** environement***-->
+            <tag id="109" value="65"/><!--*** minority***-->
+            <tag id="78" value="50"/><!--*** communality***-->
+            <tag id="153" value="45"/><!--*** diffreences***-->
+            <cd id="22"/><!--*** Interv Juin***-->
+        </media>
+        <media favorite="0" path="videos/I_W_skills.mp4" thumb="pics/I_W_skills.jpg" type="m">
+            <fr><![CDATA[Les compétences]]></fr>
+            <en><![CDATA[Skills]]></en>
+            <tag id="29" value="100"/><!--*** skills***-->
+            <cd id="22"/><!--*** Interv Juin***-->
+        </media>
+        <media favorite="0" path="videos/I_W_MRspiral.mp4" thumb="pics/I_W_MRspiral.jpg" type="m">
+            <fr><![CDATA[La spirale]]></fr>
+            <en><![CDATA[The Spiral]]></en>
+            <tag id="104" value="95"/><!--*** spiral***-->
+            <tag id="16" value="90"/><!--*** polarities***-->
+            <tag id="175" value="85"/><!--*** up/down***-->
+            <tag id="50" value="80"/><!--*** gravity***-->
+            <tag id="48" value="75"/><!--*** center of the body***-->
+            <tag id="88" value="60"/><!--*** MR***-->
+            <cd id="22"/><!--*** Interv Juin***-->
+        </media>
+        <media favorite="0" path="videos/I_W_SelfPortrait_imagery.mp4" thumb="pics/I_W_SelfPortrait_imagery.jpg"
+               type="m">
+            <fr><![CDATA[L'importance de l'imagerie]]></fr>
+            <en><![CDATA[Importance of Imagery]]></en>
+            <tag id="116" value="95"/><!--*** self portrait***-->
+            <tag id="115" value="90"/><!--*** drawing***-->
+            <tag id="21" value="85"/><!--*** image***-->
+            <tag id="79" value="75"/><!--*** children***-->
+            <tag id="77" value="65"/><!--*** cancer***-->
+            <tag id="18" value="60"/><!--*** feedback process***-->
+            <tag id="4" value="55"/><!--*** 5 parts process***-->
+            <tag id="181" value="53"/><!--*** Tamalpa***-->
+            <tag id="30" value="50"/><!--*** healing***-->
+            <tag id="20" value="45"/><!--*** witness***-->
+            <tag id="133" value="31"/><!--*** home***-->
+            <tag id="121" value="30"/><!--*** confrontation***-->
+            <tag id="34" value="25"/><!--*** mind***-->
+            <cd id="22"/><!--*** Interv Juin***-->
+        </media>
+        <!-- *************************** Archives ********************************* -->
+
+
+        <!-- ************************************ ADF ***************************************** -->
+
+        <media favorite="0" path="videos/A_ADF_children.mp4" thumb="pics/A_ADF_children.jpg" type="m">
+            <fr><![CDATA[Les enfants dessinent]]></fr>
+            <en><![CDATA[Children draw]]></en>
+            <tag id="76" value="100"/><!--*** psychoKinetic Viz***-->
+            <tag id="79" value="90"/><!--*** children***-->
+            <tag id="115" value="80"/><!--*** drawing***-->
+            <tag id="7" value="80"/><!--*** ages***-->
+            <cd id="3"/><!--*** adf***-->
+        </media>
+
+        <media favorite="0" path="videos/A_ADF_3levels_concl.mp4" thumb="pics/A_ADF_3levels_concl.jpg" type="m">
+            <fr><![CDATA[Au plus profond]]></fr>
+            <en><![CDATA[The deepest place]]></en>
+            <tag id="76" value="100"/><!--***  psychoKinetic Viz***-->
+            <tag id="169" value="95"/><!--*** body knowledge***-->
+            <tag id="3" value="90"/><!--*** 3 levels of***-->
+            <tag id="92" value="80"/><!--*** spiritual***-->
+            <cd id="3"/><!--*** adf***-->
+        </media>
+
+        <media favorite="0" path="videos/A_ADF_teachit.mp4" thumb="pics/A_ADF_teachit.jpg" type="m">
+            <fr><![CDATA[Enseigner & créer]]></fr>
+            <en><![CDATA[Teaching & Creation]]></en>
+
+            <tag id="114" value="100"/><!--*** teaching***-->
+            <tag id="52" value="95"/><!--***  learning***-->
+            <tag id="51" value="90"/><!--***  creative process***-->
+            <tag id="26" value="85"/><!--***  laboratory***-->
+            <tag id="66" value="80"/><!--***  art***-->
+            <tag id="55" value="75"/><!--***  generate creativity***-->
+            <tag id="25" value="70"/><!--***  workshop***-->
+            <cd id="3"/><!--*** adf***-->
+        </media>
+
+
+        <!-- ************************************ An evening 1987 ***************************************** -->
+
+        <media favorite="0" path="videos/A_evening1987_Nature.mp4" thumb="pics/A_evening1987_Nature.jpg" type="m">
+            <fr><![CDATA[Incorporer la nature]]></fr>
+            <en><![CDATA[Embodying Nature]]></en>
+            <tag id="85" value="98"/><!--*** nature***-->
+            <tag id="10" value="90"/><!--*** transformation***-->
+            <tag id="169" value="85"/><!--*** body knowledge***-->
+            <tag id="126" value="80"/><!--*** relating to a bigger***-->
+            <tag id="124" value="70"/><!--*** animals***-->
+            <tag id="155" value="65"/><!--*** environment***-->
+            <tag id="52" value="60"/><!--*** learning***-->
+            <tag id="34" value="55"/><!--*** body/mind***-->
+            <tag id="19" value="45"/><!--*** community***-->
+            <tag id="59" value="40"/><!--*** judgement***-->
+            <tag id="33" value="35"/><!--*** roadmaps***-->
+            <tag id="181" value="15"/><!--*** tamalpa***-->
+            <cd id="15"/><!--*** An evening lecture***-->
+        </media>
+
+        <media favorite="0" path="videos/A_evening1987_Healing.mp4" thumb="pics/A_evening1987_Healing.jpg" type="m">
+            <fr><![CDATA[Un récit de guérison]]></fr>
+            <en><![CDATA[Healing Talk]]></en>
+            <tag id="30" value="100"/><!--*** healing***-->
+            <tag id="96" value="90"/><!--*** emotions***-->
+            <tag id="119" value="85"/><!--*** darkside***-->
+            <tag id="89" value="82"/><!--*** break loose***-->
+            <tag id="4" value="80"/><!--*** 5 part processr***-->
+            <tag id="176" value="70"/><!--*** boundaries***-->
+            <tag id="181" value="67"/><!--*** deni***-->
+            <tag id="46" value="65"/><!--*** release***-->
+            <tag id="77" value="60"/><!--*** cancer***-->
+            <tag id="177" value="56"/><!--*** blocage***-->
+            <cd id="15"/><!--*** An evening lecture***-->
+        </media>
+
+
+        <!-- ************************************ A portrait ***************************************** -->
+
+        <media favorite="0" path="videos/A_Aportrait_family.mp4" thumb="pics/A_Aportrait_family.jpg" type="m">
+            <fr><![CDATA[Ma famille]]></fr>
+            <en><![CDATA[My Family]]></en>
+            <tag id="84" value="100"/><!--*** family***-->
+            <tag id="160" value="90"/><!--*** roots***-->
+            <tag id="2" value="80"/><!--*** life/art process***-->
+            <cd id="1"/><!--*** a portrait***-->
+
+        </media>
+        <media favorite="0" path="videos/A_Aportrait_RSVP.mp4" thumb="pics/A_Aportrait_RSVP.jpg" type="m">
+            <fr><![CDATA[A propos des Cycles RSVP]]></fr>
+            <en><![CDATA[About the RSVP Cycles]]></en>
+            <tag id="1" value="100"/><!--*** RSVP***-->
+            <tag id="51" value="95"/><!--*** Creative Process***-->
+            <tag id="75" value="90"/><!--*** Larry***-->
+            <tag id="41" value="85"/><!--*** score***-->
+            <tag id="67" value="80"/><!--*** participation***-->
+            <tag id="90" value="55"/><!--*** SF dancers' Workshop***-->
+            <cd id="1"/><!--*** a portrait***-->
+        </media>
+
+
+        <!-- ************************************ A workshop ***************************************** -->
+        <media favorite="0" path="videos/A_aWorkshop_animals.mp4" thumb="pics/A_aWorkshop_animals.jpg" type="m">
+            <fr><![CDATA[Une exploration]]></fr>
+            <en><![CDATA[An Exploration]]></en>
+            <tag id="3" value="100"/><!-- *** 3 levels **** -->
+            <tag id="124" value="80"/><!-- *** animals **** -->
+            <tag id="8" value="65"/><!-- ***Voice  **** -->
+            <cd id="2"/><!--*** a workshopf***-->
+
+        </media>
+
+        <media favorite="0" path="videos/A_aWorkshop_physical.mp4" thumb="pics/A_aWorkshop_physical.jpg" type="m">
+            <fr><![CDATA[Bouger avec les sens]]></fr>
+            <en><![CDATA[Moving with the Senses]]></en>
+            <tag id="34" value="100"/><!-- *** Mind/Body **** -->
+            <tag id="39" value="95"/><!-- *** senses **** -->
+            <tag id="36" value="85"/><!-- *** physical **** -->
+            <tag id="52" value="70"/><!-- *** learning **** -->
+            <tag id="105" value="65"/><!-- *** breath **** -->
+            <tag id="21" value="40"/><!-- *** image **** -->
+            <cd id="2"/><!--*** a workshopf***-->
+
+        </media>
+
+        <media favorite="0" path="videos/A_aWorkshop_passiveActive.mp4" thumb="pics/A_aWorkshop_passiveActive.jpg"
+               type="m">
+            <fr><![CDATA[Une exploration passive & active]]></fr>
+            <en><![CDATA[A Passive & Active Exploration]]></en>
+            <tag id="16" value="90"/><!-- *** polarities **** -->
+            <tag id="36" value="80"/><!-- *** physical **** -->
+            <tag id="47" value="75"/><!-- *** partner relationship **** -->
+            <tag id="55" value="70"/><!-- *** generate creativity **** -->
+            <tag id="113" value="65"/><!-- *** polarities: passive & active**** -->
+            <tag id="38" value="60"/><!-- *** imagination **** -->
+            <tag id="5" value="55"/><!-- ***space  **** -->
+            <cd id="2"/><!--*** a workshopf***-->
+
+        </media>
+
+        <!-- ************************************ Circle the earth ***************************************** -->
+
+        <media favorite="0" path="videos/A_circletheearth_claimaids.mp4" thumb="pics/A_circletheearth_claimaids.jpg"
+               type="m">
+            <fr><![CDATA[S'affirmer devant les autres]]></fr>
+            <en><![CDATA[Asserting Yourself in the Community]]></en>
+            <tag id="81" value="99"/><!-- *** aids **** -->
+            <tag id="2" value="97"/><!-- *** life/art process **** -->
+            <tag id="31" value="85"/><!-- *** ritual **** -->
+            <tag id="35" value="82"/><!-- *** naming **** -->
+            <tag id="10" value="80"/><!-- *** transformation **** -->
+            <tag id="19" value="75"/><!-- *** community **** -->
+            <tag id="164" value="74"/><!-- *** audience **** -->
+            <tag id="20" value="73"/><!-- *** witness **** -->
+            <tag id="30" value="70"/><!-- *** healing **** -->
+            <tag id="42" value="65"/><!-- *** performance **** -->
+            <tag id="65" value="60"/><!-- *** meaningful **** -->
+            <tag id="90" value="50"/><!--*** SF Dancers Works***-->
+            <tag id="72" value="40"/><!--*** Circle The Eart***-->
+
+
+            <cd id="19"/><!--*** circle the earth***-->
+
+        </media>
+
+
+        <media favorite="0" path="videos/A_circletheearth_partners.mp4" thumb="pics/A_circletheearth_partners.jpg"
+               type="m">
+            <fr><![CDATA[Les partenaires]]></fr>
+            <en><![CDATA[Partners]]></en>
+            <tag id="2" value="95"/><!-- *** life art process **** -->
+            <tag id="47" value="95"/><!-- *** partner relationship **** -->
+            <tag id="35" value="90"/><!-- *** naming **** -->
+            <tag id="81" value="85"/><!-- *** aids **** -->
+            <tag id="30" value="80"/><!-- *** healing **** -->
+            <tag id="96" value="75"/><!-- *** emotion **** -->
+            <tag id="31" value="70"/><!-- *** ritual **** -->
+            <tag id="10" value="65"/><!-- *** transformation **** -->
+            <tag id="11" value="63"/><!-- *** intention **** -->
+            <tag id="42" value="60"/><!-- *** performance **** -->
+            <tag id="25" value="55"/><!-- *** workshop **** -->
+            <tag id="65" value="50"/><!-- *** meaningful **** -->
+            <tag id="90" value="50"/><!--*** SF Dancers Works***-->
+            <tag id="72" value="40"/><!--*** Circle The Eart***-->
+
+            <cd id="19"/><!--*** circle the earth***-->
+        </media>
+
+
+        <!-- ************************************ Dance For Your Life ***************************************** -->
+
+        <media favorite="0" path="videos/A_DanceforyourLife_healing.mp4" thumb="pics/A_DanceforyourLife_healing.jpg"
+               type="m">
+            <fr><![CDATA[Face au SIDA]]></fr>
+            <en><![CDATA[Dealing with AIDS]]></en>
+            <tag id="81" value="98"/><!-- *** aids **** -->
+            <tag id="2" value="91"/><!-- *** life/art process **** -->
+            <tag id="30" value="90"/><!-- *** healing **** -->
+            <tag id="169" value="80"/><!-- *** body wisdom **** -->
+            <tag id="36" value="75"/><!-- *** physical **** -->
+            <tag id="22" value="70"/><!-- *** feeling **** -->
+            <tag id="10" value="65"/><!-- *** transformation **** -->
+            <tag id="3" value="60"/><!-- *** 3 levels **** -->
+            <tag id="63" value="57"/><!-- *** interdisciplinarity **** -->
+            <tag id="76" value="55"/><!-- *** psycho viz process **** -->
+            <tag id="31" value="50"/><!-- *** ritual **** -->
+            <cd id="18"/><!--*** steps***-->
+
+        </media>
+        <media favorite="0" path="videos/A_DanceforyourLife_self.mp4" thumb="pics/A_DanceforyourLife_self.jpg" type="m">
+            <fr><![CDATA[Danser son autoportrait]]></fr>
+            <en><![CDATA[A Self-Portrait Dance]]></en>
+            <tag id="2" value="98"/><!-- *** life/art process **** -->
+            <tag id="4" value="91"/><!-- *** 5 part process **** -->
+            <tag id="30" value="90"/><!-- *** healing **** -->
+            <tag id="36" value="85"/><!-- *** physical **** -->
+            <tag id="22" value="80"/><!-- *** feeling **** -->
+            <tag id="31" value="75"/><!-- *** ritual **** -->
+            <tag id="3" value="70"/><!-- *** 3 levels **** -->
+            <tag id="10" value="65"/><!-- *** transformation **** -->
+            <tag id="115" value="60"/><!-- *** dessiner **** -->
+            <tag id="18" value="55"/><!-- *** feedback process **** -->
+            <tag id="20" value="53"/><!-- *** witness **** -->
+            <tag id="19" value="50"/><!-- *** community **** -->
+            <tag id="35" value="45"/><!-- *** naming **** -->
+            <tag id="34" value="40"/><!-- *** body/mind **** -->
+            <cd id="18"/><!--*** steps***-->
+        </media>
+
+
+        <!-- ************************************ A living legend ***************************************** -->
+
+
+        <media favorite="0" path="videos/A_LivingLegend_Hdoubler_2.mp4" thumb="pics/A_LivingLegend_Hdoubler_2.jpg"
+               type="m">
+            <fr><![CDATA[L'héritage de M. H'Doubler]]></fr>
+            <en><![CDATA[H'Doubler's Legacy]]></en>
+            <tag id="66" value="100"/><!--*** art***-->
+            <tag id="51" value="90"/><!--*** creative process***-->
+            <tag id="74" value="80"/><!--*** H'Doubler***-->
+            <tag id="56" value="70"/><!--*** body as instrument***-->
+            <tag id="93" value="61"/><!--*** science***-->
+            <tag id="94" value="60"/><!--*** philosophy***-->
+            <tag id="27" value="50"/><!--*** influence***-->
+            <tag id="114" value="40"/><!--*** teaching***-->
+            <cd id="11"/><!--*** living legend***-->
+        </media>
+        <media favorite="0" path="videos/A_LivingLegend_Impro_2.mp4" thumb="pics/A_LivingLegend_Impro_2.jpg" type="m">
+            <fr><![CDATA[L'improvisation]]></fr>
+            <en><![CDATA[Improvisation]]></en>
+            <tag id="58" value="100"/><!--*** improvisation***-->
+            <tag id="89" value="90"/><!--*** break loose***-->
+            <tag id="129" value="80"/><!--*** culture***-->
+            <cd id="11"/><!--*** living legend***-->
+        </media>
+
+        <media favorite="0" path="videos/A_LivingLegend_LifeArtProcess.mp4"
+               thumb="pics/A_LivingLegend_LifeArtProcess.jpg" type="m">
+            <fr><![CDATA[Danser en famille]]></fr>
+            <en><![CDATA[Family Dance]]></en>
+            <tag id="84" value="100"/><!--*** family***-->
+            <tag id="2" value="97"/><!--*** life art process***-->
+            <tag id="65" value="80"/><!--*** meaningful***-->
+            <tag id="35" value="70"/><!--*** naming***-->
+            <tag id="22" value="60"/><!--*** feeling***-->
+            <tag id="178" value="45"/><!--*** langage***-->
+            <cd id="11"/><!--*** living legend***-->
+        </media>
+
+        <media favorite="0" path="videos/A_LivingLegend_LifeDance.mp4" thumb="pics/A_LivingLegend_LifeDance.jpg"
+               type="m">
+            <fr><![CDATA[La vie & la danse]]></fr>
+            <en><![CDATA[Life & Dance]]></en>
+            <tag id="24" value="100"/><!--*** global approach***-->
+            <tag id="5" value="90"/><!--*** space***-->
+            <tag id="65" value="80"/><!--*** meaningful***-->
+            <tag id="160" value="70"/><!--*** roots***-->
+            <tag id="36" value="60"/><!--*** physical***-->
+            <tag id="126" value="50"/><!--*** relating to a bigger totality***-->
+            <tag id="2" value="40"/><!--*** life art process***-->
+            <tag id="132" value="30"/><!--*** archetypes***-->
+            <tag id="175" value="20"/><!--*** up down***-->
+            <cd id="11"/><!--*** living legend***-->
+        </media>
+
+        <media favorite="0" path="videos/A_LivingLegend_ModernDance.mp4" thumb="pics/A_LivingLegend_ModernDance.jpg"
+               type="m">
+            <fr><![CDATA[Rompre avec la modern dance]]></fr>
+            <en><![CDATA[Breaking Loose from Modern Dance]]></en>
+            <tag id="89" value="100"/><!--*** break loose***-->
+            <tag id="126" value="90"/><!--*** relating to a bigger totality***-->
+            <tag id="54" value="80"/><!--*** modern dance***-->
+            <tag id="160" value="70"/><!--*** roots***-->
+            <tag id="129" value="60"/><!--*** culture***-->
+            <tag id="173" value="50"/><!--*** universal***-->
+            <tag id="182" value="45"/><!--*** Four In the Afternoon***-->
+            <cd id="11"/><!--*** living legend***-->
+        </media>
+
+        <media favorite="0" path="videos/A_LivingLegend_ThePomos.mp4" thumb="pics/A_LivingLegend_ThePomos.jpg" type="m">
+            <fr><![CDATA[Chez les Indiens Pomo]]></fr>
+            <en><![CDATA[With the Pomo Indians]]></en>
+            <tag id="91" value="100"/><!--*** pomo indians***-->
+            <tag id="19" value="90"/><!--*** community***-->
+            <tag id="10" value="80"/><!--*** transformation***-->
+            <tag id="65" value="70"/><!--***meaningful***-->
+            <tag id="92" value="60"/><!--*** spiritual***-->
+            <tag id="156" value="50"/><!--*** ethnic***-->
+            <cd id="11"/><!--*** living legend***-->
+        </media>
+
+
+        <!-- ************************************ Inner Landscape ***************************************** -->
+        <media favorite="0" path="videos/A_InnerLandsc_AfterCancer_LifeArt.mp4"
+               thumb="pics/A_InnerLandsc_AfterCancer_LifeArt.jpg" type="m">
+            <fr><![CDATA[Après un cancer]]></fr>
+            <en><![CDATA[After Cancer]]></en>
+            <tag id="2" value="91"/><!--*** life art process***-->
+            <tag id="65" value="90"/><!--*** meaningful***-->
+            <tag id="30" value="80"/><!--*** healing***-->
+            <tag id="64" value="70"/><!--*** peace***-->
+            <tag id="129" value="65"/><!--*** culture***-->
+            <tag id="24" value="60"/><!--*** global approach***-->
+            <tag id="10" value="40"/><!--*** transformation***-->
+            <tag id="77" value="30"/><!--*** cancer***-->
+            <cd id="8"/><!--*** innerlandscape***-->
+        </media>
+
+        <media favorite="0" path="videos/A_InnerLandsc_BreakingBarriers_2.mp4"
+               thumb="pics/A_InnerLandsc_BreakingBarriers_2.jpg" type="m">
+            <fr><![CDATA[Le public & les limites]]></fr>
+            <en><![CDATA[Audience & Boundaries]]></en>
+            <tag id="164" value="100"/><!--*** audience***-->
+            <tag id="89" value="90"/><!--*** break loose***-->
+            <tag id="5" value="80"/><!--*** space***-->
+            <tag id="68" value="70"/><!--*** Espozione***-->
+            <tag id="69" value="65"/><!--*** Parade & Change***-->
+            <tag id="18" value="50"/><!--*** feedback process***-->
+            <tag id="129" value="40"/><!--*** culture***-->
+            <cd id="8"/><!--*** innerlandscape***-->
+        </media>
+
+
+        <media favorite="0" path="videos/A_InnerLandsc_DanceAids.mp4" thumb="pics/A_InnerLandsc_DanceAids.jpg" type="m">
+            <fr><![CDATA[Vivre & danser avec le SIDA]]></fr>
+            <en><![CDATA[Living & Dancing with AIDS]]></en>
+            <tag id="10" value="100"/><!--*** transformation***-->
+            <tag id="81" value="96"/><!--*** aids***-->
+            <tag id="133" value="95"/><!--*** home***-->
+            <tag id="65" value="80"/><!--*** meaningful***-->
+            <tag id="30" value="70"/><!--*** healing***-->
+            <tag id="2" value="60"/><!--*** life art process***-->
+            <tag id="62" value="40"/><!--*** transe***-->
+            <cd id="8"/><!--*** innerlandscape***-->
+        </media>
+
+        <media favorite="0" path="videos/A_InnerLandsc_DanceEnvironment.mp4"
+               thumb="pics/A_InnerLandsc_DanceEnvironment.jpg" type="m">
+            <fr><![CDATA[Danser dans la nature]]></fr>
+            <en><![CDATA[Dancing in Nature]]></en>
+            <tag id="85" value="95"/><!--*** nature***-->
+            <tag id="83" value="93"/><!--*** sensorial***-->
+            <tag id="155" value="90"/><!--*** environment***-->
+            <tag id="80" value="80"/><!--*** dancedeck***-->
+            <cd id="8"/><!--*** innerlandscape***-->
+        </media>
+
+
+        <media favorite="0" path="videos/A_InnerLandsc_Hangar_BreakingBarriers.mp4"
+               thumb="pics/A_InnerLandsc_Hangar_BreakingBarriers.jpg" type="m">
+            <fr><![CDATA[Briser les barrières]]></fr>
+            <en><![CDATA[Breaking Barriers]]></en>
+            <tag id="89" value="100"/><!--*** break loose***-->
+            <tag id="51" value="90"/><!--*** creative process***-->
+            <tag id="5" value="85"/><!--*** space***-->
+            <tag id="164" value="80"/><!--*** audience***-->
+            <tag id="66" value="70"/><!--*** art***-->
+            <tag id="63" value="60"/><!--*** pluridisciplinarity***-->
+            <tag id="26" value="50"/><!--*** laboratory***-->
+            <tag id="129" value="40"/><!--*** culture***-->
+            <tag id="155" value="35"/><!--*** environment***-->
+            <cd id="8"/><!--*** innerlandscape***-->
+
+        </media>
+
+        <media favorite="0" path="videos/A_InnerLandsc_JewishCult_Dance.mp4"
+               thumb="pics/A_InnerLandsc_JewishCult_Dance.jpg" type="m">
+            <fr><![CDATA[Danser dans la culture juive]]></fr>
+            <en><![CDATA[Dancing in Jewish Culture]]></en>
+            <tag id="84" value="100"/><!--*** family***-->
+            <tag id="27" value="90"/><!--*** influence***-->
+            <tag id="160" value="80"/><!--*** roots***-->
+            <tag id="102" value="30"/><!--*** collective body***-->
+            <cd id="8"/><!--*** innerlandscape***-->
+        </media>
+
+        <media favorite="0" path="videos/A_InnerLandsc_Larry_ArtBauhaus.mp4"
+               thumb="pics/A_InnerLandsc_Larry_ArtBauhaus.jpg" type="m">
+            <fr><![CDATA[Le Bauhaus]]></fr>
+            <en><![CDATA[The Bauhaus]]></en>
+            <tag id="53" value="100"/><!--*** bauhaus***-->
+            <tag id="75" value="90"/><!--*** larry***-->
+            <tag id="66" value="85"/><!--*** art***-->
+            <tag id="24" value="80"/><!--*** global approach***-->
+            <tag id="63" value="70"/><!--*** pluridisciplinarity***-->
+            <tag id="27" value="60"/><!--*** influence***-->
+            <cd id="8"/><!--*** innerlandscape***-->
+        </media>
+
+        <media favorite="0" path="videos/A_InnerLandsc_Larry_community.mp4"
+               thumb="pics/A_InnerLandsc_Larry_community.jpg" type="m">
+            <fr><![CDATA[Le kibboutz]]></fr>
+            <en><![CDATA[The Kibbutz]]></en>
+            <tag id="19" value="100"/><!--*** community***-->
+            <tag id="67" value="90"/><!--*** participation***-->
+            <tag id="75" value="80"/><!--*** larry***-->
+            <tag id="27" value="70"/>`<!--*** influence***-->
+            <cd id="8"/><!--*** innerlandscape***-->
+        </media>
+
+
+        <media favorite="0" path="videos/A_InnerLandsc_Larry_Nature.mp4" thumb="pics/A_InnerLandsc_Larry_Nature.jpg"
+               type="m">
+            <fr><![CDATA[Travailler avec la nature]]></fr>
+            <en><![CDATA[Working with Nature]]></en>
+            <tag id="85" value="96"/><!--*** nature***-->
+            <tag id="75" value="98"/><!--*** larry***-->
+            <tag id="51" value="90"/><!--*** creative process***-->
+            <tag id="27" value="70"/><!--*** influence***-->
+            <tag id="178" value="45"/><!--*** langage***-->
+
+            <cd id="8"/><!--*** innerlandscape***-->
+        </media>
+
+
+        <!-- ************************************ Larry & Anna ***************************************** -->
+        <media favorite="0" path="videos/A_LarryAnna_artnature.mp4" thumb="pics/A_LarryAnna_artnature.jpg" type="m">
+            <fr><![CDATA[L'art & la nature]]></fr>
+            <en><![CDATA[Art & Nature]]></en>
+            <tag id="66" value="100"/><!--*** art***-->
+            <tag id="85" value="93"/><!--*** Nature***-->
+            <tag id="75" value="90"/><!--*** larry***-->
+            <tag id="51" value="80"/><!--*** creative process***-->
+            <tag id="155" value="70"/><!--*** environment***-->
+            <tag id="27" value="60"/><!--*** influence***-->
+            <cd id="10"/><!--*** Larry exhibit***-->
+
+        </media>
+        <media favorite="0" path="videos/A_LarryAnna_ecologyofform.mp4" thumb="pics/A_LarryAnna_ecologyofform.jpg"
+               type="m">
+            <fr><![CDATA[L'écologie de la forme]]></fr>
+            <en><![CDATA[The Ecology of Form]]></en>
+            <tag id="66" value="100"/><!--*** art***-->
+            <tag id="85" value="92"/><!--*** Nature***-->
+            <tag id="75" value="80"/><!--*** larry***-->
+            <tag id="55" value="70"/><!--*** generate creativity***-->
+            <tag id="51" value="70"/><!--*** creative process***-->
+            <tag id="27" value="60"/><!--*** influence***-->
+            <cd id="10"/><!--*** Larry exhibit***-->
+        </media>
+        <media favorite="0" path="videos/A_LarryAnna_movement.mp4" thumb="pics/A_LarryAnna_movement.jpg" type="m">
+            <fr><![CDATA[Mouvement & chorégraphie]]></fr>
+            <en><![CDATA[Movement & Choreography]]></en>
+            <tag id="5" value="100"/><!--*** space***-->
+            <tag id="57" value="90"/><!--*** choreography***-->
+            <tag id="75" value="80"/><!--*** larry***-->
+            <tag id="125" value="70"/><!--*** social issue***-->
+            <tag id="18" value="60"/><!--*** feedback process***-->
+            <tag id="112" value="50"/><!--*** spaces: positive negative***-->
+            <tag id="27" value="40"/><!--*** influence***-->
+            <cd id="10"/><!--*** Larry exhibit***-->
+        </media>
+        <media favorite="0" path="videos/A_LarryAnna_networking.mp4" thumb="pics/A_LarryAnna_networking.jpg" type="m">
+            <fr><![CDATA[La mise en réseau]]></fr>
+            <en><![CDATA[Networking]]></en>
+            <tag id="5" value="100"/><!--*** space***-->
+            <tag id="126" value="90"/><!--*** relating to a bigger totality***-->
+            <tag id="51" value="80"/><!--*** creative process***-->
+            <tag id="75" value="70"/><!--*** larry***-->
+            <tag id="24" value="60"/><!--*** global approach***-->
+            <tag id="27" value="50"/><!--*** influence***-->
+            <cd id="10"/><!--*** Larry exhibit***-->
+        </media>
+        <media favorite="0" path="videos/A_LarryAnna_scoreworkshop.mp4" thumb="pics/A_LarryAnna_scoreworkshop.jpg"
+               type="m">
+            <fr><![CDATA[Ateliers & partitions]]></fr>
+            <en><![CDATA[Workshops & scoring]]></en>
+            <tag id="1" value="100"/><!--*** rsvp**-->
+            <tag id="5" value="90"/><!--*** space***-->
+            <tag id="75" value="80"/><!--*** larry***-->
+            <tag id="41" value="75"/><!--*** score***-->
+            <tag id="25" value="70"/><!--*** workshop***-->
+            <tag id="18" value="60"/><!--*** feedback process***-->
+            <tag id="67" value="57"/><!--*** participation***-->
+            <tag id="19" value="55"/><!--*** community***-->
+            <tag id="112" value="50"/><!--*** spaces: positive negative***-->
+            <tag id="11" value="45"/><!--*** intention***-->
+            <tag id="27" value="40"/><!--*** influence***-->
+            <cd id="10"/><!--*** Larry exhibit***-->
+        </media>
+
+        <!-- ************************************ Living Myth And Rituals CTE ***************************************** -->
+        <media favorite="0" path="videos/A_mythsANDrituals_CTE_theory.mp4" thumb="pics/A_mythsANDrituals_CTE_theory.jpg"
+               type="m">
+            <fr><![CDATA[Mythes & rituels]]></fr>
+            <en><![CDATA[Myths & Rituals]]></en>
+            <tag id="44" value="100"/><!--*** myth***-->
+            <tag id="31" value="90"/><!--*** rituals***-->
+            <tag id="129" value="80"/><!--*** culture***-->
+            <tag id="72" value="60"/><!--*** Circle the earth***-->
+            <tag id="92" value="50"/><!--*** spirituale***-->
+            <tag id="85" value="40"/><!--*** nature***-->
+            <tag id="126" value="39"/><!--*** relating to a bigger totality***-->
+            <tag id="133" value="38"/><!--*** home***-->
+            <tag id="24" value="37"/><!--*** global approach***-->
+            <tag id="19" value="36"/><!--*** community***-->
+            <cd id="17"/><!--*** Living myths & rituals***-->
+        </media>
+
+        <media favorite="0" path="videos/A_mythsANDrituals_CTE_workshop.mp4"
+               thumb="pics/A_mythsANDrituals_CTE_workshop.jpg" type="m">
+            <fr><![CDATA[Un atelier de mythes & de rituels]]></fr>
+            <en><![CDATA[Myths & Rituals Workshop]]></en>
+            <tag id="25" value="95"/><!--*** workshop***-->
+            <tag id="44" value="90"/><!--*** myth***-->
+            <tag id="31" value="80"/><!--*** rituals***-->
+            <tag id="155" value="70"/><!--*** environment***-->
+            <tag id="75" value="60"/><!--*** larry***-->
+            <tag id="72" value="50"/><!--*** Circle the earth***-->
+            <tag id="85" value="45"/><!--*** nature***-->
+            <tag id="126" value="40"/><!--*** relating to a bigger totality***-->
+            <tag id="24" value="39"/><!--*** global approach***-->
+            <tag id="19" value="38"/><!--*** community***-->
+            <cd id="17"/><!--*** Living myths & rituals***-->
+        </media>
+
+
+        <!-- ************************************ Positive Motion ***************************************** -->
+
+
+        <media favorite="0" path="videos/A_PositiveMotion_poem.mp4" thumb="pics/A_PositiveMotion_poem.jpg" type="m">
+            <fr><![CDATA[Un caillou dans la chaussure]]></fr>
+            <en><![CDATA[A rock in my Shoe]]></en>
+            <tag id="81" value="100"/><!--*** aids***-->
+            <tag id="35" value="80"/><!--*** naming***-->
+            <tag id="106" value="70"/><!--*** floor***-->
+            <tag id="47" value="60"/><!--*** partners***-->
+            <cd id="25"/><!--*** positive motion***-->
+        </media>
+        <media favorite="0" path="videos/A_PositiveMotion_movefeeling.mp4" thumb="pics/A_PositiveMotion_movefeeling.jpg"
+               type="m">
+            <fr><![CDATA[La voix de l'émotion]]></fr>
+            <en><![CDATA[The Voice of Emotion]]></en>
+            <tag id="81" value="97"/><!--*** aids***-->
+            <tag id="2" value="90"/><!--*** life art process***-->
+            <tag id="22" value="80"/><!--*** feeling***-->
+            <tag id="8" value="77"/><!--*** voice***-->
+            <tag id="96" value="85"/><!--*** emotion***-->
+            <tag id="10" value="70"/><!--*** transformation***-->
+            <tag id="18" value="60"/><!--*** feedback process***-->
+            <tag id="35" value="55"/><!--*** naming***-->
+            <tag id="37" value="50"/><!--*** valuaction***-->
+            <tag id="34" value="40"/><!--***body mind***-->
+            <tag id="65" value="30"/><!--*** meaningful***-->
+            <tag id="178" value="25"/><!--*** langage***-->
+            <tag id="4" value="20"/><!--*** 5 part process***-->
+            <tag id="106" value="5"/><!--*** floor***-->
+            <cd id="25"/><!--*** positive motion***-->
+
+        </media>
+
+
+        <!-- ************************************ Returning Home ***************************************** -->
+        <media favorite="0" path="videos/A_ReturningHome_NatureIntro.mp4" thumb="pics/A_ReturningHome_NatureIntro.jpg"
+               type="m">
+            <fr><![CDATA[Avec la nature]]></fr>
+            <en><![CDATA[With Nature]]></en>
+            <tag id="85" value="100"/><!--*** Nature ***-->
+            <tag id="22" value="90"/><!--*** feeling***-->
+            <tag id="111" value="80"/><!--*** awareness***-->
+            <tag id="133" value="70"/><!--*** home***-->
+            <tag id="129" value="60"/><!--*** culture***-->
+            <cd id="12"/><!--***Returning Home***-->
+        </media>
+
+        <media favorite="0" path="videos/A_ReturningHome_NatureCancer.mp4" thumb="pics/A_ReturningHome_NatureCancer.jpg"
+               type="m">
+            <fr><![CDATA[Cancer & nature]]></fr>
+            <en><![CDATA[Cancer & Nature]]></en>
+            <tag id="77" value="100"/><!--***cancer***-->
+            <tag id="85" value="91"/><!--***nature***-->
+            <tag id="119" value="80"/><!--***darkside***-->
+            <tag id="59" value="70"/><!--***judgement***-->
+            <cd id="12"/><!--***Returning Home***-->
+
+        </media>
+
+        <media favorite="0" path="videos/A_ReturningHome_Impro.mp4" thumb="pics/A_ReturningHome_Impro.jpg" type="m">
+            <fr><![CDATA[Danser avec la nature]]></fr>
+            <en><![CDATA[Dancing with Nature]]></en>
+            <tag id="85" value="97"/><!--***nature***-->
+            <tag id="126" value="90"/><!--***relating to a bigger totality***-->
+            <tag id="111" value="80"/><!--*** awareness***-->
+            <tag id="155" value="75"/><!--***environment***-->
+            <tag id="58" value="70"/><!--***improv***-->
+            <tag id="7" value="65"/><!--***ages***-->
+            <tag id="18" value="60"/><!--***feedback process***-->
+            <tag id="83" value="50"/><!--***sensorial***-->
+            <tag id="55" value="40"/><!--***generate creativity***-->
+            <tag id="26" value="36"/><!--***laboratory***-->
+            <tag id="133" value="35"/><!--*** home***-->
+            <tag id="40" value="37"/><!--***ressources***-->
+            <tag id="15" value="34"/><!--***skin***-->
+            <cd id="12"/><!--***Returning Home***-->
+        </media>
+
+
+        <!-- ******* Right on ******* -->
+
+        <media favorite="0" path="videos/A_RightOn_Transf.mp4" thumb="pics/A_RightOn_Transf.jpg" type="m">
+            <fr><![CDATA[Transformation]]></fr>
+            <en><![CDATA[Transformation]]></en>
+            <tag id="10" value="100"/><!-- *** transformation**** -->
+            <tag id="169" value="90"/><!-- *** body knowledge **** -->
+            <tag id="36" value="80"/><!-- *** physical **** -->
+            <tag id="13" value="80"/><!-- *** touch **** -->
+            <tag id="47" value="70"/><!-- *** partner relationship **** -->
+            <tag id="39" value="60"/><!-- ***senses **** -->
+            <tag id="178" value="55"/><!-- ***langage **** -->
+            <tag id="70" value="50"/><!-- *** ceremony of us **** -->
+            <tag id="90" value="50"/><!--*** SF Dancers Works***-->
+
+            <cd id="26"/><!--*** right on***-->
+        </media>
+
+
+    </medias>
+
+    <!--
+******************************************************************************
+******************************************************************************
+								I N D E X
+******************************************************************************
+******************************************************************************
+-->
+
+    <index>
+
+        <tag id="1">
+            <fr><![CDATA[Cycles RSVP]]></fr>
+            <en><![CDATA[RSVP Cycles]]></en>
+        </tag>
+
+        <tag id="2">
+            <fr><![CDATA[Processus Art/Vie]]></fr>
+            <en><![CDATA[Life/Art Process]]></en>
+        </tag>
+
+        <tag id="3">
+            <fr><![CDATA[Trois Niveaux de conscience]]></fr>
+            <en><![CDATA[Three Levels of Awareness]]></en>
+        </tag>
+
+        <tag id="4">
+            <fr><![CDATA[Processus en cinq parties]]></fr>
+            <en><![CDATA[Five Part Process]]></en>
+        </tag>
+
+        <tag id="5">
+            <fr><![CDATA[espace]]></fr>
+            <en><![CDATA[space]]></en>
+        </tag>
+
+        <tag id="6">
+            <fr><![CDATA[pieds]]></fr>
+            <en><![CDATA[feet]]></en>
+        </tag>
+
+        <tag id="7">
+            <fr><![CDATA[âges]]></fr>
+            <en><![CDATA[ages]]></en>
+        </tag>
+
+        <tag id="8">
+            <fr><![CDATA[voix]]></fr>
+            <en><![CDATA[voice]]></en>
+        </tag>
+
+        <tag id="9">
+            <fr><![CDATA[vibration]]></fr>
+            <en><![CDATA[vibration]]></en>
+        </tag>
+
+        <tag id="10">
+            <fr><![CDATA[transformation]]></fr>
+            <en><![CDATA[transformation]]></en>
+        </tag>
+
+        <tag id="11">
+            <fr><![CDATA[intention]]></fr>
+            <en><![CDATA[intention]]></en>
+        </tag>
+
+        <tag id="12">
+            <fr><![CDATA[yeux]]></fr>
+            <en><![CDATA[eyes]]></en>
+        </tag>
+
+        <tag id="13">
+            <fr><![CDATA[toucher]]></fr>
+            <en><![CDATA[touch]]></en>
+        </tag>
+
+        <tag id="14">
+            <fr><![CDATA[marcher]]></fr>
+            <en><![CDATA[walking]]></en>
+        </tag>
+
+        <tag id="15">
+            <fr><![CDATA[peau]]></fr>
+            <en><![CDATA[skin]]></en>
+        </tag>
+
+        <tag id="16">
+            <fr><![CDATA[polarités]]></fr>
+            <en><![CDATA[polarities]]></en>
+        </tag>
+
+        <tag id="17">
+            <fr><![CDATA[courir]]></fr>
+            <en><![CDATA[running]]></en>
+        </tag>
+
+        <tag id="18">
+            <fr><![CDATA[Processus rétroactif]]></fr>
+            <en><![CDATA[Feedback Process]]></en>
+        </tag>
+
+        <tag id="19">
+            <fr><![CDATA[communauté]]></fr>
+            <en><![CDATA[community]]></en>
+        </tag>
+
+        <tag id="20">
+            <fr><![CDATA[témoin]]></fr>
+            <en><![CDATA[witness]]></en>
+        </tag>
+
+        <tag id="21">
+            <fr><![CDATA[visualiser]]></fr>
+            <en><![CDATA[imaging]]></en>
+        </tag>
+
+        <tag id="22">
+            <fr><![CDATA[ressenti]]></fr>
+            <en><![CDATA[feeling]]></en>
+        </tag>
+
+        <tag id="24">
+            <fr><![CDATA[approche globale]]></fr>
+            <en><![CDATA[global approach]]></en>
+        </tag>
+
+        <tag id="25">
+            <fr><![CDATA[atelier]]></fr>
+            <en><![CDATA[workshop]]></en>
+        </tag>
+
+        <tag id="26">
+            <fr><![CDATA[laboratoire]]></fr>
+            <en><![CDATA[laboratory]]></en>
+        </tag>
+
+        <tag id="27">
+            <fr><![CDATA[influences]]></fr>
+            <en><![CDATA[influences]]></en>
+        </tag>
+
+        <tag id="28">
+            <fr><![CDATA[anatomie]]></fr>
+            <en><![CDATA[anatomy]]></en>
+        </tag>
+
+        <tag id="29">
+            <fr><![CDATA[compétences]]></fr>
+            <en><![CDATA[skills]]></en>
+        </tag>
+
+        <tag id="30">
+            <fr><![CDATA[guérir]]></fr>
+            <en><![CDATA[healing]]></en>
+        </tag>
+
+        <tag id="31">
+            <fr><![CDATA[rituel]]></fr>
+            <en><![CDATA[ritual]]></en>
+        </tag>
+
+        <tag id="32">
+            <fr><![CDATA[de Vinci, Léonard]]></fr>
+            <en><![CDATA[da Vinci, Leonardo]]></en>
+        </tag>
+
+        <tag id="33">
+            <fr><![CDATA[feuilles de route]]></fr>
+            <en><![CDATA[roadmaps]]></en>
+        </tag>
+
+        <tag id="34">
+            <fr><![CDATA[corps & esprit]]></fr>
+            <en><![CDATA[body & mind]]></en>
+        </tag>
+
+        <tag id="35">
+            <fr><![CDATA[nommer]]></fr>
+            <en><![CDATA[naming]]></en>
+        </tag>
+        <tag id="36">
+            <fr><![CDATA[physique]]></fr>
+            <en><![CDATA[physical]]></en>
+        </tag>
+        <tag id="37">
+            <fr><![CDATA[valuaction]]></fr>
+            <en><![CDATA[Valuaction]]></en>
+        </tag>
+        <tag id="38">
+            <fr><![CDATA[imagination]]></fr>
+            <en><![CDATA[imagination]]></en>
+        </tag>
+        <tag id="39">
+            <fr><![CDATA[sens]]></fr>
+            <en><![CDATA[senses]]></en>
+        </tag>
+        <tag id="40">
+            <fr><![CDATA[ressources]]></fr>
+            <en><![CDATA[resources]]></en>
+        </tag>
+        <tag id="41">
+            <fr><![CDATA[partition]]></fr>
+            <en><![CDATA[score]]></en>
+        </tag>
+        <tag id="42">
+            <fr><![CDATA[exécution]]></fr>
+            <en><![CDATA[performance]]></en>
+        </tag>
+        <tag id="43">
+            <fr><![CDATA[diversité]]></fr>
+            <en><![CDATA[diversity]]></en>
+        </tag>
+        <tag id="44">
+            <fr><![CDATA[mythe]]></fr>
+            <en><![CDATA[myth]]></en>
+        </tag>
+        <tag id="45">
+            <fr><![CDATA[son]]></fr>
+            <en><![CDATA[sound]]></en>
+        </tag>
+        <tag id="46">
+            <fr><![CDATA[relâchement]]></fr>
+            <en><![CDATA[release]]></en>
+        </tag>
+        <tag id="47">
+            <fr><![CDATA[partenaires]]></fr>
+            <en><![CDATA[partners]]></en>
+        </tag>
+        <tag id="48">
+            <fr><![CDATA[centre du corps]]></fr>
+            <en><![CDATA[center of the body]]></en>
+        </tag>
+        <tag id="49">
+            <fr><![CDATA[force]]></fr>
+            <en><![CDATA[force]]></en>
+        </tag>
+        <tag id="50">
+            <fr><![CDATA[pesanteur]]></fr>
+            <en><![CDATA[gravity]]></en>
+        </tag>
+        <tag id="51">
+            <fr><![CDATA[processus créatif]]></fr>
+            <en><![CDATA[creative process]]></en>
+        </tag>
+        <tag id="52">
+            <fr><![CDATA[apprendre]]></fr>
+            <en><![CDATA[learn]]></en>
+        </tag>
+        <tag id="53">
+            <fr><![CDATA[Bauhaus]]></fr>
+            <en><![CDATA[Bauhaus]]></en>
+        </tag>
+        <tag id="54">
+            <fr><![CDATA[modern dance]]></fr>
+            <en><![CDATA[modern dance]]></en>
+        </tag>
+        <tag id="55">
+            <fr><![CDATA[éveiller la créativité]]></fr>
+            <en><![CDATA[generating creativity]]></en>
+        </tag>
+        <tag id="56">
+            <fr><![CDATA[corps comme instrument]]></fr>
+            <en><![CDATA[body as instrument]]></en>
+        </tag>
+        <tag id="57">
+            <fr><![CDATA[chorégraphie]]></fr>
+            <en><![CDATA[choreography]]></en>
+        </tag>
+        <tag id="58">
+            <fr><![CDATA[improvisation]]></fr>
+            <en><![CDATA[improvisation]]></en>
+        </tag>
+        <tag id="59">
+            <fr><![CDATA[jugement]]></fr>
+            <en><![CDATA[judgement]]></en>
+        </tag>
+        <tag id="60">
+            <fr><![CDATA[thérapie]]></fr>
+            <en><![CDATA[therapy]]></en>
+        </tag>
+        <tag id="61">
+            <fr><![CDATA[cercle]]></fr>
+            <en><![CDATA[circle]]></en>
+        </tag>
+        <tag id="62">
+            <fr><![CDATA[transe]]></fr>
+            <en><![CDATA[trance]]></en>
+        </tag>
+        <tag id="63">
+            <fr><![CDATA[interdisciplinarité]]></fr>
+            <en><![CDATA[interdisciplinarity]]></en>
+        </tag>
+        <tag id="64">
+            <fr><![CDATA[paix]]></fr>
+            <en><![CDATA[peace]]></en>
+        </tag>
+        <tag id="65">
+            <fr><![CDATA[signifiant]]></fr>
+            <en><![CDATA[meaningful]]></en>
+        </tag>
+        <tag id="66">
+            <fr><![CDATA[art]]></fr>
+            <en><![CDATA[art]]></en>
+        </tag>
+
+        <tag id="67">
+            <fr><![CDATA[participation]]></fr>
+            <en><![CDATA[participation]]></en>
+        </tag>
+
+        <tag id="68">
+            <fr><![CDATA[<i>Esposizione</i>]]></fr>
+            <en><![CDATA[<i>Esposizione</i>]]></en>
+        </tag>
+
+        <tag id="70">
+            <fr><![CDATA[<i>Ceremony Of Us</i>]]></fr>
+            <en><![CDATA[<i>Ceremony Of Us</i>]]></en>
+        </tag>
+        <tag id="71">
+            <fr><![CDATA[<i>Citydance</i>]]></fr>
+            <en><![CDATA[<i>Citydance</i>]]></en>
+        </tag>
+        <tag id="72">
+            <fr><![CDATA[<i>Circle The Earth</i>]]></fr>
+            <en><![CDATA[<i>Circle The Earth</i>]]></en>
+        </tag>
+        <tag id="73">
+            <fr><![CDATA[<i>Planetary Dance</i>]]></fr>
+            <en><![CDATA[<i>Planetary Dance</i>]]></en>
+        </tag>
+        <tag id="74">
+            <fr><![CDATA[H'Doubler, Margaret]]></fr>
+            <en><![CDATA[H'Doubler, Margaret]]></en>
+        </tag>
+        <tag id="75">
+            <fr><![CDATA[Halprin, Lawrence]]></fr>
+            <en><![CDATA[Halprin, Lawrence]]></en>
+        </tag>
+
+        <tag id="76">
+            <fr><![CDATA[Processus de visualisation psycho-kinétique]]></fr>
+            <en><![CDATA[PsychoKinetic Visualization Process]]></en>
+        </tag>
+        <tag id="77">
+            <fr><![CDATA[cancer]]></fr>
+            <en><![CDATA[cancer]]></en>
+        </tag>
+        <tag id="78">
+            <fr><![CDATA[points communs]]></fr>
+            <en><![CDATA[commonalities]]></en>
+        </tag>
+        <tag id="79">
+            <fr><![CDATA[enfants]]></fr>
+            <en><![CDATA[children]]></en>
+        </tag>
+        <tag id="80">
+            <fr><![CDATA[plateau de danse]]></fr>
+            <en><![CDATA[dance deck]]></en>
+        </tag>
+        <tag id="81">
+            <fr><![CDATA[SIDA]]></fr>
+            <en><![CDATA[AIDS]]></en>
+        </tag>
+        <tag id="82">
+            <fr><![CDATA[sens kinesthésique]]></fr>
+            <en><![CDATA[kinesthesic sense]]></en>
+        </tag>
+        <tag id="83">
+            <fr><![CDATA[sensoriel]]></fr>
+            <en><![CDATA[sensorial]]></en>
+        </tag>
+        <tag id="84">
+            <fr><![CDATA[famille]]></fr>
+            <en><![CDATA[family]]></en>
+        </tag>
+
+        <tag id="85">
+            <fr><![CDATA[nature]]></fr>
+            <en><![CDATA[nature]]></en>
+        </tag>
+        <tag id="86">
+            <fr><![CDATA[Perls, Fritz]]></fr>
+            <en><![CDATA[Perls, Fritz]]></en>
+        </tag>
+        <tag id="87">
+            <fr><![CDATA[Gestalt-thérapie]]></fr>
+            <en><![CDATA[gestalt therapy]]></en>
+        </tag>
+        <tag id="88">
+            <fr><![CDATA[Rituel de mouvement]]></fr>
+            <en><![CDATA[Movement Ritual]]></en>
+        </tag>
+        <tag id="89">
+            <fr><![CDATA[rompre]]></fr>
+            <en><![CDATA[breaking loose]]></en>
+        </tag>
+        <tag id="90">
+            <fr><![CDATA[San Francisco Dancers' Workshop]]></fr>
+            <en><![CDATA[San Francisco Dancers' Workshop]]></en>
+        </tag>
+        <tag id="91">
+            <fr><![CDATA[Indiens]]></fr>
+            <en><![CDATA[Indians]]></en>
+        </tag>
+        <tag id="92">
+            <fr><![CDATA[spirituel]]></fr>
+            <en><![CDATA[spiritual]]></en>
+        </tag>
+        <tag id="93">
+            <fr><![CDATA[science]]></fr>
+            <en><![CDATA[science]]></en>
+        </tag>
+
+        <tag id="94">
+            <fr><![CDATA[philosophie]]></fr>
+            <en><![CDATA[philosophy]]></en>
+        </tag>
+        <tag id="95">
+            <fr><![CDATA[mère de tous les arts]]></fr>
+            <en><![CDATA[mother of all arts]]></en>
+        </tag>
+        <tag id="96">
+            <fr><![CDATA[émotion]]></fr>
+            <en><![CDATA[emotion]]></en>
+        </tag>
+        <tag id="97">
+            <fr><![CDATA[s'installer en Californie]]></fr>
+            <en><![CDATA[moving to California]]></en>
+        </tag>
+
+        <tag id="99">
+            <fr><![CDATA[<i>Apartment 6</i>]]></fr>
+            <en><![CDATA[<i>Apartment 6</i>]]></en>
+        </tag>
+        <tag id="100">
+            <fr><![CDATA[Watts]]></fr>
+            <en><![CDATA[Watts]]></en>
+        </tag>
+        <tag id="101">
+            <fr><![CDATA[pulsation]]></fr>
+            <en><![CDATA[pulse]]></en>
+        </tag>
+        <tag id="102">
+            <fr><![CDATA[corps collectif]]></fr>
+            <en><![CDATA[collective body]]></en>
+        </tag>
+
+        <tag id="104">
+            <fr><![CDATA[spirale]]></fr>
+            <en><![CDATA[spiral]]></en>
+        </tag>
+        <tag id="105">
+            <fr><![CDATA[respiration]]></fr>
+            <en><![CDATA[breath]]></en>
+        </tag>
+        <tag id="106">
+            <fr><![CDATA[sol]]></fr>
+            <en><![CDATA[floor]]></en>
+        </tag>
+        <tag id="107">
+            <fr><![CDATA[contraction]]></fr>
+            <en><![CDATA[contraction]]></en>
+        </tag>
+        <tag id="108">
+            <fr><![CDATA[confiance]]></fr>
+            <en><![CDATA[trust]]></en>
+        </tag>
+        <tag id="109">
+            <fr><![CDATA[minorité]]></fr>
+            <en><![CDATA[minority]]></en>
+        </tag>
+        <tag id="110">
+            <fr><![CDATA[origine du mouvement]]></fr>
+            <en><![CDATA[movement initiation]]></en>
+        </tag>
+        <tag id="111">
+            <fr><![CDATA[conscience]]></fr>
+            <en><![CDATA[awareness]]></en>
+        </tag>
+        <tag id="112">
+            <fr><![CDATA[espaces : positif & négatif]]></fr>
+            <en><![CDATA[spaces: positive & negative]]></en>
+        </tag>
+        <tag id="113">
+            <fr><![CDATA[polarités : passif & actif]]></fr>
+            <en><![CDATA[polarities: passive & active]]></en>
+        </tag>
+        <tag id="114">
+            <fr><![CDATA[enseigner]]></fr>
+            <en><![CDATA[teaching]]></en>
+        </tag>
+        <tag id="115">
+            <fr><![CDATA[dessiner]]></fr>
+            <en><![CDATA[drawing]]></en>
+        </tag>
+        <tag id="116">
+            <fr><![CDATA[autoportrait]]></fr>
+            <en><![CDATA[self-portrait]]></en>
+        </tag>
+
+        <tag id="118">
+            <fr><![CDATA[visage]]></fr>
+            <en><![CDATA[face]]></en>
+        </tag>
+        <tag id="119">
+            <fr><![CDATA[côté obscur]]></fr>
+            <en><![CDATA[dark side]]></en>
+        </tag>
+        <tag id="120">
+            <fr><![CDATA[identification]]></fr>
+            <en><![CDATA[identification]]></en>
+        </tag>
+        <tag id="121">
+            <fr><![CDATA[confrontation]]></fr>
+            <en><![CDATA[confrontation]]></en>
+        </tag>
+        <tag id="122">
+            <fr><![CDATA[rétablissement]]></fr>
+            <en><![CDATA[restoration]]></en>
+        </tag>
+        <tag id="123">
+            <fr><![CDATA[intégration]]></fr>
+            <en><![CDATA[integration]]></en>
+        </tag>
+        <tag id="124">
+            <fr><![CDATA[animal]]></fr>
+            <en><![CDATA[animal]]></en>
+        </tag>
+        <tag id="125">
+            <fr><![CDATA[question sociale]]></fr>
+            <en><![CDATA[social issue]]></en>
+        </tag>
+        <tag id="126">
+            <fr><![CDATA[en relation avec une entité plus vaste]]></fr>
+            <en><![CDATA[relating to a bigger totality]]></en>
+        </tag>
+        <tag id="127">
+            <fr><![CDATA[Dewey, John]]></fr>
+            <en><![CDATA[Dewey, John]]></en>
+        </tag>
+
+        <tag id="129">
+            <fr><![CDATA[culture]]></fr>
+            <en><![CDATA[culture]]></en>
+        </tag>
+
+
+        <tag id="132">
+            <fr><![CDATA[archétypes]]></fr>
+            <en><![CDATA[archetypes]]></en>
+        </tag>
+        <tag id="133">
+            <fr><![CDATA[chez soi]]></fr>
+            <en><![CDATA[home]]></en>
+        </tag>
+
+
+        <tag id="153">
+            <fr><![CDATA[différences]]></fr>
+            <en><![CDATA[differences]]></en>
+        </tag>
+        <tag id="154">
+            <fr><![CDATA[aînés]]></fr>
+            <en><![CDATA[elders]]></en>
+        </tag>
+        <tag id="155">
+            <fr><![CDATA[environnement]]></fr>
+            <en><![CDATA[environment]]></en>
+        </tag>
+        <tag id="156">
+            <fr><![CDATA[ethnique]]></fr>
+            <en><![CDATA[ethnic]]></en>
+        </tag>
+        <tag id="157">
+            <fr><![CDATA[exploration]]></fr>
+            <en><![CDATA[exploration]]></en>
+        </tag>
+        <tag id="158">
+            <fr><![CDATA[Processus mouvement/ressenti]]></fr>
+            <en><![CDATA[Movement/Feeling Process]]></en>
+        </tag>
+
+        <tag id="160">
+            <fr><![CDATA[racines]]></fr>
+            <en><![CDATA[roots]]></en>
+        </tag>
+        <tag id="161">
+            <fr><![CDATA[rythme]]></fr>
+            <en><![CDATA[rhythm]]></en>
+        </tag>
+        <tag id="162">
+            <fr><![CDATA[hommes & femmes]]></fr>
+            <en><![CDATA[men & women]]></en>
+        </tag>
+        <tag id="163">
+            <fr><![CDATA[eau]]></fr>
+            <en><![CDATA[water]]></en>
+        </tag>
+        <tag id="164">
+            <fr><![CDATA[public]]></fr>
+            <en><![CDATA[audience]]></en>
+        </tag>
+        <tag id="165">
+            <fr><![CDATA[élan]]></fr>
+            <en><![CDATA[momentum]]></en>
+        </tag>
+        <tag id="166">
+            <fr><![CDATA[force d'inertie]]></fr>
+            <en><![CDATA[inertia]]></en>
+        </tag>
+        <tag id="167">
+            <fr><![CDATA[dissection]]></fr>
+            <en><![CDATA[dissection]]></en>
+        </tag>
+        <tag id="168">
+            <fr><![CDATA[<i>Intensive Care</i>]]></fr>
+            <en><![CDATA[<i>Intensive Care</i>]]></en>
+        </tag>
+        <tag id="169">
+            <fr><![CDATA[sagesse du corps]]></fr>
+            <en><![CDATA[body wisdom]]></en>
+        </tag>
+        <tag id="170">
+            <fr><![CDATA[mains]]></fr>
+            <en><![CDATA[hands]]></en>
+        </tag>
+        <tag id="171">
+            <fr><![CDATA[réel]]></fr>
+            <en><![CDATA[real]]></en>
+        </tag>
+        <tag id="172">
+            <fr><![CDATA[mot]]></fr>
+            <en><![CDATA[word]]></en>
+        </tag>
+        <tag id="173">
+            <fr><![CDATA[universel]]></fr>
+            <en><![CDATA[universal]]></en>
+        </tag>
+        <tag id="174">
+            <fr><![CDATA[unisson]]></fr>
+            <en><![CDATA[blend]]></en>
+        </tag>
+        <tag id="175">
+            <fr><![CDATA[haut & bas]]></fr>
+            <en><![CDATA[down & up]]></en>
+        </tag>
+        <tag id="176">
+            <fr><![CDATA[limites]]></fr>
+            <en><![CDATA[boundaries]]></en>
+        </tag>
+        <tag id="177">
+            <fr><![CDATA[blocage]]></fr>
+            <en><![CDATA[blockage]]></en>
+        </tag>
+        <tag id="178">
+            <fr><![CDATA[langage]]></fr>
+            <en><![CDATA[language]]></en>
+        </tag>
+        <tag id="179">
+            <fr><![CDATA[colonne vertébrale]]></fr>
+            <en><![CDATA[spine]]></en>
+        </tag>
+        <tag id="180">
+            <fr><![CDATA[tête]]></fr>
+            <en><![CDATA[head]]></en>
+        </tag>
+        <tag id="181">
+            <fr><![CDATA[Tamalpa Institute]]></fr>
+            <en><![CDATA[Tamalpa Institute]]></en>
+        </tag>
+        <tag id="181">
+            <fr><![CDATA[déni]]></fr>
+            <en><![CDATA[denial]]></en>
+        </tag>
+        <tag id="182">""
+            <fr><![CDATA[<i>Four in the Afternoon</i>]]></fr>
+            <en><![CDATA[<i>Four in the Afternoon</i>]]></en>
+        </tag>
+        <tag id="183">
+            <fr><![CDATA[<i>Ten Myths</i>]]></fr>
+            <en><![CDATA[<i>Ten Myths</i>]]></en>
+        </tag>
+        <tag id="184">
+            <fr><![CDATA[<i>Seniors Rocking</i>]]></fr>
+            <en><![CDATA[<i>Seniors Rocking</i>]]></en>
+        </tag>
+
+    </index>
+
+
+</dvd>
