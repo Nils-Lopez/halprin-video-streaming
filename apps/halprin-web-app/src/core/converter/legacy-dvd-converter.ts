@@ -88,8 +88,6 @@ export class LegacyDvdConverter {
 
   getMedia = (dvdJson: DvdJson, tags: Tag[]): Media[] => {
     const media = dvdJson.dvd.medias[0].media;
-    console.log(JSON.stringify(media[0]['$']));
-    //return [];
     const data: Media[] = [];
     const slugs: string[] = [];
     media.map((medium) => {
