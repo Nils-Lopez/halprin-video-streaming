@@ -7,13 +7,16 @@ type Props = {
   lang: SupportedLang;
   videoData?: Media[];
 };
-export class VideoRepo {
+export class MediaRepo {
   private lang: SupportedLang;
   private data: Media[];
   constructor(props: Props) {
     this.lang = props.lang;
     this.data = props.videoData ?? mediaData;
   }
+  findByType = (type: string): Media[] => {
+    return this.data.filter((media) => media.type === type);
+  };
   findBySlug = (slug: string): Media | null => {
     return this.data.filter((media) => media.media_slug === slug)?.[0] ?? null;
   };

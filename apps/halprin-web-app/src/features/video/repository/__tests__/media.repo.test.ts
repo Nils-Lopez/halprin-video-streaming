@@ -1,4 +1,4 @@
-import { VideoRepo } from '@/features/video/repository/video.repo';
+import { MediaRepo } from '@/features/video/repository/media.repo';
 import { Media } from '@/data/data.types';
 
 describe('VideoRepo tests', () => {
@@ -27,7 +27,7 @@ describe('VideoRepo tests', () => {
         ],
       },
     ];
-    const repo = new VideoRepo({
+    const repo = new MediaRepo({
       lang: 'fr',
       videoData: testData as Media[],
     });
