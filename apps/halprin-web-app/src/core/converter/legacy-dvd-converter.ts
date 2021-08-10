@@ -7,6 +7,7 @@ import { isNonEmptyString, isSafeInteger } from '@contredanse/common';
 import { stripHtml } from 'string-strip-html';
 import CodeBlockWriter from 'code-block-writer';
 import { Media, Tag } from '@/data/data.types';
+import { isVideoUrl } from '@/features/video/utils/typeguards';
 
 type DvdJson = Simplify<{
   dvd: {
@@ -14,7 +15,9 @@ type DvdJson = Simplify<{
       media: {
         $: {
           favorite: number;
-          path?: string | null;
+          path?: string;
+          path_fr?: string;
+          path_en?: string;
           thumb?: string | null;
           type: number;
         };
@@ -76,7 +79,7 @@ export class LegacyDvdConverter {
       slugs.push(slug);
       tags.push({
         id: id,
-        slug: slug,
+        tag_slug: slug,
         label: {
           en: stripHtml(tag['en'][0]).result,
           fr: stripHtml(tag['fr'][0]).result,
@@ -108,21 +111,32 @@ export class LegacyDvdConverter {
         )?.[0];
         if (current) {
           normalizedTags.push({
-            slug: current?.slug,
+            tag_slug: current?.tag_slug,
             relevance: StringConvert.toSafeInteger(tag.$.value) ?? 0,
           });
         }
       });
 
+      const videoUrl =
+        'path' in medium.$ && medium.$.path?.trim() !== ''
+          ? medium.$.path?.trim()
+          : {
+              en: medium.$.path_en?.trim(),
+              fr: medium.$.path_fr?.trim(),
+            };
+      if (!isVideoUrl(videoUrl)) {
+        throw new Error(`Cannot infer videoUrl for ${medium.en[0]}`);
+      }
+
       data.push({
-        slug: slug,
+        media_slug: slug,
         title: {
           fr: stripHtml(medium.fr[0]).result,
           en: stripHtml(medium.en[0]).result,
         },
-        type: 0,
+        type: medium.$.type,
         thumbnail: medium.$.thumb?.trim() ?? undefined,
-        video_url: medium.$.path?.trim(),
+        video_url: videoUrl,
         tags: normalizedTags,
       });
     });

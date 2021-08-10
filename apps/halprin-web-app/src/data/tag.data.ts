@@ -3,7 +3,7 @@ import { Tag } from './data.types';
 export const tagData: Tag[] = [
   {
     id: 1,
-    slug: 'rsvp-cycles',
+    tag_slug: 'rsvp-cycles',
     label: {
       en: 'RSVP Cycles',
       fr: 'Cycles RSVP',
@@ -11,7 +11,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 2,
-    slug: 'life-art-process',
+    tag_slug: 'life-art-process',
     label: {
       en: 'Life/Art Process',
       fr: 'Processus Art/Vie',
@@ -19,7 +19,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 3,
-    slug: 'three-levels-of-awareness',
+    tag_slug: 'three-levels-of-awareness',
     label: {
       en: 'Three Levels of Awareness',
       fr: 'Trois Niveaux de conscience',
@@ -27,7 +27,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 4,
-    slug: 'five-part-process',
+    tag_slug: 'five-part-process',
     label: {
       en: 'Five Part Process',
       fr: 'Processus en cinq parties',
@@ -35,7 +35,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 5,
-    slug: 'space',
+    tag_slug: 'space',
     label: {
       en: 'space',
       fr: 'espace',
@@ -43,7 +43,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 6,
-    slug: 'feet',
+    tag_slug: 'feet',
     label: {
       en: 'feet',
       fr: 'pieds',
@@ -51,7 +51,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 7,
-    slug: 'ages',
+    tag_slug: 'ages',
     label: {
       en: 'ages',
       fr: 'âges',
@@ -59,7 +59,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 8,
-    slug: 'voice',
+    tag_slug: 'voice',
     label: {
       en: 'voice',
       fr: 'voix',
@@ -67,7 +67,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 9,
-    slug: 'vibration',
+    tag_slug: 'vibration',
     label: {
       en: 'vibration',
       fr: 'vibration',
@@ -75,7 +75,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 10,
-    slug: 'transformation',
+    tag_slug: 'transformation',
     label: {
       en: 'transformation',
       fr: 'transformation',
@@ -83,7 +83,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 11,
-    slug: 'intention',
+    tag_slug: 'intention',
     label: {
       en: 'intention',
       fr: 'intention',
@@ -91,7 +91,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 12,
-    slug: 'eyes',
+    tag_slug: 'eyes',
     label: {
       en: 'eyes',
       fr: 'yeux',
@@ -99,7 +99,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 13,
-    slug: 'touch',
+    tag_slug: 'touch',
     label: {
       en: 'touch',
       fr: 'toucher',
@@ -107,7 +107,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 14,
-    slug: 'walking',
+    tag_slug: 'walking',
     label: {
       en: 'walking',
       fr: 'marcher',
@@ -115,7 +115,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 15,
-    slug: 'skin',
+    tag_slug: 'skin',
     label: {
       en: 'skin',
       fr: 'peau',
@@ -123,7 +123,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 16,
-    slug: 'polarities',
+    tag_slug: 'polarities',
     label: {
       en: 'polarities',
       fr: 'polarités',
@@ -131,7 +131,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 17,
-    slug: 'running',
+    tag_slug: 'running',
     label: {
       en: 'running',
       fr: 'courir',
@@ -139,7 +139,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 18,
-    slug: 'feedback-process',
+    tag_slug: 'feedback-process',
     label: {
       en: 'Feedback Process',
       fr: 'Processus rétroactif',
@@ -147,7 +147,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 19,
-    slug: 'community',
+    tag_slug: 'community',
     label: {
       en: 'community',
       fr: 'communauté',
@@ -155,7 +155,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 20,
-    slug: 'witness',
+    tag_slug: 'witness',
     label: {
       en: 'witness',
       fr: 'témoin',
@@ -163,7 +163,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 21,
-    slug: 'imaging',
+    tag_slug: 'imaging',
     label: {
       en: 'imaging',
       fr: 'visualiser',
@@ -171,7 +171,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 22,
-    slug: 'feeling',
+    tag_slug: 'feeling',
     label: {
       en: 'feeling',
       fr: 'ressenti',
@@ -179,7 +179,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 24,
-    slug: 'global-approach',
+    tag_slug: 'global-approach',
     label: {
       en: 'global approach',
       fr: 'approche globale',
@@ -187,7 +187,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 25,
-    slug: 'workshop',
+    tag_slug: 'workshop',
     label: {
       en: 'workshop',
       fr: 'atelier',
@@ -195,7 +195,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 26,
-    slug: 'laboratory',
+    tag_slug: 'laboratory',
     label: {
       en: 'laboratory',
       fr: 'laboratoire',
@@ -203,7 +203,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 27,
-    slug: 'influences',
+    tag_slug: 'influences',
     label: {
       en: 'influences',
       fr: 'influences',
@@ -211,7 +211,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 28,
-    slug: 'anatomy',
+    tag_slug: 'anatomy',
     label: {
       en: 'anatomy',
       fr: 'anatomie',
@@ -219,7 +219,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 29,
-    slug: 'skills',
+    tag_slug: 'skills',
     label: {
       en: 'skills',
       fr: 'compétences',
@@ -227,7 +227,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 30,
-    slug: 'healing',
+    tag_slug: 'healing',
     label: {
       en: 'healing',
       fr: 'guérir',
@@ -235,7 +235,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 31,
-    slug: 'ritual',
+    tag_slug: 'ritual',
     label: {
       en: 'ritual',
       fr: 'rituel',
@@ -243,7 +243,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 32,
-    slug: 'da-vinci-leonardo',
+    tag_slug: 'da-vinci-leonardo',
     label: {
       en: 'da Vinci, Leonardo',
       fr: 'de Vinci, Léonard',
@@ -251,7 +251,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 33,
-    slug: 'roadmaps',
+    tag_slug: 'roadmaps',
     label: {
       en: 'roadmaps',
       fr: 'feuilles de route',
@@ -259,7 +259,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 34,
-    slug: 'body-mind',
+    tag_slug: 'body-mind',
     label: {
       en: 'body & mind',
       fr: 'corps & esprit',
@@ -267,7 +267,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 35,
-    slug: 'naming',
+    tag_slug: 'naming',
     label: {
       en: 'naming',
       fr: 'nommer',
@@ -275,7 +275,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 36,
-    slug: 'physical',
+    tag_slug: 'physical',
     label: {
       en: 'physical',
       fr: 'physique',
@@ -283,7 +283,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 37,
-    slug: 'valuaction',
+    tag_slug: 'valuaction',
     label: {
       en: 'Valuaction',
       fr: 'valuaction',
@@ -291,7 +291,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 38,
-    slug: 'imagination',
+    tag_slug: 'imagination',
     label: {
       en: 'imagination',
       fr: 'imagination',
@@ -299,7 +299,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 39,
-    slug: 'senses',
+    tag_slug: 'senses',
     label: {
       en: 'senses',
       fr: 'sens',
@@ -307,7 +307,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 40,
-    slug: 'resources',
+    tag_slug: 'resources',
     label: {
       en: 'resources',
       fr: 'ressources',
@@ -315,7 +315,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 41,
-    slug: 'score',
+    tag_slug: 'score',
     label: {
       en: 'score',
       fr: 'partition',
@@ -323,7 +323,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 42,
-    slug: 'performance',
+    tag_slug: 'performance',
     label: {
       en: 'performance',
       fr: 'exécution',
@@ -331,7 +331,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 43,
-    slug: 'diversity',
+    tag_slug: 'diversity',
     label: {
       en: 'diversity',
       fr: 'diversité',
@@ -339,7 +339,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 44,
-    slug: 'myth',
+    tag_slug: 'myth',
     label: {
       en: 'myth',
       fr: 'mythe',
@@ -347,7 +347,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 45,
-    slug: 'sound',
+    tag_slug: 'sound',
     label: {
       en: 'sound',
       fr: 'son',
@@ -355,7 +355,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 46,
-    slug: 'release',
+    tag_slug: 'release',
     label: {
       en: 'release',
       fr: 'relâchement',
@@ -363,7 +363,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 47,
-    slug: 'partners',
+    tag_slug: 'partners',
     label: {
       en: 'partners',
       fr: 'partenaires',
@@ -371,7 +371,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 48,
-    slug: 'center-of-the-body',
+    tag_slug: 'center-of-the-body',
     label: {
       en: 'center of the body',
       fr: 'centre du corps',
@@ -379,7 +379,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 49,
-    slug: 'force',
+    tag_slug: 'force',
     label: {
       en: 'force',
       fr: 'force',
@@ -387,7 +387,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 50,
-    slug: 'gravity',
+    tag_slug: 'gravity',
     label: {
       en: 'gravity',
       fr: 'pesanteur',
@@ -395,7 +395,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 51,
-    slug: 'creative-process',
+    tag_slug: 'creative-process',
     label: {
       en: 'creative process',
       fr: 'processus créatif',
@@ -403,7 +403,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 52,
-    slug: 'learn',
+    tag_slug: 'learn',
     label: {
       en: 'learn',
       fr: 'apprendre',
@@ -411,7 +411,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 53,
-    slug: 'bauhaus',
+    tag_slug: 'bauhaus',
     label: {
       en: 'Bauhaus',
       fr: 'Bauhaus',
@@ -419,7 +419,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 54,
-    slug: 'modern-dance',
+    tag_slug: 'modern-dance',
     label: {
       en: 'modern dance',
       fr: 'modern dance',
@@ -427,7 +427,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 55,
-    slug: 'generating-creativity',
+    tag_slug: 'generating-creativity',
     label: {
       en: 'generating creativity',
       fr: 'éveiller la créativité',
@@ -435,7 +435,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 56,
-    slug: 'body-as-instrument',
+    tag_slug: 'body-as-instrument',
     label: {
       en: 'body as instrument',
       fr: 'corps comme instrument',
@@ -443,7 +443,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 57,
-    slug: 'choreography',
+    tag_slug: 'choreography',
     label: {
       en: 'choreography',
       fr: 'chorégraphie',
@@ -451,7 +451,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 58,
-    slug: 'improvisation',
+    tag_slug: 'improvisation',
     label: {
       en: 'improvisation',
       fr: 'improvisation',
@@ -459,7 +459,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 59,
-    slug: 'judgement',
+    tag_slug: 'judgement',
     label: {
       en: 'judgement',
       fr: 'jugement',
@@ -467,7 +467,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 60,
-    slug: 'therapy',
+    tag_slug: 'therapy',
     label: {
       en: 'therapy',
       fr: 'thérapie',
@@ -475,7 +475,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 61,
-    slug: 'circle',
+    tag_slug: 'circle',
     label: {
       en: 'circle',
       fr: 'cercle',
@@ -483,7 +483,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 62,
-    slug: 'trance',
+    tag_slug: 'trance',
     label: {
       en: 'trance',
       fr: 'transe',
@@ -491,7 +491,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 63,
-    slug: 'interdisciplinarity',
+    tag_slug: 'interdisciplinarity',
     label: {
       en: 'interdisciplinarity',
       fr: 'interdisciplinarité',
@@ -499,7 +499,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 64,
-    slug: 'peace',
+    tag_slug: 'peace',
     label: {
       en: 'peace',
       fr: 'paix',
@@ -507,7 +507,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 65,
-    slug: 'meaningful',
+    tag_slug: 'meaningful',
     label: {
       en: 'meaningful',
       fr: 'signifiant',
@@ -515,7 +515,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 66,
-    slug: 'art',
+    tag_slug: 'art',
     label: {
       en: 'art',
       fr: 'art',
@@ -523,7 +523,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 67,
-    slug: 'participation',
+    tag_slug: 'participation',
     label: {
       en: 'participation',
       fr: 'participation',
@@ -531,7 +531,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 68,
-    slug: 'esposizione',
+    tag_slug: 'esposizione',
     label: {
       en: 'Esposizione',
       fr: 'Esposizione',
@@ -539,7 +539,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 70,
-    slug: 'ceremony-of-us',
+    tag_slug: 'ceremony-of-us',
     label: {
       en: 'Ceremony Of Us',
       fr: 'Ceremony Of Us',
@@ -547,7 +547,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 71,
-    slug: 'citydance',
+    tag_slug: 'citydance',
     label: {
       en: 'Citydance',
       fr: 'Citydance',
@@ -555,7 +555,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 72,
-    slug: 'circle-the-earth',
+    tag_slug: 'circle-the-earth',
     label: {
       en: 'Circle The Earth',
       fr: 'Circle The Earth',
@@ -563,7 +563,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 73,
-    slug: 'planetary-dance',
+    tag_slug: 'planetary-dance',
     label: {
       en: 'Planetary Dance',
       fr: 'Planetary Dance',
@@ -571,7 +571,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 74,
-    slug: 'h-doubler-margaret',
+    tag_slug: 'h-doubler-margaret',
     label: {
       en: "H'Doubler, Margaret",
       fr: "H'Doubler, Margaret",
@@ -579,7 +579,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 75,
-    slug: 'halprin-lawrence',
+    tag_slug: 'halprin-lawrence',
     label: {
       en: 'Halprin, Lawrence',
       fr: 'Halprin, Lawrence',
@@ -587,7 +587,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 76,
-    slug: 'psychokinetic-visualization-process',
+    tag_slug: 'psychokinetic-visualization-process',
     label: {
       en: 'PsychoKinetic Visualization Process',
       fr: 'Processus de visualisation psycho-kinétique',
@@ -595,7 +595,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 77,
-    slug: 'cancer',
+    tag_slug: 'cancer',
     label: {
       en: 'cancer',
       fr: 'cancer',
@@ -603,7 +603,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 78,
-    slug: 'commonalities',
+    tag_slug: 'commonalities',
     label: {
       en: 'commonalities',
       fr: 'points communs',
@@ -611,7 +611,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 79,
-    slug: 'children',
+    tag_slug: 'children',
     label: {
       en: 'children',
       fr: 'enfants',
@@ -619,7 +619,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 80,
-    slug: 'dance-deck',
+    tag_slug: 'dance-deck',
     label: {
       en: 'dance deck',
       fr: 'plateau de danse',
@@ -627,7 +627,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 81,
-    slug: 'aids',
+    tag_slug: 'aids',
     label: {
       en: 'AIDS',
       fr: 'SIDA',
@@ -635,7 +635,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 82,
-    slug: 'kinesthesic-sense',
+    tag_slug: 'kinesthesic-sense',
     label: {
       en: 'kinesthesic sense',
       fr: 'sens kinesthésique',
@@ -643,7 +643,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 83,
-    slug: 'sensorial',
+    tag_slug: 'sensorial',
     label: {
       en: 'sensorial',
       fr: 'sensoriel',
@@ -651,7 +651,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 84,
-    slug: 'family',
+    tag_slug: 'family',
     label: {
       en: 'family',
       fr: 'famille',
@@ -659,7 +659,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 85,
-    slug: 'nature',
+    tag_slug: 'nature',
     label: {
       en: 'nature',
       fr: 'nature',
@@ -667,7 +667,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 86,
-    slug: 'perls-fritz',
+    tag_slug: 'perls-fritz',
     label: {
       en: 'Perls, Fritz',
       fr: 'Perls, Fritz',
@@ -675,7 +675,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 87,
-    slug: 'gestalt-therapy',
+    tag_slug: 'gestalt-therapy',
     label: {
       en: 'gestalt therapy',
       fr: 'Gestalt-thérapie',
@@ -683,7 +683,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 88,
-    slug: 'movement-ritual',
+    tag_slug: 'movement-ritual',
     label: {
       en: 'Movement Ritual',
       fr: 'Rituel de mouvement',
@@ -691,7 +691,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 89,
-    slug: 'breaking-loose',
+    tag_slug: 'breaking-loose',
     label: {
       en: 'breaking loose',
       fr: 'rompre',
@@ -699,7 +699,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 90,
-    slug: 'san-francisco-dancers-workshop',
+    tag_slug: 'san-francisco-dancers-workshop',
     label: {
       en: "San Francisco Dancers' Workshop",
       fr: "San Francisco Dancers' Workshop",
@@ -707,7 +707,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 91,
-    slug: 'indians',
+    tag_slug: 'indians',
     label: {
       en: 'Indians',
       fr: 'Indiens',
@@ -715,7 +715,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 92,
-    slug: 'spiritual',
+    tag_slug: 'spiritual',
     label: {
       en: 'spiritual',
       fr: 'spirituel',
@@ -723,7 +723,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 93,
-    slug: 'science',
+    tag_slug: 'science',
     label: {
       en: 'science',
       fr: 'science',
@@ -731,7 +731,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 94,
-    slug: 'philosophy',
+    tag_slug: 'philosophy',
     label: {
       en: 'philosophy',
       fr: 'philosophie',
@@ -739,7 +739,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 95,
-    slug: 'mother-of-all-arts',
+    tag_slug: 'mother-of-all-arts',
     label: {
       en: 'mother of all arts',
       fr: 'mère de tous les arts',
@@ -747,7 +747,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 96,
-    slug: 'emotion',
+    tag_slug: 'emotion',
     label: {
       en: 'emotion',
       fr: 'émotion',
@@ -755,7 +755,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 97,
-    slug: 'moving-to-california',
+    tag_slug: 'moving-to-california',
     label: {
       en: 'moving to California',
       fr: "s'installer en Californie",
@@ -763,7 +763,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 99,
-    slug: 'apartment-6',
+    tag_slug: 'apartment-6',
     label: {
       en: 'Apartment 6',
       fr: 'Apartment 6',
@@ -771,7 +771,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 100,
-    slug: 'watts',
+    tag_slug: 'watts',
     label: {
       en: 'Watts',
       fr: 'Watts',
@@ -779,7 +779,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 101,
-    slug: 'pulse',
+    tag_slug: 'pulse',
     label: {
       en: 'pulse',
       fr: 'pulsation',
@@ -787,7 +787,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 102,
-    slug: 'collective-body',
+    tag_slug: 'collective-body',
     label: {
       en: 'collective body',
       fr: 'corps collectif',
@@ -795,7 +795,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 104,
-    slug: 'spiral',
+    tag_slug: 'spiral',
     label: {
       en: 'spiral',
       fr: 'spirale',
@@ -803,7 +803,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 105,
-    slug: 'breath',
+    tag_slug: 'breath',
     label: {
       en: 'breath',
       fr: 'respiration',
@@ -811,7 +811,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 106,
-    slug: 'floor',
+    tag_slug: 'floor',
     label: {
       en: 'floor',
       fr: 'sol',
@@ -819,7 +819,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 107,
-    slug: 'contraction',
+    tag_slug: 'contraction',
     label: {
       en: 'contraction',
       fr: 'contraction',
@@ -827,7 +827,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 108,
-    slug: 'trust',
+    tag_slug: 'trust',
     label: {
       en: 'trust',
       fr: 'confiance',
@@ -835,7 +835,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 109,
-    slug: 'minority',
+    tag_slug: 'minority',
     label: {
       en: 'minority',
       fr: 'minorité',
@@ -843,7 +843,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 110,
-    slug: 'movement-initiation',
+    tag_slug: 'movement-initiation',
     label: {
       en: 'movement initiation',
       fr: 'origine du mouvement',
@@ -851,7 +851,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 111,
-    slug: 'awareness',
+    tag_slug: 'awareness',
     label: {
       en: 'awareness',
       fr: 'conscience',
@@ -859,7 +859,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 112,
-    slug: 'spaces-positive-negative',
+    tag_slug: 'spaces-positive-negative',
     label: {
       en: 'spaces: positive & negative',
       fr: 'espaces : positif & négatif',
@@ -867,7 +867,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 113,
-    slug: 'polarities-passive-active',
+    tag_slug: 'polarities-passive-active',
     label: {
       en: 'polarities: passive & active',
       fr: 'polarités : passif & actif',
@@ -875,7 +875,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 114,
-    slug: 'teaching',
+    tag_slug: 'teaching',
     label: {
       en: 'teaching',
       fr: 'enseigner',
@@ -883,7 +883,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 115,
-    slug: 'drawing',
+    tag_slug: 'drawing',
     label: {
       en: 'drawing',
       fr: 'dessiner',
@@ -891,7 +891,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 116,
-    slug: 'self-portrait',
+    tag_slug: 'self-portrait',
     label: {
       en: 'self-portrait',
       fr: 'autoportrait',
@@ -899,7 +899,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 118,
-    slug: 'face',
+    tag_slug: 'face',
     label: {
       en: 'face',
       fr: 'visage',
@@ -907,7 +907,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 119,
-    slug: 'dark-side',
+    tag_slug: 'dark-side',
     label: {
       en: 'dark side',
       fr: 'côté obscur',
@@ -915,7 +915,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 120,
-    slug: 'identification',
+    tag_slug: 'identification',
     label: {
       en: 'identification',
       fr: 'identification',
@@ -923,7 +923,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 121,
-    slug: 'confrontation',
+    tag_slug: 'confrontation',
     label: {
       en: 'confrontation',
       fr: 'confrontation',
@@ -931,7 +931,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 122,
-    slug: 'restoration',
+    tag_slug: 'restoration',
     label: {
       en: 'restoration',
       fr: 'rétablissement',
@@ -939,7 +939,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 123,
-    slug: 'integration',
+    tag_slug: 'integration',
     label: {
       en: 'integration',
       fr: 'intégration',
@@ -947,7 +947,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 124,
-    slug: 'animal',
+    tag_slug: 'animal',
     label: {
       en: 'animal',
       fr: 'animal',
@@ -955,7 +955,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 125,
-    slug: 'social-issue',
+    tag_slug: 'social-issue',
     label: {
       en: 'social issue',
       fr: 'question sociale',
@@ -963,7 +963,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 126,
-    slug: 'relating-to-a-bigger-totality',
+    tag_slug: 'relating-to-a-bigger-totality',
     label: {
       en: 'relating to a bigger totality',
       fr: 'en relation avec une entité plus vaste',
@@ -971,7 +971,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 127,
-    slug: 'dewey-john',
+    tag_slug: 'dewey-john',
     label: {
       en: 'Dewey, John',
       fr: 'Dewey, John',
@@ -979,7 +979,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 129,
-    slug: 'culture',
+    tag_slug: 'culture',
     label: {
       en: 'culture',
       fr: 'culture',
@@ -987,7 +987,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 132,
-    slug: 'archetypes',
+    tag_slug: 'archetypes',
     label: {
       en: 'archetypes',
       fr: 'archétypes',
@@ -995,7 +995,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 133,
-    slug: 'home',
+    tag_slug: 'home',
     label: {
       en: 'home',
       fr: 'chez soi',
@@ -1003,7 +1003,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 153,
-    slug: 'differences',
+    tag_slug: 'differences',
     label: {
       en: 'differences',
       fr: 'différences',
@@ -1011,7 +1011,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 154,
-    slug: 'elders',
+    tag_slug: 'elders',
     label: {
       en: 'elders',
       fr: 'aînés',
@@ -1019,7 +1019,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 155,
-    slug: 'environment',
+    tag_slug: 'environment',
     label: {
       en: 'environment',
       fr: 'environnement',
@@ -1027,7 +1027,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 156,
-    slug: 'ethnic',
+    tag_slug: 'ethnic',
     label: {
       en: 'ethnic',
       fr: 'ethnique',
@@ -1035,7 +1035,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 157,
-    slug: 'exploration',
+    tag_slug: 'exploration',
     label: {
       en: 'exploration',
       fr: 'exploration',
@@ -1043,7 +1043,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 158,
-    slug: 'movement-feeling-process',
+    tag_slug: 'movement-feeling-process',
     label: {
       en: 'Movement/Feeling Process',
       fr: 'Processus mouvement/ressenti',
@@ -1051,7 +1051,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 160,
-    slug: 'roots',
+    tag_slug: 'roots',
     label: {
       en: 'roots',
       fr: 'racines',
@@ -1059,7 +1059,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 161,
-    slug: 'rhythm',
+    tag_slug: 'rhythm',
     label: {
       en: 'rhythm',
       fr: 'rythme',
@@ -1067,7 +1067,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 162,
-    slug: 'men-women',
+    tag_slug: 'men-women',
     label: {
       en: 'men & women',
       fr: 'hommes & femmes',
@@ -1075,7 +1075,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 163,
-    slug: 'water',
+    tag_slug: 'water',
     label: {
       en: 'water',
       fr: 'eau',
@@ -1083,7 +1083,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 164,
-    slug: 'audience',
+    tag_slug: 'audience',
     label: {
       en: 'audience',
       fr: 'public',
@@ -1091,7 +1091,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 165,
-    slug: 'momentum',
+    tag_slug: 'momentum',
     label: {
       en: 'momentum',
       fr: 'élan',
@@ -1099,7 +1099,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 166,
-    slug: 'inertia',
+    tag_slug: 'inertia',
     label: {
       en: 'inertia',
       fr: "force d'inertie",
@@ -1107,7 +1107,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 167,
-    slug: 'dissection',
+    tag_slug: 'dissection',
     label: {
       en: 'dissection',
       fr: 'dissection',
@@ -1115,7 +1115,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 168,
-    slug: 'intensive-care',
+    tag_slug: 'intensive-care',
     label: {
       en: 'Intensive Care',
       fr: 'Intensive Care',
@@ -1123,7 +1123,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 169,
-    slug: 'body-wisdom',
+    tag_slug: 'body-wisdom',
     label: {
       en: 'body wisdom',
       fr: 'sagesse du corps',
@@ -1131,7 +1131,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 170,
-    slug: 'hands',
+    tag_slug: 'hands',
     label: {
       en: 'hands',
       fr: 'mains',
@@ -1139,7 +1139,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 171,
-    slug: 'real',
+    tag_slug: 'real',
     label: {
       en: 'real',
       fr: 'réel',
@@ -1147,7 +1147,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 172,
-    slug: 'word',
+    tag_slug: 'word',
     label: {
       en: 'word',
       fr: 'mot',
@@ -1155,7 +1155,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 173,
-    slug: 'universal',
+    tag_slug: 'universal',
     label: {
       en: 'universal',
       fr: 'universel',
@@ -1163,7 +1163,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 174,
-    slug: 'blend',
+    tag_slug: 'blend',
     label: {
       en: 'blend',
       fr: 'unisson',
@@ -1171,7 +1171,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 175,
-    slug: 'down-up',
+    tag_slug: 'down-up',
     label: {
       en: 'down & up',
       fr: 'haut & bas',
@@ -1179,7 +1179,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 176,
-    slug: 'boundaries',
+    tag_slug: 'boundaries',
     label: {
       en: 'boundaries',
       fr: 'limites',
@@ -1187,7 +1187,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 177,
-    slug: 'blockage',
+    tag_slug: 'blockage',
     label: {
       en: 'blockage',
       fr: 'blocage',
@@ -1195,7 +1195,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 178,
-    slug: 'language',
+    tag_slug: 'language',
     label: {
       en: 'language',
       fr: 'langage',
@@ -1203,7 +1203,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 179,
-    slug: 'spine',
+    tag_slug: 'spine',
     label: {
       en: 'spine',
       fr: 'colonne vertébrale',
@@ -1211,7 +1211,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 180,
-    slug: 'head',
+    tag_slug: 'head',
     label: {
       en: 'head',
       fr: 'tête',
@@ -1219,7 +1219,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 181,
-    slug: 'tamalpa-institute',
+    tag_slug: 'tamalpa-institute',
     label: {
       en: 'Tamalpa Institute',
       fr: 'Tamalpa Institute',
@@ -1227,7 +1227,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 181,
-    slug: 'denial',
+    tag_slug: 'denial',
     label: {
       en: 'denial',
       fr: 'déni',
@@ -1235,7 +1235,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 182,
-    slug: 'four-in-the-afternoon',
+    tag_slug: 'four-in-the-afternoon',
     label: {
       en: 'Four in the Afternoon',
       fr: 'Four in the Afternoon',
@@ -1243,7 +1243,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 183,
-    slug: 'ten-myths',
+    tag_slug: 'ten-myths',
     label: {
       en: 'Ten Myths',
       fr: 'Ten Myths',
@@ -1251,7 +1251,7 @@ export const tagData: Tag[] = [
   },
   {
     id: 184,
-    slug: 'seniors-rocking',
+    tag_slug: 'seniors-rocking',
     label: {
       en: 'Seniors Rocking',
       fr: 'Seniors Rocking',
