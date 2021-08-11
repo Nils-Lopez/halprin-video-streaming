@@ -4,18 +4,20 @@ export type Tag = {
   label: { fr: string; en: string };
 };
 
-export type LocalizedVideoUrl = {
+export type LocalizedMediaUrl = {
   fr: string;
   en: string;
 };
 
-export type VideoUrl = string | LocalizedVideoUrl;
+export type MediaUrl = string | LocalizedMediaUrl;
 
 export type Media = {
   media_slug: string;
-  video_url: VideoUrl;
-  thumbnail?: string;
-  type: string | number;
+  media_type: 'audio' | 'video';
+  media_url: MediaUrl;
+  thumb: string;
+  type: string;
+  moment?: string;
   tags: { tag_slug: string; relevance: number }[];
   title: {
     fr: string;

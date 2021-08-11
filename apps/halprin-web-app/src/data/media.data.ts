@@ -3,13 +3,14 @@ import { Media } from './data.types';
 export const mediaData: Media[] = [
   {
     media_slug: 'to-the-roots-of-dance',
+    media_type: 'video',
     title: {
       fr: 'Aux racines de la danse',
       en: 'To the Roots of Dance',
     },
     type: '1',
-    thumbnail: 'pics/1240_RootsofDance.jpg',
-    video_url: 'videos/1240_RootsofDance.mp4',
+    thumb: '/images/media/thumb1240_RootsofDance.jpg',
+    media_url: 'videos/1240_RootsofDance.mp4',
     tags: [
       {
         tag_slug: 'ages',
@@ -67,13 +68,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'dance-as-a-science',
+    media_type: 'video',
     title: {
       fr: 'La danse comme science',
       en: 'Dance as a Science',
     },
     type: '1',
-    thumbnail: 'pics/1200_danceasascience.jpg',
-    video_url: 'videos/1200_danceasascience.mp4',
+    thumb: '/images/media/thumb1200_danceasascience.jpg',
+    media_url: 'videos/1200_danceasascience.mp4',
     tags: [
       {
         tag_slug: 'anatomy',
@@ -115,13 +117,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'in-the-environment',
+    media_type: 'video',
     title: {
       fr: 'En extérieur',
       en: 'In the Environment',
     },
     type: '1',
-    thumbnail: 'pics/1210_InTheEnvironment.jpg',
-    video_url: 'videos/1210_InTheEnvironment.mp4',
+    thumb: '/images/media/thumb1210_InTheEnvironment.jpg',
+    media_url: 'videos/1210_InTheEnvironment.mp4',
     tags: [
       {
         tag_slug: 'environment',
@@ -187,13 +190,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'work-shop',
+    media_type: 'video',
     title: {
       fr: "L'atelier",
       en: 'Work-shop',
     },
     type: '1',
-    thumbnail: 'pics/1215_work-shop.jpg',
-    video_url: 'videos/1215_work-shop.mp4',
+    thumb: '/images/media/thumb1215_work-shop.jpg',
+    media_url: 'videos/1215_work-shop.mp4',
     tags: [
       {
         tag_slug: 'workshop',
@@ -251,13 +255,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'dance-as-a-philosophy',
+    media_type: 'video',
     title: {
       fr: 'La danse comme philosophie',
       en: 'Dance as a Philosophy',
     },
     type: '1',
-    thumbnail: 'pics/1220_asphilosophy.jpg',
-    video_url: 'videos/1220_asphilosophy.mp4',
+    thumb: '/images/media/thumb1220_asphilosophy.jpg',
+    media_url: 'videos/1220_asphilosophy.mp4',
     tags: [
       {
         tag_slug: 'generating-creativity',
@@ -311,13 +316,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'emotions-in-dance',
+    media_type: 'video',
     title: {
       fr: 'Les émotions dans la danse',
       en: 'Emotions in Dance',
     },
     type: '1',
-    thumbnail: 'pics/1230_emotions.jpg',
-    video_url: 'videos/1230_emotions.mp4',
+    thumb: '/images/media/thumb1230_emotions.jpg',
+    media_url: 'videos/1230_emotions.mp4',
     tags: [
       {
         tag_slug: 'emotion',
@@ -371,13 +377,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'a-social-art',
+    media_type: 'video',
     title: {
       fr: 'Un art social',
       en: 'A Social Art',
     },
     type: '1',
-    thumbnail: 'pics/1250_socialart.jpg',
-    video_url: 'videos/1250_socialart.mp4',
+    thumb: '/images/media/thumb1250_socialart.jpg',
+    media_url: 'videos/1250_socialart.mp4',
     tags: [
       {
         tag_slug: 'social-issue',
@@ -451,13 +458,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'a-ritual-for-healing',
+    media_type: 'video',
     title: {
       fr: 'Un rituel de guérison',
       en: 'A Ritual for Healing',
     },
     type: '1',
-    thumbnail: 'pics/1260_healing.jpg',
-    video_url: 'videos/1260_healing.mp4',
+    thumb: '/images/media/thumb1260_healing.jpg',
+    media_url: 'videos/1260_healing.mp4',
     tags: [
       {
         tag_slug: 'cancer',
@@ -547,13 +555,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'towards-spirituality',
+    media_type: 'video',
     title: {
       fr: 'Vers une spiritualité',
       en: 'Towards Spirituality',
     },
     type: '1',
-    thumbnail: 'pics/1270_spiritualcommunity.jpg',
-    video_url: 'videos/1270_spiritualcommunity.mp4',
+    thumb: '/images/media/thumb1270_spiritualcommunity.jpg',
+    media_url: 'videos/1270_spiritualcommunity.mp4',
     tags: [
       {
         tag_slug: 'spiritual',
@@ -647,13 +656,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'movement-rituals',
+    media_type: 'video',
     title: {
       fr: 'Rituels de mouvement',
       en: 'Movement Rituals',
     },
     type: '2',
-    thumbnail: 'pics/1400_MR.jpg',
-    video_url: 'videos/1400_MR.mp4',
+    thumb: '/images/media/thumb1400_MR.jpg',
+    media_url: 'videos/1400_MR.mp4',
     tags: [
       {
         tag_slug: 'movement-ritual',
@@ -747,13 +757,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'the-movement-feeling-process',
+    media_type: 'video',
     title: {
       fr: 'Le Processus mouvement / ressenti',
       en: 'The Movement / Feeling Process',
     },
     type: '2',
-    thumbnail: 'pics/1410_feedbackprocess.jpg',
-    video_url: 'videos/1410_feedbackprocess.mp4',
+    thumb: '/images/media/thumb1410_feedbackprocess.jpg',
+    media_url: 'videos/1410_feedbackprocess.mp4',
     tags: [
       {
         tag_slug: 'movement-feeling-process',
@@ -803,13 +814,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'the-three-levels-of-awareness',
+    media_type: 'video',
     title: {
       fr: 'Les Trois Niveaux de conscience',
       en: 'The Three Levels of Awareness',
     },
     type: '2',
-    thumbnail: 'pics/1420_threelevels.jpg',
-    video_url: 'videos/1420_threelevels.mp4',
+    thumb: '/images/media/thumb1420_threelevels.jpg',
+    media_url: 'videos/1420_threelevels.mp4',
     tags: [
       {
         tag_slug: 'three-levels-of-awareness',
@@ -895,13 +907,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'the-psychokinetic-visualization-process',
+    media_type: 'video',
     title: {
       fr: 'Le Processus de visualisation psycho-kinétique',
       en: 'The PsychoKinetic Visualization Process',
     },
     type: '2',
-    thumbnail: 'pics/1425_PsychoViz.jpg',
-    video_url: 'videos/1425_PsychoViz.mp4',
+    thumb: '/images/media/thumb1425_PsychoViz.jpg',
+    media_url: 'videos/1425_PsychoViz.mp4',
     tags: [
       {
         tag_slug: 'three-levels-of-awareness',
@@ -1027,13 +1040,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'the-five-part-process',
+    media_type: 'video',
     title: {
       fr: 'Le Processus en cinq parties',
       en: 'The Five Part Process',
     },
     type: '2',
-    thumbnail: 'pics/1430_fivepartprocess.jpg',
-    video_url: 'videos/1430_fivepartprocess.mp4',
+    thumb: '/images/media/thumb1430_fivepartprocess.jpg',
+    media_url: 'videos/1430_fivepartprocess.mp4',
     tags: [
       {
         tag_slug: 'five-part-process',
@@ -1087,13 +1101,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'the-rsvp-cycles',
+    media_type: 'video',
     title: {
       fr: 'Les Cycles RSVP',
       en: 'The RSVP Cycles',
     },
     type: '2',
-    thumbnail: 'pics/1450_rsvp.jpg',
-    video_url: 'videos/1450_rsvp.mp4',
+    thumb: '/images/media/thumb1450_rsvp.jpg',
+    media_url: 'videos/1450_rsvp.mp4',
     tags: [
       {
         tag_slug: 'rsvp-cycles',
@@ -1179,13 +1194,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'the-planetary-dance',
+    media_type: 'video',
     title: {
       fr: 'La Planetary Dance',
       en: 'The Planetary Dance',
     },
     type: '2',
-    thumbnail: 'pics/1460_PlanetaryDance.jpg',
-    video_url: 'videos/1460_PlanetaryDance.mp4',
+    thumb: '/images/media/thumb1460_PlanetaryDance.jpg',
+    media_url: 'videos/1460_PlanetaryDance.mp4',
     tags: [
       {
         tag_slug: 'planetary-dance',
@@ -1267,13 +1283,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'introduction',
+    media_type: 'video',
     title: {
       fr: 'Introduction',
       en: 'Introduction',
     },
     type: '3',
-    thumbnail: 'pics/1000_Introduction.jpg',
-    video_url: 'videos/1000_Introduction.mp4',
+    thumb: '/images/media/thumb1000_Introduction.jpg',
+    media_url: 'videos/1000_Introduction.mp4',
     tags: [
       {
         tag_slug: 'workshop',
@@ -1299,13 +1316,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'self-portrait',
+    media_type: 'video',
     title: {
       fr: "L'autoportrait",
       en: 'Self-Portrait',
     },
     type: '3',
-    thumbnail: 'pics/1010_SelfPortrait.jpg',
-    video_url: 'videos/1010_SelfPortrait.mp4',
+    thumb: '/images/media/thumb1010_SelfPortrait.jpg',
+    media_url: 'videos/1010_SelfPortrait.mp4',
     tags: [
       {
         tag_slug: 'self-portrait',
@@ -1375,13 +1393,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'positive-negative-space',
+    media_type: 'video',
     title: {
       fr: "L'espace positif & l'espace négatif",
       en: 'Positive & Negative Space',
     },
     type: '3',
-    thumbnail: 'pics/1020_PNspace.jpg',
-    video_url: 'videos/1020_PNspace.mp4',
+    thumb: '/images/media/thumb1020_PNspace.jpg',
+    media_url: 'videos/1020_PNspace.mp4',
     tags: [
       {
         tag_slug: 'spaces-positive-negative',
@@ -1443,13 +1462,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'collective-energy',
+    media_type: 'video',
     title: {
       fr: "L'énergie collective",
       en: 'Collective Energy',
     },
     type: '3',
-    thumbnail: 'pics/1030_CollectiveEnergy.jpg',
-    video_url: 'videos/1030_CollectiveEnergy.mp4',
+    thumb: '/images/media/thumb1030_CollectiveEnergy.jpg',
+    media_url: 'videos/1030_CollectiveEnergy.mp4',
     tags: [
       {
         tag_slug: 'collective-body',
@@ -1507,13 +1527,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'passive-active',
+    media_type: 'video',
     title: {
       fr: 'Passif & actif',
       en: 'Passive & Active',
     },
     type: '3',
-    thumbnail: 'pics/1040_PassiveActive.jpg',
-    video_url: 'videos/1040_PassiveActive.mp4',
+    thumb: '/images/media/thumb1040_PassiveActive.jpg',
+    media_url: 'videos/1040_PassiveActive.mp4',
     tags: [
       {
         tag_slug: 'polarities',
@@ -1627,13 +1648,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'men-dancing-women-witnessing',
+    media_type: 'video',
     title: {
       fr: 'Les hommes dansant, les femmes témoins',
       en: 'Men Dancing, Women Witnessing',
     },
     type: '3',
-    thumbnail: 'pics/1050_MensDance.jpg',
-    video_url: 'videos/1050_MensDance.mp4',
+    thumb: '/images/media/thumb1050_MensDance.jpg',
+    media_url: 'videos/1050_MensDance.mp4',
     tags: [
       {
         tag_slug: 'men-women',
@@ -1679,13 +1701,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'pulse-breath',
+    media_type: 'video',
     title: {
       fr: 'La pulsation & la respiration',
       en: 'Pulse & Breath',
     },
     type: '3',
-    thumbnail: 'pics/1080_Rhythmbreath.jpg',
-    video_url: 'videos/1080_Rhythmbreath.mp4',
+    thumb: '/images/media/thumb1080_Rhythmbreath.jpg',
+    media_url: 'videos/1080_Rhythmbreath.mp4',
     tags: [
       {
         tag_slug: 'pulse',
@@ -1771,13 +1794,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'movement-ritual-i',
+    media_type: 'video',
     title: {
       fr: 'Le Rituel de mouvement I',
       en: 'Movement Ritual I',
     },
     type: '3',
-    thumbnail: 'pics/1090_MovementRitual.jpg',
-    video_url: 'videos/1090_MovementRitual.mp4',
+    thumb: '/images/media/thumb1090_MovementRitual.jpg',
+    media_url: 'videos/1090_MovementRitual.mp4',
     tags: [
       {
         tag_slug: 'movement-ritual',
@@ -1871,13 +1895,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'a-talk',
+    media_type: 'video',
     title: {
       fr: 'Une causerie',
       en: 'A Talk',
     },
     type: '3',
-    thumbnail: 'pics/1100_Talk.jpg',
-    video_url: 'videos/1100_Talk.mp4',
+    thumb: '/images/media/thumb1100_Talk.jpg',
+    media_url: 'videos/1100_Talk.mp4',
     tags: [
       {
         tag_slug: 'life-art-process',
@@ -1923,13 +1948,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'a-planetary-dance',
+    media_type: 'video',
     title: {
       fr: 'Une Planetary Dance',
       en: 'A Planetary Dance',
     },
     type: '3',
-    thumbnail: 'pics/1110_PlanetaryDance.jpg',
-    video_url: 'videos/1110_PlanetaryDance.mp4',
+    thumb: '/images/media/thumb1110_PlanetaryDance.jpg',
+    media_url: 'videos/1110_PlanetaryDance.mp4',
     tags: [
       {
         tag_slug: 'planetary-dance',
@@ -2011,13 +2037,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'second-self-portrait',
+    media_type: 'video',
     title: {
       fr: 'Le second autoportrait',
       en: 'Second Self-Portrait',
     },
     type: '3',
-    thumbnail: 'pics/1120_SecSelfPortrait.jpg',
-    video_url: 'videos/1120_SecSelfPortrait.mp4',
+    thumb: '/images/media/thumb1120_SecSelfPortrait.jpg',
+    media_url: 'videos/1120_SecSelfPortrait.mp4',
     tags: [
       {
         tag_slug: 'life-art-process',
@@ -2063,13 +2090,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'an-evening-lecture',
+    media_type: 'video',
     title: {
       fr: 'Rencontre du soir',
       en: 'An Evening Lecture',
     },
     type: '3',
-    thumbnail: 'pics/1130_evening.jpg',
-    video_url: 'videos/1130_evening.mp4',
+    thumb: '/images/media/thumb1130_evening.jpg',
+    media_url: 'videos/1130_evening.mp4',
     tags: [
       {
         tag_slug: 'pulse',
@@ -2139,13 +2167,15 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'my-intentions',
+    media_type: 'video',
     title: {
       fr: 'Mes intentions',
       en: 'My Intentions',
     },
     type: 'topics',
-    thumbnail: 'pics/Introduction.jpg',
-    video_url: 'videos/Introduction.mp4',
+    moment: 'intro',
+    thumb: '/images/media/thumbIntroduction.jpg',
+    media_url: 'videos/Introduction.mp4',
     tags: [
       {
         tag_slug: 'life-art-process',
@@ -2155,13 +2185,15 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'preamble',
+    media_type: 'video',
     title: {
       fr: 'Préambule',
       en: 'Preamble',
     },
     type: 'topics',
-    thumbnail: 'pics/00_Preambule.jpg',
-    video_url: 'videos/00_Preambule.mp4',
+    moment: 'preambule',
+    thumb: '/images/media/thumb00_Preambule.jpg',
+    media_url: 'videos/00_Preambule.mp4',
     tags: [
       {
         tag_slug: 'life-art-process',
@@ -2171,13 +2203,15 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'breathing-exploration-self-portrait',
+    media_type: 'audio',
     title: {
       fr: 'Respiration & autoportrait',
       en: 'Breathing Exploration & Self-Portrait',
     },
     type: 'topics',
-    thumbnail: 'pics/audio.png',
-    video_url: {
+    moment: 'explo1',
+    thumb: '/images/media/thumbaudio.png',
+    media_url: {
       en: 'videos/Explo_BreathSelfPortrait_en.mp4',
       fr: 'videos/Explo_BreathSelfPortrait_fr.mp4',
     },
@@ -2194,13 +2228,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'why-are-you-still-teaching',
+    media_type: 'video',
     title: {
       fr: 'Pourquoi enseigner encore ?',
       en: 'Why are you still teaching?',
     },
     type: 'm',
-    thumbnail: 'pics/I_01c_whyteachingnow.jpg',
-    video_url: 'videos/I_01c_whyteachingnow.mp4',
+    thumb: '/images/media/thumbI_01c_whyteachingnow.jpg',
+    media_url: 'videos/I_01c_whyteachingnow.mp4',
     tags: [
       {
         tag_slug: 'ages',
@@ -2230,13 +2265,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'adapting-workshops-to-people',
+    media_type: 'video',
     title: {
       fr: "Adapter l'atelier aux participants",
       en: 'Adapting workshops to people',
     },
     type: 'm',
-    thumbnail: 'pics/I_05_adaptworkshoptopeople.jpg',
-    video_url: 'videos/I_05_adaptworkshoptopeople.mp4',
+    thumb: '/images/media/thumbI_05_adaptworkshoptopeople.jpg',
+    media_url: 'videos/I_05_adaptworkshoptopeople.mp4',
     tags: [
       {
         tag_slug: 'teaching',
@@ -2258,13 +2294,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'valuaction',
+    media_type: 'video',
     title: {
       fr: 'La valuaction',
       en: 'Valuaction',
     },
     type: 'm',
-    thumbnail: 'pics/I_rsvp_valuaction.jpg',
-    video_url: 'videos/I_rsvp_valuaction.mp4',
+    thumb: '/images/media/thumbI_rsvp_valuaction.jpg',
+    media_url: 'videos/I_rsvp_valuaction.mp4',
     tags: [
       {
         tag_slug: 'rsvp-cycles',
@@ -2290,13 +2327,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'avoiding-judgement',
+    media_type: 'video',
     title: {
       fr: 'Éviter de juger',
       en: 'Avoiding Judgement',
     },
     type: 'm',
-    thumbnail: 'pics/I_042c_avoidjudgement.jpg',
-    video_url: 'videos/I_042c_avoidjudgement.mp4',
+    thumb: '/images/media/thumbI_042c_avoidjudgement.jpg',
+    media_url: 'videos/I_042c_avoidjudgement.mp4',
     tags: [
       {
         tag_slug: 'rsvp-cycles',
@@ -2350,13 +2388,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'accuracy-between-movement-feeling',
+    media_type: 'video',
     title: {
       fr: "L'adéquation entre mouvement & ressenti",
       en: 'Accuracy between Movement & Feeling',
     },
     type: 'm',
-    thumbnail: 'pics/I_043c_feedbackprocess.jpg',
-    video_url: 'videos/I_043c_feedbackprocess.mp4',
+    thumb: '/images/media/thumbI_043c_feedbackprocess.jpg',
+    media_url: 'videos/I_043c_feedbackprocess.mp4',
     tags: [
       {
         tag_slug: 'movement-feeling-process',
@@ -2382,13 +2421,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'global-approach',
+    media_type: 'video',
     title: {
       fr: 'Une approche globale',
       en: 'Global Approach',
     },
     type: 'm',
-    thumbnail: 'pics/I_080c_globalapproachmediums.jpg',
-    video_url: 'videos/I_080c_globalapproachmediums.mp4',
+    thumb: '/images/media/thumbI_080c_globalapproachmediums.jpg',
+    media_url: 'videos/I_080c_globalapproachmediums.mp4',
     tags: [
       {
         tag_slug: 'breath',
@@ -2426,13 +2466,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'learning-about-us',
+    media_type: 'video',
     title: {
       fr: 'Apprendre sur soi',
       en: 'Learning about Us',
     },
     type: 'm',
-    thumbnail: 'pics/I_081c_lifeart.jpg',
-    video_url: 'videos/I_081c_lifeart.mp4',
+    thumb: '/images/media/thumbI_081c_lifeart.jpg',
+    media_url: 'videos/I_081c_lifeart.mp4',
     tags: [
       {
         tag_slug: 'life-art-process',
@@ -2486,13 +2527,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'asking-questions',
+    media_type: 'video',
     title: {
       fr: 'Poser des questions',
       en: 'Asking questions',
     },
     type: 'm',
-    thumbnail: 'pics/I_092c_question-connection.jpg',
-    video_url: 'videos/I_092c_question-connection.mp4',
+    thumb: '/images/media/thumbI_092c_question-connection.jpg',
+    media_url: 'videos/I_092c_question-connection.mp4',
     tags: [
       {
         tag_slug: 'life-art-process',
@@ -2510,13 +2552,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'self-portraits',
+    media_type: 'video',
     title: {
       fr: 'Les autoportraits',
       en: 'Self-Portraits',
     },
     type: 'm',
-    thumbnail: 'pics/I_100c_transformationSP.jpg',
-    video_url: 'videos/I_100c_transformationSP.mp4',
+    thumb: '/images/media/thumbI_100c_transformationSP.jpg',
+    media_url: 'videos/I_100c_transformationSP.mp4',
     tags: [
       {
         tag_slug: 'transformation',
@@ -2530,13 +2573,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'leonardo-da-vinci',
+    media_type: 'video',
     title: {
       fr: 'Léonard de Vinci',
       en: 'Leonardo da Vinci',
     },
     type: 'm',
-    thumbnail: 'pics/I_132c_leonarddavinci.jpg',
-    video_url: 'videos/I_132c_leonarddavinci.mp4',
+    thumb: '/images/media/thumbI_132c_leonarddavinci.jpg',
+    media_url: 'videos/I_132c_leonarddavinci.mp4',
     tags: [
       {
         tag_slug: 'da-vinci-leonardo',
@@ -2570,13 +2614,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'five-stages-to-healing',
+    media_type: 'video',
     title: {
       fr: 'Les cinq étapes vers la guérison',
       en: 'Five Stages to Healing',
     },
     type: 'm',
-    thumbnail: 'pics/I_143c_fivepartprocess-dwlotl.jpg',
-    video_url: 'videos/I_143c_fivepartprocess-dwlotl.mp4',
+    thumb: '/images/media/thumbI_143c_fivepartprocess-dwlotl.jpg',
+    media_url: 'videos/I_143c_fivepartprocess-dwlotl.mp4',
     tags: [
       {
         tag_slug: 'five-part-process',
@@ -2602,13 +2647,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'polarities-life',
+    media_type: 'video',
     title: {
       fr: 'Les polarités & la vie',
       en: 'Polarities & Life',
     },
     type: 'm',
-    thumbnail: 'pics/I_W_activeactive_lifeart.jpg',
-    video_url: 'videos/I_W_activeactive_lifeart.mp4',
+    thumb: '/images/media/thumbI_W_activeactive_lifeart.jpg',
+    media_url: 'videos/I_W_activeactive_lifeart.mp4',
     tags: [
       {
         tag_slug: 'life-art-process',
@@ -2674,13 +2720,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'be-the-witness',
+    media_type: 'video',
     title: {
       fr: 'Être témoin',
       en: 'Be the witness',
     },
     type: 'm',
-    thumbnail: 'pics/I_W_mensdance_witness.jpg',
-    video_url: 'videos/I_W_mensdance_witness.mp4',
+    thumb: '/images/media/thumbI_W_mensdance_witness.jpg',
+    media_url: 'videos/I_W_mensdance_witness.mp4',
     tags: [
       {
         tag_slug: 'witness',
@@ -2710,13 +2757,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'skills',
+    media_type: 'video',
     title: {
       fr: 'Les compétences',
       en: 'Skills',
     },
     type: 'm',
-    thumbnail: 'pics/I_W_skills.jpg',
-    video_url: 'videos/I_W_skills.mp4',
+    thumb: '/images/media/thumbI_W_skills.jpg',
+    media_url: 'videos/I_W_skills.mp4',
     tags: [
       {
         tag_slug: 'skills',
@@ -2726,13 +2774,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'the-spiral',
+    media_type: 'video',
     title: {
       fr: 'La spirale',
       en: 'The Spiral',
     },
     type: 'm',
-    thumbnail: 'pics/I_W_MRspiral.jpg',
-    video_url: 'videos/I_W_MRspiral.mp4',
+    thumb: '/images/media/thumbI_W_MRspiral.jpg',
+    media_url: 'videos/I_W_MRspiral.mp4',
     tags: [
       {
         tag_slug: 'spiral',
@@ -2762,13 +2811,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'importance-of-imagery',
+    media_type: 'video',
     title: {
       fr: "L'importance de l'imagerie",
       en: 'Importance of Imagery',
     },
     type: 'm',
-    thumbnail: 'pics/I_W_SelfPortrait_imagery.jpg',
-    video_url: 'videos/I_W_SelfPortrait_imagery.mp4',
+    thumb: '/images/media/thumbI_W_SelfPortrait_imagery.jpg',
+    media_url: 'videos/I_W_SelfPortrait_imagery.mp4',
     tags: [
       {
         tag_slug: 'self-portrait',
@@ -2826,13 +2876,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'children-draw',
+    media_type: 'video',
     title: {
       fr: 'Les enfants dessinent',
       en: 'Children draw',
     },
     type: 'm',
-    thumbnail: 'pics/A_ADF_children.jpg',
-    video_url: 'videos/A_ADF_children.mp4',
+    thumb: '/images/media/thumbA_ADF_children.jpg',
+    media_url: 'videos/A_ADF_children.mp4',
     tags: [
       {
         tag_slug: 'psychokinetic-visualization-process',
@@ -2854,13 +2905,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'the-deepest-place',
+    media_type: 'video',
     title: {
       fr: 'Au plus profond',
       en: 'The deepest place',
     },
     type: 'm',
-    thumbnail: 'pics/A_ADF_3levels_concl.jpg',
-    video_url: 'videos/A_ADF_3levels_concl.mp4',
+    thumb: '/images/media/thumbA_ADF_3levels_concl.jpg',
+    media_url: 'videos/A_ADF_3levels_concl.mp4',
     tags: [
       {
         tag_slug: 'psychokinetic-visualization-process',
@@ -2882,13 +2934,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'teaching-creation',
+    media_type: 'video',
     title: {
       fr: 'Enseigner & créer',
       en: 'Teaching & Creation',
     },
     type: 'm',
-    thumbnail: 'pics/A_ADF_teachit.jpg',
-    video_url: 'videos/A_ADF_teachit.mp4',
+    thumb: '/images/media/thumbA_ADF_teachit.jpg',
+    media_url: 'videos/A_ADF_teachit.mp4',
     tags: [
       {
         tag_slug: 'teaching',
@@ -2922,13 +2975,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'embodying-nature',
+    media_type: 'video',
     title: {
       fr: 'Incorporer la nature',
       en: 'Embodying Nature',
     },
     type: 'm',
-    thumbnail: 'pics/A_evening1987_Nature.jpg',
-    video_url: 'videos/A_evening1987_Nature.mp4',
+    thumb: '/images/media/thumbA_evening1987_Nature.jpg',
+    media_url: 'videos/A_evening1987_Nature.mp4',
     tags: [
       {
         tag_slug: 'nature',
@@ -2982,13 +3036,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'healing-talk',
+    media_type: 'video',
     title: {
       fr: 'Un récit de guérison',
       en: 'Healing Talk',
     },
     type: 'm',
-    thumbnail: 'pics/A_evening1987_Healing.jpg',
-    video_url: 'videos/A_evening1987_Healing.mp4',
+    thumb: '/images/media/thumbA_evening1987_Healing.jpg',
+    media_url: 'videos/A_evening1987_Healing.mp4',
     tags: [
       {
         tag_slug: 'healing',
@@ -3034,13 +3089,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'my-family',
+    media_type: 'video',
     title: {
       fr: 'Ma famille',
       en: 'My Family',
     },
     type: 'm',
-    thumbnail: 'pics/A_Aportrait_family.jpg',
-    video_url: 'videos/A_Aportrait_family.mp4',
+    thumb: '/images/media/thumbA_Aportrait_family.jpg',
+    media_url: 'videos/A_Aportrait_family.mp4',
     tags: [
       {
         tag_slug: 'family',
@@ -3058,13 +3114,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'about-the-rsvp-cycles',
+    media_type: 'video',
     title: {
       fr: 'A propos des Cycles RSVP',
       en: 'About the RSVP Cycles',
     },
     type: 'm',
-    thumbnail: 'pics/A_Aportrait_RSVP.jpg',
-    video_url: 'videos/A_Aportrait_RSVP.mp4',
+    thumb: '/images/media/thumbA_Aportrait_RSVP.jpg',
+    media_url: 'videos/A_Aportrait_RSVP.mp4',
     tags: [
       {
         tag_slug: 'rsvp-cycles',
@@ -3094,13 +3151,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'an-exploration',
+    media_type: 'video',
     title: {
       fr: 'Une exploration',
       en: 'An Exploration',
     },
     type: 'm',
-    thumbnail: 'pics/A_aWorkshop_animals.jpg',
-    video_url: 'videos/A_aWorkshop_animals.mp4',
+    thumb: '/images/media/thumbA_aWorkshop_animals.jpg',
+    media_url: 'videos/A_aWorkshop_animals.mp4',
     tags: [
       {
         tag_slug: 'three-levels-of-awareness',
@@ -3118,13 +3176,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'moving-with-the-senses',
+    media_type: 'video',
     title: {
       fr: 'Bouger avec les sens',
       en: 'Moving with the Senses',
     },
     type: 'm',
-    thumbnail: 'pics/A_aWorkshop_physical.jpg',
-    video_url: 'videos/A_aWorkshop_physical.mp4',
+    thumb: '/images/media/thumbA_aWorkshop_physical.jpg',
+    media_url: 'videos/A_aWorkshop_physical.mp4',
     tags: [
       {
         tag_slug: 'body-mind',
@@ -3154,13 +3213,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'a-passive-active-exploration',
+    media_type: 'video',
     title: {
       fr: 'Une exploration passive & active',
       en: 'A Passive & Active Exploration',
     },
     type: 'm',
-    thumbnail: 'pics/A_aWorkshop_passiveActive.jpg',
-    video_url: 'videos/A_aWorkshop_passiveActive.mp4',
+    thumb: '/images/media/thumbA_aWorkshop_passiveActive.jpg',
+    media_url: 'videos/A_aWorkshop_passiveActive.mp4',
     tags: [
       {
         tag_slug: 'polarities',
@@ -3194,13 +3254,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'asserting-yourself-in-the-community',
+    media_type: 'video',
     title: {
       fr: "S'affirmer devant les autres",
       en: 'Asserting Yourself in the Community',
     },
     type: 'm',
-    thumbnail: 'pics/A_circletheearth_claimaids.jpg',
-    video_url: 'videos/A_circletheearth_claimaids.mp4',
+    thumb: '/images/media/thumbA_circletheearth_claimaids.jpg',
+    media_url: 'videos/A_circletheearth_claimaids.mp4',
     tags: [
       {
         tag_slug: 'aids',
@@ -3258,13 +3319,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'partners',
+    media_type: 'video',
     title: {
       fr: 'Les partenaires',
       en: 'Partners',
     },
     type: 'm',
-    thumbnail: 'pics/A_circletheearth_partners.jpg',
-    video_url: 'videos/A_circletheearth_partners.mp4',
+    thumb: '/images/media/thumbA_circletheearth_partners.jpg',
+    media_url: 'videos/A_circletheearth_partners.mp4',
     tags: [
       {
         tag_slug: 'life-art-process',
@@ -3326,13 +3388,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'dealing-with-aids',
+    media_type: 'video',
     title: {
       fr: 'Face au SIDA',
       en: 'Dealing with AIDS',
     },
     type: 'm',
-    thumbnail: 'pics/A_DanceforyourLife_healing.jpg',
-    video_url: 'videos/A_DanceforyourLife_healing.mp4',
+    thumb: '/images/media/thumbA_DanceforyourLife_healing.jpg',
+    media_url: 'videos/A_DanceforyourLife_healing.mp4',
     tags: [
       {
         tag_slug: 'aids',
@@ -3382,13 +3445,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'a-self-portrait-dance',
+    media_type: 'video',
     title: {
       fr: 'Danser son autoportrait',
       en: 'A Self-Portrait Dance',
     },
     type: 'm',
-    thumbnail: 'pics/A_DanceforyourLife_self.jpg',
-    video_url: 'videos/A_DanceforyourLife_self.mp4',
+    thumb: '/images/media/thumbA_DanceforyourLife_self.jpg',
+    media_url: 'videos/A_DanceforyourLife_self.mp4',
     tags: [
       {
         tag_slug: 'life-art-process',
@@ -3450,13 +3514,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'h-doubler-s-legacy',
+    media_type: 'video',
     title: {
       fr: "L'héritage de M. H'Doubler",
       en: "H'Doubler's Legacy",
     },
     type: 'm',
-    thumbnail: 'pics/A_LivingLegend_Hdoubler_2.jpg',
-    video_url: 'videos/A_LivingLegend_Hdoubler_2.mp4',
+    thumb: '/images/media/thumbA_LivingLegend_Hdoubler_2.jpg',
+    media_url: 'videos/A_LivingLegend_Hdoubler_2.mp4',
     tags: [
       {
         tag_slug: 'art',
@@ -3494,13 +3559,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'improvisation',
+    media_type: 'video',
     title: {
       fr: "L'improvisation",
       en: 'Improvisation',
     },
     type: 'm',
-    thumbnail: 'pics/A_LivingLegend_Impro_2.jpg',
-    video_url: 'videos/A_LivingLegend_Impro_2.mp4',
+    thumb: '/images/media/thumbA_LivingLegend_Impro_2.jpg',
+    media_url: 'videos/A_LivingLegend_Impro_2.mp4',
     tags: [
       {
         tag_slug: 'improvisation',
@@ -3518,13 +3584,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'family-dance',
+    media_type: 'video',
     title: {
       fr: 'Danser en famille',
       en: 'Family Dance',
     },
     type: 'm',
-    thumbnail: 'pics/A_LivingLegend_LifeArtProcess.jpg',
-    video_url: 'videos/A_LivingLegend_LifeArtProcess.mp4',
+    thumb: '/images/media/thumbA_LivingLegend_LifeArtProcess.jpg',
+    media_url: 'videos/A_LivingLegend_LifeArtProcess.mp4',
     tags: [
       {
         tag_slug: 'family',
@@ -3554,13 +3621,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'life-dance',
+    media_type: 'video',
     title: {
       fr: 'La vie & la danse',
       en: 'Life & Dance',
     },
     type: 'm',
-    thumbnail: 'pics/A_LivingLegend_LifeDance.jpg',
-    video_url: 'videos/A_LivingLegend_LifeDance.mp4',
+    thumb: '/images/media/thumbA_LivingLegend_LifeDance.jpg',
+    media_url: 'videos/A_LivingLegend_LifeDance.mp4',
     tags: [
       {
         tag_slug: 'global-approach',
@@ -3602,13 +3670,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'breaking-loose-from-modern-dance',
+    media_type: 'video',
     title: {
       fr: 'Rompre avec la modern dance',
       en: 'Breaking Loose from Modern Dance',
     },
     type: 'm',
-    thumbnail: 'pics/A_LivingLegend_ModernDance.jpg',
-    video_url: 'videos/A_LivingLegend_ModernDance.mp4',
+    thumb: '/images/media/thumbA_LivingLegend_ModernDance.jpg',
+    media_url: 'videos/A_LivingLegend_ModernDance.mp4',
     tags: [
       {
         tag_slug: 'breaking-loose',
@@ -3642,13 +3711,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'with-the-pomo-indians',
+    media_type: 'video',
     title: {
       fr: 'Chez les Indiens Pomo',
       en: 'With the Pomo Indians',
     },
     type: 'm',
-    thumbnail: 'pics/A_LivingLegend_ThePomos.jpg',
-    video_url: 'videos/A_LivingLegend_ThePomos.mp4',
+    thumb: '/images/media/thumbA_LivingLegend_ThePomos.jpg',
+    media_url: 'videos/A_LivingLegend_ThePomos.mp4',
     tags: [
       {
         tag_slug: 'indians',
@@ -3678,13 +3748,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'after-cancer',
+    media_type: 'video',
     title: {
       fr: 'Après un cancer',
       en: 'After Cancer',
     },
     type: 'm',
-    thumbnail: 'pics/A_InnerLandsc_AfterCancer_LifeArt.jpg',
-    video_url: 'videos/A_InnerLandsc_AfterCancer_LifeArt.mp4',
+    thumb: '/images/media/thumbA_InnerLandsc_AfterCancer_LifeArt.jpg',
+    media_url: 'videos/A_InnerLandsc_AfterCancer_LifeArt.mp4',
     tags: [
       {
         tag_slug: 'life-art-process',
@@ -3722,13 +3793,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'audience-boundaries',
+    media_type: 'video',
     title: {
       fr: 'Le public & les limites',
       en: 'Audience & Boundaries',
     },
     type: 'm',
-    thumbnail: 'pics/A_InnerLandsc_BreakingBarriers_2.jpg',
-    video_url: 'videos/A_InnerLandsc_BreakingBarriers_2.mp4',
+    thumb: '/images/media/thumbA_InnerLandsc_BreakingBarriers_2.jpg',
+    media_url: 'videos/A_InnerLandsc_BreakingBarriers_2.mp4',
     tags: [
       {
         tag_slug: 'audience',
@@ -3758,13 +3830,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'living-dancing-with-aids',
+    media_type: 'video',
     title: {
       fr: 'Vivre & danser avec le SIDA',
       en: 'Living & Dancing with AIDS',
     },
     type: 'm',
-    thumbnail: 'pics/A_InnerLandsc_DanceAids.jpg',
-    video_url: 'videos/A_InnerLandsc_DanceAids.mp4',
+    thumb: '/images/media/thumbA_InnerLandsc_DanceAids.jpg',
+    media_url: 'videos/A_InnerLandsc_DanceAids.mp4',
     tags: [
       {
         tag_slug: 'transformation',
@@ -3798,13 +3871,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'dancing-in-nature',
+    media_type: 'video',
     title: {
       fr: 'Danser dans la nature',
       en: 'Dancing in Nature',
     },
     type: 'm',
-    thumbnail: 'pics/A_InnerLandsc_DanceEnvironment.jpg',
-    video_url: 'videos/A_InnerLandsc_DanceEnvironment.mp4',
+    thumb: '/images/media/thumbA_InnerLandsc_DanceEnvironment.jpg',
+    media_url: 'videos/A_InnerLandsc_DanceEnvironment.mp4',
     tags: [
       {
         tag_slug: 'nature',
@@ -3826,13 +3900,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'breaking-barriers',
+    media_type: 'video',
     title: {
       fr: 'Briser les barrières',
       en: 'Breaking Barriers',
     },
     type: 'm',
-    thumbnail: 'pics/A_InnerLandsc_Hangar_BreakingBarriers.jpg',
-    video_url: 'videos/A_InnerLandsc_Hangar_BreakingBarriers.mp4',
+    thumb: '/images/media/thumbA_InnerLandsc_Hangar_BreakingBarriers.jpg',
+    media_url: 'videos/A_InnerLandsc_Hangar_BreakingBarriers.mp4',
     tags: [
       {
         tag_slug: 'breaking-loose',
@@ -3874,13 +3949,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'dancing-in-jewish-culture',
+    media_type: 'video',
     title: {
       fr: 'Danser dans la culture juive',
       en: 'Dancing in Jewish Culture',
     },
     type: 'm',
-    thumbnail: 'pics/A_InnerLandsc_JewishCult_Dance.jpg',
-    video_url: 'videos/A_InnerLandsc_JewishCult_Dance.mp4',
+    thumb: '/images/media/thumbA_InnerLandsc_JewishCult_Dance.jpg',
+    media_url: 'videos/A_InnerLandsc_JewishCult_Dance.mp4',
     tags: [
       {
         tag_slug: 'family',
@@ -3902,13 +3978,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'the-bauhaus',
+    media_type: 'video',
     title: {
       fr: 'Le Bauhaus',
       en: 'The Bauhaus',
     },
     type: 'm',
-    thumbnail: 'pics/A_InnerLandsc_Larry_ArtBauhaus.jpg',
-    video_url: 'videos/A_InnerLandsc_Larry_ArtBauhaus.mp4',
+    thumb: '/images/media/thumbA_InnerLandsc_Larry_ArtBauhaus.jpg',
+    media_url: 'videos/A_InnerLandsc_Larry_ArtBauhaus.mp4',
     tags: [
       {
         tag_slug: 'bauhaus',
@@ -3938,13 +4015,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'the-kibbutz',
+    media_type: 'video',
     title: {
       fr: 'Le kibboutz',
       en: 'The Kibbutz',
     },
     type: 'm',
-    thumbnail: 'pics/A_InnerLandsc_Larry_community.jpg',
-    video_url: 'videos/A_InnerLandsc_Larry_community.mp4',
+    thumb: '/images/media/thumbA_InnerLandsc_Larry_community.jpg',
+    media_url: 'videos/A_InnerLandsc_Larry_community.mp4',
     tags: [
       {
         tag_slug: 'community',
@@ -3966,13 +4044,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'working-with-nature',
+    media_type: 'video',
     title: {
       fr: 'Travailler avec la nature',
       en: 'Working with Nature',
     },
     type: 'm',
-    thumbnail: 'pics/A_InnerLandsc_Larry_Nature.jpg',
-    video_url: 'videos/A_InnerLandsc_Larry_Nature.mp4',
+    thumb: '/images/media/thumbA_InnerLandsc_Larry_Nature.jpg',
+    media_url: 'videos/A_InnerLandsc_Larry_Nature.mp4',
     tags: [
       {
         tag_slug: 'nature',
@@ -3998,13 +4077,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'art-nature',
+    media_type: 'video',
     title: {
       fr: "L'art & la nature",
       en: 'Art & Nature',
     },
     type: 'm',
-    thumbnail: 'pics/A_LarryAnna_artnature.jpg',
-    video_url: 'videos/A_LarryAnna_artnature.mp4',
+    thumb: '/images/media/thumbA_LarryAnna_artnature.jpg',
+    media_url: 'videos/A_LarryAnna_artnature.mp4',
     tags: [
       {
         tag_slug: 'art',
@@ -4034,13 +4114,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'the-ecology-of-form',
+    media_type: 'video',
     title: {
       fr: "L'écologie de la forme",
       en: 'The Ecology of Form',
     },
     type: 'm',
-    thumbnail: 'pics/A_LarryAnna_ecologyofform.jpg',
-    video_url: 'videos/A_LarryAnna_ecologyofform.mp4',
+    thumb: '/images/media/thumbA_LarryAnna_ecologyofform.jpg',
+    media_url: 'videos/A_LarryAnna_ecologyofform.mp4',
     tags: [
       {
         tag_slug: 'art',
@@ -4070,13 +4151,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'movement-choreography',
+    media_type: 'video',
     title: {
       fr: 'Mouvement & chorégraphie',
       en: 'Movement & Choreography',
     },
     type: 'm',
-    thumbnail: 'pics/A_LarryAnna_movement.jpg',
-    video_url: 'videos/A_LarryAnna_movement.mp4',
+    thumb: '/images/media/thumbA_LarryAnna_movement.jpg',
+    media_url: 'videos/A_LarryAnna_movement.mp4',
     tags: [
       {
         tag_slug: 'space',
@@ -4110,13 +4192,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'networking',
+    media_type: 'video',
     title: {
       fr: 'La mise en réseau',
       en: 'Networking',
     },
     type: 'm',
-    thumbnail: 'pics/A_LarryAnna_networking.jpg',
-    video_url: 'videos/A_LarryAnna_networking.mp4',
+    thumb: '/images/media/thumbA_LarryAnna_networking.jpg',
+    media_url: 'videos/A_LarryAnna_networking.mp4',
     tags: [
       {
         tag_slug: 'space',
@@ -4146,13 +4229,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'workshops-scoring',
+    media_type: 'video',
     title: {
       fr: 'Ateliers & partitions',
       en: 'Workshops & scoring',
     },
     type: 'm',
-    thumbnail: 'pics/A_LarryAnna_scoreworkshop.jpg',
-    video_url: 'videos/A_LarryAnna_scoreworkshop.mp4',
+    thumb: '/images/media/thumbA_LarryAnna_scoreworkshop.jpg',
+    media_url: 'videos/A_LarryAnna_scoreworkshop.mp4',
     tags: [
       {
         tag_slug: 'rsvp-cycles',
@@ -4202,13 +4286,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'myths-rituals',
+    media_type: 'video',
     title: {
       fr: 'Mythes & rituels',
       en: 'Myths & Rituals',
     },
     type: 'm',
-    thumbnail: 'pics/A_mythsANDrituals_CTE_theory.jpg',
-    video_url: 'videos/A_mythsANDrituals_CTE_theory.mp4',
+    thumb: '/images/media/thumbA_mythsANDrituals_CTE_theory.jpg',
+    media_url: 'videos/A_mythsANDrituals_CTE_theory.mp4',
     tags: [
       {
         tag_slug: 'myth',
@@ -4254,13 +4339,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'myths-rituals-workshop',
+    media_type: 'video',
     title: {
       fr: 'Un atelier de mythes & de rituels',
       en: 'Myths & Rituals Workshop',
     },
     type: 'm',
-    thumbnail: 'pics/A_mythsANDrituals_CTE_workshop.jpg',
-    video_url: 'videos/A_mythsANDrituals_CTE_workshop.mp4',
+    thumb: '/images/media/thumbA_mythsANDrituals_CTE_workshop.jpg',
+    media_url: 'videos/A_mythsANDrituals_CTE_workshop.mp4',
     tags: [
       {
         tag_slug: 'workshop',
@@ -4306,13 +4392,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'a-rock-in-my-shoe',
+    media_type: 'video',
     title: {
       fr: 'Un caillou dans la chaussure',
       en: 'A rock in my Shoe',
     },
     type: 'm',
-    thumbnail: 'pics/A_PositiveMotion_poem.jpg',
-    video_url: 'videos/A_PositiveMotion_poem.mp4',
+    thumb: '/images/media/thumbA_PositiveMotion_poem.jpg',
+    media_url: 'videos/A_PositiveMotion_poem.mp4',
     tags: [
       {
         tag_slug: 'aids',
@@ -4334,13 +4421,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'the-voice-of-emotion',
+    media_type: 'video',
     title: {
       fr: "La voix de l'émotion",
       en: 'The Voice of Emotion',
     },
     type: 'm',
-    thumbnail: 'pics/A_PositiveMotion_movefeeling.jpg',
-    video_url: 'videos/A_PositiveMotion_movefeeling.mp4',
+    thumb: '/images/media/thumbA_PositiveMotion_movefeeling.jpg',
+    media_url: 'videos/A_PositiveMotion_movefeeling.mp4',
     tags: [
       {
         tag_slug: 'aids',
@@ -4402,13 +4490,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'with-nature',
+    media_type: 'video',
     title: {
       fr: 'Avec la nature',
       en: 'With Nature',
     },
     type: 'm',
-    thumbnail: 'pics/A_ReturningHome_NatureIntro.jpg',
-    video_url: 'videos/A_ReturningHome_NatureIntro.mp4',
+    thumb: '/images/media/thumbA_ReturningHome_NatureIntro.jpg',
+    media_url: 'videos/A_ReturningHome_NatureIntro.mp4',
     tags: [
       {
         tag_slug: 'nature',
@@ -4434,13 +4523,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'cancer-nature',
+    media_type: 'video',
     title: {
       fr: 'Cancer & nature',
       en: 'Cancer & Nature',
     },
     type: 'm',
-    thumbnail: 'pics/A_ReturningHome_NatureCancer.jpg',
-    video_url: 'videos/A_ReturningHome_NatureCancer.mp4',
+    thumb: '/images/media/thumbA_ReturningHome_NatureCancer.jpg',
+    media_url: 'videos/A_ReturningHome_NatureCancer.mp4',
     tags: [
       {
         tag_slug: 'cancer',
@@ -4462,13 +4552,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'dancing-with-nature',
+    media_type: 'video',
     title: {
       fr: 'Danser avec la nature',
       en: 'Dancing with Nature',
     },
     type: 'm',
-    thumbnail: 'pics/A_ReturningHome_Impro.jpg',
-    video_url: 'videos/A_ReturningHome_Impro.mp4',
+    thumb: '/images/media/thumbA_ReturningHome_Impro.jpg',
+    media_url: 'videos/A_ReturningHome_Impro.mp4',
     tags: [
       {
         tag_slug: 'nature',
@@ -4526,13 +4617,14 @@ export const mediaData: Media[] = [
   },
   {
     media_slug: 'transformation',
+    media_type: 'video',
     title: {
       fr: 'Transformation',
       en: 'Transformation',
     },
     type: 'm',
-    thumbnail: 'pics/A_RightOn_Transf.jpg',
-    video_url: 'videos/A_RightOn_Transf.mp4',
+    thumb: '/images/media/thumbA_RightOn_Transf.jpg',
+    media_url: 'videos/A_RightOn_Transf.mp4',
     tags: [
       {
         tag_slug: 'transformation',

@@ -7,7 +7,7 @@ import { isNonEmptyString, isSafeInteger } from '@contredanse/common';
 import { stripHtml } from 'string-strip-html';
 import CodeBlockWriter from 'code-block-writer';
 import { Media, Tag } from '@/data/data.types';
-import { isVideoUrl } from '@/features/video/utils/typeguards';
+import { isMediaUrl } from '@/features/video/utils/typeguards';
 
 type DvdJson = Simplify<{
   dvd: {
@@ -19,7 +19,8 @@ type DvdJson = Simplify<{
           path_fr?: string;
           path_en?: string;
           thumb?: string | null;
-          type: number;
+          type: string;
+          moment?: string;
         };
         tag: {
           $: {
@@ -117,26 +118,34 @@ export class LegacyDvdConverter {
         }
       });
 
-      const videoUrl =
+      const mediaUrl =
         'path' in medium.$ && medium.$.path?.trim() !== ''
           ? medium.$.path?.trim()
           : {
               en: medium.$.path_en?.trim(),
               fr: medium.$.path_fr?.trim(),
             };
-      if (!isVideoUrl(videoUrl)) {
-        throw new Error(`Cannot infer videoUrl for ${medium.en[0]}`);
+      if (!isMediaUrl(mediaUrl)) {
+        throw new Error(`Cannot infer mediaUrl for ${medium.en[0]}`);
       }
+
+      const thumb = (medium.$.thumb?.trim() ?? '').replace(
+        /^pics\//,
+        '/images/media/thumb'
+      );
+      const mediaType = thumb.match(/audio\.png$/) ? 'audio' : 'video';
 
       data.push({
         media_slug: slug,
+        media_type: mediaType,
         title: {
           fr: stripHtml(medium.fr[0]).result,
           en: stripHtml(medium.en[0]).result,
         },
         type: medium.$.type,
-        thumbnail: medium.$.thumb?.trim() ?? undefined,
-        video_url: videoUrl,
+        ...('moment' in medium.$ ? { moment: medium.$.moment } : {}),
+        thumb: thumb,
+        media_url: mediaUrl,
         tags: normalizedTags,
       });
     });

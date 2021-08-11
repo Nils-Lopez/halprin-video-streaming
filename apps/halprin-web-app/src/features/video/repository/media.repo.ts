@@ -7,6 +7,12 @@ type Props = {
   lang: SupportedLang;
   videoData?: Media[];
 };
+
+type SearchParams = {
+  tagSlugs: string[] | string;
+  types?: string[] | string;
+};
+
 export class MediaRepo {
   private lang: SupportedLang;
   private data: Media[];
@@ -20,13 +26,18 @@ export class MediaRepo {
   findBySlug = (slug: string): Media | null => {
     return this.data.filter((media) => media.media_slug === slug)?.[0] ?? null;
   };
-  findByTags = (
-    tagSlugs: string[] | string,
-    sortByRelevance = true
-  ): Media[] => {
+  search = (params: SearchParams, sortByRelevance = true): Media[] => {
+    const { tagSlugs, types: searchTypes } = params;
     const slugs = typeof tagSlugs === 'string' ? [tagSlugs] : tagSlugs;
+    const types = typeof searchTypes === 'string' ? [searchTypes] : searchTypes;
+
+    const data: Media[] =
+      types !== undefined
+        ? this.data.filter((media) => types.includes(media.type))
+        : this.data;
+
     const relevanceMap = new Map<string, number>();
-    const filtered = this.data.filter((media) => {
+    const filtered = data.filter((media) => {
       const count = media.tags.length;
       let i = 0;
       let found = false;
