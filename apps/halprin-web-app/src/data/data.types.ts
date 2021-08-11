@@ -32,6 +32,16 @@ export type MediaTracks = {
   en?: string;
 };
 
+export type Credit = {
+  year?: number;
+  index: boolean;
+  id: number;
+  htmlLabel: {
+    fr: string;
+    en: string;
+  };
+};
+
 export type Media = {
   media_slug: string;
   type: 'audio' | 'video';
@@ -41,6 +51,7 @@ export type Media = {
   category: MediaCategorySlug;
   moment?: string;
   tags: { tag_slug: string; relevance: number }[];
+  creditsIds?: number[];
   title: {
     fr: string;
     en: string;

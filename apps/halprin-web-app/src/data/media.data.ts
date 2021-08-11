@@ -68,6 +68,7 @@ export const mediaData: Media[] = [
         relevance: 25,
       },
     ],
+    creditsIds: [23, 11, 30, 31, 32, 8, 33, 4],
   },
   {
     media_slug: 'dance-as-a-science',
@@ -120,6 +121,7 @@ export const mediaData: Media[] = [
         relevance: 50,
       },
     ],
+    creditsIds: [22, 11, 38, 39, 41, 42, 43],
   },
   {
     media_slug: 'in-the-environment',
@@ -196,6 +198,7 @@ export const mediaData: Media[] = [
         relevance: 48,
       },
     ],
+    creditsIds: [44, 45, 8, 23, 46, 22, 12, 7, 49],
   },
   {
     media_slug: 'work-shop',
@@ -264,6 +267,7 @@ export const mediaData: Media[] = [
         relevance: 30,
       },
     ],
+    creditsIds: [22, 11],
   },
   {
     media_slug: 'dance-as-a-philosophy',
@@ -328,6 +332,7 @@ export const mediaData: Media[] = [
         relevance: 35,
       },
     ],
+    creditsIds: [22, 20],
   },
   {
     media_slug: 'emotions-in-dance',
@@ -392,6 +397,7 @@ export const mediaData: Media[] = [
         relevance: 35,
       },
     ],
+    creditsIds: [4, 47, 48, 49, 50, 51, 52, 53],
   },
   {
     media_slug: 'a-social-art',
@@ -476,6 +482,7 @@ export const mediaData: Media[] = [
         relevance: 50,
       },
     ],
+    creditsIds: [26, 20, 8, 7],
   },
   {
     media_slug: 'a-ritual-for-healing',
@@ -576,6 +583,7 @@ export const mediaData: Media[] = [
         relevance: 40,
       },
     ],
+    creditsIds: [8, 3, 16, 22, 19],
   },
   {
     media_slug: 'towards-spirituality',
@@ -680,6 +688,7 @@ export const mediaData: Media[] = [
         relevance: 55,
       },
     ],
+    creditsIds: [12, 15, 17, 31, 19, 23],
   },
   {
     media_slug: 'movement-rituals',
@@ -784,6 +793,7 @@ export const mediaData: Media[] = [
         relevance: 30,
       },
     ],
+    creditsIds: [22, 11, 56],
   },
   {
     media_slug: 'the-movement-feeling-process',
@@ -844,6 +854,7 @@ export const mediaData: Media[] = [
         relevance: 50,
       },
     ],
+    creditsIds: [15, 31, 22, 12],
   },
   {
     media_slug: 'the-three-levels-of-awareness',
@@ -940,6 +951,7 @@ export const mediaData: Media[] = [
         relevance: 40,
       },
     ],
+    creditsIds: [11, 29],
   },
   {
     media_slug: 'the-psychokinetic-visualization-process',
@@ -1076,6 +1088,7 @@ export const mediaData: Media[] = [
         relevance: 40,
       },
     ],
+    creditsIds: [3, 90],
   },
   {
     media_slug: 'the-five-part-process',
@@ -1140,6 +1153,7 @@ export const mediaData: Media[] = [
         relevance: 50,
       },
     ],
+    creditsIds: [22, 19, 57, 58, 63, 64],
   },
   {
     media_slug: 'the-rsvp-cycles',
@@ -1236,6 +1250,7 @@ export const mediaData: Media[] = [
         relevance: 40,
       },
     ],
+    creditsIds: [28, 8, 7, 22, 19],
   },
   {
     media_slug: 'the-planetary-dance',
@@ -1328,6 +1343,7 @@ export const mediaData: Media[] = [
         relevance: 35,
       },
     ],
+    creditsIds: [17, 19, 20, 8, 31, 22, 32],
   },
   {
     media_slug: 'introduction',
@@ -1364,6 +1380,7 @@ export const mediaData: Media[] = [
         relevance: 60,
       },
     ],
+    creditsIds: [20, 22],
   },
   {
     media_slug: 'self-portrait',
@@ -1444,6 +1461,7 @@ export const mediaData: Media[] = [
         relevance: 55,
       },
     ],
+    creditsIds: [20],
   },
   {
     media_slug: 'positive-negative-space',
@@ -1516,6 +1534,7 @@ export const mediaData: Media[] = [
         relevance: 45,
       },
     ],
+    creditsIds: [20, 22],
   },
   {
     media_slug: 'collective-energy',
@@ -1584,6 +1603,7 @@ export const mediaData: Media[] = [
         relevance: 50,
       },
     ],
+    creditsIds: [20, 22],
   },
   {
     media_slug: 'passive-active',
@@ -1708,6 +1728,7 @@ export const mediaData: Media[] = [
         relevance: 30,
       },
     ],
+    creditsIds: [20, 22],
   },
   {
     media_slug: 'men-dancing-women-witnessing',
@@ -1764,6 +1785,7 @@ export const mediaData: Media[] = [
         relevance: 45,
       },
     ],
+    creditsIds: [20, 22],
   },
   {
     media_slug: 'pulse-breath',
@@ -1860,6 +1882,7 @@ export const mediaData: Media[] = [
         relevance: 25,
       },
     ],
+    creditsIds: [20, 22],
   },
   {
     media_slug: 'movement-ritual-i',
@@ -1964,6 +1987,7 @@ export const mediaData: Media[] = [
         relevance: 22,
       },
     ],
+    creditsIds: [20, 22],
   },
   {
     media_slug: 'a-talk',
@@ -2020,6 +2044,7 @@ export const mediaData: Media[] = [
         relevance: 30,
       },
     ],
+    creditsIds: [20],
   },
   {
     media_slug: 'a-planetary-dance',
@@ -2113,6 +2138,7 @@ export const mediaData: Media[] = [
         relevance: 23,
       },
     ],
+    creditsIds: [20, 22],
   },
   {
     media_slug: 'second-self-portrait',
@@ -2169,6 +2195,7 @@ export const mediaData: Media[] = [
         relevance: 45,
       },
     ],
+    creditsIds: [20, 22],
   },
   {
     media_slug: 'an-evening-lecture',
@@ -2249,6 +2276,7 @@ export const mediaData: Media[] = [
         relevance: 28,
       },
     ],
+    creditsIds: [200],
   },
   {
     media_slug: 'my-intentions',
@@ -2269,6 +2297,10 @@ export const mediaData: Media[] = [
         tag_slug: 'life-art-process',
         relevance: 99,
       },
+    ],
+    creditsIds: [
+      70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87,
+      88, 89, 6,
     ],
   },
   {
@@ -2291,6 +2323,7 @@ export const mediaData: Media[] = [
         relevance: 100,
       },
     ],
+    creditsIds: [23, 6],
   },
   {
     media_slug: 'breathing-exploration-self-portrait',
@@ -2301,7 +2334,6 @@ export const mediaData: Media[] = [
     },
     category: 'topics',
     moment: 'explo1',
-    tracks: {},
     thumb: '/images/media/thumb/audio.png',
     url: {
       en: 'videos/Explo_BreathSelfPortrait_en.mp4',
@@ -2317,6 +2349,7 @@ export const mediaData: Media[] = [
         relevance: 15,
       },
     ],
+    creditsIds: [5],
   },
   {
     media_slug: 'why-are-you-still-teaching',
@@ -2357,6 +2390,7 @@ export const mediaData: Media[] = [
         relevance: 80,
       },
     ],
+    creditsIds: [22],
   },
   {
     media_slug: 'adapting-workshops-to-people',
@@ -2389,6 +2423,7 @@ export const mediaData: Media[] = [
         relevance: 45,
       },
     ],
+    creditsIds: [22],
   },
   {
     media_slug: 'valuaction',
@@ -2425,6 +2460,7 @@ export const mediaData: Media[] = [
         relevance: 80,
       },
     ],
+    creditsIds: [22],
   },
   {
     media_slug: 'avoiding-judgement',
@@ -2489,6 +2525,7 @@ export const mediaData: Media[] = [
         relevance: 65,
       },
     ],
+    creditsIds: [22],
   },
   {
     media_slug: 'accuracy-between-movement-feeling',
@@ -2525,6 +2562,7 @@ export const mediaData: Media[] = [
         relevance: 55,
       },
     ],
+    creditsIds: [22],
   },
   {
     media_slug: 'global-approach',
@@ -2573,6 +2611,7 @@ export const mediaData: Media[] = [
         relevance: 40,
       },
     ],
+    creditsIds: [22],
   },
   {
     media_slug: 'learning-about-us',
@@ -2637,6 +2676,7 @@ export const mediaData: Media[] = [
         relevance: 30,
       },
     ],
+    creditsIds: [22],
   },
   {
     media_slug: 'asking-questions',
@@ -2665,6 +2705,7 @@ export const mediaData: Media[] = [
         relevance: 65,
       },
     ],
+    creditsIds: [22],
   },
   {
     media_slug: 'self-portraits',
@@ -2689,6 +2730,7 @@ export const mediaData: Media[] = [
         relevance: 100,
       },
     ],
+    creditsIds: [22],
   },
   {
     media_slug: 'leonardo-da-vinci',
@@ -2733,6 +2775,7 @@ export const mediaData: Media[] = [
         relevance: 50,
       },
     ],
+    creditsIds: [22],
   },
   {
     media_slug: 'five-stages-to-healing',
@@ -2769,6 +2812,7 @@ export const mediaData: Media[] = [
         relevance: 45,
       },
     ],
+    creditsIds: [22],
   },
   {
     media_slug: 'polarities-life',
@@ -2845,6 +2889,7 @@ export const mediaData: Media[] = [
         relevance: 25,
       },
     ],
+    creditsIds: [22],
   },
   {
     media_slug: 'be-the-witness',
@@ -2885,6 +2930,7 @@ export const mediaData: Media[] = [
         relevance: 45,
       },
     ],
+    creditsIds: [22],
   },
   {
     media_slug: 'skills',
@@ -2905,6 +2951,7 @@ export const mediaData: Media[] = [
         relevance: 100,
       },
     ],
+    creditsIds: [22],
   },
   {
     media_slug: 'the-spiral',
@@ -2945,6 +2992,7 @@ export const mediaData: Media[] = [
         relevance: 60,
       },
     ],
+    creditsIds: [22],
   },
   {
     media_slug: 'importance-of-imagery',
@@ -3013,6 +3061,7 @@ export const mediaData: Media[] = [
         relevance: 25,
       },
     ],
+    creditsIds: [22],
   },
   {
     media_slug: 'children-draw',
@@ -3045,6 +3094,7 @@ export const mediaData: Media[] = [
         relevance: 80,
       },
     ],
+    creditsIds: [3],
   },
   {
     media_slug: 'the-deepest-place',
@@ -3077,6 +3127,7 @@ export const mediaData: Media[] = [
         relevance: 80,
       },
     ],
+    creditsIds: [3],
   },
   {
     media_slug: 'teaching-creation',
@@ -3121,6 +3172,7 @@ export const mediaData: Media[] = [
         relevance: 70,
       },
     ],
+    creditsIds: [3],
   },
   {
     media_slug: 'embodying-nature',
@@ -3185,6 +3237,7 @@ export const mediaData: Media[] = [
         relevance: 15,
       },
     ],
+    creditsIds: [15],
   },
   {
     media_slug: 'healing-talk',
@@ -3241,6 +3294,7 @@ export const mediaData: Media[] = [
         relevance: 56,
       },
     ],
+    creditsIds: [15],
   },
   {
     media_slug: 'my-family',
@@ -3269,6 +3323,7 @@ export const mediaData: Media[] = [
         relevance: 80,
       },
     ],
+    creditsIds: [1],
   },
   {
     media_slug: 'about-the-rsvp-cycles',
@@ -3309,6 +3364,7 @@ export const mediaData: Media[] = [
         relevance: 55,
       },
     ],
+    creditsIds: [1],
   },
   {
     media_slug: 'an-exploration',
@@ -3318,7 +3374,6 @@ export const mediaData: Media[] = [
       en: 'An Exploration',
     },
     category: 'archives',
-    tracks: {},
     thumb: '/images/media/thumb/A_aWorkshop_animals.jpg',
     url: 'videos/A_aWorkshop_animals.mp4',
     tags: [
@@ -3335,6 +3390,7 @@ export const mediaData: Media[] = [
         relevance: 65,
       },
     ],
+    creditsIds: [2],
   },
   {
     media_slug: 'moving-with-the-senses',
@@ -3375,6 +3431,7 @@ export const mediaData: Media[] = [
         relevance: 40,
       },
     ],
+    creditsIds: [2],
   },
   {
     media_slug: 'a-passive-active-exploration',
@@ -3419,6 +3476,7 @@ export const mediaData: Media[] = [
         relevance: 55,
       },
     ],
+    creditsIds: [2],
   },
   {
     media_slug: 'asserting-yourself-in-the-community',
@@ -3487,6 +3545,7 @@ export const mediaData: Media[] = [
         relevance: 40,
       },
     ],
+    creditsIds: [19],
   },
   {
     media_slug: 'partners',
@@ -3559,6 +3618,7 @@ export const mediaData: Media[] = [
         relevance: 40,
       },
     ],
+    creditsIds: [19],
   },
   {
     media_slug: 'dealing-with-aids',
@@ -3619,6 +3679,7 @@ export const mediaData: Media[] = [
         relevance: 50,
       },
     ],
+    creditsIds: [18],
   },
   {
     media_slug: 'a-self-portrait-dance',
@@ -3691,6 +3752,7 @@ export const mediaData: Media[] = [
         relevance: 40,
       },
     ],
+    creditsIds: [18],
   },
   {
     media_slug: 'h-doubler-s-legacy',
@@ -3739,6 +3801,7 @@ export const mediaData: Media[] = [
         relevance: 40,
       },
     ],
+    creditsIds: [11],
   },
   {
     media_slug: 'improvisation',
@@ -3767,6 +3830,7 @@ export const mediaData: Media[] = [
         relevance: 80,
       },
     ],
+    creditsIds: [11],
   },
   {
     media_slug: 'family-dance',
@@ -3807,6 +3871,7 @@ export const mediaData: Media[] = [
         relevance: 45,
       },
     ],
+    creditsIds: [11],
   },
   {
     media_slug: 'life-dance',
@@ -3859,6 +3924,7 @@ export const mediaData: Media[] = [
         relevance: 20,
       },
     ],
+    creditsIds: [11],
   },
   {
     media_slug: 'breaking-loose-from-modern-dance',
@@ -3903,6 +3969,7 @@ export const mediaData: Media[] = [
         relevance: 45,
       },
     ],
+    creditsIds: [11],
   },
   {
     media_slug: 'with-the-pomo-indians',
@@ -3943,6 +4010,7 @@ export const mediaData: Media[] = [
         relevance: 50,
       },
     ],
+    creditsIds: [11],
   },
   {
     media_slug: 'after-cancer',
@@ -3991,6 +4059,7 @@ export const mediaData: Media[] = [
         relevance: 30,
       },
     ],
+    creditsIds: [8],
   },
   {
     media_slug: 'audience-boundaries',
@@ -4031,6 +4100,7 @@ export const mediaData: Media[] = [
         relevance: 40,
       },
     ],
+    creditsIds: [8],
   },
   {
     media_slug: 'living-dancing-with-aids',
@@ -4075,6 +4145,7 @@ export const mediaData: Media[] = [
         relevance: 40,
       },
     ],
+    creditsIds: [8],
   },
   {
     media_slug: 'dancing-in-nature',
@@ -4107,6 +4178,7 @@ export const mediaData: Media[] = [
         relevance: 80,
       },
     ],
+    creditsIds: [8],
   },
   {
     media_slug: 'breaking-barriers',
@@ -4159,6 +4231,7 @@ export const mediaData: Media[] = [
         relevance: 35,
       },
     ],
+    creditsIds: [8],
   },
   {
     media_slug: 'dancing-in-jewish-culture',
@@ -4191,6 +4264,7 @@ export const mediaData: Media[] = [
         relevance: 30,
       },
     ],
+    creditsIds: [8],
   },
   {
     media_slug: 'the-bauhaus',
@@ -4231,6 +4305,7 @@ export const mediaData: Media[] = [
         relevance: 60,
       },
     ],
+    creditsIds: [8],
   },
   {
     media_slug: 'the-kibbutz',
@@ -4263,6 +4338,7 @@ export const mediaData: Media[] = [
         relevance: 70,
       },
     ],
+    creditsIds: [8],
   },
   {
     media_slug: 'working-with-nature',
@@ -4299,6 +4375,7 @@ export const mediaData: Media[] = [
         relevance: 45,
       },
     ],
+    creditsIds: [8],
   },
   {
     media_slug: 'art-nature',
@@ -4339,6 +4416,7 @@ export const mediaData: Media[] = [
         relevance: 60,
       },
     ],
+    creditsIds: [10],
   },
   {
     media_slug: 'the-ecology-of-form',
@@ -4379,6 +4457,7 @@ export const mediaData: Media[] = [
         relevance: 60,
       },
     ],
+    creditsIds: [10],
   },
   {
     media_slug: 'movement-choreography',
@@ -4423,6 +4502,7 @@ export const mediaData: Media[] = [
         relevance: 40,
       },
     ],
+    creditsIds: [10],
   },
   {
     media_slug: 'networking',
@@ -4463,6 +4543,7 @@ export const mediaData: Media[] = [
         relevance: 50,
       },
     ],
+    creditsIds: [10],
   },
   {
     media_slug: 'workshops-scoring',
@@ -4523,6 +4604,7 @@ export const mediaData: Media[] = [
         relevance: 40,
       },
     ],
+    creditsIds: [10],
   },
   {
     media_slug: 'myths-rituals',
@@ -4579,6 +4661,7 @@ export const mediaData: Media[] = [
         relevance: 36,
       },
     ],
+    creditsIds: [17],
   },
   {
     media_slug: 'myths-rituals-workshop',
@@ -4635,6 +4718,7 @@ export const mediaData: Media[] = [
         relevance: 38,
       },
     ],
+    creditsIds: [17],
   },
   {
     media_slug: 'a-rock-in-my-shoe',
@@ -4667,6 +4751,7 @@ export const mediaData: Media[] = [
         relevance: 60,
       },
     ],
+    creditsIds: [25],
   },
   {
     media_slug: 'the-voice-of-emotion',
@@ -4739,6 +4824,7 @@ export const mediaData: Media[] = [
         relevance: 5,
       },
     ],
+    creditsIds: [25],
   },
   {
     media_slug: 'with-nature',
@@ -4775,6 +4861,7 @@ export const mediaData: Media[] = [
         relevance: 60,
       },
     ],
+    creditsIds: [12],
   },
   {
     media_slug: 'cancer-nature',
@@ -4807,6 +4894,7 @@ export const mediaData: Media[] = [
         relevance: 70,
       },
     ],
+    creditsIds: [12],
   },
   {
     media_slug: 'dancing-with-nature',
@@ -4875,6 +4963,7 @@ export const mediaData: Media[] = [
         relevance: 34,
       },
     ],
+    creditsIds: [12],
   },
   {
     media_slug: 'transformation',
@@ -4927,5 +5016,6 @@ export const mediaData: Media[] = [
         relevance: 50,
       },
     ],
+    creditsIds: [26],
   },
 ];

@@ -1,6 +1,6 @@
 import { Tag } from './data.types';
 
-export const tagData: Tag[] = [
+export const tagsData: Tag[] = [
   {
     id: 1,
     tag_slug: 'rsvp-cycles',
