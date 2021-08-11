@@ -17,9 +17,9 @@ export const VideoNavbar: FC<Props> = (props) => {
           <div className="row">
             {categories.map((category, index) => {
               return (
-                <td>
-                  <Link href={'/video/' + category}>{category}</Link>
-                </td>
+                <Link key={`${category}-${index}`} href={'/video/' + category}>
+                  {category}
+                </Link>
               );
             })}
           </div>

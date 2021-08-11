@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { Fragment, FC } from 'react';
 import * as S from './video-carrousel.style';
 import { VideoSlide } from '@/features/video/data-repository';
 
@@ -16,7 +16,7 @@ export const VideoCarrousel: FC<Props> = (props) => {
         <div className="slider">
           {videos.map((video, index) => {
             return (
-              <>
+              <Fragment key={video.page_id}>
                 {index === 0 ? (
                   <S.MainSlide>
                     <img
@@ -31,7 +31,7 @@ export const VideoCarrousel: FC<Props> = (props) => {
                     <div className="video-title">{video.title}</div>
                   </S.Slide>
                 )}
-              </>
+              </Fragment>
             );
           })}
         </div>
