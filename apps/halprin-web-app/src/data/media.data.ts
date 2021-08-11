@@ -10,7 +10,7 @@ export const mediaData: Media[] = [
     },
     category: 'life-art',
     tracks: {
-      fr: '/fr/1240_RootsofDance.vtt',
+      fr: 'fr/1240_RootsofDance.vtt',
     },
     thumb: '/images/media/thumb/1240_RootsofDance.jpg',
     url: 'videos/1240_RootsofDance.mp4',
@@ -78,7 +78,7 @@ export const mediaData: Media[] = [
     },
     category: 'life-art',
     tracks: {
-      fr: '/fr/1200_danceasascience.vtt',
+      fr: 'fr/1200_danceasascience.vtt',
     },
     thumb: '/images/media/thumb/1200_danceasascience.jpg',
     url: 'videos/1200_danceasascience.mp4',
@@ -130,7 +130,7 @@ export const mediaData: Media[] = [
     },
     category: 'life-art',
     tracks: {
-      fr: '/fr/1210_InTheEnvironment.vtt',
+      fr: 'fr/1210_InTheEnvironment.vtt',
     },
     thumb: '/images/media/thumb/1210_InTheEnvironment.jpg',
     url: 'videos/1210_InTheEnvironment.mp4',
@@ -206,7 +206,7 @@ export const mediaData: Media[] = [
     },
     category: 'life-art',
     tracks: {
-      fr: '/fr/1215_work-shop.vtt',
+      fr: 'fr/1215_work-shop.vtt',
     },
     thumb: '/images/media/thumb/1215_work-shop.jpg',
     url: 'videos/1215_work-shop.mp4',
@@ -274,7 +274,7 @@ export const mediaData: Media[] = [
     },
     category: 'life-art',
     tracks: {
-      fr: '/fr/1220_asphilosophy.vtt',
+      fr: 'fr/1220_asphilosophy.vtt',
     },
     thumb: '/images/media/thumb/1220_asphilosophy.jpg',
     url: 'videos/1220_asphilosophy.mp4',
@@ -338,7 +338,7 @@ export const mediaData: Media[] = [
     },
     category: 'life-art',
     tracks: {
-      fr: '/fr/1230_emotions.vtt',
+      fr: 'fr/1230_emotions.vtt',
     },
     thumb: '/images/media/thumb/1230_emotions.jpg',
     url: 'videos/1230_emotions.mp4',
@@ -402,7 +402,7 @@ export const mediaData: Media[] = [
     },
     category: 'life-art',
     tracks: {
-      fr: '/fr/1250_socialart.vtt',
+      fr: 'fr/1250_socialart.vtt',
     },
     thumb: '/images/media/thumb/1250_socialart.jpg',
     url: 'videos/1250_socialart.mp4',
@@ -486,7 +486,7 @@ export const mediaData: Media[] = [
     },
     category: 'life-art',
     tracks: {
-      fr: '/fr/1260_healing.vtt',
+      fr: 'fr/1260_healing.vtt',
     },
     thumb: '/images/media/thumb/1260_healing.jpg',
     url: 'videos/1260_healing.mp4',
@@ -586,7 +586,7 @@ export const mediaData: Media[] = [
     },
     category: 'life-art',
     tracks: {
-      fr: '/fr/1270_spiritualcommunity.vtt',
+      fr: 'fr/1270_spiritualcommunity.vtt',
     },
     thumb: '/images/media/thumb/1270_spiritualcommunity.jpg',
     url: 'videos/1270_spiritualcommunity.mp4',
@@ -690,7 +690,7 @@ export const mediaData: Media[] = [
     },
     category: 'roadmaps',
     tracks: {
-      fr: '/fr/1400_MR.vtt',
+      fr: 'fr/1400_MR.vtt',
     },
     thumb: '/images/media/thumb/1400_MR.jpg',
     url: 'videos/1400_MR.mp4',
@@ -794,7 +794,7 @@ export const mediaData: Media[] = [
     },
     category: 'roadmaps',
     tracks: {
-      fr: '/fr/1410_feedbackprocess.vtt',
+      fr: 'fr/1410_feedbackprocess.vtt',
     },
     thumb: '/images/media/thumb/1410_feedbackprocess.jpg',
     url: 'videos/1410_feedbackprocess.mp4',
@@ -854,7 +854,7 @@ export const mediaData: Media[] = [
     },
     category: 'roadmaps',
     tracks: {
-      fr: '/fr/1420_threelevels.vtt',
+      fr: 'fr/1420_threelevels.vtt',
     },
     thumb: '/images/media/thumb/1420_threelevels.jpg',
     url: 'videos/1420_threelevels.mp4',
@@ -950,7 +950,7 @@ export const mediaData: Media[] = [
     },
     category: 'roadmaps',
     tracks: {
-      fr: '/fr/1425_PsychoViz.vtt',
+      fr: 'fr/1425_PsychoViz.vtt',
     },
     thumb: '/images/media/thumb/1425_PsychoViz.jpg',
     url: 'videos/1425_PsychoViz.mp4',
@@ -1086,7 +1086,7 @@ export const mediaData: Media[] = [
     },
     category: 'roadmaps',
     tracks: {
-      fr: '/fr/1430_fivepartprocess.vtt',
+      fr: 'fr/1430_fivepartprocess.vtt',
     },
     thumb: '/images/media/thumb/1430_fivepartprocess.jpg',
     url: 'videos/1430_fivepartprocess.mp4',
@@ -1150,7 +1150,7 @@ export const mediaData: Media[] = [
     },
     category: 'roadmaps',
     tracks: {
-      fr: '/fr/1450_rsvp.vtt',
+      fr: 'fr/1450_rsvp.vtt',
     },
     thumb: '/images/media/thumb/1450_rsvp.jpg',
     url: 'videos/1450_rsvp.mp4',
@@ -1246,7 +1246,7 @@ export const mediaData: Media[] = [
     },
     category: 'roadmaps',
     tracks: {
-      fr: '/fr/1460_PlanetaryDance.vtt',
+      fr: 'fr/1460_PlanetaryDance.vtt',
     },
     thumb: '/images/media/thumb/1460_PlanetaryDance.jpg',
     url: 'videos/1460_PlanetaryDance.mp4',
@@ -1338,7 +1338,7 @@ export const mediaData: Media[] = [
     },
     category: 'workshops',
     tracks: {
-      fr: '/fr/1000_Introduction.vtt',
+      fr: 'fr/1000_Introduction.vtt',
     },
     thumb: '/images/media/thumb/1000_Introduction.jpg',
     url: 'videos/1000_Introduction.mp4',
@@ -1374,7 +1374,7 @@ export const mediaData: Media[] = [
     },
     category: 'workshops',
     tracks: {
-      fr: '/fr/1010_SelfPortrait.vtt',
+      fr: 'fr/1010_SelfPortrait.vtt',
     },
     thumb: '/images/media/thumb/1010_SelfPortrait.jpg',
     url: 'videos/1010_SelfPortrait.mp4',
@@ -1454,7 +1454,7 @@ export const mediaData: Media[] = [
     },
     category: 'workshops',
     tracks: {
-      fr: '/fr/1020_PNspace.vtt',
+      fr: 'fr/1020_PNspace.vtt',
     },
     thumb: '/images/media/thumb/1020_PNspace.jpg',
     url: 'videos/1020_PNspace.mp4',
@@ -1526,7 +1526,7 @@ export const mediaData: Media[] = [
     },
     category: 'workshops',
     tracks: {
-      fr: '/fr/1030_CollectiveEnergy.vtt',
+      fr: 'fr/1030_CollectiveEnergy.vtt',
     },
     thumb: '/images/media/thumb/1030_CollectiveEnergy.jpg',
     url: 'videos/1030_CollectiveEnergy.mp4',
@@ -1594,7 +1594,7 @@ export const mediaData: Media[] = [
     },
     category: 'workshops',
     tracks: {
-      fr: '/fr/1040_PassiveActive.vtt',
+      fr: 'fr/1040_PassiveActive.vtt',
     },
     thumb: '/images/media/thumb/1040_PassiveActive.jpg',
     url: 'videos/1040_PassiveActive.mp4',
@@ -1718,7 +1718,7 @@ export const mediaData: Media[] = [
     },
     category: 'workshops',
     tracks: {
-      fr: '/fr/1050_MensDance.vtt',
+      fr: 'fr/1050_MensDance.vtt',
     },
     thumb: '/images/media/thumb/1050_MensDance.jpg',
     url: 'videos/1050_MensDance.mp4',
@@ -1774,7 +1774,7 @@ export const mediaData: Media[] = [
     },
     category: 'workshops',
     tracks: {
-      fr: '/fr/1080_Rhythmbreath.vtt',
+      fr: 'fr/1080_Rhythmbreath.vtt',
     },
     thumb: '/images/media/thumb/1080_Rhythmbreath.jpg',
     url: 'videos/1080_Rhythmbreath.mp4',
@@ -1870,7 +1870,7 @@ export const mediaData: Media[] = [
     },
     category: 'workshops',
     tracks: {
-      fr: '/fr/1090_MovementRitual.vtt',
+      fr: 'fr/1090_MovementRitual.vtt',
     },
     thumb: '/images/media/thumb/1090_MovementRitual.jpg',
     url: 'videos/1090_MovementRitual.mp4',
@@ -1974,7 +1974,7 @@ export const mediaData: Media[] = [
     },
     category: 'workshops',
     tracks: {
-      fr: '/fr/1100_Talk.vtt',
+      fr: 'fr/1100_Talk.vtt',
     },
     thumb: '/images/media/thumb/1100_Talk.jpg',
     url: 'videos/1100_Talk.mp4',
@@ -2030,8 +2030,8 @@ export const mediaData: Media[] = [
     },
     category: 'workshops',
     tracks: {
-      en: '/en/1110_PlanetaryDance.vtt',
-      fr: '/fr/1110_PlanetaryDance.vtt',
+      en: 'en/1110_PlanetaryDance.vtt',
+      fr: 'fr/1110_PlanetaryDance.vtt',
     },
     thumb: '/images/media/thumb/1110_PlanetaryDance.jpg',
     url: 'videos/1110_PlanetaryDance.mp4',
@@ -2123,7 +2123,7 @@ export const mediaData: Media[] = [
     },
     category: 'workshops',
     tracks: {
-      fr: '/fr/1120_SecSelfPortrait.vtt',
+      fr: 'fr/1120_SecSelfPortrait.vtt',
     },
     thumb: '/images/media/thumb/1120_SecSelfPortrait.jpg',
     url: 'videos/1120_SecSelfPortrait.mp4',
@@ -2179,7 +2179,7 @@ export const mediaData: Media[] = [
     },
     category: 'workshops',
     tracks: {
-      fr: '/fr/1130_evening.vtt',
+      fr: 'fr/1130_evening.vtt',
     },
     thumb: '/images/media/thumb/1130_evening.jpg',
     url: 'videos/1130_evening.mp4',
@@ -2260,7 +2260,7 @@ export const mediaData: Media[] = [
     category: 'topics',
     moment: 'intro',
     tracks: {
-      fr: '/fr/Introduction.vtt',
+      fr: 'fr/Introduction.vtt',
     },
     thumb: '/images/media/thumb/Introduction.jpg',
     url: 'videos/Introduction.mp4',
@@ -2281,7 +2281,7 @@ export const mediaData: Media[] = [
     category: 'topics',
     moment: 'preambule',
     tracks: {
-      fr: '/fr/00_Preambule.vtt',
+      fr: 'fr/00_Preambule.vtt',
     },
     thumb: '/images/media/thumb/00_Preambule.jpg',
     url: 'videos/00_Preambule.mp4',
@@ -2327,7 +2327,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/I_01c_whyteachingnow.vtt',
+      fr: 'fr/I_01c_whyteachingnow.vtt',
     },
     thumb: '/images/media/thumb/I_01c_whyteachingnow.jpg',
     url: 'videos/I_01c_whyteachingnow.mp4',
@@ -2367,7 +2367,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/I_05_adaptworkshoptopeople.vtt',
+      fr: 'fr/I_05_adaptworkshoptopeople.vtt',
     },
     thumb: '/images/media/thumb/I_05_adaptworkshoptopeople.jpg',
     url: 'videos/I_05_adaptworkshoptopeople.mp4',
@@ -2399,7 +2399,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/I_rsvp_valuaction.vtt',
+      fr: 'fr/I_rsvp_valuaction.vtt',
     },
     thumb: '/images/media/thumb/I_rsvp_valuaction.jpg',
     url: 'videos/I_rsvp_valuaction.mp4',
@@ -2435,7 +2435,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/I_042c_avoidjudgement.vtt',
+      fr: 'fr/I_042c_avoidjudgement.vtt',
     },
     thumb: '/images/media/thumb/I_042c_avoidjudgement.jpg',
     url: 'videos/I_042c_avoidjudgement.mp4',
@@ -2499,7 +2499,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/I_043c_feedbackprocess.vtt',
+      fr: 'fr/I_043c_feedbackprocess.vtt',
     },
     thumb: '/images/media/thumb/I_043c_feedbackprocess.jpg',
     url: 'videos/I_043c_feedbackprocess.mp4',
@@ -2535,7 +2535,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/I_080c_globalapproachmediums.vtt',
+      fr: 'fr/I_080c_globalapproachmediums.vtt',
     },
     thumb: '/images/media/thumb/I_080c_globalapproachmediums.jpg',
     url: 'videos/I_080c_globalapproachmediums.mp4',
@@ -2583,7 +2583,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/I_081c_lifeart.vtt',
+      fr: 'fr/I_081c_lifeart.vtt',
     },
     thumb: '/images/media/thumb/I_081c_lifeart.jpg',
     url: 'videos/I_081c_lifeart.mp4',
@@ -2647,7 +2647,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/I_092c_question-connection.vtt',
+      fr: 'fr/I_092c_question-connection.vtt',
     },
     thumb: '/images/media/thumb/I_092c_question-connection.jpg',
     url: 'videos/I_092c_question-connection.mp4',
@@ -2675,7 +2675,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/I_100c_transformationSP.vtt',
+      fr: 'fr/I_100c_transformationSP.vtt',
     },
     thumb: '/images/media/thumb/I_100c_transformationSP.jpg',
     url: 'videos/I_100c_transformationSP.mp4',
@@ -2699,7 +2699,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/I_132c_leonarddavinci.vtt',
+      fr: 'fr/I_132c_leonarddavinci.vtt',
     },
     thumb: '/images/media/thumb/I_132c_leonarddavinci.jpg',
     url: 'videos/I_132c_leonarddavinci.mp4',
@@ -2743,7 +2743,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/I_143c_fivepartprocess-dwlotl.vtt',
+      fr: 'fr/I_143c_fivepartprocess-dwlotl.vtt',
     },
     thumb: '/images/media/thumb/I_143c_fivepartprocess-dwlotl.jpg',
     url: 'videos/I_143c_fivepartprocess-dwlotl.mp4',
@@ -2779,7 +2779,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/I_W_activeactive_lifeart.vtt',
+      fr: 'fr/I_W_activeactive_lifeart.vtt',
     },
     thumb: '/images/media/thumb/I_W_activeactive_lifeart.jpg',
     url: 'videos/I_W_activeactive_lifeart.mp4',
@@ -2855,7 +2855,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/I_W_mensdance_witness.vtt',
+      fr: 'fr/I_W_mensdance_witness.vtt',
     },
     thumb: '/images/media/thumb/I_W_mensdance_witness.jpg',
     url: 'videos/I_W_mensdance_witness.mp4',
@@ -2895,7 +2895,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/I_W_skills.vtt',
+      fr: 'fr/I_W_skills.vtt',
     },
     thumb: '/images/media/thumb/I_W_skills.jpg',
     url: 'videos/I_W_skills.mp4',
@@ -2915,7 +2915,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/I_W_MRspiral.vtt',
+      fr: 'fr/I_W_MRspiral.vtt',
     },
     thumb: '/images/media/thumb/I_W_MRspiral.jpg',
     url: 'videos/I_W_MRspiral.mp4',
@@ -2955,7 +2955,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/I_W_SelfPortrait_imagery.vtt',
+      fr: 'fr/I_W_SelfPortrait_imagery.vtt',
     },
     thumb: '/images/media/thumb/I_W_SelfPortrait_imagery.jpg',
     url: 'videos/I_W_SelfPortrait_imagery.mp4',
@@ -3023,7 +3023,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_ADF_children.vtt',
+      fr: 'fr/A_ADF_children.vtt',
     },
     thumb: '/images/media/thumb/A_ADF_children.jpg',
     url: 'videos/A_ADF_children.mp4',
@@ -3055,7 +3055,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_ADF_3levels_concl.vtt',
+      fr: 'fr/A_ADF_3levels_concl.vtt',
     },
     thumb: '/images/media/thumb/A_ADF_3levels_concl.jpg',
     url: 'videos/A_ADF_3levels_concl.mp4',
@@ -3087,7 +3087,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_ADF_teachit.vtt',
+      fr: 'fr/A_ADF_teachit.vtt',
     },
     thumb: '/images/media/thumb/A_ADF_teachit.jpg',
     url: 'videos/A_ADF_teachit.mp4',
@@ -3131,7 +3131,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_evening1987_Nature.vtt',
+      fr: 'fr/A_evening1987_Nature.vtt',
     },
     thumb: '/images/media/thumb/A_evening1987_Nature.jpg',
     url: 'videos/A_evening1987_Nature.mp4',
@@ -3195,7 +3195,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_evening1987_Healing.vtt',
+      fr: 'fr/A_evening1987_Healing.vtt',
     },
     thumb: '/images/media/thumb/A_evening1987_Healing.jpg',
     url: 'videos/A_evening1987_Healing.mp4',
@@ -3251,7 +3251,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_Aportrait_family.vtt',
+      fr: 'fr/A_Aportrait_family.vtt',
     },
     thumb: '/images/media/thumb/A_Aportrait_family.jpg',
     url: 'videos/A_Aportrait_family.mp4',
@@ -3279,7 +3279,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_Aportrait_RSVP.vtt',
+      fr: 'fr/A_Aportrait_RSVP.vtt',
     },
     thumb: '/images/media/thumb/A_Aportrait_RSVP.jpg',
     url: 'videos/A_Aportrait_RSVP.mp4',
@@ -3345,7 +3345,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_aWorkshop_physical.vtt',
+      fr: 'fr/A_aWorkshop_physical.vtt',
     },
     thumb: '/images/media/thumb/A_aWorkshop_physical.jpg',
     url: 'videos/A_aWorkshop_physical.mp4',
@@ -3385,7 +3385,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_aWorkshop_passiveActive.vtt',
+      fr: 'fr/A_aWorkshop_passiveActive.vtt',
     },
     thumb: '/images/media/thumb/A_aWorkshop_passiveActive.jpg',
     url: 'videos/A_aWorkshop_passiveActive.mp4',
@@ -3429,7 +3429,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_circletheearth_claimaids.vtt',
+      fr: 'fr/A_circletheearth_claimaids.vtt',
     },
     thumb: '/images/media/thumb/A_circletheearth_claimaids.jpg',
     url: 'videos/A_circletheearth_claimaids.mp4',
@@ -3497,7 +3497,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_circletheearth_partners.vtt',
+      fr: 'fr/A_circletheearth_partners.vtt',
     },
     thumb: '/images/media/thumb/A_circletheearth_partners.jpg',
     url: 'videos/A_circletheearth_partners.mp4',
@@ -3569,7 +3569,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_DanceforyourLife_healing.vtt',
+      fr: 'fr/A_DanceforyourLife_healing.vtt',
     },
     thumb: '/images/media/thumb/A_DanceforyourLife_healing.jpg',
     url: 'videos/A_DanceforyourLife_healing.mp4',
@@ -3629,7 +3629,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_DanceforyourLife_self.vtt',
+      fr: 'fr/A_DanceforyourLife_self.vtt',
     },
     thumb: '/images/media/thumb/A_DanceforyourLife_self.jpg',
     url: 'videos/A_DanceforyourLife_self.mp4',
@@ -3701,7 +3701,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_LivingLegend_Hdoubler_2.vtt',
+      fr: 'fr/A_LivingLegend_Hdoubler_2.vtt',
     },
     thumb: '/images/media/thumb/A_LivingLegend_Hdoubler_2.jpg',
     url: 'videos/A_LivingLegend_Hdoubler_2.mp4',
@@ -3749,7 +3749,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_LivingLegend_Impro_2.vtt',
+      fr: 'fr/A_LivingLegend_Impro_2.vtt',
     },
     thumb: '/images/media/thumb/A_LivingLegend_Impro_2.jpg',
     url: 'videos/A_LivingLegend_Impro_2.mp4',
@@ -3777,7 +3777,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_LivingLegend_LifeArtProcess.vtt',
+      fr: 'fr/A_LivingLegend_LifeArtProcess.vtt',
     },
     thumb: '/images/media/thumb/A_LivingLegend_LifeArtProcess.jpg',
     url: 'videos/A_LivingLegend_LifeArtProcess.mp4',
@@ -3817,7 +3817,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_LivingLegend_LifeDance.vtt',
+      fr: 'fr/A_LivingLegend_LifeDance.vtt',
     },
     thumb: '/images/media/thumb/A_LivingLegend_LifeDance.jpg',
     url: 'videos/A_LivingLegend_LifeDance.mp4',
@@ -3869,7 +3869,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_LivingLegend_ModernDance.vtt',
+      fr: 'fr/A_LivingLegend_ModernDance.vtt',
     },
     thumb: '/images/media/thumb/A_LivingLegend_ModernDance.jpg',
     url: 'videos/A_LivingLegend_ModernDance.mp4',
@@ -3913,7 +3913,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_LivingLegend_ThePomos.vtt',
+      fr: 'fr/A_LivingLegend_ThePomos.vtt',
     },
     thumb: '/images/media/thumb/A_LivingLegend_ThePomos.jpg',
     url: 'videos/A_LivingLegend_ThePomos.mp4',
@@ -3953,7 +3953,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_InnerLandsc_AfterCancer_LifeArt.vtt',
+      fr: 'fr/A_InnerLandsc_AfterCancer_LifeArt.vtt',
     },
     thumb: '/images/media/thumb/A_InnerLandsc_AfterCancer_LifeArt.jpg',
     url: 'videos/A_InnerLandsc_AfterCancer_LifeArt.mp4',
@@ -4001,7 +4001,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_InnerLandsc_BreakingBarriers_2.vtt',
+      fr: 'fr/A_InnerLandsc_BreakingBarriers_2.vtt',
     },
     thumb: '/images/media/thumb/A_InnerLandsc_BreakingBarriers_2.jpg',
     url: 'videos/A_InnerLandsc_BreakingBarriers_2.mp4',
@@ -4041,7 +4041,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_InnerLandsc_DanceAids.vtt',
+      fr: 'fr/A_InnerLandsc_DanceAids.vtt',
     },
     thumb: '/images/media/thumb/A_InnerLandsc_DanceAids.jpg',
     url: 'videos/A_InnerLandsc_DanceAids.mp4',
@@ -4085,7 +4085,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_InnerLandsc_DanceEnvironment.vtt',
+      fr: 'fr/A_InnerLandsc_DanceEnvironment.vtt',
     },
     thumb: '/images/media/thumb/A_InnerLandsc_DanceEnvironment.jpg',
     url: 'videos/A_InnerLandsc_DanceEnvironment.mp4',
@@ -4117,7 +4117,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_InnerLandsc_Hangar_BreakingBarriers.vtt',
+      fr: 'fr/A_InnerLandsc_Hangar_BreakingBarriers.vtt',
     },
     thumb: '/images/media/thumb/A_InnerLandsc_Hangar_BreakingBarriers.jpg',
     url: 'videos/A_InnerLandsc_Hangar_BreakingBarriers.mp4',
@@ -4169,7 +4169,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_InnerLandsc_JewishCult_Dance.vtt',
+      fr: 'fr/A_InnerLandsc_JewishCult_Dance.vtt',
     },
     thumb: '/images/media/thumb/A_InnerLandsc_JewishCult_Dance.jpg',
     url: 'videos/A_InnerLandsc_JewishCult_Dance.mp4',
@@ -4201,7 +4201,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_InnerLandsc_Larry_ArtBauhaus.vtt',
+      fr: 'fr/A_InnerLandsc_Larry_ArtBauhaus.vtt',
     },
     thumb: '/images/media/thumb/A_InnerLandsc_Larry_ArtBauhaus.jpg',
     url: 'videos/A_InnerLandsc_Larry_ArtBauhaus.mp4',
@@ -4241,7 +4241,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_InnerLandsc_Larry_community.vtt',
+      fr: 'fr/A_InnerLandsc_Larry_community.vtt',
     },
     thumb: '/images/media/thumb/A_InnerLandsc_Larry_community.jpg',
     url: 'videos/A_InnerLandsc_Larry_community.mp4',
@@ -4273,7 +4273,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_InnerLandsc_Larry_Nature.vtt',
+      fr: 'fr/A_InnerLandsc_Larry_Nature.vtt',
     },
     thumb: '/images/media/thumb/A_InnerLandsc_Larry_Nature.jpg',
     url: 'videos/A_InnerLandsc_Larry_Nature.mp4',
@@ -4309,7 +4309,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_LarryAnna_artnature.vtt',
+      fr: 'fr/A_LarryAnna_artnature.vtt',
     },
     thumb: '/images/media/thumb/A_LarryAnna_artnature.jpg',
     url: 'videos/A_LarryAnna_artnature.mp4',
@@ -4349,7 +4349,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_LarryAnna_ecologyofform.vtt',
+      fr: 'fr/A_LarryAnna_ecologyofform.vtt',
     },
     thumb: '/images/media/thumb/A_LarryAnna_ecologyofform.jpg',
     url: 'videos/A_LarryAnna_ecologyofform.mp4',
@@ -4389,7 +4389,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_LarryAnna_movement.vtt',
+      fr: 'fr/A_LarryAnna_movement.vtt',
     },
     thumb: '/images/media/thumb/A_LarryAnna_movement.jpg',
     url: 'videos/A_LarryAnna_movement.mp4',
@@ -4433,7 +4433,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_LarryAnna_networking.vtt',
+      fr: 'fr/A_LarryAnna_networking.vtt',
     },
     thumb: '/images/media/thumb/A_LarryAnna_networking.jpg',
     url: 'videos/A_LarryAnna_networking.mp4',
@@ -4473,7 +4473,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_LarryAnna_scoreworkshop.vtt',
+      fr: 'fr/A_LarryAnna_scoreworkshop.vtt',
     },
     thumb: '/images/media/thumb/A_LarryAnna_scoreworkshop.jpg',
     url: 'videos/A_LarryAnna_scoreworkshop.mp4',
@@ -4533,7 +4533,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_mythsANDrituals_CTE_theory.vtt',
+      fr: 'fr/A_mythsANDrituals_CTE_theory.vtt',
     },
     thumb: '/images/media/thumb/A_mythsANDrituals_CTE_theory.jpg',
     url: 'videos/A_mythsANDrituals_CTE_theory.mp4',
@@ -4589,7 +4589,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_mythsANDrituals_CTE_workshop.vtt',
+      fr: 'fr/A_mythsANDrituals_CTE_workshop.vtt',
     },
     thumb: '/images/media/thumb/A_mythsANDrituals_CTE_workshop.jpg',
     url: 'videos/A_mythsANDrituals_CTE_workshop.mp4',
@@ -4645,7 +4645,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_PositiveMotion_poem.vtt',
+      fr: 'fr/A_PositiveMotion_poem.vtt',
     },
     thumb: '/images/media/thumb/A_PositiveMotion_poem.jpg',
     url: 'videos/A_PositiveMotion_poem.mp4',
@@ -4677,7 +4677,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_PositiveMotion_movefeeling.vtt',
+      fr: 'fr/A_PositiveMotion_movefeeling.vtt',
     },
     thumb: '/images/media/thumb/A_PositiveMotion_movefeeling.jpg',
     url: 'videos/A_PositiveMotion_movefeeling.mp4',
@@ -4749,7 +4749,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_ReturningHome_NatureIntro.vtt',
+      fr: 'fr/A_ReturningHome_NatureIntro.vtt',
     },
     thumb: '/images/media/thumb/A_ReturningHome_NatureIntro.jpg',
     url: 'videos/A_ReturningHome_NatureIntro.mp4',
@@ -4785,7 +4785,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_ReturningHome_NatureCancer.vtt',
+      fr: 'fr/A_ReturningHome_NatureCancer.vtt',
     },
     thumb: '/images/media/thumb/A_ReturningHome_NatureCancer.jpg',
     url: 'videos/A_ReturningHome_NatureCancer.mp4',
@@ -4817,7 +4817,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_ReturningHome_Impro.vtt',
+      fr: 'fr/A_ReturningHome_Impro.vtt',
     },
     thumb: '/images/media/thumb/A_ReturningHome_Impro.jpg',
     url: 'videos/A_ReturningHome_Impro.mp4',
@@ -4885,7 +4885,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     tracks: {
-      fr: '/fr/A_RightOn_Transf.vtt',
+      fr: 'fr/A_RightOn_Transf.vtt',
     },
     thumb: '/images/media/thumb/A_RightOn_Transf.jpg',
     url: 'videos/A_RightOn_Transf.mp4',

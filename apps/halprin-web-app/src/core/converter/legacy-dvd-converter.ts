@@ -81,10 +81,10 @@ const getTracksFromMediaUrl = (mediaUrl: MediaUrl): MediaTracks | null => {
   const { name } = path.parse(filename);
   const trackFiles = {
     en: fs.existsSync(`${subtitlePath}/en/${name}.vtt`)
-      ? `/en/${name}.vtt`
+      ? `en/${name}.vtt`
       : null,
     fr: fs.existsSync(`${subtitlePath}/fr/${name}.vtt`)
-      ? `/fr/${name}.vtt`
+      ? `fr/${name}.vtt`
       : null,
   };
   if (trackFiles.en === null && trackFiles === null) {

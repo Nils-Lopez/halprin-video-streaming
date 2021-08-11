@@ -14,18 +14,9 @@ describe('LegacyDvdConverter tests', () => {
       expect(isPlainObject(json.dvd.index[0].tag[0])).toBeTruthy();
     });
   });
-  describe('convert', () => {
-    it('should work read json', async () => {
-      const conv = new LegacyDvdConverter();
-      const json = await conv.convert(xmlFile, '/tmp/test.json');
-      //expect(isPlainObject(json.dvd.credits[0])).toBeTruthy();
-      //expect(isPlainObject(json.dvd.index[0].tag[0])).toBeTruthy();
-    });
-  });
-
   describe('Write tags', () => {
     it('should write to file', async () => {
-      if (true) {
+      if (false) {
         const conv = new LegacyDvdConverter();
         const json = await conv.xmltoDvdJson(xmlFile);
         const tags = conv.getTags(json);
