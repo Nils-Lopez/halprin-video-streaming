@@ -46,6 +46,7 @@ export type Media = {
   media_slug: string;
   type: 'audio' | 'video';
   url: MediaUrl;
+  vimeo_id?: string;
   tracks?: MediaTracks;
   thumb: string;
   category: MediaCategorySlug;
