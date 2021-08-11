@@ -3,11 +3,8 @@ import { LegacyDvdConverter } from '../legacy-dvd-converter';
 import { isPlainObject } from '@contredanse/common';
 
 const xmlFile = path.resolve(__dirname, '../../../data/dvd_legacy/dvd.xml');
-const tagFile = path.resolve(__dirname, '../../../data/generated/tags.data.ts');
-const mediaFile = path.resolve(
-  __dirname,
-  '../../../data/generated/media.data.ts'
-);
+const tagFile = path.resolve(__dirname, '../../../data/tags.data.ts');
+const mediaFile = path.resolve(__dirname, '../../../data/media.data.ts');
 describe('LegacyDvdConverter tests', () => {
   describe('xmlToDvdJson', () => {
     it('should work read json', async () => {

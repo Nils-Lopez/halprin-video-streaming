@@ -6,7 +6,7 @@ import { StringConvert } from '@contredanse/common/utils/string-convert';
 import { isNonEmptyString, isSafeInteger } from '@contredanse/common';
 import { stripHtml } from 'string-strip-html';
 import CodeBlockWriter from 'code-block-writer';
-import { Media, Tag } from '@/data/data.types';
+import { Media, MediaCategorySlug, Tag } from '@/data/data.types';
 import { isMediaUrl } from '@/features/video/utils/typeguards';
 
 type DvdJson = Simplify<{
@@ -48,6 +48,21 @@ type DvdJson = Simplify<{
     }[];
   };
 }>;
+
+const getCategoryById = (typeId: string): MediaCategorySlug => {
+  const map: Record<string, MediaCategorySlug> = {
+    '1': 'life-art',
+    '2': 'roadmaps',
+    '3': 'workshops',
+    m: 'archives',
+    index: 'index',
+    topics: 'topics',
+  };
+  if (!(typeId in map)) {
+    throw new Error(`Unsupported category type ${typeId}`);
+  }
+  return map[typeId];
+};
 
 export class LegacyDvdConverter {
   xmltoDvdJson = async (xmlFile: string): Promise<DvdJson> => {
@@ -142,7 +157,7 @@ export class LegacyDvdConverter {
           fr: stripHtml(medium.fr[0]).result,
           en: stripHtml(medium.en[0]).result,
         },
-        type: medium.$.type,
+        category: getCategoryById(medium.$.type),
         ...('moment' in medium.$ ? { moment: medium.$.moment } : {}),
         thumb: thumb,
         media_url: mediaUrl,

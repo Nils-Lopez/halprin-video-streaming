@@ -11,12 +11,28 @@ export type LocalizedMediaUrl = {
 
 export type MediaUrl = string | LocalizedMediaUrl;
 
+export type MediaCategory = {
+  categ_slug: MediaCategorySlug;
+  label: {
+    en: string;
+    fr: string;
+  };
+};
+
+export type MediaCategorySlug =
+  | 'life-art'
+  | 'roadmaps'
+  | 'workshops'
+  | 'archives'
+  | 'index'
+  | 'topics';
+
 export type Media = {
   media_slug: string;
   media_type: 'audio' | 'video';
   media_url: MediaUrl;
   thumb: string;
-  type: string;
+  category: MediaCategorySlug;
   moment?: string;
   tags: { tag_slug: string; relevance: number }[];
   title: {
