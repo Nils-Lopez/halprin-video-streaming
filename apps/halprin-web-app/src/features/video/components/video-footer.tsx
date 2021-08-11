@@ -1,21 +1,27 @@
 import * as S from './video-footer.style';
 import { VideoCarrousel } from './video-carrousel';
-import { VideoSlide } from '@/features/video/data-repository';
+import { Media } from '@/data/data.types';
+import { SupportedLang } from '@/features/video/types';
 
 type Props = {
-  videos: VideoSlide[];
+  media: Media[];
+  lang: SupportedLang;
   videosIndex: number;
   setVideosIndex: any;
 };
 
 export const VideoFooter: React.FC<Props> = (props) => {
-  const { videos, videosIndex, setVideosIndex } = props;
+  const { media, lang, videosIndex, setVideosIndex } = props;
+
+  const listName = (media?.[0] ?? []).tags
+    .map((tag) => tag.tag_slug)
+    .join(', ');
 
   return (
     <S.Ctn>
       <div className="topbar">
         <div className="left">
-          <small>LISTNAME: </small> {videos[0].keywords[0]}
+          <small>LISTNAME: </small> {listName}
         </div>
         <div className="center">
           <svg
@@ -32,7 +38,7 @@ export const VideoFooter: React.FC<Props> = (props) => {
               d="M11 19l-7-7 7-7m8 14l-7-7 7-7"
             />
           </svg>
-          {videosIndex} / {videos.length}
+          {videosIndex} / {media.length}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6 chevron"
@@ -55,7 +61,7 @@ export const VideoFooter: React.FC<Props> = (props) => {
           <button>Already Seen</button>
         </div>
       </div>
-      <VideoCarrousel category={'workshop'} videos={videos} />
+      <VideoCarrousel lang={lang} media={media} />
     </S.Ctn>
   );
 };

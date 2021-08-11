@@ -1,13 +1,16 @@
 import { FC, useState } from 'react';
 import * as S from './video-navbar.style';
 import Link from 'next/link';
+import { MediaCategory } from '@/data/data.types';
+import { SupportedLang } from '@/features/video/types';
 
 type Props = {
-  categories: string[];
+  lang: SupportedLang;
+  categories: MediaCategory[];
 };
 
 export const VideoNavbar: FC<Props> = (props) => {
-  const { categories } = props;
+  const { categories, lang } = props;
   const [showCategories, updateShowCategories] = useState(false);
 
   return (
@@ -17,8 +20,10 @@ export const VideoNavbar: FC<Props> = (props) => {
           <div className="row">
             {categories.map((category, index) => {
               return (
-                <Link key={`${category}-${index}`} href={'/video/' + category}>
-                  {category}
+                <Link
+                  key={`${category.categ_slug}`}
+                  href={'/video/' + category.categ_slug}>
+                  {category.label[lang]}
                 </Link>
               );
             })}
