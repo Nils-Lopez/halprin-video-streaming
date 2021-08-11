@@ -26,7 +26,6 @@ export const Ctn = styled.div`
     color: #747d8c;
     margin-left: 10px;
     margin-right: 10px;
-
   }
   .chevron:hover {
     color: white;

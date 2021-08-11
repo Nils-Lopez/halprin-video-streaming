@@ -55,4 +55,3 @@ export const MainSlide = styled.div`
     position: absolute;
   }
 `;
-

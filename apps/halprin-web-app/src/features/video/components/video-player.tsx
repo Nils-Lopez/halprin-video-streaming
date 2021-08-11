@@ -10,7 +10,13 @@ export const VideoPlayer: FC<Props> = (props) => {
 
   return (
     <S.Ctn>
-      <iframe src={url} className="video-player" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen title={url}></iframe>
+      <iframe
+        src={url}
+        className="video-player"
+        frameBorder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowFullScreen
+        title={url}></iframe>
     </S.Ctn>
   );
 };

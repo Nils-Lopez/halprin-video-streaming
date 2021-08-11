@@ -19,7 +19,6 @@ export const MenuPage: React.FC<Props> = () => {
   const intentions = t('app:menu.intentions');
   const [centerContent, setCenterContent] = useState(logo);
 
-
   return (
     <>
       <MainLayout>
