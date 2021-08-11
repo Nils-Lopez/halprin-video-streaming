@@ -11,13 +11,13 @@ import { MediaRepo } from '@/features/video/repository/media.repo';
 import { mediaCategoryData } from '@/data/media-category.data';
 
 type Props = {
-  lang?: SupportedLang;
+  lang: SupportedLang;
   children?: never;
   pageId?: string;
 };
 
 export const MainVideoPage: React.FC<Props> = (props) => {
-  const { pageId = 'test', lang = 'en' } = props;
+  const { pageId = 'test', lang } = props;
   const [videosIndex, setVideosIndex] = useState(0);
   const [showMenu, setShowMenu] = useState(false);
 
