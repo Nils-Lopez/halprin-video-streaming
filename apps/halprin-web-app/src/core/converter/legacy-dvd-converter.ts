@@ -146,7 +146,7 @@ export class LegacyDvdConverter {
 
       const thumb = (medium.$.thumb?.trim() ?? '').replace(
         /^pics\//,
-        '/images/media/thumb'
+        '/images/media/thumb/'
       );
       const mediaType = thumb.match(/audio\.png$/) ? 'audio' : 'video';
 

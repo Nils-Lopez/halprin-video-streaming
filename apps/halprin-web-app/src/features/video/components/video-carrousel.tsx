@@ -17,8 +17,8 @@ export const VideoCarrousel: FC<Props> = (props) => {
         <div className="slider">
           {media.map((media, index) => {
             // @todo when thum is present
-            //const thumb = media.thumb;
-            const thumb = 'https://source.unsplash.com/random/800x600?fire';
+            const thumb = media.thumb;
+            //const thumb = 'https://source.unsplash.com/random/800x600?fire';
             const title = media.title[lang];
             return (
               <Fragment key={media.media_slug}>
