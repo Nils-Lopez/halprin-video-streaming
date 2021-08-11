@@ -1,6 +1,5 @@
-import { FC, useState } from 'react';
+import { FC } from 'react';
 import * as S from './video-player.style';
-import ReactPlayer from 'react-player';
 
 type Props = {
   url: string;
@@ -8,14 +7,10 @@ type Props = {
 
 export const VideoPlayer: FC<Props> = (props) => {
   const { url } = props;
-  const [playing, setPlaying] = useState(false);
 
   return (
     <S.Ctn>
-      <ReactPlayer url={url} playing={playing} controls={false} />
-      <button onClick={() => setPlaying(!playing)}>
-        {playing ? 'Pause' : 'Play'}
-      </button>
+      <iframe src={url} className="video-player" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen title={url}></iframe>
     </S.Ctn>
   );
 };

@@ -8,12 +8,20 @@ type Props = {
 
 export const VideoNavbar: FC<Props> = (props) => {
   const { categories } = props;
+  const [showCategories, updateShowCategories] = useState(false);
 
-  const navLinks: any = [];
-
-  categories.forEach((c) => {
-    navLinks.push(<Link href={'/video/' + c}>{c}</Link>);
-  });
-
-  return <S.Ctn>{navLinks}</S.Ctn>;
+  return <S.Ctn>
+      {showCategories ? <>
+        <div className="row">
+          {categories.map((category, index) => {
+            return <td>
+              <Link href={"/video/" + category}>{category}</Link>
+            </td>
+          })}
+        </div>
+        <button onClick={() => updateShowCategories(false)}>hide</button>
+      </> : <div className="hiddenMenu">
+        <button onClick={() => updateShowCategories(true)}>show</button>
+      </div>} 
+  </S.Ctn>;
 };
