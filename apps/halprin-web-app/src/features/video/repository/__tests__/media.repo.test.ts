@@ -28,7 +28,6 @@ describe('VideoRepo tests', () => {
       },
     ];
     const repo = new MediaRepo({
-      lang: 'fr',
       videoData: testData as Media[],
     });
     describe('when tags correspond to one video only', () => {

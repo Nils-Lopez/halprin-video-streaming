@@ -1,11 +1,8 @@
 import { Media } from '@/data/data.types';
 import { mediaData } from '@/data/media.data';
 
-type SupportedLang = 'en' | 'fr';
-
 type Props = {
-  lang: SupportedLang;
-  videoData?: Media[];
+  mediaData?: Media[];
 };
 
 type SearchParams = {
@@ -14,11 +11,9 @@ type SearchParams = {
 };
 
 export class MediaRepo {
-  private lang: SupportedLang;
   private data: Media[];
-  constructor(props: Props) {
-    this.lang = props.lang;
-    this.data = props.videoData ?? mediaData;
+  constructor(props?: Props) {
+    this.data = props?.mediaData ?? mediaData;
   }
   findByType = (type: string): Media[] => {
     return this.data.filter((media) => media.type === type);
