@@ -27,10 +27,16 @@ export type MediaCategorySlug =
   | 'index'
   | 'topics';
 
+export type MediaTracks = {
+  fr?: string;
+  en?: string;
+};
+
 export type Media = {
   media_slug: string;
-  media_type: 'audio' | 'video';
-  media_url: MediaUrl;
+  type: 'audio' | 'video';
+  url: MediaUrl;
+  tracks?: MediaTracks;
   thumb: string;
   category: MediaCategorySlug;
   moment?: string;

@@ -25,11 +25,11 @@ describe('LegacyDvdConverter tests', () => {
 
   describe('Write tags', () => {
     it('should write to file', async () => {
-      if (false) {
+      if (true) {
         const conv = new LegacyDvdConverter();
         const json = await conv.xmltoDvdJson(xmlFile);
         const tags = conv.getTags(json);
-        conv.writeTypescriptFile(tags, 'Tag', tagFile);
+        //conv.writeTypescriptFile(tags, 'Tag', tagFile);
         const media = conv.getMedia(json, tags);
         conv.writeTypescriptFile(media, 'Media', mediaFile);
       }
