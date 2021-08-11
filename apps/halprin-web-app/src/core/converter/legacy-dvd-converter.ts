@@ -10,6 +10,7 @@ import CodeBlockWriter from 'code-block-writer';
 import {
   Media,
   MediaCategorySlug,
+  Credit,
   MediaTracks,
   MediaUrl,
   Tag,
@@ -18,6 +19,8 @@ import {
   isLocalizedMediaUrl,
   isMediaUrl,
 } from '@/features/video/utils/typeguards';
+
+type ExportedDataType = 'Tag' | 'Media' | 'Credit';
 
 type DvdJson = Simplify<{
   dvd: {
@@ -32,6 +35,11 @@ type DvdJson = Simplify<{
           type: string;
           moment?: string;
         };
+        cd?: {
+          $: {
+            id: string;
+          };
+        }[];
         tag: {
           $: {
             id: number;
@@ -44,7 +52,7 @@ type DvdJson = Simplify<{
     }[];
     credits: {
       credit: {
-        $: { id: number; index: boolean; year: number };
+        $: { id: number; index: string | 'true'; year?: number | null };
         fr: string[];
         en: string[];
       }[];
@@ -87,7 +95,7 @@ const getTracksFromMediaUrl = (mediaUrl: MediaUrl): MediaTracks | null => {
       ? `fr/${name}.vtt`
       : null,
   };
-  if (trackFiles.en === null && trackFiles === null) {
+  if (trackFiles.en === null && trackFiles.fr === null) {
     return null;
   }
   return {
@@ -103,6 +111,31 @@ export class LegacyDvdConverter {
       trim: true,
     });
     return json;
+  };
+
+  getCredits = (dvdJson: DvdJson): Credit[] => {
+    const tmp = dvdJson.dvd.credits[0].credit;
+    if (!Array.isArray(tmp)) {
+      throw new Error('dvdJson.dvd.credits.tag is not an array');
+    }
+    const credits: Credit[] = [];
+    tmp.forEach((credit) => {
+      const id = StringConvert.toSafeInteger(credit['$'].id);
+      if (!isSafeInteger(id)) {
+        throw new Error('Credit does not have an id');
+      }
+      const year = StringConvert.toSafeInteger(credit.$.year);
+      credits.push({
+        id: id,
+        index: credit.$.index === 'true',
+        ...(year ? { year: year } : {}),
+        htmlLabel: {
+          en: credit.en[0],
+          fr: credit.fr[0],
+        },
+      });
+    });
+    return credits;
   };
 
   getTags = (dvdJson: DvdJson): Tag[] => {
@@ -137,7 +170,7 @@ export class LegacyDvdConverter {
     return tags;
   };
 
-  getMedia = (dvdJson: DvdJson, tags: Tag[]): Media[] => {
+  getMedia = (dvdJson: DvdJson, tags: Tag[], credits: Credit[]): Media[] => {
     const media = dvdJson.dvd.medias[0].media;
     const data: Media[] = [];
     const slugs: string[] = [];
@@ -151,8 +184,8 @@ export class LegacyDvdConverter {
       }
       slugs.push(slug);
 
+      // links tags
       const normalizedTags: Media['tags'] = [];
-
       medium.tag.forEach((tag) => {
         const current = tags.filter(
           (t) => t.id === StringConvert.toSafeInteger(tag.$.id)
@@ -164,7 +197,17 @@ export class LegacyDvdConverter {
           });
         }
       });
-
+      // link credits
+      const creditsIds: number[] = [];
+      (medium.cd ?? []).forEach((credit) => {
+        const found = credits.filter((cred) => {
+          return cred.id === StringConvert.toSafeInteger(credit.$.id);
+        })?.[0];
+        if (found) {
+          creditsIds.push(found.id);
+        }
+      });
+      // Medias urls and tracks
       const mediaUrl =
         'path' in medium.$ && medium.$.path?.trim() !== ''
           ? medium.$.path?.trim()
@@ -197,21 +240,23 @@ export class LegacyDvdConverter {
         thumb: thumb,
         url: mediaUrl,
         tags: normalizedTags,
+        ...(credits.length > 0 ? { creditsIds: creditsIds } : {}),
       });
     });
     return data;
   };
 
-  convert = async (xmlFile: string, jsonFile: string): Promise<void> => {
+  convert = async (xmlFile: string): Promise<void> => {
     const json = await this.xmltoDvdJson(xmlFile);
     const tags = this.getTags(json);
-    const media = this.getMedia(json, tags);
+    const credits = this.getCredits(json);
+    const media = this.getMedia(json, tags, credits);
     console.log('media', JSON.stringify(media, null, 2));
   };
 
   writeTypescriptFile = (
     data: unknown,
-    type: 'Tag' | 'Media',
+    type: ExportedDataType,
     fileName: string
   ) => {
     const writer = new CodeBlockWriter({
@@ -220,10 +265,17 @@ export class LegacyDvdConverter {
       useTabs: false,
       useSingleQuote: false,
     });
+
+    const typeMap: Record<ExportedDataType, string> = {
+      Media: 'mediaData',
+      Credit: 'creditsData',
+      Tag: 'tagsData',
+    };
+
     writer.writeLine(`import { ${type} } from './data.types';`);
     writer.writeLine('');
     writer.write(
-      `export const ${type.toLowerCase()}Data: ${type}[] = ${JSON.stringify(
+      `export const ${typeMap[type]}: ${type}[] = ${JSON.stringify(
         data,
         null,
         2
