@@ -1,4 +1,5 @@
 import fs from 'fs';
+import path from 'path';
 import { parseStringPromise } from 'xml2js';
 import { slugify } from 'transliteration';
 import { Simplify } from 'type-fest';
@@ -6,8 +7,17 @@ import { StringConvert } from '@contredanse/common/utils/string-convert';
 import { isNonEmptyString, isSafeInteger } from '@contredanse/common';
 import { stripHtml } from 'string-strip-html';
 import CodeBlockWriter from 'code-block-writer';
-import { Media, MediaCategorySlug, Tag } from '@/data/data.types';
-import { isMediaUrl } from '@/features/video/utils/typeguards';
+import {
+  Media,
+  MediaCategorySlug,
+  MediaTracks,
+  MediaUrl,
+  Tag,
+} from '@/data/data.types';
+import {
+  isLocalizedMediaUrl,
+  isMediaUrl,
+} from '@/features/video/utils/typeguards';
 
 type DvdJson = Simplify<{
   dvd: {
@@ -49,6 +59,8 @@ type DvdJson = Simplify<{
   };
 }>;
 
+const subtitlePath = path.resolve(__dirname, '../../../public/subtitles');
+
 const getCategoryById = (typeId: string): MediaCategorySlug => {
   const map: Record<string, MediaCategorySlug> = {
     '1': 'life-art',
@@ -62,6 +74,26 @@ const getCategoryById = (typeId: string): MediaCategorySlug => {
     throw new Error(`Unsupported category type ${typeId}`);
   }
   return map[typeId];
+};
+
+const getTracksFromMediaUrl = (mediaUrl: MediaUrl): MediaTracks | null => {
+  const filename = isLocalizedMediaUrl(mediaUrl) ? mediaUrl.en : mediaUrl;
+  const { name } = path.parse(filename);
+  const trackFiles = {
+    en: fs.existsSync(`${subtitlePath}/en/${name}.vtt`)
+      ? `/en/${name}.vtt`
+      : null,
+    fr: fs.existsSync(`${subtitlePath}/fr/${name}.vtt`)
+      ? `/fr/${name}.vtt`
+      : null,
+  };
+  if (trackFiles.en === null && trackFiles === null) {
+    return null;
+  }
+  return {
+    ...(trackFiles.en ? { en: trackFiles.en } : {}),
+    ...(trackFiles.fr ? { fr: trackFiles.fr } : {}),
+  };
 };
 
 export class LegacyDvdConverter {
@@ -150,17 +182,20 @@ export class LegacyDvdConverter {
       );
       const mediaType = thumb.match(/audio\.png$/) ? 'audio' : 'video';
 
+      const tracks = getTracksFromMediaUrl(mediaUrl);
+
       data.push({
         media_slug: slug,
-        media_type: mediaType,
+        type: mediaType,
         title: {
           fr: stripHtml(medium.fr[0]).result,
           en: stripHtml(medium.en[0]).result,
         },
         category: getCategoryById(medium.$.type),
         ...('moment' in medium.$ ? { moment: medium.$.moment } : {}),
+        ...(tracks !== null ? { tracks: tracks } : {}),
         thumb: thumb,
-        media_url: mediaUrl,
+        url: mediaUrl,
         tags: normalizedTags,
       });
     });
