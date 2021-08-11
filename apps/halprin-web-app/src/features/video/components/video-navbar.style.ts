@@ -1,11 +1,23 @@
 import styled from '@emotion/styled';
 
 export const Ctn = styled.div`
-  a {
-    margin-right: 10px;
-  }
   width: 100%;
-  height: 100px;
-  border: 1px solid black;
-  padding: 5px;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  .row {
+    width: 100%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .hiddenMenu {
+    width: 100%;
+    border-top: 1px solid white;
+    padding-left: 15px;
+  }
 `;

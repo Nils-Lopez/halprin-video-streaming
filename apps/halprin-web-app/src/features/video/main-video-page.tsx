@@ -3,7 +3,7 @@ import { useTranslation } from 'next-i18next';
 import { videoConfig } from './video.config';
 import * as S from './main-video-page.style';
 import { VideoPlayer } from '@/features/video/components/video-player';
-import React from 'react';
+import React, { useState } from 'react';
 import { VideoNavbar } from './components/video-navbar';
 import { VideoFooter } from './components/video-footer';
 import {
@@ -18,15 +18,43 @@ type Props = {
 
 export const MainVideoPage: React.FC<Props> = (props) => {
   const { pageId = 'test' } = props;
-  const { t } = useTranslation(videoConfig.i18nNamespaces);
   const lang = 'en';
+  const [videosIndex, setVideosIndex] = useState(0);
+  const [showMenu, setShowMenu] = useState(false);
+  const videos = getVideosFromCategory('workshop', lang);
+  const url = getVideoUrlFromPageId(pageId);
+
   return (
     <>
       <MainLayout>
         <S.Ctn>
-          <VideoNavbar categories={['corps', 'esprit', 'mouvement']} />
-          <VideoPlayer url={getVideoUrlFromPageId(pageId)} />
-          <VideoFooter videos={getVideosFromCategory('workshop', lang)} />
+          <VideoNavbar
+            categories={[
+              'body',
+              'workshop',
+              'experiment',
+              'workshop',
+              'experiment',
+            ]}
+          />
+          <VideoPlayer url={url} />
+          <div className="ml-15">
+            {showMenu ? (
+              <>MENU</>
+            ) : (
+              <button
+                onClick={() => {
+                  setShowMenu(true);
+                }}>
+                Menu
+              </button>
+            )}
+          </div>
+          <VideoFooter
+            videos={videos}
+            videosIndex={videosIndex}
+            setVideosIndex={setVideosIndex}
+          />
         </S.Ctn>
       </MainLayout>
     </>

@@ -10,49 +10,55 @@ type Props = {
 };
 
 export const MenuPage: React.FC<Props> = () => {
-  const logo = 'Anna Halprin - Danser la vie';
   const { t } = useTranslation(menuConfig.i18nNamespaces);
+  const logo = t('app:menu.title');
+  const workshop = t('app:menu.workshopDesc');
+  const lifeAndArt = t('app:menu.myLifeAndArtDesc');
+  const index = t('app:menu.indexDesc');
+  const roadmap = t('app:menu.roadmapsDesc');
+  const intentions = t('app:menu.intentions');
   const [centerContent, setCenterContent] = useState(logo);
-
-  const workshop = 'Workshop is .....';
-  const lifeAndArt = 'My life and the art is .....';
-  const index = 'Index is .....';
-  const roadmap = 'Roadmap is .....';
 
   return (
     <>
       <MainLayout>
         <S.Ctn>
-          <Link href="/video/workshop">
+          <Link href="/video/workshop" passHref>
             <span
               onMouseEnter={() => setCenterContent(workshop)}
               onMouseLeave={() => setCenterContent(logo)}>
-              Atelier
+              {t('app:menu.workshop')}
             </span>
           </Link>
-          <Link href="/video/life-and-art">
+          <Link href="/video/life-and-art" passHref>
             <span
               onMouseEnter={() => setCenterContent(lifeAndArt)}
               onMouseLeave={() => setCenterContent(logo)}>
-              Ma vie et l'art
+              {t('app:menu.myLifeAndArt')}
             </span>
           </Link>
-          <Link href="/video/roadmap">
+          <Link href="/video/roadmap" passHref>
             <span
               onMouseEnter={() => setCenterContent(roadmap)}
               onMouseLeave={() => setCenterContent(logo)}>
-              Feuille de route
+              {t('app:menu.roadmaps')}
             </span>
           </Link>
-          <Link href="/categories">
+          <Link href="/categories" passHref>
             <span
               onMouseEnter={() => setCenterContent(index)}
               onMouseLeave={() => setCenterContent(logo)}>
-              Index
+              {t('app:menu.index')}
             </span>
           </Link>
           <br />
-          <Link href="/">{centerContent}</Link>
+          <Link href="/" passHref>
+            <span
+              onMouseEnter={() => setCenterContent(intentions)}
+              onMouseLeave={() => setCenterContent(logo)}>
+              {centerContent}
+            </span>
+          </Link>
         </S.Ctn>
       </MainLayout>
     </>

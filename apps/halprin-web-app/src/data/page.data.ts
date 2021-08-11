@@ -22,7 +22,7 @@ export type PageData = {
 export const pageData: PageData[] = [
   {
     page_id: 'other',
-    categories: ['workshop', 'roadmap'],
+    categories: ['workshop', 'roadmap', 'body'],
     title: {
       en: 'The search of',
       fr: 'La recherche de',
@@ -36,13 +36,13 @@ export const pageData: PageData[] = [
     content: {
       video: {
         thumbUrl: 'https://source.unsplash.com/random/800x600?fire',
-        url: 'https://www.youtube.com/watch?v=ysz5S6PUM-U',
+        url: 'https://player.vimeo.com/external/583334078.sd.mp4?s=685558fc99397ec030c0866c145927d29e602e30&profile_id=165',
       },
     },
   },
   {
     page_id: 'test',
-    categories: ['workshop', 'roadmap'],
+    categories: ['roadmap', 'body', 'workshop'],
     title: {
       en: 'The search of',
       fr: 'La recherche de',
@@ -56,7 +56,27 @@ export const pageData: PageData[] = [
     content: {
       video: {
         thumbUrl: 'https://source.unsplash.com/random/800x600?tree',
-        url: 'https://www.youtube.com/watch?v=ysz5S6PUM-U',
+        url: 'https://player.vimeo.com/external/583334078.sd.mp4?s=685558fc99397ec030c0866c145927d29e602e30&profile_id=165',
+      },
+    },
+  },
+  {
+    page_id: 'test2',
+    categories: ['roadmap', 'body', 'workshop'],
+    title: {
+      en: 'The search of',
+      fr: 'La recherche de',
+    },
+    sort_idx: 100,
+    cover: 'hello.jpg',
+    keywords: {
+      en: ['hello'],
+      fr: ['hello'],
+    },
+    content: {
+      video: {
+        thumbUrl: 'https://source.unsplash.com/random/800x600?rain',
+        url: 'https://player.vimeo.com/external/583334078.sd.mp4?s=685558fc99397ec030c0866c145927d29e602e30&profile_id=165',
       },
     },
   },

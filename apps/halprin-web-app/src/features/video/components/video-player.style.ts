@@ -1,8 +1,14 @@
 import styled from '@emotion/styled';
 
 export const Ctn = styled.div`
-  padding: 15px;
+  margin-left: auto;
+
+  margin-right: auto;
   display: flex;
   justify-content: center;
-  height: 100%;
+  align-items: center;
+  .video-player {
+    width: 1000px;
+    height: 750px;
+  }
 `;

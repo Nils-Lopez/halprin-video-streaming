@@ -2,23 +2,56 @@ import styled from '@emotion/styled';
 
 export const Ctn = styled.div`
   padding: 5px;
-  border: 1px solid black;
   width: 80%;
-  height: 150px;
+  height: 50%;
   margin: auto;
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+  .slider {
+    display: flex;
+    justify-content: center;
+    overflow-z: auto;
+  }
 `;
 
 export const Slide = styled.div`
-  width: 300px;
-  img {
-    object-fit: cover;
+  margin-left: 40px;
+  width: 140px;
+  cursor: pointer;
+  &:hover {
+    scale: 1.1;
+    .video-title {
+      bottom: 10px;
+      height: 50px;
+      border-top: 2px solid #f1f2f6;
+    }
   }
-  h5 {
-    color: white;
-    font-size: 2em;
+  .video-title {
+    position: absolute;
+    bottom: 40px;
+    height: 30px;
+    transition: height 0.3s ease-in-out;
+    background-color: #101010;
+    width: 140px;
+    text-align: center;
+    padding-top: 3px;
+  }
+`;
+
+export const MainSlide = styled.div`
+  width: 180px;
+  margin-right: 20px;
+  scale: 1.1;
+  .video-title {
+    bottom: 0px;
+    height: 30px;
+    border-top: 2px solid #f1f2f6;
+    background-color: #101010;
+    width: 180px;
+    text-align: center;
+    padding-top: 3px;
     position: absolute;
   }
 `;
