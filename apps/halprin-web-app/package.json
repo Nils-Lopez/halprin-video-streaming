@@ -134,7 +134,7 @@
     "react-hook-form": "7.12.2",
     "react-i18next": "11.11.4",
     "react-player": "2.9.0",
-    "react-query": "3.19.4",
+    "react-query": "3.19.5",
     "type-fest": "2.0.0"
   }
 }
