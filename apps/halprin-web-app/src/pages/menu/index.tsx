@@ -1,8 +1,8 @@
 import { GetServerSideProps } from 'next';
-import { MenuPage } from '../../features/menu/menu.page';
+import { MenuPage } from '@/features/menu/menu.page';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { BadRequest } from '@tsed/exceptions';
-import { menuConfig } from '../../features/menu/menu.config';
+import { menuConfig } from '@/features/menu/menu.config';
 
 export default function MenuRoute() {
   return <MenuPage />;

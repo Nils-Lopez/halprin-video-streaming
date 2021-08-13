@@ -9,6 +9,8 @@
     "incremental": true,
     "paths": {
       "@/test-utils": ["../config/jest/test-utils"],
+      "@/config/*": ["./config/*"],
+      "@/core/*": ["./core/*"],
       "@/backend/*": ["./backend/*"],
       "@/components/*": ["./components/*"],
       "@/data/*": ["./data/*"],

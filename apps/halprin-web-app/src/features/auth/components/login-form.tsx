@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
-import { loginConfig } from '@/features/auth/login.config';
+import { LoginConfig, loginConfig } from '@/features/auth/login.config';
 
 type FormValues = {
   email: string;
