@@ -17,7 +17,6 @@
       "@/features/*": ["./features/*"],
       "@contredanse/common/*": ["../../../packages/common/src/*"],
       "@contredanse/common": ["../../../packages/common/src/index"],
-      "@contredanse/db-main/*": ["../../../packages/db-main/src/*"],
       "@contredanse/db-main": ["../../../packages/db-main/src/index"]
     }
   },
