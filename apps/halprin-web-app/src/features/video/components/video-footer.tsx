@@ -7,11 +7,10 @@ type Props = {
   media: Media[];
   lang: SupportedLang;
   videosIndex: number;
-  setVideosIndex: any;
 };
 
 export const VideoFooter: React.FC<Props> = (props) => {
-  const { media, lang, videosIndex, setVideosIndex } = props;
+  const { media, lang, videosIndex } = props;
 
   const listName = (media?.[0] ?? []).tags
     .map((tag) => tag.tag_slug)
@@ -45,7 +44,7 @@ export const VideoFooter: React.FC<Props> = (props) => {
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            onClick={() => setVideosIndex()}>
+            onClick={() => console.log('suivant')}>
             <path
               strokeLinecap="round"
               strokeLinejoin="round"

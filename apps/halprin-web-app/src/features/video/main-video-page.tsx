@@ -49,12 +49,7 @@ export const MainVideoPage: React.FC<Props> = (props) => {
               </button>
             )}
           </div>
-          <VideoFooter
-            lang={lang}
-            media={media}
-            videosIndex={videosIndex}
-            setVideosIndex={setVideosIndex}
-          />
+          <VideoFooter lang={lang} media={media} videosIndex={videosIndex} />
         </S.Ctn>
       </MainLayout>
     </>

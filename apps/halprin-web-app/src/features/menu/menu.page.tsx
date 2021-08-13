@@ -11,54 +11,124 @@ type Props = {
 
 export const MenuPage: React.FC<Props> = () => {
   const { t } = useTranslation(menuConfig.i18nNamespaces);
-  const logo = t('app:menu.title');
-  const workshop = t('app:menu.workshopDesc');
-  const lifeAndArt = t('app:menu.myLifeAndArtDesc');
-  const index = t('app:menu.indexDesc');
-  const roadmap = t('app:menu.roadmapsDesc');
-  const intentions = t('app:menu.intentions');
-  const [centerContent, setCenterContent] = useState(logo);
+  const [midTitle, setMidTitle] = useState('');
+  const [midBody, setMidBody] = useState('');
+  const [midContent, setMidContent] = useState('logo');
+  const [midClassName, setMidClassName] = useState('');
+
+  const changeMiddleContent = (type: string) => {
+    switch (type) {
+      case 'workshop': {
+        setMidContent('desc');
+        setMidClassName('workshopTxt');
+        setMidTitle(t('app:menu.workshop'));
+        setMidBody(t('app:menu.workshopDesc'));
+        break;
+      }
+      case 'lifeart': {
+        setMidTitle(t('app:menu.myLifeAndArt'));
+        setMidBody(t('app:menu.myLifeAndArtDesc'));
+        setMidContent('desc');
+        setMidClassName('lifeartTxt');
+        break;
+      }
+      case 'roadmaps': {
+        setMidTitle(t('app:menu.roadmaps'));
+        setMidBody(t('app:menu.roadmapsDesc'));
+        setMidContent('desc');
+        setMidClassName('roadmapsTxt');
+        break;
+      }
+      case 'index': {
+        setMidTitle(t('app:menu.index'));
+        setMidBody(t('app:menu.indexDesc'));
+        setMidContent('desc');
+        setMidClassName('indexTxt');
+        break;
+      }
+      default: {
+        setMidContent('logo');
+        setMidClassName('logo');
+        break;
+      }
+    }
+  };
 
   return (
     <>
       <MainLayout>
         <S.Ctn>
-          <Link href="/video/workshop" passHref>
-            <span
-              onMouseEnter={() => setCenterContent(workshop)}
-              onMouseLeave={() => setCenterContent(logo)}>
-              {t('app:menu.workshop')}
-            </span>
-          </Link>
-          <Link href="/video/life-and-art" passHref>
-            <span
-              onMouseEnter={() => setCenterContent(lifeAndArt)}
-              onMouseLeave={() => setCenterContent(logo)}>
-              {t('app:menu.myLifeAndArt')}
-            </span>
-          </Link>
-          <Link href="/video/roadmap" passHref>
-            <span
-              onMouseEnter={() => setCenterContent(roadmap)}
-              onMouseLeave={() => setCenterContent(logo)}>
-              {t('app:menu.roadmaps')}
-            </span>
-          </Link>
-          <Link href="/categories" passHref>
-            <span
-              onMouseEnter={() => setCenterContent(index)}
-              onMouseLeave={() => setCenterContent(logo)}>
-              {t('app:menu.index')}
-            </span>
-          </Link>
-          <br />
-          <Link href="/" passHref>
-            <span
-              onMouseEnter={() => setCenterContent(intentions)}
-              onMouseLeave={() => setCenterContent(logo)}>
-              {centerContent}
-            </span>
-          </Link>
+          <S.Circle>
+            <div className="topIcon">
+              <Link href="/video/workshop" passHref>
+                <img
+                  src={'/images/ui/menu/round.png'}
+                  alt={t('app:menu.workshop')}
+                  onMouseEnter={() => changeMiddleContent('workshop')}
+                  onMouseLeave={() => changeMiddleContent('logo')}
+                  className="roundImg"
+                />
+              </Link>
+            </div>
+            <div className="midContainer">
+              <div className="leftIcon">
+                <Link href="/video/life-and-art" passHref>
+                  <img
+                    src={'/images/ui/menu/eye.png'}
+                    alt={t('app:menu.myLifeAndArt')}
+                    onMouseEnter={() => changeMiddleContent('lifeart')}
+                    onMouseLeave={() => changeMiddleContent('logo')}
+                    className="eyeImg"
+                  />
+                </Link>
+              </div>
+              <div className="circleContent">
+                <div className={midClassName}>
+                  {midContent === 'logo' ? (
+                    <>Anna Halprin - Dancing Life</>
+                  ) : (
+                    <>
+                      <p>{midTitle.toUpperCase()}</p>
+                      <p>{midBody}</p>
+                    </>
+                  )}
+                </div>
+              </div>
+              <div className="mobileLogo">
+                Anna Halprin <br /> - <br /> Dancing Life
+              </div>
+              <div className="rightIcon">
+                <Link href="/video/roadmaps" passHref>
+                  <img
+                    src={'/images/ui/menu/hand.png'}
+                    alt={t('app:menu.roadmaps')}
+                    onMouseEnter={() => changeMiddleContent('roadmaps')}
+                    onMouseLeave={() => changeMiddleContent('logo')}
+                    className="handImg"
+                  />
+                </Link>
+              </div>
+            </div>
+            <div className="bottomIcon">
+              <Link href="/index" passHref>
+                <img
+                  src={'/images/ui/menu/mouth.png'}
+                  alt={t('app:menu.index')}
+                  onMouseEnter={() => changeMiddleContent('index')}
+                  onMouseLeave={() => changeMiddleContent('logo')}
+                  className="mouthImg"
+                />
+              </Link>
+            </div>
+          </S.Circle>
+          {midContent === 'desc' && (
+            <div className="mobileDesc">
+              <div className={midClassName}>
+                <p>{midTitle.toUpperCase()}</p>
+                <p>{midBody}</p>
+              </div>
+            </div>
+          )}
         </S.Ctn>
       </MainLayout>
     </>
