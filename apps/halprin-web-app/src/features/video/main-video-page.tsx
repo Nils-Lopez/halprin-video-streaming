@@ -9,22 +9,25 @@ import { VideoFooter } from './components/video-footer';
 import { SupportedLang } from '@/features/video/types';
 import { MediaRepo } from '@/features/video/repository/media.repo';
 import { mediaCategoryData } from '@/data/media-category.data';
+import { isNonEmptyString } from '@contredanse/common';
+import { MediaCategorySlug } from '@/data/data.types';
 
 type Props = {
   lang: SupportedLang;
+  categorySlug?: MediaCategorySlug;
   children?: never;
   pageId?: string;
 };
 
 export const MainVideoPage: React.FC<Props> = (props) => {
-  const { pageId = 'test', lang } = props;
+  const { lang, categorySlug } = props;
   const [videosIndex, setVideosIndex] = useState(0);
   const [showMenu, setShowMenu] = useState(false);
 
   const media = new MediaRepo().search({
     // Optionally search also by tagSlugs
     //tagSlugs: ['keywords']
-    categories: ['workshops'],
+    ...(isNonEmptyString(categorySlug) ? { categories: [categorySlug] } : {}),
   });
 
   // todo on mettra la bonne après
