@@ -1,4 +1,4 @@
-import { PrismaClient } from '../../../../../../packages/db-main';
+import { PrismaClientDbMain } from '@contredanse/db-main';
 import { InternalServerError } from '@tsed/exceptions';
 import { UnPromisify } from '@contredanse/common';
 
@@ -7,7 +7,7 @@ export type GetPoems = UnPromisify<
 >;
 
 export class PoemRepositorySsr {
-  constructor(private prisma: PrismaClient) {}
+  constructor(private prisma: PrismaClientDbMain) {}
 
   /**
    * @throws Error
