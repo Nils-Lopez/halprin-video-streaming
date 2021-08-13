@@ -1,20 +1,26 @@
-import { GetServerSideProps } from 'next';
+import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { BadRequest } from '@tsed/exceptions';
 import { MainVideoPage } from '@/features/video/main-video-page';
 import { videoConfig } from '@/features/video/video.config';
 import { SupportedLang } from '@/features/video/types';
+import { SiteConfigUtils } from '@/core/config/site- config.utils';
 
 type Props = { lang: SupportedLang };
 
-export default function VideoRoute(props: Props) {
+export default function VideoRoute(
+  props: InferGetServerSidePropsType<typeof getServerSideProps>
+) {
   const { lang } = props;
   return <MainVideoPage lang={lang} />;
 }
 
-export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
-  if (locale === undefined) {
-    throw new BadRequest('locale is missing');
+export const getServerSideProps: GetServerSideProps<Props> = async (
+  context
+) => {
+  const { locale } = context;
+  if (locale === undefined || !SiteConfigUtils.isSupportedLocale(locale)) {
+    throw new BadRequest('locale is missing or not supported');
   }
   const { i18nNamespaces } = videoConfig;
   return {
