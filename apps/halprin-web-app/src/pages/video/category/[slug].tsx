@@ -5,14 +5,20 @@ import { MainVideoPage } from '@/features/video/main-video-page';
 import { videoConfig } from '@/features/video/video.config';
 import { SupportedLang } from '@/features/video/types';
 import { SiteConfigUtils } from '@/core/config/site- config.utils';
+import { Asserts } from '@contredanse/common';
+import { MediaCategRepo } from '@/features/video/repository/media-categ.repo';
+import { MediaCategorySlug } from '@/data/data.types';
 
-type Props = { lang: SupportedLang };
+type Props = {
+  categorySlug: MediaCategorySlug;
+  lang: SupportedLang;
+};
 
 export default function VideoRoute(
   props: InferGetServerSidePropsType<typeof getServerSideProps>
 ) {
-  const { lang } = props;
-  return <MainVideoPage lang={lang} />;
+  const { lang, categorySlug } = props;
+  return <MainVideoPage lang={lang} categorySlug={categorySlug} />;
 }
 
 export const getServerSideProps: GetServerSideProps<Props> = async (
@@ -22,9 +28,19 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
   if (locale === undefined || !SiteConfigUtils.isSupportedLocale(locale)) {
     throw new BadRequest('locale is missing or not supported');
   }
+  const { slug: categorySlug } = context.params ?? {};
+  Asserts.nonEmptyString(categorySlug, () => {
+    throw new BadRequest('categorySlug must be a non empty string');
+  });
+  if (!new MediaCategRepo().exists(categorySlug)) {
+    return {
+      notFound: true,
+    };
+  }
   const { i18nNamespaces } = videoConfig;
   return {
     props: {
+      categorySlug: categorySlug,
       lang: locale,
       // @see https:/github.com/i18next/react-i18next/pull/1340#issuecomment-874728587
       ...(await serverSideTranslations(locale, i18nNamespaces.slice())),
