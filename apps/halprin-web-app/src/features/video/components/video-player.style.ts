@@ -9,6 +9,6 @@ export const Ctn = styled.div`
   align-items: center;
   .video-player {
     width: 1000px;
-    height: 750px;
+    height: 680px;
   }
 `;

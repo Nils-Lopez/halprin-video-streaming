@@ -13,31 +13,29 @@ export const VideoCarrousel: FC<Props> = (props) => {
 
   return (
     <>
-      <S.Ctn>
-        <div className="slider">
-          {media.map((media, index) => {
-            // @todo when thum is present
-            const thumb = media.thumb;
-            //const thumb = 'https://source.unsplash.com/random/800x600?fire';
-            const title = media.title[lang];
-            return (
-              <Fragment key={media.media_slug}>
-                {index === 0 ? (
-                  <S.MainSlide>
-                    <img alt={'Random'} src={thumb} />
-                    <div className="video-title">{title}</div>
-                  </S.MainSlide>
-                ) : (
-                  <S.Slide>
-                    <img alt={'Random'} src={thumb} />
-                    <div className="video-title">{title}</div>
-                  </S.Slide>
-                )}
-              </Fragment>
-            );
-          })}
-        </div>
-      </S.Ctn>
+      <S.Carrousel>
+        {media.map((media, index) => {
+          const thumb = media.thumb;
+          const title = media.title;
+          return (
+            <Fragment key={media.media_slug}>
+              {index === 0 ? (
+                <div className="main">
+                  <div className="now-playing">
+                    NOW <br /> PLAYING
+                  </div>
+                  <div className="video-title">{title[lang]}</div>
+                </div>
+              ) : (
+                <div className="slide">
+                  <img src={thumb} alt={'A picture of : ' + title[lang]} />
+                  <div className="video-title">{title[lang]}</div>
+                </div>
+              )}
+            </Fragment>
+          );
+        })}
+      </S.Carrousel>
     </>
   );
 };

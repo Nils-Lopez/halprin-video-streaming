@@ -12,52 +12,48 @@ type Props = {
 export const VideoFooter: React.FC<Props> = (props) => {
   const { media, lang, videosIndex } = props;
 
-  const listName = (media?.[0] ?? []).tags
-    .map((tag) => tag.tag_slug)
-    .join(', ');
-
   return (
     <S.Ctn>
-      <div className="topbar">
-        <div className="left">
-          <small>LISTNAME: </small> {listName}
-        </div>
+      <div className="topBar">
+        <div className="left">LISTNAME: {media[0].category}</div>
         <div className="center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 chevron"
-            fill="none"
+            className="icon icon-tabler icon-tabler-chevrons-left center-icon"
+            width="27"
+            height="27"
             viewBox="0 0 24 24"
+            strokeWidth="2"
             stroke="currentColor"
-            onClick={() => console.log('previous')}>
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M11 19l-7-7 7-7m8 14l-7-7 7-7"
-            />
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="11 7 6 12 11 17"></polyline>
+            <polyline points="17 7 12 12 17 17"></polyline>
           </svg>
-          {videosIndex} / {media.length}
+          1 / {media.length}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 chevron"
-            fill="none"
+            className="icon icon-tabler icon-tabler-chevrons-right center-icon"
+            width="27"
+            height="27"
             viewBox="0 0 24 24"
+            strokeWidth="2"
             stroke="currentColor"
-            onClick={() => console.log('suivant')}>
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M13 5l7 7-7 7M5 5l7 7-7 7"
-            />
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 7 12 12 7 17"></polyline>
+            <polyline points="13 7 18 12 13 17"></polyline>
           </svg>
         </div>
         <div className="right">
-          <button>All</button>
-          <button>My List</button>
-          <button>To see</button>
-          <button>Already Seen</button>
+          <button className="listBtn">ALL</button>
+          <button className="listBtn">LIST</button>
+          <button className="listBtn">HISTORY</button>
+          <button className="listBtn">UNSEEN</button>
         </div>
       </div>
       <VideoCarrousel lang={lang} media={media} />

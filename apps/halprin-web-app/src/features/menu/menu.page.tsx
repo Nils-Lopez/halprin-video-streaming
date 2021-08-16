@@ -110,7 +110,7 @@ export const MenuPage: React.FC<Props> = () => {
               </div>
             </div>
             <div className="bottomIcon">
-              <Link href="/index" passHref>
+              <Link href="/tag-index" passHref>
                 <img
                   src={'/images/ui/menu/mouth.png'}
                   alt={t('app:menu.index')}
