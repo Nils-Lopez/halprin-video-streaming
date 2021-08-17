@@ -46,7 +46,9 @@ export class TagRepo {
               ...{ media: [...curr.media, media] },
             });
           } else {
-            throw new Error('Unexpected empty exiting medias, check your code');
+            throw new Error(
+              'Unexpected empty existing medias, check your code'
+            );
           }
         }
       });
