@@ -1,11 +1,21 @@
 import { Media, MediaCategorySlug } from '@/data/data.types';
 import { mediaData } from '@/data/media.data';
+import { tagsData } from '@/data/tags.data';
 
 type Props = {
   mediaData?: Media[];
 };
 
-type GetMediaByTags = Map<string, Media[]>;
+type GetMediaByTags = Map<
+  string,
+  {
+    label: {
+      en: string;
+      fr: string;
+    };
+    media: Media[];
+  }
+>;
 
 export class TagRepo {
   private data: Media[];
@@ -18,11 +28,23 @@ export class TagRepo {
       media.tags.forEach((tag) => {
         const { tag_slug } = tag;
         if (!mediaByTags.has(tag_slug)) {
-          mediaByTags.set(tag_slug, [media]);
+          const labels = tagsData.filter(
+            (tag) => tag.tag_slug === tag_slug
+          )?.[0].label;
+          mediaByTags.set(tag_slug, {
+            media: [media],
+            label: {
+              en: labels.en,
+              fr: labels.fr,
+            },
+          });
         } else {
-          const existingMedias = mediaByTags.get(tag_slug);
-          if (existingMedias !== undefined) {
-            mediaByTags.set(tag_slug, [...existingMedias, ...[media]]);
+          const curr = mediaByTags.get(tag_slug);
+          if (curr !== undefined) {
+            mediaByTags.set(tag_slug, {
+              ...curr,
+              ...{ media: [...curr.media, media] },
+            });
           } else {
             throw new Error('Unexpected empty exiting medias, check your code');
           }
