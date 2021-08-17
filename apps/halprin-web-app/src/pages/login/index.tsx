@@ -1,14 +1,23 @@
-import { GetServerSideProps } from 'next';
+import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { BadRequest } from '@tsed/exceptions';
 import { loginConfig } from '@/features/auth/login.config';
 import { LoginPage } from '@/features/auth/login-page';
 
-export default function LoginRoute() {
+type Props = {
+  /** add what's needed in case */
+};
+
+export default function LoginRoute(
+  props: InferGetServerSidePropsType<typeof getServerSideProps>
+) {
   return <LoginPage />;
 }
 
-export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
+export const getServerSideProps: GetServerSideProps<Props> = async (
+  context
+) => {
+  const { locale } = context;
   if (locale === undefined) {
     throw new BadRequest('locale is missing');
   }

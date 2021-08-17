@@ -1,8 +1,8 @@
 import { prismaClient } from '@/backend/config/container.config';
-import { PrismaClient } from '../../../../../../packages/db-main';
+import { PrismaClientDbMain } from '@contredanse/db-main';
 
 export type GraphqlSdlContext = {
-  prisma: PrismaClient;
+  prisma: PrismaClientDbMain;
 };
 
 export const graphqlSdlContext: GraphqlSdlContext = {

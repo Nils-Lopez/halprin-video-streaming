@@ -60,7 +60,7 @@ export const MenuPage: React.FC<Props> = () => {
         <S.Ctn>
           <S.Circle>
             <div className="topIcon">
-              <Link href="/video/workshop" passHref>
+              <Link href="/video/category/workshops" passHref>
                 <img
                   src={'/images/ui/menu/round.png'}
                   alt={t('app:menu.workshop')}
@@ -72,7 +72,7 @@ export const MenuPage: React.FC<Props> = () => {
             </div>
             <div className="midContainer">
               <div className="leftIcon">
-                <Link href="/video/life-and-art" passHref>
+                <Link href="/video/category/life-art" passHref>
                   <img
                     src={'/images/ui/menu/eye.png'}
                     alt={t('app:menu.myLifeAndArt')}
@@ -98,7 +98,7 @@ export const MenuPage: React.FC<Props> = () => {
                 Anna Halprin <br /> - <br /> Dancing Life
               </div>
               <div className="rightIcon">
-                <Link href="/video/roadmaps" passHref>
+                <Link href="/video/category/roadmaps" passHref>
                   <img
                     src={'/images/ui/menu/hand.png'}
                     alt={t('app:menu.roadmaps')}
