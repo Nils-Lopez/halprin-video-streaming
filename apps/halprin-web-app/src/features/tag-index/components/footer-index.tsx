@@ -2,24 +2,22 @@ import React, { FC, useEffect, useState } from 'react';
 import * as S from './footer-index.style';
 import { VideoCarrousel } from '@/features/video/components/video-carrousel';
 import { MediaRepo } from '@/features/video/repository/media.repo';
+import { Media } from '@/data/data.types';
 
 type Props = {
   selectedTag: string;
   setSelectedTag: any;
 };
 
+const repo = new MediaRepo();
+
 export const FooterIndex: FC<Props> = (props) => {
   const { selectedTag, setSelectedTag } = props;
-
-  const indexMedia = async () => {
-    const media = await new MediaRepo().findByCategory('index');
-  };
-
-  const [media, setMedia] = useState(indexMedia);
+  const [media, setMedia] = useState(repo.findByCategory('index'));
 
   useEffect(() => {
     if (selectedTag !== '' && selectedTag !== undefined) {
-      const newMedias = new MediaRepo().search({
+      const newMedias = repo.search({
         tagSlugs: [selectedTag],
       });
       setMedia(newMedias);
