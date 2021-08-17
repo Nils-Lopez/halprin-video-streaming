@@ -30,12 +30,7 @@
     {
       "files": ["src/**/*.ts", "src/**/*.tsx"],
       "rules": {
-        "jsx-a11y/anchor-is-valid": "off"
-      }
-    },
-    {
-      "files": ["src/**/*.ts"],
-      "rules": {
+        "jsx-a11y/anchor-is-valid": "off",
         "testing-library/await-async-query": "off"
       }
     },
