@@ -22,7 +22,7 @@ export const VideoNavbar: FC<Props> = (props) => {
               return (
                 <Link
                   key={`${category.categ_slug}`}
-                  href={'/video/' + category.categ_slug}>
+                  href={'/video/category/' + category.categ_slug}>
                   {category.label[lang]}
                 </Link>
               );

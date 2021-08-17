@@ -60,7 +60,7 @@ export const MenuPage: React.FC<Props> = () => {
         <S.Ctn>
           <S.Circle>
             <div className="topIcon">
-              <Link href="/video/category/workshops" passHref>
+              <Link href={menuConfig.menuLinks.videoWorkshops} passHref>
                 <img
                   src={'/images/ui/menu/round.png'}
                   alt={t('app:menu.workshop')}
@@ -72,7 +72,7 @@ export const MenuPage: React.FC<Props> = () => {
             </div>
             <div className="midContainer">
               <div className="leftIcon">
-                <Link href="/video/category/life-art" passHref>
+                <Link href={menuConfig.menuLinks.videoLifeArt} passHref>
                   <img
                     src={'/images/ui/menu/eye.png'}
                     alt={t('app:menu.myLifeAndArt')}
@@ -98,7 +98,7 @@ export const MenuPage: React.FC<Props> = () => {
                 Anna Halprin <br /> - <br /> Dancing Life
               </div>
               <div className="rightIcon">
-                <Link href="/video/category/roadmaps" passHref>
+                <Link href={menuConfig.menuLinks.videoRoadmaps} passHref>
                   <img
                     src={'/images/ui/menu/hand.png'}
                     alt={t('app:menu.roadmaps')}
@@ -110,7 +110,7 @@ export const MenuPage: React.FC<Props> = () => {
               </div>
             </div>
             <div className="bottomIcon">
-              <Link href="/tag-index" passHref>
+              <Link href={menuConfig.menuLinks.videoIndex} passHref>
                 <img
                   src={'/images/ui/menu/mouth.png'}
                   alt={t('app:menu.index')}
