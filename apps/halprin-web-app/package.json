@@ -113,7 +113,7 @@
     "@headlessui/react": "1.4.0",
     "@heroicons/react": "1.0.3",
     "@sentry/nextjs": "6.11.0",
-    "@tsed/exceptions": "6.62.3",
+    "@tsed/exceptions": "6.62.4",
     "apollo-server-micro": "3.1.2",
     "axios": "0.21.1",
     "cors": "2.8.5",
