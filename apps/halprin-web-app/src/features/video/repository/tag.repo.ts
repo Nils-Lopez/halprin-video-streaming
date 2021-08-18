@@ -6,7 +6,7 @@ type Props = {
   mediaData?: Media[];
 };
 
-type GetMediaByTags = Map<
+export type GetMediaByTags = Map<
   string,
   {
     label: {

@@ -1,11 +1,15 @@
-import { GetServerSideProps } from 'next';
+import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
 import { TagIndexPage } from '@/features/tag-index/tag-index.page';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { BadRequest } from '@tsed/exceptions';
 import { tagIndexConfig } from '@/features/tag-index/tag-index.config';
 
-export default function TagIndexRoute() {
-  return <TagIndexPage />;
+export default function TagIndexRoute(
+  props: InferGetServerSidePropsType<typeof getServerSideProps>
+) {
+  const { lang } = props;
+
+  return <TagIndexPage lang={lang} />;
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
