@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Ctn = styled.div`
-  padding: 15%;
+  padding: 10%;
   .mobileDesc {
     display: none;
   }
@@ -73,6 +73,30 @@ export const Circle = styled.div`
   .circleContent {
     width: 250px;
     margin-left: -20px;
+    .triangleContent {
+      top: 20px;
+      position: relative;
+      z-index: 100;
+      line-height: 30px;
+      hr {
+        border: 1px solid white;
+      }
+    }
+    .triangle {
+      height: 250px;
+      position: absolute;
+      z-index: -100;
+      top: 110px;
+      right: 120px;
+    }
+    .triangleContent {
+      width: 110px;
+      text-align: center;
+      left: 45px;
+    }
+    .centeredBtn {
+      cursor: pointer;
+    }
   }
   .workshopTxt {
     color: pink;
