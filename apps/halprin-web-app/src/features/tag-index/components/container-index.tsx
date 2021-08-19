@@ -28,7 +28,7 @@ export const ContainerIndex: FC<Props> = (props) => {
     });
   };
 
-  const orderedLabels = [];
+  const orderedLabels = new Array<string>();
 
   tags.forEach((tag: any) => {
     orderedLabels.push(capitalizeTheFirstLetterOfEachWord(tag.label[lang]));
@@ -42,7 +42,7 @@ export const ContainerIndex: FC<Props> = (props) => {
 
   const LetterTag: FC<letterProps> = (props) => {
     const { letter } = props;
-    const tags = [];
+    const tags = new Array<string>();
 
     orderedLabels.map((label: any) => {
       if (
