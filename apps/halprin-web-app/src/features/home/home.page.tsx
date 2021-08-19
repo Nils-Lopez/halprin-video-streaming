@@ -18,12 +18,40 @@ export const HomePage: React.FC<Props> = () => {
       {lang === '' ? (
         <S.Ctn>
           <div className="langChoose">
-            <button onClick={() => setLang('en')}>
-              Anna Halprin - Dancing Life
-            </button>
-            <button onClick={() => setLang('fr')}>
-              Anna Halprin - Danser la vie
-            </button>
+            <div className="leftBtn">
+              <button onClick={() => setLang('en')}>
+                <div className="triangleContent">
+                  Anna Halprin
+                  <br />
+                  <hr />
+                  Dancing Life
+                </div>
+                <div className="backgroundTriangle">
+                  <img
+                    className="triangle"
+                    src="/images/ui/home/triangle-halprin.png"
+                    alt="regular triangle line png @transparentpng.com"
+                  />
+                </div>
+              </button>
+            </div>
+            <div className="rightBtn">
+              <button onClick={() => setLang('fr')}>
+                <div className="triangleContent">
+                  Anna Halprin
+                  <br />
+                  <hr />
+                  Danser la vie
+                </div>
+                <div className="backgroundTriangle">
+                  <img
+                    className="triangle"
+                    src="/images/ui/home/triangle-halprin.png"
+                    alt="regular triangle line png @transparentpng.com"
+                  />
+                </div>
+              </button>
+            </div>
           </div>
         </S.Ctn>
       ) : (

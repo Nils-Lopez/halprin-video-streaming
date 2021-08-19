@@ -2,7 +2,7 @@ import { MainLayout } from '@/components/layout/main-layout';
 import { useTranslation } from 'next-i18next';
 import { menuConfig } from './menu.config';
 import * as S from './menu-page.style';
-import { useState } from 'react';
+import { useState, Fragment, FC } from 'react';
 import Link from 'next/link';
 
 type Props = {
@@ -15,6 +15,7 @@ export const MenuPage: React.FC<Props> = () => {
   const [midBody, setMidBody] = useState('');
   const [midContent, setMidContent] = useState('logo');
   const [midClassName, setMidClassName] = useState('');
+  const [hoverCenter, setHoverCenter] = useState(false);
 
   const changeMiddleContent = (type: string) => {
     switch (type) {
@@ -85,7 +86,32 @@ export const MenuPage: React.FC<Props> = () => {
               <div className="circleContent">
                 <div className={midClassName}>
                   {midContent === 'logo' ? (
-                    <>Anna Halprin - Dancing Life</>
+                    <Link href="/video/category/intentions">
+                      <div
+                        className="centeredBtn"
+                        onMouseEnter={() => setHoverCenter(true)}
+                        onMouseLeave={() => setHoverCenter(false)}>
+                        <div className="triangleContent">
+                          {hoverCenter ? (
+                            <Fragment>Mes intentions</Fragment>
+                          ) : (
+                            <Fragment>
+                              Anna Halprin
+                              <br />
+                              <hr />
+                              Danser la vie
+                            </Fragment>
+                          )}
+                        </div>
+                        <div className="backgroundTriangle">
+                          <img
+                            className="triangle"
+                            src="/images/ui/menu/triangle-halprin-white.png"
+                            alt="regular triangle line png @transparentpng.com"
+                          />
+                        </div>
+                      </div>
+                    </Link>
                   ) : (
                     <>
                       <p>{midTitle.toUpperCase()}</p>
