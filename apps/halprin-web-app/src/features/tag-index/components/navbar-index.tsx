@@ -10,7 +10,7 @@ type Props = {
 export const NavbarIndex: FC<Props> = (props) => {
   const { tags, lang = 'en' } = props;
 
-  const orderedLabels = [];
+  const orderedLabels = new Array<string>();
 
   tags.forEach((tag: any) => {
     const capitalizeTheFirstLetterOfEachWord = (label: string) => {
@@ -31,7 +31,7 @@ export const NavbarIndex: FC<Props> = (props) => {
   orderedLabels.sort();
 
   const alphabet = () => {
-    const letters = [];
+    const letters = new Array<string>();
     orderedLabels.forEach((tag: any, index: number) => {
       if (
         index === 0 ||
