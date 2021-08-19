@@ -1,6 +1,11 @@
 import styled from '@emotion/styled';
 
 export const Ctn = styled.div`
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  min-height: 200px;
+  background: black;
   .topBar {
     width: 97%;
     border-top: 1px solid #95a5a6;

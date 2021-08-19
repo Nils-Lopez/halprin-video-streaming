@@ -6,11 +6,12 @@ import { SupportedLang } from '@/features/video/types';
 type Props = {
   media: Media[];
   lang: SupportedLang;
-  videosIndex: number;
+  playedVideo: any;
+  setPlayedVideo: any;
 };
 
 export const VideoFooter: React.FC<Props> = (props) => {
-  const { media, lang, videosIndex } = props;
+  const { media, lang, playedVideo, setPlayedVideo } = props;
 
   return (
     <S.Ctn>
@@ -56,7 +57,12 @@ export const VideoFooter: React.FC<Props> = (props) => {
           <button className="listBtn">UNSEEN</button>
         </div>
       </div>
-      <VideoCarrousel lang={lang} media={media} />
+      <VideoCarrousel
+        lang={lang}
+        media={media}
+        playedVideo={playedVideo}
+        setPlayedVideo={setPlayedVideo}
+      />
     </S.Ctn>
   );
 };

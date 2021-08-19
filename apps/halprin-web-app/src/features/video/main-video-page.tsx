@@ -21,8 +21,8 @@ type Props = {
 
 export const MainVideoPage: React.FC<Props> = (props) => {
   const { lang, categorySlug } = props;
-  const [videosIndex, setVideosIndex] = useState(0);
   const [showMenu, setShowMenu] = useState(false);
+  const [playedVideo, setPlayedVideo] = useState(null);
 
   const media = new MediaRepo().search({
     // Optionally search also by tagSlugs
@@ -52,7 +52,12 @@ export const MainVideoPage: React.FC<Props> = (props) => {
               </button>
             )}
           </div>
-          <VideoFooter lang={lang} media={media} videosIndex={videosIndex} />
+          <VideoFooter
+            lang={lang}
+            media={media}
+            playedVideo={playedVideo}
+            setPlayedVideo={setPlayedVideo}
+          />
         </S.Ctn>
       </MainLayout>
     </>

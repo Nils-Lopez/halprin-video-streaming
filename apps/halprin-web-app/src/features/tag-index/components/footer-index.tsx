@@ -2,25 +2,21 @@ import React, { FC, useEffect, useState } from 'react';
 import * as S from './footer-index.style';
 import { VideoCarrousel } from '@/features/video/components/video-carrousel';
 import { MediaRepo } from '@/features/video/repository/media.repo';
-import { Media } from '@/data/data.types';
 
 type Props = {
-  selectedTag: string;
-  setSelectedTag: any;
+  selectedTag: any;
+  lang: string;
 };
 
 const repo = new MediaRepo();
 
 export const FooterIndex: FC<Props> = (props) => {
-  const { selectedTag, setSelectedTag } = props;
+  const { selectedTag, lang = 'en' } = props;
   const [media, setMedia] = useState(repo.findByCategory('index'));
 
   useEffect(() => {
-    if (selectedTag !== '' && selectedTag !== undefined) {
-      const newMedias = repo.search({
-        tagSlugs: [selectedTag],
-      });
-      setMedia(newMedias);
+    if (selectedTag) {
+      setMedia(selectedTag.media);
     }
   }, [selectedTag]);
 
@@ -28,7 +24,7 @@ export const FooterIndex: FC<Props> = (props) => {
     <S.Ctn>
       <div className="topBar">
         <div className="left">
-          LISTNAME: {selectedTag && <>[INDEX] {selectedTag}</>}
+          LISTNAME: {selectedTag && <>[INDEX] {selectedTag.label[lang]}</>}
         </div>
         <div className="center">
           <svg
@@ -70,7 +66,12 @@ export const FooterIndex: FC<Props> = (props) => {
           <button className="listBtn">UNSEEN</button>
         </div>
       </div>
-      <VideoCarrousel lang={'en'} media={media} />
+      <VideoCarrousel
+        lang={'en'}
+        media={media}
+        playedVideo={null}
+        setPlayedVideo={null}
+      />
     </S.Ctn>
   );
 };

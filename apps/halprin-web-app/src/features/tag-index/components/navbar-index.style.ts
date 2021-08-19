@@ -16,18 +16,20 @@ export const Ctn = styled.div`
     margin-right: auto;
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 58%;
   }
   .alphabetNav {
-    width: 70%;
+    width: 60%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
+
   .link {
     color: #95a5a6;
     padding: 3px;
     &:hover {
       color: white;
     }
+    cursor: pointer;
   }
 `;

@@ -1,13 +1,20 @@
 import styled from '@emotion/styled';
 
 export const Carrousel = styled.div`
-  width: 50%;
+  max-width: 50%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
   overflow: scroll;
+
+  .carrousel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .carrousel-centered {
+    display: flex;
+    justify-content: center;
+  }
   .slide {
     img {
       width: 150px;
@@ -15,7 +22,7 @@ export const Carrousel = styled.div`
       object-fit: cover;
     }
     .video-title {
-      width: 100%;
+      width: 150px;
       border-top: 2px solid pink;
       background: black;
       transition: height 0.5s ease-in-out;
@@ -42,11 +49,10 @@ export const Carrousel = styled.div`
     margin-left: 15px;
     margin-right: 15px;
     .video-title {
-      width: 100%;
+      max-width: 150px;
       border-top: 2px solid pink;
       background: black;
       transition: height 0.5s ease-in-out;
-      text-align: center;
     }
     .now-playing {
       color: pink;
