@@ -8,7 +8,7 @@ type Props = {
 };
 
 export const NavbarIndex: FC<Props> = (props) => {
-  const { tags, lang = 'en' } = props;
+  const { tags, lang = 'fr' } = props;
 
   const orderedLabels = new Array<string>();
 
@@ -48,20 +48,42 @@ export const NavbarIndex: FC<Props> = (props) => {
 
   return (
     <S.Ctn>
-      <div className="indexTitle">Index</div>
-      <div className="nav">
-        <div className="alphabetNav">
-          {alphabetLinks.map((letter) => {
-            return (
-              <Link href={'#' + letter} passHref>
-                <p className="link">{letter}</p>
-              </Link>
-            );
-          })}
+      <div className="desktop">
+        <div className="indexTitle">Index</div>
+        <div className="nav">
+          <div className="alphabetNav">
+            {alphabetLinks.map((letter) => {
+              return (
+                <Link href={'#' + letter} passHref>
+                  <p className="link">{letter}</p>
+                </Link>
+              );
+            })}
+          </div>
+          <div className="top-right">
+            <button className="link">DATE</button>
+            <button className="link">MEDIA</button>
+          </div>
         </div>
-        <div className="top-right">
-          <button className="link">DATE</button>
-          <button className="link">MEDIA</button>
+      </div>
+      <div className="mobile">
+        <div className="top">
+          <div className="top-left">Index</div>
+          <div className="top-right">
+            <button className="link">DATE</button>
+            <button className="link">MEDIA</button>
+          </div>
+        </div>
+        <div className="nav-mobile">
+          <div className="alphabetNav-mobile">
+            {alphabetLinks.map((letter) => {
+              return (
+                <Link href={'#' + letter} passHref>
+                  <p className="link">{letter}</p>
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </div>
     </S.Ctn>

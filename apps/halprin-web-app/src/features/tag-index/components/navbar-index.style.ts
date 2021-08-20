@@ -32,4 +32,40 @@ export const Ctn = styled.div`
     }
     cursor: pointer;
   }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    width: 100%;
+  }
+  @media only screen and (max-width: 900px) {
+    .mobile {
+      display: block;
+      .top {
+        width: 100%;
+        display: block;
+        .top-left {
+          font-size: 12px;
+          color: #95a5a6;
+          float: left;
+        }
+        .top-right {
+          float: right;
+        }
+      }
+      width: 100%;
+      .nav-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .alphabetNav-mobile {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+    .desktop {
+      display: none;
+    }
+  }
 `;

@@ -9,7 +9,7 @@ type Props = {
 };
 
 export const ContainerIndex: FC<Props> = (props) => {
-  const { selectedTag, setSelectedTag, tags, lang = 'en' } = props;
+  const { selectedTag, setSelectedTag, tags, lang = 'fr' } = props;
 
   const capitalizeTheFirstLetterOfEachWord = (label: string) => {
     const separateWord = label.toLowerCase().split(' ');
@@ -58,9 +58,9 @@ export const ContainerIndex: FC<Props> = (props) => {
     });
 
     return (
-      <>
+      <Fragment>
         {tags.length > 2 ? (
-          <>
+          <Fragment>
             {tags.map((label: string, index: number) => {
               if (
                 ((index + 1) / 3).toFixed(0).toString() ===
@@ -68,7 +68,7 @@ export const ContainerIndex: FC<Props> = (props) => {
               ) {
                 return (
                   <Fragment key={index}>
-                    <tr>
+                    <tr className="desktop">
                       <td
                         className={
                           selectedTag &&
@@ -108,16 +108,30 @@ export const ContainerIndex: FC<Props> = (props) => {
                     </tr>
                     {(!tags[index + 2] && tags[index + 1]) ||
                       (!tags[index + 3] && tags[index + 1] && tags[index + 2] && (
-                        <>
-                          <tr>
-                            <td>
+                        <Fragment>
+                          <tr className="desktop">
+                            <td
+                              className={
+                                selectedTag &&
+                                capitalizeTheFirstLetterOfEachWord(
+                                  selectedTag.label[lang]
+                                ) === tags[index + 1] &&
+                                'selected'
+                              }>
                               <button
                                 onClick={() => chooseTag(tags[index + 1])}>
                                 {tags[index + 1]}
                               </button>
                             </td>
                             {tags[index + 2] && (
-                              <td>
+                              <td
+                                className={
+                                  selectedTag &&
+                                  capitalizeTheFirstLetterOfEachWord(
+                                    selectedTag.label[lang]
+                                  ) === tags[index + 2] &&
+                                  'selected'
+                                }>
                                 <button
                                   onClick={() => chooseTag(tags[index + 2])}>
                                   {tags[index + 2]}
@@ -125,28 +139,56 @@ export const ContainerIndex: FC<Props> = (props) => {
                               </td>
                             )}
                           </tr>
-                        </>
+                        </Fragment>
                       ))}
                   </Fragment>
                 );
               }
             })}
-          </>
+          </Fragment>
         ) : (
-          <>
-            <tr>
-              <td>
+          <Fragment>
+            <tr className="desktop">
+              <td
+                className={
+                  selectedTag &&
+                  capitalizeTheFirstLetterOfEachWord(
+                    selectedTag.label[lang]
+                  ) === tags[0] &&
+                  'selected'
+                }>
                 <button onClick={() => chooseTag(tags[0])}>{tags[0]}</button>
               </td>
               {tags[1] && (
-                <td>
+                <td
+                  className={
+                    selectedTag &&
+                    capitalizeTheFirstLetterOfEachWord(
+                      selectedTag.label[lang]
+                    ) === tags[1] &&
+                    'selected'
+                  }>
                   <button onClick={() => chooseTag(tags[1])}>{tags[1]}</button>
                 </td>
               )}
             </tr>
-          </>
+          </Fragment>
         )}
-      </>
+        {tags.map((tag) => (
+          <tr className="mobile">
+            <td
+              colSpan={3}
+              className={
+                selectedTag &&
+                capitalizeTheFirstLetterOfEachWord(selectedTag.label[lang]) ===
+                  tag &&
+                'selected'
+              }>
+              <button onClick={() => chooseTag(tag)}>{tag}</button>
+            </td>
+          </tr>
+        ))}
+      </Fragment>
     );
   };
 

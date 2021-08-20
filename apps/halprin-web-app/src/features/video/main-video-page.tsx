@@ -1,6 +1,4 @@
 import { MainLayout } from '@/components/layout/main-layout';
-import { useTranslation } from 'next-i18next';
-import { videoConfig } from './video.config';
 import * as S from './main-video-page.style';
 import { VideoPlayer } from '@/features/video/components/video-player';
 import React, { useState } from 'react';
@@ -21,7 +19,6 @@ type Props = {
 
 export const MainVideoPage: React.FC<Props> = (props) => {
   const { lang, categorySlug } = props;
-  const [showMenu, setShowMenu] = useState(false);
   const [playedVideo, setPlayedVideo] = useState(null);
 
   const media = new MediaRepo().search({
@@ -40,18 +37,6 @@ export const MainVideoPage: React.FC<Props> = (props) => {
         <S.Ctn>
           <VideoNavbar categories={mediaCategoryData} lang={lang} />
           <VideoPlayer url={url} />
-          <div className="ml-15">
-            {showMenu ? (
-              <>MENU</>
-            ) : (
-              <button
-                onClick={() => {
-                  setShowMenu(true);
-                }}>
-                Menu
-              </button>
-            )}
-          </div>
           <VideoFooter
             lang={lang}
             media={media}

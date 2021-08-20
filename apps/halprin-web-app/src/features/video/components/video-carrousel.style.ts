@@ -60,4 +60,57 @@ export const Carrousel = styled.div`
       line-height: normal;
     }
   }
+  @media only screen and (max-width: 1200px) {
+    max-width: 75%;
+    .slide {
+      img {
+        width: 130px;
+        height: 60px;
+        object-fit: cover;
+      }
+      .video-title {
+        width: 130px;
+        border-top: 2px solid pink;
+        background: black;
+        transition: height 0.5s ease-in-out;
+      }
+      min-width: 130px;
+      text-align: center;
+      cursor: pointer;
+      margin-left: 15px;
+      margin-right: 15px;
+      &:hover {
+        .video-title  {
+          width: 130px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 650px) {
+    max-width: 90%;
+    .slide {
+      img {
+        width: 110px;
+        height: 50px;
+        object-fit: cover;
+      }
+      .video-title {
+        width: 110px;
+        border-top: 2px solid pink;
+        background: black;
+        transition: height 0.5s ease-in-out;
+        font-size: 10px;
+      }
+      min-width: 110px;
+      text-align: center;
+      cursor: pointer;
+      margin-left: 10px;
+      margin-right: 10px;
+      &:hover {
+        .video-title  {
+          width: 110px;
+        }
+      }
+    }
+  }
 `;
