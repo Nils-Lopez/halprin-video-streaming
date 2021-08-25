@@ -9,7 +9,7 @@ export const Ctn = styled.div`
   background: #fefae0;
   color: black;
   .langChoose {
-    margin-top: 20%;
+    margin-top: 15%;
     height: 120px;
     display: flex;
     justify-content: space-around;
@@ -18,45 +18,29 @@ export const Ctn = styled.div`
     margin-left: auto;
     margin-right: auto;
   }
-  .triangleContent {
-    position: relative;
-    z-index: 100;
-    line-height: 30px;
-    hr {
-      border: 1px solid black;
+  .leftBtn {
+    &:hover {
+      scale: 1.1;
+    }
+  }
+  .rightBtn {
+    &:hover {
+      scale: 1.1;
     }
   }
   .triangle {
     height: 250px;
-    position: absolute;
-    z-index: -100;
+    width: 250px;
   }
-  .rightBtn {
+  @media only screen and (min-width: 600px) and (max-width: 1000px) {
+    .langChoose {
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+    }
     .triangle {
-      top: -130px;
-      right: 100px;
-    }
-    &:hover {
-      .triangleContent {
-        color: grey;
-        hr {
-          border: 1px solid grey;
-        }
-      }
-    }
-  }
-  .leftBtn {
-    .triangle {
-      top: -130px;
-      left: 98px;
-    }
-    &:hover {
-      .triangleContent {
-        color: grey;
-        hr {
-          border: 1px solid grey;
-        }
-      }
+      height: 200px;
+      width: 200px;
     }
   }
   @media only screen and (max-width: 600px) {
@@ -64,34 +48,79 @@ export const Ctn = styled.div`
       margin-left: auto;
       margin-right: auto;
       display: block;
-      margin-top: 40%;
-      button {
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
-      }
+      margin-top: 10%;
+    }
+    .triangle {
+      height: 200px;
+      width: 200px;
     }
   }
 `;
 
 export const Video = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5%;
   .video-player {
-    height: 900px;
-    width: 1200px;
+    margin: auto;
+    width: 1100px;
+    height: 750px;
   }
-`;
-
-export const SkipLink = styled.div`
-  .skipLink {
-    float: right;
+  @media only screen and (max-width: 1500px) {
+    padding: 2%;
+    .video-player {
+      width: 1000px;
+      height: 690px;
+    }
+  }
+  @media only screen and (max-width: 1100px) {
+    padding: 2%;
+    .video-player {
+      width: 800px;
+      height: 550px;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    padding: 2%;
+    .video-player {
+      width: 600px;
+      height: 450px;
+    }
+  }
+  @media only screen and (max-width: 680px) {
+    padding: 1%;
+    .video-player {
+      margin-top: 150px;
+      width: 500px;
+      height: 350px;
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    padding: 1%;
+    .video-player {
+      margin-top: 150px;
+      width: 400px;
+      height: 300px;
+    }
+  }
+  .nextBtn {
     cursor: pointer;
+    margin: auto;
+    border: 1px solid white;
+    display: block;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    padding-left: 10px;
+    .arrow {
+      width: 25px;
+      height: 25px;
+    }
     &:hover {
       scale: 1.1;
     }
-    margin-right: 10px;
-    margin-top: 25%;
   }
 `;

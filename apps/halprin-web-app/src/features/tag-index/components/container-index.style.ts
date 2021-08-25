@@ -22,14 +22,14 @@ export const Ctn = styled.div`
   table {
     width: 100%;
     tr {
-      width: 100%;
       border-top: 1px solid grey;
       border-bottom: 1px solid grey;
     }
+    .desktop {
+      width: 100%;
+    }
   }
-
   .letterTitle {
-    font-size: 20px;
     text-align: center;
     th {
       margin: auto;
@@ -39,6 +39,28 @@ export const Ctn = styled.div`
     cursor: pointer;
     &:hover {
       color: grey;
+    }
+  }
+  .mobile {
+    display: none;
+  }
+  @media only screen and (max-width: 1520px) {
+    height: 60%;
+  }
+  @media only screen and (max-width: 650px) {
+    width: 95%;
+    .mobile {
+      display: block;
+      width: 100%;
+      tr {
+        width: 100%;
+        td {
+          width: 100%;
+        }
+      }
+    }
+    .desktop {
+      display: none;
     }
   }
 `;

@@ -5,7 +5,19 @@ export const Ctn = styled.div`
   width: 100%;
   bottom: 0;
   min-height: 200px;
-  background: black;
+  background: #0e111c;
+
+  .embed-menu {
+    margin-left: 80px;
+    margin-bottom: 10px;
+    width: 100px;
+    cursor: pointer;
+    .toggle {
+      margin-left: 20px;
+      height: 30px;
+      margin-bottom: -4px;
+    }
+  }
   .topBar {
     width: 97%;
     border-top: 1px solid #95a5a6;
@@ -13,6 +25,11 @@ export const Ctn = styled.div`
     margin: auto;
     display: flex;
     justify-content: space-between;
+    .desktop {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
     .left {
       width: 20%;
       margin-left: 5px;
@@ -20,8 +37,10 @@ export const Ctn = styled.div`
     }
     .right {
       width: 20%;
-      text-align: right;
+      display: flex;
+      justify-content: end;
     }
+
     .center {
       text-align: center;
       display: flex;
@@ -35,19 +54,60 @@ export const Ctn = styled.div`
       margin-left: 3px;
       margin-right: 3px;
     }
-    .listBtn {
-      background: #dcdde1;
-      border-radius: 5%;
-      margin-right: 5px;
-      margin-top: 2px;
-      margin-bottom: 2px;
-      color: black;
-      padding-left: 2px;
-      padding-right: 2px;
+    .btn-icon {
+      height: 20px;
+      margin-top: 3px;
+      cursor: pointer;
+      margin-left: 5px;
       &:hover {
-        scale: 1.1;
+        filter: brightness(130%);
+      }
+    }
+    .mobile {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    min-height: 150px;
+    max-height: 150px;
+
+    .topBar {
+      .right {
+        width: 40%;
+      }
+      .left {
+        width: 40%;
       }
     }
   }
-  height: 10%;
+  @media only screen and (max-width: 950px) {
+    min-height: 130px;
+    max-height: 130px;
+  }
+  @media only screen and (max-width: 650px) {
+    min-height: 150px;
+    max-height: 150px;
+    .topBar {
+      .desktop {
+        display: none;
+      }
+      .mobile {
+        display: block;
+        width: 100%;
+      }
+      .center {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .bottom {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .embed-menu {
+      display: none;
+    }
+  }
 `;

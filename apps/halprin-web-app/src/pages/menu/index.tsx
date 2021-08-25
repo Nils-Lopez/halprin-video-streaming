@@ -12,7 +12,7 @@ type Props = {
 export default function MenuRoute(
   props: InferGetServerSidePropsType<typeof getServerSideProps>
 ) {
-  return <MenuPage />;
+  return <MenuPage lang={'en'} />;
 }
 
 export const getServerSideProps: GetServerSideProps<Props> = async (

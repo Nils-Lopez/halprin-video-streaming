@@ -5,6 +5,10 @@ export const Ctn = styled.div`
   .mobileDesc {
     display: none;
   }
+  font-family: AGBold;
+  src: url('../../../public/fonts/akzidenz/AkzidenzGrotesk-Bold.otf')
+    format('opentype');
+  font-size: 14pt;
   @media only screen and (max-width: 600px) {
     .mobileDesc {
       display: block;
@@ -34,6 +38,9 @@ export const Circle = styled.div`
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
+    &:hover {
+      filter: brightness(110%);
+    }
   }
   .leftIcon {
     positon: relative;
@@ -43,9 +50,9 @@ export const Circle = styled.div`
     margin-right: auto;
     margin-top: 5px;
     cursor: pointer;
-  }
-  .mobileLogo {
-    display: none;
+    &:hover {
+      filter: brightness(120%);
+    }
   }
   .rightIcon {
     positon: relative;
@@ -55,6 +62,9 @@ export const Circle = styled.div`
     margin-top: -35px;
     margin-left: auto;
     cursor: pointer;
+    &:hover {
+      filter: brightness(140%);
+    }
   }
   .bottomIcon {
     position: relative;
@@ -64,54 +74,49 @@ export const Circle = styled.div`
     margin-top: 50px;
     margin-right: auto;
     cursor: pointer;
+    &:hover {
+      filter: brightness(140%);
+    }
+  }
+  .centered {
+    position: relative;
+    margin-right: auto;
+    top: -50px;
+    left: -90px;
+    .logo {
+      position: fixed;
+      margin-left: auto;
+      margin-right: auto;
+      height: 220px;
+      width: 220px;
+      .triangle {
+        cursor: pointer;
+      }
+    }
+    .linkDesc {
+      position: fixed;
+      width: 220px;
+      margin-top: 50px;
+      text-align: center;
+    }
   }
   .midContainer {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
   }
-  .circleContent {
-    width: 250px;
-    margin-left: -20px;
-    .triangleContent {
-      top: 20px;
-      position: relative;
-      z-index: 100;
-      line-height: 30px;
-      hr {
-        border: 1px solid white;
-      }
-    }
-    .triangle {
-      height: 250px;
-      position: absolute;
-      z-index: -100;
-      top: 110px;
-      right: 120px;
-    }
-    .triangleContent {
-      width: 110px;
-      text-align: center;
-      left: 45px;
-    }
-    .centeredBtn {
-      cursor: pointer;
-    }
-  }
   .workshopTxt {
     color: pink;
   }
   .roadmapsTxt {
     color: #ffef9f;
+    margin-top: -50px;
   }
   .indexTxt {
     color: #ee6055;
   }
   .lifeartTxt {
     color: #a2d2ff;
-  }
-  .logo {
-    margin-top: 50px;
   }
   @media only screen and (max-width: 600px) {
     height: 300px;
@@ -129,7 +134,7 @@ export const Circle = styled.div`
     .leftIcon {
       positon: relative;
       height: 130px;
-      width: 190px;
+      width: 180px;
       margin-left: -90px;
       margin-right: auto;
       cursor: pointer;
@@ -139,8 +144,24 @@ export const Circle = styled.div`
       justify-content: space-between;
       margin-top: 13px;
     }
-    .circleContent {
-      display: none;
+    .centered {
+      position: relative;
+      margin-right: auto;
+      top: -20px;
+      left: -70px;
+      .logo {
+        position: fixed;
+        margin-left: auto;
+        margin-right: auto;
+        height: 150px;
+        width: 150px;
+        .triangle {
+          cursor: pointer;
+        }
+      }
+      .linkDesc {
+        display: none;
+      }
     }
     .rightIcon {
       positon: relative;
@@ -159,6 +180,74 @@ export const Circle = styled.div`
       margin-top: 15px;
       margin-right: auto;
       cursor: pointer;
+    }
+  }
+`;
+
+export const Video = styled.div`
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5%;
+  .video-player {
+    margin: auto;
+    width: 1100px;
+    height: 750px;
+  }
+  @media only screen and (max-width: 1500px) {
+    padding: 2%;
+    .video-player {
+      width: 1000px;
+      height: 690px;
+    }
+  }
+  @media only screen and (max-width: 1100px) {
+    padding: 2%;
+    .video-player {
+      width: 800px;
+      height: 550px;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    padding: 2%;
+    .video-player {
+      width: 600px;
+      height: 450px;
+    }
+  }
+  @media only screen and (max-width: 680px) {
+    padding: 1%;
+    .video-player {
+      margin-top: 150px;
+      width: 500px;
+      height: 350px;
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    padding: 1%;
+    .video-player {
+      margin-top: 150px;
+      width: 400px;
+      height: 300px;
+    }
+  }
+  .nextBtn {
+    cursor: pointer;
+    margin: auto;
+    border: 1px solid white;
+    display: block;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    padding-left: 10px;
+    .arrow {
+      width: 25px;
+      height: 25px;
+    }
+    &:hover {
+      scale: 1.1;
     }
   }
 `;
