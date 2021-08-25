@@ -6,6 +6,7 @@ export const Ctn = styled.div`
   padding-right: 15px;
   padding-left: 15px;
   padding-bottom: 10px;
+  height: 70px;
   .row {
     width: 100%;
     border-top: 1px solid white;
@@ -18,6 +19,18 @@ export const Ctn = styled.div`
   .hiddenMenu {
     width: 100%;
     border-top: 1px solid white;
-    padding-left: 15px;
+  }
+  button {
+    border: none;
+    &:hover {
+      background: none;
+    }
+    .showMenu {
+      height: 35px;
+      &:hover {
+        filter: opacity(80%);
+      }
+    }
+    margin-left: 75px;
   }
 `;

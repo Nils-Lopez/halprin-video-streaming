@@ -5,6 +5,10 @@ export const Ctn = styled.div`
   .mobileDesc {
     display: none;
   }
+  font-family: AGBold;
+  src: url('../../../public/fonts/akzidenz/AkzidenzGrotesk-Bold.otf')
+    format('opentype');
+  font-size: 14pt;
   @media only screen and (max-width: 600px) {
     .mobileDesc {
       display: block;
@@ -34,6 +38,9 @@ export const Circle = styled.div`
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
+    &:hover {
+      filter: brightness(110%);
+    }
   }
   .leftIcon {
     positon: relative;
@@ -43,6 +50,9 @@ export const Circle = styled.div`
     margin-right: auto;
     margin-top: 5px;
     cursor: pointer;
+    &:hover {
+      filter: brightness(120%);
+    }
   }
   .rightIcon {
     positon: relative;
@@ -52,6 +62,9 @@ export const Circle = styled.div`
     margin-top: -35px;
     margin-left: auto;
     cursor: pointer;
+    &:hover {
+      filter: brightness(140%);
+    }
   }
   .bottomIcon {
     position: relative;
@@ -61,6 +74,9 @@ export const Circle = styled.div`
     margin-top: 50px;
     margin-right: auto;
     cursor: pointer;
+    &:hover {
+      filter: brightness(140%);
+    }
   }
   .centered {
     position: relative;

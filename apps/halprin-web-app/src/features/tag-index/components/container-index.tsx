@@ -9,20 +9,15 @@ type Props = {
 };
 
 export const ContainerIndex: FC<Props> = (props) => {
-  const { selectedTag, setSelectedTag, tags, lang = 'fr' } = props;
+  const { selectedTag, setSelectedTag, tags, lang = 'en' } = props;
 
-  const capitalizeTheFirstLetterOfEachWord = (label: string) => {
-    const separateWord = label.toLowerCase().split(' ');
-    for (let i = 0; i < separateWord.length; i++) {
-      separateWord[i] =
-        separateWord[i].charAt(0).toUpperCase() + separateWord[i].substring(1);
-    }
-    return separateWord.join(' ');
+  const toCamelCase = (str: string) => {
+    return str.charAt(0).toUpperCase() + str.slice(1);
   };
 
   const chooseTag = (label: string) => {
     tags.forEach((tag: any) => {
-      if (capitalizeTheFirstLetterOfEachWord(tag.label[lang]) === label) {
+      if (toCamelCase(tag.label[lang]) === label) {
         setSelectedTag(tag);
       }
     });
@@ -31,7 +26,7 @@ export const ContainerIndex: FC<Props> = (props) => {
   const orderedLabels = new Array<string>();
 
   tags.forEach((tag: any) => {
-    orderedLabels.push(capitalizeTheFirstLetterOfEachWord(tag.label[lang]));
+    orderedLabels.push(toCamelCase(tag.label[lang]));
   });
 
   orderedLabels.sort(Intl.Collator().compare);
@@ -72,9 +67,8 @@ export const ContainerIndex: FC<Props> = (props) => {
                       <td
                         className={
                           selectedTag &&
-                          capitalizeTheFirstLetterOfEachWord(
-                            selectedTag.label[lang]
-                          ) === tags[index - 2] &&
+                          toCamelCase(selectedTag.label[lang]) ===
+                            tags[index - 2] &&
                           'selected'
                         }>
                         <button onClick={() => chooseTag(tags[index - 2])}>
@@ -84,9 +78,8 @@ export const ContainerIndex: FC<Props> = (props) => {
                       <td
                         className={
                           selectedTag &&
-                          capitalizeTheFirstLetterOfEachWord(
-                            selectedTag.label[lang]
-                          ) === tags[index - 1] &&
+                          toCamelCase(selectedTag.label[lang]) ===
+                            tags[index - 1] &&
                           'selected'
                         }>
                         <button onClick={() => chooseTag(tags[index - 1])}>
@@ -96,9 +89,7 @@ export const ContainerIndex: FC<Props> = (props) => {
                       <td
                         className={
                           selectedTag &&
-                          capitalizeTheFirstLetterOfEachWord(
-                            selectedTag.label[lang]
-                          ) === label &&
+                          toCamelCase(selectedTag.label[lang]) === label &&
                           'selected'
                         }>
                         <button onClick={() => chooseTag(label)}>
@@ -113,9 +104,8 @@ export const ContainerIndex: FC<Props> = (props) => {
                             <td
                               className={
                                 selectedTag &&
-                                capitalizeTheFirstLetterOfEachWord(
-                                  selectedTag.label[lang]
-                                ) === tags[index + 1] &&
+                                toCamelCase(selectedTag.label[lang]) ===
+                                  tags[index + 1] &&
                                 'selected'
                               }>
                               <button
@@ -127,9 +117,8 @@ export const ContainerIndex: FC<Props> = (props) => {
                               <td
                                 className={
                                   selectedTag &&
-                                  capitalizeTheFirstLetterOfEachWord(
-                                    selectedTag.label[lang]
-                                  ) === tags[index + 2] &&
+                                  toCamelCase(selectedTag.label[lang]) ===
+                                    tags[index + 2] &&
                                   'selected'
                                 }>
                                 <button
@@ -152,9 +141,7 @@ export const ContainerIndex: FC<Props> = (props) => {
               <td
                 className={
                   selectedTag &&
-                  capitalizeTheFirstLetterOfEachWord(
-                    selectedTag.label[lang]
-                  ) === tags[0] &&
+                  toCamelCase(selectedTag.label[lang]) === tags[0] &&
                   'selected'
                 }>
                 <button onClick={() => chooseTag(tags[0])}>{tags[0]}</button>
@@ -163,9 +150,7 @@ export const ContainerIndex: FC<Props> = (props) => {
                 <td
                   className={
                     selectedTag &&
-                    capitalizeTheFirstLetterOfEachWord(
-                      selectedTag.label[lang]
-                    ) === tags[1] &&
+                    toCamelCase(selectedTag.label[lang]) === tags[1] &&
                     'selected'
                   }>
                   <button onClick={() => chooseTag(tags[1])}>{tags[1]}</button>
@@ -180,8 +165,7 @@ export const ContainerIndex: FC<Props> = (props) => {
               colSpan={3}
               className={
                 selectedTag &&
-                capitalizeTheFirstLetterOfEachWord(selectedTag.label[lang]) ===
-                  tag &&
+                toCamelCase(selectedTag.label[lang]) === tag &&
                 'selected'
               }>
               <button onClick={() => chooseTag(tag)}>{tag}</button>

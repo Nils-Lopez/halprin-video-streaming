@@ -3,9 +3,9 @@ import styled from '@emotion/styled';
 export const Ctn = styled.div`
   position: fixed;
   width: 100%;
-  bottom: 0;
-  min-height: 200px;
-  background: black;
+  bottom: 20px;
+  height: 200px;
+  background: #0e111c;
   .topBar {
     width: 97%;
     border-top: 1px solid #95a5a6;
@@ -25,13 +25,15 @@ export const Ctn = styled.div`
     }
     .right {
       width: 20%;
-      text-align: right;
+      display: flex;
+      justify-content: end;
     }
     .center {
       text-align: center;
       display: flex;
       justify-content: center;
     }
+
     .center-icon {
       cursor: pointer;
       &:hover {
@@ -40,17 +42,13 @@ export const Ctn = styled.div`
       margin-left: 3px;
       margin-right: 3px;
     }
-    .listBtn {
-      background: #dcdde1;
-      border-radius: 5%;
-      margin-right: 5px;
-      margin-top: 2px;
-      margin-bottom: 2px;
-      color: black;
-      padding-left: 2px;
-      padding-right: 2px;
+    .btn-icon {
+      height: 20px;
+      margin-top: 3px;
+      cursor: pointer;
+      margin-left: 5px;
       &:hover {
-        scale: 1.1;
+        filter: brightness(130%);
       }
     }
     .mobile {
@@ -69,8 +67,9 @@ export const Ctn = styled.div`
     }
   }
   @media only screen and (max-width: 1200px) {
-    min-height: 150px;
-    max-height: 150px;
+    min-height: 180px;
+    max-height: 180px;
+    bottom: 20px;
 
     .topBar {
       .right {

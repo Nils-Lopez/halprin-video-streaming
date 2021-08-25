@@ -3,6 +3,7 @@ import * as S from './footer-index.style';
 import { VideoCarrousel } from '@/features/video/components/video-carrousel';
 import { MediaRepo } from '@/features/video/repository/media.repo';
 import { EmbedMenu } from '@/features/menu/embed/embed-menu';
+import Link from 'next/link';
 
 type Props = {
   selectedTag: any;
@@ -73,10 +74,26 @@ export const FooterIndex: FC<Props> = (props) => {
             </svg>
           </div>
           <div className="right">
-            <button className="listBtn">ALL</button>
-            <button className="listBtn">LIST</button>
-            <button className="listBtn">HISTORY</button>
-            <button className="listBtn">UNSEEN</button>
+            <Link href="/video/all" passHref>
+              ALL
+            </Link>
+            <Link href="/video/favorites" passHref>
+              Fav
+            </Link>
+            <Link href="/video/already-seens" passHref>
+              <img
+                src="/images/ui/video/eye-arrow.png"
+                className="btn-icon"
+                alt="Already Seen"
+              />
+            </Link>
+            <Link href="/video/unseens" passHref>
+              <img
+                src="/images/ui/video/eye.png"
+                className="btn-icon"
+                alt="Unseen"
+              />
+            </Link>
           </div>
         </div>
         <div className="mobile">
@@ -114,10 +131,26 @@ export const FooterIndex: FC<Props> = (props) => {
             </svg>
           </div>
           <div className="bottom">
-            <button className="listBtn">ALL</button>
-            <button className="listBtn">LIST</button>
-            <button className="listBtn">HISTORY</button>
-            <button className="listBtn">UNSEEN</button>
+            <Link href="/video/all" passHref>
+              ALL
+            </Link>
+            <Link href="/video/favorites" passHref>
+              Fav
+            </Link>
+            <Link href="/video/already-seens" passHref>
+              <img
+                src="/images/ui/video/eye-arrow.png"
+                className="btn-icon"
+                alt="Already seen"
+              />
+            </Link>
+            <Link href="/video/unseens" passHref>
+              <img
+                src="/images/ui/video/eye.png"
+                className="btn-icon"
+                alt="Unseen"
+              />
+            </Link>
           </div>
         </div>
       </div>

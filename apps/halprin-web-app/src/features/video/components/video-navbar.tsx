@@ -28,11 +28,23 @@ export const VideoNavbar: FC<Props> = (props) => {
               );
             })}
           </div>
-          <button onClick={() => updateShowCategories(false)}>hide</button>
+          <button onClick={() => updateShowCategories(false)}>
+            <img
+              src="/images/ui/menu/mouth-outline.png"
+              className="showMenu"
+              alt="Show tags"
+            />
+          </button>
         </>
       ) : (
         <div className="hiddenMenu">
-          <button onClick={() => updateShowCategories(true)}>show</button>
+          <button onClick={() => updateShowCategories(true)}>
+            <img
+              src="/images/ui/menu/mouth-outline.png"
+              className="showMenu"
+              alt="Hide tags"
+            />
+          </button>
         </div>
       )}
     </S.Ctn>

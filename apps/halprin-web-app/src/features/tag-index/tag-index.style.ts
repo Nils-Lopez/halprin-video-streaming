@@ -5,4 +5,8 @@ export const Ctn = styled.div`
   padding: 10px;
   height: 100%;
   position: fixed;
+  font-family: AGBold;
+  src: url('../../../public/fonts/akzidenz/AkzidenzGrotesk-Bold.otf')
+    format('opentype');
+  font-size: 14pt;
 `;
