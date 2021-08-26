@@ -68,7 +68,7 @@
     "@types/xml2js": "0.4.9",
     "@typescript-eslint/eslint-plugin": "4.29.3",
     "@typescript-eslint/parser": "4.29.3",
-    "autoprefixer": "10.3.2",
+    "autoprefixer": "10.3.3",
     "code-block-writer": "10.1.1",
     "cross-env": "7.0.3",
     "dotenv-flow": "3.2.0",
