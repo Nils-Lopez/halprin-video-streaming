@@ -49,6 +49,17 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
 
+
+      # see https://github.com/vercel/next.js/pull/27362
+      - name: Restore nextjs build halprin-web-app from cache
+        uses: actions/cache@v2
+        with:
+          path: ${{ github.workspace }}/apps/halprin-web-app/.next/cache
+          key: ${{ runner.os }}-nextjs-halprin-web-app-${{ hashFiles('**/yarn.lock') }}-${{ hashFiles('apps/halprin-web-app/src/**.[jt]sx?', 'apps/halprin-web-app/src/**.json') }}
+          restore-keys: |
+            ${{ runner.os }}-halprin-nextjs-web-app-${{ hashFiles('**/yarn.lock') }}-
+
+
       - name: Restore nextjs build web-app from cache
         uses: actions/cache@v2
         with:

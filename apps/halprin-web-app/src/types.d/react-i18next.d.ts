@@ -7,6 +7,7 @@
 import 'react-i18next';
 import common from '../../public/locales/en/common.json';
 import app from '../../public/locales/en/app.json';
+import system from '../../public/locales/en/system.json';
 
 declare module 'react-i18next' {
   interface CustomTypeOptions {
@@ -14,6 +15,7 @@ declare module 'react-i18next' {
     resources: {
       common: typeof common;
       app: typeof app;
+      system: typeof system;
     };
   }
 }

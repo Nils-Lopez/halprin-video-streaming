@@ -12,6 +12,7 @@ export class PoemRepositorySsr {
   /**
    * @throws Error
    */
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   getPoems = async (options?: { limit?: number; offset?: number }) => {
     const { limit, offset } = options ?? {};
     try {

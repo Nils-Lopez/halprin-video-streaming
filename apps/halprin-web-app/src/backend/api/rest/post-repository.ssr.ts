@@ -12,6 +12,7 @@ export class PostRepositorySsr {
   /**
    * @throws Error
    */
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   getPost = async (postId: number) => {
     try {
       const post = this.prisma.post.findUnique({
