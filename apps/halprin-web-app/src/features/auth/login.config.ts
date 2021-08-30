@@ -1,8 +1,8 @@
-import { I18nNamespaces } from '@/core/i18n/i18n-namespaces.type';
 import { siteConfig } from '@/config/site.config';
+import { I18nActiveNamespaces } from '@/core/i18n/i18n-namespaces.type';
 
 export type LoginConfig = {
-  i18nNamespaces: Readonly<I18nNamespaces>;
+  i18nNamespaces: Readonly<I18nActiveNamespaces<'common' | 'app'>>;
   urls: {
     getAccess: string;
     emailForgotten: string;

@@ -91,7 +91,7 @@ query {
 
 Translations are handled by [next-i18next](https://github.com/isaachinman/next-i18next).
 See the [next-i18next.config.js](./next-i18next.config.js).
-The keys autocompletion and typechecks are enabled in [./src/typings/react-i18next.d.ts](./src/typings/react-i18next.d.ts).
+The keys autocompletion and typechecks are enabled in [./src/typings/react-i18next.d.ts](src/types.d/react-i18next.d.ts).
 
 ## Structure
 
