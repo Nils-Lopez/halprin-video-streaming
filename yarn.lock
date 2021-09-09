@@ -1885,7 +1885,7 @@ __metadata:
     jest: 27.1.1
     microbundle: 0.13.3
     npm-run-all: 4.1.5
-    prettier: 2.3.2
+    prettier: 2.4.0
     react: 17.0.2
     react-dom: 17.0.2
     rimraf: 3.0.2
@@ -1924,7 +1924,7 @@ __metadata:
     jest: 27.1.1
     keyword-extractor: 0.0.20
     npm-run-all: 4.1.5
-    prettier: 2.3.2
+    prettier: 2.4.0
     prisma: 2.30.3
     rimraf: 3.0.2
     shell-quote: 1.7.2
@@ -8526,7 +8526,7 @@ __metadata:
     postcss: 8.3.6
     postcss-flexbugs-fixes: 5.0.2
     postcss-preset-env: 6.7.0
-    prettier: 2.3.2
+    prettier: 2.4.0
     react: 17.0.2
     react-dom: 17.0.2
     react-hook-form: 7.15.1
@@ -11837,7 +11837,7 @@ __metadata:
     lint-staged: 11.1.2
     npm-check-updates: 11.8.5
     npm-run-all: 4.1.5
-    prettier: 2.3.2
+    prettier: 2.4.0
     rimraf: 3.0.2
     shell-quote: 1.7.2
   languageName: unknown
@@ -13859,12 +13859,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.3.2":
-  version: 2.3.2
-  resolution: "prettier@npm:2.3.2"
+"prettier@npm:2.4.0":
+  version: 2.4.0
+  resolution: "prettier@npm:2.4.0"
   bin:
     prettier: bin-prettier.js
-  checksum: 17ce5784ac67621c292df58e2da60b2ee150c2d6aebea22a6ad9e52fcd6a5e66c349d0a8436ea3bd8ff9d778920a5f68000d7625b74f43558718a49755aa5259
+  checksum: ac1bf07566dad5f58469e6d8a954bd5c0f833935597deb00330e9f673e14e4cf81e07dee7eff5776c0edebe11358d199f332d9940be40c8b455516034e553ce0
   languageName: node
   linkType: hard
 
