@@ -3191,14 +3191,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@size-limit/file@npm:6.0.2":
-  version: 6.0.2
-  resolution: "@size-limit/file@npm:6.0.2"
+"@size-limit/file@npm:6.0.3":
+  version: 6.0.3
+  resolution: "@size-limit/file@npm:6.0.3"
   dependencies:
     semver: 7.3.5
   peerDependencies:
-    size-limit: 6.0.2
-  checksum: 2871b07a43e97c5bb42a174e1777bbb6d90f1e41d48d08065791a0e328f42dcd0f679e85bda93477359af5138b9c500066f44b17615d62c542804088ade9544a
+    size-limit: 6.0.3
+  checksum: da52d67096f376f7d9f929690c7535f5e737744c5f77d6f4776055bdd79f1cd29d016bd3730b74e79e0a03b172abfcc62ea42c1ed9da26e63cf65147333a98a8
   languageName: node
   linkType: hard
 
@@ -8631,7 +8631,7 @@ __metadata:
     "@heroicons/react": 1.0.4
     "@next/bundle-analyzer": 11.1.2
     "@sentry/nextjs": 6.13.3
-    "@size-limit/file": 6.0.2
+    "@size-limit/file": 6.0.3
     "@svgr/webpack": 5.5.0
     "@tailwindcss/aspect-ratio": 0.3.0
     "@tailwindcss/forms": 0.3.4
