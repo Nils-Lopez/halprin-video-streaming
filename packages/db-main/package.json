@@ -14,10 +14,13 @@
     "url": "https://github.com/belgattitude"
   },
   "main": "./src/index.ts",
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
   "scripts": {
     "prisma:migrate": "dotenv-flow -- yarn prisma migrate",
     "prisma:migrate:reset": "dotenv-flow -- yarn prisma migrate reset",
-    "prisma:db:seed": "dotenv-flow -- yarn prisma db seed --preview-feature",
+    "prisma:db:seed": "dotenv-flow -- yarn prisma db seed",
     "prisma:db:push": "dotenv-flow -- yarn prisma db push",
     "prisma:studio": "dotenv-flow -- yarn prisma studio",
     "clean": "rimraf --no-glob ./tsconfig.tsbuildinfo",
@@ -30,22 +33,22 @@
   },
   "devDependencies": {
     "@types/node": "16.10.3",
-    "@typescript-eslint/eslint-plugin": "4.33.0",
-    "@typescript-eslint/parser": "4.33.0",
+    "@typescript-eslint/eslint-plugin": "5.0.0",
+    "@typescript-eslint/parser": "5.0.0",
     "camelcase": "6.2.0",
     "dotenv-flow": "3.2.0",
     "dotenv-flow-cli": "1.0.0",
     "eslint": "7.32.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-import": "2.25.1",
-    "eslint-plugin-jest": "24.7.0",
+    "eslint-plugin-jest": "25.0.5",
     "eslint-plugin-jest-formatting": "3.0.0",
     "eslint-plugin-prettier": "4.0.0",
     "jest": "27.2.5",
     "keyword-extractor": "0.0.20",
     "npm-run-all": "4.1.5",
     "prettier": "2.4.1",
-    "prisma": "2.30.3",
+    "prisma": "3.2.1",
     "rimraf": "3.0.2",
     "shell-quote": "1.7.2",
     "transliteration": "2.2.0",
@@ -55,6 +58,6 @@
   },
   "dependencies": {
     "@contredanse/common": "workspace:*",
-    "@prisma/client": "2.30.3"
+    "@prisma/client": "3.2.1"
   }
 }
