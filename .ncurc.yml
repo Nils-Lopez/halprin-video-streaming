@@ -4,5 +4,6 @@
 reject: [
     # Add here exclusions on packages if any
     "eslint",
-    "i18next"
+    "i18next",
+    "string-strip-html",
 ]
