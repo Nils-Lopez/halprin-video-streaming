@@ -4394,7 +4394,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"apollo-server-core@npm:^3.4.0":
+"apollo-server-core@npm:3.4.0, apollo-server-core@npm:^3.4.0":
   version: 3.4.0
   resolution: "apollo-server-core@npm:3.4.0"
   dependencies:
@@ -8649,7 +8649,7 @@ __metadata:
     "@types/xml2js": 0.4.9
     "@typescript-eslint/eslint-plugin": 5.0.0
     "@typescript-eslint/parser": 5.0.0
-    apollo-server-core: ^3.4.0
+    apollo-server-core: 3.4.0
     apollo-server-micro: 3.4.0
     autoprefixer: 10.3.7
     axios: 0.22.0
