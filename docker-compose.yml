@@ -44,7 +44,7 @@ services:
       - db-main
 
   db-main:
-    image: postgres:13-alpine
+    image: postgres:14-alpine
     ports:
       - target: 5432
         published: 5432
