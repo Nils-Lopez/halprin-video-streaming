@@ -3506,46 +3506,46 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsed/core@npm:6.74.1":
-  version: 6.74.1
-  resolution: "@tsed/core@npm:6.74.1"
+"@tsed/core@npm:6.75.0":
+  version: 6.75.0
+  resolution: "@tsed/core@npm:6.75.0"
   dependencies:
     reflect-metadata: ^0.1.13
     tslib: 2.2.0
-  checksum: 70ad5d52cc6cb05f329e4174af20c0a1db73e9407cf097712fe1e1834da785abaddc78d1a57fbf004ed23c2205f3b602e138e209cb914793ff8a66b1ad22a27b
+  checksum: a5876be6cc19ad8fbc63d38ef93715aa40ecfe88ff53551f5b2250b562457bbf7202cb7c0afb8b713f8f8fe4cae48f34678c18bfc2b74afcdb419c3385125ddc
   languageName: node
   linkType: hard
 
-"@tsed/exceptions@npm:6.74.1, @tsed/exceptions@npm:^6.73.9":
-  version: 6.74.1
-  resolution: "@tsed/exceptions@npm:6.74.1"
+"@tsed/exceptions@npm:6.75.0, @tsed/exceptions@npm:^6.73.9":
+  version: 6.75.0
+  resolution: "@tsed/exceptions@npm:6.75.0"
   dependencies:
-    "@tsed/schema": 6.74.1
+    "@tsed/schema": 6.75.0
     tslib: 2.2.0
-  checksum: 77281cb22762a2dbec4dc3074f735398459216b892a3e9933a5d6c7ca2495f34f8cd3410a602d3772c4c1afe732e47c18ffe620770628e7848dc0ce7aebdebb8
+  checksum: b488c413920d23723503236c27a9978e77b113975818a04a6af2a8d59980a5b2bf4fc0a578ddcb04f83504584be7be21e1906c65ac36ccbc50a85c7115aa3ff1
   languageName: node
   linkType: hard
 
-"@tsed/openspec@npm:6.74.1":
-  version: 6.74.1
-  resolution: "@tsed/openspec@npm:6.74.1"
-  checksum: f764099b3a11b4f52c1f4ff5bc179affa9b30a7fc758675123ad6a14e10ebb72f58a3bc165bc09004685c1e8d51d3b03784a26b3e017f40e33d4c39cac4b1d5c
+"@tsed/openspec@npm:6.75.0":
+  version: 6.75.0
+  resolution: "@tsed/openspec@npm:6.75.0"
+  checksum: e4c3432736b6ccf0128e928e36e72fecd78432ccc28fce77fa8fe01965f8d2c3e54e6981297a5231974e60214fa1e2fb1e6c2dd39069e054d71ee837cdfc7dff
   languageName: node
   linkType: hard
 
-"@tsed/schema@npm:6.74.1":
-  version: 6.74.1
-  resolution: "@tsed/schema@npm:6.74.1"
+"@tsed/schema@npm:6.75.0":
+  version: 6.75.0
+  resolution: "@tsed/schema@npm:6.75.0"
   dependencies:
-    "@tsed/core": 6.74.1
-    "@tsed/openspec": 6.74.1
+    "@tsed/core": 6.75.0
+    "@tsed/openspec": 6.75.0
     change-case: 4.1.2
     micromatch: 4.0.2
     tslib: 2.2.0
   peerDependencies:
-    "@tsed/core": ^6.74.1
-    "@tsed/openspec": ^6.74.1
-  checksum: 04dff6c7ac63a0b7b1d30cadd339da30dd0b9df136d0948bff43d12800b481c1128c9b29931c6d7ec68cf9fee59277f75b6e2bc812e0f80431d5d1757df62b01
+    "@tsed/core": ^6.75.0
+    "@tsed/openspec": ^6.75.0
+  checksum: 798864079fca12c6027c36c4a7e8d6a92a49997cea0a9cde31cccbca8ef89a35518a592650dae3f68647027af8dd7f48268b9a46ef50fd9e6e7dfa27c45060a6
   languageName: node
   linkType: hard
 
@@ -8641,7 +8641,7 @@ __metadata:
     "@testing-library/jest-dom": 5.14.1
     "@testing-library/react": 12.1.2
     "@testing-library/react-hooks": 7.0.2
-    "@tsed/exceptions": 6.74.1
+    "@tsed/exceptions": 6.75.0
     "@types/cors": 2.8.12
     "@types/graphql": 14.5.0
     "@types/node": 16.10.3
