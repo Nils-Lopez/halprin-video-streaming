@@ -93,7 +93,7 @@
     "prettier": "2.4.1",
     "rimraf": "3.0.2",
     "sass": "1.43.2",
-    "shell-quote": "1.7.2",
+    "shell-quote": "1.7.3",
     "size-limit": "6.0.3",
     "string-strip-html": "8.3.0",
     "symlink-dir": "5.0.1",
