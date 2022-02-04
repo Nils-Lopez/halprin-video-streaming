@@ -8701,7 +8701,7 @@ __metadata:
     size-limit: 6.0.3
     string-strip-html: 8.3.0
     symlink-dir: 5.0.1
-    sync-directory: 2.2.23
+    sync-directory: 4.0.12
     tailwindcss: 2.2.17
     transliteration: 2.2.0
     ts-jest: 27.0.7
@@ -16297,9 +16297,9 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"sync-directory@npm:2.2.23":
-  version: 2.2.23
-  resolution: "sync-directory@npm:2.2.23"
+"sync-directory@npm:4.0.12":
+  version: 4.0.12
+  resolution: "sync-directory@npm:4.0.12"
   dependencies:
     chokidar: ^3.3.1
     commander: ^6.2.0
@@ -16307,8 +16307,8 @@ resolve@^2.0.0-next.3:
     is-absolute: ^1.0.0
     readdir-enhanced: ^1.5.2
   bin:
-    syncdir: cmd.js
-  checksum: 4cc8575f790c0efc42aa5b36959fe88beca9e00e70dd028f71f6ce5d81073778e4a0ac2e7cc985c7220f2849570b880b104debda34b4eaaa68fd2234b2087e3e
+    syncdir: ./cmd.js
+  checksum: 2f3b9ea9965d967377d5b6359ceb85264510a686275caee034fe9d08df4e3ac4d76f5ea693cf76a5ef4840bafb412926c64f1900e71a88ace26bd47733044890
   languageName: node
   linkType: hard
 
