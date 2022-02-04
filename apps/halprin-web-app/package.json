@@ -138,6 +138,6 @@
     "react-query": "3.27.0",
     "sharp": "0.29.1",
     "transliteration": "2.2.0",
-    "type-fest": "2.5.0"
+    "type-fest": "2.11.1"
   }
 }
