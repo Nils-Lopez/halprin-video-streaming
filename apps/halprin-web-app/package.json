@@ -97,7 +97,7 @@
     "size-limit": "6.0.3",
     "string-strip-html": "8.3.0",
     "symlink-dir": "5.0.1",
-    "sync-directory": "2.2.23",
+    "sync-directory": "4.0.12",
     "tailwindcss": "2.2.17",
     "ts-jest": "27.0.7",
     "ts-node": "10.3.0",
