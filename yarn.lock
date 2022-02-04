@@ -8678,7 +8678,7 @@ __metadata:
     micro: 9.3.4
     next: 11.1.2
     next-auth: 3.29.0
-    next-connect: 0.10.2
+    next-connect: 0.11.1
     next-i18next: 8.9.0
     next-secure-headers: 2.2.0
     next-seo: 4.28.1
@@ -11876,12 +11876,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-connect@npm:0.10.2":
-  version: 0.10.2
-  resolution: "next-connect@npm:0.10.2"
+"next-connect@npm:0.11.1":
+  version: 0.11.1
+  resolution: "next-connect@npm:0.11.1"
   dependencies:
-    trouter: ^3.1.0
-  checksum: 3156b570fcdce0d9b46fb969f59e88cabf65a485d4ccb17689e8388177aae32cf37ac8aad85b634f988f9321de0db898dda23a5f5693a058c478508a4a4fc42e
+    trouter: ^3.2.0
+  checksum: a936d36ae8db909b1675eaa11f8f77f297a5161451c716f1c0fa5853490f8b64ca918b61f544223c3f0a0a054ee5483368524538fc0efedd4b06effebee8f84e
   languageName: node
   linkType: hard
 
@@ -16676,7 +16676,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"trouter@npm:^3.1.0":
+"trouter@npm:^3.2.0":
   version: 3.2.0
   resolution: "trouter@npm:3.2.0"
   dependencies:
