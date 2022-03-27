@@ -1536,14 +1536,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@changesets/changelog-github@npm:0.4.1":
-  version: 0.4.1
-  resolution: "@changesets/changelog-github@npm:0.4.1"
+"@changesets/changelog-github@npm:0.4.4":
+  version: 0.4.4
+  resolution: "@changesets/changelog-github@npm:0.4.4"
   dependencies:
     "@changesets/get-github-info": ^0.5.0
-    "@changesets/types": ^4.0.1
+    "@changesets/types": ^5.0.0
     dotenv: ^8.1.0
-  checksum: eae7151d7044038506ab4d012e092d0bee286f8096167729718c9a23f5f64c58dc2f7ef585004b11f86a3b5e628440172f20d34d2f01d0749f6265beb5b5ee9d
+  checksum: 86db486d90d7bd58c5a38c5cf10b0814806ba0cdc0aa7808121b5fb7bee1961ee8365e4abdba6cab02aa3481522cc98577be7e31ae1ef2e3f84a99cfb747adbd
   languageName: node
   linkType: hard
 
@@ -1722,6 +1722,13 @@ __metadata:
   version: 4.0.1
   resolution: "@changesets/types@npm:4.0.1"
   checksum: 6e41afd51a672710f4858eb523cee7e4da43318db05792d7d2785ebe7fad24d019c48166893ce48f2df2750cd5586e055d8466fa19b66b56ec3cb8f89ccdfdf4
+  languageName: node
+  linkType: hard
+
+"@changesets/types@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "@changesets/types@npm:5.0.0"
+  checksum: b494cd3d6508ecff8903afdbc0bb4a001df7c6bf5657c8c78f97b974cf48ee790d64d2381321de6b8fb961217ebe12d600b786a634d0c91073369ddbb410bb4d
   languageName: node
   linkType: hard
 
@@ -12154,7 +12161,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nextjs-monorepo-example@workspace:."
   dependencies:
-    "@changesets/changelog-github": 0.4.1
+    "@changesets/changelog-github": 0.4.4
     "@changesets/cli": 2.17.0
     "@commitlint/cli": 13.2.1
     "@commitlint/config-conventional": 13.2.0
