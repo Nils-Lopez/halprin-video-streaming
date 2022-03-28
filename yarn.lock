@@ -2300,12 +2300,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@heroicons/react@npm:1.0.4":
-  version: 1.0.4
-  resolution: "@heroicons/react@npm:1.0.4"
+"@heroicons/react@npm:1.0.6":
+  version: 1.0.6
+  resolution: "@heroicons/react@npm:1.0.6"
   peerDependencies:
     react: ">= 16"
-  checksum: 08f2853a49e51f274f22e8e1bb4e7d8a49456b7eb770447da66fd06ac05bf821ddf5d93170088d61ec44ae66cfbdc877c287861d5a3d22aad1785659502e3a71
+  checksum: 372b1eda3ce735ef069777bc96304f70de585ebb71a6d1cedc121bb695f9bca235619112e3ee14e8779e95a03096813cbbe3b755927a54b7580d1ce084fa4096
   languageName: node
   linkType: hard
 
@@ -8767,7 +8767,7 @@ __metadata:
     "@emotion/react": 11.7.1
     "@emotion/styled": 11.6.0
     "@headlessui/react": 1.4.1
-    "@heroicons/react": 1.0.4
+    "@heroicons/react": 1.0.6
     "@next/bundle-analyzer": 11.1.2
     "@sentry/nextjs": 6.13.3
     "@size-limit/file": 6.0.4
