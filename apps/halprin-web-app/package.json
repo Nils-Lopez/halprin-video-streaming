@@ -111,7 +111,7 @@
     "@emotion/react": "11.7.1",
     "@emotion/styled": "11.6.0",
     "@headlessui/react": "1.4.1",
-    "@heroicons/react": "1.0.4",
+    "@heroicons/react": "1.0.6",
     "@sentry/nextjs": "6.13.3",
     "@tsed/exceptions": "6.107.5",
     "apollo-server-core": "3.4.0",
