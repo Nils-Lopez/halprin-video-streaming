@@ -3566,46 +3566,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsed/core@npm:6.75.0":
-  version: 6.75.0
-  resolution: "@tsed/core@npm:6.75.0"
+"@tsed/exceptions@npm:6.107.5, @tsed/exceptions@npm:^6.73.9":
+  version: 6.107.5
+  resolution: "@tsed/exceptions@npm:6.107.5"
   dependencies:
-    reflect-metadata: ^0.1.13
-    tslib: 2.2.0
-  checksum: a5876be6cc19ad8fbc63d38ef93715aa40ecfe88ff53551f5b2250b562457bbf7202cb7c0afb8b713f8f8fe4cae48f34678c18bfc2b74afcdb419c3385125ddc
-  languageName: node
-  linkType: hard
-
-"@tsed/exceptions@npm:6.75.0, @tsed/exceptions@npm:^6.73.9":
-  version: 6.75.0
-  resolution: "@tsed/exceptions@npm:6.75.0"
-  dependencies:
-    "@tsed/schema": 6.75.0
-    tslib: 2.2.0
-  checksum: b488c413920d23723503236c27a9978e77b113975818a04a6af2a8d59980a5b2bf4fc0a578ddcb04f83504584be7be21e1906c65ac36ccbc50a85c7115aa3ff1
-  languageName: node
-  linkType: hard
-
-"@tsed/openspec@npm:6.75.0":
-  version: 6.75.0
-  resolution: "@tsed/openspec@npm:6.75.0"
-  checksum: e4c3432736b6ccf0128e928e36e72fecd78432ccc28fce77fa8fe01965f8d2c3e54e6981297a5231974e60214fa1e2fb1e6c2dd39069e054d71ee837cdfc7dff
-  languageName: node
-  linkType: hard
-
-"@tsed/schema@npm:6.75.0":
-  version: 6.75.0
-  resolution: "@tsed/schema@npm:6.75.0"
-  dependencies:
-    "@tsed/core": 6.75.0
-    "@tsed/openspec": 6.75.0
     change-case: 4.1.2
-    micromatch: 4.0.2
+    statuses: ">=2.0.1"
     tslib: 2.2.0
-  peerDependencies:
-    "@tsed/core": ^6.75.0
-    "@tsed/openspec": ^6.75.0
-  checksum: 798864079fca12c6027c36c4a7e8d6a92a49997cea0a9cde31cccbca8ef89a35518a592650dae3f68647027af8dd7f48268b9a46ef50fd9e6e7dfa27c45060a6
+  checksum: 2a0da2a64ada2a5cdaa03d817eb9b4bc50c93e966e64399ded22071515f04c4eb14d8d0ebe6331974195884accd068c04b1a0143d99960854db54d23188a7598
   languageName: node
   linkType: hard
 
@@ -8779,7 +8747,7 @@ __metadata:
     "@testing-library/jest-dom": 5.14.1
     "@testing-library/react": 12.1.2
     "@testing-library/react-hooks": 7.0.2
-    "@tsed/exceptions": 6.75.0
+    "@tsed/exceptions": 6.107.5
     "@types/cors": 2.8.12
     "@types/graphql": 14.5.0
     "@types/node": 16.10.3
@@ -11626,16 +11594,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"micromatch@npm:4.0.2":
-  version: 4.0.2
-  resolution: "micromatch@npm:4.0.2"
-  dependencies:
-    braces: ^3.0.1
-    picomatch: ^2.0.5
-  checksum: 39590a96d9ffad21f0afac044d0a5af4f33715a16fdd82c53a01c8f5ff6f70832a31b53e52972dac3deff8bf9f0bed0207d1c34e54ab3306a5e4c4efd5f7d249
-  languageName: node
-  linkType: hard
-
 "micromatch@npm:^4.0.2, micromatch@npm:^4.0.4":
   version: 4.0.4
   resolution: "micromatch@npm:4.0.4"
@@ -13191,7 +13149,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"picomatch@npm:^2.0.4, picomatch@npm:^2.0.5, picomatch@npm:^2.2.1, picomatch@npm:^2.2.2, picomatch@npm:^2.2.3":
+"picomatch@npm:^2.0.4, picomatch@npm:^2.2.1, picomatch@npm:^2.2.2, picomatch@npm:^2.2.3":
   version: 2.3.0
   resolution: "picomatch@npm:2.3.0"
   checksum: 16818720ea7c5872b6af110760dee856c8e4cd79aed1c7a006d076b1cc09eff3ae41ca5019966694c33fbd2e1cc6ea617ab10e4adac6df06556168f13be3fca2
@@ -15942,6 +15900,13 @@ resolve@^2.0.0-next.3:
   version: 1.5.0
   resolution: "statuses@npm:1.5.0"
   checksum: c469b9519de16a4bb19600205cffb39ee471a5f17b82589757ca7bd40a8d92ebb6ed9f98b5a540c5d302ccbc78f15dc03cc0280dd6e00df1335568a5d5758a5c
+  languageName: node
+  linkType: hard
+
+"statuses@npm:>=2.0.1":
+  version: 2.0.1
+  resolution: "statuses@npm:2.0.1"
+  checksum: 18c7623fdb8f646fb213ca4051be4df7efb3484d4ab662937ca6fbef7ced9b9e12842709872eb3020cc3504b93bde88935c9f6417489627a7786f24f8031cbcb
   languageName: node
   linkType: hard
 
