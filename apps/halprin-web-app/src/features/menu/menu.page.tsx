@@ -18,6 +18,8 @@ export const MenuPage: React.FC<Props> = (props) => {
   const [midClassName, setMidClassName] = useState('');
   const [showMenu, setShowMenu] = useState(false);
 
+  console.log(lang);
+
   const changeMiddleContent = (type: string) => {
     switch (type) {
       case 'workshop': {
@@ -72,22 +74,23 @@ export const MenuPage: React.FC<Props> = (props) => {
               title={
                 'https://player.vimeo.com/external/583334078.sd.mp4?s=685558fc99397ec030c0866c145927d29e602e30&profile_id=165'
               }></iframe>
-            <button className="nextBtn" onClick={() => setShowMenu(true)}>
-              Next
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="100"
-                height="100"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#ffffff"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="arrow">
-                <path d="M9 18l6-6-6-6" />
-              </svg>
-            </button>
+            <div className="nextBtn">
+              <button onClick={() => setShowMenu(true)}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100"
+                  height="100"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#ffffff"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="arrow">
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </button>
+            </div>
           </S.Video>
         </MainLayout>
       ) : (

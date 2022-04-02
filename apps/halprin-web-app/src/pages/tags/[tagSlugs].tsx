@@ -5,6 +5,7 @@ import { videoConfig } from '@/features/video/video.config';
 import { SupportedLang } from '@/features/video/types';
 import { SiteConfigUtils } from '@/core/config/site- config.utils';
 import { Asserts } from '@contredanse/common';
+import { MainVideoPage } from '@/features/video/main-video-page';
 
 type Props = {
   tagSlugs: string[];
@@ -15,12 +16,7 @@ export default function TagsRoute(
   props: InferGetServerSidePropsType<typeof getServerSideProps>
 ) {
   const { lang, tagSlugs } = props;
-  return (
-    <>
-      <h1>Hello here's the tag slugs I received</h1>
-      <pre>{JSON.stringify(tagSlugs)}</pre>
-    </>
-  );
+  return <MainVideoPage lang={lang} tagSlugs={tagSlugs} searchType={'tag'} />;
 }
 
 export const getServerSideProps: GetServerSideProps<Props> = async (

@@ -18,7 +18,14 @@ export default function VideoRoute(
   props: InferGetServerSidePropsType<typeof getServerSideProps>
 ) {
   const { lang, categorySlug } = props;
-  return <MainVideoPage lang={lang} categorySlug={categorySlug} />;
+  return (
+    <MainVideoPage
+      lang={lang}
+      categorySlug={categorySlug}
+      searchType={'category'}
+      tagSlugs={['none']}
+    />
+  );
 }
 
 export const getServerSideProps: GetServerSideProps<Props> = async (

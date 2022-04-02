@@ -7,15 +7,39 @@ export const Ctn = styled.div`
   padding-left: 15px;
   padding-bottom: 10px;
   height: 70px;
+  svg {
+    color: lightgrey;
+  }
+  svg:hover {
+    cursor: pointer;
+    color: white;
+  }
   .row {
     width: 100%;
     border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+    overflow-x: auto;
+    padding-left: 10px;
+    .show {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .hide {
+      display: none;
+    }
+  }
+  .unique-row {
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    padding-right: 10px;
-    padding-left: 10px;
+    border-top: 1px solid white;
+    padding-left: 10%;
+    padding-right: 10%;
   }
+
   .hiddenMenu {
     width: 100%;
     border-top: 1px solid white;
@@ -32,5 +56,11 @@ export const Ctn = styled.div`
       }
     }
     margin-left: 75px;
+  }
+  a {
+    color: lightgrey;
+    &:hover {
+      color: white;
+    }
   }
 `;

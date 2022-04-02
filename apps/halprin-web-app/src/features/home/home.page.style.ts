@@ -107,20 +107,9 @@ export const Video = styled.div`
   }
   .nextBtn {
     cursor: pointer;
-    margin: auto;
-    border: 1px solid white;
-    display: block;
-    margin-top: 25px;
     display: flex;
-    justify-content: center;
-    padding: 5px;
-    padding-left: 10px;
-    .arrow {
-      width: 25px;
-      height: 25px;
-    }
-    &:hover {
-      scale: 1.1;
-    }
+    justify-content: end;
+    margin-right: 100px;
+    margin-top: -400px;
   }
 `;

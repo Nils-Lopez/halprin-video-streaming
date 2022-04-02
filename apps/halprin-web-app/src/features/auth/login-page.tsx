@@ -8,7 +8,7 @@ type Props = {
   children?: never;
 };
 
-export const LoginPage: React.FC<Props> = (props) => {
+export const LoginPage: React.FC<Props> = () => {
   const { t } = useTranslation(loginConfig.i18nNamespaces);
 
   return (

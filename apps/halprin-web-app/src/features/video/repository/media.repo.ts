@@ -21,16 +21,34 @@ export class MediaRepo {
   findBySlug = (slug: string): Media | null => {
     return this.data.filter((media) => media.media_slug === slug)?.[0] ?? null;
   };
+  findByCredits = (id: number) => {
+    const matchingMedia: Media[] = [];
+    this.data.map((media) => {
+      let matching = false;
+      media.creditsIds?.map((credits) => {
+        if (credits === id) {
+          matching = true;
+        }
+      });
+      if (matching) {
+        matchingMedia.push(media);
+      }
+    });
+    return matchingMedia;
+  };
   search = (params: SearchParams, sortByRelevance = true): Media[] => {
     const { tagSlugs, categories: searchCategs } = params;
     const slugs = typeof tagSlugs === 'string' ? [tagSlugs] : tagSlugs;
     const categories =
       typeof searchCategs === 'string' ? [searchCategs] : searchCategs;
 
-    const data: Media[] =
-      categories !== undefined
-        ? this.data.filter((media) => categories.includes(media.category))
-        : this.data;
+    const data: Media[] = categories
+      ? this.data.filter((media) => {
+          if (media.category) {
+            categories.includes(media.category);
+          }
+        })
+      : this.data;
 
     let filtered: Media[] = [];
 
@@ -39,13 +57,13 @@ export class MediaRepo {
     } else {
       const relevanceMap = new Map<string, number>();
       filtered = data.filter((media) => {
-        const count = media.tags.length;
+        const count = media.tags ? media.tags.length : 0;
         let i = 0;
         let found = false;
         while (i < count && !found) {
-          const tag = media.tags[i];
+          const tag = media.tags ? media.tags[i] : null;
           for (let k = 0; k < slugs.length; k++) {
-            if (tag.tag_slug === slugs[k]) {
+            if (tag && tag.tag_slug === slugs[k] && media.media_slug) {
               found = true;
               relevanceMap.set(
                 media.media_slug,
@@ -59,12 +77,19 @@ export class MediaRepo {
       });
       if (sortByRelevance) {
         filtered = filtered.sort((a, b) => {
-          const relevanceA = relevanceMap.get(a.media_slug) ?? 0;
-          const relevanceB = relevanceMap.get(b.media_slug) ?? 0;
-          return relevanceB - relevanceA;
+          if (a.media_slug && b.media_slug) {
+            const relevanceA = relevanceMap.get(a.media_slug) ?? 0;
+            const relevanceB = relevanceMap.get(b.media_slug) ?? 0;
+            return relevanceB - relevanceA;
+          } else {
+            return 0;
+          }
         });
       }
     }
     return filtered;
+  };
+  get = () => {
+    return this.data;
   };
 }

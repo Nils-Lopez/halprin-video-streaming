@@ -9,14 +9,15 @@ export const Ctn = styled.div`
 
   .embed-menu {
     margin-left: 80px;
-    margin-bottom: 10px;
+    margin-top: -130px;
     width: 100px;
     cursor: pointer;
     .toggle {
       margin-left: 20px;
       height: 30px;
-      margin-bottom: -4px;
+      margin-top: 90px;
     }
+    position: fixed;
   }
   .topBar {
     width: 97%;

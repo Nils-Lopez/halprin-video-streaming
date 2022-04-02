@@ -1,16 +1,15 @@
 import { Layout } from './main-layout.style';
-import { useState } from 'react';
 
 export const MainLayout: React.FC = (props) => {
   const { children } = props;
-  const [help, setHelp] = useState(false);
-  const [credits, setCredits] = useState(false);
+  // const [help, setHelp] = useState(false);
+  // const [credits, setCredits] = useState(false);
   return (
     <Layout>
       <div className="flex flex-col h-screen">
-        <div className="top">
+        {/* <div className="top">
           <div className="helpers">
-            {help ? (
+             {help ? (
               <button onMouseLeave={() => setHelp(false)}>
                 <img src="/images/ui/help/help.png" alt="help" />
               </button>
@@ -27,9 +26,9 @@ export const MainLayout: React.FC = (props) => {
               <button
                 className="helper"
                 onMouseEnter={() => setCredits(true)}></button>
-            )}
+            )} 
           </div>
-        </div>
+        </div> */}
         <main>{children}</main>
       </div>
     </Layout>

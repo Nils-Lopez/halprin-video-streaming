@@ -1,4 +1,4 @@
-import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
+import { GetServerSideProps } from 'next';
 import { MenuPage } from '@/features/menu/menu.page';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { BadRequest } from '@tsed/exceptions';
@@ -9,9 +9,7 @@ type Props = {
   /** add what's needed in case */
 };
 
-export default function MenuRoute(
-  props: InferGetServerSidePropsType<typeof getServerSideProps>
-) {
+export default function MenuRoute() {
   return <MenuPage lang={'en'} />;
 }
 

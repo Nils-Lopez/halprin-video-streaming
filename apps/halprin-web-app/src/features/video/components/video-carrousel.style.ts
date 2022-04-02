@@ -5,7 +5,7 @@ export const Carrousel = styled.div`
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
-  overflow-x: scroll;
+  overflow-x: auto;
   overflow-y: hidden;
   .carrousel {
     display: flex;
@@ -15,6 +15,18 @@ export const Carrousel = styled.div`
     display: flex;
     justify-content: center;
   }
+  .life-art {
+    border-top: 2px solid #a2d2ff;
+  }
+  .roadmaps {
+    border-top: 2px solid #ffef9f;
+  }
+  .workshops {
+    border-top: 2px solid pink;
+  }
+  .archives {
+    border-top: 2px solid #ee6055;
+  }
   .slide {
     img {
       width: 150px;
@@ -23,7 +35,6 @@ export const Carrousel = styled.div`
     }
     .video-title {
       width: 150px;
-      border-top: 2px solid pink;
       background: #0e111c;
       transition: height 0.5s ease-in-out;
     }
@@ -50,14 +61,24 @@ export const Carrousel = styled.div`
     margin-right: 15px;
     .video-title {
       max-width: 150px;
-      border-top: 2px solid pink;
       background: black;
       transition: height 0.5s ease-in-out;
     }
     .now-playing {
-      color: pink;
       font-size: 13px;
       line-height: normal;
+    }
+    .txt-life-art {
+      color: #a2d2ff;
+    }
+    .txt-roadmaps {
+      color: #ffef9f;
+    }
+    .txt-workshops {
+      color: pink;
+    }
+    .txt-archives {
+      color: #ee6055;
     }
   }
   @media only screen and (max-width: 1200px) {

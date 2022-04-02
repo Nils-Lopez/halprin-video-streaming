@@ -1,4 +1,4 @@
-import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
+import { GetServerSideProps } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { BadRequest } from '@tsed/exceptions';
 import { loginConfig } from '@/features/auth/login.config';
@@ -8,9 +8,7 @@ type Props = {
   /** add what's needed in case */
 };
 
-export default function LoginRoute(
-  props: InferGetServerSidePropsType<typeof getServerSideProps>
-) {
+export default function LoginRoute() {
   return <LoginPage />;
 }
 

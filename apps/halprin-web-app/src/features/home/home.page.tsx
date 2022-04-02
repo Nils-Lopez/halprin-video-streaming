@@ -50,9 +50,8 @@ export const HomePage: React.FC<Props> = () => {
                 title={
                   'https://player.vimeo.com/external/583334078.sd.mp4?s=685558fc99397ec030c0866c145927d29e602e30&profile_id=165'
                 }></iframe>
-              <Link href={'/' + lang + '/menu'} passHref>
-                <button className="nextBtn">
-                  Next{' '}
+              <div className="nextBtn">
+                <Link href={'/' + lang + '/menu'} passHref>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="100"
@@ -66,8 +65,8 @@ export const HomePage: React.FC<Props> = () => {
                     className="arrow">
                     <path d="M9 18l6-6-6-6" />
                   </svg>
-                </button>
-              </Link>
+                </Link>
+              </div>
             </S.Video>
           </MainLayout>
         </>

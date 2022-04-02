@@ -1,12 +1,17 @@
 import * as S from './embed-menu.style';
 import Link from 'next/link';
+import { Media } from '@/data/data.types';
 
 type Props = {
   lang: string;
+  selectVideo?: (media: Media) => void;
+  selectedVideo?: Media;
 };
 
 export const EmbedMenu: React.FC<Props> = (props) => {
-  const { lang } = props;
+  const { lang, selectVideo, selectedVideo } = props;
+
+  console.log(lang);
 
   return (
     <S.Circle>
@@ -51,13 +56,34 @@ export const EmbedMenu: React.FC<Props> = (props) => {
         </div>
       </div>
       <div className="bottomIcon">
-        <Link href={'/tag-index'} passHref>
-          <img
-            src={'/images/ui/menu/mouth.png'}
-            alt="Menu"
-            className="mouthImg"
-          />
-        </Link>
+        {selectedVideo && selectedVideo.thumb !== 'false' ? (
+          <button
+            onClick={() => {
+              if (selectVideo) {
+                selectVideo({ thumb: 'false' });
+              }
+            }}>
+            <img
+              src={'/images/ui/menu/mouth.png'}
+              alt="Menu"
+              className="mouthImg"
+            />
+          </button>
+        ) : (
+          <Link
+            href={
+              selectedVideo && selectedVideo.thumb !== 'false'
+                ? '#A'
+                : '/tag-index'
+            }
+            passHref>
+            <img
+              src={'/images/ui/menu/mouth.png'}
+              alt="Menu"
+              className="mouthImg"
+            />
+          </Link>
+        )}
       </div>
     </S.Circle>
   );

@@ -57,14 +57,15 @@ export const Ctn = styled.div`
   }
   .embed-menu {
     margin-left: 80px;
-    margin-bottom: 10px;
+    margin-top: -130px;
     width: 100px;
     cursor: pointer;
     .toggle {
       margin-left: 20px;
       height: 30px;
-      margin-bottom: -4px;
+      margin-top: 90px;
     }
+    position: fixed;
   }
   @media only screen and (max-width: 1200px) {
     min-height: 180px;

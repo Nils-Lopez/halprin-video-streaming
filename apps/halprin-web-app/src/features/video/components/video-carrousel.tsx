@@ -6,12 +6,12 @@ import { SupportedLang } from '@/features/video/types';
 type Props = {
   lang: SupportedLang;
   media: Media[];
-  playedVideo: any;
-  setPlayedVideo: any;
+  selectedVideo: Media;
+  selectVideo: (media: Media) => void;
 };
 
 export const VideoCarrousel: FC<Props> = (props) => {
-  const { media, lang, playedVideo, setPlayedVideo } = props;
+  const { media, lang, selectedVideo, selectVideo } = props;
 
   return (
     <>
@@ -19,21 +19,39 @@ export const VideoCarrousel: FC<Props> = (props) => {
         <div className={media.length <= 3 ? 'carrousel-centered' : 'carrousel'}>
           {media.map((media) => {
             const thumb = media.thumb;
-            const title = media.title;
+            const title = media.title ? media.title[lang] : null;
             return (
               <Fragment key={media.media_slug}>
-                {media === playedVideo ? (
-                  <div className="main">
-                    <div className="now-playing">
-                      NOW <br /> PLAYING
+                {media === selectedVideo ? (
+                  <div className="main" id={media.media_slug}>
+                    <div className={'now-playing txt-' + media.category}>
+                      {lang === 'en' ? (
+                        <>
+                          NOW <br /> PLAYING
+                        </>
+                      ) : (
+                        <>
+                          LECTURE <br /> EN COURS
+                        </>
+                      )}
                     </div>
-                    <div className="video-title">{title[lang]}</div>
+                    <div className={'video-title ' + media.category}>
+                      {title}
+                    </div>
                   </div>
                 ) : (
-                  <div className="slide">
-                    <img src={thumb} alt={'A picture of : ' + title[lang]} />
-                    <div className="video-title">{title[lang]}</div>
-                  </div>
+                  <button
+                    onClick={() => {
+                      selectVideo(media);
+                    }}
+                    id={media.media_slug}>
+                    <div className="slide">
+                      <img src={thumb} alt={'A picture of : ' + title} />
+                      <div className={'video-title ' + media.category}>
+                        {title}
+                      </div>
+                    </div>
+                  </button>
                 )}
               </Fragment>
             );

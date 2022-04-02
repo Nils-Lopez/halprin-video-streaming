@@ -190,7 +190,7 @@ export class LegacyDvdConverter {
         const current = tags.filter(
           (t) => t.id === StringConvert.toSafeInteger(tag.$.id)
         )?.[0];
-        if (current) {
+        if (current && current.tag_slug) {
           normalizedTags.push({
             tag_slug: current?.tag_slug,
             relevance: StringConvert.toSafeInteger(tag.$.value) ?? 0,

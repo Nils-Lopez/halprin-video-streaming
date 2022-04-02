@@ -1,4 +1,4 @@
-import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
+import { GetServerSideProps } from 'next';
 import { HomePage } from '@/features/home/home.page';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { BadRequest } from '@tsed/exceptions';
@@ -9,9 +9,7 @@ type Props = {
   // add props needed if any
 };
 
-export default function HomeRoute(
-  props: InferGetServerSidePropsType<typeof getServerSideProps>
-) {
+export default function HomeRoute() {
   return <HomePage />;
 }
 

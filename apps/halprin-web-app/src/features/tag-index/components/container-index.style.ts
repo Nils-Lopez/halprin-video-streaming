@@ -1,12 +1,22 @@
 import styled from '@emotion/styled';
 
 export const Ctn = styled.div`
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   padding: 5px;
   margin-top: 15px;
   width: 60%;
+  padding-bottom: 50px;
   margin-left: auto;
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: red;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: blue;
+  }
   margin-right: auto;
   height: 70%;
   .selected {

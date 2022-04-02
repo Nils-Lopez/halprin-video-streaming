@@ -1,4 +1,4 @@
-import { Media, MediaCategory, MediaCategorySlug } from '@/data/data.types';
+import { MediaCategory, MediaCategorySlug } from '@/data/data.types';
 import { mediaCategoryData } from '@/data/media-category.data';
 
 type Props = {
