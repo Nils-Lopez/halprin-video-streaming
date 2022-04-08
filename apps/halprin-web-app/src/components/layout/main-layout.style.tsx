@@ -6,8 +6,21 @@ export const Layout = styled.div`
   height: 100%;
   width: 100%;
   position: fixed;
-  overflow-y: auto;
+  overflow-y: hidden;
   overflow-x: hidden;
+  .mobile-menu-toggle {
+    display: none;
+  }
+  @media only screen and (max-width: 650px) {
+    .mobile-menu-toggle {
+      img {
+        height: 35px;
+      }
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+    }
+  }
   // .top {
   //   positon: fixed;
   //   width: 100%;

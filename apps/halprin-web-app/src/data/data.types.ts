@@ -14,13 +14,6 @@ export type Tag = {
   relevance?: number;
 };
 
-export type LocalizedMediaUrl = {
-  fr: string;
-  en: string;
-};
-
-export type MediaUrl = string | LocalizedMediaUrl;
-
 export type MediaCategory = {
   categ_slug: MediaCategorySlug;
   label: {
@@ -63,7 +56,7 @@ export type CleanedCredit = {
 export type Media = {
   media_slug?: string;
   type?: 'audio' | 'video';
-  url?: MediaUrl;
+  url?: string;
   vimeo_id?: string;
   tracks?: MediaTracks;
   thumb: string;
@@ -80,7 +73,7 @@ export type Media = {
 export type RepoMedia = {
   media_slug: string;
   type?: 'audio' | 'video';
-  url: MediaUrl;
+  url: string;
   vimeo_id: string;
   tracks: MediaTracks;
   thumb: string;

@@ -13,7 +13,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1240_RootsofDance.vtt',
     },
     thumb: '/images/media/thumb/1240_RootsofDance.jpg',
-    url: 'videos/1240_RootsofDance.mp4',
+    url: 'https://vimeo.com/583456870/d158ba1281',
     tags: [
       {
         tag_slug: 'ages',
@@ -82,7 +82,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1200_danceasascience.vtt',
     },
     thumb: '/images/media/thumb/1200_danceasascience.jpg',
-    url: 'videos/1200_danceasascience.mp4',
+    url: 'https://vimeo.com/583329209/9424729f58',
     tags: [
       {
         tag_slug: 'anatomy',
@@ -135,7 +135,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1210_InTheEnvironment.vtt',
     },
     thumb: '/images/media/thumb/1210_InTheEnvironment.jpg',
-    url: 'videos/1210_InTheEnvironment.mp4',
+    url: 'https://vimeo.com/583334078/8d5627d441',
     tags: [
       {
         tag_slug: 'environment',
@@ -212,7 +212,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1215_work-shop.vtt',
     },
     thumb: '/images/media/thumb/1215_work-shop.jpg',
-    url: 'videos/1215_work-shop.mp4',
+    url: 'https://vimeo.com/583445015/dad099ea4f',
     tags: [
       {
         tag_slug: 'workshop',
@@ -281,7 +281,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1220_asphilosophy.vtt',
     },
     thumb: '/images/media/thumb/1220_asphilosophy.jpg',
-    url: 'videos/1220_asphilosophy.mp4',
+    url: 'https://vimeo.com/583450472/4bbbb6b919',
     tags: [
       {
         tag_slug: 'generating-creativity',
@@ -346,7 +346,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1230_emotions.vtt',
     },
     thumb: '/images/media/thumb/1230_emotions.jpg',
-    url: 'videos/1230_emotions.mp4',
+    url: 'https://vimeo.com/583453396/c2d98f775e',
     tags: [
       {
         tag_slug: 'emotion',
@@ -411,7 +411,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1250_socialart.vtt',
     },
     thumb: '/images/media/thumb/1250_socialart.jpg',
-    url: 'videos/1250_socialart.mp4',
+    url: 'https://vimeo.com/583465139/dc494f042a',
     tags: [
       {
         tag_slug: 'social-issue',
@@ -496,7 +496,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1260_healing.vtt',
     },
     thumb: '/images/media/thumb/1260_healing.jpg',
-    url: 'videos/1260_healing.mp4',
+    url: 'https://vimeo.com/583475866/526c1485d7',
     tags: [
       {
         tag_slug: 'cancer',
@@ -597,7 +597,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1270_spiritualcommunity.vtt',
     },
     thumb: '/images/media/thumb/1270_spiritualcommunity.jpg',
-    url: 'videos/1270_spiritualcommunity.mp4',
+    url: 'https://vimeo.com/583485498/68d8ff22b0',
     tags: [
       {
         tag_slug: 'spiritual',
@@ -702,7 +702,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1400_MR.vtt',
     },
     thumb: '/images/media/thumb/1400_MR.jpg',
-    url: 'videos/1400_MR.mp4',
+    url: 'https://vimeo.com/583495805/1ae0a4accd',
     tags: [
       {
         tag_slug: 'movement-ritual',
@@ -807,7 +807,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1410_feedbackprocess.vtt',
     },
     thumb: '/images/media/thumb/1410_feedbackprocess.jpg',
-    url: 'videos/1410_feedbackprocess.mp4',
+    url: 'https://vimeo.com/583505128/1e7fbe8b64',
     tags: [
       {
         tag_slug: 'movement-feeling-process',
@@ -868,7 +868,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1420_threelevels.vtt',
     },
     thumb: '/images/media/thumb/1420_threelevels.jpg',
-    url: 'videos/1420_threelevels.mp4',
+    url: 'https://vimeo.com/583512652/42c8228488',
     tags: [
       {
         tag_slug: 'three-levels-of-awareness',
@@ -965,7 +965,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1425_PsychoViz.vtt',
     },
     thumb: '/images/media/thumb/1425_PsychoViz.jpg',
-    url: 'videos/1425_PsychoViz.mp4',
+    url: 'https://vimeo.com/583522802/f278e87e70',
     tags: [
       {
         tag_slug: 'three-levels-of-awareness',
@@ -1102,7 +1102,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1430_fivepartprocess.vtt',
     },
     thumb: '/images/media/thumb/1430_fivepartprocess.jpg',
-    url: 'videos/1430_fivepartprocess.mp4',
+    url: 'https://vimeo.com/583543025/9b474b1cb1',
     tags: [
       {
         tag_slug: 'five-part-process',
@@ -1167,7 +1167,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1450_rsvp.vtt',
     },
     thumb: '/images/media/thumb/1450_rsvp.jpg',
-    url: 'videos/1450_rsvp.mp4',
+    url: 'https://vimeo.com/583545728/7a1081a4fb',
     tags: [
       {
         tag_slug: 'rsvp-cycles',
@@ -1264,7 +1264,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1460_PlanetaryDance.vtt',
     },
     thumb: '/images/media/thumb/1460_PlanetaryDance.jpg',
-    url: 'videos/1460_PlanetaryDance.mp4',
+    url: 'https://vimeo.com/583555388/e996300a01',
     tags: [
       {
         tag_slug: 'planetary-dance',
@@ -1357,7 +1357,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1000_Introduction.vtt',
     },
     thumb: '/images/media/thumb/1000_Introduction.jpg',
-    url: 'videos/1000_Introduction.mp4',
+    url: 'https://vimeo.com/582455401/265260de74',
     tags: [
       {
         tag_slug: 'workshop',
@@ -1394,7 +1394,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1010_SelfPortrait.vtt',
     },
     thumb: '/images/media/thumb/1010_SelfPortrait.jpg',
-    url: 'videos/1010_SelfPortrait.mp4',
+    url: 'https://vimeo.com/582458767/80dbc5dd8d',
     tags: [
       {
         tag_slug: 'self-portrait',
@@ -1475,7 +1475,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1020_PNspace.vtt',
     },
     thumb: '/images/media/thumb/1020_PNspace.jpg',
-    url: 'videos/1020_PNspace.mp4',
+    url: 'https://vimeo.com/582468403/49a140557e',
     tags: [
       {
         tag_slug: 'spaces-positive-negative',
@@ -1548,7 +1548,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1030_CollectiveEnergy.vtt',
     },
     thumb: '/images/media/thumb/1030_CollectiveEnergy.jpg',
-    url: 'videos/1030_CollectiveEnergy.mp4',
+    url: 'https://vimeo.com/582480080/e2493dccc6',
     tags: [
       {
         tag_slug: 'collective-body',
@@ -1617,7 +1617,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1040_PassiveActive.vtt',
     },
     thumb: '/images/media/thumb/1040_PassiveActive.jpg',
-    url: 'videos/1040_PassiveActive.mp4',
+    url: 'https://vimeo.com/582485392/7e23b0453d',
     tags: [
       {
         tag_slug: 'polarities',
@@ -1742,7 +1742,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1050_MensDance.vtt',
     },
     thumb: '/images/media/thumb/1050_MensDance.jpg',
-    url: 'videos/1050_MensDance.mp4',
+    url: 'https://vimeo.com/582510310/9cc6e5fc4b',
     tags: [
       {
         tag_slug: 'men-women',
@@ -1799,7 +1799,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1080_Rhythmbreath.vtt',
     },
     thumb: '/images/media/thumb/1080_Rhythmbreath.jpg',
-    url: 'videos/1080_Rhythmbreath.mp4',
+    url: 'https://vimeo.com/582517263/a102026793',
     tags: [
       {
         tag_slug: 'pulse',
@@ -1896,7 +1896,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1090_MovementRitual.vtt',
     },
     thumb: '/images/media/thumb/1090_MovementRitual.jpg',
-    url: 'videos/1090_MovementRitual.mp4',
+    url: 'https://vimeo.com/582539916/2586db61ae',
     tags: [
       {
         tag_slug: 'movement-ritual',
@@ -2001,7 +2001,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1100_Talk.vtt',
     },
     thumb: '/images/media/thumb/1100_Talk.jpg',
-    url: 'videos/1100_Talk.mp4',
+    url: 'https://vimeo.com/583292158/50b9780bf3',
     tags: [
       {
         tag_slug: 'life-art-process',
@@ -2059,7 +2059,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1110_PlanetaryDance.vtt',
     },
     thumb: '/images/media/thumb/1110_PlanetaryDance.jpg',
-    url: 'videos/1110_PlanetaryDance.mp4',
+    url: 'https://vimeo.com/583296085/6d009cd79c',
     tags: [
       {
         tag_slug: 'planetary-dance',
@@ -2152,7 +2152,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1120_SecSelfPortrait.vtt',
     },
     thumb: '/images/media/thumb/1120_SecSelfPortrait.jpg',
-    url: 'videos/1120_SecSelfPortrait.mp4',
+    url: 'https://vimeo.com/583308534/ac880b5706',
     tags: [
       {
         tag_slug: 'life-art-process',
@@ -2209,7 +2209,7 @@ export const mediaData: Media[] = [
       fr: 'fr/1130_evening.vtt',
     },
     thumb: '/images/media/thumb/1130_evening.jpg',
-    url: 'videos/1130_evening.mp4',
+    url: 'https://vimeo.com/583312841/deb52eb66d',
     tags: [
       {
         tag_slug: 'pulse',
@@ -2291,7 +2291,7 @@ export const mediaData: Media[] = [
       fr: 'fr/Introduction.vtt',
     },
     thumb: '/images/media/thumb/Introduction.jpg',
-    url: 'videos/Introduction.mp4',
+    url: 'https://vimeo.com/584898888/0ddb667e46',
     tags: [
       {
         tag_slug: 'life-art-process',
@@ -2363,7 +2363,7 @@ export const mediaData: Media[] = [
       fr: 'fr/I_01c_whyteachingnow.vtt',
     },
     thumb: '/images/media/thumb/I_01c_whyteachingnow.jpg',
-    url: 'videos/I_01c_whyteachingnow.mp4',
+    url: 'https://vimeo.com/584861240/886dae9347',
     tags: [
       {
         tag_slug: 'ages',
@@ -2404,7 +2404,7 @@ export const mediaData: Media[] = [
       fr: 'fr/I_05_adaptworkshoptopeople.vtt',
     },
     thumb: '/images/media/thumb/I_05_adaptworkshoptopeople.jpg',
-    url: 'videos/I_05_adaptworkshoptopeople.mp4',
+    url: 'https://vimeo.com/584862897/9a7407e613',
     tags: [
       {
         tag_slug: 'teaching',
@@ -2437,7 +2437,7 @@ export const mediaData: Media[] = [
       fr: 'fr/I_rsvp_valuaction.vtt',
     },
     thumb: '/images/media/thumb/I_rsvp_valuaction.jpg',
-    url: 'videos/I_rsvp_valuaction.mp4',
+    url: 'https://vimeo.com/584844898/6b8dfa65ac',
     tags: [
       {
         tag_slug: 'rsvp-cycles',
@@ -2474,7 +2474,7 @@ export const mediaData: Media[] = [
       fr: 'fr/I_042c_avoidjudgement.vtt',
     },
     thumb: '/images/media/thumb/I_042c_avoidjudgement.jpg',
-    url: 'videos/I_042c_avoidjudgement.mp4',
+    url: 'https://vimeo.com/584864368/d23228a500',
     tags: [
       {
         tag_slug: 'rsvp-cycles',
@@ -2539,7 +2539,7 @@ export const mediaData: Media[] = [
       fr: 'fr/I_043c_feedbackprocess.vtt',
     },
     thumb: '/images/media/thumb/I_043c_feedbackprocess.jpg',
-    url: 'videos/I_043c_feedbackprocess.mp4',
+    url: 'https://vimeo.com/584871723/743a2baff1',
     tags: [
       {
         tag_slug: 'movement-feeling-process',
@@ -2576,7 +2576,7 @@ export const mediaData: Media[] = [
       fr: 'fr/I_080c_globalapproachmediums.vtt',
     },
     thumb: '/images/media/thumb/I_080c_globalapproachmediums.jpg',
-    url: 'videos/I_080c_globalapproachmediums.mp4',
+    url: 'https://vimeo.com/584873802/df9660be57',
     tags: [
       {
         tag_slug: 'breath',
@@ -2789,7 +2789,7 @@ export const mediaData: Media[] = [
       fr: 'fr/I_143c_fivepartprocess-dwlotl.vtt',
     },
     thumb: '/images/media/thumb/I_143c_fivepartprocess-dwlotl.jpg',
-    url: 'videos/I_143c_fivepartprocess-dwlotl.mp4',
+    url: 'https://vimeo.com/584842917/8c789d9aa9',
     tags: [
       {
         tag_slug: 'five-part-process',
@@ -2826,7 +2826,7 @@ export const mediaData: Media[] = [
       fr: 'fr/I_W_activeactive_lifeart.vtt',
     },
     thumb: '/images/media/thumb/I_W_activeactive_lifeart.jpg',
-    url: 'videos/I_W_activeactive_lifeart.mp4',
+    url: 'https://vimeo.com/584846893/ccb0d719e1',
     tags: [
       {
         tag_slug: 'life-art-process',
@@ -2903,7 +2903,7 @@ export const mediaData: Media[] = [
       fr: 'fr/I_W_mensdance_witness.vtt',
     },
     thumb: '/images/media/thumb/I_W_mensdance_witness.jpg',
-    url: 'videos/I_W_mensdance_witness.mp4',
+    url: 'https://vimeo.com/584851678/5260856dbf',
     tags: [
       {
         tag_slug: 'witness',
@@ -2944,7 +2944,7 @@ export const mediaData: Media[] = [
       fr: 'fr/I_W_skills.vtt',
     },
     thumb: '/images/media/thumb/I_W_skills.jpg',
-    url: 'videos/I_W_skills.mp4',
+    url: 'https://vimeo.com/584859765/46f5d14b56',
     tags: [
       {
         tag_slug: 'skills',
@@ -2965,7 +2965,7 @@ export const mediaData: Media[] = [
       fr: 'fr/I_W_MRspiral.vtt',
     },
     thumb: '/images/media/thumb/I_W_MRspiral.jpg',
-    url: 'videos/I_W_MRspiral.mp4',
+    url: 'https://vimeo.com/584853280/18c90c5146',
     tags: [
       {
         tag_slug: 'spiral',
@@ -3006,7 +3006,7 @@ export const mediaData: Media[] = [
       fr: 'fr/I_W_SelfPortrait_imagery.vtt',
     },
     thumb: '/images/media/thumb/I_W_SelfPortrait_imagery.jpg',
-    url: 'videos/I_W_SelfPortrait_imagery.mp4',
+    url: 'https://vimeo.com/584854660/05fce67c31',
     tags: [
       {
         tag_slug: 'self-portrait',
@@ -3075,7 +3075,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_ADF_children.vtt',
     },
     thumb: '/images/media/thumb/A_ADF_children.jpg',
-    url: 'videos/A_ADF_children.mp4',
+    url: 'https://vimeo.com/583563128/9550bdbfce',
     tags: [
       {
         tag_slug: 'psychokinetic-visualization-process',
@@ -3108,7 +3108,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_ADF_3levels_concl.vtt',
     },
     thumb: '/images/media/thumb/A_ADF_3levels_concl.jpg',
-    url: 'videos/A_ADF_3levels_concl.mp4',
+    url: 'https://vimeo.com/583562292/530d73d69a',
     tags: [
       {
         tag_slug: 'psychokinetic-visualization-process',
@@ -3141,7 +3141,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_ADF_teachit.vtt',
     },
     thumb: '/images/media/thumb/A_ADF_teachit.jpg',
-    url: 'videos/A_ADF_teachit.mp4',
+    url: 'https://vimeo.com/583563967/00d39059a3',
     tags: [
       {
         tag_slug: 'teaching',
@@ -3186,7 +3186,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_evening1987_Nature.vtt',
     },
     thumb: '/images/media/thumb/A_evening1987_Nature.jpg',
-    url: 'videos/A_evening1987_Nature.mp4',
+    url: 'https://vimeo.com/583439305/600e14956a',
     tags: [
       {
         tag_slug: 'nature',
@@ -3251,7 +3251,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_evening1987_Healing.vtt',
     },
     thumb: '/images/media/thumb/A_evening1987_Healing.jpg',
-    url: 'videos/A_evening1987_Healing.mp4',
+    url: 'https://vimeo.com/583431508/59f4a3bb9e',
     tags: [
       {
         tag_slug: 'healing',
@@ -3308,7 +3308,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_Aportrait_family.vtt',
     },
     thumb: '/images/media/thumb/A_Aportrait_family.jpg',
-    url: 'videos/A_Aportrait_family.mp4',
+    url: 'https://vimeo.com/583565628/db5e360ac2',
     tags: [
       {
         tag_slug: 'family',
@@ -3337,7 +3337,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_Aportrait_RSVP.vtt',
     },
     thumb: '/images/media/thumb/A_Aportrait_RSVP.jpg',
-    url: 'videos/A_Aportrait_RSVP.mp4',
+    url: 'https://vimeo.com/583566893/daa595d84d',
     tags: [
       {
         tag_slug: 'rsvp-cycles',
@@ -3375,7 +3375,7 @@ export const mediaData: Media[] = [
     },
     category: 'archives',
     thumb: '/images/media/thumb/A_aWorkshop_animals.jpg',
-    url: 'videos/A_aWorkshop_animals.mp4',
+    url: 'https://vimeo.com/583568418/f92a49832b',
     tags: [
       {
         tag_slug: 'three-levels-of-awareness',
@@ -3404,7 +3404,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_aWorkshop_physical.vtt',
     },
     thumb: '/images/media/thumb/A_aWorkshop_physical.jpg',
-    url: 'videos/A_aWorkshop_physical.mp4',
+    url: 'https://vimeo.com/583412742/ee4db75827',
     tags: [
       {
         tag_slug: 'body-mind',
@@ -3445,7 +3445,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_aWorkshop_passiveActive.vtt',
     },
     thumb: '/images/media/thumb/A_aWorkshop_passiveActive.jpg',
-    url: 'videos/A_aWorkshop_passiveActive.mp4',
+    url: 'https://vimeo.com/583409077/012482b212',
     tags: [
       {
         tag_slug: 'polarities',
@@ -3490,7 +3490,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_circletheearth_claimaids.vtt',
     },
     thumb: '/images/media/thumb/A_circletheearth_claimaids.jpg',
-    url: 'videos/A_circletheearth_claimaids.mp4',
+    url: 'https://vimeo.com/583414063/76b08fe6d2',
     tags: [
       {
         tag_slug: 'aids',
@@ -3559,7 +3559,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_circletheearth_partners.vtt',
     },
     thumb: '/images/media/thumb/A_circletheearth_partners.jpg',
-    url: 'videos/A_circletheearth_partners.mp4',
+    url: 'https://vimeo.com/583416735/c9a1a11773',
     tags: [
       {
         tag_slug: 'life-art-process',
@@ -3632,7 +3632,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_DanceforyourLife_healing.vtt',
     },
     thumb: '/images/media/thumb/A_DanceforyourLife_healing.jpg',
-    url: 'videos/A_DanceforyourLife_healing.mp4',
+    url: 'https://vimeo.com/583418956/19d5854371',
     tags: [
       {
         tag_slug: 'aids',
@@ -3693,7 +3693,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_DanceforyourLife_self.vtt',
     },
     thumb: '/images/media/thumb/A_DanceforyourLife_self.jpg',
-    url: 'videos/A_DanceforyourLife_self.mp4',
+    url: 'https://vimeo.com/583422830/9695031812',
     tags: [
       {
         tag_slug: 'life-art-process',
@@ -3766,7 +3766,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_LivingLegend_Hdoubler_2.vtt',
     },
     thumb: '/images/media/thumb/A_LivingLegend_Hdoubler_2.jpg',
-    url: 'videos/A_LivingLegend_Hdoubler_2.mp4',
+    url: 'https://vimeo.com/584833201/ec9df2cee8',
     tags: [
       {
         tag_slug: 'art',
@@ -3815,7 +3815,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_LivingLegend_Impro_2.vtt',
     },
     thumb: '/images/media/thumb/A_LivingLegend_Impro_2.jpg',
-    url: 'videos/A_LivingLegend_Impro_2.mp4',
+    url: 'https://vimeo.com/584797758/9f9575aa18',
     tags: [
       {
         tag_slug: 'improvisation',
@@ -3844,7 +3844,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_LivingLegend_LifeArtProcess.vtt',
     },
     thumb: '/images/media/thumb/A_LivingLegend_LifeArtProcess.jpg',
-    url: 'videos/A_LivingLegend_LifeArtProcess.mp4',
+    url: 'https://vimeo.com/584798028/f7a82faa51',
     tags: [
       {
         tag_slug: 'family',
@@ -3885,7 +3885,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_LivingLegend_LifeDance.vtt',
     },
     thumb: '/images/media/thumb/A_LivingLegend_LifeDance.jpg',
-    url: 'videos/A_LivingLegend_LifeDance.mp4',
+    url: 'https://vimeo.com/584799211/66254f34d2',
     tags: [
       {
         tag_slug: 'global-approach',
@@ -3938,7 +3938,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_LivingLegend_ModernDance.vtt',
     },
     thumb: '/images/media/thumb/A_LivingLegend_ModernDance.jpg',
-    url: 'videos/A_LivingLegend_ModernDance.mp4',
+    url: 'https://vimeo.com/584800136/ff223d7f40',
     tags: [
       {
         tag_slug: 'breaking-loose',
@@ -3983,7 +3983,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_LivingLegend_ThePomos.vtt',
     },
     thumb: '/images/media/thumb/A_LivingLegend_ThePomos.jpg',
-    url: 'videos/A_LivingLegend_ThePomos.mp4',
+    url: 'https://vimeo.com/584801823/7fa376d17a',
     tags: [
       {
         tag_slug: 'indians',
@@ -4024,7 +4024,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_InnerLandsc_AfterCancer_LifeArt.vtt',
     },
     thumb: '/images/media/thumb/A_InnerLandsc_AfterCancer_LifeArt.jpg',
-    url: 'videos/A_InnerLandsc_AfterCancer_LifeArt.mp4',
+    url: 'https://vimeo.com/584797454/2c98db5bf7',
     tags: [
       {
         tag_slug: 'life-art-process',
@@ -4073,7 +4073,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_InnerLandsc_BreakingBarriers_2.vtt',
     },
     thumb: '/images/media/thumb/A_InnerLandsc_BreakingBarriers_2.jpg',
-    url: 'videos/A_InnerLandsc_BreakingBarriers_2.mp4',
+    url: 'https://vimeo.com/584821541/22ac4a5717',
     tags: [
       {
         tag_slug: 'audience',
@@ -4114,7 +4114,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_InnerLandsc_DanceAids.vtt',
     },
     thumb: '/images/media/thumb/A_InnerLandsc_DanceAids.jpg',
-    url: 'videos/A_InnerLandsc_DanceAids.mp4',
+    url: 'https://vimeo.com/584822352/1c71bdecf9',
     tags: [
       {
         tag_slug: 'transformation',
@@ -4159,7 +4159,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_InnerLandsc_DanceEnvironment.vtt',
     },
     thumb: '/images/media/thumb/A_InnerLandsc_DanceEnvironment.jpg',
-    url: 'videos/A_InnerLandsc_DanceEnvironment.mp4',
+    url: 'https://vimeo.com/584823100/9ab1447779',
     tags: [
       {
         tag_slug: 'nature',
@@ -4192,7 +4192,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_InnerLandsc_Hangar_BreakingBarriers.vtt',
     },
     thumb: '/images/media/thumb/A_InnerLandsc_Hangar_BreakingBarriers.jpg',
-    url: 'videos/A_InnerLandsc_Hangar_BreakingBarriers.mp4',
+    url: 'https://vimeo.com/584823579/33817a021d',
     tags: [
       {
         tag_slug: 'breaking-loose',
@@ -4245,7 +4245,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_InnerLandsc_JewishCult_Dance.vtt',
     },
     thumb: '/images/media/thumb/A_InnerLandsc_JewishCult_Dance.jpg',
-    url: 'videos/A_InnerLandsc_JewishCult_Dance.mp4',
+    url: 'https://vimeo.com/584824607/f2932348a4',
     tags: [
       {
         tag_slug: 'family',
@@ -4278,7 +4278,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_InnerLandsc_Larry_ArtBauhaus.vtt',
     },
     thumb: '/images/media/thumb/A_InnerLandsc_Larry_ArtBauhaus.jpg',
-    url: 'videos/A_InnerLandsc_Larry_ArtBauhaus.mp4',
+    url: 'https://vimeo.com/584824870/025f12390d',
     tags: [
       {
         tag_slug: 'bauhaus',
@@ -4319,7 +4319,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_InnerLandsc_Larry_community.vtt',
     },
     thumb: '/images/media/thumb/A_InnerLandsc_Larry_community.jpg',
-    url: 'videos/A_InnerLandsc_Larry_community.mp4',
+    url: 'https://vimeo.com/584825401/940e384bf8',
     tags: [
       {
         tag_slug: 'community',
@@ -4352,7 +4352,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_InnerLandsc_Larry_Nature.vtt',
     },
     thumb: '/images/media/thumb/A_InnerLandsc_Larry_Nature.jpg',
-    url: 'videos/A_InnerLandsc_Larry_Nature.mp4',
+    url: 'https://vimeo.com/584825974/428f52c663',
     tags: [
       {
         tag_slug: 'nature',
@@ -4389,7 +4389,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_LarryAnna_artnature.vtt',
     },
     thumb: '/images/media/thumb/A_LarryAnna_artnature.jpg',
-    url: 'videos/A_LarryAnna_artnature.mp4',
+    url: 'https://vimeo.com/584826838/a48ff6f590',
     tags: [
       {
         tag_slug: 'art',
@@ -4430,7 +4430,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_LarryAnna_ecologyofform.vtt',
     },
     thumb: '/images/media/thumb/A_LarryAnna_ecologyofform.jpg',
-    url: 'videos/A_LarryAnna_ecologyofform.mp4',
+    url: 'https://vimeo.com/584827956/2ad9952cd3',
     tags: [
       {
         tag_slug: 'art',
@@ -4471,7 +4471,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_LarryAnna_movement.vtt',
     },
     thumb: '/images/media/thumb/A_LarryAnna_movement.jpg',
-    url: 'videos/A_LarryAnna_movement.mp4',
+    url: 'https://vimeo.com/584828929/c78cdf558c',
     tags: [
       {
         tag_slug: 'space',
@@ -4516,7 +4516,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_LarryAnna_networking.vtt',
     },
     thumb: '/images/media/thumb/A_LarryAnna_networking.jpg',
-    url: 'videos/A_LarryAnna_networking.mp4',
+    url: 'https://vimeo.com/584830061/1388ac2c3e',
     tags: [
       {
         tag_slug: 'space',
@@ -4557,7 +4557,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_LarryAnna_scoreworkshop.vtt',
     },
     thumb: '/images/media/thumb/A_LarryAnna_scoreworkshop.jpg',
-    url: 'videos/A_LarryAnna_scoreworkshop.mp4',
+    url: 'https://vimeo.com/584831519/77a96ab28f',
     tags: [
       {
         tag_slug: 'rsvp-cycles',
@@ -4618,7 +4618,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_mythsANDrituals_CTE_theory.vtt',
     },
     thumb: '/images/media/thumb/A_mythsANDrituals_CTE_theory.jpg',
-    url: 'videos/A_mythsANDrituals_CTE_theory.mp4',
+    url: 'https://vimeo.com/584803516/9620e3de26',
     tags: [
       {
         tag_slug: 'myth',
@@ -4675,7 +4675,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_mythsANDrituals_CTE_workshop.vtt',
     },
     thumb: '/images/media/thumb/A_mythsANDrituals_CTE_workshop.jpg',
-    url: 'videos/A_mythsANDrituals_CTE_workshop.mp4',
+    url: 'https://vimeo.com/584804752/ab26135bb0',
     tags: [
       {
         tag_slug: 'workshop',
@@ -4732,7 +4732,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_PositiveMotion_poem.vtt',
     },
     thumb: '/images/media/thumb/A_PositiveMotion_poem.jpg',
-    url: 'videos/A_PositiveMotion_poem.mp4',
+    url: 'https://vimeo.com/584812408/8defd3eaf0',
     tags: [
       {
         tag_slug: 'aids',
@@ -4765,7 +4765,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_PositiveMotion_movefeeling.vtt',
     },
     thumb: '/images/media/thumb/A_PositiveMotion_movefeeling.jpg',
-    url: 'videos/A_PositiveMotion_movefeeling.mp4',
+    url: 'https://vimeo.com/584806387/49b34f3602',
     tags: [
       {
         tag_slug: 'aids',
@@ -4838,7 +4838,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_ReturningHome_NatureIntro.vtt',
     },
     thumb: '/images/media/thumb/A_ReturningHome_NatureIntro.jpg',
-    url: 'videos/A_ReturningHome_NatureIntro.mp4',
+    url: 'https://vimeo.com/584819261/97195cb203',
     tags: [
       {
         tag_slug: 'nature',
@@ -4875,7 +4875,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_ReturningHome_NatureCancer.vtt',
     },
     thumb: '/images/media/thumb/A_ReturningHome_NatureCancer.jpg',
-    url: 'videos/A_ReturningHome_NatureCancer.mp4',
+    url: 'https://vimeo.com/584818303/738a260cd1',
     tags: [
       {
         tag_slug: 'cancer',
@@ -4908,7 +4908,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_ReturningHome_Impro.vtt',
     },
     thumb: '/images/media/thumb/A_ReturningHome_Impro.jpg',
-    url: 'videos/A_ReturningHome_Impro.mp4',
+    url: 'https://vimeo.com/584814547/45ee3af614',
     tags: [
       {
         tag_slug: 'nature',
@@ -4977,7 +4977,7 @@ export const mediaData: Media[] = [
       fr: 'fr/A_RightOn_Transf.vtt',
     },
     thumb: '/images/media/thumb/A_RightOn_Transf.jpg',
-    url: 'videos/A_RightOn_Transf.mp4',
+    url: 'https://vimeo.com/584820413/a142c1da2d',
     tags: [
       {
         tag_slug: 'transformation',

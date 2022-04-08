@@ -85,16 +85,13 @@ export const Ctn = styled.div`
     min-height: 130px;
     max-height: 130px;
   }
+
   @media only screen and (max-width: 650px) {
-    min-height: 150px;
-    max-height: 150px;
+    max-height: 300px;
+    min-height: 300px;
     .topBar {
       .desktop {
         display: none;
-      }
-      .mobile {
-        display: block;
-        width: 100%;
       }
       .center {
         width: 100%;

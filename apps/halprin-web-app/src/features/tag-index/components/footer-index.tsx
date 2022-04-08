@@ -6,6 +6,7 @@ import { EmbedMenu } from '@/features/menu/embed/embed-menu';
 import Link from 'next/link';
 import { SupportedLang } from '@/features/video/types';
 import { Media, Tag } from '@/data/data.types';
+import { SeeOther } from '@tsed/exceptions';
 
 type Props = {
   selectedTag: Tag;
@@ -58,10 +59,10 @@ export const FooterIndex: FC<Props> = (props) => {
           <img src="/images/ui/menu/mouth.png" alt="menu" className="toggle" />
         )}
       </div>
-      <div className="topBar">
+      <div className={'topBar'}>
         <div className="desktop">
           <div className="left">
-            LISTNAME:{' '}
+            {lang === 'en' ? 'LISTNAME:   ' : 'NOM DE LISTE:  '}
             {selectedTag && selectedTag.label ? (
               <>[INDEX] {selectedTag.label[lang]}</>
             ) : null}
@@ -91,9 +92,7 @@ export const FooterIndex: FC<Props> = (props) => {
                 </svg>
               </Link>
             )}
-            {selectedTag && !selectedTag.media ? (
-              <>0 / 0</>
-            ) : (
+            {selectedTag && !selectedTag.media ? null : (
               <>
                 {media.indexOf(selectedVideo) + 1} / {media.length}
               </>
@@ -172,9 +171,7 @@ export const FooterIndex: FC<Props> = (props) => {
                 </svg>
               </Link>
             )}
-            {selectedTag && !selectedTag.media && !selectedMedia ? (
-              <>0 / 0</>
-            ) : (
+            {selectedTag && !selectedTag.media && !selectedMedia ? null : (
               <>
                 {media.indexOf(selectedVideo) + 1} / {media.length}
               </>

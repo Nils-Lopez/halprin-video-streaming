@@ -19,7 +19,7 @@ export const Ctn = styled.div`
   margin-left: auto;
   margin-right: auto
   margin-top: 0;
-  overflow-y:hidden;
+  overflow:hidden;
   padding-top: 0;
   iframe {
     margin: auto;

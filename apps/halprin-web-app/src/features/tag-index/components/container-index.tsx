@@ -285,114 +285,126 @@ export const ContainerIndex: FC<Props> = (props) => {
   return (
     <S.Ctn>
       {!selectedVideo || (selectedVideo && selectedVideo.thumb === 'false') ? (
-        <table>
-          <tbody>
-            {indexMedia && indexMedia[0] !== 'true' && indexMedia[0] !== 'false'
-              ? indexMedia.map((title: string, index: number) => {
-                  if (
-                    index === 0 ||
-                    (title
-                      .charAt(0)
-                      .normalize('NFD')
-                      .replace(/[\u0300-\u036f]/g, '') !==
-                      indexMedia[index - 1]
-                        .charAt(0)
-                        .normalize('NFD')
-                        .replace(/[\u0300-\u036f]/g, '') &&
-                      title
-                        .charAt(0)
-                        .normalize('NFD')
-                        .replace(/[\u0300-\u036f]/g, '') !== 'E')
-                  ) {
-                    return (
-                      <Fragment key={index}>
-                        <tr
-                          className="letterTitle"
-                          id={title.charAt(0).toUpperCase()}>
-                          <th colSpan={3}>
-                            {title
-                              .charAt(0)
-                              .toUpperCase()
-                              .normalize('NFD')
-                              .replace(/[\u0300-\u036f]/g, '')}
-                          </th>
-                        </tr>
-                        <TagsDisplayer letter={title.charAt(0).toUpperCase()} />
-                      </Fragment>
-                    );
-                  } else if (
-                    (title
-                      .charAt(0)
-                      .normalize('NFD')
-                      .replace(/[\u0300-\u036f]/g, '') === 'E' &&
-                      lang === 'fr' &&
-                      index === 17) ||
-                    (title
-                      .charAt(0)
-                      .normalize('NFD')
-                      .replace(/[\u0300-\u036f]/g, '') === 'E' &&
-                      lang === 'en' &&
-                      title
+        <div className="container">
+          <table>
+            <tbody>
+              {indexMedia &&
+              indexMedia[0] !== 'true' &&
+              indexMedia[0] !== 'false'
+                ? indexMedia.map((title: string, index: number) => {
+                    if (
+                      index === 0 ||
+                      (title
                         .charAt(0)
                         .normalize('NFD')
                         .replace(/[\u0300-\u036f]/g, '') !==
                         indexMedia[index - 1]
                           .charAt(0)
                           .normalize('NFD')
-                          .replace(/[\u0300-\u036f]/g, ''))
-                  ) {
-                    return (
-                      <Fragment key={index}>
-                        <tr
-                          className="letterTitle"
-                          id={title.charAt(0).toUpperCase()}>
-                          <th colSpan={3}>
-                            {title
-                              .charAt(0)
-                              .toUpperCase()
-                              .normalize('NFD')
-                              .replace(/[\u0300-\u036f]/g, '')}
-                          </th>
-                        </tr>
-                        <TagsDisplayer letter={title.charAt(0).toUpperCase()} />
-                      </Fragment>
-                    );
-                  }
-                })
-              : orderedLabels.map((label: string, index: number) => {
-                  if (
-                    index === 0 ||
-                    label
-                      .charAt(0)
-                      .normalize('NFD')
-                      .replace(/[\u0300-\u036f]/g, '') !==
-                      orderedLabels[index - 1]
+                          .replace(/[\u0300-\u036f]/g, '') &&
+                        title
+                          .charAt(0)
+                          .normalize('NFD')
+                          .replace(/[\u0300-\u036f]/g, '') !== 'E')
+                    ) {
+                      return (
+                        <Fragment key={index}>
+                          <tr
+                            className="letterTitle"
+                            id={title.charAt(0).toUpperCase()}>
+                            <th colSpan={3}>
+                              {title
+                                .charAt(0)
+                                .toUpperCase()
+                                .normalize('NFD')
+                                .replace(/[\u0300-\u036f]/g, '')}
+                            </th>
+                          </tr>
+                          <TagsDisplayer
+                            letter={title.charAt(0).toUpperCase()}
+                          />
+                        </Fragment>
+                      );
+                    } else if (
+                      (title
                         .charAt(0)
                         .normalize('NFD')
-                        .replace(/[\u0300-\u036f]/g, '')
-                  ) {
-                    return (
-                      <Fragment key={index}>
-                        <tr
-                          className="letterTitle"
-                          id={label.charAt(0).toUpperCase()}>
-                          <th colSpan={3}>
-                            {label
-                              .charAt(0)
-                              .toUpperCase()
-                              .normalize('NFD')
-                              .replace(/[\u0300-\u036f]/g, '')}
-                          </th>
-                        </tr>
-                        <TagsDisplayer letter={label.charAt(0).toUpperCase()} />
-                      </Fragment>
-                    );
-                  }
-                })}
-          </tbody>
-        </table>
+                        .replace(/[\u0300-\u036f]/g, '') === 'E' &&
+                        lang === 'fr' &&
+                        index === 17) ||
+                      (title
+                        .charAt(0)
+                        .normalize('NFD')
+                        .replace(/[\u0300-\u036f]/g, '') === 'E' &&
+                        lang === 'en' &&
+                        title
+                          .charAt(0)
+                          .normalize('NFD')
+                          .replace(/[\u0300-\u036f]/g, '') !==
+                          indexMedia[index - 1]
+                            .charAt(0)
+                            .normalize('NFD')
+                            .replace(/[\u0300-\u036f]/g, ''))
+                    ) {
+                      return (
+                        <Fragment key={index}>
+                          <tr
+                            className="letterTitle"
+                            id={title.charAt(0).toUpperCase()}>
+                            <th colSpan={3}>
+                              {title
+                                .charAt(0)
+                                .toUpperCase()
+                                .normalize('NFD')
+                                .replace(/[\u0300-\u036f]/g, '')}
+                            </th>
+                          </tr>
+                          <TagsDisplayer
+                            letter={title.charAt(0).toUpperCase()}
+                          />
+                        </Fragment>
+                      );
+                    }
+                  })
+                : orderedLabels.map((label: string, index: number) => {
+                    if (
+                      index === 0 ||
+                      label
+                        .charAt(0)
+                        .normalize('NFD')
+                        .replace(/[\u0300-\u036f]/g, '') !==
+                        orderedLabels[index - 1]
+                          .charAt(0)
+                          .normalize('NFD')
+                          .replace(/[\u0300-\u036f]/g, '')
+                    ) {
+                      return (
+                        <Fragment key={index}>
+                          <tr
+                            className="letterTitle"
+                            id={label.charAt(0).toUpperCase()}>
+                            <th colSpan={3}>
+                              {label
+                                .charAt(0)
+                                .toUpperCase()
+                                .normalize('NFD')
+                                .replace(/[\u0300-\u036f]/g, '')}
+                            </th>
+                          </tr>
+                          <TagsDisplayer
+                            letter={label.charAt(0).toUpperCase()}
+                          />
+                        </Fragment>
+                      );
+                    }
+                  })}
+            </tbody>
+          </table>
+        </div>
       ) : (
-        <VideoPlayer url="url" />
+        <div className="video-container">
+          <VideoPlayer video={selectedVideo} />
+        </div>
       )}
     </S.Ctn>
   );

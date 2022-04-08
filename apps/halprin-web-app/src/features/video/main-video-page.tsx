@@ -69,16 +69,12 @@ export const MainVideoPage: React.FC<Props> = (props) => {
     }
   }, [selectedVideo]);
 
-  // todo on mettra la bonne après
-  const url =
-    'https://player.vimeo.com/external/583334078.sd.mp4?s=685558fc99397ec030c0866c145927d29e602e30&profile_id=165';
-
   return (
     <>
       <MainLayout>
         <S.Ctn>
           <VideoNavbar categories={videoTags} lang={lang} />
-          <VideoPlayer url={url} />
+          <VideoPlayer video={selectedVideo} />
           <VideoFooter
             lang={lang}
             media={media}

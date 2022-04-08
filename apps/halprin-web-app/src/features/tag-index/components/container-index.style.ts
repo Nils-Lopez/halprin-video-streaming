@@ -1,24 +1,14 @@
 import styled from '@emotion/styled';
 
 export const Ctn = styled.div`
-  overflow-y: auto;
-  overflow-x: hidden;
   padding: 5px;
   margin-top: 15px;
   width: 60%;
   padding-bottom: 50px;
   margin-left: auto;
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: red;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: blue;
-  }
   margin-right: auto;
   height: 70%;
+  overflow-y: auto;
   .selected {
     color: red;
     &:hover {
@@ -29,6 +19,7 @@ export const Ctn = styled.div`
     cursor: pointer;
     margin: 5px;
   }
+
   table {
     width: 100%;
     tr {
@@ -59,6 +50,7 @@ export const Ctn = styled.div`
   }
   @media only screen and (max-width: 650px) {
     width: 95%;
+    margin-top: -100px;
     .mobile {
       display: block;
       width: 100%;
