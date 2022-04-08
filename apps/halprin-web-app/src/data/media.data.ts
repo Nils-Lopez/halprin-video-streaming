@@ -2326,6 +2326,7 @@ export const mediaData: Media[] = [
     creditsIds: [23, 6],
   },
   {
+
     media_slug: 'breathing-exploration-self-portrait',
     type: 'audio',
     title: {
@@ -2335,10 +2336,7 @@ export const mediaData: Media[] = [
     category: 'topics',
     moment: 'explo1',
     thumb: '/images/media/thumb/audio.png',
-    url: {
-      en: 'videos/Explo_BreathSelfPortrait_en.mp4',
-      fr: 'videos/Explo_BreathSelfPortrait_fr.mp4',
-    },
+    url: 'y a pas',
     tags: [
       {
         tag_slug: 'breath',

@@ -23,6 +23,14 @@ export type MediaCategory = {
   tag_slug?: string;
 };
 
+export type LocalizedMediaUrl = {
+  fr: string;
+  en: string;
+};
+
+export type MediaUrl = string | LocalizedMediaUrl;
+
+
 export type MediaCategorySlug =
   | 'life-art'
   | 'roadmaps'
@@ -56,7 +64,7 @@ export type CleanedCredit = {
 export type Media = {
   media_slug?: string;
   type?: 'audio' | 'video';
-  url?: string;
+  url?: MediaUrl;
   vimeo_id?: string;
   tracks?: MediaTracks;
   thumb: string;
@@ -73,7 +81,7 @@ export type Media = {
 export type RepoMedia = {
   media_slug: string;
   type?: 'audio' | 'video';
-  url: string;
+  url: MediaUrl;
   vimeo_id: string;
   tracks: MediaTracks;
   thumb: string;
