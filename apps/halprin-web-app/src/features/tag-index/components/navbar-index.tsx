@@ -148,13 +148,15 @@ export const NavbarIndex: FC<Props> = (props) => {
             </div>
             <div className="nav-mobile">
               <div className="alphabetNav-mobile">
-                {alphabetLinks.map((letter) => {
-                  return (
-                    <Link href={'#' + letter} key={letter} passHref>
-                      <p className="link">{letter}</p>
-                    </Link>
-                  );
-                })}
+                <div className="alphabetlinksmobile">
+                  {alphabetLinks.map((letter) => {
+                    return (
+                      <Link href={'#' + letter} key={letter} passHref>
+                        <p className="link">{letter}</p>
+                      </Link>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </div>

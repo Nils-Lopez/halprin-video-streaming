@@ -212,9 +212,9 @@ export class LegacyDvdConverter {
         'path' in medium.$ && medium.$.path?.trim() !== ''
           ? medium.$.path?.trim()
           : {
-            en: medium.$.path_en?.trim(),
-            fr: medium.$.path_fr?.trim(),
-          };
+              en: medium.$.path_en?.trim(),
+              fr: medium.$.path_fr?.trim(),
+            };
       if (!isMediaUrl(mediaUrl)) {
         throw new Error(`Cannot infer mediaUrl for ${medium.en[0]}`);
       }

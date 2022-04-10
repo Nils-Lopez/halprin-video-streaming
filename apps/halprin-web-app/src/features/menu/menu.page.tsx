@@ -76,19 +76,10 @@ export const MenuPage: React.FC<Props> = (props) => {
               }></iframe>
             <div className="nextBtn">
               <button onClick={() => setShowMenu(true)}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="100"
-                  height="100"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#ffffff"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="arrow">
-                  <path d="M9 18l6-6-6-6" />
-                </svg>
+                <div className="arrow">
+                  <div className="arrow-top"></div>
+                  <div className="arrow-bottom"></div>
+                </div>
               </button>
             </div>
           </S.Video>
@@ -177,6 +168,64 @@ export const MenuPage: React.FC<Props> = (props) => {
               </div>
             )}
           </S.Ctn>
+          <S.Mobile>
+            <Link href={menuConfig.menuLinks.videoWorkshops} passHref>
+              <div className="ctn">
+                <img
+                  src={'/images/ui/menu/round.png'}
+                  alt={t('app:menu.workshop')}
+                  onMouseEnter={() => changeMiddleContent('workshop')}
+                  onMouseLeave={() => changeMiddleContent('logo')}
+                  className="roundImg"
+                />
+                <div className="content workshop">
+                  <h2 className="title">Workshop</h2>
+                </div>
+              </div>
+            </Link>
+            <Link href={menuConfig.menuLinks.videoLifeArt} passHref>
+              <div className="ctn lifeart">
+                <img
+                  src={'/images/ui/menu/eye.png'}
+                  alt={t('app:menu.myLifeAndArt')}
+                  onMouseEnter={() => changeMiddleContent('lifeart')}
+                  onMouseLeave={() => changeMiddleContent('logo')}
+                  className="eyeImg"
+                />
+                <div className="content ">
+                  <h2 className="title">Life-Art</h2>
+                </div>
+              </div>
+            </Link>
+            <Link href={menuConfig.menuLinks.videoRoadmaps} passHref>
+              <div className="ctn roadmaps">
+                <img
+                  src={'/images/ui/menu/hand.png'}
+                  alt={t('app:menu.roadmaps')}
+                  onMouseEnter={() => changeMiddleContent('roadmaps')}
+                  onMouseLeave={() => changeMiddleContent('logo')}
+                  className="handImg"
+                />
+                <div className="content ">
+                  <h2 className="title">Roadmaps</h2>
+                </div>
+              </div>
+            </Link>
+            <Link href={menuConfig.menuLinks.videoIndex} passHref>
+              <div className="ctn index">
+                <img
+                  src={'/images/ui/menu/mouth.png'}
+                  alt={t('app:menu.index')}
+                  onMouseEnter={() => changeMiddleContent('index')}
+                  onMouseLeave={() => changeMiddleContent('logo')}
+                  className="mouthImg"
+                />
+                <div className="content">
+                  <h2 className="title">Index</h2>
+                </div>
+              </div>
+            </Link>
+          </S.Mobile>
         </MainLayout>
       )}
     </>

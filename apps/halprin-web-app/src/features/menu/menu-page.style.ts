@@ -118,69 +118,8 @@ export const Circle = styled.div`
   .lifeartTxt {
     color: #a2d2ff;
   }
-  @media only screen and (max-width: 600px) {
-    height: 300px;
-    width: 300px;
-    margin-top: 100px;
-    .topIcon {
-      positon: relative;
-      height: 130px;
-      width: 130px;
-      margin-top: -50px;
-      margin-left: auto;
-      margin-right: auto;
-      cursor: pointer;
-    }
-    .leftIcon {
-      positon: relative;
-      height: 130px;
-      width: 180px;
-      margin-left: -90px;
-      margin-right: auto;
-      cursor: pointer;
-    }
-    .midContainer {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 13px;
-    }
-    .centered {
-      position: relative;
-      margin-right: auto;
-      top: -20px;
-      left: -70px;
-      .logo {
-        position: fixed;
-        margin-left: auto;
-        margin-right: auto;
-        height: 150px;
-        width: 150px;
-        .triangle {
-          cursor: pointer;
-        }
-      }
-      .linkDesc {
-        display: none;
-      }
-    }
-    .rightIcon {
-      positon: relative;
-      height: 110px;
-      width: 100px;
-      margin-right: -60px;
-      margin-top: -26px;
-      margin-left: auto;
-      cursor: pointer;
-    }
-    .bottomIcon {
-      position: relative;
-      height: 180px;
-      width: 200px;
-      margin-left: auto;
-      margin-top: 15px;
-      margin-right: auto;
-      cursor: pointer;
-    }
+  @media only screen and (max-width: 650px) {
+    display: none;
   }
 `;
 
@@ -220,7 +159,7 @@ export const Video = styled.div`
     padding: 1%;
     .video-player {
       margin-top: 150px;
-      width: 500px;
+      width: 300px;
       height: 350px;
     }
   }
@@ -233,10 +172,134 @@ export const Video = styled.div`
     }
   }
   .nextBtn {
-    cursor: pointer;
-    display: flex;
-    justify-content: end;
-    margin-right: 100px;
-    margin-top: -400px;
+    .arrow {
+      cursor: pointer;
+      height: 120px;
+      left: 90%;
+      position: absolute;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      transition: transform 0.1s;
+      width: 70px;
+
+      $transition-time: 0.15s;
+      @media only screen and (max-width: 650px) {
+        top: 85%;
+        left: 53%;
+        width: 40px;
+      }
+      &-top,
+      &-bottom {
+        background-color: #666;
+        height: 4px;
+        left: -5px;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+
+        &:after {
+          background-color: #fff;
+          content: '';
+          height: 100%;
+          position: absolute;
+          top: 0;
+          transition: all $transition-time;
+        }
+      }
+
+      &-top {
+        transform: rotate(45deg);
+        transform-origin: bottom right;
+
+        &:after {
+          left: 100%;
+          right: 0;
+          transition-delay: 0s;
+        }
+      }
+
+      &-bottom {
+        transform: rotate(-45deg);
+        transform-origin: top right;
+
+        &:after {
+          left: 0;
+          right: 100%;
+          transition-delay: $transition-time;
+        }
+      }
+
+      &:hover & {
+        &-top:after {
+          left: 0;
+          transition-delay: $transition-time;
+        }
+
+        &-bottom:after {
+          right: 0;
+          transition-delay: 0s;
+        }
+      }
+
+      &:active {
+        transform: translateX(-50%) translateY(-50%) scale(0.9);
+      }
+    }
+  }
+`;
+
+export const Mobile = styled.div`
+  @media only screen and (min-width: 650px) {
+    display: none;
+  }
+  margin-top: -20px;
+  .eyeImg {
+    height: 70px;
+    margin: auto;
+  }
+  .roundImg {
+    width: 95px;
+    margin: auto;
+  }
+  .handImg {
+    margin: auto;
+    height: 95px;
+  }
+  .lifeart {
+    color: #a2d2ff;
+  }
+  .roadmaps {
+    color: #ffef9f;
+  }
+  .index {
+    color: #ee6055;
+  }
+  .mouthImg {
+    height: 65px;
+    margin: auto;
+  }
+  height: 100%;
+  .ctn {
+    width: 100%;
+    left: 2%;
+    right: 2%;
+    .workshop {
+      color: pink;
+    }
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .content {
+      margin: auto;
+      text-align: center;
+      width: 80%;
+      padding: 8px;
+      .title {
+        font-size: 20px;
+      }
+      .desc {
+        font-size: 13px;
+        color: white;
+      }
+    }
   }
 `;

@@ -32,7 +32,7 @@ export const Ctn = styled.div`
     height: 250px;
     width: 250px;
   }
-  @media only screen and (min-width: 600px) and (max-width: 1000px) {
+  @media only screen and (min-width: 650px) and (max-width: 1000px) {
     .langChoose {
       width: 70%;
       display: flex;
@@ -43,16 +43,19 @@ export const Ctn = styled.div`
       width: 200px;
     }
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 650px) {
     .langChoose {
       margin-left: auto;
       margin-right: auto;
       display: block;
-      margin-top: 10%;
+      .rightBtn {
+        margin-top: 70%;
+      }
+      margin-top: 15%;
     }
     .triangle {
-      height: 200px;
-      width: 200px;
+      height: 100%;
+      width: 100%;
     }
   }
 `;
@@ -98,10 +101,9 @@ export const Video = styled.div`
     }
   }
   @media only screen and (max-width: 550px) {
-    padding: 1%;
     .video-player {
       margin-top: 150px;
-      width: 400px;
+      width: 95%;
       height: 300px;
     }
   }

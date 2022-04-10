@@ -2326,7 +2326,6 @@ export const mediaData: Media[] = [
     creditsIds: [23, 6],
   },
   {
-
     media_slug: 'breathing-exploration-self-portrait',
     type: 'audio',
     title: {

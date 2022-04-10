@@ -41,17 +41,10 @@ export class MediaRepo {
     const slugs = typeof tagSlugs === 'string' ? [tagSlugs] : tagSlugs;
     const categories =
       typeof searchCategs === 'string' ? [searchCategs] : searchCategs;
-
     const data: Media[] = categories
-      ? this.data.filter((media) => {
-          if (media.category) {
-            categories.includes(media.category);
-          }
-        })
+      ? this.data.filter((media) => categories[0] === media.category)
       : this.data;
-
     let filtered: Media[] = [];
-
     if (slugs === undefined) {
       filtered = data;
     } else {

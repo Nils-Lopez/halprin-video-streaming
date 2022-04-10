@@ -53,15 +53,23 @@ export const Ctn = styled.div`
           float: right;
         }
       }
+
       width: 100%;
       .nav-mobile {
         width: 100%;
         display: flex;
         justify-content: center;
-      }
-      .alphabetNav-mobile {
-        display: flex;
-        justify-content: space-around;
+        .alphabetNav-mobile {
+          margin: auto;
+          width: 80%;
+          .alphabetlinksmobile {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            overflow-x: auto;
+            padding-left: 170px;
+          }
+        }
       }
     }
     .desktop {

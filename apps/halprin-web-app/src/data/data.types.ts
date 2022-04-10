@@ -30,7 +30,6 @@ export type LocalizedMediaUrl = {
 
 export type MediaUrl = string | LocalizedMediaUrl;
 
-
 export type MediaCategorySlug =
   | 'life-art'
   | 'roadmaps'

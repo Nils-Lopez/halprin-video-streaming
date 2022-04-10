@@ -403,7 +403,9 @@ export const ContainerIndex: FC<Props> = (props) => {
         </div>
       ) : (
         <div className="video-container">
-          <VideoPlayer video={selectedVideo} />
+          <div className="player">
+            <VideoPlayer video={selectedVideo} />
+          </div>
         </div>
       )}
     </S.Ctn>

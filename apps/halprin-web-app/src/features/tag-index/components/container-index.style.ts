@@ -7,8 +7,11 @@ export const Ctn = styled.div`
   padding-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
-  height: 70%;
-  overflow-y: auto;
+  height: 75%;
+  .container {
+    height: 90%;
+    overflow-y: auto;
+  }
   .selected {
     color: red;
     &:hover {
@@ -49,8 +52,16 @@ export const Ctn = styled.div`
     height: 60%;
   }
   @media only screen and (max-width: 650px) {
-    width: 95%;
-    margin-top: -100px;
+    .video-container {
+      height: 0;
+      background: red;
+      margin-top: -120px;
+    }
+    height: 80%;
+    width: 96%;
+    .container {
+      height: 80%;
+    }
     .mobile {
       display: block;
       width: 100%;
