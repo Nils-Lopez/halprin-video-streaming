@@ -86,8 +86,8 @@ export const Ctn = styled.div`
     max-height: 130px;
   }
   @media only screen and (max-width: 650px) {
-    min-height: 150px;
-    max-height: 150px;
+    min-height: 200px;
+    max-height: 200px;
     .topBar {
       .desktop {
         display: none;

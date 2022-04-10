@@ -32,7 +32,7 @@ export const VideoFooter: React.FC<Props> = (props) => {
       </div>
       <div className="topBar">
         <div className="desktop">
-          <div className="left">LISTNAME: {media[0].category}</div>
+          <div className="left">LISTNAME: {media[0] && media[0].category}</div>
           <div className="center">
             {media.indexOf(selectedVideo) > 0 && (
               <Link

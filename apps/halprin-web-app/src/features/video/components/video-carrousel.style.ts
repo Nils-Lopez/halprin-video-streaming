@@ -91,7 +91,6 @@ export const Carrousel = styled.div`
       }
       .video-title {
         width: 130px;
-        border-top: 2px solid pink;
         background: #0e111c;
         transition: height 0.5s ease-in-out;
       }
@@ -109,28 +108,41 @@ export const Carrousel = styled.div`
   }
   @media only screen and (max-width: 650px) {
     max-width: 90%;
+    margin-top: 30px;
     .slide {
       img {
-        width: 110px;
-        height: 50px;
+        width: 150px;
+        height: 80px;
         object-fit: cover;
       }
       .video-title {
-        width: 110px;
-        border-top: 2px solid pink;
+        width: 150px;
+        height: 30px;
         background: #0e111c;
         transition: height 0.5s ease-in-out;
-        font-size: 10px;
+        font-size: 20px;
       }
-      min-width: 110px;
+      min-width: 150px;
       text-align: center;
       cursor: pointer;
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: 5px;
+      margin-right: 5px;
       &:hover {
         .video-title  {
           width: 110px;
         }
+      }
+    }
+
+    .main {
+      margin-right: -20px;
+      padding-right: 0px;
+      margin-left: 10px;
+      min-width: 180px;
+      .video-title {
+        max-width: 180;
+        background: #0e111c;
+        transition: height 0.5s ease-in-out;
       }
     }
   }

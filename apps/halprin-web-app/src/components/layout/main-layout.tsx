@@ -1,9 +1,7 @@
-import { useState } from 'react';
 import { Layout } from './main-layout.style';
 
 export const MainLayout: React.FC = (props) => {
   const { children } = props;
-  const [mobileMenu, setMobileMenu] = useState(false);
   // const [help, setHelp] = useState(false);
   // const [credits, setCredits] = useState(false);
   return (
@@ -31,24 +29,6 @@ export const MainLayout: React.FC = (props) => {
             )} 
           </div>
         </div> */}
-        {!mobileMenu ? (
-          <div className="mobile-menu-toggle">
-            <button
-              onClick={() => {
-                setMobileMenu(true);
-              }}>
-              <img
-                src={'/images/ui/menu/mouth.png'}
-                alt="Menu"
-                className="mouthImg"
-              />
-            </button>
-          </div>
-        ) : (
-          <div className="mobile-menu">
-            <i className="fa-thin fa-xmark" />{' '}
-          </div>
-        )}
         <main>{children}</main>
       </div>
     </Layout>

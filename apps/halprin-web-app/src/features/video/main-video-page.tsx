@@ -9,6 +9,7 @@ import { MediaRepo } from '@/features/video/repository/media.repo';
 import { TagLabelRepo } from '@/features/video/repository/tag-label.repo';
 import { isNonEmptyString } from '@contredanse/common';
 import { Media, MediaCategorySlug, MediaTag, Tag } from '@/data/data.types';
+import { EmbedMobile } from '../menu/embed/embed-mobile';
 
 type Props = {
   lang: SupportedLang;
@@ -72,9 +73,12 @@ export const MainVideoPage: React.FC<Props> = (props) => {
   return (
     <>
       <MainLayout>
+        <EmbedMobile lang={lang} />
         <S.Ctn>
           <VideoNavbar categories={videoTags} lang={lang} />
-          <VideoPlayer video={selectedVideo} />
+          <div className="video-container">
+            <VideoPlayer video={selectedVideo} />
+          </div>
           <VideoFooter
             lang={lang}
             media={media}

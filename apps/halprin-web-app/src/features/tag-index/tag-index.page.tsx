@@ -10,6 +10,7 @@ import { SupportedLang } from '@/features/video/types';
 import { CreditsRepo } from '../credits/repository/credits.repo';
 import { MediaRepo } from '../video/repository/media.repo';
 import { CleanedCredit, Media, MediaTag, Tag } from '@/data/data.types';
+import { EmbedMobile } from '../menu/embed/embed-mobile';
 
 type Props = {
   lang: SupportedLang;
@@ -106,6 +107,10 @@ export const TagIndexPage: React.FC<Props> = (props) => {
 
   return (
     <MainLayout>
+      <EmbedMobile
+        lang={lang}
+        index={{ selectTag: setSelectedTag, selectVideo: selectVideo }}
+      />
       <S.Ctn>
         <NavbarIndex
           tags={tags}
