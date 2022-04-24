@@ -81,11 +81,18 @@ export const Ctn = styled.div`
       }
     }
   }
+  @media only screen and (min-width: 950px) and (max-height: 782px) {
+    bottom: -25px;
+  }
+  @media only screen and (min-width: 650px) and (max-height: 729px) {
+    position: absolute;
+    z-index: -1;
+  }
   @media only screen and (max-width: 950px) {
     min-height: 130px;
     max-height: 130px;
   }
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 796px) {
     min-height: 200px;
     max-height: 200px;
     .topBar {

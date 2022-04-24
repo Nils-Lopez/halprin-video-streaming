@@ -4,7 +4,7 @@ export const MobileMenu = styled.div`
   .mobile-menu-toggle {
     display: none;
   }
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 796px) {
     .mobile-menu-toggle {
       img {
         height: 35px;

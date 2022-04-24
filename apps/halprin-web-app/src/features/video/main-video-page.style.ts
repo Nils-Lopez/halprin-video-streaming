@@ -28,6 +28,18 @@ export const Ctn = styled.div`
       margin-top: 0px;
     }
   }
+  @media only screen and (min-width: 650px) and (max-height: 740px) {
+    width: 100%;
+    .video-container {
+      width: 80%;
+      margin: auto;
+    }
+  }
+  @media only screen and (min-width: 650px) and (max-height: 670px) {
+    .video-container {
+      max-height: 330px;
+    }
+  }
   @media only screen and (max-width: 650px) and (min-width: 594px) {
     .video-container {
       width: 92%;
@@ -35,7 +47,7 @@ export const Ctn = styled.div`
       margin-top: -40px;
     }
   }
-  font-family: AGMedium;
+  @media only screen and (max-width: ) font-family: AGMedium;
   src: url('../../../public/fonts/akzidenz/AkzidenzGrotesk-Medium.otf')
     format('opentype');
 `;

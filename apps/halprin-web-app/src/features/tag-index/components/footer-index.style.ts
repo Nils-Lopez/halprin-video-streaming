@@ -104,6 +104,13 @@ export const FooterContainer = styled.div`
       filter: brightness(130%);
     }
   }
+  @media only screen and (max-width: 1520px) and (min-width: 650px) {
+    .desktop {
+      .video-topbar {
+        margin-top: 4%;
+      }
+    }
+  }
   @media only screen and (max-width: 650px) {
     .embed-menu {
       display: none;

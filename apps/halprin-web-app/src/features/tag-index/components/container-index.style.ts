@@ -50,6 +50,9 @@ export const Ctn = styled.div`
   }
   @media only screen and (max-width: 1520px) {
     height: 60%;
+    .video-container {
+      margin-top: -3%;
+    }
   }
   @media only screen and (max-width: 650px) {
     .video-container {
