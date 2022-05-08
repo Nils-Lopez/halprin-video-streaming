@@ -27,7 +27,13 @@ export const VideoFooter: React.FC<Props> = (props) => {
         {showMenu ? (
           <EmbedMenu lang="en" />
         ) : (
-          <img src="/images/ui/menu/mouth.png" alt="menu" className="toggle" />
+          <Link href={'/menu'} passHref>
+            <img
+              src="/images/ui/menu/mouth.png"
+              alt="menu"
+              className="toggle"
+            />
+          </Link>
         )}
       </div>
       <div className="topBar">

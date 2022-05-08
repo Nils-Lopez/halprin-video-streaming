@@ -11,7 +11,7 @@ const isWin = process.platform === 'win32';
 
 const escapeFileNamesForPrettier = (filenames) =>
   filenames
-    .map((filename) => `"${isWin ? filename : escape([filename])}"`)
+    .map((filename) => `"${false ? filename : escape([filename])}"`)
     .join(' ');
 
 module.exports = {
