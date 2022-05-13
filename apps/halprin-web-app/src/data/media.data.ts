@@ -2316,7 +2316,7 @@ export const mediaData: Media[] = [
       fr: 'fr/00_Preambule.vtt',
     },
     thumb: '/images/media/thumb/00_Preambule.jpg',
-    url: 'videos/00_Preambule.mp4',
+    url: 'https://vimeo.com/582151572/276dca4c56',
     tags: [
       {
         tag_slug: 'life-art-process',
@@ -2335,7 +2335,7 @@ export const mediaData: Media[] = [
     category: 'topics',
     moment: 'explo1',
     thumb: '/images/media/thumb/audio.png',
-    url: 'y a pas',
+    url: 'https://vimeo.com/582111408/43c46b512d',
     tags: [
       {
         tag_slug: 'breath',

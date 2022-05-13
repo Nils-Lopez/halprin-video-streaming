@@ -18,6 +18,18 @@ export const VideoFooter: React.FC<Props> = (props) => {
 
   const [showMenu, setShowMenu] = useState(false);
 
+  let page = '';
+
+  if (selectedVideo.category && selectedVideo.category === 'workshops') {
+    page = 'workshop';
+  } else if (selectedVideo.category && selectedVideo.category === 'life-art') {
+    page = 'lifeart';
+  } else if (selectedVideo.category && selectedVideo.category === 'roadmaps') {
+    page = 'roadmaps';
+  }
+
+  console.log('pageee : ', page);
+
   return (
     <S.Ctn>
       <div
@@ -25,14 +37,34 @@ export const VideoFooter: React.FC<Props> = (props) => {
         onMouseEnter={() => setShowMenu(true)}
         onMouseLeave={() => setShowMenu(false)}>
         {showMenu ? (
-          <EmbedMenu lang="en" />
+          <EmbedMenu page={page !== '' ? page : undefined} />
         ) : (
           <Link href={'/menu'} passHref>
-            <img
-              src="/images/ui/menu/mouth.png"
-              alt="menu"
-              className="toggle"
-            />
+            {page === 'lifeart' ? (
+              <img
+                src="/images/ui/menu/eye.png"
+                alt="menu"
+                className="toggle"
+              />
+            ) : page === 'roadmaps' ? (
+              <img
+                src="/images/ui/menu/hand.png"
+                alt="menu"
+                className="toggle-road"
+              />
+            ) : page === 'workshop' ? (
+              <img
+                src="/images/ui/menu/round.png"
+                alt="menu"
+                className="toggle"
+              />
+            ) : (
+              <img
+                src="/images/ui/menu/mouth.png"
+                alt="menu"
+                className="toggle"
+              />
+            )}
           </Link>
         )}
       </div>

@@ -72,7 +72,7 @@ export const MainVideoPage: React.FC<Props> = (props) => {
 
   return (
     <>
-      <MainLayout>
+      <MainLayout media={selectedVideo} lang={lang}>
         <EmbedMobile lang={lang} />
         <S.Ctn>
           <VideoNavbar categories={videoTags} lang={lang} />

@@ -4,9 +4,10 @@ import { menuConfig } from './menu.config';
 import * as S from './menu-page.style';
 import { useState } from 'react';
 import Link from 'next/link';
+import { SupportedLang } from '../video/types';
 
 type Props = {
-  lang: string;
+  lang: SupportedLang;
 };
 
 export const MenuPage: React.FC<Props> = (props) => {
@@ -61,12 +62,10 @@ export const MenuPage: React.FC<Props> = (props) => {
   return (
     <>
       {!showMenu ? (
-        <MainLayout>
+        <MainLayout lang={lang}>
           <S.Video>
             <iframe
-              src={
-                'https://player.vimeo.com/external/583334078.sd.mp4?s=685558fc99397ec030c0866c145927d29e602e30&profile_id=165'
-              }
+              src={'https://player.vimeo.com/video/582111408'}
               className="video-player"
               frameBorder="0"
               allow="autoplay; fullscreen; picture-in-picture"
@@ -85,7 +84,7 @@ export const MenuPage: React.FC<Props> = (props) => {
           </S.Video>
         </MainLayout>
       ) : (
-        <MainLayout>
+        <MainLayout lang={lang}>
           <S.Ctn>
             <S.Circle>
               <div className="topIcon">

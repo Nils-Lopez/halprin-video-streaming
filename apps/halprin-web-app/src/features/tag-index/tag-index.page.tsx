@@ -9,7 +9,7 @@ import { TagLabelRepo } from '../video/repository/tag-label.repo';
 import { SupportedLang } from '@/features/video/types';
 import { CreditsRepo } from '../credits/repository/credits.repo';
 import { MediaRepo } from '../video/repository/media.repo';
-import { CleanedCredit, Media, MediaTag, Tag } from '@/data/data.types';
+import { CleanedCredit, Credit, Media, MediaTag, Tag } from '@/data/data.types';
 import { EmbedMobile } from '../menu/embed/embed-mobile';
 
 type Props = {
@@ -31,7 +31,13 @@ export const TagIndexPage: React.FC<Props> = (props) => {
   const [selectedMedia, selectMedia] = useState<Media>({ thumb: 'false' });
   const [selectedVideo, selectVideo] = useState<Media>({ thumb: 'false' });
   const [videoTags, setVideoTags] = useState<Tag[]>([]);
-  const [indexMedia, setIndexMedia] = useState<string[]>(['false']);
+  const [indexMedia, setIndexMedia] = useState<{
+    type: string;
+    data?: string[];
+  }>({ type: 'default' });
+  const [chronologicMedia, setChronologicMedia] = useState<
+    Record<number, Media[]>
+  >({ 0: [{ thumb: 'false' }] });
 
   const tagRepo = new TagRepo();
 
@@ -92,7 +98,7 @@ export const TagIndexPage: React.FC<Props> = (props) => {
   }, [selectedCred]);
 
   useEffect(() => {
-    if (indexMedia[0] === 'true') {
+    if (indexMedia.type === 'loading-media') {
       const media = mediaRepo.get();
       const titles: string[] = [];
       media.map((media) => {
@@ -101,12 +107,53 @@ export const TagIndexPage: React.FC<Props> = (props) => {
           titles.push(title);
         }
       });
-      setIndexMedia(titles.sort());
+      setIndexMedia({ type: 'media', data: titles.sort() });
+    } else if (indexMedia.type === 'loading-date') {
+      const media = mediaRepo.get();
+      const titles: string[][] = [];
+      const credits = creditsRepo.getCredits();
+      const sortedCredits = credits.sort((a, b) => {
+        if (a.year && b.year) {
+          return a.year - b.year;
+        } else return 0;
+      });
+      const years = new Map();
+      credits.map((cred) => {
+        if (cred.index) {
+          if (cred.year && years.get(cred.year)) {
+            const year: number[] = years.get(cred.year);
+            years.set(cred.year, [...years.get(cred.year), cred.id]);
+          } else if (cred.year) {
+            years.set(cred.year, [cred.id]);
+          }
+        }
+      });
+      const getMediaByCredits = (credits: number[]) => {
+        const matchingMedia: Media[] = [];
+        media.map((m: Media) => {
+          if (m.creditsIds) {
+            m.creditsIds.map((id) => {
+              if (credits.includes(id) && !matchingMedia.includes(m)) {
+                matchingMedia.push(m);
+              }
+            });
+          }
+        });
+        return matchingMedia;
+      };
+      const chronologic: any = new Map();
+      years.forEach((ids, year) => {
+        const creditsMedia = getMediaByCredits(ids);
+        chronologic.set(year, creditsMedia);
+      });
+      setIndexMedia({ type: 'date' });
+
+      setChronologicMedia(chronologic);
     }
   }, [indexMedia]);
 
   return (
-    <MainLayout>
+    <MainLayout media={selectedVideo} lang={lang}>
       <EmbedMobile
         lang={lang}
         index={{ selectTag: setSelectedTag, selectVideo: selectVideo }}
@@ -132,6 +179,7 @@ export const TagIndexPage: React.FC<Props> = (props) => {
           credits={creditsLabel}
           lang={lang}
           indexMedia={indexMedia}
+          chronologicMedia={chronologicMedia}
         />
         <FooterIndex
           selectedTag={selectedTag}
