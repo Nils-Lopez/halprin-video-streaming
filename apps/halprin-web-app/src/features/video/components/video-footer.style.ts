@@ -65,6 +65,13 @@ export const Ctn = styled.div`
       height: 30px;
       margin-top: 90px;
     }
+    .toggle-road {
+      margin-top: 79px;
+      margin-left: 34px;
+
+      height: 45px;
+      width: 30px;
+    }
     position: fixed;
   }
   @media only screen and (max-width: 1200px) {

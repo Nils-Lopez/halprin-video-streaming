@@ -72,20 +72,22 @@ export const MainVideoPage: React.FC<Props> = (props) => {
 
   return (
     <>
-      <MainLayout>
-        <EmbedMobile lang={lang} />
-        <S.Ctn>
-          <VideoNavbar categories={videoTags} lang={lang} />
-          <div className="video-container">
-            <VideoPlayer video={selectedVideo} />
-          </div>
-          <VideoFooter
-            lang={lang}
-            media={media}
-            selectedVideo={selectedVideo}
-            selectVideo={selectVideo}
-          />
-        </S.Ctn>
+      <MainLayout media={selectedVideo} lang={lang}>
+        <div>
+          <EmbedMobile lang={lang} />
+          <S.Ctn>
+            <VideoNavbar categories={videoTags} lang={lang} />
+            <div className="video-container">
+              <VideoPlayer video={selectedVideo} />
+            </div>
+            <VideoFooter
+              lang={lang}
+              media={media}
+              selectedVideo={selectedVideo}
+              selectVideo={selectVideo}
+            />
+          </S.Ctn>
+        </div>
       </MainLayout>
     </>
   );

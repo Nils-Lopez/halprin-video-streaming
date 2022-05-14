@@ -179,7 +179,6 @@ export const FooterIndex: FC<Props> = (props) => {
             onMouseLeave={() => setShowMenu(false)}>
             {showMenu ? (
               <EmbedMenu
-                lang={lang}
                 selectVideo={selectVideo}
                 selectedVideo={selectedVideo}
               />

@@ -1,5 +1,5 @@
 import { VideoPlayer } from '@/features/video/components/video-player';
-import React, { FC, Fragment } from 'react';
+import React, { FC, Fragment, ReactFragment } from 'react';
 import * as S from './container-index.style';
 import { MediaRepo } from '../../video/repository/media.repo';
 import { CleanedCredit, Media, Tag } from '@/data/data.types';
@@ -16,7 +16,8 @@ type Props = {
   selectMedia: (media: Media) => void;
   tags: { slug: string; tag: Tag }[];
   lang: SupportedLang;
-  indexMedia: string[];
+  chronologicMedia: Map<number, Media[]>;
+  indexMedia: { type: string; data?: string[] };
 };
 
 export const ContainerIndex: FC<Props> = (props) => {
@@ -30,6 +31,7 @@ export const ContainerIndex: FC<Props> = (props) => {
     selectedVideo,
     selectMedia,
     tags,
+    chronologicMedia,
     lang = 'en',
     indexMedia,
   } = props;
@@ -94,17 +96,18 @@ export const ContainerIndex: FC<Props> = (props) => {
 
   type letterProps = {
     letter: string;
+    titles?: string[];
   };
 
   //RENDER ROWS OF TAGS FOR EACH LETTER :
 
   const TagsDisplayer = (props: letterProps) => {
-    const { letter } = props;
+    const { letter, titles } = props;
     const tags: string[] = [];
 
     //MEDIA INDEX
-    if (indexMedia && indexMedia[0] !== 'true' && indexMedia[0] !== 'false') {
-      indexMedia.map((title: string) => {
+    if (indexMedia.type === 'media' && indexMedia.data) {
+      indexMedia.data.map((title: string) => {
         if (
           title
             .charAt(0)
@@ -115,6 +118,12 @@ export const ContainerIndex: FC<Props> = (props) => {
         ) {
           tags.push(title);
         }
+      });
+    }
+    //DATE INDEX
+    else if (indexMedia.type === 'date' && titles && letter === 'FALSE') {
+      titles.map((title) => {
+        tags.push(title);
       });
     }
     //TAGS INDEX
@@ -132,6 +141,19 @@ export const ContainerIndex: FC<Props> = (props) => {
         }
       });
     }
+
+    const isACredit = (label: string) => {
+      let answer: string | boolean = 'loading';
+      credits.map((credit: CleanedCredit, index: number) => {
+        if (credit.label === label) {
+          answer = true;
+        }
+        if (index === credits.length - 1 && answer !== true) {
+          answer = false;
+        }
+      });
+      return answer;
+    };
 
     return (
       <Fragment key={'letter-tag-' + letter}>
@@ -155,7 +177,11 @@ export const ContainerIndex: FC<Props> = (props) => {
                             : ''
                         }>
                         <button onClick={() => chooseTag(tags[index - 2])}>
-                          {tags[index - 2]}
+                          {isACredit(tags[index - 2]) ? (
+                            <i>{tags[index - 2]}</i>
+                          ) : (
+                            <>{tags[index - 2]}</>
+                          )}
                         </button>
                       </td>
                       <td
@@ -169,7 +195,11 @@ export const ContainerIndex: FC<Props> = (props) => {
                             : ''
                         }>
                         <button onClick={() => chooseTag(tags[index - 1])}>
-                          {tags[index - 1]}
+                          {isACredit(tags[index - 1]) ? (
+                            <i>{tags[index - 1]}</i>
+                          ) : (
+                            <>{tags[index - 1]}</>
+                          )}
                         </button>
                       </td>
                       <td
@@ -181,7 +211,7 @@ export const ContainerIndex: FC<Props> = (props) => {
                             : ''
                         }>
                         <button onClick={() => chooseTag(label)}>
-                          {label}
+                          {isACredit(label) ? <i>{label}</i> : <>{label}</>}
                         </button>
                       </td>
                     </tr>
@@ -200,7 +230,11 @@ export const ContainerIndex: FC<Props> = (props) => {
                               : ''
                           }>
                           <button onClick={() => chooseTag(tags[index + 1])}>
-                            {tags[index + 1]}
+                            {isACredit(tags[index + 1]) ? (
+                              <i>{tags[index + 1]}</i>
+                            ) : (
+                              <>{tags[index + 1]}</>
+                            )}
                           </button>
                         </td>
                         {tags[index + 2] ? (
@@ -215,7 +249,11 @@ export const ContainerIndex: FC<Props> = (props) => {
                                 : ''
                             }>
                             <button onClick={() => chooseTag(tags[index + 2])}>
-                              {tags[index + 2]}
+                              {isACredit(tags[index + 2]) ? (
+                                <i>{tags[index + 2]}</i>
+                              ) : (
+                                <>{tags[index + 2]}</>
+                              )}
                             </button>
                           </td>
                         ) : null}
@@ -237,7 +275,9 @@ export const ContainerIndex: FC<Props> = (props) => {
                     ? 'selected'
                     : ''
                 }>
-                <button onClick={() => chooseTag(tags[0])}>{tags[0]}</button>
+                <button onClick={() => chooseTag(tags[0])}>
+                  {isACredit(tags[0]) ? <i>{tags[0]}</i> : <>{tags[0]}</>}
+                </button>
               </td>
               {tags[1] ? (
                 <td
@@ -248,7 +288,9 @@ export const ContainerIndex: FC<Props> = (props) => {
                       ? 'selected'
                       : ''
                   }>
-                  <button onClick={() => chooseTag(tags[1])}>{tags[1]}</button>
+                  <button onClick={() => chooseTag(tags[1])}>
+                    {isACredit(tags[1]) ? <i>{tags[1]}</i> : <>{tags[1]}</>}
+                  </button>
                 </td>
               ) : null}
             </tr>
@@ -271,7 +313,7 @@ export const ContainerIndex: FC<Props> = (props) => {
                   <button
                     onClick={() => chooseTag(tag)}
                     key={'td-mobile-btn' + letter}>
-                    {tag}
+                    {isACredit(tag) ? <i>{tag}</i> : <>{tag}</>}
                   </button>
                 </td>
               </tr>
@@ -282,26 +324,27 @@ export const ContainerIndex: FC<Props> = (props) => {
     );
   };
 
+  const array = [0];
+
   return (
     <S.Ctn>
       {!selectedVideo || (selectedVideo && selectedVideo.thumb === 'false') ? (
         <div className="container">
           <table>
             <tbody>
-              {indexMedia &&
-              indexMedia[0] !== 'true' &&
-              indexMedia[0] !== 'false'
-                ? indexMedia.map((title: string, index: number) => {
+              {indexMedia.data && indexMedia.type === 'media'
+                ? indexMedia.data.map((title: string, index: number) => {
                     if (
                       index === 0 ||
-                      (title
-                        .charAt(0)
-                        .normalize('NFD')
-                        .replace(/[\u0300-\u036f]/g, '') !==
-                        indexMedia[index - 1]
+                      (indexMedia.data &&
+                        title
                           .charAt(0)
                           .normalize('NFD')
-                          .replace(/[\u0300-\u036f]/g, '') &&
+                          .replace(/[\u0300-\u036f]/g, '') !==
+                          indexMedia.data[index - 1]
+                            .charAt(0)
+                            .normalize('NFD')
+                            .replace(/[\u0300-\u036f]/g, '') &&
                         title
                           .charAt(0)
                           .normalize('NFD')
@@ -332,16 +375,17 @@ export const ContainerIndex: FC<Props> = (props) => {
                         .replace(/[\u0300-\u036f]/g, '') === 'E' &&
                         lang === 'fr' &&
                         index === 17) ||
-                      (title
-                        .charAt(0)
-                        .normalize('NFD')
-                        .replace(/[\u0300-\u036f]/g, '') === 'E' &&
+                      (indexMedia.data &&
+                        title
+                          .charAt(0)
+                          .normalize('NFD')
+                          .replace(/[\u0300-\u036f]/g, '') === 'E' &&
                         lang === 'en' &&
                         title
                           .charAt(0)
                           .normalize('NFD')
                           .replace(/[\u0300-\u036f]/g, '') !==
-                          indexMedia[index - 1]
+                          indexMedia.data[index - 1]
                             .charAt(0)
                             .normalize('NFD')
                             .replace(/[\u0300-\u036f]/g, ''))
@@ -365,6 +409,35 @@ export const ContainerIndex: FC<Props> = (props) => {
                         </Fragment>
                       );
                     }
+                  })
+                : indexMedia.type === 'date'
+                ? array.map((a, index) => {
+                    const elements: ReactFragment[] = [];
+                    chronologicMedia.forEach((media: Media[], year: number) => {
+                      const titles: string[] = [];
+                      media.map((m) => {
+                        if (m.title) {
+                          titles.push(m.title[lang]);
+                        }
+                      });
+                      titles.sort();
+                      elements.push(
+                        <Fragment key={year}>
+                          <tr className="letterTitle">
+                            <th colSpan={3}>{year}</th>
+                          </tr>
+                          <TagsDisplayer titles={titles} letter={'FALSE'} />
+                        </Fragment>
+                      );
+                    });
+
+                    return (
+                      <Fragment key={index}>
+                        {elements.map((e, index) => {
+                          return <Fragment key={index}>{e}</Fragment>;
+                        })}
+                      </Fragment>
+                    );
                   })
                 : orderedLabels.map((label: string, index: number) => {
                     if (

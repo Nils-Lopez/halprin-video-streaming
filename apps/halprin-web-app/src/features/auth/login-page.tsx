@@ -13,7 +13,7 @@ export const LoginPage: React.FC<Props> = () => {
 
   return (
     <>
-      <MainLayout>
+      <MainLayout lang={'en'}>
         <S.Ctn>
           <h1>Login {t('app:page.title')}</h1>
           <LoginForm />

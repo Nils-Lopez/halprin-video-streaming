@@ -31,7 +31,13 @@ export const TagIndexPage: React.FC<Props> = (props) => {
   const [selectedMedia, selectMedia] = useState<Media>({ thumb: 'false' });
   const [selectedVideo, selectVideo] = useState<Media>({ thumb: 'false' });
   const [videoTags, setVideoTags] = useState<Tag[]>([]);
-  const [indexMedia, setIndexMedia] = useState<string[]>(['false']);
+  const [indexMedia, setIndexMedia] = useState<{
+    type: string;
+    data?: string[];
+  }>({ type: 'default' });
+  const [chronologicMedia, setChronologicMedia] = useState<
+    Map<number, Media[]>
+  >(new Map());
 
   const tagRepo = new TagRepo();
 
@@ -92,7 +98,7 @@ export const TagIndexPage: React.FC<Props> = (props) => {
   }, [selectedCred]);
 
   useEffect(() => {
-    if (indexMedia[0] === 'true') {
+    if (indexMedia.type === 'loading-media') {
       const media = mediaRepo.get();
       const titles: string[] = [];
       media.map((media) => {
@@ -101,46 +107,84 @@ export const TagIndexPage: React.FC<Props> = (props) => {
           titles.push(title);
         }
       });
-      setIndexMedia(titles.sort());
+      setIndexMedia({ type: 'media', data: titles.sort() });
+    } else if (indexMedia.type === 'loading-date') {
+      const media = mediaRepo.get();
+      const credits = creditsRepo.getCredits();
+      const years = new Map();
+      credits.map((cred) => {
+        if (cred.index) {
+          if (cred.year && years.get(cred.year)) {
+            const year: number[] = years.get(cred.year);
+            years.set(cred.year, [...year, cred.id]);
+          } else if (cred.year) {
+            years.set(cred.year, [cred.id]);
+          }
+        }
+      });
+      const getMediaByCredits = (credits: number[]) => {
+        const matchingMedia: Media[] = [];
+        media.map((m: Media) => {
+          if (m.creditsIds) {
+            m.creditsIds.map((id) => {
+              if (credits.includes(id) && !matchingMedia.includes(m)) {
+                matchingMedia.push(m);
+              }
+            });
+          }
+        });
+        return matchingMedia;
+      };
+      const chronologic = new Map<number, Media[]>();
+      years.forEach((ids, year) => {
+        const creditsMedia = getMediaByCredits(ids);
+        chronologic.set(year, creditsMedia);
+      });
+      setIndexMedia({ type: 'date' });
+
+      setChronologicMedia(chronologic);
     }
   }, [indexMedia]);
 
   return (
-    <MainLayout>
-      <EmbedMobile
-        lang={lang}
-        index={{ selectTag: setSelectedTag, selectVideo: selectVideo }}
-      />
-      <S.Ctn>
-        <NavbarIndex
-          tags={tags}
-          videoTags={videoTags}
-          selectedVideo={selectedVideo}
+    <MainLayout media={selectedVideo} lang={lang}>
+      <div>
+        <EmbedMobile
           lang={lang}
-          setIndexMedia={setIndexMedia}
-          indexMedia={indexMedia}
+          index={{ selectTag: setSelectedTag, selectVideo: selectVideo }}
         />
-        <ContainerIndex
-          selectedTag={selectedTag}
-          setSelectedTag={setSelectedTag}
-          selectedVideo={selectedVideo}
-          selectVideo={selectVideo}
-          selectedCred={selectedCred}
-          selectCred={selectCred}
-          selectMedia={selectMedia}
-          tags={tags}
-          credits={creditsLabel}
-          lang={lang}
-          indexMedia={indexMedia}
-        />
-        <FooterIndex
-          selectedTag={selectedTag}
-          selectedVideo={selectedVideo}
-          selectVideo={selectVideo}
-          selectedMedia={selectedMedia}
-          lang={lang}
-        />
-      </S.Ctn>
+        <S.Ctn>
+          <NavbarIndex
+            tags={tags}
+            videoTags={videoTags}
+            selectedVideo={selectedVideo}
+            lang={lang}
+            setIndexMedia={setIndexMedia}
+            indexMedia={indexMedia}
+          />
+          <ContainerIndex
+            selectedTag={selectedTag}
+            setSelectedTag={setSelectedTag}
+            selectedVideo={selectedVideo}
+            selectVideo={selectVideo}
+            selectedCred={selectedCred}
+            selectCred={selectCred}
+            selectMedia={selectMedia}
+            tags={tags}
+            credits={creditsLabel}
+            lang={lang}
+            indexMedia={indexMedia}
+            chronologicMedia={chronologicMedia}
+          />
+          <FooterIndex
+            selectedTag={selectedTag}
+            selectedVideo={selectedVideo}
+            selectVideo={selectVideo}
+            selectedMedia={selectedMedia}
+            lang={lang}
+          />
+        </S.Ctn>
+      </div>
     </MainLayout>
   );
 };

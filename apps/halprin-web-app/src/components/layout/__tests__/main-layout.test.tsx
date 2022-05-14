@@ -4,7 +4,7 @@ import { MainLayout } from '@/components/layout/main-layout';
 describe('Layout tests', () => {
   it('should render children', async () => {
     render(
-      <MainLayout>
+      <MainLayout lang="en">
         <div role="article">Hello</div>
       </MainLayout>
     );

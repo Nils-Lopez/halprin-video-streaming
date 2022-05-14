@@ -10,8 +10,8 @@ type Props = {
   videoTags: Tag[];
   lang: SupportedLang;
   selectedVideo: Media;
-  setIndexMedia: (media: string[]) => void;
-  indexMedia: string[];
+  setIndexMedia: (indexMedia: { type: string; data?: string[] }) => void;
+  indexMedia: { type: string; data?: string[] };
 };
 
 export const NavbarIndex: FC<Props> = (props) => {
@@ -50,20 +50,21 @@ export const NavbarIndex: FC<Props> = (props) => {
 
   const alphabet = () => {
     const letters: string[] = [];
-    if (indexMedia && indexMedia[0] !== 'false' && indexMedia[0] !== 'true') {
-      indexMedia.map((title: string, index: number) => {
+    if (indexMedia.data && indexMedia.type === 'media') {
+      indexMedia.data.map((title: string, index: number) => {
         if (
           index === 0 ||
-          (title
-            .charAt(0)
-            .toUpperCase()
-            .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, '') !==
-            indexMedia[index - 1]
+          (indexMedia.data &&
+            title
               .charAt(0)
               .toUpperCase()
               .normalize('NFD')
-              .replace(/[\u0300-\u036f]/g, '') &&
+              .replace(/[\u0300-\u036f]/g, '') !==
+              indexMedia.data[index - 1]
+                .charAt(0)
+                .toUpperCase()
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '') &&
             !letters.includes(
               title
                 .charAt(0)
@@ -81,7 +82,7 @@ export const NavbarIndex: FC<Props> = (props) => {
           );
         }
       });
-    } else {
+    } else if (indexMedia.type === 'default') {
       orderedLabels.forEach((tag: string, index: number) => {
         if (
           index === 0 ||
@@ -121,17 +122,29 @@ export const NavbarIndex: FC<Props> = (props) => {
                 })}
               </div>
               <div className="top-right">
-                <button className="link">DATE</button>
-                {indexMedia[0] !== 'false' ? (
+                {indexMedia.type === 'date' ? (
                   <button
                     className="link"
-                    onClick={() => setIndexMedia(['false'])}>
+                    onClick={() => setIndexMedia({ type: 'default' })}>
                     TAGS
                   </button>
                 ) : (
                   <button
                     className="link"
-                    onClick={() => setIndexMedia(['true'])}>
+                    onClick={() => setIndexMedia({ type: 'loading-date' })}>
+                    DATE
+                  </button>
+                )}
+                {indexMedia.type === 'media' ? (
+                  <button
+                    className="link"
+                    onClick={() => setIndexMedia({ type: 'default' })}>
+                    TAGS
+                  </button>
+                ) : (
+                  <button
+                    className="link"
+                    onClick={() => setIndexMedia({ type: 'loading-media' })}>
                     MEDIA
                   </button>
                 )}
