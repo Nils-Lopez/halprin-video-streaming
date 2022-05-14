@@ -9,7 +9,7 @@ import { TagLabelRepo } from '../video/repository/tag-label.repo';
 import { SupportedLang } from '@/features/video/types';
 import { CreditsRepo } from '../credits/repository/credits.repo';
 import { MediaRepo } from '../video/repository/media.repo';
-import { CleanedCredit, Credit, Media, MediaTag, Tag } from '@/data/data.types';
+import { CleanedCredit, Media, MediaTag, Tag } from '@/data/data.types';
 import { EmbedMobile } from '../menu/embed/embed-mobile';
 
 type Props = {
@@ -35,9 +35,7 @@ export const TagIndexPage: React.FC<Props> = (props) => {
     type: string;
     data?: string[];
   }>({ type: 'default' });
-  const [chronologicMedia, setChronologicMedia] = useState<
-    Record<number, Media[]>
-  >({ 0: [{ thumb: 'false' }] });
+  const [chronologicMedia, setChronologicMedia] = useState<Map<number, Media[]>>(new Map());
 
   const tagRepo = new TagRepo();
 
@@ -110,19 +108,13 @@ export const TagIndexPage: React.FC<Props> = (props) => {
       setIndexMedia({ type: 'media', data: titles.sort() });
     } else if (indexMedia.type === 'loading-date') {
       const media = mediaRepo.get();
-      const titles: string[][] = [];
       const credits = creditsRepo.getCredits();
-      const sortedCredits = credits.sort((a, b) => {
-        if (a.year && b.year) {
-          return a.year - b.year;
-        } else return 0;
-      });
       const years = new Map();
       credits.map((cred) => {
         if (cred.index) {
           if (cred.year && years.get(cred.year)) {
             const year: number[] = years.get(cred.year);
-            years.set(cred.year, [...years.get(cred.year), cred.id]);
+            years.set(cred.year, [...year, cred.id]);
           } else if (cred.year) {
             years.set(cred.year, [cred.id]);
           }
@@ -141,7 +133,7 @@ export const TagIndexPage: React.FC<Props> = (props) => {
         });
         return matchingMedia;
       };
-      const chronologic: any = new Map();
+      const chronologic = new Map<number, Media[]>();
       years.forEach((ids, year) => {
         const creditsMedia = getMediaByCredits(ids);
         chronologic.set(year, creditsMedia);

@@ -21,6 +21,7 @@ export class CreditsRepo {
           credits.push(credit);
         }
       });
+
     });
     return credits;
   };

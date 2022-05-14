@@ -17,6 +17,7 @@ export const HelpModal: React.FC<Props> = (props) => {
       <div className="centered">
         <div className="head">{modal && modal.title}</div>
         <div className="body">{modal && modal.content}</div>
+        <div>{lang}</div>
       </div>
     </S.Modal>
   );

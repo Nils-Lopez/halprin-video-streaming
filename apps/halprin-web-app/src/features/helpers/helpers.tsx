@@ -1,5 +1,4 @@
 import * as S from './helpers.style';
-import Link from 'next/link';
 import { useState } from 'react';
 import { HelpModal } from './components/help-modal';
 import { CredModal } from './components/cred-modal';
@@ -37,9 +36,9 @@ export const Helpers: React.FC<Props> = (props) => {
   const modalContent = help
     ? help
     : {
-        title: 'Help Template',
-        content: "You're on the template of our helping modal",
-      };
+      title: 'Help Template',
+      content: "You're on the template of our helping modal",
+    };
 
   const creditsRepo = new CreditsRepo();
 
