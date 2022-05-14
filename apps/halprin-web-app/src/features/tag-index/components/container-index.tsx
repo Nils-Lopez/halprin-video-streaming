@@ -16,7 +16,7 @@ type Props = {
   selectMedia: (media: Media) => void;
   tags: { slug: string; tag: Tag }[];
   lang: SupportedLang;
-  chronologicMedia: any;
+  chronologicMedia: Map<number, Media[]>;
   indexMedia: { type: string; data?: string[] };
 };
 
@@ -163,16 +163,16 @@ export const ContainerIndex: FC<Props> = (props) => {
               <Fragment key={'tag' + index}>
                 {/* RENDER ROWS OF 3 TAGS : */}
                 {((index + 1) / 3).toFixed(0).toString() ===
-                ((index + 1) / 3).toString() ? (
+                  ((index + 1) / 3).toString() ? (
                   <>
                     <tr className="desktop" key={'tr' + letter + index}>
                       <td
                         className={
                           (selectedTag.label &&
                             toCamelCase(selectedTag.label[lang]) ===
-                              tags[index - 2]) ||
-                          (selectedCred &&
-                            selectedCred.label === tags[index - 2])
+                            tags[index - 2]) ||
+                            (selectedCred &&
+                              selectedCred.label === tags[index - 2])
                             ? 'selected'
                             : ''
                         }>
@@ -188,9 +188,9 @@ export const ContainerIndex: FC<Props> = (props) => {
                         className={
                           (selectedTag.label &&
                             toCamelCase(selectedTag.label[lang]) ===
-                              tags[index - 1]) ||
-                          (selectedCred &&
-                            selectedCred.label === tags[index - 1])
+                            tags[index - 1]) ||
+                            (selectedCred &&
+                              selectedCred.label === tags[index - 1])
                             ? 'selected'
                             : ''
                         }>
@@ -206,7 +206,7 @@ export const ContainerIndex: FC<Props> = (props) => {
                         className={
                           (selectedTag.label &&
                             toCamelCase(selectedTag.label[lang]) === label) ||
-                          (selectedCred && selectedCred.label === label)
+                            (selectedCred && selectedCred.label === label)
                             ? 'selected'
                             : ''
                         }>
@@ -217,15 +217,15 @@ export const ContainerIndex: FC<Props> = (props) => {
                     </tr>
                     {/** RENDER ROWS OF LESS THAN 3 TAGS */}
                     {(!tags[index + 2] && tags[index + 1]) ||
-                    (!tags[index + 3] && tags[index + 1] && tags[index + 2]) ? (
+                      (!tags[index + 3] && tags[index + 1] && tags[index + 2]) ? (
                       <tr className="desktop">
                         <td
                           className={
                             (selectedTag.label &&
                               toCamelCase(selectedTag.label[lang]) ===
-                                tags[index + 1]) ||
-                            (selectedCred &&
-                              selectedCred.label === tags[index + 1])
+                              tags[index + 1]) ||
+                              (selectedCred &&
+                                selectedCred.label === tags[index + 1])
                               ? 'selected'
                               : ''
                           }>
@@ -242,9 +242,9 @@ export const ContainerIndex: FC<Props> = (props) => {
                             className={
                               (selectedTag.label &&
                                 toCamelCase(selectedTag.label[lang]) ===
-                                  tags[index + 2]) ||
-                              (selectedCred &&
-                                selectedCred.label === tags[index + 2])
+                                tags[index + 2]) ||
+                                (selectedCred &&
+                                  selectedCred.label === tags[index + 2])
                                 ? 'selected'
                                 : ''
                             }>
@@ -271,7 +271,7 @@ export const ContainerIndex: FC<Props> = (props) => {
                 className={
                   (selectedTag.label &&
                     toCamelCase(selectedTag.label[lang]) === tags[0]) ||
-                  (selectedCred && selectedCred.label === tags[0])
+                    (selectedCred && selectedCred.label === tags[0])
                     ? 'selected'
                     : ''
                 }>
@@ -284,7 +284,7 @@ export const ContainerIndex: FC<Props> = (props) => {
                   className={
                     (selectedTag.label &&
                       toCamelCase(selectedTag.label[lang]) === tags[1]) ||
-                    (selectedCred && selectedCred.label === tags[1])
+                      (selectedCred && selectedCred.label === tags[1])
                       ? 'selected'
                       : ''
                   }>
@@ -305,7 +305,7 @@ export const ContainerIndex: FC<Props> = (props) => {
                   className={
                     (selectedTag.label &&
                       toCamelCase(selectedTag.label[lang]) === tag) ||
-                    (selectedCred && selectedCred.label === tag)
+                      (selectedCred && selectedCred.label === tag)
                       ? 'selected'
                       : ''
                   }
@@ -334,84 +334,84 @@ export const ContainerIndex: FC<Props> = (props) => {
             <tbody>
               {indexMedia.data && indexMedia.type === 'media'
                 ? indexMedia.data.map((title: string, index: number) => {
-                    if (
-                      index === 0 ||
-                      (indexMedia.data &&
-                        title
-                          .charAt(0)
-                          .normalize('NFD')
-                          .replace(/[\u0300-\u036f]/g, '') !==
-                          indexMedia.data[index - 1]
-                            .charAt(0)
-                            .normalize('NFD')
-                            .replace(/[\u0300-\u036f]/g, '') &&
-                        title
-                          .charAt(0)
-                          .normalize('NFD')
-                          .replace(/[\u0300-\u036f]/g, '') !== 'E')
-                    ) {
-                      return (
-                        <Fragment key={index}>
-                          <tr
-                            className="letterTitle"
-                            id={title.charAt(0).toUpperCase()}>
-                            <th colSpan={3}>
-                              {title
-                                .charAt(0)
-                                .toUpperCase()
-                                .normalize('NFD')
-                                .replace(/[\u0300-\u036f]/g, '')}
-                            </th>
-                          </tr>
-                          <TagsDisplayer
-                            letter={title.charAt(0).toUpperCase()}
-                          />
-                        </Fragment>
-                      );
-                    } else if (
-                      (title
+                  if (
+                    index === 0 ||
+                    (indexMedia.data &&
+                      title
+                        .charAt(0)
+                        .normalize('NFD')
+                        .replace(/[\u0300-\u036f]/g, '') !==
+                      indexMedia.data[index - 1]
+                        .charAt(0)
+                        .normalize('NFD')
+                        .replace(/[\u0300-\u036f]/g, '') &&
+                      title
+                        .charAt(0)
+                        .normalize('NFD')
+                        .replace(/[\u0300-\u036f]/g, '') !== 'E')
+                  ) {
+                    return (
+                      <Fragment key={index}>
+                        <tr
+                          className="letterTitle"
+                          id={title.charAt(0).toUpperCase()}>
+                          <th colSpan={3}>
+                            {title
+                              .charAt(0)
+                              .toUpperCase()
+                              .normalize('NFD')
+                              .replace(/[\u0300-\u036f]/g, '')}
+                          </th>
+                        </tr>
+                        <TagsDisplayer
+                          letter={title.charAt(0).toUpperCase()}
+                        />
+                      </Fragment>
+                    );
+                  } else if (
+                    (title
+                      .charAt(0)
+                      .normalize('NFD')
+                      .replace(/[\u0300-\u036f]/g, '') === 'E' &&
+                      lang === 'fr' &&
+                      index === 17) ||
+                    (indexMedia.data &&
+                      title
                         .charAt(0)
                         .normalize('NFD')
                         .replace(/[\u0300-\u036f]/g, '') === 'E' &&
-                        lang === 'fr' &&
-                        index === 17) ||
-                      (indexMedia.data &&
-                        title
-                          .charAt(0)
-                          .normalize('NFD')
-                          .replace(/[\u0300-\u036f]/g, '') === 'E' &&
-                        lang === 'en' &&
-                        title
-                          .charAt(0)
-                          .normalize('NFD')
-                          .replace(/[\u0300-\u036f]/g, '') !==
-                          indexMedia.data[index - 1]
-                            .charAt(0)
-                            .normalize('NFD')
-                            .replace(/[\u0300-\u036f]/g, ''))
-                    ) {
-                      return (
-                        <Fragment key={index}>
-                          <tr
-                            className="letterTitle"
-                            id={title.charAt(0).toUpperCase()}>
-                            <th colSpan={3}>
-                              {title
-                                .charAt(0)
-                                .toUpperCase()
-                                .normalize('NFD')
-                                .replace(/[\u0300-\u036f]/g, '')}
-                            </th>
-                          </tr>
-                          <TagsDisplayer
-                            letter={title.charAt(0).toUpperCase()}
-                          />
-                        </Fragment>
-                      );
-                    }
-                  })
+                      lang === 'en' &&
+                      title
+                        .charAt(0)
+                        .normalize('NFD')
+                        .replace(/[\u0300-\u036f]/g, '') !==
+                      indexMedia.data[index - 1]
+                        .charAt(0)
+                        .normalize('NFD')
+                        .replace(/[\u0300-\u036f]/g, ''))
+                  ) {
+                    return (
+                      <Fragment key={index}>
+                        <tr
+                          className="letterTitle"
+                          id={title.charAt(0).toUpperCase()}>
+                          <th colSpan={3}>
+                            {title
+                              .charAt(0)
+                              .toUpperCase()
+                              .normalize('NFD')
+                              .replace(/[\u0300-\u036f]/g, '')}
+                          </th>
+                        </tr>
+                        <TagsDisplayer
+                          letter={title.charAt(0).toUpperCase()}
+                        />
+                      </Fragment>
+                    );
+                  }
+                })
                 : indexMedia.type === 'date'
-                ? array.map((a, index) => {
+                  ? array.map((a, index) => {
                     const elements: ReactFragment[] = [];
                     chronologicMedia.forEach((media: Media[], year: number) => {
                       const titles: string[] = [];
@@ -439,17 +439,17 @@ export const ContainerIndex: FC<Props> = (props) => {
                       </Fragment>
                     );
                   })
-                : orderedLabels.map((label: string, index: number) => {
+                  : orderedLabels.map((label: string, index: number) => {
                     if (
                       index === 0 ||
                       label
                         .charAt(0)
                         .normalize('NFD')
                         .replace(/[\u0300-\u036f]/g, '') !==
-                        orderedLabels[index - 1]
-                          .charAt(0)
-                          .normalize('NFD')
-                          .replace(/[\u0300-\u036f]/g, '')
+                      orderedLabels[index - 1]
+                        .charAt(0)
+                        .normalize('NFD')
+                        .replace(/[\u0300-\u036f]/g, '')
                     ) {
                       return (
                         <Fragment key={index}>

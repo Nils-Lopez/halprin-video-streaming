@@ -13,7 +13,7 @@ export class CreditsRepo {
   getCredits = () => {
     return this.data;
   };
-  getMediaCredits = (ids: number[]) => {
+  getMediaCredits = (ids: number[]): Credit[] => {
     const credits: Credit[] = [];
     this.data.map((credit: Credit) => {
       ids.map((id: number) => {
