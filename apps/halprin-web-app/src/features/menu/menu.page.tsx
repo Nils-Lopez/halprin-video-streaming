@@ -85,10 +85,92 @@ export const MenuPage: React.FC<Props> = (props) => {
         </MainLayout>
       ) : (
         <MainLayout lang={lang}>
-          <S.Ctn>
-            <S.Circle>
-              <div className="topIcon">
-                <Link href={menuConfig.menuLinks.videoWorkshops} passHref>
+          <div>
+            <S.Ctn>
+              <S.Circle>
+                <div className="topIcon">
+                  <Link href={menuConfig.menuLinks.videoWorkshops} passHref>
+                    <img
+                      src={'/images/ui/menu/round.png'}
+                      alt={t('app:menu.workshop')}
+                      onMouseEnter={() => changeMiddleContent('workshop')}
+                      onMouseLeave={() => changeMiddleContent('logo')}
+                      className="roundImg"
+                    />
+                  </Link>
+                </div>
+                <div className="midContainer">
+                  <div className="leftIcon">
+                    <Link href={menuConfig.menuLinks.videoLifeArt} passHref>
+                      <img
+                        src={'/images/ui/menu/eye.png'}
+                        alt={t('app:menu.myLifeAndArt')}
+                        onMouseEnter={() => changeMiddleContent('lifeart')}
+                        onMouseLeave={() => changeMiddleContent('logo')}
+                        className="eyeImg"
+                      />
+                    </Link>
+                  </div>
+                  <div className="centered">
+                    {midContent === 'logo' ? (
+                      <>
+                        <div className="logo">
+                          <img
+                            src={
+                              '/images/ui/menu/triangle-halprin-white-' +
+                              'en' +
+                              '.png'
+                            }
+                            alt="Anna Halprin - Dancing Life"
+                            className="triangle"
+                          />
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <div className={'linkDesc ' + midClassName}>
+                          <p>{midTitle.toUpperCase()}</p>
+                          <p>{midBody}</p>
+                        </div>
+                      </>
+                    )}
+                  </div>
+                  <div className="rightIcon">
+                    <Link href={menuConfig.menuLinks.videoRoadmaps} passHref>
+                      <img
+                        src={'/images/ui/menu/hand.png'}
+                        alt={t('app:menu.roadmaps')}
+                        onMouseEnter={() => changeMiddleContent('roadmaps')}
+                        onMouseLeave={() => changeMiddleContent('logo')}
+                        className="handImg"
+                      />
+                    </Link>
+                  </div>
+                </div>
+                <div className="bottomIcon">
+                  <Link href={menuConfig.menuLinks.videoIndex} passHref>
+                    <img
+                      src={'/images/ui/menu/mouth.png'}
+                      alt={t('app:menu.index')}
+                      onMouseEnter={() => changeMiddleContent('index')}
+                      onMouseLeave={() => changeMiddleContent('logo')}
+                      className="mouthImg"
+                    />
+                  </Link>
+                </div>
+              </S.Circle>
+              {midContent === 'desc' && (
+                <div className="mobileDesc">
+                  <div className={midClassName}>
+                    <p>{midTitle.toUpperCase()}</p>
+                    <p>{midBody}</p>
+                  </div>
+                </div>
+              )}
+            </S.Ctn>
+            <S.Mobile>
+              <Link href={menuConfig.menuLinks.videoWorkshops} passHref>
+                <div className="ctn">
                   <img
                     src={'/images/ui/menu/round.png'}
                     alt={t('app:menu.workshop')}
@@ -96,58 +178,41 @@ export const MenuPage: React.FC<Props> = (props) => {
                     onMouseLeave={() => changeMiddleContent('logo')}
                     className="roundImg"
                   />
-                </Link>
-              </div>
-              <div className="midContainer">
-                <div className="leftIcon">
-                  <Link href={menuConfig.menuLinks.videoLifeArt} passHref>
-                    <img
-                      src={'/images/ui/menu/eye.png'}
-                      alt={t('app:menu.myLifeAndArt')}
-                      onMouseEnter={() => changeMiddleContent('lifeart')}
-                      onMouseLeave={() => changeMiddleContent('logo')}
-                      className="eyeImg"
-                    />
-                  </Link>
+                  <div className="content workshop">
+                    <h2 className="title">Workshop</h2>
+                  </div>
                 </div>
-                <div className="centered">
-                  {midContent === 'logo' ? (
-                    <>
-                      <div className="logo">
-                        <img
-                          src={
-                            '/images/ui/menu/triangle-halprin-white-' +
-                            'en' +
-                            '.png'
-                          }
-                          alt="Anna Halprin - Dancing Life"
-                          className="triangle"
-                        />
-                      </div>
-                    </>
-                  ) : (
-                    <>
-                      <div className={'linkDesc ' + midClassName}>
-                        <p>{midTitle.toUpperCase()}</p>
-                        <p>{midBody}</p>
-                      </div>
-                    </>
-                  )}
+              </Link>
+              <Link href={menuConfig.menuLinks.videoLifeArt} passHref>
+                <div className="ctn lifeart">
+                  <img
+                    src={'/images/ui/menu/eye.png'}
+                    alt={t('app:menu.myLifeAndArt')}
+                    onMouseEnter={() => changeMiddleContent('lifeart')}
+                    onMouseLeave={() => changeMiddleContent('logo')}
+                    className="eyeImg"
+                  />
+                  <div className="content ">
+                    <h2 className="title">Life-Art</h2>
+                  </div>
                 </div>
-                <div className="rightIcon">
-                  <Link href={menuConfig.menuLinks.videoRoadmaps} passHref>
-                    <img
-                      src={'/images/ui/menu/hand.png'}
-                      alt={t('app:menu.roadmaps')}
-                      onMouseEnter={() => changeMiddleContent('roadmaps')}
-                      onMouseLeave={() => changeMiddleContent('logo')}
-                      className="handImg"
-                    />
-                  </Link>
+              </Link>
+              <Link href={menuConfig.menuLinks.videoRoadmaps} passHref>
+                <div className="ctn roadmaps">
+                  <img
+                    src={'/images/ui/menu/hand.png'}
+                    alt={t('app:menu.roadmaps')}
+                    onMouseEnter={() => changeMiddleContent('roadmaps')}
+                    onMouseLeave={() => changeMiddleContent('logo')}
+                    className="handImg"
+                  />
+                  <div className="content ">
+                    <h2 className="title">Roadmaps</h2>
+                  </div>
                 </div>
-              </div>
-              <div className="bottomIcon">
-                <Link href={menuConfig.menuLinks.videoIndex} passHref>
+              </Link>
+              <Link href={menuConfig.menuLinks.videoIndex} passHref>
+                <div className="ctn index">
                   <img
                     src={'/images/ui/menu/mouth.png'}
                     alt={t('app:menu.index')}
@@ -155,76 +220,13 @@ export const MenuPage: React.FC<Props> = (props) => {
                     onMouseLeave={() => changeMiddleContent('logo')}
                     className="mouthImg"
                   />
-                </Link>
-              </div>
-            </S.Circle>
-            {midContent === 'desc' && (
-              <div className="mobileDesc">
-                <div className={midClassName}>
-                  <p>{midTitle.toUpperCase()}</p>
-                  <p>{midBody}</p>
+                  <div className="content">
+                    <h2 className="title">Index</h2>
+                  </div>
                 </div>
-              </div>
-            )}
-          </S.Ctn>
-          <S.Mobile>
-            <Link href={menuConfig.menuLinks.videoWorkshops} passHref>
-              <div className="ctn">
-                <img
-                  src={'/images/ui/menu/round.png'}
-                  alt={t('app:menu.workshop')}
-                  onMouseEnter={() => changeMiddleContent('workshop')}
-                  onMouseLeave={() => changeMiddleContent('logo')}
-                  className="roundImg"
-                />
-                <div className="content workshop">
-                  <h2 className="title">Workshop</h2>
-                </div>
-              </div>
-            </Link>
-            <Link href={menuConfig.menuLinks.videoLifeArt} passHref>
-              <div className="ctn lifeart">
-                <img
-                  src={'/images/ui/menu/eye.png'}
-                  alt={t('app:menu.myLifeAndArt')}
-                  onMouseEnter={() => changeMiddleContent('lifeart')}
-                  onMouseLeave={() => changeMiddleContent('logo')}
-                  className="eyeImg"
-                />
-                <div className="content ">
-                  <h2 className="title">Life-Art</h2>
-                </div>
-              </div>
-            </Link>
-            <Link href={menuConfig.menuLinks.videoRoadmaps} passHref>
-              <div className="ctn roadmaps">
-                <img
-                  src={'/images/ui/menu/hand.png'}
-                  alt={t('app:menu.roadmaps')}
-                  onMouseEnter={() => changeMiddleContent('roadmaps')}
-                  onMouseLeave={() => changeMiddleContent('logo')}
-                  className="handImg"
-                />
-                <div className="content ">
-                  <h2 className="title">Roadmaps</h2>
-                </div>
-              </div>
-            </Link>
-            <Link href={menuConfig.menuLinks.videoIndex} passHref>
-              <div className="ctn index">
-                <img
-                  src={'/images/ui/menu/mouth.png'}
-                  alt={t('app:menu.index')}
-                  onMouseEnter={() => changeMiddleContent('index')}
-                  onMouseLeave={() => changeMiddleContent('logo')}
-                  className="mouthImg"
-                />
-                <div className="content">
-                  <h2 className="title">Index</h2>
-                </div>
-              </div>
-            </Link>
-          </S.Mobile>
+              </Link>
+            </S.Mobile>
+          </div>
         </MainLayout>
       )}
     </>

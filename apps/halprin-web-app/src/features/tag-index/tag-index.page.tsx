@@ -154,41 +154,43 @@ export const TagIndexPage: React.FC<Props> = (props) => {
 
   return (
     <MainLayout media={selectedVideo} lang={lang}>
-      <EmbedMobile
-        lang={lang}
-        index={{ selectTag: setSelectedTag, selectVideo: selectVideo }}
-      />
-      <S.Ctn>
-        <NavbarIndex
-          tags={tags}
-          videoTags={videoTags}
-          selectedVideo={selectedVideo}
+      <div>
+        <EmbedMobile
           lang={lang}
-          setIndexMedia={setIndexMedia}
-          indexMedia={indexMedia}
+          index={{ selectTag: setSelectedTag, selectVideo: selectVideo }}
         />
-        <ContainerIndex
-          selectedTag={selectedTag}
-          setSelectedTag={setSelectedTag}
-          selectedVideo={selectedVideo}
-          selectVideo={selectVideo}
-          selectedCred={selectedCred}
-          selectCred={selectCred}
-          selectMedia={selectMedia}
-          tags={tags}
-          credits={creditsLabel}
-          lang={lang}
-          indexMedia={indexMedia}
-          chronologicMedia={chronologicMedia}
-        />
-        <FooterIndex
-          selectedTag={selectedTag}
-          selectedVideo={selectedVideo}
-          selectVideo={selectVideo}
-          selectedMedia={selectedMedia}
-          lang={lang}
-        />
-      </S.Ctn>
+        <S.Ctn>
+          <NavbarIndex
+            tags={tags}
+            videoTags={videoTags}
+            selectedVideo={selectedVideo}
+            lang={lang}
+            setIndexMedia={setIndexMedia}
+            indexMedia={indexMedia}
+          />
+          <ContainerIndex
+            selectedTag={selectedTag}
+            setSelectedTag={setSelectedTag}
+            selectedVideo={selectedVideo}
+            selectVideo={selectVideo}
+            selectedCred={selectedCred}
+            selectCred={selectCred}
+            selectMedia={selectMedia}
+            tags={tags}
+            credits={creditsLabel}
+            lang={lang}
+            indexMedia={indexMedia}
+            chronologicMedia={chronologicMedia}
+          />
+          <FooterIndex
+            selectedTag={selectedTag}
+            selectedVideo={selectedVideo}
+            selectVideo={selectVideo}
+            selectedMedia={selectedMedia}
+            lang={lang}
+          />
+        </S.Ctn>
+      </div>
     </MainLayout>
   );
 };

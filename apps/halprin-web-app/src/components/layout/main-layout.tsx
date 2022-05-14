@@ -6,6 +6,7 @@ import { Layout } from './main-layout.style';
 type Props = {
   help?: { title: string; content: string };
   media?: Media;
+  children: JSX.Element;
   lang: SupportedLang;
 };
 

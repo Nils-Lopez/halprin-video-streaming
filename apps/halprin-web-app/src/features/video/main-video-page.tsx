@@ -30,13 +30,13 @@ export const MainVideoPage: React.FC<Props> = (props) => {
   const media =
     searchType === 'category'
       ? new MediaRepo().search({
-          ...(isNonEmptyString(categorySlug)
-            ? { categories: [categorySlug] }
-            : {}),
-        })
+        ...(isNonEmptyString(categorySlug)
+          ? { categories: [categorySlug] }
+          : {}),
+      })
       : new MediaRepo().search({
-          ...(isNonEmptyString(tagSlugs[0]) ? { tagSlugs: [tagSlugs[0]] } : {}),
-        });
+        ...(isNonEmptyString(tagSlugs[0]) ? { tagSlugs: [tagSlugs[0]] } : {}),
+      });
 
   useEffect(() => {
     if (
@@ -73,19 +73,21 @@ export const MainVideoPage: React.FC<Props> = (props) => {
   return (
     <>
       <MainLayout media={selectedVideo} lang={lang}>
-        <EmbedMobile lang={lang} />
-        <S.Ctn>
-          <VideoNavbar categories={videoTags} lang={lang} />
-          <div className="video-container">
-            <VideoPlayer video={selectedVideo} />
-          </div>
-          <VideoFooter
-            lang={lang}
-            media={media}
-            selectedVideo={selectedVideo}
-            selectVideo={selectVideo}
-          />
-        </S.Ctn>
+        <div>
+          <EmbedMobile lang={lang} />
+          <S.Ctn>
+            <VideoNavbar categories={videoTags} lang={lang} />
+            <div className="video-container">
+              <VideoPlayer video={selectedVideo} />
+            </div>
+            <VideoFooter
+              lang={lang}
+              media={media}
+              selectedVideo={selectedVideo}
+              selectVideo={selectVideo}
+            />
+          </S.Ctn>
+        </div>
       </MainLayout>
     </>
   );

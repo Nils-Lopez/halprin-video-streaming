@@ -80,8 +80,8 @@ export const FooterIndex: FC<Props> = (props) => {
                     </Link>
                   )}
                   {selectedTag &&
-                  !selectedTag.media &&
-                  !selectedMedia ? null : (
+                    !selectedTag.media &&
+                    !selectedMedia ? null : (
                     <>
                       {media.indexOf(selectedVideo) + 1} / {media.length}
                     </>
@@ -179,7 +179,7 @@ export const FooterIndex: FC<Props> = (props) => {
             onMouseLeave={() => setShowMenu(false)}>
             {showMenu ? (
               <EmbedMenu
-                lang={lang}
+
                 selectVideo={selectVideo}
                 selectedVideo={selectedVideo}
               />

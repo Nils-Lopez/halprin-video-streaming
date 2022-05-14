@@ -28,7 +28,7 @@ export const CreditsPage: React.FC<Props> = (props) => {
 
   return (
     <>
-      <MainLayout>
+      <MainLayout lang={"en"}>
         <S.Ctn>
           <h1>Credits</h1>
           <span>Todo list the credits</span>
