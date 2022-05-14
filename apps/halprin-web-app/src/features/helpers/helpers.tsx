@@ -36,9 +36,9 @@ export const Helpers: React.FC<Props> = (props) => {
   const modalContent = help
     ? help
     : {
-      title: 'Help Template',
-      content: "You're on the template of our helping modal",
-    };
+        title: 'Help Template',
+        content: "You're on the template of our helping modal",
+      };
 
   const creditsRepo = new CreditsRepo();
 

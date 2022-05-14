@@ -35,7 +35,9 @@ export const TagIndexPage: React.FC<Props> = (props) => {
     type: string;
     data?: string[];
   }>({ type: 'default' });
-  const [chronologicMedia, setChronologicMedia] = useState<Map<number, Media[]>>(new Map());
+  const [chronologicMedia, setChronologicMedia] = useState<
+    Map<number, Media[]>
+  >(new Map());
 
   const tagRepo = new TagRepo();
 
