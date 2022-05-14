@@ -30,13 +30,13 @@ export const MainVideoPage: React.FC<Props> = (props) => {
   const media =
     searchType === 'category'
       ? new MediaRepo().search({
-        ...(isNonEmptyString(categorySlug)
-          ? { categories: [categorySlug] }
-          : {}),
-      })
+          ...(isNonEmptyString(categorySlug)
+            ? { categories: [categorySlug] }
+            : {}),
+        })
       : new MediaRepo().search({
-        ...(isNonEmptyString(tagSlugs[0]) ? { tagSlugs: [tagSlugs[0]] } : {}),
-      });
+          ...(isNonEmptyString(tagSlugs[0]) ? { tagSlugs: [tagSlugs[0]] } : {}),
+        });
 
   useEffect(() => {
     if (
