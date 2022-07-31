@@ -16,6 +16,34 @@ export const Ctn = styled.div`
   @media only screen and (max-width: 1920px) and (max-height: 830px) {
     height: 480px;
   }
+  .favBtn-index {
+    position: absolute;
+    margin-left: 51.5%;
+    margin-top: 0.3%;
+  }
+  .credBtn-index {
+    position: absolute;
+    margin-left: 50.2%;
+    margin-top: 0.3%;
+  }
+  .favBtn-video {
+    position: absolute;
+    margin-left: 72.5%;
+    margin-top: 0.3%;
+  }
+  .credBtn-video {
+    position: absolute;
+    margin-left: 71.2%;
+    margin-top: 0.3%;
+  }
+  .login-card {
+    width: 50%;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 12%;
+  }
   margin-left: auto;
   margin-right: auto
   margin-top: 0;

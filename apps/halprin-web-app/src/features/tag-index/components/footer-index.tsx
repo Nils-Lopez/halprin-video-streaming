@@ -27,6 +27,8 @@ export const FooterIndex: FC<Props> = (props) => {
   } = props;
   const [media, setMedia] = useState(repo.findByCategory('index'));
   const [showMenu, setShowMenu] = useState(false);
+  const [allHover, setAllHover] = useState(false);
+  const [favHover, setFavHover] = useState(false);
 
   useEffect(() => {
     if (
@@ -56,27 +58,16 @@ export const FooterIndex: FC<Props> = (props) => {
                         '#' + media[media.indexOf(selectedVideo) - 1].media_slug
                       }
                       passHref>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="icon icon-tabler icon-tabler-chevrons-left center-icon"
-                        width="27"
-                        height="27"
-                        viewBox="0 0 24 24"
-                        strokeWidth="2"
-                        stroke="currentColor"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
+                      <button
                         onClick={() => {
                           selectVideo(media[media.indexOf(selectedVideo) - 1]);
                         }}>
-                        <path
-                          stroke="none"
-                          d="M0 0h24v24H0z"
-                          fill="none"></path>
-                        <polyline points="11 7 6 12 11 17"></polyline>
-                        <polyline points="17 7 12 12 17 17"></polyline>
-                      </svg>
+                        <img
+                          src="/images/ui/elements/left-arrow-halprin.png"
+                          alt="<"
+                          className="arrow dir-left"
+                        />
+                      </button>
                     </Link>
                   )}
                   {selectedTag &&
@@ -92,45 +83,62 @@ export const FooterIndex: FC<Props> = (props) => {
                         '#' + media[media.indexOf(selectedVideo) + 1].media_slug
                       }
                       passHref>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="icon icon-tabler icon-tabler-chevrons-right center-icon"
-                        width="27"
-                        height="27"
-                        viewBox="0 0 24 24"
-                        strokeWidth="2"
-                        stroke="currentColor"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
+                      <button
                         onClick={() => {
                           selectVideo(media[media.indexOf(selectedVideo) + 1]);
                         }}>
-                        <path
-                          stroke="none"
-                          d="M0 0h24v24H0z"
-                          fill="none"></path>
-                        <polyline points="7 7 12 12 7 17"></polyline>
-                        <polyline points="13 7 18 12 13 17"></polyline>
-                      </svg>
+                        <img
+                          src="/images/ui/elements/right-arrow-halprin.png"
+                          alt=">"
+                          className="arrow dir-right"
+                        />
+                      </button>
                     </Link>
                   )}
                 </div>
                 <div className="bottom">
                   <Link href="/video/all" passHref>
-                    ALL
+                    {allHover ? (
+                      <img
+                        src="/images/ui/elements/all-halprin-hover.png"
+                        onMouseLeave={() => setAllHover(false)}
+                        alt="All"
+                        className="allBtn"
+                      />
+                    ) : (
+                      <img
+                        src="/images/ui/elements/all-halprin.png"
+                        onMouseEnter={() => setAllHover(true)}
+                        alt="All"
+                        className="allBtn"
+                      />
+                    )}
                   </Link>
                   <Link href="/video/favorites" passHref>
-                    Fav
+                    {favHover ? (
+                      <img
+                        src="/images/ui/elements/favorite-halprin.png"
+                        onMouseLeave={() => setFavHover(false)}
+                        alt="Favorite"
+                        className="favBtn"
+                      />
+                    ) : (
+                      <img
+                        src="/images/ui/elements/favorite-hover-halprin.png"
+                        onMouseEnter={() => setFavHover(true)}
+                        alt="Favorite"
+                        className="favBtn"
+                      />
+                    )}
                   </Link>
-                  <Link href="/video/already-seens" passHref>
+                  <Link href="/video/watched" passHref>
                     <img
                       src="/images/ui/video/eye-arrow.png"
                       className="btn-icon"
                       alt="Already seen"
                     />
                   </Link>
-                  <Link href="/video/unseens" passHref>
+                  <Link href="/video/unwatched" passHref>
                     <img
                       src="/images/ui/video/eye.png"
                       className="btn-icon"
@@ -149,20 +157,47 @@ export const FooterIndex: FC<Props> = (props) => {
           ) : (
             <div className="index-topbar">
               <Link href="/video/all" passHref>
-                All&nbsp;
+                {allHover ? (
+                  <img
+                    src="/images/ui/elements/all-halprin-hover.png"
+                    onMouseLeave={() => setAllHover(false)}
+                    alt="All"
+                    className="allBtn"
+                  />
+                ) : (
+                  <img
+                    src="/images/ui/elements/all-halprin.png"
+                    onMouseEnter={() => setAllHover(true)}
+                    alt="All"
+                    className="allBtn"
+                  />
+                )}
               </Link>
-
               <Link href="/video/favorites" passHref>
-                Fav
+                {favHover ? (
+                  <img
+                    src="/images/ui/elements/favorite-halprin.png"
+                    onMouseLeave={() => setFavHover(false)}
+                    alt="Favorite"
+                    className="favBtn"
+                  />
+                ) : (
+                  <img
+                    src="/images/ui/elements/favorite-hover-halprin.png"
+                    onMouseEnter={() => setFavHover(true)}
+                    alt="Favorite"
+                    className="favBtn"
+                  />
+                )}
               </Link>
               <Link href="/video/already-seens" passHref>
                 <img
-                  src="/images/ui/video/eye-arrow.png"
+                  src="/images/ui/video/watched.png"
                   className="btn-icon"
                   alt="Already seen"
                 />
               </Link>
-              <Link href="/video/unseens" passHref>
+              <Link href="/video/unwatched" passHref>
                 <img
                   src="/images/ui/video/eye.png"
                   className="btn-icon"
@@ -176,6 +211,8 @@ export const FooterIndex: FC<Props> = (props) => {
           <div
             className="embed-menu desktop"
             onMouseEnter={() => setShowMenu(true)}
+            onMouseOver={() => setShowMenu(true)}
+            onFocus={() => setShowMenu(true)}
             onMouseLeave={() => setShowMenu(false)}>
             {showMenu ? (
               <EmbedMenu
@@ -194,10 +231,7 @@ export const FooterIndex: FC<Props> = (props) => {
             <div className="video-topbar">
               <div className="head">
                 <div className="left">
-                  {lang === 'en' ? 'LISTNAME:   ' : 'NOM DE LISTE:  '}
-                  {selectedTag && selectedTag.label ? (
-                    <>[INDEX] {selectedTag.label[lang]}</>
-                  ) : null}
+                  {selectedTag && selectedTag.label ? <>[INDEX]</> : null}
                 </div>
                 <div className="center">
                   {media.indexOf(selectedVideo) > 0 && (
@@ -206,27 +240,25 @@ export const FooterIndex: FC<Props> = (props) => {
                         '#' + media[media.indexOf(selectedVideo) - 1].media_slug
                       }
                       passHref>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="icon icon-tabler icon-tabler-chevrons-left center-icon"
-                        width="27"
-                        height="27"
-                        viewBox="0 0 24 24"
-                        strokeWidth="2"
-                        stroke="currentColor"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        onClick={() => {
-                          selectVideo(media[media.indexOf(selectedVideo) - 1]);
-                        }}>
-                        <path
-                          stroke="none"
-                          d="M0 0h24v24H0z"
-                          fill="none"></path>
-                        <polyline points="11 7 6 12 11 17"></polyline>
-                        <polyline points="17 7 12 12 17 17"></polyline>
-                      </svg>
+                      <Link
+                        href={
+                          '#' +
+                          media[media.indexOf(selectedVideo) - 1].media_slug
+                        }
+                        passHref>
+                        <button
+                          onClick={() => {
+                            selectVideo(
+                              media[media.indexOf(selectedVideo) - 1]
+                            );
+                          }}>
+                          <img
+                            src="/images/ui/elements/left-arrow-halprin.png"
+                            alt="<"
+                            className="arrow dir-left"
+                          />
+                        </button>
+                      </Link>
                     </Link>
                   )}
                   {selectedTag && !selectedTag.media ? null : (
@@ -240,36 +272,53 @@ export const FooterIndex: FC<Props> = (props) => {
                         '#' + media[media.indexOf(selectedVideo) + 1].media_slug
                       }
                       passHref>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="icon icon-tabler icon-tabler-chevrons-right center-icon"
-                        width="27"
-                        height="27"
-                        viewBox="0 0 24 24"
-                        strokeWidth="2"
-                        stroke="currentColor"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
+                      <button
                         onClick={() => {
                           selectVideo(media[media.indexOf(selectedVideo) + 1]);
                         }}>
-                        <path
-                          stroke="none"
-                          d="M0 0h24v24H0z"
-                          fill="none"></path>
-                        <polyline points="7 7 12 12 7 17"></polyline>
-                        <polyline points="13 7 18 12 13 17"></polyline>
-                      </svg>
+                        <img
+                          src="/images/ui/elements/right-arrow-halprin.png"
+                          alt=">"
+                          className="arrow dir-right"
+                        />
+                      </button>
                     </Link>
                   )}
                 </div>
                 <div className="right">
                   <Link href="/video/all" passHref>
-                    ALL
+                    {allHover ? (
+                      <img
+                        src="/images/ui/elements/all-halprin-hover.png"
+                        onMouseLeave={() => setAllHover(false)}
+                        alt="All"
+                        className="allBtn"
+                      />
+                    ) : (
+                      <img
+                        src="/images/ui/elements/all-halprin.png"
+                        onMouseEnter={() => setAllHover(true)}
+                        alt="All"
+                        className="allBtn"
+                      />
+                    )}
                   </Link>
                   <Link href="/video/favorites" passHref>
-                    Fav
+                    {favHover ? (
+                      <img
+                        src="/images/ui/elements/favorite-halprin.png"
+                        onMouseEnter={() => setFavHover(false)}
+                        alt="Favorite"
+                        className="favBtn"
+                      />
+                    ) : (
+                      <img
+                        src="/images/ui/elements/favorite-hover-halprin.png"
+                        onMouseEnter={() => setFavHover(true)}
+                        alt="Favorite"
+                        className="favBtn"
+                      />
+                    )}
                   </Link>
                   <Link href="/video/already-seens" passHref>
                     <img
@@ -297,17 +346,42 @@ export const FooterIndex: FC<Props> = (props) => {
           ) : (
             <div className="index-topbar">
               <div className="left">
-                {lang === 'en' ? 'LISTNAME:   ' : 'NOM DE LISTE:  '}
-                {selectedTag && selectedTag.label ? (
-                  <>[INDEX] {selectedTag.label[lang]}</>
-                ) : null}
+                {selectedTag && selectedTag.label ? <>[INDEX]</> : null}
               </div>
               <div className="right">
                 <Link href="/video/all" passHref>
-                  ALL
+                  {allHover ? (
+                    <img
+                      src="/images/ui/elements/all-halprin-hover.png"
+                      onMouseLeave={() => setAllHover(false)}
+                      alt="All"
+                      className="allBtn"
+                    />
+                  ) : (
+                    <img
+                      src="/images/ui/elements/all-halprin.png"
+                      onMouseEnter={() => setAllHover(true)}
+                      alt="All"
+                      className="allBtn"
+                    />
+                  )}
                 </Link>
                 <Link href="/video/favorites" passHref>
-                  Fav
+                  {favHover ? (
+                    <img
+                      src="/images/ui/elements/favorite-halprin.png"
+                      onMouseLeave={() => setFavHover(false)}
+                      alt="Favorite"
+                      className="favBtn"
+                    />
+                  ) : (
+                    <img
+                      src="/images/ui/elements/favorite-hover-halprin.png"
+                      onMouseEnter={() => setFavHover(true)}
+                      alt="Favorite"
+                      className="favBtn"
+                    />
+                  )}
                 </Link>
                 <Link href="/video/already-seens" passHref>
                   <img

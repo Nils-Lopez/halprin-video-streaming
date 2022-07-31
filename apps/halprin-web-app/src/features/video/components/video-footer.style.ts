@@ -23,10 +23,34 @@ export const Ctn = styled.div`
       margin-left: 5px;
       color: #95a5a6;
     }
+    .arrow {
+      height: 17px;
+      margin-top: 2.3px;
+      cursor: pointer;
+    }
+    .dir-right {
+      margin-right: -5px;
+      margin-left: 5px;
+    }
+    .dir-left {
+      margin-right: 5px;
+      margin-left: -5px;
+    }
     .right {
       width: 20%;
       display: flex;
       justify-content: end;
+      .favBtn {
+        margin-top: 2.5px;
+        height: 20px;
+        cursor: pointer;
+      }
+      .allBtn {
+        margin-right: 5px;
+        height: 19.5px;
+        margin-top: 2px;
+        cursor: pointer;
+      }
     }
     .center {
       text-align: center;
@@ -71,6 +95,12 @@ export const Ctn = styled.div`
 
       height: 45px;
       width: 30px;
+    }
+    .toggle-workshop {
+      margin-top: 79px;
+      margin-left: 27px;
+
+      height: 45px;
     }
     position: fixed;
   }

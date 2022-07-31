@@ -1,62 +1,129 @@
 import styled from '@emotion/styled';
 
-export const Ctn = styled.div`
+export const HomeLayout = styled.div`
+  background: #0e111c;
   height: 100%;
-  width: 100%;
-  overflow: hidden;
   position: fixed;
-  margin: 0;
-  background: #fefae0;
-  color: black;
-  .langChoose {
-    margin-top: 15%;
-    height: 120px;
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    width: 50%;
+  width: 100%;
+  padding-top: 1.5%;
+`;
+
+export const Ctn = styled.div`
+  padding: 10%;
+  .mobileDesc {
+    display: none;
+  }
+  .centered {
+    position: absolute;
+    margin-left: 33.3%;
+    margin-top: 8.91%;
+    width: 250px;
+    z-index: 10;
+    cursor: pointer;
+    &:hover {
+      filter: brightness(70%);
+      opacity: 95%;
+    }
+  }
+  font-family: AGBold;
+  src: url('../../../public/fonts/akzidenz/AkzidenzGrotesk-Bold.otf')
+    format('opentype');
+  font-size: 14pt;
+  .beginBtn {
+    position: absolute;
+    left: 20%;
+    font-size: 20px;
+  }
+  .endBtn {
+    position: absolute;
+    right: 20%;
+    font-size: 20px;
+  }
+  i .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  @media only screen and (max-width: 600px) {
+    .mobileDesc {
+      display: block;
+      margin-top: 50px;
+      width: 80%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+`;
+
+export const Circle = styled.div`
+  border-radius: 50%;
+  width: 500px;
+  opacity: 0.65;
+  height: 500px;
+  border: 3px solid white;
+  z-index: 0;
+  position: relative;
+  margin: auto;
+  padding: 0;
+  .topIcon {
+    positon: relative;
+    height: 200px;
+    width: 200px;
+    margin-top: -80px;
     margin-left: auto;
     margin-right: auto;
   }
-  .leftBtn {
-    &:hover {
-      scale: 1.1;
-    }
-  }
-  .rightBtn {
-    &:hover {
-      scale: 1.1;
-    }
-  }
-  .triangle {
-    height: 250px;
+  .leftIcon {
+    positon: relative;
+    height: 200px;
     width: 250px;
+    margin-left: -120px;
+    margin-right: auto;
+    margin-top: 5px;
   }
-  @media only screen and (min-width: 650px) and (max-width: 1000px) {
-    .langChoose {
-      width: 70%;
-      display: flex;
-      justify-content: space-between;
-    }
-    .triangle {
-      height: 200px;
-      width: 200px;
-    }
+  .rightIcon {
+    positon: relative;
+    height: 140px;
+    width: 140px;
+    margin-right: -80px;
+    margin-top: -35px;
+    margin-left: auto;
+  }
+  .bottomIcon {
+    position: relative;
+    height: 250px;
+    width: 270px;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-right: auto;
+  }
+
+  .midContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  .workshopTxt {
+    color: pink;
+  }
+  .roadmapsTxt {
+    color: #ffef9f;
+    margin-top: -50px;
+  }
+  .indexTxt {
+    color: #ee6055;
+  }
+  .lifeartTxt {
+    color: #a2d2ff;
   }
   @media only screen and (max-width: 650px) {
-    .langChoose {
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-      .rightBtn {
-        margin-top: 70%;
-      }
-      margin-top: 15%;
-    }
-    .triangle {
-      height: 100%;
-      width: 100%;
-    }
+    display: none;
   }
 `;
 
@@ -96,14 +163,15 @@ export const Video = styled.div`
     padding: 1%;
     .video-player {
       margin-top: 150px;
-      width: 500px;
+      width: 300px;
       height: 350px;
     }
   }
   @media only screen and (max-width: 550px) {
+    padding: 1%;
     .video-player {
       margin-top: 150px;
-      width: 95%;
+      width: 400px;
       height: 300px;
     }
   }
@@ -179,6 +247,62 @@ export const Video = styled.div`
 
       &:active {
         transform: translateX(-50%) translateY(-50%) scale(0.9);
+      }
+    }
+  }
+`;
+
+export const Mobile = styled.div`
+  @media only screen and (min-width: 650px) {
+    display: none;
+  }
+  margin-top: -20px;
+  .eyeImg {
+    height: 70px;
+    margin: auto;
+  }
+  .roundImg {
+    width: 95px;
+    margin: auto;
+  }
+  .handImg {
+    margin: auto;
+    height: 95px;
+  }
+  .lifeart {
+    color: #a2d2ff;
+  }
+  .roadmaps {
+    color: #ffef9f;
+  }
+  .index {
+    color: #ee6055;
+  }
+  .mouthImg {
+    height: 65px;
+    margin: auto;
+  }
+  height: 100%;
+  .ctn {
+    width: 100%;
+    left: 2%;
+    right: 2%;
+    .workshop {
+      color: pink;
+    }
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .content {
+      margin: auto;
+      text-align: center;
+      width: 80%;
+      padding: 8px;
+      .title {
+        font-size: 20px;
+      }
+      .desc {
+        font-size: 13px;
+        color: white;
       }
     }
   }

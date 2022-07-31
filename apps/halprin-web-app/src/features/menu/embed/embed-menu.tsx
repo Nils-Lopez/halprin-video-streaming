@@ -11,8 +11,6 @@ type Props = {
 export const EmbedMenu: React.FC<Props> = (props) => {
   const { selectVideo, selectedVideo, page } = props;
 
-  console.log('ah drr');
-
   return (
     <S.Circle>
       {!page ? (

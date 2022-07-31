@@ -13,8 +13,6 @@ export const CredModal: React.FC<Props> = (props) => {
 
   const credits: { title: string; content: string; link: string }[] = [];
 
-  console.log(modal);
-
   modal.map((credit) => {
     const splitted = credit.htmlLabel[lang].slice(6).split('<');
     const title = splitted[0];

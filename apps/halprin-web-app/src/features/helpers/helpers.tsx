@@ -1,10 +1,12 @@
 import * as S from './helpers.style';
 import { useState } from 'react';
 import { HelpModal } from './components/help-modal';
-import { CredModal } from './components/cred-modal';
-import { Credit, Media } from '@/data/data.types';
-import { CreditsRepo } from '../video/repository/credits.repo';
+import { Media } from '@/data/data.types';
 import { SupportedLang } from '../video/types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleQuestion } from '@fortawesome/free-solid-svg-icons';
+import Router from 'next/router';
+import { useRouter } from 'next/router';
 
 type Props = {
   help?: { title: string; content: string };
@@ -13,25 +15,13 @@ type Props = {
 };
 
 export const Helpers: React.FC<Props> = (props) => {
-  const { help, lang = 'en', media } = props;
+  const { help, lang = 'en' } = props;
 
-  const [helpBtn, setHelpBtn] = useState('small');
-  const [credBtn, setCredBtn] = useState('small');
   const [helpModal, setHelpModal] = useState({
     title: 'false',
     content: 'false',
   });
-  const [credModal, setCredModal] = useState<Credit[]>([
-    {
-      htmlLabel: {
-        en: '<b><i>Dance with Life. Anna, a Living Legend</i></…tp://www.annahalprin.org">www.annahalprin.org</a>',
-        fr: '<b><i>Dance with Life. Anna, a Living Legend</i></…tp://www.annahalprin.org">www.annahalprin.org</a>',
-      },
-      id: 11,
-      index: true,
-      year: 0,
-    },
-  ]);
+  const router = useRouter();
 
   const modalContent = help
     ? help
@@ -40,57 +30,29 @@ export const Helpers: React.FC<Props> = (props) => {
         content: "You're on the template of our helping modal",
       };
 
-  const creditsRepo = new CreditsRepo();
-
-  const getCreditsData = () => {
-    if (media && media.thumb !== 'false' && media.creditsIds) {
-      const credits = creditsRepo.getMediaCredits(media.creditsIds);
-      return credits;
-    }
-  };
-
-  const creditsData: Credit[] | boolean | undefined =
-    media && media.thumb !== 'false' ? getCreditsData() : false;
-
   return (
     <S.TopBar>
       <div className="right">
-        {media && media.thumb !== 'false' ? (
-          <span
-            className={'cred dot ' + credBtn}
-            onMouseEnter={() => {
-              setCredBtn('large');
-            }}
-            tabIndex={0}
-            onMouseLeave={() => setCredBtn('small')}
-            onKeyDown={() => console.log('tsb')}
-            role="button"
-            onClick={() => {
-              if (creditsData && creditsData[0]) {
-                setCredModal(creditsData);
-              }
-            }}>
-            {credBtn === 'large' ? <strong>c</strong> : null}
-          </span>
-        ) : null}
         <span
-          className={'dot ' + helpBtn}
-          onMouseEnter={() => {
-            setHelpBtn('large');
-          }}
+          className={'dot'}
           onKeyDown={() => console.log('tsb')}
           role="button"
           tabIndex={0}
-          onMouseLeave={() => setHelpBtn('small')}
           onClick={() => setHelpModal(modalContent)}>
-          {helpBtn === 'large' ? <strong>?</strong> : null}
+          <FontAwesomeIcon icon={faCircleQuestion} />
+        </span>
+        <span className="dot">
+          <button
+            onClick={() => {
+              const newLang = lang === 'en' ? 'fr' : 'en';
+              Router.push('/' + newLang + router.pathname);
+            }}>
+            {lang === 'en' ? 'Français' : 'English'}
+          </button>
         </span>
       </div>
       {helpModal.title !== 'false' ? (
         <HelpModal showModal={setHelpModal} modal={helpModal} lang={lang} />
-      ) : null}
-      {credModal[0].year !== 0 ? (
-        <CredModal showModal={setCredModal} modal={credModal} lang={lang} />
       ) : null}
     </S.TopBar>
   );

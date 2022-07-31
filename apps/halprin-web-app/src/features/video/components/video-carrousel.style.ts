@@ -106,6 +106,12 @@ export const Carrousel = styled.div`
       }
     }
   }
+  .mobiletitle {
+    display: none;
+  }
+  .desktitle {
+    display: block;
+  }
   @media only screen and (max-width: 650px) {
     max-width: 90%;
     margin-top: 30px;
@@ -132,6 +138,12 @@ export const Carrousel = styled.div`
           width: 110px;
         }
       }
+    }
+    .mobiletitle {
+      display: block;
+    }
+    .desktitle {
+      display: none;
     }
 
     .main {

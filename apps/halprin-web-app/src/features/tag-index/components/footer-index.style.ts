@@ -35,6 +35,17 @@ export const FooterContainer = styled.div`
         width: 20%;
         display: flex;
         justify-content: end;
+        .favBtn {
+          margin-top: 2.5px;
+          height: 20px;
+          cursor: pointer;
+        }
+        .allBtn {
+          margin-right: 5px;
+          height: 19.5px;
+          margin-top: 2px;
+          cursor: pointer;
+        }
       }
 
       .center {
@@ -74,8 +85,31 @@ export const FooterContainer = styled.div`
           width: 20%;
           display: flex;
           justify-content: end;
+          .favBtn {
+            margin-top: 2.5px;
+            height: 20px;
+            cursor: pointer;
+          }
+          .allBtn {
+            margin-right: 5px;
+            height: 19.5px;
+            margin-top: 2px;
+            cursor: pointer;
+          }
         }
-
+        .arrow {
+          height: 17px;
+          margin-top: 2.3px;
+          cursor: pointer;
+        }
+        .dir-right {
+          margin-right: -5px;
+          margin-left: 5px;
+        }
+        .dir-left {
+          margin-right: 5px;
+          margin-left: -5px;
+        }
         .center {
           text-align: center;
           display: flex;

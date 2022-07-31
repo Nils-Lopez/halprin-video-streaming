@@ -15,6 +15,8 @@ export const EmbedMobile: React.FC<Props> = (props) => {
   const { lang, index } = props;
   const [mobileMenu, setMobileMenu] = useState(false);
 
+  console.log('lang : ', lang);
+
   return (
     <MobileMenu>
       {!mobileMenu ? (

@@ -7,6 +7,61 @@ export const Ctn = styled.div`
     margin-left: 25px;
     margin-bottom: 10px;
   }
+
+  video-container {
+    h1 {
+      color: red;
+    }
+    .loader {
+      width: 8vmax;
+      height: 8vmax;
+      border-right: 4px solid #ffffff;
+      border-radius: 100%;
+      animation: spinRight 800ms linear infinite;
+      margin: auto;
+      margin-top: 150px;
+      &:before,
+      &:after {
+        content: '';
+        width: 6vmax;
+        height: 6vmax;
+        display: block;
+        position: absolute;
+        top: calc(50% - 3vmax);
+        left: calc(50% - 3vmax);
+        border-left: 3px solid #ffffff;
+        border-radius: 100%;
+        animation: spinLeft 800ms linear infinite;
+      }
+
+      &:after {
+        width: 4vmax;
+        height: 4vmax;
+        top: calc(50% - 2vmax);
+        left: calc(50% - 2vmax);
+        border: 0;
+        border-right: 2px solid #ffffff;
+        animation: none;
+      }
+    }
+  }
+  @keyframes spinLeft {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(720deg);
+    }
+  }
+
+  @keyframes spinRight {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
   @media only screen and (max-width: 650px) {
     .video-container {
       width: 92%;
@@ -47,7 +102,6 @@ export const Ctn = styled.div`
       margin-top: -40px;
     }
   }
-  @media only screen and (max-width: ) font-family: AGMedium;
   src: url('../../../public/fonts/akzidenz/AkzidenzGrotesk-Medium.otf')
     format('opentype');
 `;

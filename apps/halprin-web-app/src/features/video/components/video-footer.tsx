@@ -2,9 +2,10 @@ import * as S from './video-footer.style';
 import { VideoCarrousel } from './video-carrousel';
 import { Media } from '@/data/data.types';
 import { SupportedLang } from '@/features/video/types';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { EmbedMenu } from '@/features/menu/embed/embed-menu';
 import Link from 'next/link';
+import useCookie from 'react-use-cookie';
 
 type Props = {
   media: Media[];
@@ -15,20 +16,39 @@ type Props = {
 
 export const VideoFooter: React.FC<Props> = (props) => {
   const { media, lang, selectedVideo, selectVideo } = props;
-
+  const [userToken, setUserToken] = useCookie('token', '0');
+  const [session, setSession] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const [allHover, setAllHover] = useState(false);
+  const [favHover, setFavHover] = useState(false);
 
   let page = '';
 
-  if (selectedVideo.category && selectedVideo.category === 'workshops') {
+  if (
+    selectedVideo &&
+    selectedVideo.category &&
+    selectedVideo.category === 'workshops'
+  ) {
     page = 'workshop';
-  } else if (selectedVideo.category && selectedVideo.category === 'life-art') {
+  } else if (
+    selectedVideo &&
+    selectedVideo.category &&
+    selectedVideo.category === 'life-art'
+  ) {
     page = 'lifeart';
-  } else if (selectedVideo.category && selectedVideo.category === 'roadmaps') {
+  } else if (
+    selectedVideo &&
+    selectedVideo.category &&
+    selectedVideo.category === 'roadmaps'
+  ) {
     page = 'roadmaps';
   }
 
-  console.log('pageee : ', page);
+  useEffect(() => {
+    if (userToken && userToken !== '0') {
+      setSession(true);
+    } else setSession(false);
+  }, [userToken]);
 
   return (
     <S.Ctn>
@@ -56,7 +76,7 @@ export const VideoFooter: React.FC<Props> = (props) => {
               <img
                 src="/images/ui/menu/round.png"
                 alt="menu"
-                className="toggle"
+                className="toggle-workshop"
               />
             ) : (
               <img
@@ -70,30 +90,22 @@ export const VideoFooter: React.FC<Props> = (props) => {
       </div>
       <div className="topBar">
         <div className="desktop">
-          <div className="left">LISTNAME: {media[0] && media[0].category}</div>
+          <div className="left">{media[0] && media[0].category}</div>
           <div className="center">
             {media.indexOf(selectedVideo) > 0 && (
               <Link
                 href={'#' + media[media.indexOf(selectedVideo) - 1].media_slug}
                 passHref>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="icon icon-tabler icon-tabler-chevrons-left center-icon"
-                  width="27"
-                  height="27"
-                  viewBox="0 0 24 24"
-                  strokeWidth="2"
-                  stroke="currentColor"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                <button
                   onClick={() => {
                     selectVideo(media[media.indexOf(selectedVideo) - 1]);
                   }}>
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <polyline points="11 7 6 12 11 17"></polyline>
-                  <polyline points="17 7 12 12 17 17"></polyline>
-                </svg>
+                  <img
+                    src="/images/ui/elements/left-arrow-halprin.png"
+                    alt="<"
+                    className="arrow dir-left"
+                  />
+                </button>
               </Link>
             )}
             {media.indexOf(selectedVideo) + 1} / {media.length}
@@ -101,48 +113,72 @@ export const VideoFooter: React.FC<Props> = (props) => {
               <Link
                 href={'#' + media[media.indexOf(selectedVideo) + 1].media_slug}
                 passHref>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="icon icon-tabler icon-tabler-chevrons-right center-icon"
-                  width="27"
-                  height="27"
-                  viewBox="0 0 24 24"
-                  strokeWidth="2"
-                  stroke="currentColor"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                <button
                   onClick={() => {
                     selectVideo(media[media.indexOf(selectedVideo) + 1]);
                   }}>
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <polyline points="7 7 12 12 7 17"></polyline>
-                  <polyline points="13 7 18 12 13 17"></polyline>
-                </svg>
+                  <img
+                    src="/images/ui/elements/right-arrow-halprin.png"
+                    alt=">"
+                    className="arrow dir-right"
+                  />
+                </button>
               </Link>
             )}
           </div>
           <div className="right">
-            <Link href="/video/all" passHref>
-              ALL
-            </Link>
-            <Link href="/video/favorites" passHref>
-              Fav
-            </Link>
-            <Link href="/video/already-seens" passHref>
-              <img
-                src="/images/ui/video/eye-arrow.png"
-                className="btn-icon"
-                alt="Already Seen"
-              />
-            </Link>
-            <Link href="/video/unseens" passHref>
-              <img
-                src="/images/ui/video/eye.png"
-                className="btn-icon"
-                alt="Unseen"
-              />
-            </Link>
+            {session ? (
+              <>
+                <Link href="/video/all" passHref>
+                  {allHover ? (
+                    <img
+                      src="/images/ui/elements/all-halprin-hover.png"
+                      onMouseLeave={() => setAllHover(false)}
+                      alt="All"
+                      className="allBtn"
+                    />
+                  ) : (
+                    <img
+                      src="/images/ui/elements/all-halprin.png"
+                      onMouseEnter={() => setAllHover(true)}
+                      alt="All"
+                      className="allBtn"
+                    />
+                  )}
+                </Link>
+                <Link href="/video/favorites" passHref>
+                  {favHover ? (
+                    <img
+                      src="/images/ui/elements/favorite-halprin.png"
+                      onMouseLeave={() => setFavHover(false)}
+                      alt="Favorite"
+                      className="favBtn"
+                    />
+                  ) : (
+                    <img
+                      src="/images/ui/elements/favorite-hover-halprin.png"
+                      onMouseEnter={() => setFavHover(true)}
+                      alt="Favorite"
+                      className="favBtn"
+                    />
+                  )}
+                </Link>
+                <Link href="/video/watched" passHref>
+                  <img
+                    src="/images/ui/video/eye-arrow.png"
+                    className="btn-icon"
+                    alt="Already Seen"
+                  />
+                </Link>
+                <Link href="/video/unwatched" passHref>
+                  <img
+                    src="/images/ui/video/eye.png"
+                    className="btn-icon"
+                    alt="Unseen"
+                  />
+                </Link>
+              </>
+            ) : null}
           </div>
         </div>
         <div className="mobile">
@@ -151,24 +187,16 @@ export const VideoFooter: React.FC<Props> = (props) => {
               <Link
                 href={'#' + media[media.indexOf(selectedVideo) - 1].media_slug}
                 passHref>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="icon icon-tabler icon-tabler-chevrons-left center-icon"
-                  width="27"
-                  height="27"
-                  viewBox="0 0 24 24"
-                  strokeWidth="2"
-                  stroke="currentColor"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                <button
                   onClick={() => {
                     selectVideo(media[media.indexOf(selectedVideo) - 1]);
                   }}>
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <polyline points="11 7 6 12 11 17"></polyline>
-                  <polyline points="17 7 12 12 17 17"></polyline>
-                </svg>
+                  <img
+                    src="/images/ui/elements/left-arrow-halprin.png"
+                    alt="<"
+                    className="arrow dir-left"
+                  />
+                </button>
               </Link>
             )}
             {media.indexOf(selectedVideo) + 1} / {media.length}
@@ -176,42 +204,62 @@ export const VideoFooter: React.FC<Props> = (props) => {
               <Link
                 href={'#' + media[media.indexOf(selectedVideo) + 1].media_slug}
                 passHref>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="icon icon-tabler icon-tabler-chevrons-right center-icon"
-                  width="27"
-                  height="27"
-                  viewBox="0 0 24 24"
-                  strokeWidth="2"
-                  stroke="currentColor"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                <button
                   onClick={() => {
                     selectVideo(media[media.indexOf(selectedVideo) + 1]);
                   }}>
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <polyline points="7 7 12 12 7 17"></polyline>
-                  <polyline points="13 7 18 12 13 17"></polyline>
-                </svg>
+                  <img
+                    src="/images/ui/elements/right-arrow-halprin.png"
+                    alt=">"
+                    className="arrow dir-right"
+                  />
+                </button>
               </Link>
             )}
           </div>
           <div className="bottom">
             <Link href="/video/all" passHref>
-              ALL
+              {allHover ? (
+                <img
+                  src="/images/ui/elements/all-halprin-hover.png"
+                  onMouseLeave={() => setAllHover(false)}
+                  alt="All"
+                  className="allBtn"
+                />
+              ) : (
+                <img
+                  src="/images/ui/elements/all-halprin.png"
+                  onMouseEnter={() => setAllHover(true)}
+                  alt="All"
+                  className="allBtn"
+                />
+              )}
             </Link>
             <Link href="/video/favorites" passHref>
-              Fav
+              {favHover ? (
+                <img
+                  src="/images/ui/elements/favorite-halprin.png"
+                  onMouseLeave={() => setFavHover(false)}
+                  alt="Favorite"
+                  className="favBtn"
+                />
+              ) : (
+                <img
+                  src="/images/ui/elements/favorite-hover-halprin.png"
+                  onMouseEnter={() => setFavHover(true)}
+                  alt="Favorite"
+                  className="favBtn"
+                />
+              )}
             </Link>
-            <Link href="/video/already-seens" passHref>
+            <Link href="/video/watched" passHref>
               <img
                 src="/images/ui/video/eye-arrow.png"
                 className="btn-icon"
                 alt="Already seen"
               />
             </Link>
-            <Link href="/video/unseens" passHref>
+            <Link href="/video/unwatched" passHref>
               <img
                 src="/images/ui/video/eye.png"
                 className="btn-icon"

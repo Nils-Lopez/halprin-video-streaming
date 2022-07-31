@@ -7,7 +7,7 @@ export const Modal = styled.div`
   right: 0;
   bottom: 0;
   text-align: center;
-  z-index: 9;
+  z-index: 11;
   .centered {
     padding: 5px;
     background: #fefae0;

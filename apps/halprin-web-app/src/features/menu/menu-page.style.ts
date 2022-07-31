@@ -5,10 +5,38 @@ export const Ctn = styled.div`
   .mobileDesc {
     display: none;
   }
+  .logo {
+    position: absolute;
+    margin-left: 33.3%;
+    margin-top: 8.91%;
+    width: 250px;
+    z-index: 9;
+    cursor: pointer;
+  }
   font-family: AGBold;
   src: url('../../../public/fonts/akzidenz/AkzidenzGrotesk-Bold.otf')
     format('opentype');
   font-size: 14pt;
+  .beginBtn {
+    position: absolute;
+    left: 20%;
+    font-size: 20px;
+  }
+  .endBtn {
+    position: absolute;
+    right: 20%;
+    font-size: 20px;
+  }
+  i .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
   @media only screen and (max-width: 600px) {
     .mobileDesc {
       display: block;
@@ -83,16 +111,6 @@ export const Circle = styled.div`
     margin-right: auto;
     top: -50px;
     left: -90px;
-    .logo {
-      position: fixed;
-      margin-left: auto;
-      margin-right: auto;
-      height: 220px;
-      width: 220px;
-      .triangle {
-        cursor: pointer;
-      }
-    }
     .linkDesc {
       position: fixed;
       width: 220px;
@@ -110,7 +128,7 @@ export const Circle = styled.div`
   }
   .roadmapsTxt {
     color: #ffef9f;
-    margin-top: -50px;
+    top: 27%;
   }
   .indexTxt {
     color: #ee6055;

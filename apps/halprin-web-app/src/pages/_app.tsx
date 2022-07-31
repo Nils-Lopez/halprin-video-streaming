@@ -17,11 +17,11 @@ export type AppProps = NextAppProps & {
 /**
  * @link https://nextjs.org/docs/advanced-features/custom-app
  */
-const MyApp = ({ Component, pageProps, err }: AppProps) => {
+const MyApp = ({ Component, pageProps: { ...pageProps } }: AppProps) => {
   return (
     <AppProviders>
       {/* Workaround for https://github.com/vercel/next.js/issues/8592 */}
-      <Component {...pageProps} err={err} />
+      <Component {...pageProps} err={pageProps.err} />
     </AppProviders>
   );
 };

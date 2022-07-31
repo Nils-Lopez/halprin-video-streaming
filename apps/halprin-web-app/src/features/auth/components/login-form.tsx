@@ -1,110 +1,135 @@
-import React from 'react';
-import { useForm } from 'react-hook-form';
-import { useTranslation } from 'next-i18next';
-import Image from 'next/image';
-import { loginConfig } from '@/features/auth/login.config';
-
-type FormValues = {
-  email: string;
-  password: string;
-};
+import React, { useEffect, useState } from 'react';
+import * as S from './login-form.style';
+import axios from 'axios';
+import { SupportedLang } from '../../video/types';
+import useCookie from 'react-use-cookie';
+import Router from 'next/router';
 
 export type LoginFormProps = {
   forgotUrl?: string;
   getAccessUrl?: string;
+  lang: SupportedLang;
   children?: never;
 };
 
-const defaultProps = {
-  forgotUrl: loginConfig.urls.emailForgotten,
-  getAccessUrl: loginConfig.urls.getAccess,
-};
-
 export const LoginForm: React.FC<LoginFormProps> = (props) => {
-  const { forgotUrl, getAccessUrl } = { ...defaultProps, ...props };
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<FormValues>();
-  const { t } = useTranslation(loginConfig.i18nNamespaces);
+  const { lang } = { ...props };
+  const [email, setEmail] = useState('');
+  const [pwd, setPwd] = useState('');
+  const [session, setSession] = useState(null);
+  const [error, setError] = useState(false);
+  const [userToken, setUserToken] = useCookie('token', '0');
 
-  const onSubmit = (data: FormValues) => alert(JSON.stringify(data));
+  const handleSubmit = async (e: React.SyntheticEvent) => {
+    e.preventDefault();
+    const target = e.target as typeof e.target & {
+      email: { value: string };
+      password: { value: string };
+    };
+    const email = target.email.value; // typechecks!
+    const password = target.password.value; // typechecks!
+    try {
+      const res = await axios.post('/api/auth/login', {
+        email: email,
+        password: password,
+      });
+      if (res.data.token) {
+        setSession(res.data.token);
+        setError(false);
+      } else {
+        setError(true);
+      }
+    } catch (e) {
+      setError(true);
+    }
+  };
+
+  useEffect(() => {
+    if (session) {
+      setUserToken(session, {
+        days: 365,
+        SameSite: 'Strict',
+        Secure: true,
+      });
+    }
+  }, [session]);
+
+  useEffect(() => {
+    if (userToken && userToken !== '0') {
+      const redirect = '/' + lang + '/menu';
+      Router.push(redirect);
+    }
+  }, [userToken]);
 
   return (
-    <div className="w-full max-w-sm">
-      <h1>{t('common:welcome')}</h1>
-      <h2>{t('app:loginForm.h2Message')}</h2>
-      <Image
-        src={'/shared-assets/images/logo-contredanse-white.jpg'}
-        alt={'Contredanse'}
-        width={300}
-        height={300}
-      />
-      <p>
-        <a href={getAccessUrl} target="_blank" rel={'noopener noreferrer'}>
-          {t('app:loginForm.getYourAccess')}
-        </a>
-      </p>
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="email">
-            {t('common:auth.email')}
-          </label>
-          <input
-            {...register('email', {
-              required: true,
-              maxLength: 40,
-              pattern: /^S+@S+$/,
-            })}
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="email"
-            type="text"
-            placeholder={t('common:placeholder.email')}
-          />
-          {errors.email && (
-            <p className="text-red-500 text-xs italic">Must be a valid email</p>
-          )}
-        </div>
-        <div className="mb-6">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="password">
-            {t('common:auth.password', {
-              required: true,
-              maxLength: 40,
-            })}
-          </label>
-          <input
-            {...register('password')}
-            className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-            id="password"
-            type="password"
-            placeholder={t('common:placeholder.password')}
-          />
-          {errors.password && (
-            <p className="text-red-500 text-xs italic">Password is required</p>
-          )}
-        </div>
-        <div className="flex items-center justify-between">
-          <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            type="button">
-            {t('app:loginForm.connectBtn')}
-          </button>
-          <a
-            className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
-            href={forgotUrl}
-            target="_blank"
-            rel="noopener noreferrer">
-            {t('app:loginForm.forgottenPasswordQuestion')}
-          </a>
-        </div>
-      </form>
-    </div>
+    <>
+      {!session ? (
+        <S.Container>
+          <div className="header"></div>
+          <br />
+          <form onSubmit={handleSubmit} className="login-form">
+            <div className="inputs">
+              <div className="email">
+                <label htmlFor="emailInput" className="email-label">
+                  E-mail
+                </label>
+                <br />
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  name="email"
+                  id="email"
+                />
+              </div>
+
+              <div className="pwd">
+                <label htmlFor="pwdInput" className="pwd-label">
+                  {lang === 'en' ? 'Password' : 'Mot de passe'}
+                </label>
+                <br />
+                <input
+                  type="password"
+                  name="password"
+                  value={pwd}
+                  onChange={(e) => setPwd(e.target.value)}
+                  id="password"
+                />
+              </div>
+            </div>
+            {error ? (
+              <div className="alert">
+                {lang === 'en'
+                  ? 'Wrong credentials.'
+                  : 'Adresse email ou mot de passe incorrect.'}
+              </div>
+            ) : (
+              <></>
+            )}
+
+            <div className="btn">
+              <button type="submit" className="sending-btn">
+                {lang === 'en' ? 'Sign In' : 'Connexion'}
+              </button>
+            </div>
+          </form>
+          <div className="footer">
+            <h3>
+              {lang === 'en'
+                ? "Don't have acces to the app ?"
+                : "Vous n'avez pas accès à l'application ?"}
+            </h3>
+            <br />
+            <a href="https://contredanse.org">
+              {lang === 'en' ? 'Buy it' : 'Acheter maintenant'}
+            </a>
+          </div>
+        </S.Container>
+      ) : (
+        <>
+          {lang === 'en' ? 'Successfully logged in !' : 'Connexion réussie !'}
+        </>
+      )}
+    </>
   );
 };

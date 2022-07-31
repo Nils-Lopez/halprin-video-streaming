@@ -17,9 +17,8 @@ export const MenuPage: React.FC<Props> = (props) => {
   const [midBody, setMidBody] = useState('');
   const [midContent, setMidContent] = useState('logo');
   const [midClassName, setMidClassName] = useState('');
-  const [showMenu, setShowMenu] = useState(false);
-
-  console.log(lang);
+  const [content, setContent] = useState('menu');
+  const [intentionsToggle, setIntentionsToggle] = useState(false);
 
   const changeMiddleContent = (type: string) => {
     switch (type) {
@@ -61,32 +60,52 @@ export const MenuPage: React.FC<Props> = (props) => {
 
   return (
     <>
-      {!showMenu ? (
-        <MainLayout lang={lang}>
-          <S.Video>
-            <iframe
-              src={'https://player.vimeo.com/video/582111408'}
-              className="video-player"
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-              title={
-                'https://player.vimeo.com/external/583334078.sd.mp4?s=685558fc99397ec030c0866c145927d29e602e30&profile_id=165'
-              }></iframe>
-            <div className="nextBtn">
-              <button onClick={() => setShowMenu(true)}>
-                <div className="arrow">
-                  <div className="arrow-top"></div>
-                  <div className="arrow-bottom"></div>
-                </div>
-              </button>
-            </div>
-          </S.Video>
-        </MainLayout>
-      ) : (
+      {content === 'menu' ? (
         <MainLayout lang={lang}>
           <div>
             <S.Ctn>
+              <button
+                onClick={() =>
+                  setContent('https://player.vimeo.com/video/582111408')
+                }
+                className="beginBtn">
+                {lang === 'en' ? 'BEGINNING' : 'POUR COMMENCER'}
+                <i className="arrow down"></i>
+              </button>
+
+              {midContent === 'logo' ? (
+                intentionsToggle === false ? (
+                  <div className="logo">
+                    <img
+                      src={
+                        '/images/ui/elements/triangle-halprin-' + lang + '.png'
+                      }
+                      alt="Anna Halprin - Dancing Life"
+                      className="triangle"
+                      onMouseEnter={() => setIntentionsToggle(true)}
+                      onMouseOver={() => setIntentionsToggle(true)}
+                      onFocus={() => setIntentionsToggle(true)}
+                    />
+                  </div>
+                ) : (
+                  <button
+                    onClick={() =>
+                      setContent('https://player.vimeo.com/video/582111408')
+                    }
+                    className="logo">
+                    <img
+                      src={
+                        '/images/ui/elements/triangle-halprin-hover-' +
+                        lang +
+                        '.png'
+                      }
+                      alt="Anna Halprin - Dancing Life"
+                      className="triangle"
+                      onMouseLeave={() => setIntentionsToggle(false)}
+                    />
+                  </button>
+                )
+              ) : null}
               <S.Circle>
                 <div className="topIcon">
                   <Link href={menuConfig.menuLinks.videoWorkshops} passHref>
@@ -112,28 +131,14 @@ export const MenuPage: React.FC<Props> = (props) => {
                     </Link>
                   </div>
                   <div className="centered">
-                    {midContent === 'logo' ? (
-                      <>
-                        <div className="logo">
-                          <img
-                            src={
-                              '/images/ui/menu/triangle-halprin-white-' +
-                              'en' +
-                              '.png'
-                            }
-                            alt="Anna Halprin - Dancing Life"
-                            className="triangle"
-                          />
-                        </div>
-                      </>
-                    ) : (
+                    {midContent !== 'logo' ? (
                       <>
                         <div className={'linkDesc ' + midClassName}>
                           <p>{midTitle.toUpperCase()}</p>
                           <p>{midBody}</p>
                         </div>
                       </>
-                    )}
+                    ) : null}
                   </div>
                   <div className="rightIcon">
                     <Link href={menuConfig.menuLinks.videoRoadmaps} passHref>
@@ -167,6 +172,13 @@ export const MenuPage: React.FC<Props> = (props) => {
                   </div>
                 </div>
               )}
+              <button
+                onClick={() =>
+                  setContent('https://player.vimeo.com/video/582147532')
+                }
+                className="endBtn">
+                {lang === 'en' ? 'ENDING' : 'POUR TERMINER'}
+              </button>
             </S.Ctn>
             <S.Mobile>
               <Link href={menuConfig.menuLinks.videoWorkshops} passHref>
@@ -227,6 +239,28 @@ export const MenuPage: React.FC<Props> = (props) => {
               </Link>
             </S.Mobile>
           </div>
+        </MainLayout>
+      ) : (
+        <MainLayout lang={lang}>
+          <S.Video>
+            <iframe
+              src={content}
+              className="video-player"
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              title={
+                'https://player.vimeo.com/external/583334078.sd.mp4?s=685558fc99397ec030c0866c145927d29e602e30&profile_id=165'
+              }></iframe>
+            <div className="nextBtn">
+              <button onClick={() => setContent('menu')}>
+                <div className="arrow">
+                  <div className="arrow-top"></div>
+                  <div className="arrow-bottom"></div>
+                </div>
+              </button>
+            </div>
+          </S.Video>
         </MainLayout>
       )}
     </>

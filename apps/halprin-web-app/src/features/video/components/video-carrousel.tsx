@@ -48,7 +48,14 @@ export const VideoCarrousel: FC<Props> = (props) => {
                     <div className="slide">
                       <img src={thumb} alt={'A picture of : ' + title} />
                       <div className={'video-title ' + media.category}>
-                        {title}
+                        <div className="mobiletitle">
+                          {title && title.length >= 12
+                            ? title.substring(0, 10) + '...'
+                            : title
+                            ? title
+                            : null}
+                        </div>
+                        <div className="desktitle">{title}</div>
                       </div>
                     </div>
                   </button>
