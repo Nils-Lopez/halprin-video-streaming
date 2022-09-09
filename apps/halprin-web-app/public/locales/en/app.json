@@ -1,0 +1,29 @@
+{
+  "page": {
+    "title": "Home | Web-app | nextjs-monorepo-example",
+    "test": "hello world !"
+  },
+  "btn": {
+    "getStarted": "Get started",
+    "liveDemo": "Live demo"
+  },
+  "loginForm": {
+    "forgottenPasswordQuestion": "Password forgotten ?",
+    "getYourAccess": "Get your access",
+    "orConnect": "Or connect",
+    "connectBtn": "Submit",
+    "h2Message": "In order to continue and if you don't have one"
+  },
+  "menu": {
+    "title": "Dancing Life",
+    "intentions": "My intentions",
+    "myLifeAndArt": "My Life & Arts Themes",
+    "myLifeAndArtDesc": "Some of the important moments when my life has nourished my art and when my art as nourished my life.",
+    "workshop": "A Workshop: PARIS 2010",
+    "workshopDesc": "In this workshop we discover differents methods for exporing how art and life meet.",
+    "roadmaps": "Roadmaps",
+    "roadmapsDesc": "For my artistic work and teaching, I have developed series of tools that generate creativity. Here are the ideas behind these practices relating to the body, the community and our planet.",
+    "index": "Index",
+    "indexDesc": "A list of keywords relating to my life and work that will help you identify particular topics you would like to explore."
+  }
+}
