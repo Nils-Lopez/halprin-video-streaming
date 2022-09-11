@@ -1,0 +1,19 @@
+{
+  "actions": {
+    "save": "Save",
+    "update": "Update",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out"
+  },
+  "welcome": "Welcome",
+  "placeholder": {
+    "email": "your-email@example.com",
+    "password": "Password"
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Password"
+  }
+}

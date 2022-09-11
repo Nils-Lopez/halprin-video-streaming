@@ -1,0 +1,75 @@
+{
+  "name": "nextjs-monorepo-example",
+  "license": "MIT",
+  "private": true,
+  "homepage": "https://github.com/belgattitude/nextjs-monorepo-example",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/belgattitude/nextjs-monorepo-example"
+  },
+  "author": {
+    "name": "Vanvelthem Sébastien",
+    "url": "https://github.com/belgattitude"
+  },
+  "keywords": [
+    "example",
+    "workspace",
+    "nextjs",
+    "next-transpile-modules"
+  ],
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "static/*"
+  ],
+  "scripts": {
+    "clean": "yarn workspaces foreach -ptv run clean",
+    "test": "run-s 'test:*'",
+    "test:unit": "yarn workspaces foreach -ptv run test:unit",
+    "fix:staged-files": "yarn workspaces foreach -t run fix:staged-files",
+    "fix:all-files": "yarn workspaces foreach -ptv run fix:all-files",
+    "changeset": "changeset",
+    "release": "yarn build && changeset publish",
+    "deps:check": "npm-check-updates --configFileName ncurc.yml --deep --dep prod,dev,optional",
+    "deps:update": "npm-check-updates --configFileName ncurc.yml -u --deep --dep prod,dev,optional",
+    "typecheck": "yarn workspaces foreach -ptv run typecheck",
+    "lint": "yarn workspaces foreach -ptv run lint",
+    "check:install": "yarn dlx @yarnpkg/doctor .",
+    "share:static:symlink": "yarn workspaces foreach -pv --include '*-app' run share:static:symlink",
+    "share:static:hardlink": "yarn workspaces foreach -pv --include '*-app' run share:static:hardlink",
+    "apps:build": "yarn workspaces foreach -ptv --include '*-app' run build",
+    "apps:clean": "yarn workspaces foreach -ptv --include '*-app' run clean",
+    "packages:build": "yarn workspaces foreach -ptv --include '@contredanse/*' run build",
+    "packages:lint": "yarn workspaces foreach -ptv --include '@contredanse/*' run lint",
+    "packages:typecheck": "yarn workspaces foreach -ptv --include '@contredanse/*' run typecheck",
+    "packages:clean": "yarn workspaces foreach -ptv --include '@contredanse/*' run clean",
+    "postinstall": "is-ci || yarn husky install",
+    "docker:up": "docker-compose up -d",
+    "docker:up:database": "docker-compose up -d main-db",
+    "docker:down": "docker-compose down",
+    "docker:clean": "docker container rm -f $(docker container ls -qa) && docker image rm -f $(docker image ls -q)",
+    "?clear:node_modules": "remove all node_modules folders present under the root",
+    "clear:node_modules": "rimraf '**/node_modules'"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "0.4.4",
+    "@changesets/cli": "2.22.0",
+    "@commitlint/cli": "16.2.3",
+    "@commitlint/config-conventional": "16.2.1",
+    "eslint": "7.32.0",
+    "husky": "7.0.4",
+    "is-ci": "3.0.1",
+    "lint-staged": "12.3.7",
+    "npm-check-updates": "12.5.5",
+    "npm-run-all": "4.1.5",
+    "prettier": "2.6.1",
+    "rimraf": "3.0.2",
+    "shell-quote": "1.7.3"
+  },
+  "engines": {
+    "node": ">=14",
+    "yarn": ">=1.22.0",
+    "npm": "please-use-yarn"
+  },
+  "packageManager": "yarn@3.2.0"
+}
