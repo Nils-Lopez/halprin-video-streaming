@@ -9,15 +9,15 @@ type Props = {
 export const HelpModal: React.FC<Props> = (props) => {
   const { modal, lang = 'en', showModal } = props;
 
-  const src = "/images/help/" + lang + "/" + modal + ".png"
+  const src = '/images/help/' + lang + '/' + modal + '.png';
 
   return (
     <S.Modal
       onClick={() => {
-        showModal("");
+        showModal('');
       }}>
-      <div className={"centered " + modal}>
-        <img src={src}/>
+      <div className={'centered ' + modal}>
+        <img src={src} alt="Helper"/>
       </div>
     </S.Modal>
   );

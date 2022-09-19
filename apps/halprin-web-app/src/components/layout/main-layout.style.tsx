@@ -34,7 +34,7 @@ export const Layout = styled.div`
         filter: brightness(80%);
       }
     }
-    
+
     position: fixed;
     bottom: 3%;
     left: 48%;

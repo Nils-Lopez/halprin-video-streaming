@@ -16,21 +16,21 @@ export const Modal = styled.div`
       max-width: 800px;
       min-height: 150px;
     }
-    .tour {
+    .tour  {
       max-width: 800px;
-    min-height: 150px;
+      min-height: 150px;
     }
     .index {
       max-width: 800px;
-    min-height: 150px;
+      min-height: 150px;
     }
     .video {
       max-width: 800px;
-    min-height: 150px;
+      min-height: 150px;
     }
     .menu {
       max-width: 800px;
-    min-height: 150px;
+      min-height: 150px;
     }
     margin: 10px;
     color: black;
