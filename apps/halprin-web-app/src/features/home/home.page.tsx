@@ -1,5 +1,9 @@
 import * as S from './home.page.style';
 
+import {MainLayout} from "@/components/layout/main-layout"
+
+import {useState} from "react"
+
 import Link from 'next/link';
 
 type Props = {
@@ -7,11 +11,16 @@ type Props = {
 };
 
 export const HomePage: React.FC<Props> = () => {
+  const [content, setContent] = useState('home');
+
+
+
   return (
+    <>{content === "home" ? <>
     <S.HomeLayout>
       <div>
         <S.Ctn>
-          <Link href="/menu" passHref>
+          <button onClick={() => setContent("https://player.vimeo.com/video/582151572/")}>
             <div className="centered logo">
               <img
                 src={'/images/ui/elements/triangle-halprin-' + 'en' + '.png'}
@@ -19,7 +28,7 @@ export const HomePage: React.FC<Props> = () => {
                 className="triangle"
               />
             </div>
-          </Link>
+          </button>
           <S.Circle>
             <div className="home">
               <div className="topIcon">
@@ -116,5 +125,35 @@ export const HomePage: React.FC<Props> = () => {
         </S.Mobile>
       </div>
     </S.HomeLayout>
+
+    </> : <>
+        <MainLayout lang={"en"}>
+          <S.Video>
+            <iframe
+              src={content}
+              className="video-player"
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              title={
+                'https://player.vimeo.com/external/583334078.sd.mp4?s=685558fc99397ec030c0866c145927d29e602e30&profile_id=165'
+              }></iframe>
+            <div className="nextBtn">
+              
+              {content !== "https://player.vimeo.com/video/582111408/" ? <button onClick={() => setContent('https://player.vimeo.com/video/582111408/')}>
+                <div className="arrow">
+                  <div className="arrow-top"></div>
+                  <div className="arrow-bottom"></div>
+                </div>
+              </button> : <Link href="/menu" passHref>
+                <div className="arrow">
+                  <div className="arrow-top"></div>
+                  <div className="arrow-bottom"></div>
+                </div>
+              </Link>}
+            </div>
+          </S.Video>
+        </MainLayout>
+    </>}</>
   );
 };

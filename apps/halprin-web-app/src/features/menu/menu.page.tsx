@@ -90,7 +90,7 @@ export const MenuPage: React.FC<Props> = (props) => {
                 ) : (
                   <button
                     onClick={() =>
-                      setContent('https://player.vimeo.com/video/582111408')
+                      setContent('https://player.vimeo.com/video/584898888')
                     }
                     className="logo">
                     <img

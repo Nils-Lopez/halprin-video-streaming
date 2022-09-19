@@ -21,19 +21,24 @@ export const Layout = styled.div`
     }
   }
   .helpers {
-    position: absolute;
-    left: 5040%;
-    top: 115%;
+    position: fixed;
+    width: 100px;
+    top: 1%;
+    right: 0;
   }
   .logo-cd {
-    position: absolute;
-    left: 2633%;
-    top: 3500%;
-    width: 65px;
-    cursor: pointer;
-    &:hover {
-      filter: brightness(80%);
+    .lg {
+      width: 80px;
+      cursor: pointer;
+      &:hover {
+        filter: brightness(80%);
+      }
     }
+    
+    position: fixed;
+    bottom: 3%;
+    left: 48%;
+    width: 100%;
   }
   nav {
     position: absolute;

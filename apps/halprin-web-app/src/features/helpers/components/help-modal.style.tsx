@@ -10,11 +10,28 @@ export const Modal = styled.div`
   z-index: 11;
   .centered {
     padding: 5px;
-    background: #fefae0;
     display: inline-block;
     vertical-align: middle;
-    max-width: 400px;
+    .intro {
+      max-width: 800px;
+      min-height: 150px;
+    }
+    .tour {
+      max-width: 800px;
     min-height: 150px;
+    }
+    .index {
+      max-width: 800px;
+    min-height: 150px;
+    }
+    .video {
+      max-width: 800px;
+    min-height: 150px;
+    }
+    .menu {
+      max-width: 800px;
+    min-height: 150px;
+    }
     margin: 10px;
     color: black;
     .head {

@@ -17,30 +17,22 @@ type Props = {
 export const Helpers: React.FC<Props> = (props) => {
   const { help, lang = 'en' } = props;
 
-  const [helpModal, setHelpModal] = useState({
-    title: 'false',
-    content: 'false',
-  });
+  const [helpModal, setHelpModal] = useState("");
   const router = useRouter();
 
-  const modalContent = help
-    ? help
-    : {
-        title: 'Help Template',
-        content: "You're on the template of our helping modal",
-      };
+  const helpSrc = router.pathname === "/menu" ? "menu" : router.pathname === "/home" ? "intro" : router.pathname === "/tag-index" ? "index" : "video";
 
   return (
     <S.TopBar>
       <div className="right">
-        <span
+        {router.pathname !== "/bio" && router.pathname !== "/about" && router.pathname !== "/credits" && router.pathname !== "/editors" ? <span
           className={'dot'}
           onKeyDown={() => console.log('tsb')}
           role="button"
           tabIndex={0}
-          onClick={() => setHelpModal(modalContent)}>
+          onClick={() => setHelpModal(helpSrc)}>
           <FontAwesomeIcon icon={faCircleQuestion} />
-        </span>
+        </span> : null}
         <span className="dot">
           <button
             onClick={() => {
@@ -51,7 +43,7 @@ export const Helpers: React.FC<Props> = (props) => {
           </button>
         </span>
       </div>
-      {helpModal.title !== 'false' ? (
+      {helpModal !== "" ? (
         <HelpModal showModal={setHelpModal} modal={helpModal} lang={lang} />
       ) : null}
     </S.TopBar>

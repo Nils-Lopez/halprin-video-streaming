@@ -1,23 +1,23 @@
 import * as S from './help-modal.style';
 
 type Props = {
-  modal?: { title: string; content: string };
+  modal?: string;
   lang?: string;
-  showModal: (modal: { title: string; content: string }) => void;
+  showModal: (modal: string) => void;
 };
 
 export const HelpModal: React.FC<Props> = (props) => {
   const { modal, lang = 'en', showModal } = props;
 
+  const src = "/images/help/" + lang + "/" + modal + ".png"
+
   return (
     <S.Modal
       onClick={() => {
-        showModal({ title: 'false', content: 'false' });
+        showModal("");
       }}>
-      <div className="centered">
-        <div className="head">{modal && modal.title}</div>
-        <div className="body">{modal && modal.content}</div>
-        <div>{lang}</div>
+      <div className={"centered " + modal}>
+        <img src={src}/>
       </div>
     </S.Modal>
   );
