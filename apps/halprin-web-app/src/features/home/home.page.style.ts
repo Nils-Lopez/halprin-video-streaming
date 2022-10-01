@@ -14,9 +14,28 @@ export const Ctn = styled.div`
     display: none;
   }
   .centered {
-    position: absolute;
-    margin-left: 33.3%;
-    margin-top: 8.91%;
+     position: absolute;
+top: 45%;
+left: 50%;
+transform: translate(-50%, -50%);
+    width: 250px;
+    z-index: 9;
+    cursor: pointer;
+    @media only screen and (max-height: 970px) {
+      top: 47%;
+    }
+    @media only screen and (max-height: 840px) {
+      top: 49%;
+    }
+    @media only screen and (max-height: 770px) {
+      top: 54%;
+    }
+    @media only screen and (max-height: 700px) {
+      top: 60%;
+    }
+    @media only screen and (max-width: 650px) {
+      top: 50%;
+    }
     width: 250px;
     z-index: 10;
     cursor: pointer;
@@ -78,6 +97,7 @@ export const Circle = styled.div`
     margin-top: -80px;
     margin-left: auto;
     margin-right: auto;
+    
   }
   .leftIcon {
     positon: relative;
@@ -123,7 +143,7 @@ export const Circle = styled.div`
     color: #a2d2ff;
   }
   @media only screen and (max-width: 650px) {
-    display: none;
+    visibility: hidden;
   }
 `;
 
@@ -163,7 +183,7 @@ export const Video = styled.div`
     padding: 1%;
     .video-player {
       margin-top: 150px;
-      width: 300px;
+      width: 450px;
       height: 350px;
     }
   }
@@ -172,6 +192,14 @@ export const Video = styled.div`
     .video-player {
       margin-top: 150px;
       width: 400px;
+      height: 300px;
+    }
+  }
+  @media only screen and (max-width: 415px) {
+    padding: 1%;
+    .video-player {
+      margin-top: 150px;
+      width: 350px;
       height: 300px;
     }
   }
@@ -187,7 +215,12 @@ export const Video = styled.div`
       width: 70px;
 
       $transition-time: 0.15s;
-      @media only screen and (max-width: 650px) {
+      @media only screen and (max-width: 1310px) {
+        top: 85%;
+        left: 53%;
+        width: 40px;
+      }
+      @media only screen and (max-width: 1000px) {
         top: 85%;
         left: 53%;
         width: 40px;
@@ -305,5 +338,8 @@ export const Mobile = styled.div`
         color: white;
       }
     }
+  }
+  @media only screen and (max-width: 650px) {
+    visibility: hidden;
   }
 `;

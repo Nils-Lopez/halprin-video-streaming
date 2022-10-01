@@ -36,6 +36,20 @@ export const Ctn = styled.div`
     margin-left: 71.2%;
     margin-top: 0.3%;
   }
+  @media only screen and (max-width: 650px) {
+     .favBtn-index {
+    display:none;
+  }
+  .credBtn-index {
+    display:none;
+  }
+  .favBtn-video {
+    display:none;
+  }
+  .credBtn-video {
+   display:none;
+  }
+  }
   .login-card {
     width: 50%;
   border: 1px solid white;
