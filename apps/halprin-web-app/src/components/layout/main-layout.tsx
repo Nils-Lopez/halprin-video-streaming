@@ -64,7 +64,11 @@ export const MainLayout: React.FC<Props> = (props) => {
                 <li>{lang === 'en' ? 'Editor note' : "Note de l'éditeur"}</li>
               </Link>
 
+<<<<<<< HEAD
               <Link href={'/' + lang + '/about'} passHref>
+=======
+              <Link href={'/' + lang + '/Linkbout'} passHref>
+>>>>>>> b290e96b49773f461cc8ff62580615d8eb39ad43
                 <li>{lang === 'en' ? 'About' : 'A propos'}</li>
               </Link>
               <div className="auth">
@@ -105,7 +109,11 @@ export const MainLayout: React.FC<Props> = (props) => {
               <div className="logo-cd">
                 <Link href="https://contredanse.org" passHref>
                   <img
+<<<<<<< HEAD
                     src={'/images/ui/logo-contredanse-white.png'}
+=======
+                    src={'/images/ui/logo-contredanse-white.jpg'}
+>>>>>>> b290e96b49773f461cc8ff62580615d8eb39ad43
                     alt="LOGO CD"
                     className="lg"
                   />
