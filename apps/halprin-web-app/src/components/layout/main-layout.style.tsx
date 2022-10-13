@@ -46,7 +46,6 @@ export const Layout = styled.div`
     z-index: 10;
   }
   #menuToggle {
-    background-color: #888;
     display: block;
     position: relative;
     top: 30px;
@@ -190,10 +189,35 @@ export const Layout = styled.div`
     }
   }
 
+  .logoBtn {
+    width: 80px;
+    margin: auto;
+    position: absolute;
+    a { 
+      display: flex;
+      justify-content: center;
+      align-item: center;
+
+    }
+    left: 39%;
+  }
   /*
  * And let's slide it in from the left
  */
   #menuToggle input:checked ~ ul {
     transform: none;
   }
+
+
+  @media (max-width: 600px) {
+    .logo-cd {
+      display: none;
+    }
+  }
+  @media (min-width: 600px) {
+    .logoBtn {
+      display: none;
+    }
+  }
 `;
+

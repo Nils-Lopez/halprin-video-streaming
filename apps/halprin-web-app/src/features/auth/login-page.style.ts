@@ -7,4 +7,9 @@ export const Ctn = styled.div`
   padding: 10px;
   margin: auto;
   margin-top: 12%;
+
+  @media (max-width: 600px) {
+    margin-top: 80px;
+    width: 80%;
+  }
 `;

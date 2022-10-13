@@ -41,12 +41,14 @@ export const MainLayout: React.FC<Props> = (props) => {
                 }
               }}
             />
-            <img src="/images/ui/logo-contredanse-white.png" alt="logo contredanse" className='logoInMenu'/>
+          
             
 
             <span></span>
             <span></span>
             <span></span>
+
+            
 
             <ul id="menu">
               <Link href={'/' + lang} passHref>
@@ -94,6 +96,13 @@ export const MainLayout: React.FC<Props> = (props) => {
                         {lang === 'en' ? 'Buy access' : "Acheter l'accès"}
                       </li>
                     </Link>
+                    <br />
+                    <div className="logoBtn">
+                      <a href="https://contredanse.org/">
+                        <img src="/images/ui/logo-contredanse-dark.png" alt="logo contredanse" className='logoInMenu'/>
+                      </a>
+                    </div>
+                    <br /><br /><br /><br />
                   </>
                 )}
               </div>
@@ -115,6 +124,8 @@ export const MainLayout: React.FC<Props> = (props) => {
               </div>
             </>
           ) : null}
+
+          
         </nav>
 
         <main>{children}</main>

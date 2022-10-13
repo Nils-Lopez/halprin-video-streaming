@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Ctn = styled.div`
+    padding-bottom: 60px;
     top: 80px;
     position: absolute;
     left: 10%;

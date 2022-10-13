@@ -1,6 +1,9 @@
 import styled from '@emotion/styled';
 
 export const Container = styled.div`
+
+
+
   .header {
     text-align: center;
     margin-top: 15px;
@@ -48,4 +51,6 @@ export const Container = styled.div`
       text-decoration: underline;
     }
   }
+
+  
 `;
