@@ -65,7 +65,7 @@ export const MainLayout: React.FC<Props> = (props) => {
                 <li>{lang === 'en' ? 'Credits' : 'Crédits'}</li>
               </Link>
               <Link href={'/' + lang + '/editor'} passHref>
-                <li>{lang === 'en' ? 'Editor note' : "Note de l'éditeur"}</li>
+                <li>{lang === 'en' ? "Editor's note" : "Note de l'éditeur"}</li>
               </Link>
 
               <Link href={'/' + lang + '/about'} passHref>
@@ -103,6 +103,8 @@ export const MainLayout: React.FC<Props> = (props) => {
                       </a>
                     </div>
                     <br /><br /><br /><br />
+
+
                   </>
                 )}
               </div>

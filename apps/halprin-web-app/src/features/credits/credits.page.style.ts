@@ -60,4 +60,19 @@ export const Ctn = styled.div`
         margin-top: 10px;
         font-size: 13px;
     }
+
+    @media (min-width: 600px) {
+        .beginBtn {
+            display: inline-block;
+            text-align: center;
+            position: absolute;
+        }
+        .endBtn {
+            display: inline-block;
+            color: blue;
+            text-align: center;
+            position: absolute;
+            bottom: 5vh;
+        }
+    }
 `;
