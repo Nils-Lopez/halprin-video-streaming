@@ -5,6 +5,16 @@ export const Ctn = styled.div`
   .mobileDesc {
     display: none;
   }
+
+
+  
+  @media (min-width: 600px) {
+    margin-top: 0px;
+  }
+  margin-top: 40px;
+
+
+
   .logo {
     position: absolute;
 top: 40%;

@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const Layout = styled.div`
   background: #0e111c;
-  color: white;
+  color: #fff;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -55,6 +55,13 @@ export const Layout = styled.div`
 
     -webkit-user-select: none;
     user-select: none;
+
+
+    .logoInMenu {
+      position: absolute;
+      width: 100px;
+      top: 5px;
+    }
   }
 
   #menuToggle li {
@@ -182,10 +189,44 @@ export const Layout = styled.div`
     }
   }
 
+  .logoBtn {
+    width: 80px;
+    margin: auto;
+    position: absolute;
+    a { 
+      display: flex;
+      justify-content: center;
+      align-item: center;
+
+    }
+    left: 39%;
+
+
+    .helpers-mobile {
+      display: non;
+    }
+  }
   /*
  * And let's slide it in from the left
  */
   #menuToggle input:checked ~ ul {
     transform: none;
   }
+
+
+
+  @media (max-width: 600px) {
+    .logo-cd {
+      display: none;
+    }
+  }
+  @media (min-width: 600px) {
+    br {
+      display: none;
+    }
+    .logoBtn {
+      display: none;
+    }
+  }
 `;
+
