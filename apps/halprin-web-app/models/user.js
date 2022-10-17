@@ -15,14 +15,8 @@ var user = new Schema({
     type: Date,
     default: Date.now,
   },
-  favMedia: {
-    type: [String],
-    default: [],
-  },
-  seenMedia: {
-    type: [String],
-    default: [],
-  },
+  favMedia: [{type: String}],
+  seenMedia: [{type: String}],
   lang: {
     type: String,
     required: true,

@@ -21,7 +21,6 @@ export const Layout = styled.div`
     }
   }
   .helpers {
-<<<<<<< HEAD
     position: fixed;
     width: 100px;
     top: 1%;
@@ -40,21 +39,6 @@ export const Layout = styled.div`
     bottom: 3%;
     left: 48%;
     width: 100%;
-=======
-    position: absolute;
-    left: 5040%;
-    top: 115%;
-  }
-  .logo-cd {
-    position: absolute;
-    left: 2633%;
-    top: 3500%;
-    width: 65px;
-    cursor: pointer;
-    &:hover {
-      filter: brightness(80%);
-    }
->>>>>>> b290e96b49773f461cc8ff62580615d8eb39ad43
   }
   nav {
     position: absolute;

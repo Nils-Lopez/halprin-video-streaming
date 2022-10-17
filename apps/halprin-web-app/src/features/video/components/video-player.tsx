@@ -10,6 +10,7 @@ import { faCopyright, faHeart } from '@fortawesome/free-solid-svg-icons';
 import { CredModal } from '../../helpers/components/cred-modal';
 import { Credit } from '@/data/data.types';
 import { CreditsRepo } from '../repository/credits.repo';
+import Router from 'next/router'
 
 import JWT from 'expo-jwt';
 
@@ -37,6 +38,8 @@ export const VideoPlayer: FC<Props> = (props) => {
     },
   ]);
 
+
+
   useEffect(() => {
     if (video && video.url && typeof video.url === 'string') {
       setUrl('https://player.vimeo.com/video' + video.url.substring(17, 28));
@@ -45,6 +48,18 @@ export const VideoPlayer: FC<Props> = (props) => {
       }
       if (!userToken || userToken === '0') {
         demoTimer();
+      } else {
+        // Add seens videos to user model
+        const email = JWT.decode(userToken, 'Halprin-Web-App').user;
+        const addToSeens = async () => {
+          const res = await axios.put('/api/users', {
+            email: email,
+            playlist: 'fav',
+            media: video.media_slug,
+          });
+          return res
+        }
+        addToSeens()
       }
     }
   }, [video]);
@@ -61,7 +76,7 @@ export const VideoPlayer: FC<Props> = (props) => {
 
   const demoTimer = () => {
     setTimeout(() => {
-      setMode('demo');
+      Router.push('/auth/signin')
     }, 10000);
   };
 
