@@ -190,7 +190,7 @@ export const FooterIndex: FC<Props> = (props) => {
                   />
                 )}
               </Link>
-              <Link href="/video/already-seens" passHref>
+              <Link href="/video/watched" passHref>
                 <img
                   src="/images/ui/video/watched.png"
                   className="btn-icon"
@@ -320,14 +320,14 @@ export const FooterIndex: FC<Props> = (props) => {
                       />
                     )}
                   </Link>
-                  <Link href="/video/already-seens" passHref>
+                  <Link href="/video/watched" passHref>
                     <img
                       src="/images/ui/video/eye-arrow.png"
                       className="btn-icon"
                       alt="Already Seen"
                     />
                   </Link>
-                  <Link href="/video/unseens" passHref>
+                  <Link href="/video/unwatched" passHref>
                     <img
                       src="/images/ui/video/eye.png"
                       className="btn-icon"
@@ -383,14 +383,14 @@ export const FooterIndex: FC<Props> = (props) => {
                     />
                   )}
                 </Link>
-                <Link href="/video/already-seens" passHref>
+                <Link href="/video/watched" passHref>
                   <img
                     src="/images/ui/video/eye-arrow.png"
                     className="btn-icon"
                     alt="Already Seen"
                   />
                 </Link>
-                <Link href="/video/unseens" passHref>
+                <Link href="/video/unwatched" passHref>
                   <img
                     src="/images/ui/video/eye.png"
                     className="btn-icon"

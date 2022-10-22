@@ -7,11 +7,13 @@ export const Ctn = styled.div`
   }
 
 
-  
+  @media (max-width: 600px) and (min-height: 670px) {
+    margin-top: 40px;
+  }
   @media (min-width: 600px) {
     margin-top: 0px;
   }
-  margin-top: 40px;
+  
 
 
 
@@ -48,11 +50,33 @@ transform: translate(-50%, -50%);
     position: absolute;
     left: 20%;
     font-size: 20px;
+    .icon {
+      margin-top: -8px;
+    }
+    @media (max-width: 600px) {
+      top: 1%;
+      left: 26%;
+    }
+    &:hover {
+      scale: 1.05;
+      filter: opacity(80%);
+    }
   }
   .endBtn {
     position: absolute;
     right: 20%;
     font-size: 20px;
+    &:hover {
+      scale: 1.05;
+      filter: opacity(80%);
+    }
+    .icon {
+      margin-top: -5px;
+    }
+    @media (max-width: 600px) {
+      bottom: 1%;
+      left: 22%;
+    }
   }
   i .arrow {
     border: solid black;
@@ -332,9 +356,31 @@ export const Mobile = styled.div`
   .index {
     color: #ee6055;
   }
+  .workshopTxt {
+    color: pink;
+  }
+  .roadmapsTxt {
+    color: #ffef9f;
+    top: 27%;
+  }
+  .indexTxt {
+    color: #ee6055;
+  }
+  .lifeartTxt {
+    color: #a2d2ff;
+  }
   .mouthImg {
     height: 65px;
     margin: auto;
+  }
+  .mobileDesc {
+    text-align: center;
+    width: 80%;
+    margin:auto;
+    margin-top: 10%;
+  }
+  .btn-close-info {
+    width: 100%;  
   }
   height: 100%;
   .ctn {

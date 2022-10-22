@@ -83,6 +83,7 @@ export const MainVideoPage: React.FC<Props> = (props) => {
           }
         } else if (searchType === 'watched') {
           try {
+            console.log('je psase dans watched')
             const getWatched = async () => {
               const allMedia = new MediaRepo().get();
               const email =
@@ -100,6 +101,7 @@ export const MainVideoPage: React.FC<Props> = (props) => {
               } else {
                 setEmptyList({ fr: '', en: '' });
               }
+              console.log("watched : ", user.seenMedia)
               await allMedia.map((m) => {
                 if (m.media_slug) {
                   if (user.seenMedia.includes(m.media_slug)) {

@@ -3,19 +3,23 @@ import * as S from './home.page.style';
 import { MainLayout } from '@/components/layout/main-layout';
 
 import { useState } from 'react';
+import { SupportedLang } from '@/features/video/types';
 
 import Link from 'next/link';
 
 type Props = {
   children?: never;
+  lang: SupportedLang;
 };
 
-export const HomePage: React.FC<Props> = () => {
+export const HomePage: React.FC<Props> = ({lang}) => {
   const [content, setContent] = useState('home');
 
   return (
     <>
-      {content === 'home' ? (
+      <MainLayout lang={lang} source="home">
+        <>
+          {content === 'home' ? (
         <>
           <S.HomeLayout>
             <div>
@@ -161,13 +165,16 @@ export const HomePage: React.FC<Props> = () => {
                       <div className="arrow-top"></div>
                       <div className="arrow-bottom"></div>
                     </div>
-                  </Link>
+                  </Link> 
                 )}
               </div>
             </S.Video>
           </MainLayout>
         </>
       )}
+        </>
+      </MainLayout>
     </>
+
   );
 };

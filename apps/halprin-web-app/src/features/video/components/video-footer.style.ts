@@ -22,11 +22,25 @@ export const Ctn = styled.div`
       width: 20%;
       margin-left: 5px;
       color: #95a5a6;
+      display: flex;
+      .favBtn {
+        margin-left: 15px;
+        &:hover {
+  filter: brightness(125);
+}
+      }
+      .credBtn {
+margin-left: 5px;
+&:hover {
+  filter: brightness(125);
+}
+      }
     }
     .arrow {
       height: 17px;
       margin-top: 2.3px;
       cursor: pointer;
+      z-index: 1000;
     }
     .dir-right {
       margin-right: -5px;
@@ -137,7 +151,19 @@ export const Ctn = styled.div`
         display: none;
       }
       .mobile {
-        display: block;
+        .left {
+          margin-left: -10px;
+        }
+        display: flex;
+        .allBtn {
+          height: 20px;
+          margin-top: 2px;
+          margin-right: 5px;
+        }
+        .favBtn {
+          height: 21px;
+          margin-top: 2px;
+        }
         width: 100%;
       }
       .center {

@@ -11,10 +11,11 @@ type Props = {
   media?: Media;
   children: JSX.Element;
   lang: SupportedLang;
+  source?: String
 };
 
 export const MainLayout: React.FC<Props> = (props) => {
-  const { children, help, media, lang } = props;
+  const { children, help, media, lang, source } = props;
   const [session, setSession] = useState<boolean | string>(false);
   const [menu, setMenu] = useState(false);
 
@@ -44,13 +45,14 @@ export const MainLayout: React.FC<Props> = (props) => {
           
             
 
-            <span></span>
-            <span></span>
-            <span></span>
-
-            
+            <span className="brgr"></span>
+            <span className="brgr"></span>
+            <span className="brgr"></span>
 
             <ul id="menu">
+              <div className="mobile-helpers">
+                <Helpers help={help} media={media} lang={lang} />
+              </div>
               <Link href={'/' + lang} passHref>
                 <li>{lang === 'en' ? 'Home' : 'Accueil'}</li>
               </Link>
@@ -67,7 +69,6 @@ export const MainLayout: React.FC<Props> = (props) => {
               <Link href={'/' + lang + '/editor'} passHref>
                 <li>{lang === 'en' ? "Editor's note" : "Note de l'éditeur"}</li>
               </Link>
-
               <Link href={'/' + lang + '/about'} passHref>
                 <li>{lang === 'en' ? 'About' : 'A propos'}</li>
               </Link>
@@ -97,25 +98,28 @@ export const MainLayout: React.FC<Props> = (props) => {
                       </li>
                     </Link>
                     <br />
-                    <div className="logoBtn">
+                    
+                  </>
+                )}
+              </div>
+              <br />
+              <div className="logoBtn">
                       <a href="https://contredanse.org/">
                         <img src="/images/ui/logo-contredanse-dark.png" alt="logo contredanse" className='logoInMenu'/>
                       </a>
                     </div>
-                    <br /><br /><br /><br />
+                    <br /><br /><br />
 
 
-                  </>
-                )}
-              </div>
             </ul>
           </div>
-          {menu ? (
+          {menu || source && source === "home" ? (
             <>
-              <div className="helpers">
+               <div className="helpers"> 
                 <Helpers help={help} media={media} lang={lang} />
               </div>
               <div className="logo-cd">
+                {menu && source && source === "home" && <h3>{lang === "en" ? <>All rights reserved Contredanse, 2022</> : <>Tous droits réservés à Contredanse, 2022</>}</h3>}
                 <Link href="https://contredanse.org" passHref>
                   <img
                     src={'/images/ui/logo-contredanse-white.png'}

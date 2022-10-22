@@ -5,6 +5,8 @@ import * as S from './menu-page.style';
 import { useState } from 'react';
 import Link from 'next/link';
 import { SupportedLang } from '../video/types';
+ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import { faChevronUp, faChevronDown, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
 type Props = {
   lang: SupportedLang;
@@ -19,6 +21,11 @@ export const MenuPage: React.FC<Props> = (props) => {
   const [midClassName, setMidClassName] = useState('');
   const [content, setContent] = useState('menu');
   const [intentionsToggle, setIntentionsToggle] = useState(false);
+
+  const [infoWorkshop, setInfoWorkshop] = useState(false)
+  const [infoRoadmaps, setInfoRoadmaps] = useState(false)
+  const [infoLifeart, setInfoLifeart] = useState(false)
+  const [infoIndex, setInfoIndex] = useState(false)
 
   const changeMiddleContent = (type: string) => {
     switch (type) {
@@ -64,15 +71,16 @@ export const MenuPage: React.FC<Props> = (props) => {
         <MainLayout lang={lang}>
           <div>
             <S.Ctn>
-              <button
+              
+              {!infoWorkshop && !infoRoadmaps && !infoIndex && !infoLifeart ? <button
                 onClick={() =>
                   setContent('https://player.vimeo.com/video/582111408')
                 }
                 className="beginBtn">
                 {lang === 'en' ? 'BEGINNING' : 'POUR COMMENCER'}
-                <i className="arrow down"></i>
-              </button>
+                                  <div className="icon"><FontAwesomeIcon icon={faChevronDown} size={"2x"} fade/></div>
 
+              </button> : null}
               {midContent === 'logo' ? (
                 intentionsToggle === false ? (
                   <div className="logo">
@@ -164,79 +172,186 @@ export const MenuPage: React.FC<Props> = (props) => {
                   </Link>
                 </div>
               </S.Circle>
-              {midContent === 'desc' && (
-                <div className="mobileDesc">
-                  <div className={midClassName}>
-                    <p>{midTitle.toUpperCase()}</p>
-                    <p>{midBody}</p>
-                  </div>
-                </div>
-              )}
-              <button
+              
+              
+              {!infoWorkshop && !infoRoadmaps && !infoIndex && !infoLifeart ? <button
                 onClick={() =>
                   setContent('https://player.vimeo.com/video/582147532')
                 }
                 className="endBtn">
-                {lang === 'en' ? 'ENDING' : 'POUR TERMINER'}
-              </button>
+                <>
+                  {lang === 'en' ? 'ENDING' : 'POUR TERMINER'}
+                  <div className="icon"><FontAwesomeIcon icon={faChevronUp} size={"2x"} fade /></div>
+                </>
+              </button> : null}
             </S.Ctn>
+
+        {/* MOBILE VERSION */}
+            
             <S.Mobile>
-              <Link href={menuConfig.menuLinks.videoWorkshops} passHref>
-                <div className="ctn">
-                  <img
-                    src={'/images/ui/menu/round.png'}
-                    alt={t('app:menu.workshop')}
-                    onMouseEnter={() => changeMiddleContent('workshop')}
-                    onMouseLeave={() => changeMiddleContent('logo')}
-                    className="roundImg"
-                  />
+              {midContent === 'desc' && (
+                <Link href={infoWorkshop ? menuConfig.menuLinks.videoWorkshops : infoRoadmaps ? menuConfig.menuLinks.videoRoadmaps : infoIndex ? menuConfig.menuLinks.videoIndex : menuConfig.menuLinks.videoLifeArt} passHref>
+                  <div className="mobileDesc">
+                    <div className={midClassName}>
+                      <p>{midTitle.toUpperCase()}</p>
+                      <p>{midBody}</p>
+            
+                    </div>
+                  </div>
+                </Link>
+              )}
+              {!infoWorkshop && !infoRoadmaps && !infoIndex && !infoLifeart ? <>
+                <div className="ctn" onClick={() => {
+                  setInfoWorkshop(true)
+                  changeMiddleContent('workshop')
+                }}>
+                    <img
+                      src={'/images/ui/menu/round.png'}
+                      alt={t('app:menu.workshop')}
+                      onMouseEnter={() => changeMiddleContent('workshop')}
+                      onMouseLeave={() => changeMiddleContent('logo')}
+                      className="roundImg"
+                    />
                   <div className="content workshop">
                     <h2 className="title">Workshop</h2>
                   </div>
                 </div>
-              </Link>
-              <Link href={menuConfig.menuLinks.videoLifeArt} passHref>
-                <div className="ctn lifeart">
-                  <img
-                    src={'/images/ui/menu/eye.png'}
-                    alt={t('app:menu.myLifeAndArt')}
-                    onMouseEnter={() => changeMiddleContent('lifeart')}
-                    onMouseLeave={() => changeMiddleContent('logo')}
-                    className="eyeImg"
-                  />
-                  <div className="content ">
-                    <h2 className="title">Life-Art</h2>
-                  </div>
+                <div className="ctn lifeart" onClick={() => {
+                  setInfoLifeart(true)
+                  changeMiddleContent('lifeart')
+                }}>
+                    <img
+                      src={'/images/ui/menu/eye.png'}
+                      alt={t('app:menu.myLifeAndArt')}
+                      onMouseEnter={() => changeMiddleContent('lifeart')}
+                      onMouseLeave={() => changeMiddleContent('logo')}
+                      className="eyeImg"
+                    />
+                    <div className="content ">
+                      <h2 className="title">Life-Art</h2>
+                    </div>
                 </div>
-              </Link>
-              <Link href={menuConfig.menuLinks.videoRoadmaps} passHref>
-                <div className="ctn roadmaps">
-                  <img
-                    src={'/images/ui/menu/hand.png'}
-                    alt={t('app:menu.roadmaps')}
-                    onMouseEnter={() => changeMiddleContent('roadmaps')}
-                    onMouseLeave={() => changeMiddleContent('logo')}
-                    className="handImg"
-                  />
-                  <div className="content ">
-                    <h2 className="title">Roadmaps</h2>
-                  </div>
+                <div className="ctn roadmaps" onClick={() => {
+                  setInfoRoadmaps(true)
+                  changeMiddleContent('roadmaps')
+                }}>
+                    <img
+                      src={'/images/ui/menu/hand.png'}
+                      alt={t('app:menu.roadmaps')}
+                      onMouseEnter={() => changeMiddleContent('roadmaps')}
+                      onMouseLeave={() => changeMiddleContent('logo')}
+                      className="handImg"
+                    />
+                    <div className="content ">
+                      <h2 className="title">Roadmaps</h2>
+                    </div>
                 </div>
-              </Link>
-              <Link href={menuConfig.menuLinks.videoIndex} passHref>
-                <div className="ctn index">
-                  <img
-                    src={'/images/ui/menu/mouth.png'}
-                    alt={t('app:menu.index')}
-                    onMouseEnter={() => changeMiddleContent('index')}
-                    onMouseLeave={() => changeMiddleContent('logo')}
-                    className="mouthImg"
-                  />
-                  <div className="content">
-                    <h2 className="title">Index</h2>
+                <div className="ctn index" onClick={() => {
+                  setInfoIndex(true)
+                  changeMiddleContent('index')
+                 }}>
+                    <img
+                      src={'/images/ui/menu/mouth.png'}
+                      alt={t('app:menu.index')}
+                      onMouseEnter={() => changeMiddleContent('index')}
+                      onMouseLeave={() => changeMiddleContent('logo')}
+                      className="mouthImg"
+                    />
+                    <div className="content">
+                      <h2 className="title">Index</h2>
+                    </div>
                   </div>
-                </div>
-              </Link>
+                
+              </> : infoWorkshop ? <>
+                <Link href={menuConfig.menuLinks.videoWorkshops} passHref>
+                  <div className="ctn info">
+                    <img
+                      src={'/images/ui/menu/round.png'}
+                      alt={t('app:menu.workshop')}
+                      onMouseEnter={() => changeMiddleContent('workshop')}
+                      onMouseLeave={() => changeMiddleContent('logo')}
+                      className="roundImg"
+                    />
+                    <div className="content workshop">
+                      <h2 className="title">Workshop</h2>
+                    </div>
+                  </div>
+                  </Link>
+                <div className="info-ctn">      
+                    <button onClick={() => {
+                      setInfoWorkshop(false)
+                      changeMiddleContent('logo')
+                    }} className="btn-close-info"><FontAwesomeIcon icon={faChevronUp} size="3x"/></button>
+                      
+                  </div>
+              </> : infoRoadmaps ? <>
+                <Link href={menuConfig.menuLinks.videoRoadmaps} passHref>
+                  <div className="ctn roadmaps info">
+                    <img
+                      src={'/images/ui/menu/hand.png'}
+                      alt={t('app:menu.roadmaps')}
+                      onMouseEnter={() => changeMiddleContent('roadmaps')}
+                      onMouseLeave={() => changeMiddleContent('logo')}
+                      className="handImg"
+                    />
+                    <div className="content ">
+                          <h2 className="title">Roadmaps</h2>
+                          
+                    </div>
+                  </div>
+                    </Link>
+                  <div className="info-ctn">      
+                    <button onClick={() => {
+                      setInfoRoadmaps(false)
+                      changeMiddleContent('logo')
+                    }} className="btn-close-info"><FontAwesomeIcon icon={faChevronUp} size="3x"/></button>
+                      
+                  </div>
+              </> : infoIndex ? <>
+                <Link href={menuConfig.menuLinks.videoIndex} passHref>
+                  <div className="ctn index info">
+                    <img
+                      src={'/images/ui/menu/mouth.png'}
+                      alt={t('app:menu.index')}
+                      onMouseEnter={() => changeMiddleContent('index')}
+                      onMouseLeave={() => changeMiddleContent('logo')}
+                      className="mouthImg"
+                    />
+                    <div className="content">
+                      <h2 className="title">Index</h2>
+                    </div>
+                  </div>
+                      </Link>
+                  <div className="info-ctn">      
+                    <button onClick={() => {
+                      setInfoIndex(false)
+                      changeMiddleContent('logo')
+                    }} className="btn-close-info"><FontAwesomeIcon icon={faChevronUp} size="3x"/></button>
+                      
+                  </div>              </> : infoLifeart ? <>
+                <Link href={menuConfig.menuLinks.videoLifeArt} passHref>
+                  <div className="ctn lifeart info">
+                    <img
+                      src={'/images/ui/menu/eye.png'}
+                      alt={t('app:menu.myLifeAndArt')}
+                      onMouseEnter={() => changeMiddleContent('lifeart')}
+                      onMouseLeave={() => changeMiddleContent('logo')}
+                      className="eyeImg"
+                    />
+                    <div className="content ">
+                              <h2 className="title">Life-Art</h2>
+                              <p></p>
+                    </div>
+                  </div>
+                        </Link>
+                  <div className="info-ctn">      
+                    <button onClick={() => {
+                      setInfoLifeart(false)
+                      changeMiddleContent('logo')
+                    }} className="btn-close-info"><FontAwesomeIcon icon={faChevronUp} size="3x"/></button>
+                      
+                  </div>
+              </> : null}
             </S.Mobile>
           </div>
         </MainLayout>

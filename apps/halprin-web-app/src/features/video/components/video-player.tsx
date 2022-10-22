@@ -5,11 +5,6 @@ import axios from 'axios';
 import useCookie from 'react-use-cookie';
 import { LoginForm } from '../../auth/components/login-form';
 import { SupportedLang } from '../types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopyright, faHeart } from '@fortawesome/free-solid-svg-icons';
-import { CredModal } from '../../helpers/components/cred-modal';
-import { Credit } from '@/data/data.types';
-import { CreditsRepo } from '../repository/credits.repo';
 import Router from 'next/router'
 
 import JWT from 'expo-jwt';
@@ -26,17 +21,6 @@ export const VideoPlayer: FC<Props> = (props) => {
   const [loading, setLoading] = useState(true);
   const [userToken, setUserToken] = useCookie('token', '0');
   const [mode, setMode] = useState('free');
-  const [credModal, setCredModal] = useState<Credit[]>([
-    {
-      htmlLabel: {
-        en: '<b><i>Dance with Life. Anna, a Living Legend</i></…tp://www.annahalprin.org">www.annahalprin.org</a>',
-        fr: '<b><i>Dance with Life. Anna, a Living Legend</i></…tp://www.annahalprin.org">www.annahalprin.org</a>',
-      },
-      id: 11,
-      index: true,
-      year: 0,
-    },
-  ]);
 
 
 
@@ -50,13 +34,16 @@ export const VideoPlayer: FC<Props> = (props) => {
         demoTimer();
       } else {
         // Add seens videos to user model
+        console.log('adding vidoe to watched')
         const email = JWT.decode(userToken, 'Halprin-Web-App').user;
         const addToSeens = async () => {
+          
           const res = await axios.put('/api/users', {
             email: email,
-            playlist: 'fav',
+            playlist: 'seen',
             media: video.media_slug,
           });
+          console.log('sended request : ', res)
           return res
         }
         addToSeens()
@@ -64,33 +51,11 @@ export const VideoPlayer: FC<Props> = (props) => {
     }
   }, [video]);
 
-  const addToFav = async () => {
-    const email = JWT.decode(userToken, 'Halprin-Web-App').user;
-    const res = await axios.put('/api/users', {
-      email: email,
-      playlist: 'fav',
-      media: video.media_slug,
-    });
-    console.log(res);
-  };
-
   const demoTimer = () => {
     setTimeout(() => {
       Router.push('/auth/signin')
     }, 10000);
   };
-
-  const creditsRepo = new CreditsRepo();
-
-  const getCreditsData = () => {
-    if (video && video.thumb !== 'false' && video.creditsIds) {
-      const credits = creditsRepo.getMediaCredits(video.creditsIds);
-      return credits;
-    }
-  };
-
-  const creditsData: Credit[] | boolean | undefined =
-    video && video.thumb !== 'false' ? getCreditsData() : false;
 
   useEffect(() => {
     if (video && video.thumb !== 'false') {
@@ -110,22 +75,7 @@ export const VideoPlayer: FC<Props> = (props) => {
         </>
       ) : (
         <>
-          {userToken && userToken !== '0' ? (
-            <div>
-              <button className={'favBtn-' + source} onClick={() => addToFav()}>
-                <FontAwesomeIcon icon={faHeart} />
-              </button>
-              <button
-                className={'credBtn-' + source}
-                onClick={() => {
-                  if (creditsData && creditsData[0]) {
-                    setCredModal(creditsData);
-                  }
-                }}>
-                <FontAwesomeIcon icon={faCopyright} />
-              </button>
-            </div>
-          ) : null}
+          
           {!loading ? (
             <iframe
               src={url}
@@ -138,9 +88,7 @@ export const VideoPlayer: FC<Props> = (props) => {
           ) : null}
         </>
       )}
-      {credModal[0].year !== 0 ? (
-        <CredModal showModal={setCredModal} modal={credModal} lang={lang} />
-      ) : null}
+
     </S.Ctn>
   );
 };

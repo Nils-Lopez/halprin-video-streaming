@@ -25,8 +25,25 @@ export const Layout = styled.div`
     width: 100px;
     top: 1%;
     right: 0;
+    @media (max-width: 600px) {
+      display:none;
+    }
+  }
+  .mobile-helpers {
+    position: absolute;
+    top: 9%;
+    left: 70%;
+    color: black;
+    @media (min-width: 600px) {
+      display: none;
+    }
   }
   .logo-cd {
+    h3 {
+      margin-bottom: 10px;
+      margin-left: -100px;
+      font-size: 17px;
+    }
     .lg {
       width: 80px;
       cursor: pointer;
@@ -94,7 +111,7 @@ export const Layout = styled.div`
   /*
  * Just a quick hamburger
  */
-  #menuToggle span {
+  #menuToggle .brgr {
     display: block;
     width: 33px;
     height: 4px;
@@ -112,11 +129,11 @@ export const Layout = styled.div`
       background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
   }
 
-  #menuToggle span:first-child {
+  #menuToggle .brgr:first-child {
     transform-origin: 0% 0%;
   }
 
-  #menuToggle span:nth-last-child(2) {
+  #menuToggle .brgr:nth-last-child(2) {
     transform-origin: 0% 100%;
   }
 
@@ -124,7 +141,7 @@ export const Layout = styled.div`
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-  #menuToggle input:checked ~ span {
+  #menuToggle input:checked ~ .brgr {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     background: #232323;
@@ -133,7 +150,7 @@ export const Layout = styled.div`
   /*
  * But let's hide the middle one.
  */
-  #menuToggle input:checked ~ span:nth-last-child(3) {
+  #menuToggle input:checked ~ .brgr:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
@@ -141,7 +158,7 @@ export const Layout = styled.div`
   /*
  * Ohyeah and the last one should go the other direction
  */
-  #menuToggle input:checked ~ span:nth-last-child(2) {
+  #menuToggle input:checked ~ .brgr:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
   }
 
@@ -203,7 +220,7 @@ export const Layout = styled.div`
 
 
     .helpers-mobile {
-      display: non;
+      display: none;
     }
   }
   /*

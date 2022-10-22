@@ -6,6 +6,15 @@ import { useEffect, useState } from 'react';
 import { EmbedMenu } from '@/features/menu/embed/embed-menu';
 import Link from 'next/link';
 import useCookie from 'react-use-cookie';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCopyright, faStar } from '@fortawesome/free-solid-svg-icons';
+import { CredModal } from '../../helpers/components/cred-modal';
+import { Credit } from '@/data/data.types';
+import { CreditsRepo } from '../repository/credits.repo';
+
+import axios from 'axios';
+import JWT from 'expo-jwt';
+
 
 type Props = {
   media: Media[];
@@ -21,7 +30,18 @@ export const VideoFooter: React.FC<Props> = (props) => {
   const [showMenu, setShowMenu] = useState(false);
   const [allHover, setAllHover] = useState(false);
   const [favHover, setFavHover] = useState(false);
-
+ const [credModal, setCredModal] = useState<Credit[]>([
+    {
+      htmlLabel: {
+        en: '<b><i>Dance with Life. Anna, a Living Legend</i></…tp://www.annahalprin.org">www.annahalprin.org</a>',
+        fr: '<b><i>Dance with Life. Anna, a Living Legend</i></…tp://www.annahalprin.org">www.annahalprin.org</a>',
+      },
+      id: 11,
+      index: true,
+      year: 0,
+    },
+ ]);
+  
   let page = '';
 
   if (
@@ -44,11 +64,36 @@ export const VideoFooter: React.FC<Props> = (props) => {
     page = 'roadmaps';
   }
 
+  const addToFav = async () => {
+    const email = JWT.decode(userToken, 'Halprin-Web-App').user;
+    const res = await axios.put('/api/users', {
+      email: email,
+      playlist: 'fav',
+      media: selectedVideo.media_slug,
+    });
+    console.log(res);
+  };
+
+
   useEffect(() => {
     if (userToken && userToken !== '0') {
       setSession(true);
     } else setSession(false);
   }, [userToken]);
+
+
+  const creditsRepo = new CreditsRepo();
+
+  const getCreditsData = () => {
+    if (selectedVideo && selectedVideo.thumb !== 'false' && selectedVideo.creditsIds) {
+      const credits = creditsRepo.getMediaCredits(selectedVideo.creditsIds);
+      return credits;
+    }
+  };
+
+  const creditsData: Credit[] | boolean | undefined =
+    selectedVideo && selectedVideo.thumb !== 'false' ? getCreditsData() : false;
+
 
   return (
     <S.Ctn>
@@ -90,7 +135,22 @@ export const VideoFooter: React.FC<Props> = (props) => {
       </div>
       <div className="topBar">
         <div className="desktop">
-          <div className="left">{media[0] && media[0].category}</div>
+          <div className="left">{media[0] && media[0].category} - { selectedVideo && selectedVideo.title ? selectedVideo.title[lang] : null} {userToken && userToken !== '0' ? (
+            <div>
+              <button className="favBtn" onClick={() => addToFav()}>
+                <FontAwesomeIcon icon={faStar} />
+              </button>
+              <button
+                className={'credBtn'}
+                onClick={() => {
+                  if (creditsData && creditsData[0]) {
+                    setCredModal(creditsData);
+                  }
+                }}>
+                <FontAwesomeIcon icon={faCopyright} />
+              </button>
+            </div>
+          ) : null}</div>
           <div className="center">
             {media.indexOf(selectedVideo) > 0 && (
               <Link
@@ -182,6 +242,24 @@ export const VideoFooter: React.FC<Props> = (props) => {
           </div>
         </div>
         <div className="mobile">
+          <div className="left">
+            {userToken && userToken !== '0' ? (
+            <div>
+              <button className="favBtn" onClick={() => addToFav()}>
+                <FontAwesomeIcon icon={faStar} />
+              </button>
+              <button
+                className={'credBtn'}
+                onClick={() => {
+                  if (creditsData && creditsData[0]) {
+                    setCredModal(creditsData);
+                  }
+                }}>
+                <FontAwesomeIcon icon={faCopyright} />
+              </button>
+            </div>
+          ) : null}
+          </div>
           <div className="center">
             {media.indexOf(selectedVideo) > 0 && (
               <Link
@@ -275,6 +353,9 @@ export const VideoFooter: React.FC<Props> = (props) => {
         selectedVideo={selectedVideo}
         selectVideo={selectVideo}
       />
+      {credModal[0].year !== 0 ? (
+        <CredModal showModal={setCredModal} modal={credModal} lang={lang} />
+      ) : null}
     </S.Ctn>
   );
 };
