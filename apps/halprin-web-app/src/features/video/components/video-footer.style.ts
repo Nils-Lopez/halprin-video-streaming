@@ -143,6 +143,11 @@ margin-left: 5px;
     min-height: 130px;
     max-height: 130px;
   }
+  @media screen and (min-width: 1024px) {
+    .btn-mobile {
+      display: none;
+    }
+  }
   @media only screen and (max-width: 796px) {
     min-height: 200px;
     max-height: 200px;

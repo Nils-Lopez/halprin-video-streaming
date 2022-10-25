@@ -29,7 +29,8 @@ export const MainLayout: React.FC<Props> = (props) => {
 
   return (
     <Layout>
-      <div className="flex flex-col h-screen">
+      <div className={!source || source !== "statics" ? "bg-blue" : "bg-beige"}>
+         <div className="flex flex-col h-screen">
         <nav role="navigation">
           <div id="menuToggle">
             <input
@@ -119,7 +120,6 @@ export const MainLayout: React.FC<Props> = (props) => {
                 <Helpers help={help} media={media} lang={lang} />
               </div>
               <div className="logo-cd">
-                {menu && source && source === "home" && <h3>{lang === "en" ? <>All rights reserved Contredanse, 2022</> : <>Tous droits réservés à Contredanse, 2022</>}</h3>}
                 <Link href="https://contredanse.org" passHref>
                   <img
                     src={'/images/ui/logo-contredanse-white.png'}
@@ -127,6 +127,9 @@ export const MainLayout: React.FC<Props> = (props) => {
                     className="lg"
                   />
                 </Link>
+              
+                                {menu && <h3>© Contredanse Editions, 2022</h3>}
+
               </div>
             </>
           ) : null}
@@ -135,6 +138,7 @@ export const MainLayout: React.FC<Props> = (props) => {
         </nav>
 
         <main>{children}</main>
+      </div>
       </div>
     </Layout>
   );

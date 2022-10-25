@@ -38,49 +38,10 @@ export const HomePage: React.FC<Props> = ({lang}) => {
                     />
                   </div>
                 </button>
-                <S.Circle>
-                  <div className="home">
-                    <div className="topIcon">
-                      <Link href="#" passHref>
-                        <img
-                          src={'/images/ui/menu/round.png'}
-                          alt="round"
-                          className="roundImg"
-                        />
-                      </Link>
-                    </div>
-                    <div className="midContainer">
-                      <div className="leftIcon">
-                        <Link href="#" passHref>
-                          <img
-                            src={'/images/ui/menu/eye.png'}
-                            alt="eye"
-                            className="eyeImg"
-                          />
-                        </Link>
-                      </div>
-
-                      <div className="rightIcon">
-                        <Link href="#" passHref>
-                          <img
-                            src={'/images/ui/menu/hand.png'}
-                            alt="hand"
-                            className="handImg"
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="bottomIcon">
-                      <Link href="#" passHref>
-                        <img
-                          src={'/images/ui/menu/mouth.png'}
-                          alt="mouth"
-                          className="mouthImg"
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </S.Circle>
+                <div className="mid">
+                      
+                </div>
+                
               </S.Ctn>
               <S.Mobile>
                 <Link href="#" passHref>

@@ -15,7 +15,7 @@ export const CreditsPage: React.FC<Props> = (props) => {
 
   return (
     <>
-      <MainLayout lang={lang}>
+      <MainLayout lang={lang} source="statics">
         <S.Ctn>
           <h1>Credits</h1>
           <div className="ctn-body">

@@ -1,10 +1,20 @@
 import styled from '@emotion/styled';
 
 export const Layout = styled.div`
-  background: #0e111c;
+  
   color: #fff;
   height: 100%;
   width: 100%;
+  .bg-blue {
+    height: 100%;
+    width: 100%;
+    background: #0e111c;
+  }
+  .bg-beige {
+    height: 100%;
+    width: 100%;
+    background: #0e111c;
+  }
   position: fixed;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -39,9 +49,10 @@ export const Layout = styled.div`
     }
   }
   .logo-cd {
+    
     h3 {
-      margin-bottom: 10px;
-      margin-left: -100px;
+      margin-top: 10px;
+      margin-left: -75px;
       font-size: 17px;
     }
     .lg {

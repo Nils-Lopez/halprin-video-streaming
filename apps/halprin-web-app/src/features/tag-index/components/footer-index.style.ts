@@ -1,6 +1,12 @@
 import styled from '@emotion/styled';
 
 export const FooterContainer = styled.div`
+  @media screen and (min-width: 1024px) {
+    .btn-mobile {
+      display: none;
+    }
+  }
+
   .desktop {
     .embed-menu {
       margin-left: 80px;
@@ -77,10 +83,23 @@ export const FooterContainer = styled.div`
           justify-content: space-between;
         }
         .left {
-          width: 20%;
-          margin-left: 5px;
-          color: #95a5a6;
-        }
+      width: 20%;
+      margin-left: 5px;
+      color: #95a5a6;
+      display: flex;
+      .favBtn {
+        margin-left: 15px;
+        &:hover {
+  filter: brightness(125);
+}
+      }
+      .credBtn {
+margin-left: 5px;
+&:hover {
+  filter: brightness(125);
+}
+      }
+    }
         .right {
           width: 20%;
           display: flex;
@@ -123,6 +142,7 @@ export const FooterContainer = styled.div`
           margin-left: 3px;
           margin-right: 3px;
         }
+        
       }
     }
   }
@@ -167,7 +187,38 @@ export const FooterContainer = styled.div`
           color: #95a5a6;
           border-top: 1px solid #95a5a6;
           border-bottom: 1px solid #95a5a6;
+          .center {
+            margin-top: -30px;
+            
+          }
+          .arrow {
+            margin-left: 3px;
+            margin-right: 3px;
+            margin-bottom: -3px;
+          }
+        .allBtn {
+          height: 20px;
+          margin-top: 2px;
+          margin-right: 5px;
         }
+        .favBtn {
+          height: 21px;
+          margin-top: 2px;
+        }
+        width: 100%;
+      }
+      .center {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .bottom {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+        }
+        
         margin-top: -230px;
         background: #0e111c;
         .center {

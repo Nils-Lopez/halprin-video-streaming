@@ -263,6 +263,8 @@ export const MainVideoPage: React.FC<Props> = (props) => {
                       source="video"
                       video={selectedVideo}
                       lang={lang}
+                      media={media}
+                      selectVideo={selectVideo}
                     />
                   ) : (
                     <div className="loader"></div>

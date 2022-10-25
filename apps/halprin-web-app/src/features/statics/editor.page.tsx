@@ -12,7 +12,7 @@ export const EditorPage: React.FC<Props> = (props) => {
   return (
     <MainLayout lang={lang}>
       <S.Ctn>
-        <h1>{lang === 'fr' ? "Note de l'éditeur" : 'Editor note'}</h1>
+        <h1>{lang === 'fr' ? "Note de l'éditeur" : "Editor's note"}</h1>
         {lang === 'fr' ? (
           <div className="ctn-body">
             <p>

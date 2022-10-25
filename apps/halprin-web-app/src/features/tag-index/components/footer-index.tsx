@@ -6,6 +6,16 @@ import { EmbedMenu } from '@/features/menu/embed/embed-menu';
 import Link from 'next/link';
 import { SupportedLang } from '@/features/video/types';
 import { Media, Tag } from '@/data/data.types';
+import useCookie from 'react-use-cookie';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCopyright, faStar } from '@fortawesome/free-solid-svg-icons';
+import { CredModal } from '../../helpers/components/cred-modal';
+import { Credit } from '@/data/data.types';
+import JWT from 'expo-jwt';
+import { CreditsRepo } from '../../video/repository/credits.repo';
+
+import axios from 'axios';
+
 
 type Props = {
   selectedTag: Tag;
@@ -29,7 +39,26 @@ export const FooterIndex: FC<Props> = (props) => {
   const [showMenu, setShowMenu] = useState(false);
   const [allHover, setAllHover] = useState(false);
   const [favHover, setFavHover] = useState(false);
-
+  const [userToken, setUserToken] = useCookie('token', '0');
+    const [session, setSession] = useState(false);
+ const [credModal, setCredModal] = useState<Credit[]>([
+    {
+      htmlLabel: {
+        en: '<b><i>Dance with Life. Anna, a Living Legend</i></…tp://www.annahalprin.org">www.annahalprin.org</a>',
+        fr: '<b><i>Dance with Life. Anna, a Living Legend</i></…tp://www.annahalprin.org">www.annahalprin.org</a>',
+      },
+      id: 11,
+      index: true,
+      year: 0,
+    },
+ ]);
+  
+  useEffect(() => {
+    if (userToken && userToken !== '0') {
+      setSession(true);
+    } else setSession(false);
+  }, [userToken]);
+  
   useEffect(() => {
     if (
       selectedTag.label &&
@@ -44,6 +73,30 @@ export const FooterIndex: FC<Props> = (props) => {
     }
   }, [selectedTag, selectedMedia]);
 
+const addToFav = async () => {
+    const email = JWT.decode(userToken, 'Halprin-Web-App').user;
+    const res = await axios.put('/api/users', {
+      email: email,
+      playlist: 'fav',
+      media: selectedVideo.media_slug,
+    });
+    console.log(res);
+  };
+
+const creditsRepo = new CreditsRepo();
+
+  const getCreditsData = () => {
+    if (selectedVideo && selectedVideo.thumb !== 'false' && selectedVideo.creditsIds) {
+      const credits = creditsRepo.getMediaCredits(selectedVideo.creditsIds);
+      return credits;
+    }
+  };
+
+  const creditsData: Credit[] | boolean | undefined =
+    selectedVideo && selectedVideo.thumb !== 'false' ? getCreditsData() : false;
+
+
+
   return (
     <>
       <S.FooterContainer>
@@ -51,8 +104,27 @@ export const FooterIndex: FC<Props> = (props) => {
           {selectedVideo && selectedVideo.thumb !== 'false' && media ? (
             <div className="video-topbar">
               <div className="head">
+                <div className="left">
+            {userToken && userToken !== '0' ? (
+            <div>
+              <button className="favBtn" onClick={() => addToFav()}>
+                <FontAwesomeIcon icon={faStar} />
+              </button>
+              <button
+                className={'credBtn'}
+                onClick={() => {
+                  if (creditsData && creditsData[0]) {
+                    setCredModal(creditsData);
+                  }
+                }}>
+                <FontAwesomeIcon icon={faCopyright} />
+              </button>
+            </div>
+          ) : null}
+          </div>
                 <div className="center">
-                  {media.indexOf(selectedVideo) > 0 && (
+                  <div className="btn-mobile">
+                    {media.indexOf(selectedVideo) > 0 && (
                     <Link
                       href={
                         '#' + media[media.indexOf(selectedVideo) - 1].media_slug
@@ -70,6 +142,7 @@ export const FooterIndex: FC<Props> = (props) => {
                       </button>
                     </Link>
                   )}
+                  </div>
                   {selectedTag &&
                   !selectedTag.media &&
                   !selectedMedia ? null : (
@@ -77,7 +150,8 @@ export const FooterIndex: FC<Props> = (props) => {
                       {media.indexOf(selectedVideo) + 1} / {media.length}
                     </>
                   )}
-                  {media.indexOf(selectedVideo) < media.length - 1 && (
+                  <div className="btn-mobile">
+                    {media.indexOf(selectedVideo) < media.length - 1 && (
                     <Link
                       href={
                         '#' + media[media.indexOf(selectedVideo) + 1].media_slug
@@ -95,6 +169,7 @@ export const FooterIndex: FC<Props> = (props) => {
                       </button>
                     </Link>
                   )}
+                  </div>
                 </div>
                 <div className="bottom">
                   <Link href="/video/all" passHref>
@@ -192,7 +267,7 @@ export const FooterIndex: FC<Props> = (props) => {
               </Link>
               <Link href="/video/watched" passHref>
                 <img
-                  src="/images/ui/video/watched.png"
+                  src="/images/ui/video/eye-arrow.png"
                   className="btn-icon"
                   alt="Already seen"
                 />
@@ -230,11 +305,26 @@ export const FooterIndex: FC<Props> = (props) => {
           {selectedVideo && selectedVideo.thumb !== 'false' && media ? (
             <div className="video-topbar">
               <div className="head">
-                <div className="left">
-                  {selectedTag && selectedTag.label ? <>[INDEX]</> : null}
-                </div>
+                
+                <div className="left">{media[0] && media[0].category} - { selectedVideo && selectedVideo.title ? selectedVideo.title[lang] : null} {userToken && userToken !== '0' ? (
+            <div>
+              <button className="favBtn" onClick={() => addToFav()}>
+                <FontAwesomeIcon icon={faStar} />
+              </button>
+              <button
+                className={'credBtn'}
+                onClick={() => {
+                  if (creditsData && creditsData[0]) {
+                    setCredModal(creditsData);
+                  }
+                }}>
+                <FontAwesomeIcon icon={faCopyright} />
+              </button>
+            </div>
+          ) : null}</div>
                 <div className="center">
-                  {media.indexOf(selectedVideo) > 0 && (
+                  <div className="btn-mobile">
+                    {media.indexOf(selectedVideo) > 0 && (
                     <Link
                       href={
                         '#' + media[media.indexOf(selectedVideo) - 1].media_slug
@@ -261,12 +351,14 @@ export const FooterIndex: FC<Props> = (props) => {
                       </Link>
                     </Link>
                   )}
+                  </div>
                   {selectedTag && !selectedTag.media ? null : (
                     <>
                       {media.indexOf(selectedVideo) + 1} / {media.length}
                     </>
                   )}
-                  {media.indexOf(selectedVideo) < media.length - 1 && (
+                  <div className="btn-mobile">
+                    {media.indexOf(selectedVideo) < media.length - 1 && (
                     <Link
                       href={
                         '#' + media[media.indexOf(selectedVideo) + 1].media_slug
@@ -284,6 +376,7 @@ export const FooterIndex: FC<Props> = (props) => {
                       </button>
                     </Link>
                   )}
+                  </div>
                 </div>
                 <div className="right">
                   <Link href="/video/all" passHref>
@@ -401,6 +494,9 @@ export const FooterIndex: FC<Props> = (props) => {
             </div>
           )}
         </div>
+        {credModal[0].year !== 0 ? (
+        <CredModal showModal={setCredModal} modal={credModal} lang={lang} />
+      ) : null}
       </S.FooterContainer>
     </>
   );

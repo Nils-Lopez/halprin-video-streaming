@@ -15,6 +15,7 @@ export const Ctn = styled.div`
   }
   @media only screen and (max-width: 1920px) and (max-height: 830px) {
     height: 480px;
+
   }
   .favBtn-index {
     position: absolute;
@@ -36,6 +37,28 @@ export const Ctn = styled.div`
     margin-left: 71.2%;
     margin-top: 0.3%;
   }
+    .previousBtn {
+      position: absolute;
+      top: 37%;
+      left: 15%;
+    }
+    .nextBtn {
+      position: absolute;
+      top: 37%;
+      right: 15%;
+      
+    }
+    .arrow {
+      height: 25px;
+    }
+    @media screen and (max-width: 1024px) {
+      .nextBtn {
+        display: none;
+      }
+      .previousBtn {
+        display: none;
+      }
+    }
   @media only screen and (max-width: 650px) {
      .favBtn-index {
     display:none;

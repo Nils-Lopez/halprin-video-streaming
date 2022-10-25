@@ -8,7 +8,6 @@ export const Ctn = styled.div`
     height: 90%;
         overflow-y:scroll;
     right: 10%;
-
     @media (min-width: 600px) {
         left: 20%;
         right: 20%;

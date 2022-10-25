@@ -6,6 +6,7 @@ import useCookie from 'react-use-cookie';
 import { LoginForm } from '../../auth/components/login-form';
 import { SupportedLang } from '../types';
 import Router from 'next/router'
+import Link from 'next/link';
 
 import JWT from 'expo-jwt';
 
@@ -13,10 +14,12 @@ type Props = {
   video: Media;
   source: string;
   lang: SupportedLang;
+  media?: Media[];
+  selectVideo?: (media: Media) => void;
 };
 
 export const VideoPlayer: FC<Props> = (props) => {
-  const { video, lang, source } = props;
+  const { video, lang, source, media, selectVideo } = props
   const [url, setUrl] = useState('');
   const [loading, setLoading] = useState(true);
   const [userToken, setUserToken] = useCookie('token', '0');
@@ -75,7 +78,24 @@ export const VideoPlayer: FC<Props> = (props) => {
         </>
       ) : (
         <>
-          
+          {media && selectVideo && media.indexOf(video) > 0 && (
+              <div className="previousBtn">
+                <Link
+                href={'#' + media[media.indexOf(video) - 1].media_slug}
+                passHref>
+                <button
+                  onClick={() => {
+                    selectVideo(media[media.indexOf(video) - 1]);
+                  }}>
+                  <img
+                    src="/images/ui/elements/left-arrow-halprin.png"
+                    alt="<"
+                    className="arrow dir-left"
+                  />
+                </button>
+              </Link>
+              </div>
+            )}
           {!loading ? (
             <iframe
               src={url}
@@ -85,7 +105,26 @@ export const VideoPlayer: FC<Props> = (props) => {
               frameBorder="0"
               allow="autoplay;"
               allowFullScreen></iframe>
-          ) : null}
+            ) : null}
+            
+            {media && selectVideo && media.indexOf(video) < media.length - 1 && (
+              <div className="nextBtn">
+                <Link
+                href={'#' + media[media.indexOf(video) + 1].media_slug}
+                passHref>
+                <button
+                  onClick={() => {
+                    selectVideo(media[media.indexOf(video) + 1]);
+                  }}>
+                  <img
+                    src="/images/ui/elements/right-arrow-halprin.png"
+                    alt=">"
+                    className="arrow dir-right"
+                  />
+                </button>
+              </Link>
+              </div>
+            )}
         </>
       )}
 

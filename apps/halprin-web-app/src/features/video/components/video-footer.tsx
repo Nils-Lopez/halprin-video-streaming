@@ -152,7 +152,8 @@ export const VideoFooter: React.FC<Props> = (props) => {
             </div>
           ) : null}</div>
           <div className="center">
-            {media.indexOf(selectedVideo) > 0 && (
+            <div className="btn-mobile">
+              {media.indexOf(selectedVideo) > 0 && (
               <Link
                 href={'#' + media[media.indexOf(selectedVideo) - 1].media_slug}
                 passHref>
@@ -168,8 +169,10 @@ export const VideoFooter: React.FC<Props> = (props) => {
                 </button>
               </Link>
             )}
+            </div>
             {media.indexOf(selectedVideo) + 1} / {media.length}
-            {media.indexOf(selectedVideo) < media.length - 1 && (
+            <div className="btn-mobile">
+              {media.indexOf(selectedVideo) < media.length - 1 && (
               <Link
                 href={'#' + media[media.indexOf(selectedVideo) + 1].media_slug}
                 passHref>
@@ -185,6 +188,7 @@ export const VideoFooter: React.FC<Props> = (props) => {
                 </button>
               </Link>
             )}
+            </div>
           </div>
           <div className="right">
             {session ? (
@@ -261,7 +265,8 @@ export const VideoFooter: React.FC<Props> = (props) => {
           ) : null}
           </div>
           <div className="center">
-            {media.indexOf(selectedVideo) > 0 && (
+            <div className="btn-mobile">
+              {media.indexOf(selectedVideo) > 0 && (
               <Link
                 href={'#' + media[media.indexOf(selectedVideo) - 1].media_slug}
                 passHref>
@@ -277,8 +282,10 @@ export const VideoFooter: React.FC<Props> = (props) => {
                 </button>
               </Link>
             )}
+            </div>
             {media.indexOf(selectedVideo) + 1} / {media.length}
-            {media.indexOf(selectedVideo) < media.length - 1 && (
+            <div className="btn-mobile">
+              {media.indexOf(selectedVideo) < media.length - 1 && (
               <Link
                 href={'#' + media[media.indexOf(selectedVideo) + 1].media_slug}
                 passHref>
@@ -294,6 +301,7 @@ export const VideoFooter: React.FC<Props> = (props) => {
                 </button>
               </Link>
             )}
+            </div>
           </div>
           <div className="bottom">
             <Link href="/video/all" passHref>
