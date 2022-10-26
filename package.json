@@ -23,6 +23,7 @@
     "static/*"
   ],
   "scripts": {
+    "heroku-postbuild": "yarn workspaces foreach -ptv --include '*-app' run build",
     "clean": "yarn workspaces foreach -ptv run clean",
     "test": "run-s 'test:*'",
     "test:unit": "yarn workspaces foreach -ptv run test:unit",
