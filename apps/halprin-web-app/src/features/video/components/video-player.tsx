@@ -5,7 +5,7 @@ import axios from 'axios';
 import useCookie from 'react-use-cookie';
 import { LoginForm } from '../../auth/components/login-form';
 import { SupportedLang } from '../types';
-import Router from 'next/router'
+import Router from 'next/router';
 import Link from 'next/link';
 
 import JWT from 'expo-jwt';
@@ -19,13 +19,11 @@ type Props = {
 };
 
 export const VideoPlayer: FC<Props> = (props) => {
-  const { video, lang, source, media, selectVideo } = props
+  const { video, lang, source, media, selectVideo } = props;
   const [url, setUrl] = useState('');
   const [loading, setLoading] = useState(true);
   const [userToken, setUserToken] = useCookie('token', '0');
   const [mode, setMode] = useState('free');
-
-
 
   useEffect(() => {
     if (video && video.url && typeof video.url === 'string') {
@@ -37,26 +35,25 @@ export const VideoPlayer: FC<Props> = (props) => {
         demoTimer();
       } else {
         // Add seens videos to user model
-        console.log('adding vidoe to watched')
+        console.log('adding vidoe to watched');
         const email = JWT.decode(userToken, 'Halprin-Web-App').user;
         const addToSeens = async () => {
-          
           const res = await axios.put('/api/users', {
             email: email,
             playlist: 'seen',
             media: video.media_slug,
           });
-          console.log('sended request : ', res)
-          return res
-        }
-        addToSeens()
+          console.log('sended request : ', res);
+          return res;
+        };
+        addToSeens();
       }
     }
   }, [video]);
 
   const demoTimer = () => {
     setTimeout(() => {
-      Router.push('/auth/signin')
+      Router.push('/auth/signin');
     }, 10000);
   };
 
@@ -79,8 +76,8 @@ export const VideoPlayer: FC<Props> = (props) => {
       ) : (
         <>
           {media && selectVideo && media.indexOf(video) > 0 && (
-              <div className="previousBtn">
-                <Link
+            <div className="previousBtn">
+              <Link
                 href={'#' + media[media.indexOf(video) - 1].media_slug}
                 passHref>
                 <button
@@ -94,8 +91,8 @@ export const VideoPlayer: FC<Props> = (props) => {
                   />
                 </button>
               </Link>
-              </div>
-            )}
+            </div>
+          )}
           {!loading ? (
             <iframe
               src={url}
@@ -105,11 +102,11 @@ export const VideoPlayer: FC<Props> = (props) => {
               frameBorder="0"
               allow="autoplay;"
               allowFullScreen></iframe>
-            ) : null}
-            
-            {media && selectVideo && media.indexOf(video) < media.length - 1 && (
-              <div className="nextBtn">
-                <Link
+          ) : null}
+
+          {media && selectVideo && media.indexOf(video) < media.length - 1 && (
+            <div className="nextBtn">
+              <Link
                 href={'#' + media[media.indexOf(video) + 1].media_slug}
                 passHref>
                 <button
@@ -123,11 +120,10 @@ export const VideoPlayer: FC<Props> = (props) => {
                   />
                 </button>
               </Link>
-              </div>
-            )}
+            </div>
+          )}
         </>
       )}
-
     </S.Ctn>
   );
 };

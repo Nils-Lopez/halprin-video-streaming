@@ -6,22 +6,18 @@ export const Ctn = styled.div`
     display: none;
   }
 
-
   @media (max-width: 600px) and (min-height: 670px) {
     margin-top: 40px;
   }
   @media (min-width: 600px) {
     margin-top: 0px;
   }
-  
-
-
 
   .logo {
     position: absolute;
-top: 40%;
-left: 50%;
-transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 250px;
     z-index: 9;
     cursor: pointer;
@@ -41,7 +37,7 @@ transform: translate(-50%, -50%);
       visibility: hidden;
     }
   }
-  
+
   font-family: AGBold;
   src: url('../../../public/fonts/akzidenz/AkzidenzGrotesk-Bold.otf')
     format('opentype');
@@ -376,11 +372,11 @@ export const Mobile = styled.div`
   .mobileDesc {
     text-align: center;
     width: 80%;
-    margin:auto;
+    margin: auto;
     margin-top: 10%;
   }
   .btn-close-info {
-    width: 100%;  
+    width: 100%;
   }
   height: 100%;
   .ctn {

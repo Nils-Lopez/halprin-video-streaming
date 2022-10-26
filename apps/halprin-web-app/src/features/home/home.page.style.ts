@@ -14,10 +14,10 @@ export const Ctn = styled.div`
     display: none;
   }
   .centered {
-     position: absolute;
-top: 45%;
-left: 50%;
-transform: translate(-50%, -50%);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 250px;
     z-index: 9;
     cursor: pointer;
@@ -36,7 +36,6 @@ transform: translate(-50%, -50%);
     @media only screen and (max-width: 650px) {
       top: 50%;
     }
-
 
     width: 250px;
     z-index: 10;
@@ -99,7 +98,6 @@ export const Circle = styled.div`
     margin-top: -80px;
     margin-left: auto;
     margin-right: auto;
-    
   }
   .leftIcon {
     positon: relative;

@@ -26,14 +26,14 @@ export const Ctn = styled.div`
       .favBtn {
         margin-left: 15px;
         &:hover {
-  filter: brightness(125);
-}
+          filter: brightness(125);
+        }
       }
       .credBtn {
-margin-left: 5px;
-&:hover {
-  filter: brightness(125);
-}
+        margin-left: 5px;
+        &:hover {
+          filter: brightness(125);
+        }
       }
     }
     .arrow {

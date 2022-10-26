@@ -11,7 +11,7 @@ type Props = {
   media?: Media;
   children: JSX.Element;
   lang: SupportedLang;
-  source?: String
+  source?: string;
 };
 
 export const MainLayout: React.FC<Props> = (props) => {
@@ -29,116 +29,116 @@ export const MainLayout: React.FC<Props> = (props) => {
 
   return (
     <Layout>
-      <div className={!source || source !== "statics" ? "bg-blue" : "bg-beige"}>
-         <div className="flex flex-col h-screen">
-        <nav role="navigation">
-          <div id="menuToggle">
-            <input
-              type="checkbox"
-              onClick={() => {
-                if (menu) {
-                  setMenu(false);
-                } else {
-                  setMenu(true);
-                }
-              }}
-            />
-          
-            
+      <div className={!source || source !== 'statics' ? 'bg-blue' : 'bg-beige'}>
+        <div className="flex flex-col h-screen">
+          <nav role="navigation">
+            <div id="menuToggle">
+              <input
+                type="checkbox"
+                onClick={() => {
+                  if (menu) {
+                    setMenu(false);
+                  } else {
+                    setMenu(true);
+                  }
+                }}
+              />
 
-            <span className="brgr"></span>
-            <span className="brgr"></span>
-            <span className="brgr"></span>
+              <span className="brgr"></span>
+              <span className="brgr"></span>
+              <span className="brgr"></span>
 
-            <ul id="menu">
-              <div className="mobile-helpers">
-                <Helpers help={help} media={media} lang={lang} />
-              </div>
-              <Link href={'/' + lang} passHref>
-                <li>{lang === 'en' ? 'Home' : 'Accueil'}</li>
-              </Link>
-              <Link href={'/' + lang + '/menu'} passHref>
-                <li>{lang === 'en' ? 'Content' : 'Contenu'}</li>
-              </Link>
-              <Link href={'/' + lang + '/bio'} passHref>
-                <li>{lang === 'en' ? 'Biography' : 'Biographie'}</li>
-              </Link>
-
-              <Link href={'/' + lang + '/credits'} passHref>
-                <li>{lang === 'en' ? 'Credits' : 'Crédits'}</li>
-              </Link>
-              <Link href={'/' + lang + '/editor'} passHref>
-                <li>{lang === 'en' ? "Editor's note" : "Note de l'éditeur"}</li>
-              </Link>
-              <Link href={'/' + lang + '/about'} passHref>
-                <li>{lang === 'en' ? 'About' : 'A propos'}</li>
-              </Link>
-              <div className="auth">
-                {session ? (
-                  <Link href="#" passHref>
-                    <button
-                      onClick={() => {
-                        setSession(false);
-                        setCookie('token', '0');
-                      }}>
-                      <li className="logout">
-                        {lang === 'en' ? 'Logout' : 'Déconnexion'}
-                      </li>
-                    </button>
-                  </Link>
-                ) : (
-                  <>
-                    <Link href="/auth/signin" passHref>
-                      <li className="login">
-                        {lang === 'en' ? 'Sign In' : 'Se connecter'}
-                      </li>
-                    </Link>
-                    <Link href="https://contredanse.org" passHref>
-                      <li className="buy">
-                        {lang === 'en' ? 'Buy access' : "Acheter l'accès"}
-                      </li>
-                    </Link>
-                    <br />
-                    
-                  </>
-                )}
-              </div>
-              <br />
-              <div className="logoBtn">
-                      <a href="https://contredanse.org/">
-                        <img src="/images/ui/logo-contredanse-dark.png" alt="logo contredanse" className='logoInMenu'/>
-                      </a>
-                    </div>
-                    <br /><br /><br />
-
-
-            </ul>
-          </div>
-          {menu || source && source === "home" ? (
-            <>
-               <div className="helpers"> 
-                <Helpers help={help} media={media} lang={lang} />
-              </div>
-              <div className="logo-cd">
-                <Link href="https://contredanse.org" passHref>
-                  <img
-                    src={'/images/ui/logo-contredanse-white.png'}
-                    alt="LOGO CD"
-                    className="lg"
-                  />
+              <ul id="menu">
+                <div className="mobile-helpers">
+                  <Helpers help={help} media={media} lang={lang} />
+                </div>
+                <Link href={'/' + lang} passHref>
+                  <li>{lang === 'en' ? 'Home' : 'Accueil'}</li>
                 </Link>
-              
-                                {menu && <h3>© Contredanse Editions, 2022</h3>}
+                <Link href={'/' + lang + '/menu'} passHref>
+                  <li>{lang === 'en' ? 'Content' : 'Contenu'}</li>
+                </Link>
+                <Link href={'/' + lang + '/bio'} passHref>
+                  <li>{lang === 'en' ? 'Biography' : 'Biographie'}</li>
+                </Link>
 
-              </div>
-            </>
-          ) : null}
+                <Link href={'/' + lang + '/credits'} passHref>
+                  <li>{lang === 'en' ? 'Credits' : 'Crédits'}</li>
+                </Link>
+                <Link href={'/' + lang + '/editor'} passHref>
+                  <li>
+                    {lang === 'en' ? "Editor's note" : "Note de l'éditeur"}
+                  </li>
+                </Link>
+                <Link href={'/' + lang + '/about'} passHref>
+                  <li>{lang === 'en' ? 'About' : 'A propos'}</li>
+                </Link>
+                <div className="auth">
+                  {session ? (
+                    <Link href="#" passHref>
+                      <button
+                        onClick={() => {
+                          setSession(false);
+                          setCookie('token', '0');
+                        }}>
+                        <li className="logout">
+                          {lang === 'en' ? 'Logout' : 'Déconnexion'}
+                        </li>
+                      </button>
+                    </Link>
+                  ) : (
+                    <>
+                      <Link href="/auth/signin" passHref>
+                        <li className="login">
+                          {lang === 'en' ? 'Sign In' : 'Se connecter'}
+                        </li>
+                      </Link>
+                      <Link href="https://contredanse.org" passHref>
+                        <li className="buy">
+                          {lang === 'en' ? 'Buy access' : "Acheter l'accès"}
+                        </li>
+                      </Link>
+                      <br />
+                    </>
+                  )}
+                </div>
+                <br />
+                <div className="logoBtn">
+                  <a href="https://contredanse.org/">
+                    <img
+                      src="/images/ui/logo-contredanse-dark.png"
+                      alt="logo contredanse"
+                      className="logoInMenu"
+                    />
+                  </a>
+                </div>
+                <br />
+                <br />
+                <br />
+              </ul>
+            </div>
+            {menu || (source && source === 'home') ? (
+              <>
+                <div className="helpers">
+                  <Helpers help={help} media={media} lang={lang} />
+                </div>
+                <div className="logo-cd">
+                  <Link href="https://contredanse.org" passHref>
+                    <img
+                      src={'/images/ui/logo-contredanse-white.png'}
+                      alt="LOGO CD"
+                      className="lg"
+                    />
+                  </Link>
 
-          
-        </nav>
+                  {menu && <h3>© Contredanse Editions, 2022</h3>}
+                </div>
+              </>
+            ) : null}
+          </nav>
 
-        <main>{children}</main>
-      </div>
+          <main>{children}</main>
+        </div>
       </div>
     </Layout>
   );

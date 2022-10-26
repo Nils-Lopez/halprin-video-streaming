@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 
 export const Layout = styled.div`
-  
   color: #fff;
   height: 100%;
   width: 100%;
@@ -36,7 +35,7 @@ export const Layout = styled.div`
     top: 1%;
     right: 0;
     @media (max-width: 600px) {
-      display:none;
+      display: none;
     }
   }
   .mobile-helpers {
@@ -49,7 +48,6 @@ export const Layout = styled.div`
     }
   }
   .logo-cd {
-    
     h3 {
       margin-top: 10px;
       margin-left: -75px;
@@ -83,7 +81,6 @@ export const Layout = styled.div`
 
     -webkit-user-select: none;
     user-select: none;
-
 
     .logoInMenu {
       position: absolute;
@@ -221,14 +218,12 @@ export const Layout = styled.div`
     width: 80px;
     margin: auto;
     position: absolute;
-    a { 
+    a {
       display: flex;
       justify-content: center;
       align-item: center;
-
     }
     left: 39%;
-
 
     .helpers-mobile {
       display: none;
@@ -240,8 +235,6 @@ export const Layout = styled.div`
   #menuToggle input:checked ~ ul {
     transform: none;
   }
-
-
 
   @media (max-width: 600px) {
     .logo-cd {
@@ -257,4 +250,3 @@ export const Layout = styled.div`
     }
   }
 `;
-

@@ -15,7 +15,6 @@ import { CreditsRepo } from '../repository/credits.repo';
 import axios from 'axios';
 import JWT from 'expo-jwt';
 
-
 type Props = {
   media: Media[];
   lang: SupportedLang;
@@ -30,7 +29,7 @@ export const VideoFooter: React.FC<Props> = (props) => {
   const [showMenu, setShowMenu] = useState(false);
   const [allHover, setAllHover] = useState(false);
   const [favHover, setFavHover] = useState(false);
- const [credModal, setCredModal] = useState<Credit[]>([
+  const [credModal, setCredModal] = useState<Credit[]>([
     {
       htmlLabel: {
         en: '<b><i>Dance with Life. Anna, a Living Legend</i></…tp://www.annahalprin.org">www.annahalprin.org</a>',
@@ -40,8 +39,8 @@ export const VideoFooter: React.FC<Props> = (props) => {
       index: true,
       year: 0,
     },
- ]);
-  
+  ]);
+
   let page = '';
 
   if (
@@ -74,18 +73,20 @@ export const VideoFooter: React.FC<Props> = (props) => {
     console.log(res);
   };
 
-
   useEffect(() => {
     if (userToken && userToken !== '0') {
       setSession(true);
     } else setSession(false);
   }, [userToken]);
 
-
   const creditsRepo = new CreditsRepo();
 
   const getCreditsData = () => {
-    if (selectedVideo && selectedVideo.thumb !== 'false' && selectedVideo.creditsIds) {
+    if (
+      selectedVideo &&
+      selectedVideo.thumb !== 'false' &&
+      selectedVideo.creditsIds
+    ) {
       const credits = creditsRepo.getMediaCredits(selectedVideo.creditsIds);
       return credits;
     }
@@ -93,7 +94,6 @@ export const VideoFooter: React.FC<Props> = (props) => {
 
   const creditsData: Credit[] | boolean | undefined =
     selectedVideo && selectedVideo.thumb !== 'false' ? getCreditsData() : false;
-
 
   return (
     <S.Ctn>
@@ -135,59 +135,69 @@ export const VideoFooter: React.FC<Props> = (props) => {
       </div>
       <div className="topBar">
         <div className="desktop">
-          <div className="left">{media[0] && media[0].category} - { selectedVideo && selectedVideo.title ? selectedVideo.title[lang] : null} {userToken && userToken !== '0' ? (
-            <div>
-              <button className="favBtn" onClick={() => addToFav()}>
-                <FontAwesomeIcon icon={faStar} />
-              </button>
-              <button
-                className={'credBtn'}
-                onClick={() => {
-                  if (creditsData && creditsData[0]) {
-                    setCredModal(creditsData);
-                  }
-                }}>
-                <FontAwesomeIcon icon={faCopyright} />
-              </button>
-            </div>
-          ) : null}</div>
+          <div className="left">
+            {media[0] && media[0].category} -{' '}
+            {selectedVideo && selectedVideo.title
+              ? selectedVideo.title[lang]
+              : null}{' '}
+            {userToken && userToken !== '0' ? (
+              <div>
+                <button className="favBtn" onClick={() => addToFav()}>
+                  <FontAwesomeIcon icon={faStar} />
+                </button>
+                <button
+                  className={'credBtn'}
+                  onClick={() => {
+                    if (creditsData && creditsData[0]) {
+                      setCredModal(creditsData);
+                    }
+                  }}>
+                  <FontAwesomeIcon icon={faCopyright} />
+                </button>
+              </div>
+            ) : null}
+          </div>
           <div className="center">
             <div className="btn-mobile">
               {media.indexOf(selectedVideo) > 0 && (
-              <Link
-                href={'#' + media[media.indexOf(selectedVideo) - 1].media_slug}
-                passHref>
-                <button
-                  onClick={() => {
-                    selectVideo(media[media.indexOf(selectedVideo) - 1]);
-                  }}>
-                  <img
-                    src="/images/ui/elements/left-arrow-halprin.png"
-                    alt="<"
-                    className="arrow dir-left"
-                  />
-                </button>
-              </Link>
-            )}
+                <Link
+                  href={
+                    '#' + media[media.indexOf(selectedVideo) - 1].media_slug
+                  }
+                  passHref>
+                  <button
+                    onClick={() => {
+                      selectVideo(media[media.indexOf(selectedVideo) - 1]);
+                    }}>
+                    <img
+                      src="/images/ui/elements/left-arrow-halprin.png"
+                      alt="<"
+                      className="arrow dir-left"
+                    />
+                  </button>
+                </Link>
+              )}
             </div>
             {media.indexOf(selectedVideo) + 1} / {media.length}
             <div className="btn-mobile">
               {media.indexOf(selectedVideo) < media.length - 1 && (
-              <Link
-                href={'#' + media[media.indexOf(selectedVideo) + 1].media_slug}
-                passHref>
-                <button
-                  onClick={() => {
-                    selectVideo(media[media.indexOf(selectedVideo) + 1]);
-                  }}>
-                  <img
-                    src="/images/ui/elements/right-arrow-halprin.png"
-                    alt=">"
-                    className="arrow dir-right"
-                  />
-                </button>
-              </Link>
-            )}
+                <Link
+                  href={
+                    '#' + media[media.indexOf(selectedVideo) + 1].media_slug
+                  }
+                  passHref>
+                  <button
+                    onClick={() => {
+                      selectVideo(media[media.indexOf(selectedVideo) + 1]);
+                    }}>
+                    <img
+                      src="/images/ui/elements/right-arrow-halprin.png"
+                      alt=">"
+                      className="arrow dir-right"
+                    />
+                  </button>
+                </Link>
+              )}
             </div>
           </div>
           <div className="right">
@@ -248,59 +258,63 @@ export const VideoFooter: React.FC<Props> = (props) => {
         <div className="mobile">
           <div className="left">
             {userToken && userToken !== '0' ? (
-            <div>
-              <button className="favBtn" onClick={() => addToFav()}>
-                <FontAwesomeIcon icon={faStar} />
-              </button>
-              <button
-                className={'credBtn'}
-                onClick={() => {
-                  if (creditsData && creditsData[0]) {
-                    setCredModal(creditsData);
-                  }
-                }}>
-                <FontAwesomeIcon icon={faCopyright} />
-              </button>
-            </div>
-          ) : null}
+              <div>
+                <button className="favBtn" onClick={() => addToFav()}>
+                  <FontAwesomeIcon icon={faStar} />
+                </button>
+                <button
+                  className={'credBtn'}
+                  onClick={() => {
+                    if (creditsData && creditsData[0]) {
+                      setCredModal(creditsData);
+                    }
+                  }}>
+                  <FontAwesomeIcon icon={faCopyright} />
+                </button>
+              </div>
+            ) : null}
           </div>
           <div className="center">
             <div className="btn-mobile">
               {media.indexOf(selectedVideo) > 0 && (
-              <Link
-                href={'#' + media[media.indexOf(selectedVideo) - 1].media_slug}
-                passHref>
-                <button
-                  onClick={() => {
-                    selectVideo(media[media.indexOf(selectedVideo) - 1]);
-                  }}>
-                  <img
-                    src="/images/ui/elements/left-arrow-halprin.png"
-                    alt="<"
-                    className="arrow dir-left"
-                  />
-                </button>
-              </Link>
-            )}
+                <Link
+                  href={
+                    '#' + media[media.indexOf(selectedVideo) - 1].media_slug
+                  }
+                  passHref>
+                  <button
+                    onClick={() => {
+                      selectVideo(media[media.indexOf(selectedVideo) - 1]);
+                    }}>
+                    <img
+                      src="/images/ui/elements/left-arrow-halprin.png"
+                      alt="<"
+                      className="arrow dir-left"
+                    />
+                  </button>
+                </Link>
+              )}
             </div>
             {media.indexOf(selectedVideo) + 1} / {media.length}
             <div className="btn-mobile">
               {media.indexOf(selectedVideo) < media.length - 1 && (
-              <Link
-                href={'#' + media[media.indexOf(selectedVideo) + 1].media_slug}
-                passHref>
-                <button
-                  onClick={() => {
-                    selectVideo(media[media.indexOf(selectedVideo) + 1]);
-                  }}>
-                  <img
-                    src="/images/ui/elements/right-arrow-halprin.png"
-                    alt=">"
-                    className="arrow dir-right"
-                  />
-                </button>
-              </Link>
-            )}
+                <Link
+                  href={
+                    '#' + media[media.indexOf(selectedVideo) + 1].media_slug
+                  }
+                  passHref>
+                  <button
+                    onClick={() => {
+                      selectVideo(media[media.indexOf(selectedVideo) + 1]);
+                    }}>
+                    <img
+                      src="/images/ui/elements/right-arrow-halprin.png"
+                      alt=">"
+                      className="arrow dir-right"
+                    />
+                  </button>
+                </Link>
+              )}
             </div>
           </div>
           <div className="bottom">

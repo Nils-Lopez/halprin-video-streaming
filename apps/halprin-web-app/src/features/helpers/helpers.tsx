@@ -35,7 +35,8 @@ export const Helpers: React.FC<Props> = (props) => {
         {router.pathname !== '/bio' &&
         router.pathname !== '/about' &&
         router.pathname !== '/credits' &&
-        router.pathname !== '/editors' && router.pathname !== "/" ? (
+        router.pathname !== '/editors' &&
+        router.pathname !== '/' ? (
           <span
             className={'dot'}
             onKeyDown={() => console.log('tsb')}
