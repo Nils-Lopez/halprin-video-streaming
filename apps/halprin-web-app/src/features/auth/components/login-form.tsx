@@ -19,9 +19,11 @@ export const LoginForm: React.FC<LoginFormProps> = (props) => {
   const [session, setSession] = useState(null);
   const [error, setError] = useState(false);
   const [userToken, setUserToken] = useCookie('token', '0');
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.SyntheticEvent) => {
     e.preventDefault();
+    setLoading(true)
     const target = e.target as typeof e.target & {
       email: { value: string };
       password: { value: string };
@@ -38,6 +40,8 @@ export const LoginForm: React.FC<LoginFormProps> = (props) => {
         setError(false);
       } else {
         setError(true);
+                setLoading(false)
+
       }
     } catch (e) {
       setError(true);
@@ -56,6 +60,7 @@ export const LoginForm: React.FC<LoginFormProps> = (props) => {
 
   useEffect(() => {
     if (userToken && userToken !== '0') {
+      setLoading(false)
       const redirect = '/' + lang + '/menu';
       Router.push(redirect);
     }
@@ -63,10 +68,25 @@ export const LoginForm: React.FC<LoginFormProps> = (props) => {
 
   return (
     <>
-      {!session ? (
+
         <S.Container>
-          <div className="header"></div>
+          <div className="header">
+            <h2>{lang === "en" ? "Welcome" : "Bienvenue"}</h2>
+            <h3>
+              {lang === 'en'
+                ? "In order to continue and if you don't have one"
+                : "Afin de poursuivre votre lecture et si vous ne l'avez pas encore fait"}
+            </h3>
+            <br />
+            <a href="https://contredanse.org">
+              {lang === 'en' ? 'Get your access' : "Obtenez votre accès"}
+            </a>
+     
+            <hr />
+            <p>{lang === "en" ? "Or connect" : "Ou connectez-vous"}</p>
+          </div>
           <br />
+          {!loading ? <>
           <form onSubmit={handleSubmit} className="login-form">
             <div className="inputs">
               <div className="email">
@@ -113,23 +133,15 @@ export const LoginForm: React.FC<LoginFormProps> = (props) => {
               </button>
             </div>
           </form>
+          </> : <S.Loader></S.Loader>}
           <div className="footer">
-            <h3>
-              {lang === 'en'
-                ? "Don't have acces to the app ?"
-                : "Vous n'avez pas accès à l'application ?"}
-            </h3>
-            <br />
-            <a href="https://contredanse.org">
-              {lang === 'en' ? 'Buy it' : 'Acheter maintenant'}
-            </a>
+            <a href="https://contredanse.org"><img src="/images/ui/logo-contredanse-login.png" alt="Contredanse" /></a>
           </div>
         </S.Container>
-      ) : (
-        <>
-          {lang === 'en' ? 'Successfully logged in !' : 'Connexion réussie !'}
-        </>
-      )}
+      
+      
+
+      
     </>
   );
 };

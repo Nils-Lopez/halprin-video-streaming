@@ -7,8 +7,21 @@ export const Modal = styled.div`
   right: 0;
   bottom: 0;
   text-align: center;
-  z-index: 11;
+  z-index: 0;
+  .video {
+    max-width: 850px;
+  }
+  .menu {
+    max-width: 850px;
+  }
+  .index {
+    max-width: 500px;
+  }
+  .intro {
+    max-width: 500px;
+  }
   .centered {
+    
     padding: 5px;
     display: inline-block;
     vertical-align: middle;

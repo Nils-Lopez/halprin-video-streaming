@@ -78,7 +78,7 @@ export const MenuPage: React.FC<Props> = (props) => {
               {!infoWorkshop && !infoRoadmaps && !infoIndex && !infoLifeart ? (
                 <button
                   onClick={() =>
-                    setContent('https://player.vimeo.com/video/582111408')
+                    setContent('https://player.vimeo.com/video/582111408?autoplay=1')
                   }
                   className="beginBtn">
                   {lang === 'en' ? 'BEGINNING' : 'POUR COMMENCER'}
@@ -104,7 +104,7 @@ export const MenuPage: React.FC<Props> = (props) => {
                 ) : (
                   <button
                     onClick={() =>
-                      setContent('https://player.vimeo.com/video/584898888')
+                      setContent('https://player.vimeo.com/video/584898888?autoplay=1')
                     }
                     className="logo">
                     <img
@@ -182,7 +182,7 @@ export const MenuPage: React.FC<Props> = (props) => {
               {!infoWorkshop && !infoRoadmaps && !infoIndex && !infoLifeart ? (
                 <button
                   onClick={() =>
-                    setContent('https://player.vimeo.com/video/582147532')
+                    setContent('https://player.vimeo.com/video/582147532?autoplay=1')
                   }
                   className="endBtn">
                   <>
@@ -420,7 +420,10 @@ export const MenuPage: React.FC<Props> = (props) => {
                 'https://player.vimeo.com/external/583334078.sd.mp4?s=685558fc99397ec030c0866c145927d29e602e30&profile_id=165'
               }></iframe>
             <div className="nextBtn">
-              <button onClick={() => setContent('menu')}>
+                <button onClick={() => {
+                  setContent('menu')
+                  
+              }}>
                 <div className="arrow">
                   <div className="arrow-top"></div>
                   <div className="arrow-bottom"></div>

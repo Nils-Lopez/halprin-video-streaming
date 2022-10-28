@@ -17,6 +17,9 @@ export const Ctn = styled.div`
     height: 480px;
 
   }
+  @media only screen and (min-width: 1920px) {
+    height: 700px;
+  }
   .favBtn-index {
     position: absolute;
     margin-left: 51.5%;

@@ -37,6 +37,7 @@ export const Layout = styled.div`
     width: 100px;
     top: 1%;
     right: 0;
+    z-index: 2000;
     @media (max-width: 600px) {
       top: 3%;
       right: -5px;

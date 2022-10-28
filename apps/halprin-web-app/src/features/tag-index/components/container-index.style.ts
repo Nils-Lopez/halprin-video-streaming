@@ -7,9 +7,9 @@ export const Ctn = styled.div`
   padding-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
-  height: 75%;
+  height: 80%;
   .container {
-    height: 90%;
+    height: 95%;
     overflow-y: auto;
   }
   .selected {

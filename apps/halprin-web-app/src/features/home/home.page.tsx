@@ -2,7 +2,7 @@ import * as S from './home.page.style';
 
 import { MainLayout } from '@/components/layout/main-layout';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { SupportedLang } from '@/features/video/types';
 
 import Link from 'next/link';
@@ -14,10 +14,20 @@ type Props = {
 
 export const HomePage: React.FC<Props> = ({ lang }) => {
   const [content, setContent] = useState('home');
+  const [source, setSource] = useState('home');
+
+
+  useEffect(() => {
+    if (content === "home") {
+      setSource(content)
+    } else {
+      setSource("intro")
+    }
+  }, [content])
 
   return (
     <>
-      <MainLayout lang={lang} source="home">
+      <MainLayout lang={lang} source={source}>
         <>
           {content === 'home' ? (
             <>
@@ -26,7 +36,7 @@ export const HomePage: React.FC<Props> = ({ lang }) => {
                   <S.Ctn>
                     <button
                       onClick={() =>
-                        setContent('https://player.vimeo.com/video/582151572/')
+                        setContent('https://player.vimeo.com/video/582151572?autoplay=1')
                       }>
                       <div className="centered logo">
                         <img
@@ -40,6 +50,8 @@ export const HomePage: React.FC<Props> = ({ lang }) => {
                         />
                       </div>
                     </button>
+                    <img src="/images/ui/home/desktop-anim.gif" className="gif" alt="tsb" />
+                    <img src="/images/ui/home/mobile-anim.gif" className="mobile-gif" alt="tsb"/>
                     <div className="mid"></div>
                   </S.Ctn>
                   <S.Mobile>
@@ -97,7 +109,6 @@ export const HomePage: React.FC<Props> = ({ lang }) => {
             </>
           ) : (
             <>
-              <MainLayout lang={'en'}>
                 <S.Video>
                   <iframe
                     src={content}
@@ -109,12 +120,14 @@ export const HomePage: React.FC<Props> = ({ lang }) => {
                       'https://player.vimeo.com/external/583334078.sd.mp4?s=685558fc99397ec030c0866c145927d29e602e30&profile_id=165'
                     }></iframe>
                   <div className="nextBtn">
-                    {content !== 'https://player.vimeo.com/video/582111408/' ? (
+                    {content !== 'https://player.vimeo.com/video/582111408?autoplay=1' ? (
                       <button
-                        onClick={() =>
+                        onClick={() => {
                           setContent(
-                            'https://player.vimeo.com/video/582111408/'
-                          )
+                            'https://player.vimeo.com/video/582111408?autoplay=1'
+                          );
+                          setSource('tour')
+                        }
                         }>
                         <div className="arrow">
                           <div className="arrow-top"></div>
@@ -131,7 +144,6 @@ export const HomePage: React.FC<Props> = ({ lang }) => {
                     )}
                   </div>
                 </S.Video>
-              </MainLayout>
             </>
           )}
         </>

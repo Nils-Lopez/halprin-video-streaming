@@ -17,7 +17,7 @@ export const HelpModal: React.FC<Props> = (props) => {
         showModal('');
       }}>
       <div className={'centered ' + modal}>
-        <img src={src} alt="Helper" />
+        <img src={src} alt="Helper"/>
       </div>
     </S.Modal>
   );

@@ -12,10 +12,11 @@ type Props = {
   help?: { title: string; content: string };
   media?: Media;
   lang: SupportedLang;
+  source?: string;
 };
 
 export const Helpers: React.FC<Props> = (props) => {
-  const { help, lang = 'en' } = props;
+  const { help, lang = 'en', source } = props;
 
   const [helpModal, setHelpModal] = useState('');
   const router = useRouter();
@@ -23,8 +24,8 @@ export const Helpers: React.FC<Props> = (props) => {
   const helpSrc =
     router.pathname === '/menu'
       ? 'menu'
-      : router.pathname === '/home'
-      ? 'intro'
+      : (router.pathname === '/' && source)
+      ? source
       : router.pathname === '/tag-index'
       ? 'index'
       : 'video';
@@ -35,8 +36,7 @@ export const Helpers: React.FC<Props> = (props) => {
         {router.pathname !== '/bio' &&
         router.pathname !== '/about' &&
         router.pathname !== '/credits' &&
-        router.pathname !== '/editors' &&
-        router.pathname !== '/' ? (
+        router.pathname !== '/editor' && (!source || source !== "home") ? (
           <span
             className={'dot'}
             onKeyDown={() => console.log('tsb')}

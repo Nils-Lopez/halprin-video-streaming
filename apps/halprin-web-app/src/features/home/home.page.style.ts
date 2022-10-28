@@ -13,6 +13,24 @@ export const Ctn = styled.div`
   .mobileDesc {
     display: none;
   }
+  .gif {
+    width: 45%;
+    top: 8%;
+    left: 27.5%;
+    position: fixed;
+    @media screen and (max-width: 600px) {
+      display:none;
+    }
+  }
+  .mobile-gif {
+    width: 45%;
+    top: 8%;
+    left: 27.5%;
+    position: fixed;
+    @media screen and (min-width: 600px) {
+      display:none;
+    }
+  }
   .centered {
     position: absolute;
     top: 45%;

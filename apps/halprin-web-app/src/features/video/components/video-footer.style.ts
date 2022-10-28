@@ -137,7 +137,6 @@ export const Ctn = styled.div`
   }
   @media only screen and (min-width: 650px) and (max-height: 729px) {
     position: absolute;
-    z-index: -1;
   }
   @media only screen and (max-width: 950px) {
     min-height: 130px;

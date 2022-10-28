@@ -17,9 +17,9 @@ export const EditorPage: React.FC<Props> = (props) => {
           <div className="ctn-body">
             <p>
               <i>
-                Pour célébrer la sortie du livre « Mouvements de Vie1 » avec son
+                Pour célébrer la sortie du livre « Mouvements de Vie<sup>1</sup> » avec son
                 auteure, Anna Halprin, Contredanse lui propose de donner un
-                atelier de deux jours, en janvier 2010 à Paris. Peter Hulton2 a
+                atelier de deux jours, en janvier 2010 à Paris. Peter Hulton<sup>2</sup> a
                 filmé l’atelier qui, aujourd’hui, se retrouve à la base de cette
                 édition. Florence Corin et Baptiste Andrien, responsables de
                 publication à Contredanse, revisitent ensemble le chemin
@@ -74,8 +74,8 @@ export const EditorPage: React.FC<Props> = (props) => {
               une webapp (application web). Au moment de ce dessin, la
               connaissance que nous avions du travail d’Anna Halprin reposait
               principalement sur la traduction française de son livre « Moving
-              Toward Life3 » et du livre de son mari, Lawrence Halprin, autour
-              de la question du processus créatif, « The RSVP Cycles4 ». Les
+              Toward Life<sup>3</sup> » et du livre de son mari, Lawrence Halprin, autour
+              de la question du processus créatif, « The RSVP Cycles<sup>4</sup> ». Les
               images de l’atelier de Paris nous ont révélé comment le travail
               d’Anna Halprin s’inscrivait dans son corps et sa façon de le
               partager dans l’espace, à un moment précis de son histoire. Nous
@@ -288,9 +288,9 @@ export const EditorPage: React.FC<Props> = (props) => {
           <div className="ctn-body">
             <p>
               <i>
-                To celebrate the release of “Mouvements de Vie1” with its author
+                To celebrate the release of “Mouvements de Vie<sup>1</sup>” with its author
                 Anna Halprin, Contredanse invited her to give a two-day workshop
-                in Paris in January 2010. Peter Hulton2 filmed the workshop
+                in Paris in January 2010. Peter Hulton<sup>2</sup> filmed the workshop
                 which now forms the basis of this publication. Florence Corin
                 and Baptiste Andrien, publishing directors at Contredanse,
                 recall together the path that led to the making of this
@@ -340,7 +340,7 @@ export const EditorPage: React.FC<Props> = (props) => {
               the process more than on the result. This is made possible with a
               webapp. At the time of this drawing, our knowledge of Anna
               Halprin’s work was mainly based on the French translation of her
-              book “Moving Toward Life3” and “The RSVP Cycles4”, a book written
+              book “Moving Toward Life<sup>3</sup>” and “The RSVP Cycles<sup>4</sup>”, a book written
               by her husband, Lawrence Halprin, about creative processes in the
               human environment. The videos of the Paris workshop showed us how
               Anna Halprin’s work is present in her body and in the way she

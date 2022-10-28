@@ -29,6 +29,7 @@ export const MainLayout: React.FC<Props> = (props) => {
 
   return (
     <Layout>
+      
       {menu ? (
         <button
           className="menu-background"
@@ -106,7 +107,7 @@ export const MainLayout: React.FC<Props> = (props) => {
             {menu || (source && source === 'home') ? (
               <>
                 <div className="helpers">
-                  <Helpers help={help} media={media} lang={lang} />
+                  <Helpers help={help} media={media} lang={lang} source={source}/>
                 </div>
                 <div className={'logo-cd'}>
                   <Link href="https://contredanse.org" passHref>
