@@ -254,7 +254,9 @@ export const MainVideoPage: React.FC<Props> = (props) => {
         <div>
           <EmbedMobile lang={lang} source={categorySlug} />
           <S.Ctn>
-            <VideoNavbar categories={videoTags} lang={lang} />
+            <div className="navbar">
+              <VideoNavbar categories={videoTags} lang={lang} />
+            </div>
             <div className="video-container">
               {emptyList.fr === '' ? (
                 <>

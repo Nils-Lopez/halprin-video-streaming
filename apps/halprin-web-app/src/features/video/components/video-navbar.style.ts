@@ -3,9 +3,10 @@ import styled from '@emotion/styled';
 export const Ctn = styled.div`
   width: 100%;
   padding-top: 10px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
   padding-bottom: 10px;
+  margin-top: -5px;
   height: 70px;
   svg {
     color: lightgrey;

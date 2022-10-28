@@ -7,7 +7,9 @@ export const Ctn = styled.div`
     margin-left: 25px;
     margin-bottom: 10px;
   }
-
+  .navbar {
+    margin-top: 10px;
+  }
   video-container {
     h1 {
       color: red;
