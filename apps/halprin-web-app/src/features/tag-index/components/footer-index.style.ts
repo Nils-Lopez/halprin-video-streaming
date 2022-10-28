@@ -175,11 +175,20 @@ margin-left: 5px;
     .mobile {
       display: block;
       .index-topbar {
-        margin-top: -70px;
+        margin-top: 120px;
         width: 100%;
         border-top: 1px solid #95a5a6;
         padding-top: 3px;
         display: flex;
+        .allBtn {
+          height: 20px;
+          margin-top: 2px;
+          margin-right: 5px;
+        }
+        .favBtn {
+          height: 21px;
+          margin-top: 2px;
+        }
         justify-content: center;
       }
       .video-topbar {

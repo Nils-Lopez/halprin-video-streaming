@@ -4,16 +4,18 @@ export const Layout = styled.div`
   color: #fff;
   height: 100%;
   width: 100%;
+  @font-face {
+    font-family: Akizdenz;
+    src: url('../../../public/fonts/akizdenz/AkzidenzGrotesk-Regular.otf')
+      format('truetype');
+  }
+
   .bg-blue {
     height: 100%;
     width: 100%;
     background: #0e111c;
   }
-  .bg-beige {
-    height: 100%;
-    width: 100%;
-    background: #0e111c;
-  }
+
   position: fixed;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -30,12 +32,14 @@ export const Layout = styled.div`
     }
   }
   .helpers {
+    font-family: Akizdenz;
     position: fixed;
     width: 100px;
     top: 1%;
     right: 0;
     @media (max-width: 600px) {
-      display: none;
+      top: 3%;
+      right: -5px;
     }
   }
   .mobile-helpers {
@@ -47,14 +51,20 @@ export const Layout = styled.div`
       display: none;
     }
   }
+
   .logo-cd {
+    z-index: 110000;
     h3 {
+      font-family: Akizdenz;
       margin-top: 10px;
-      margin-left: -75px;
-      font-size: 17px;
+      margin-left: -77px;
+      font-size: 16px;
+    }
+    .dark {
+      filter: brightness(60%);
     }
     .lg {
-      width: 80px;
+      width: 40px;
       cursor: pointer;
       &:hover {
         filter: brightness(80%);
@@ -63,8 +73,11 @@ export const Layout = styled.div`
 
     position: fixed;
     bottom: 3%;
-    left: 48%;
+    left: 49%;
     width: 100%;
+    @media (max-width: 600px) {
+      left: 46%;
+    }
   }
   nav {
     position: absolute;
@@ -72,12 +85,13 @@ export const Layout = styled.div`
     z-index: 10;
   }
   #menuToggle {
+    font-family: Akizdenz;
     display: block;
     position: relative;
     top: 30px;
-    left: 30px;
+    left: 20px;
 
-    z-index: 1;
+    z-index: 1000;
 
     -webkit-user-select: none;
     user-select: none;
@@ -91,13 +105,21 @@ export const Layout = styled.div`
 
   #menuToggle li {
     text-decoration: none;
-    color: #232323;
+    color: white;
     cursor: pointer;
     transition: color 0.3s ease;
+    border: 1px solid white;
   }
-
+  .menu-background {
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    z-index: 10;
+    opacity: 60%;
+  }
   #menuToggle li:hover {
-    color: tomato;
+    color: grey;
   }
 
   #menuToggle input {
@@ -121,9 +143,9 @@ export const Layout = styled.div`
  */
   #menuToggle .brgr {
     display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
+    width: 22px;
+    height: 2.5px;
+    margin-bottom: 3.5px;
     position: relative;
 
     background: #cdcdcd;
@@ -135,6 +157,15 @@ export const Layout = styled.div`
 
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
       background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  .bg-beige {
+    height: 100%;
+    width: 100%;
+    background: #fffce5;
+    #menuToggle .brgr {
+      background: #0e111c;
+    }
   }
 
   #menuToggle .brgr:first-child {
@@ -152,7 +183,8 @@ export const Layout = styled.div`
   #menuToggle input:checked ~ .brgr {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
+    visibility: hidden;
+    margin-top: -15px;
   }
 
   /*
@@ -176,12 +208,14 @@ export const Layout = styled.div`
  */
   #menu {
     position: absolute;
-    width: 300px;
+    width: 220px;
     margin: -100px 0 0 -50px;
     padding: 50px;
-    padding-top: 125px;
-
-    background: #ededed;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-top: 30px;
+    background: #0e111c;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
@@ -193,60 +227,81 @@ export const Layout = styled.div`
   }
 
   #menu li {
-    padding: 10px 0;
-    font-size: 22px;
+    padding: 10px;
+    font-size: 20px;
+    padding-left: 15px;
+    margin-left: -22px;
   }
-  #menu .logout {
+  #menu .logout-fr {
     color: tomato;
     &:hover {
-      color: black;
+      color: white;
+    }
+    margin-left: -20px;
+    padding-right: 51px;
+    margin-bottom: 22px;
+  }
+  #menu .logout-en {
+    color: tomato;
+    &:hover {
+      color: white;
+    }
+    margin-left: -20px;
+    padding-right: 69px;
+    margin-bottom: 22px;
+  }
+  .logout-btn {
+    background: #c23616;
+    padding: 3.5px;
+    font-size: 16px;
+    color: white;
+
+    &:hover {
+      filter: brightness(80%);
     }
   }
+  .btn-en {
+    margin-left: 50px;
+  }
+  .btn-fr {
+    margin-left: 29px;
+  }
   #menu .auth {
-    border-top: 2px solid lightgrey;
     padding-top: 3px;
-    margin-top: 3px;
+    margin-top: 5px;
+    color: white;
+  }
+  #menu .auth-login {
+    margin-top: 8px;
+    margin-bottom: -24px;
   }
   #menu .buy {
     color: tomato;
     &:hover {
-      color: black;
+      color: white;
     }
   }
+  .login-btn {
+    background: #009432;
+    padding: 3.5px;
+    font-size: 16px;
+    color: white;
 
-  .logoBtn {
-    width: 80px;
-    margin: auto;
-    position: absolute;
-    a {
-      display: flex;
-      justify-content: center;
-      align-item: center;
-    }
-    left: 39%;
-
-    .helpers-mobile {
-      display: none;
+    &:hover {
+      filter: brightness(80%);
     }
   }
+  .loginbtn-en {
+    margin-left: 45px;
+  }
+  .loginbtn-fr {
+    margin-left: 32px;
+  }
+
   /*
  * And let's slide it in from the left
  */
   #menuToggle input:checked ~ ul {
     transform: none;
-  }
-
-  @media (max-width: 600px) {
-    .logo-cd {
-      display: none;
-    }
-  }
-  @media (min-width: 600px) {
-    br {
-      display: none;
-    }
-    .logoBtn {
-      display: none;
-    }
   }
 `;

@@ -9,70 +9,32 @@ type Props = {
     selectTag: (tag: Tag) => void;
     selectVideo: (media: Media) => void;
   };
+  source?: string;
 };
 
 export const EmbedMobile: React.FC<Props> = (props) => {
-  const { lang, index } = props;
-  const [mobileMenu, setMobileMenu] = useState(false);
+  const { lang, index, source } = props;
 
-  console.log('lang : ', lang);
+  const path =
+    source === 'roadmaps'
+      ? 'hand'
+      : source === 'workshops'
+      ? 'round'
+      : source === 'life-art'
+      ? 'eye'
+      : 'mouth';
 
   return (
     <MobileMenu>
-      {!mobileMenu ? (
-        <div className="mobile-menu-toggle">
-          <button
-            onClick={() => {
-              setMobileMenu(true);
-            }}>
-            <img
-              src={'/images/ui/menu/mouth.png'}
-              alt="Menu"
-              className="mouthImg"
-            />
-          </button>
-        </div>
-      ) : (
-        <div className="mobile-menu">
-          <div className="close">
-            <button onClick={() => setMobileMenu(false)}>
-              <div className="mdiv">
-                <div className="md"></div>
-              </div>
-            </button>
-          </div>
-          <div className="menu">
-            <Link href="/video/category/workshops" passHref>
-              <div className="workshopTxt">Workshop</div>
-            </Link>
-            <Link href="/video/category/life-art" passHref>
-              <div className="lifeartTxt">Life-art</div>
-            </Link>
-            {index ? (
-              <button
-                onClick={() => {
-                  index.selectTag({
-                    label: { en: 'false', fr: '' },
-                    media: [],
-                  });
-                  index.selectVideo({
-                    thumb: 'false',
-                  });
-                }}
-                className="indexTxt">
-                Index
-              </button>
-            ) : (
-              <Link href="/tag-index" passHref>
-                <div className="indexTxt">Index</div>
-              </Link>
-            )}
-            <Link href="/video/category/roadmaps" passHref>
-              <div className="roadmapsTxt">Roadmaps</div>
-            </Link>
-          </div>
-        </div>
-      )}
+      <div className="mobile-menu-toggle">
+        <Link href={'/' + lang + '/menu'}>
+          <img
+            src={'/images/ui/menu/' + path + '.png'}
+            alt="Menu"
+            className="mouthImg"
+          />
+        </Link>
+      </div>
     </MobileMenu>
   );
 };

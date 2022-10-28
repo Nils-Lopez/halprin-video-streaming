@@ -2,8 +2,8 @@ import styled from '@emotion/styled';
 
 export const Ctn = styled.div`
   margin: auto;
-  margin-top: 15px;
-  width: 98%;
+  margin-top: 5px;
+  width: 99%;
   border-top: 1px solid #95a5a6;
   border-bottom: 1px solid #95a5a6;
   display: flex;

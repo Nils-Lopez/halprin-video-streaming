@@ -10,7 +10,7 @@ export const AboutPage: React.FC<Props> = (props) => {
   const { lang } = props;
 
   return (
-    <MainLayout lang={lang}>
+    <MainLayout lang={lang} source="statics">
       <S.Ctn>
         <h1>{lang === 'en' ? 'About' : 'A propos'}</h1>
         {lang === 'en' ? (

@@ -10,7 +10,7 @@ export const EditorPage: React.FC<Props> = (props) => {
   const { lang } = props;
 
   return (
-    <MainLayout lang={lang}>
+    <MainLayout lang={lang} source="statics">
       <S.Ctn>
         <h1>{lang === 'fr' ? "Note de l'éditeur" : "Editor's note"}</h1>
         {lang === 'fr' ? (

@@ -152,6 +152,7 @@ export const TagIndexPage: React.FC<Props> = (props) => {
         <EmbedMobile
           lang={lang}
           index={{ selectTag: setSelectedTag, selectVideo: selectVideo }}
+          source="mouth"
         />
         <S.Ctn>
           <NavbarIndex

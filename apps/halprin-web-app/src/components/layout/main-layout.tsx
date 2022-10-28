@@ -29,19 +29,21 @@ export const MainLayout: React.FC<Props> = (props) => {
 
   return (
     <Layout>
+      {menu ? (
+        <button
+          className="menu-background"
+          onClick={() => setMenu(false)}></button>
+      ) : null}
       <div className={!source || source !== 'statics' ? 'bg-blue' : 'bg-beige'}>
         <div className="flex flex-col h-screen">
           <nav role="navigation">
             <div id="menuToggle">
               <input
                 type="checkbox"
-                onClick={() => {
-                  if (menu) {
-                    setMenu(false);
-                  } else {
-                    setMenu(true);
-                  }
+                onChange={() => {
+                  setMenu(!menu);
                 }}
+                checked={menu}
               />
 
               <span className="brgr"></span>
@@ -49,9 +51,6 @@ export const MainLayout: React.FC<Props> = (props) => {
               <span className="brgr"></span>
 
               <ul id="menu">
-                <div className="mobile-helpers">
-                  <Helpers help={help} media={media} lang={lang} />
-                </div>
                 <Link href={'/' + lang} passHref>
                   <li>{lang === 'en' ? 'Home' : 'Accueil'}</li>
                 </Link>
@@ -73,7 +72,7 @@ export const MainLayout: React.FC<Props> = (props) => {
                 <Link href={'/' + lang + '/about'} passHref>
                   <li>{lang === 'en' ? 'About' : 'A propos'}</li>
                 </Link>
-                <div className="auth">
+                <div className={'auth ' + !session ? 'auth-login' : ''}>
                   {session ? (
                     <Link href="#" passHref>
                       <button
@@ -81,40 +80,27 @@ export const MainLayout: React.FC<Props> = (props) => {
                           setSession(false);
                           setCookie('token', '0');
                         }}>
-                        <li className="logout">
-                          {lang === 'en' ? 'Logout' : 'Déconnexion'}
+                        <li className={'logout-' + lang}>
+                          <button className={'logout-btn ' + 'btn-' + lang}>
+                            {lang === 'en' ? 'Logout' : 'Déconnexion'}
+                          </button>
                         </li>
                       </button>
                     </Link>
                   ) : (
-                    <>
+                    <div className="login">
                       <Link href="/auth/signin" passHref>
                         <li className="login">
-                          {lang === 'en' ? 'Sign In' : 'Se connecter'}
+                          <button className={'login-btn loginbtn-' + lang}>
+                            {lang === 'en' ? 'Sign In' : 'Connexion'}
+                          </button>
                         </li>
                       </Link>
-                      <Link href="https://contredanse.org" passHref>
-                        <li className="buy">
-                          {lang === 'en' ? 'Buy access' : "Acheter l'accès"}
-                        </li>
-                      </Link>
+
                       <br />
-                    </>
+                    </div>
                   )}
                 </div>
-                <br />
-                <div className="logoBtn">
-                  <a href="https://contredanse.org/">
-                    <img
-                      src="/images/ui/logo-contredanse-dark.png"
-                      alt="logo contredanse"
-                      className="logoInMenu"
-                    />
-                  </a>
-                </div>
-                <br />
-                <br />
-                <br />
               </ul>
             </div>
             {menu || (source && source === 'home') ? (
@@ -122,13 +108,21 @@ export const MainLayout: React.FC<Props> = (props) => {
                 <div className="helpers">
                   <Helpers help={help} media={media} lang={lang} />
                 </div>
-                <div className="logo-cd">
+                <div className={'logo-cd'}>
                   <Link href="https://contredanse.org" passHref>
-                    <img
-                      src={'/images/ui/logo-contredanse-white.png'}
-                      alt="LOGO CD"
-                      className="lg"
-                    />
+                    {source && source === 'home' && !menu ? (
+                      <img
+                        src={'/images/ui/logo-contredanse-white.png'}
+                        alt="LOGO CD"
+                        className={'lg dark'}
+                      />
+                    ) : (
+                      <img
+                        src={'/images/ui/logo-contredanse-white.png'}
+                        alt="LOGO CD"
+                        className={'lg'}
+                      />
+                    )}
                   </Link>
 
                   {menu && <h3>© Contredanse Editions, 2022</h3>}

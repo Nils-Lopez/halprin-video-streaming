@@ -252,7 +252,7 @@ export const MainVideoPage: React.FC<Props> = (props) => {
     <>
       <MainLayout media={selectedVideo} lang={lang}>
         <div>
-          <EmbedMobile lang={lang} />
+          <EmbedMobile lang={lang} source={categorySlug} />
           <S.Ctn>
             <VideoNavbar categories={videoTags} lang={lang} />
             <div className="video-container">

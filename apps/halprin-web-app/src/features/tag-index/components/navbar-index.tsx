@@ -110,7 +110,6 @@ export const NavbarIndex: FC<Props> = (props) => {
       ) : (
         <S.Ctn>
           <div className="desktop">
-            <div className="indexTitle">Index</div>
             <div className="nav">
               <div className="alphabetNav">
                 {alphabetLinks.map((letter) => {

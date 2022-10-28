@@ -10,7 +10,7 @@ export const BioPage: React.FC<Props> = (props) => {
   const { lang } = props;
 
   return (
-    <MainLayout lang={lang}>
+    <MainLayout lang={lang} source="statics">
       <S.Ctn>
         {lang === 'en' ? (
           <div className="ctn-body">

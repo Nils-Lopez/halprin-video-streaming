@@ -70,6 +70,7 @@ export const Ctn = styled.div`
       width: 100%;
       tr {
         width: 100%;
+
         td {
           width: 100%;
         }

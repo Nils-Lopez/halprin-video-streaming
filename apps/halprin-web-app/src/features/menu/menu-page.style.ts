@@ -50,7 +50,7 @@ export const Ctn = styled.div`
       margin-top: -8px;
     }
     @media (max-width: 600px) {
-      top: 1%;
+      top: 7%;
       left: 26%;
     }
     &:hover {
@@ -70,7 +70,7 @@ export const Ctn = styled.div`
       margin-top: -5px;
     }
     @media (max-width: 600px) {
-      bottom: 1%;
+      bottom: 7%;
       left: 22%;
     }
   }
@@ -330,10 +330,20 @@ export const Mobile = styled.div`
   @media only screen and (min-width: 650px) {
     display: none;
   }
+
+  .top {
+    margin-top: 90px;
+    display: flex;
+  }
+  .bottom {
+    display: flex;
+    margin-top: 15px;
+  }
   margin-top: -20px;
   .eyeImg {
     height: 70px;
     margin: auto;
+    margin-bottom: 22px;
   }
   .roundImg {
     width: 95px;
@@ -342,6 +352,7 @@ export const Mobile = styled.div`
   .handImg {
     margin: auto;
     height: 95px;
+    margin-top: -30px;
   }
   .lifeart {
     color: #a2d2ff;
@@ -358,6 +369,7 @@ export const Mobile = styled.div`
   .roadmapsTxt {
     color: #ffef9f;
     top: 27%;
+    margin-bottom: 40px;
   }
   .indexTxt {
     color: #ee6055;

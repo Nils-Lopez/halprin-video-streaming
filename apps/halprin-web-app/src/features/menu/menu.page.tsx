@@ -220,74 +220,79 @@ export const MenuPage: React.FC<Props> = (props) => {
               )}
               {!infoWorkshop && !infoRoadmaps && !infoIndex && !infoLifeart ? (
                 <>
-                  <button
-                    className="ctn"
-                    onClick={() => {
-                      setInfoWorkshop(true);
-                      changeMiddleContent('workshop');
-                    }}>
-                    <img
-                      src={'/images/ui/menu/round.png'}
-                      alt={t('app:menu.workshop')}
-                      onMouseEnter={() => changeMiddleContent('workshop')}
-                      onMouseLeave={() => changeMiddleContent('logo')}
-                      className="roundImg"
-                    />
-                    <div className="content workshop">
-                      <h2 className="title">Workshop</h2>
-                    </div>
-                  </button>
-                  <button
-                    className="ctn lifeart"
-                    onClick={() => {
-                      setInfoLifeart(true);
-                      changeMiddleContent('lifeart');
-                    }}>
-                    <img
-                      src={'/images/ui/menu/eye.png'}
-                      alt={t('app:menu.myLifeAndArt')}
-                      onMouseEnter={() => changeMiddleContent('lifeart')}
-                      onMouseLeave={() => changeMiddleContent('logo')}
-                      className="eyeImg"
-                    />
-                    <div className="content ">
-                      <h2 className="title">Life-Art</h2>
-                    </div>
-                  </button>
-                  <button
-                    className="ctn roadmaps"
-                    onClick={() => {
-                      setInfoRoadmaps(true);
-                      changeMiddleContent('roadmaps');
-                    }}>
-                    <img
-                      src={'/images/ui/menu/hand.png'}
-                      alt={t('app:menu.roadmaps')}
-                      onMouseEnter={() => changeMiddleContent('roadmaps')}
-                      onMouseLeave={() => changeMiddleContent('logo')}
-                      className="handImg"
-                    />
-                    <div className="content ">
-                      <h2 className="title">Roadmaps</h2>
-                    </div>
-                  </button>
-                  <button
-                    className="ctn index"
-                    onClick={() => {
-                      setInfoIndex(true);
-                      changeMiddleContent('index');
-                    }}>
-                    <img
-                      src={'/images/ui/menu/mouth.png'}
-                      alt={t('app:menu.index')}
-                      onMouseEnter={() => changeMiddleContent('index')}
-                      onMouseLeave={() => changeMiddleContent('logo')}
-                      className="mouthImg"
-                    />
-                    <div className="content">
-                      <h2 className="title">Index</h2>
-                    </div>
-                  </button>
+                  <div className="top">
+                    {' '}
+                    <button
+                      className="ctn"
+                      onClick={() => {
+                        setInfoWorkshop(true);
+                        changeMiddleContent('workshop');
+                      }}>
+                      <img
+                        src={'/images/ui/menu/round.png'}
+                        alt={t('app:menu.workshop')}
+                        onMouseEnter={() => changeMiddleContent('workshop')}
+                        onMouseLeave={() => changeMiddleContent('logo')}
+                        className="roundImg"
+                      />
+                      <div className="content workshop">
+                        <h2 className="title">Workshop</h2>
+                      </div>
+                    </button>
+                    <button
+                      className="ctn lifeart"
+                      onClick={() => {
+                        setInfoLifeart(true);
+                        changeMiddleContent('lifeart');
+                      }}>
+                      <img
+                        src={'/images/ui/menu/eye.png'}
+                        alt={t('app:menu.myLifeAndArt')}
+                        onMouseEnter={() => changeMiddleContent('lifeart')}
+                        onMouseLeave={() => changeMiddleContent('logo')}
+                        className="eyeImg"
+                      />
+                      <div className="content ">
+                        <h2 className="title">Life-Art</h2>
+                      </div>
+                    </button>
+                  </div>
+                  <div className="bottom">
+                    <button
+                      className="ctn index"
+                      onClick={() => {
+                        setInfoIndex(true);
+                        changeMiddleContent('index');
+                      }}>
+                      <img
+                        src={'/images/ui/menu/mouth.png'}
+                        alt={t('app:menu.index')}
+                        onMouseEnter={() => changeMiddleContent('index')}
+                        onMouseLeave={() => changeMiddleContent('logo')}
+                        className="mouthImg"
+                      />
+                      <div className="content">
+                        <h2 className="title">Index</h2>
+                      </div>
+                    </button>
+                    <button
+                      className="ctn roadmaps"
+                      onClick={() => {
+                        setInfoRoadmaps(true);
+                        changeMiddleContent('roadmaps');
+                      }}>
+                      <img
+                        src={'/images/ui/menu/hand.png'}
+                        alt={t('app:menu.roadmaps')}
+                        onMouseEnter={() => changeMiddleContent('roadmaps')}
+                        onMouseLeave={() => changeMiddleContent('logo')}
+                        className="handImg"
+                      />
+                      <div className="content ">
+                        <h2 className="title">Roadmaps</h2>
+                      </div>
+                    </button>
+                  </div>
                 </>
               ) : infoWorkshop ? (
                 <>

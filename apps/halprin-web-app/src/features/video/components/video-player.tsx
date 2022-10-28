@@ -27,7 +27,11 @@ export const VideoPlayer: FC<Props> = (props) => {
 
   useEffect(() => {
     if (video && video.url && typeof video.url === 'string') {
-      setUrl('https://player.vimeo.com/video' + video.url.substring(17, 28));
+      setUrl(
+        'https://player.vimeo.com/video' +
+          video.url.substring(17, 27) +
+          '?autoplay=1'
+      );
       if (mode === 'demo') {
         setMode('free');
       }
@@ -50,6 +54,8 @@ export const VideoPlayer: FC<Props> = (props) => {
       }
     }
   }, [video]);
+
+  console.log('url : ', url);
 
   const demoTimer = () => {
     setTimeout(() => {
