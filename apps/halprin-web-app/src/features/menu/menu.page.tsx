@@ -92,7 +92,7 @@ export const MenuPage: React.FC<Props> = (props) => {
                   <div className="logo">
                     <img
                       src={
-                        '/images/ui/elements/triangle-halprin-' + lang + '.png'
+                        '/images/ui/elements/triangle-halprin-black-' + lang + '.png'
                       }
                       alt="Anna Halprin - Dancing Life"
                       className="triangle"

@@ -137,9 +137,11 @@ export const VideoFooter: React.FC<Props> = (props) => {
         <div className="desktop">
           <div className="left">
             {media[0] && media[0].category} -{' '}
-            {selectedVideo && selectedVideo.title
-              ? selectedVideo.title[lang]
-              : null}{' '}
+            {selectedVideo && selectedVideo.title && selectedVideo.title[lang].length >= 19
+                            ? selectedVideo.title[lang].substring(0, 15) + '...'
+                            : selectedVideo && selectedVideo.title
+                            ? selectedVideo.title[lang]
+                            : null}{' '}
             {userToken && userToken !== '0' ? (
               <div>
                 <button className="favBtn" onClick={() => addToFav()}>

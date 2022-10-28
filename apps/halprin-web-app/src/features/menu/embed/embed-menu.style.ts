@@ -149,7 +149,7 @@ export const Circle = styled.div`
   .centered {
     position: relative;
     margin-right: auto;
-    top: -50px;
+    top: -45px;
     left: 25px;
     .logo {
       position: fixed;
@@ -165,7 +165,7 @@ export const Circle = styled.div`
   .centered-road {
     position: relative;
     margin-right: auto;
-    top: -55px;
+    top: -50px;
     left: 23px;
     .logo {
       position: fixed;
@@ -181,7 +181,7 @@ export const Circle = styled.div`
   .centered-workshop {
     position: relative;
     margin-right: auto;
-    top: -55px;
+    top: -45px;
     left: 25px;
     .logo {
       position: fixed;
@@ -197,7 +197,7 @@ export const Circle = styled.div`
   .centered-lifeart {
     position: relative;
     margin-right: auto;
-    top: -40px;
+    top: -30px;
     left: 25px;
     .logo {
       position: fixed;

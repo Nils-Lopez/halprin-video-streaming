@@ -42,7 +42,7 @@ export const HomePage: React.FC<Props> = ({ lang }) => {
                         <img
                           src={
                             '/images/ui/elements/triangle-halprin-' +
-                            'en' +
+                            lang +
                             '.png'
                           }
                           alt="Anna Halprin - Dancing Life"

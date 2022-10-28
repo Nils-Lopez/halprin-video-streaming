@@ -39,7 +39,7 @@ export const EmbedMenu: React.FC<Props> = (props) => {
                 <div className="logo">
                   <img
                     src={
-                      '/images/ui/menu/triangle-halprin-white-' + 'en' + '.png'
+                      '/images/ui/elements/triangle-halprin-black-' + 'en' + '.png'
                     }
                     alt="Anna Halprin - Dancing Life"
                     className="triangle"
@@ -120,7 +120,7 @@ export const EmbedMenu: React.FC<Props> = (props) => {
                 <div className="logo">
                   <img
                     src={
-                      '/images/ui/menu/triangle-halprin-white-' + 'en' + '.png'
+                      '/images/ui/elements/triangle-halprin-black-' + 'en' + '.png'
                     }
                     alt="Anna Halprin - Dancing Life"
                     className="triangle"
@@ -174,7 +174,7 @@ export const EmbedMenu: React.FC<Props> = (props) => {
                 <div className="logo">
                   <img
                     src={
-                      '/images/ui/menu/triangle-halprin-white-' + 'en' + '.png'
+                      '/images/ui/elements/triangle-halprin-black-' + 'en' + '.png'
                     }
                     alt="Anna Halprin - Dancing Life"
                     className="triangle"
@@ -240,7 +240,7 @@ export const EmbedMenu: React.FC<Props> = (props) => {
                 <div className="logo">
                   <img
                     src={
-                      '/images/ui/menu/triangle-halprin-white-' + 'en' + '.png'
+                      '/images/ui/elements/triangle-halprin-black-' + 'en' + '.png'
                     }
                     alt="Anna Halprin - Dancing Life"
                     className="triangle"
