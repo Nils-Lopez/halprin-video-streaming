@@ -18,6 +18,9 @@ export const Ctn = styled.div`
     width: 42%;
     top: 10%;
     left: 29.5%;
+    @media (max-width: 1430px) {
+      top: 15%;
+    }
     .top-gif {
       position: fixed;
       &.desktop-gif-eye {
