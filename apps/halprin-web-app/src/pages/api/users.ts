@@ -21,7 +21,7 @@ handler.post(async (req: NextApiRequest, res: NextApiResponse) => {
   const { lang, email, password } = req.body;
   if (lang && email && password) {
     try {
-      if (checkAcces(email) === 'success') {
+      if ((await checkAcces(email, password)) === 'success') {
         // Hash password to store it in DB
         const passwordhash = await bcrypt.hash(password, 10);
 

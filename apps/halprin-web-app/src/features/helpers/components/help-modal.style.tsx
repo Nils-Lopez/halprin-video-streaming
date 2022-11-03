@@ -21,7 +21,6 @@ export const Modal = styled.div`
     max-width: 500px;
   }
   .centered {
-    
     padding: 5px;
     display: inline-block;
     vertical-align: middle;

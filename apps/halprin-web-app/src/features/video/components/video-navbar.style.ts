@@ -8,6 +8,7 @@ export const Ctn = styled.div`
   padding-bottom: 10px;
   margin-top: -5px;
   height: 70px;
+
   svg {
     color: lightgrey;
   }
@@ -22,7 +23,11 @@ export const Ctn = styled.div`
     justify-content: center;
     padding-right: 10px;
     overflow-x: auto;
+    height: 30px;
     padding-left: 10px;
+    a {
+      margin-right: 10px;
+    }
     .show {
       width: 90%;
       display: flex;
@@ -111,9 +116,13 @@ export const MobileCtn = styled.div`
     justify-content: space-between;
     height: 30px;
     overflow-x: auto;
+    overflow-y: hidden;
     a {
       color: lightgrey;
       margin-left: 10px;
+      margin-right: 10px;
+      height: 30px;
+      white-space: nowrap;
       margin-right: 10px;
       padding: 0;
       position: relative;

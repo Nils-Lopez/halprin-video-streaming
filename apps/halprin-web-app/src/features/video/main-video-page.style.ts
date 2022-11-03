@@ -92,16 +92,36 @@ export const Ctn = styled.div`
       margin: auto;
     }
   }
-  @media only screen and (min-width: 650px) and (max-height: 670px) {
-    .video-container {
-      max-height: 330px;
-    }
-  }
+
   @media only screen and (max-width: 650px) and (min-width: 594px) {
     .video-container {
       width: 92%;
       margin: auto;
       margin-top: -40px;
+    }
+  }
+  @media (min-width: 650px) and (max-height: 730px) {
+    .video-container {
+      margin-top: -25px;
+      max-width: 570px;
+    }
+  }
+  @media (min-width: 650px) and (max-height: 685px) {
+    .video-container {
+      max-width: 530px;
+      margin-top: -35px;
+    }
+  }
+  @media (min-width: 650px) and (max-height: 645px) {
+    .video-container {
+      max-width: 500px;
+      margin-top: -55px;
+    }
+  }
+  @media (min-width: 650px) and (max-height: 620px) {
+    .video-container {
+      max-width: 470px;
+      margin-top: -75px;
     }
   }
   src: url('../../../public/fonts/akzidenz/AkzidenzGrotesk-Medium.otf')

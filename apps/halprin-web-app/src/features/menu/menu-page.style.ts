@@ -21,6 +21,9 @@ export const Ctn = styled.div`
     width: 250px;
     z-index: 9;
     cursor: pointer;
+    &:hover {
+      filter: brightness(110%);
+    }
     @media only screen and (max-height: 970px) {
       top: 45%;
     }
@@ -42,7 +45,7 @@ export const Ctn = styled.div`
   src: url('../../../public/fonts/akzidenz/AkzidenzGrotesk-Bold.otf')
     format('opentype');
   font-size: 14pt;
-  .beginBtn {
+  .beginBtn-fr {
     position: absolute;
     left: 20%;
     font-size: 20px;
@@ -58,7 +61,23 @@ export const Ctn = styled.div`
       filter: opacity(80%);
     }
   }
-  .endBtn {
+  .beginBtn-en {
+    position: absolute;
+    left: 20%;
+    font-size: 20px;
+    .icon {
+      margin-top: -8px;
+    }
+    @media (max-width: 600px) {
+      top: 7%;
+      left: 35%;
+    }
+    &:hover {
+      scale: 1.05;
+      filter: opacity(80%);
+    }
+  }
+  .endBtn-fr {
     position: absolute;
     right: 20%;
     font-size: 20px;
@@ -72,6 +91,22 @@ export const Ctn = styled.div`
     @media (max-width: 600px) {
       bottom: 7%;
       left: 22%;
+    }
+  }
+  .endBtn-en {
+    position: absolute;
+    right: 20%;
+    font-size: 20px;
+    &:hover {
+      scale: 1.05;
+      filter: opacity(80%);
+    }
+    .icon {
+      margin-top: -5px;
+    }
+    @media (max-width: 600px) {
+      bottom: 7%;
+      left: 21%;
     }
   }
   i .arrow {
@@ -175,7 +210,10 @@ export const Circle = styled.div`
   }
   .roadmapsTxt {
     color: #ffef9f;
-    top: 27%;
+    top: 26.5%;
+    @media (max-height: 960px) {
+      top: 29%;
+    }
   }
   .indexTxt {
     color: #ee6055;
@@ -253,7 +291,7 @@ export const Video = styled.div`
       top: 50%;
       transform: translateX(-50%) translateY(-50%);
       transition: transform 0.1s;
-      width: 70px;
+      width: 45px;
 
       $transition-time: 0.15s;
       @media only screen and (max-width: 1310px) {
@@ -330,10 +368,37 @@ export const Mobile = styled.div`
   @media only screen and (min-width: 650px) {
     display: none;
   }
+  .pulse {
+    animation-duration: 1s;
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes pulse {
+    from {
+      scale: 1.07;
+      filter: opacity(100%);
+    }
+
+    to {
+      scale: 1;
+      filter: opacity(80%);
+    }
+  }
 
   .top {
-    margin-top: 90px;
+    margin-top: 95px;
     display: flex;
+  }
+  .center {
+    margin-top: -30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .logo {
+      width: 150px;
+    }
   }
   .bottom {
     display: flex;
@@ -341,17 +406,17 @@ export const Mobile = styled.div`
   }
   margin-top: -20px;
   .eyeImg {
-    height: 70px;
+    height: 60px;
     margin: auto;
-    margin-bottom: 22px;
+    margin-bottom: 16px;
   }
   .roundImg {
-    width: 95px;
+    width: 80px;
     margin: auto;
   }
   .handImg {
     margin: auto;
-    height: 95px;
+    height: 80px;
     margin-top: -30px;
   }
   .lifeart {
@@ -378,7 +443,7 @@ export const Mobile = styled.div`
     color: #a2d2ff;
   }
   .mouthImg {
-    height: 65px;
+    height: 55px;
     margin: auto;
   }
   .mobileDesc {

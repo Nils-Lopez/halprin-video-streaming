@@ -44,7 +44,12 @@ export const Ctn = styled.div`
 
 
     .ctn-body {
-
+        .ctn-name {
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            margin-bottom: 20px;
+        }
         p {
             margin-top: 7px;
         }

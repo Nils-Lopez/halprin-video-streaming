@@ -14,22 +14,170 @@ export const Ctn = styled.div`
     display: none;
   }
   .gif {
-    width: 45%;
-    top: 8%;
-    left: 27.5%;
     position: fixed;
+    width: 42%;
+    top: 10%;
+    left: 29.5%;
+    .top-gif {
+      position: fixed;
+      &.desktop-gif-eye {
+        top: 13%;
+        left: 44.3%;
+        @media (max-height: 700px) {
+          top: 25%;
+        }
+        @media (max-width: 1300px) {
+          left: 42.6%;
+        }
+        @media (max-width: 880px) {
+          top: 17%;
+          left: 41.9%;
+        }
+      }
+    }
+    .right-gif {
+    }
+    .bottom-gif {
+      position: fixed;
+      &.desktop-gif-mouth {
+        top: 70%;
+        left: 44%;
+        @media (max-height: 700px) {
+          top: 82%;
+        }
+        @media (max-width: 1300px) {
+          left: 42%;
+        }
+        @media (max-width: 880px) {
+          left: 41%;
+        }
+      }
+      &.desktop-gif-eye {
+        top: 70%;
+        left: 44.1%;
+        @media (max-height: 700px) {
+          top: 82%;
+        }
+        @media (max-width: 1300px) {
+          left: 34.8%;
+        }
+        @media (max-width: 880px) {
+          left: 32.9%;
+        }
+      }
+      &.desktop-gif-hand {
+        top: 70%;
+        left: 47.2%;
+        @media (max-height: 700px) {
+          top: 82%;
+        }
+        @media (max-width: 1300px) {
+          left: 46.1%;
+        }
+        @media (max-width: 880px) {
+          left: 32.9%;
+        }
+      }
+      &.desktop-gif-round {
+        top: 70%;
+        left: 45.5%;
+        @media (max-height: 700px) {
+          top: 82%;
+        }
+        @media (max-width: 1300px) {
+          left: 44.1%;
+        }
+        @media (max-width: 880px) {
+          left: 43.2%;
+        }
+      }
+    }
+    .left-gif {
+      position: fixed;
+      &.desktop-gif-mouth {
+        top: 41%;
+        left: 27.5%;
+        @media (max-height: 740px) {
+          top: 57%;
+        }
+        @media (max-width: 1300px) {
+          left: 17.1%;
+        }
+        @media (max-width: 880px) {
+          top: 45%;
+          left: 11.2%;
+        }
+      }
+    }
+    .desktop-gif-mouth {
+      width: 12%;
+      @media (max-width: 1300px) {
+        width: 16%;
+      }
+      @media (max-width: 880px) {
+        width: 18%;
+      }
+    }
+    .desktop-gif-eye {
+      width: 11.4%;
+      @media (max-width: 1300px) {
+        width: 15.2%;
+      }
+      @media (max-width: 880px) {
+        width: 17.1%;
+      }
+    }
+    .desktop-gif-hand {
+      width: 6%;
+      @media (max-width: 1300px) {
+        width: 8%;
+      }
+      @media (max-width: 880px) {
+        width: 9%;
+      }
+    }
+    .desktop-gif-round {
+      width: 9%;
+      @media (max-width: 1300px) {
+        width: 12%;
+      }
+      @media (max-width: 880px) {
+        width: 13.5%;
+      }
+    }
     @media screen and (max-width: 600px) {
-      display:none;
+      display: none;
     }
   }
   .mobile-gif {
     width: 45%;
-    top: 8%;
-    left: 27.5%;
+    top: 12%;
+    left: 29%;
     position: fixed;
     @media screen and (min-width: 600px) {
-      display:none;
+      display: none;
     }
+  }
+
+  .gif-mouth {
+    width: 45%;
+    left: 28%;
+    top: 22%;
+  }
+  .gif-hand {
+    width: 23%;
+    left: 40%;
+    top: 15%;
+  }
+  .gif-eye {
+    width: 45%;
+    left: 28%;
+    top: 22%;
+  }
+  .gif-round {
+    width: 33%;
+    left: 33.3%;
+    top: 18%;
   }
   .centered {
     position: absolute;
@@ -58,10 +206,6 @@ export const Ctn = styled.div`
     width: 250px;
     z-index: 10;
     cursor: pointer;
-    &:hover {
-      filter: brightness(70%);
-      opacity: 95%;
-    }
   }
   font-family: AGBold;
   src: url('../../../public/fonts/akzidenz/AkzidenzGrotesk-Bold.otf')
@@ -230,7 +374,7 @@ export const Video = styled.div`
       top: 50%;
       transform: translateX(-50%) translateY(-50%);
       transition: transform 0.1s;
-      width: 70px;
+      width: 45px;
 
       $transition-time: 0.15s;
       @media only screen and (max-width: 1310px) {

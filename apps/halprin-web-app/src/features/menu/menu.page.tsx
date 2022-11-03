@@ -72,15 +72,17 @@ export const MenuPage: React.FC<Props> = (props) => {
   return (
     <>
       {content === 'menu' ? (
-        <MainLayout lang={lang}>
+        <MainLayout lang={lang} source="menu" setContent={setContent}>
           <div>
             <S.Ctn>
               {!infoWorkshop && !infoRoadmaps && !infoIndex && !infoLifeart ? (
                 <button
                   onClick={() =>
-                    setContent('https://player.vimeo.com/video/582111408?autoplay=1')
+                    setContent(
+                      'https://player.vimeo.com/video/582111408?autoplay=1'
+                    )
                   }
-                  className="beginBtn">
+                  className={'beginBtn-' + lang}>
                   {lang === 'en' ? 'BEGINNING' : 'POUR COMMENCER'}
                   <div className="icon">
                     <FontAwesomeIcon icon={faChevronDown} size={'2x'} fade />
@@ -88,37 +90,24 @@ export const MenuPage: React.FC<Props> = (props) => {
                 </button>
               ) : null}
               {midContent === 'logo' ? (
-                intentionsToggle === false ? (
-                  <div className="logo">
-                    <img
-                      src={
-                        '/images/ui/elements/triangle-halprin-black-' + lang + '.png'
-                      }
-                      alt="Anna Halprin - Dancing Life"
-                      className="triangle"
-                      onMouseEnter={() => setIntentionsToggle(true)}
-                      onMouseOver={() => setIntentionsToggle(true)}
-                      onFocus={() => setIntentionsToggle(true)}
-                    />
-                  </div>
-                ) : (
-                  <button
-                    onClick={() =>
-                      setContent('https://player.vimeo.com/video/584898888?autoplay=1')
+                <button
+                  onClick={() =>
+                    setContent(
+                      'https://player.vimeo.com/video/584898888?autoplay=1'
+                    )
+                  }
+                  className="logo">
+                  <img
+                    src={
+                      '/images/ui/elements/triangle-halprin-hover-' +
+                      lang +
+                      '.png'
                     }
-                    className="logo">
-                    <img
-                      src={
-                        '/images/ui/elements/triangle-halprin-hover-' +
-                        lang +
-                        '.png'
-                      }
-                      alt="Anna Halprin - Dancing Life"
-                      className="triangle"
-                      onMouseLeave={() => setIntentionsToggle(false)}
-                    />
-                  </button>
-                )
+                    alt="Anna Halprin - Dancing Life"
+                    className="triangle"
+                    onMouseLeave={() => setIntentionsToggle(false)}
+                  />
+                </button>
               ) : null}
               <S.Circle>
                 <div className="topIcon">
@@ -182,9 +171,11 @@ export const MenuPage: React.FC<Props> = (props) => {
               {!infoWorkshop && !infoRoadmaps && !infoIndex && !infoLifeart ? (
                 <button
                   onClick={() =>
-                    setContent('https://player.vimeo.com/video/582147532?autoplay=1')
+                    setContent(
+                      'https://player.vimeo.com/video/582147532?autoplay=1'
+                    )
                   }
-                  className="endBtn">
+                  className={'endBtn-' + lang}>
                   <>
                     {lang === 'en' ? 'ENDING' : 'POUR TERMINER'}
                     <div className="icon">
@@ -257,6 +248,26 @@ export const MenuPage: React.FC<Props> = (props) => {
                       </div>
                     </button>
                   </div>
+                  <div className="center">
+                    <button
+                      onClick={() =>
+                        setContent(
+                          'https://player.vimeo.com/video/584898888?autoplay=1'
+                        )
+                      }
+                      className="logo">
+                      <img
+                        src={
+                          '/images/ui/elements/triangle-halprin-hover-' +
+                          lang +
+                          '.png'
+                        }
+                        alt="Anna Halprin - Dancing Life"
+                        className="triangle"
+                        onMouseLeave={() => setIntentionsToggle(false)}
+                      />
+                    </button>
+                  </div>
                   <div className="bottom">
                     <button
                       className="ctn index"
@@ -297,7 +308,7 @@ export const MenuPage: React.FC<Props> = (props) => {
               ) : infoWorkshop ? (
                 <>
                   <Link href={menuConfig.menuLinks.videoWorkshops} passHref>
-                    <div className="ctn info">
+                    <div className="ctn info pulse">
                       <img
                         src={'/images/ui/menu/round.png'}
                         alt={t('app:menu.workshop')}
@@ -324,7 +335,7 @@ export const MenuPage: React.FC<Props> = (props) => {
               ) : infoRoadmaps ? (
                 <>
                   <Link href={menuConfig.menuLinks.videoRoadmaps} passHref>
-                    <div className="ctn roadmaps info">
+                    <div className="ctn roadmaps info pulse">
                       <img
                         src={'/images/ui/menu/hand.png'}
                         alt={t('app:menu.roadmaps')}
@@ -351,7 +362,7 @@ export const MenuPage: React.FC<Props> = (props) => {
               ) : infoIndex ? (
                 <>
                   <Link href={menuConfig.menuLinks.videoIndex} passHref>
-                    <div className="ctn index info">
+                    <div className="ctn index info pulse">
                       <img
                         src={'/images/ui/menu/mouth.png'}
                         alt={t('app:menu.index')}
@@ -378,7 +389,7 @@ export const MenuPage: React.FC<Props> = (props) => {
               ) : infoLifeart ? (
                 <>
                   <Link href={menuConfig.menuLinks.videoLifeArt} passHref>
-                    <div className="ctn lifeart info">
+                    <div className="ctn lifeart info  pulse">
                       <img
                         src={'/images/ui/menu/eye.png'}
                         alt={t('app:menu.myLifeAndArt')}
@@ -408,7 +419,7 @@ export const MenuPage: React.FC<Props> = (props) => {
           </div>
         </MainLayout>
       ) : (
-        <MainLayout lang={lang}>
+        <MainLayout lang={lang} source="menu" setContent={setContent}>
           <S.Video>
             <iframe
               src={content}
@@ -420,10 +431,10 @@ export const MenuPage: React.FC<Props> = (props) => {
                 'https://player.vimeo.com/external/583334078.sd.mp4?s=685558fc99397ec030c0866c145927d29e602e30&profile_id=165'
               }></iframe>
             <div className="nextBtn">
-                <button onClick={() => {
-                  setContent('menu')
-                  
-              }}>
+              <button
+                onClick={() => {
+                  setContent('menu');
+                }}>
                 <div className="arrow">
                   <div className="arrow-top"></div>
                   <div className="arrow-bottom"></div>

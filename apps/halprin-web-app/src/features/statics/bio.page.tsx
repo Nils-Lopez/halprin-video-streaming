@@ -23,8 +23,8 @@ export const BioPage: React.FC<Props> = (props) => {
                   honor him by presenting his biography of me.{' '}
                 </i>
               </p>
-              <p>
-                <i>Anna Halprin</i>
+              <p className="ctn-name">
+                <i className="name">Anna Halprin</i>
               </p>
             </div>
             <div>
@@ -67,7 +67,9 @@ export const BioPage: React.FC<Props> = (props) => {
                 creativity that she has developed as much as in the performance
                 itself.
               </p>
-              <b>Lawrence Halprin</b>
+              <p className="ctn-name">
+                <i className="name">Lawrence Halprin</i>
+              </p>
             </div>
           </div>
         ) : (
@@ -82,8 +84,8 @@ export const BioPage: React.FC<Props> = (props) => {
                   biographie qu’il a écrite pour moi.{' '}
                 </i>
               </p>
-              <p>
-                <i>Anna Halprin</i>
+              <p className="ctn-name">
+                <i className="name">Anna Halprin</i>
               </p>
             </div>
             <div>
@@ -128,7 +130,9 @@ export const BioPage: React.FC<Props> = (props) => {
                 le processus créatif qu’elle a mis au point que par sa
                 réalisation.{' '}
               </p>
-              <b>Lawrence Halprin </b>
+              <p className="ctn-name">
+                <i className="name">Lawrence Halprin </i>
+              </p>
             </div>
           </div>
         )}

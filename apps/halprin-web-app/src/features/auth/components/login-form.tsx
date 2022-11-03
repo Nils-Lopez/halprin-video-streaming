@@ -23,7 +23,7 @@ export const LoginForm: React.FC<LoginFormProps> = (props) => {
 
   const handleSubmit = async (e: React.SyntheticEvent) => {
     e.preventDefault();
-    setLoading(true)
+    setLoading(true);
     const target = e.target as typeof e.target & {
       email: { value: string };
       password: { value: string };
@@ -40,8 +40,7 @@ export const LoginForm: React.FC<LoginFormProps> = (props) => {
         setError(false);
       } else {
         setError(true);
-                setLoading(false)
-
+        setLoading(false);
       }
     } catch (e) {
       setError(true);
@@ -60,7 +59,7 @@ export const LoginForm: React.FC<LoginFormProps> = (props) => {
 
   useEffect(() => {
     if (userToken && userToken !== '0') {
-      setLoading(false)
+      setLoading(false);
       const redirect = '/' + lang + '/menu';
       Router.push(redirect);
     }
@@ -68,80 +67,84 @@ export const LoginForm: React.FC<LoginFormProps> = (props) => {
 
   return (
     <>
-
-        <S.Container>
-          <div className="header">
-            <h2>{lang === "en" ? "Welcome" : "Bienvenue"}</h2>
-            <h3>
-              {lang === 'en'
-                ? "In order to continue and if you don't have one"
-                : "Afin de poursuivre votre lecture et si vous ne l'avez pas encore fait"}
-            </h3>
-            <br />
-            <a href="https://contredanse.org">
-              {lang === 'en' ? 'Get your access' : "Obtenez votre accès"}
-            </a>
-     
-            <hr />
-            <p>{lang === "en" ? "Or connect" : "Ou connectez-vous"}</p>
-          </div>
+      <S.Container>
+        <div className="header">
+          <h2>{lang === 'en' ? 'Welcome' : 'Bienvenue'}</h2>
+          <h3>
+            {lang === 'en'
+              ? "In order to continue and if you don't have one"
+              : "Afin de poursuivre votre lecture et si vous ne l'avez pas encore fait"}
+          </h3>
           <br />
-          {!loading ? <>
-          <form onSubmit={handleSubmit} className="login-form">
-            <div className="inputs">
-              <div className="email">
-                <label htmlFor="emailInput" className="email-label">
-                  E-mail
-                </label>
-                <br />
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  name="email"
-                  id="email"
-                />
-              </div>
+          <a href="https://contredanse.org">
+            {lang === 'en' ? 'Get your access' : 'Obtenez votre accès'}
+          </a>
 
-              <div className="pwd">
-                <label htmlFor="pwdInput" className="pwd-label">
-                  {lang === 'en' ? 'Password' : 'Mot de passe'}
-                </label>
-                <br />
-                <input
-                  type="password"
-                  name="password"
-                  value={pwd}
-                  onChange={(e) => setPwd(e.target.value)}
-                  id="password"
-                />
-              </div>
-            </div>
-            {error ? (
-              <div className="alert">
-                {lang === 'en'
-                  ? 'Wrong credentials.'
-                  : 'Adresse email ou mot de passe incorrect.'}
-              </div>
-            ) : (
-              <></>
-            )}
+          <hr />
+          <p>{lang === 'en' ? 'Or connect' : 'Ou connectez-vous'}</p>
+        </div>
+        <br />
+        {!loading ? (
+          <>
+            <form onSubmit={handleSubmit} className="login-form">
+              <div className="inputs">
+                <div className="email">
+                  <label htmlFor="emailInput" className="email-label">
+                    E-mail
+                  </label>
+                  <br />
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    name="email"
+                    id="email"
+                  />
+                </div>
 
-            <div className="btn">
-              <button type="submit" className="sending-btn">
-                {lang === 'en' ? 'Sign In' : 'Connexion'}
-              </button>
-            </div>
-          </form>
-          </> : <S.Loader></S.Loader>}
-          <div className="footer">
-            <a href="https://contredanse.org"><img src="/images/ui/logo-contredanse-login.png" alt="Contredanse" /></a>
-          </div>
-        </S.Container>
-      
-      
+                <div className="pwd">
+                  <label htmlFor="pwdInput" className="pwd-label">
+                    {lang === 'en' ? 'Password' : 'Mot de passe'}
+                  </label>
+                  <br />
+                  <input
+                    type="password"
+                    name="password"
+                    value={pwd}
+                    onChange={(e) => setPwd(e.target.value)}
+                    id="password"
+                  />
+                </div>
+              </div>
+              {error ? (
+                <div className="alert">
+                  {lang === 'en'
+                    ? 'Wrong credentials.'
+                    : 'Adresse email ou mot de passe incorrect.'}
+                </div>
+              ) : (
+                <></>
+              )}
 
-      
+              <div className="btn">
+                <button type="submit" className="sending-btn">
+                  {lang === 'en' ? 'Sign In' : 'Connexion'}
+                </button>
+              </div>
+            </form>
+          </>
+        ) : (
+          <S.Loader></S.Loader>
+        )}
+        <div className="footer">
+          <a href="https://contredanse.org">
+            <img
+              src="/images/ui/logo-contredanse-login.png"
+              alt="Contredanse"
+            />
+          </a>
+        </div>
+      </S.Container>
     </>
   );
 };

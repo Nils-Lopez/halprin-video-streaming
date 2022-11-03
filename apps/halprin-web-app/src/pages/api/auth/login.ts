@@ -2,6 +2,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import createHandler from '../../../../middleware';
 import User from '../../../../models/user';
 import bcrypt from 'bcryptjs';
+import checkAcces from '@/backend/auth/checkAcces';
 
 import JWT from 'expo-jwt';
 
@@ -11,7 +12,7 @@ const checkDb = async (req: NextApiRequest) => {
   try {
     if (req.body.email && req.body.password) {
       //Check in db cd
-      if (req.body.email.charAt(0) === '1') {
+      if ((await checkAcces(req.body.email, req.body.password)) === 'success') {
         const user = { email: req.body.email, password: req.body.password };
         const data = await User.findOne({ email: req.body.email });
         if (data) {

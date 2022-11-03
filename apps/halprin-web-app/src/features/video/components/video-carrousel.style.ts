@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Carrousel = styled.div`
-  max-width: 50%;
+  max-width: 60%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;

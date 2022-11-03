@@ -8,8 +8,7 @@ export const Container = styled.div`
       font-size: 19px;
       margin-bottom: 10px;
       color: #57606f;
-            margin-top: 30px;
-
+      margin-top: 30px;
     }
     h3 {
       color: #747d8c;
@@ -34,13 +33,12 @@ export const Container = styled.div`
       font-size: 15px;
     }
     hr {
-      
       width: 65%;
       margin: auto;
       margin-top: 20px;
     }
   }
-  
+
   form {
     width: 100%;
     margin-top: -20px;
@@ -54,14 +52,13 @@ export const Container = styled.div`
         margin: auto;
         height: 35px;
         margin-top: 0;
-                margin-bottom: -10px;
-                bottom: -20px;
+        margin-bottom: -10px;
+        bottom: -20px;
         font-size: 17px;
       }
       label {
-        
         color: #747d8c;
-      font-size: 14px;
+        font-size: 14px;
       }
       .pwd {
         margin-top: 15px;
@@ -74,7 +71,7 @@ export const Container = styled.div`
     .btn {
       margin-top: 25px;
       margin-bottom: 15px;
-     
+
       .sending-btn {
         border: 1px solid white;
         padding: 5px;
@@ -104,43 +101,42 @@ export const Container = styled.div`
       cursor: pointer;
     }
   }
-  
 `;
 
 export const Loader = styled.div`
-      width: 8vmax;
-      height: 8vmax;
-      border-right: 4px solid black;
-      border-radius: 100%;
-      animation: spinRight 800ms linear infinite;
-      margin: auto;
-      margin-top: 30px;
-      margin-bottom: 60px;
-      &:before,
-      &:after {
-        content: '';
-        width: 6vmax;
-        height: 6vmax;
-        display: block;
-        position: absolute;
-        top: calc(50% - 3vmax);
-        left: calc(50% - 3vmax);
-        border-left: 3px solid black;
-        border-radius: 100%;
-        animation: spinLeft 800ms linear infinite;
-      }
+  width: 8vmax;
+  height: 8vmax;
+  border-right: 4px solid black;
+  border-radius: 100%;
+  animation: spinRight 800ms linear infinite;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  &:before,
+  &:after {
+    content: '';
+    width: 6vmax;
+    height: 6vmax;
+    display: block;
+    position: absolute;
+    top: calc(50% - 3vmax);
+    left: calc(50% - 3vmax);
+    border-left: 3px solid black;
+    border-radius: 100%;
+    animation: spinLeft 800ms linear infinite;
+  }
 
-      &:after {
-        width: 4vmax;
-        height: 4vmax;
-        top: calc(50% - 2vmax);
-        left: calc(50% - 2vmax);
-        border: 0;
-        border-right: 2px solid black;
-        animation: none;
-      }
-    
-    @keyframes spinLeft {
+  &:after {
+    width: 4vmax;
+    height: 4vmax;
+    top: calc(50% - 2vmax);
+    left: calc(50% - 2vmax);
+    border: 0;
+    border-right: 2px solid black;
+    animation: none;
+  }
+
+  @keyframes spinLeft {
     from {
       transform: rotate(0deg);
     }
@@ -157,4 +153,4 @@ export const Loader = styled.div`
       transform: rotate(0deg);
     }
   }
-`
+`;

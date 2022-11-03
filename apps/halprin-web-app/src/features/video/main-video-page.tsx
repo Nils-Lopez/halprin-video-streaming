@@ -250,7 +250,7 @@ export const MainVideoPage: React.FC<Props> = (props) => {
 
   return (
     <>
-      <MainLayout media={selectedVideo} lang={lang}>
+      <MainLayout media={selectedVideo} lang={lang} categorySlug={categorySlug}>
         <div>
           <EmbedMobile lang={lang} source={categorySlug} />
           <S.Ctn>

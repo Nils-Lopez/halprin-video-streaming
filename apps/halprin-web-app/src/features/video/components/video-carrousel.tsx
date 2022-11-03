@@ -55,11 +55,13 @@ export const VideoCarrousel: FC<Props> = (props) => {
                             ? title
                             : null}
                         </div>
-                        <div className="desktitle">{title && title.length >= 19
+                        <div className="desktitle">
+                          {title && title.length >= 19
                             ? title.substring(0, 15) + '...'
                             : title
                             ? title
-                            : null}</div>
+                            : null}
+                        </div>
                       </div>
                     </div>
                   </button>

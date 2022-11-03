@@ -6,8 +6,8 @@ export const Modal = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 10000;
   text-align: center;
-  z-index: 9;
   .centered {
     border: 0.5px solid white;
     padding: 5px;
@@ -17,7 +17,11 @@ export const Modal = styled.div`
     max-width: 400px;
     min-height: 150px;
     margin: 10px;
+    position: relative;
+    z-index: 10000;
     color: white;
+    max-height: 60%;
+    overflow-y: auto;
     .head {
       height: 50px;
       padding-top: 10px;

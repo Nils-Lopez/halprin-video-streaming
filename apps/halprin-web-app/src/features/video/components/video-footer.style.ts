@@ -6,6 +6,7 @@ export const Ctn = styled.div`
   bottom: 20px;
   height: 200px;
   background: #0e111c;
+  z-index: 10000;
   .topBar {
     width: 97%;
     border-top: 1px solid #95a5a6;
@@ -19,7 +20,7 @@ export const Ctn = styled.div`
       justify-content: space-between;
     }
     .left {
-      width: 20%;
+      width: 35%;
       margin-left: 5px;
       color: #95a5a6;
       display: flex;
@@ -51,7 +52,7 @@ export const Ctn = styled.div`
       margin-left: -5px;
     }
     .right {
-      width: 20%;
+      width: 35%;
       display: flex;
       justify-content: end;
       .favBtn {

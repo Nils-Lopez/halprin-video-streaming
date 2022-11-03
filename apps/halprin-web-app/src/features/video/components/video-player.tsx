@@ -90,11 +90,10 @@ export const VideoPlayer: FC<Props> = (props) => {
                   onClick={() => {
                     selectVideo(media[media.indexOf(video) - 1]);
                   }}>
-                  <img
-                    src="/images/ui/elements/left-arrow-halprin.png"
-                    alt="<"
-                    className="arrow dir-left"
-                  />
+                  <div className="arrow previous-arrow">
+                    <div className="arrow-top"></div>
+                    <div className="arrow-bottom"></div>
+                  </div>
                 </button>
               </Link>
             </div>
@@ -119,11 +118,10 @@ export const VideoPlayer: FC<Props> = (props) => {
                   onClick={() => {
                     selectVideo(media[media.indexOf(video) + 1]);
                   }}>
-                  <img
-                    src="/images/ui/elements/right-arrow-halprin.png"
-                    alt=">"
-                    className="arrow dir-right"
-                  />
+                  <div className="arrow">
+                    <div className="arrow-top"></div>
+                    <div className="arrow-bottom"></div>
+                  </div>
                 </button>
               </Link>
             </div>

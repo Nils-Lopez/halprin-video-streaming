@@ -73,7 +73,7 @@ export const AboutPage: React.FC<Props> = (props) => {
                 much to Fritz Perls, the gestalt therapist. And to all my
                 students, who continually inspire me and make teaching a joy.{' '}
               </p>
-              <p>Anna Halprin, February 2014 </p>
+              <p className="ctn-name">Anna Halprin, February 2014 </p>
               <p>
                 To learn more about the Tamalpa Institute, the training program
                 I cofounded with my daughter Daria, go to{' '}
@@ -149,7 +149,7 @@ export const AboutPage: React.FC<Props> = (props) => {
                 thérapeute. Et à tous mes élèves, qui ne cessent de m’inspirer
                 et de confirmer mon bonheur d’enseigner.{' '}
               </p>
-              <p>Anna Halprin, février 2014 </p>
+              <p className="ctn-name">Anna Halprin, février 2014 </p>
               <p>
                 Pour en savoir davantage sur le Tamalpa Institute et le
                 programme de formation que j’ai fondé avec ma fille Daria, aller

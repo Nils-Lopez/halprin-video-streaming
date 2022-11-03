@@ -63,9 +63,13 @@ export const Layout = styled.div`
     }
     .dark {
       filter: brightness(60%);
+      margin-bottom: -2%;
     }
     .lg {
       width: 40px;
+      position: fixed;
+      bottom: 6.5%;
+      left: 95%;
       cursor: pointer;
       &:hover {
         filter: brightness(80%);
@@ -74,10 +78,14 @@ export const Layout = styled.div`
 
     position: fixed;
     bottom: 3%;
-    left: 49%;
+    left: 88.5%;
     width: 100%;
     @media (max-width: 600px) {
-      left: 46%;
+      .lg {
+        left: 85%;
+        bottom: 7%;
+      }
+      left: 54%;
     }
   }
   nav {

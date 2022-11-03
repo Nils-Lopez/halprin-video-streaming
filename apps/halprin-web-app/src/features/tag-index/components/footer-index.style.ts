@@ -83,7 +83,7 @@ export const FooterContainer = styled.div`
           justify-content: space-between;
         }
         .left {
-      width: 20%;
+      width: 35%;
       margin-left: 5px;
       color: #95a5a6;
       display: flex;
@@ -101,7 +101,7 @@ margin-left: 5px;
       }
     }
         .right {
-          width: 20%;
+          width: 35%;
           display: flex;
           justify-content: end;
           .favBtn {

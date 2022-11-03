@@ -97,7 +97,6 @@ export const VideoNavbar: FC<Props> = (props) => {
                               d="M0 0h24v24H0z"
                               fill="none"></path>
                             <polyline points="11 7 6 12 11 17"></polyline>
-                            <polyline points="17 7 12 12 17 17"></polyline>
                           </svg>
                         ) : null}
                         {index === 7 ? (
@@ -154,7 +153,6 @@ export const VideoNavbar: FC<Props> = (props) => {
                               d="M0 0h24v24H0z"
                               fill="none"></path>
                             <polyline points="7 7 12 12 7 17"></polyline>
-                            <polyline points="13 7 18 12 13 17"></polyline>
                           </svg>
                         ) : null}
                       </div>

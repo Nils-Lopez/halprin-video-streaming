@@ -12,10 +12,13 @@ type Props = {
   children: JSX.Element;
   lang: SupportedLang;
   source?: string;
+  setContent?: (content: string) => void;
+  categorySlug?: string;
 };
 
 export const MainLayout: React.FC<Props> = (props) => {
-  const { children, help, media, lang, source } = props;
+  const { children, help, media, lang, source, setContent, categorySlug } =
+    props;
   const [session, setSession] = useState<boolean | string>(false);
   const [menu, setMenu] = useState(false);
 
@@ -29,7 +32,6 @@ export const MainLayout: React.FC<Props> = (props) => {
 
   return (
     <Layout>
-      
       {menu ? (
         <button
           className="menu-background"
@@ -53,10 +55,28 @@ export const MainLayout: React.FC<Props> = (props) => {
 
               <ul id="menu">
                 <Link href={'/' + lang} passHref>
-                  <li>{lang === 'en' ? 'Home' : 'Accueil'}</li>
+                  <li>
+                    <button
+                      onClick={() => {
+                        if (source && setContent && source === 'intro') {
+                          setContent('home');
+                        }
+                      }}>
+                      {lang === 'en' ? 'Home' : 'Accueil'}
+                    </button>
+                  </li>
                 </Link>
                 <Link href={'/' + lang + '/menu'} passHref>
-                  <li>{lang === 'en' ? 'Content' : 'Contenu'}</li>
+                  <li>
+                    <button
+                      onClick={() => {
+                        if (source && setContent && source === 'menu') {
+                          setContent('menu');
+                        }
+                      }}>
+                      {lang === 'en' ? 'Content' : 'Contenu'}
+                    </button>
+                  </li>
                 </Link>
                 <Link href={'/' + lang + '/bio'} passHref>
                   <li>{lang === 'en' ? 'Biography' : 'Biographie'}</li>
@@ -107,7 +127,13 @@ export const MainLayout: React.FC<Props> = (props) => {
             {menu || (source && source === 'home') ? (
               <>
                 <div className="helpers">
-                  <Helpers help={help} media={media} lang={lang} source={source}/>
+                  <Helpers
+                    help={help}
+                    media={media}
+                    lang={lang}
+                    source={source}
+                    categorySlug={categorySlug}
+                  />
                 </div>
                 <div className={'logo-cd'}>
                   <Link href="https://contredanse.org" passHref>
@@ -115,7 +141,7 @@ export const MainLayout: React.FC<Props> = (props) => {
                       <img
                         src={'/images/ui/logo-contredanse-white.png'}
                         alt="LOGO CD"
-                        className={'lg dark'}
+                        className={'lg dark '}
                       />
                     ) : (
                       <img
@@ -126,7 +152,7 @@ export const MainLayout: React.FC<Props> = (props) => {
                     )}
                   </Link>
 
-                  {menu && <h3>© Contredanse Editions, 2022</h3>}
+                  {menu && <h3>© Contredanse Editions, 2014-2022</h3>}
                 </div>
               </>
             ) : null}

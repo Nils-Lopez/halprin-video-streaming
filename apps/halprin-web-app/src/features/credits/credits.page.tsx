@@ -23,43 +23,47 @@ export const CreditsPage: React.FC<Props> = (props) => {
               <div>
                 <div>
                   <p>
-                    Edited and produced by Contredanse. Conception, design and
-                    production by Baptiste Andrien & Florence Corin (for
-                    Contredanse) in collaboration with Anna Halprin. Filming
-                    Paris workshop: Peter Hulton. Filming and interview with
-                    Anna Halprin: Baptiste Andrien & Florence Corin (for
-                    Contredanse). Editing: Baptiste Andrien, Caroline Boillet &
-                    Florence Corin (for Contredanse). Mix: Aurélien Lebourg.
+                    Edited and produced by Contredanse. <br /> Conception,
+                    design and production by Baptiste Andrien & Florence Corin
+                    (for Contredanse) in collaboration with Anna Halprin. <br />{' '}
+                    Filming Paris workshop: Peter Hulton. <br /> Filming and
+                    interview with Anna Halprin: Baptiste Andrien & Florence
+                    Corin (for Contredanse). <br /> Editing: Baptiste Andrien,
+                    Caroline Boillet & Florence Corin (for Contredanse). <br />{' '}
+                    Mix: Aurélien Lebourg. <br />
                     Original DVD-ROM programming: Émeric Florence –{' '}
-                    <a href="https://minimal.be">minimal.be</a>. Webapp
+                    <a href="https://minimal.be">minimal.be</a>. <br /> Webapp
                     development: Nils Lopez -{' '}
-                    <a href="https://octo-dev.com">octo-dev.com</a>, Sébastien
-                    Vanvelthem. Graphic design: Philippe Koeune –{' '}
+                    <a href="https://oqto.tech">OQTO Tech</a>, Sébastien
+                    Vanvelthem. <br /> Graphic design: Philippe Koeune –{' '}
                     <a href="https://valleythevalley.com">
                       valleythevalley.com
                     </a>
-                    . French translation and subtitles: Denise Luccioni. English
-                    translation: Hazel Carrie. French proofreading for the
-                    booklet: Muriel Rochlenko. English proofreading for the
-                    booklet: Sam Davies.
+                    . <br /> French translation and subtitles: Denise Luccioni.{' '}
+                    <br /> English translation: Hazel Carrie. <br /> French
+                    proofreading for the booklet: Muriel Rochlenko. <br />{' '}
+                    English proofreading for the booklet: Sam Davies. <br />
                   </p>
                   <p>
                     We would particularly like to thank Stephanie Earle and
                     Julie Numrich, as well as Ruedi Gerber, Mike King, Matt
                     Krush, Eeo Stubblefield, le Centre Wallonie-Bruxelles in
                     Paris, Janice Ross, Andy Abraham Wilson and all the workshop
-                    participants.
+                    participants. <br />
                   </p>
                   This publication was supported by: le ministère de la Culture
                   de la Fédération Wallonie- Bruxelles, Service de la Danse, la
-                  Ville de Bruxelles (échevinat des Beaux-Arts) and la Cocof.
-                  <h3>« Nouvelle librairie de la Danse »</h3>
+                  Ville de Bruxelles (échevinat des Beaux-Arts) and la Cocof.{' '}
+                  <br />
+                  <p>« Nouvelle librairie de la Danse »</p>
                   <p>
                     Published with the help of le Centre National du Livre and
                     le ministère de la Culture et de la Communication (Direction
-                    de la musique, de la danse, du théâtre et des spectacles).
+                    de la musique, de la danse, du théâtre et des spectacles).{' '}
+                    <br />
                   </p>
                 </div>
+                <br />
                 <div>
                   <h3>Resources</h3>
                   <p>
@@ -73,6 +77,7 @@ export const CreditsPage: React.FC<Props> = (props) => {
                   <a href="https://dariahalprin.org ">www.dariahalprin.org </a>
                   <br />
                 </div>
+                <br />
                 <div>
                   <h3>Others: </h3>
                   <a href="https://breathmadevisible.com">
@@ -95,52 +100,57 @@ export const CreditsPage: React.FC<Props> = (props) => {
               <div>
                 <div>
                   <p>
-                    Edité et produit par Contredanse. Conçu et réalisé par
-                    Baptiste Andrien & Florence Corin (pour Contredanse) en
-                    collaboration avec Anna Halprin. Captation de l’atelier de
-                    Paris : Peter Hulton. Captation et interview d’Anna Halprin
-                    : Baptiste Andrien & Florence Corin (pour Contredanse).
+                    Edité et produit par Contredanse. <br /> Conçu et réalisé
+                    par Baptiste Andrien & Florence Corin (pour Contredanse) en
+                    collaboration avec Anna Halprin. <br /> Captation de
+                    l’atelier de Paris : Peter Hulton. <br /> Captation et
+                    interview d’Anna Halprin : Baptiste Andrien & Florence Corin
+                    (pour Contredanse). <br />
                     Montage : Baptiste Andrien, Caroline Boillet & Florence
-                    Corin (pour Contredanse). Mixage : Aurélien Lebourg.
+                    Corin (pour Contredanse). <br /> Mixage : Aurélien Lebourg.{' '}
+                    <br />
                     Programmation du DVD-ROM original : Emeric Florence –{' '}
-                    <a href="https://minimal.be">minimal.be</a>. Développement
-                    web app : Nils Lopez -{' '}
-                    <a href="https://octo-dev.com">octo-dev.com</a>, Sébastien
-                    Vanvelthem. Graphisme : Philippe Koeune –{' '}
+                    <a href="https://minimal.be">minimal.be</a>. <br />{' '}
+                    Développement web app : Nils Lopez -{' '}
+                    <a href="https://oqto.tech">OQTO Tech</a>, Sébastien
+                    Vanvelthem. <br /> Graphisme : Philippe Koeune –{' '}
                     <a href="https://valleythevalley.com">
                       valleythevalley.com
                     </a>
-                    . Traduction française et sous-titrage : Denise Luccioni.
-                    Traduction anglaise : Hazel Carrie. Relectures
-                    orthographiques en français : Muriel Rochlenko. Relectures
-                    orthographiques en anglais : Sam Davies.
+                    . <br /> Traduction française et sous-titrage : Denise
+                    Luccioni. <br />
+                    Traduction anglaise : Hazel Carrie. <br /> Relectures
+                    orthographiques en français : Muriel Rochlenko. <br />{' '}
+                    Relectures orthographiques en anglais : Sam Davies. <br />
                   </p>
                   <p>
                     Nous tenons à remercier tout particulièrement Stephanie
                     Earle et Julie Numrich, ainsi que Ruedi Gerber, Mike King,
                     Matt Krush, Eeo Stubblefield, le Centre Wallonie-Bruxelles à
                     Paris, Janice Ross, Andy Abraham Wilson et tous les
-                    participants de l’atelier.
+                    participants de l’atelier. <br />
                   </p>
                   <p>
                     Cette publication a reçu le soutien du ministère de la
                     Culture de la Fédération Wallonie-Bruxelles, Service de la
                     Danse, la Ville de Bruxelles (échevinat des Beaux-Arts) et
-                    la Cocof.
+                    la Cocof. <br />
                   </p>
                 </div>
                 <div>
-                  <h3>« Nouvelle librairie de la Danse »</h3>
+                  <p>« Nouvelle librairie de la Danse »</p>
                   <p>
                     Publiée avec le concours du Centre National du Livre et du
                     ministère de la Culture et de la Communication (Direction de
                     la musique, de la danse, du théâtre et des spectacles).{' '}
+                    <br />{' '}
                   </p>
                   <p>
-                    Tous droits réservés. Pour usage privé et domestique
-                    seulement. Editions Contredanse © 2014-2022
+                    Tous droits réservés. <br /> Pour usage privé et domestique
+                    seulement. <br /> Editions Contredanse © 2014-2022
                   </p>
                 </div>
+                <br />
                 <div>
                   <h3>Ressources</h3>
                   <p>
@@ -154,6 +164,7 @@ export const CreditsPage: React.FC<Props> = (props) => {
                   <a href="https://dariahalprin.org ">www.dariahalprin.org </a>
                   <br />
                 </div>
+                <br />
                 <div>
                   <h3>Autres </h3>
                   <a href="https://breathmadevisible.com">

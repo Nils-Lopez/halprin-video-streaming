@@ -1,22 +1,8 @@
 import styled from '@emotion/styled';
 
 export const Ctn = styled.div`
-  @media only screen and (max-width: 1900px) and (min-width: 1790px){
-    height: 694.69px;
-  }  
-  @media only screen and (max-width: 1920px) and (min-height: 900px) {
-    height: 620px;
-  }
-  @media only screen and (max-width: 1920px) and (max-height: 900px) {
-    height: 560px;
-  }
-  @media only screen and (max-width: 1920px) and (max-height: 860px) {
-    height: 520px;
-  }
-  @media only screen and (max-width: 1920px) and (max-height: 830px) {
-    height: 480px;
+  
 
-  }
   @media only screen and (min-width: 1920px) {
     height: 700px;
   }
@@ -134,4 +120,105 @@ export const Ctn = styled.div`
     from {transform:rotate(360deg);}
     to {transform:rotate(0deg);}
   }
+  @media only screen and (max-width: 1900px) and (min-width: 1790px){
+    height: 694.69px;
+  }  
+  @media only screen and (max-width: 1920px) and (min-height: 900px) {
+    height: 620px;
+  }
+  @media only screen and (max-width: 1920px) and (max-height: 900px) {
+    height: 560px;
+  }
+  @media only screen and (max-width: 1920px) and (max-height: 860px) {
+    height: 520px;
+  }
+  @media only screen and (max-width: 1920px) and (max-height: 830px) {
+    height: 480px;
+  }
+@media only screen and (min-width: 1920px) and (max-height: 830px) {
+    margin-top: -35%;
+  } 
+  .arrow {
+      cursor: pointer;
+      height: 120px;
+      left: 90%;
+      position: absolute;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      transition: transform 0.1s;
+      width: 45px;
+      &:hover {
+        filter: brightness(130%);
+      }
+      $transition-time: 0.15s;
+      @media only screen and (max-width: 1310px) {
+        top: 85%;
+        left: 53%;
+        width: 40px;
+      }
+      @media only screen and (max-width: 1000px) {
+        top: 85%;
+        left: 53%;
+        width: 40px;
+      }
+      &-top,
+      &-bottom {
+        background-color: #666;
+        height: 4px;
+        left: -5px;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+
+        &:after {
+          background-color: #fff;
+          content: '';
+          height: 100%;
+          position: absolute;
+          top: 0;
+          transition: all $transition-time;
+        }
+      }
+
+      &-top {
+        transform: rotate(45deg);
+        transform-origin: bottom right;
+
+        &:after {
+          left: 100%;
+          right: 0;
+          transition-delay: 0s;
+        }
+      }
+
+      &-bottom {
+        transform: rotate(-45deg);
+        transform-origin: top right;
+
+        &:after {
+          left: 0;
+          right: 100%;
+          transition-delay: $transition-time;
+        }
+      }
+
+      &:hover & {
+        &-top:after {
+          left: 0;
+          transition-delay: $transition-time;
+        }
+
+        &-bottom:after {
+          right: 0;
+          transition-delay: 0s;
+        }
+      }
+
+      
+    }
+    .previous-arrow {
+      transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      margin-top: -58px;
+    }
 `;
