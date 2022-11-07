@@ -13,6 +13,15 @@ export const Ctn = styled.div`
         left: 20%;
         right: 20%;
     }
+    .logo-partners {
+        width: 300px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        img {
+            height: 45px;
+        }
+    }
     .txt-img {
         height: 17px;
         display: inline-block;
