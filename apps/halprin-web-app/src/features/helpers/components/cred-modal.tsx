@@ -38,7 +38,7 @@ export const CredModal: React.FC<Props> = (props) => {
       }}>
       <div className="centered">
         <div className="head">
-          <h2>Credits</h2>
+          <h2>{lang === "en" ? "Credits" : "Crédits"}</h2>
         </div>
         <div className="body">
           {credits.map((cred) => {

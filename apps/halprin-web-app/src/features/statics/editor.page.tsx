@@ -261,20 +261,20 @@ export const EditorPage: React.FC<Props> = (props) => {
             </p>
             <ul>
               <li>
-                1  « Mouvements de Vie » Anna Halprin, traduit de l’anglais par
+                1 <a href="https://contredanse.org/product/mouvements-de-vie
+">« Mouvements de Vie »</a> Anna Halprin, traduit de l’anglais par
                 Elise Argaud et Denise Luccioni, éditions Contredanse,
                 Bruxelles, 2009.
               </li>
               <li>
                 2  Peter Hulton est réalisateur de films documentaires et
                 écrivain, responsable de Theatre Paper (dont les écrits d’Anna
-                Halprin publiés en 1978 pour le Royaume-Uni) et Arts Archives –{' '}
-                <a href="https://arts-archives.org">www.arts-archives.org</a> –,
+                Halprin publiés en 1978 pour le Royaume-Uni) et Arts Archives,
                 espace de ressources d’images numériques soutenant la recherche
                 pour les arts vivants.
               </li>
               <li>
-                3  « Moving toward Life » Anna Halprin, Wesleyan Univesrity
+                3 <a href="https://www.weslpress.org/9780819562869/moving-toward-life/">“Moving towards Life”</a> Anna Halprin, Wesleyan Univesrity
                 Press, 1995.
               </li>
               <li>
@@ -540,12 +540,11 @@ export const EditorPage: React.FC<Props> = (props) => {
                 2  Peter Hulton is a documentary film-maker and writer,
                 responsible for Theatre Papers (publishing Anna Halprin’s
                 writings in the UK in 1978) and Arts Archives -
-                <a href="https://arts-archives.org">www.arts-archives.org</a> -
                 an international digital moving image resource for performance
                 research initiated by the Council of Europe.{' '}
               </li>
               <li>
-                3  “Moving towards Life” by Anna Halprin, Wesleyan University
+                3 <a href="https://www.weslpress.org/9780819562869/moving-toward-life/">“Moving towards Life”</a> by Anna Halprin, Wesleyan University
                 Press, 1995.{' '}
               </li>
               <li>

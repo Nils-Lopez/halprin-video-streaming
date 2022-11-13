@@ -24,7 +24,7 @@ export const BioPage: React.FC<Props> = (props) => {
                 </i>
               </p>
               <p className="ctn-name">
-                <i className="name">Anna Halprin</i>
+                <span className="name">Anna Halprin</span>
               </p>
             </div>
             <div>
@@ -68,7 +68,7 @@ export const BioPage: React.FC<Props> = (props) => {
                 itself.
               </p>
               <p className="ctn-name">
-                <i className="name">Lawrence Halprin</i>
+                <span className="name">Lawrence Halprin</span>
               </p>
             </div>
           </div>
@@ -85,7 +85,7 @@ export const BioPage: React.FC<Props> = (props) => {
                 </i>
               </p>
               <p className="ctn-name">
-                <i className="name">Anna Halprin</i>
+                <span className="name">Anna Halprin</span>
               </p>
             </div>
             <div>
@@ -131,7 +131,7 @@ export const BioPage: React.FC<Props> = (props) => {
                 réalisation.{' '}
               </p>
               <p className="ctn-name">
-                <i className="name">Lawrence Halprin </i>
+                <span className="name">Lawrence Halprin </span>
               </p>
             </div>
           </div>

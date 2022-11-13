@@ -215,6 +215,7 @@ margin-left: 5px;
           margin-top: 2px;
         }
         width: 100%;
+        
       }
       .center {
         width: 100%;
@@ -229,7 +230,7 @@ margin-left: 5px;
         }
         
         margin-top: -230px;
-        background: #0e111c;
+        background: #1D1C22;
         .center {
           width: 100%;
           display: flex;

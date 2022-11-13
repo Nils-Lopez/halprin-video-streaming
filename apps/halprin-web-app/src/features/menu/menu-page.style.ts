@@ -56,6 +56,10 @@ export const Ctn = styled.div`
       top: 7%;
       left: 26%;
     }
+    @media (max-width: 380px) {
+      top: 7%;
+      left: 20  %;
+    }
     &:hover {
       scale: 1.05;
       filter: opacity(80%);
@@ -478,5 +482,9 @@ export const Mobile = styled.div`
         color: white;
       }
     }
+  }
+  @media only screen and (max-height: 575px) {
+    scale: 0.8;
+    margin-top: -80px;
   }
 `;

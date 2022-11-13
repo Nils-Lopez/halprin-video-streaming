@@ -17,7 +17,7 @@ export const Ctn = styled.div`
     position: fixed;
     width: 42%;
     top: 10%;
-    left: 29.5%;
+    left: 29%;
     @media (max-width: 1430px) {
       top: 15%;
     }
@@ -157,6 +157,9 @@ export const Ctn = styled.div`
     top: 12%;
     left: 29%;
     position: fixed;
+    @media screen and (max-height: 550px) {
+      position: relative;
+    }
     @media screen and (min-width: 600px) {
       display: none;
     }
@@ -364,6 +367,14 @@ export const Video = styled.div`
     padding: 1%;
     .video-player {
       margin-top: 150px;
+      width: 350px;
+      height: 300px;
+    }
+  }
+  @media only screen and (max-height: 500px) {
+    padding: 1%;
+    .video-player {
+      margin-top: 50px;
       width: 350px;
       height: 300px;
     }

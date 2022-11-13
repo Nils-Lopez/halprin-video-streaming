@@ -221,4 +221,8 @@ export const Ctn = styled.div`
       -webkit-transform: scaleX(-1);
       margin-top: -58px;
     }
+    @media screen and (max-height: 610px) {
+          margin-top: -150px;
+          
+        }
 `;
