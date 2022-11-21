@@ -1,0 +1,211 @@
+"filename", "language", "YAML", "Ignore", "JSON", "JavaScript", "TypeScript React", "TypeScript", "JSON with Comments", "Properties", "XML", "Markdown", "Docker", "comment", "blank", "total"
+"/Users/Nils 1/Desktop/Contredanse/life-art/.changeset/config.json", "JSON", 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13
+"/Users/Nils 1/Desktop/Contredanse/life-art/.changeset/rare-zoos-taste.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 2, 6
+"/Users/Nils 1/Desktop/Contredanse/life-art/.changeset/three-drinks-explain.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 2, 6
+"/Users/Nils 1/Desktop/Contredanse/life-art/.codeclimate.yml", "YAML", 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 31
+"/Users/Nils 1/Desktop/Contredanse/life-art/.dockerignore", "Ignore", 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 14, 44
+"/Users/Nils 1/Desktop/Contredanse/life-art/.eslintrc.base.json", "JSON", 0, 0, 71, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 72
+"/Users/Nils 1/Desktop/Contredanse/life-art/.github/workflows/ci-halprin-web-app.yml", "YAML", 95, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 18, 130
+"/Users/Nils 1/Desktop/Contredanse/life-art/.github/workflows/ci-monorepo-integrity.yml", "YAML", 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 13, 66
+"/Users/Nils 1/Desktop/Contredanse/life-art/.github/workflows/ci-packages.yml", "YAML", 57, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 69
+"/Users/Nils 1/Desktop/Contredanse/life-art/.github/workflows/release.yml", "YAML", 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 6, 35
+"/Users/Nils 1/Desktop/Contredanse/life-art/.gitpod.yml", "YAML", 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3
+"/Users/Nils 1/Desktop/Contredanse/life-art/.ncurc.yml", "YAML", 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 1, 10
+"/Users/Nils 1/Desktop/Contredanse/life-art/.prettierignore", "Ignore", 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5
+"/Users/Nils 1/Desktop/Contredanse/life-art/.prettierrc.json", "JSON", 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 20
+"/Users/Nils 1/Desktop/Contredanse/life-art/.yarn/plugins/@yarnpkg/plugin-interactive-tools.cjs", "JavaScript", 0, 0, 0, 370, 0, 0, 0, 0, 0, 0, 0, 124, 53, 547
+"/Users/Nils 1/Desktop/Contredanse/life-art/.yarn/plugins/@yarnpkg/plugin-workspace-tools.cjs", "JavaScript", 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 20, 1, 29
+"/Users/Nils 1/Desktop/Contredanse/life-art/.yarn/releases/yarn-3.2.0.cjs", "JavaScript", 0, 0, 0, 544, 0, 0, 0, 0, 0, 0, 0, 199, 43, 786
+"/Users/Nils 1/Desktop/Contredanse/life-art/.yarnrc.yml", "YAML", 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 24
+"/Users/Nils 1/Desktop/Contredanse/life-art/CHANGELOG.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 0, 4, 19
+"/Users/Nils 1/Desktop/Contredanse/life-art/CODE_OF_CONDUCT.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 97, 0, 0, 36, 133
+"/Users/Nils 1/Desktop/Contredanse/life-art/Dockerfile", "Docker", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 46, 46, 31, 123
+"/Users/Nils 1/Desktop/Contredanse/life-art/README.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 114, 0, 0, 25, 139
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/.env", "Properties", 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 4, 6, 14
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/.eslintrc.json", "JSON", 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 51
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/.size-limit.js", "JavaScript", 0, 0, 0, 36, 0, 0, 0, 0, 0, 0, 0, 2, 4, 42
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/CHANGELOG.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/README.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 0, 0, 30, 126
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/babel.config.js", "JavaScript", 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 4, 3, 24
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/config/jest/test-utils.tsx", "TypeScript React", 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 7, 5, 22
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/jest.config.js", "JavaScript", 0, 0, 0, 33, 0, 0, 0, 0, 0, 0, 0, 17, 4, 54
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/lint-staged.config.js", "JavaScript", 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/middleware/index.js", "JavaScript", 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 3, 9
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/middleware/mongodb.js", "JavaScript", 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 7, 29
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/models/user.js", "JavaScript", 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 0, 3, 27
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/next-env.d.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 2, 7
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/next-env.emotion.d.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 1, 12
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/next-i18next.config.js", "JavaScript", 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 2, 10
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/next.config.js", "JavaScript", 0, 0, 0, 109, 0, 0, 0, 0, 0, 0, 0, 39, 21, 169
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/package.json", "JSON", 0, 0, 161, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 162
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/postcss.config.js", "JavaScript", 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 4, 3, 34
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/public/images/ui/menu/circle-question-solid.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/public/images/ui/menu/copyright-solid.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/public/locales/en/app.json", "JSON", 0, 0, 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 30
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/public/locales/en/common.json", "JSON", 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 20
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/public/locales/en/system.json", "JSON", 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/public/locales/fr/app.json", "JSON", 0, 0, 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 29
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/public/locales/fr/common.json", "JSON", 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 20
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/public/locales/fr/system.json", "JSON", 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/sentry.client.config.js", "JavaScript", 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 3, 3, 12
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/sentry.properties", "Properties", 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 5, 0, 10
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/sentry.server.config.js", "JavaScript", 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 5, 3, 14
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/app-providers.tsx", "TypeScript React", 0, 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 4, 18
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/backend/auth/checkAcces.ts", "TypeScript", 0, 0, 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 3, 20
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/components/banner.tsx", "TypeScript React", 0, 0, 0, 0, 43, 0, 0, 0, 0, 0, 0, 0, 3, 46
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/components/layout/__tests__/main-layout.test.tsx", "TypeScript React", 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 2, 15
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/components/layout/main-layout.style.tsx", "TypeScript React", 0, 0, 0, 0, 315, 0, 0, 0, 0, 0, 0, 0, 2, 317
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/components/layout/main-layout.tsx", "TypeScript React", 0, 0, 0, 0, 155, 0, 0, 0, 0, 0, 0, 0, 12, 167
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/config/site.config.ts", "TypeScript", 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 1, 2, 15
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/core/config/site- config.utils.ts", "TypeScript", 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 3, 12
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/core/converter/__tests__/legacy-dvd-converter.test.ts", "TypeScript", 0, 0, 0, 0, 0, 31, 0, 0, 0, 0, 0, 2, 3, 36
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/core/converter/legacy-dvd-converter.ts", "TypeScript", 0, 0, 0, 0, 0, 266, 0, 0, 0, 0, 0, 3, 18, 287
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/core/i18n/get-server-side-translations.ts", "TypeScript", 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 0, 5, 3, 19
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/core/i18n/i18n-namespaces.type.ts", "TypeScript", 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 3, 3, 10
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/core/types/index.ts", "TypeScript", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 2
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/core/types/json-type.ts", "TypeScript", 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 1, 8
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/data/credits.data.ts", "TypeScript", 0, 0, 0, 0, 0, 667, 0, 0, 0, 0, 0, 0, 2, 669
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/data/data.types.ts", "TypeScript", 0, 0, 0, 0, 0, 85, 0, 0, 0, 0, 0, 0, 11, 96
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/data/dvd_legacy/dvd.xml", "XML", 0, 0, 0, 0, 0, 0, 0, 0, 2532, 0, 0, 72, 299, 2903
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/data/media-category.data.ts", "TypeScript", 0, 0, 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 2, 23
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/data/media.data.ts", "TypeScript", 0, 0, 0, 0, 0, 5017, 0, 0, 0, 0, 0, 0, 2, 5019
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/data/tags.data.ts", "TypeScript", 0, 0, 0, 0, 0, 1259, 0, 0, 0, 0, 0, 0, 2, 1261
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/auth/components/login-form.style.ts", "TypeScript", 0, 0, 0, 0, 0, 149, 0, 0, 0, 0, 0, 0, 8, 157
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/auth/components/login-form.tsx", "TypeScript React", 0, 0, 0, 0, 141, 0, 0, 0, 0, 0, 0, 0, 10, 151
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/auth/login-page.style.ts", "TypeScript", 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 2, 15
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/auth/login-page.tsx", "TypeScript React", 0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 3, 23
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/auth/login.config.ts", "TypeScript", 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 3, 10
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/credits/credits.config.ts", "TypeScript", 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 1, 3, 11
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/credits/credits.page.style.ts", "TypeScript", 0, 0, 0, 0, 0, 85, 0, 0, 0, 0, 0, 0, 8, 93
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/credits/credits.page.tsx", "TypeScript React", 0, 0, 0, 0, 195, 0, 0, 0, 0, 0, 0, 2, 6, 203
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/credits/repository/credits.repo.ts", "TypeScript", 0, 0, 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 4, 28
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/helpers/components/cred-modal.style.tsx", "TypeScript React", 0, 0, 0, 0, 43, 0, 0, 0, 0, 0, 0, 0, 2, 45
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/helpers/components/cred-modal.tsx", "TypeScript React", 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 6, 69
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/helpers/components/help-modal.style.tsx", "TypeScript React", 0, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 0, 2, 66
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/helpers/components/help-modal.tsx", "TypeScript React", 0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 5, 25
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/helpers/helpers.style.tsx", "TypeScript React", 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 2, 14
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/helpers/helpers.tsx", "TypeScript React", 0, 0, 0, 0, 73, 0, 0, 0, 0, 0, 0, 1, 6, 80
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/home/home.config.ts", "TypeScript", 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 1, 3, 11
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/home/home.page.style.ts", "TypeScript", 0, 0, 0, 0, 0, 493, 0, 0, 0, 0, 0, 0, 18, 511
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/home/home.page.tsx", "TypeScript React", 0, 0, 0, 0, 174, 0, 0, 0, 0, 0, 0, 11, 11, 196
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/menu/embed/embed-menu.style.ts", "TypeScript", 0, 0, 0, 0, 0, 231, 0, 0, 0, 0, 0, 0, 4, 235
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/menu/embed/embed-menu.tsx", "TypeScript React", 0, 0, 0, 0, 279, 0, 0, 0, 0, 0, 0, 0, 5, 284
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/menu/embed/embed-mobile.style.tsx", "TypeScript React", 0, 0, 0, 0, 75, 0, 0, 0, 0, 0, 0, 0, 2, 77
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/menu/embed/embed-mobile.tsx", "TypeScript React", 0, 0, 0, 0, 36, 0, 0, 0, 0, 0, 0, 0, 5, 41
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/menu/menu-page.style.ts", "TypeScript", 0, 0, 0, 0, 0, 463, 0, 0, 0, 0, 0, 0, 20, 483
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/menu/menu.config.ts", "TypeScript", 0, 0, 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 3, 22
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/menu/menu.page.tsx", "TypeScript React", 0, 0, 0, 0, 440, 0, 0, 0, 0, 0, 0, 1, 9, 450
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/statics/about.page.tsx", "TypeScript React", 0, 0, 0, 0, 161, 0, 0, 0, 0, 0, 0, 0, 4, 165
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/statics/bio.page.tsx", "TypeScript React", 0, 0, 0, 0, 139, 0, 0, 0, 0, 0, 0, 0, 4, 143
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/statics/editor.page.tsx", "TypeScript React", 0, 0, 0, 0, 563, 0, 0, 0, 0, 0, 0, 0, 4, 567
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/statics/statics.page.style.ts", "TypeScript", 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/tag-index/components/container-index.style.ts", "TypeScript", 0, 0, 0, 0, 0, 80, 0, 0, 0, 0, 0, 0, 4, 84
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/tag-index/components/container-index.tsx", "TypeScript React", 0, 0, 0, 0, 469, 0, 0, 0, 0, 0, 0, 6, 18, 493
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/tag-index/components/footer-index.style.ts", "TypeScript", 0, 0, 0, 0, 0, 240, 0, 0, 0, 0, 0, 0, 7, 247
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/tag-index/components/footer-index.tsx", "TypeScript React", 0, 0, 0, 0, 512, 0, 0, 0, 0, 0, 0, 0, 12, 524
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/tag-index/components/navbar-index.style.ts", "TypeScript", 0, 0, 0, 0, 0, 76, 0, 0, 0, 0, 0, 0, 4, 80
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/tag-index/components/navbar-index.tsx", "TypeScript React", 0, 0, 0, 0, 171, 0, 0, 0, 0, 0, 0, 0, 9, 180
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/tag-index/tag-index.config.ts", "TypeScript", 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 3, 10
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/tag-index/tag-index.page.tsx", "TypeScript React", 0, 0, 0, 0, 176, 0, 0, 0, 0, 0, 0, 0, 16, 192
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/tag-index/tag-index.style.ts", "TypeScript", 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 2, 13
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/video/components/video-carrousel.style.ts", "TypeScript", 0, 0, 0, 0, 0, 159, 0, 0, 0, 0, 0, 0, 3, 162
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/video/components/video-carrousel.tsx", "TypeScript React", 0, 0, 0, 0, 73, 0, 0, 0, 0, 0, 0, 0, 4, 77
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/video/components/video-footer.style.ts", "TypeScript", 0, 0, 0, 0, 0, 184, 0, 0, 0, 0, 0, 0, 6, 190
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/video/components/video-footer.tsx", "TypeScript React", 0, 0, 0, 0, 376, 0, 0, 0, 0, 0, 0, 0, 12, 388
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/video/components/video-navbar.style.ts", "TypeScript", 0, 0, 0, 0, 0, 129, 0, 0, 0, 0, 0, 0, 7, 136
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/video/components/video-navbar.tsx", "TypeScript React", 0, 0, 0, 0, 219, 0, 0, 0, 0, 0, 0, 0, 6, 225
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/video/components/video-player.style.ts", "TypeScript", 0, 0, 0, 0, 0, 208, 0, 0, 0, 0, 0, 0, 17, 225
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/video/components/video-player.tsx", "TypeScript React", 0, 0, 0, 0, 123, 0, 0, 0, 0, 0, 0, 1, 10, 134
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/video/main-video-page.style.ts", "TypeScript", 0, 0, 0, 0, 0, 125, 0, 0, 0, 0, 0, 0, 5, 130
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/video/main-video-page.tsx", "TypeScript React", 0, 0, 0, 0, 282, 0, 0, 0, 0, 0, 0, 0, 11, 293
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/video/repository/__tests__/media.repo.test.ts", "TypeScript", 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 4, 67
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/video/repository/credits.repo.ts", "TypeScript", 0, 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 3, 28
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/video/repository/media-categ.repo.ts", "TypeScript", 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 3, 19
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/video/repository/media.repo.ts", "TypeScript", 0, 0, 0, 0, 0, 85, 0, 0, 0, 0, 0, 0, 4, 89
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/video/repository/tag-label.repo.ts", "TypeScript", 0, 0, 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 3, 17
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/video/repository/tag.repo.ts", "TypeScript", 0, 0, 0, 0, 0, 59, 0, 0, 0, 0, 0, 0, 4, 63
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/video/types.ts", "TypeScript", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 2
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/video/utils/typeguards.ts", "TypeScript", 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 3, 15
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/features/video/video.config.ts", "TypeScript", 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 1, 3, 11
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/pages/404.tsx", "TypeScript React", 0, 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 1, 6, 31
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/pages/_app.tsx", "TypeScript React", 0, 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 16, 6, 39
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/pages/_document.tsx", "TypeScript React", 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 5, 3, 33
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/pages/_error.tsx", "TypeScript React", 0, 0, 0, 0, 62, 0, 0, 0, 0, 0, 0, 33, 17, 112
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/pages/about/index.tsx", "TypeScript React", 0, 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 1, 4, 36
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/pages/api/auth/login.ts", "TypeScript", 0, 0, 0, 0, 0, 109, 0, 0, 0, 0, 0, 2, 7, 118
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/pages/api/hello.js", "JavaScript", 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/pages/api/users.ts", "TypeScript", 0, 0, 0, 0, 0, 62, 0, 0, 0, 0, 0, 43, 9, 114
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/pages/api/users/[userEmail].ts", "TypeScript", 0, 0, 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 4, 21
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/pages/auth/signin.tsx", "TypeScript React", 0, 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 1, 5, 37
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/pages/bio/index.tsx", "TypeScript React", 0, 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 1, 4, 36
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/pages/credits.tsx", "TypeScript React", 0, 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 1, 5, 37
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/pages/editor/index.tsx", "TypeScript React", 0, 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 1, 4, 36
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/pages/home.tsx", "TypeScript React", 0, 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 1, 4, 36
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/pages/index.tsx", "TypeScript React", 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 2, 4
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/pages/menu/index.tsx", "TypeScript React", 0, 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 1, 4, 36
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/pages/tag-index/index.tsx", "TypeScript React", 0, 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 1, 5, 37
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/pages/tags/[tagSlugs].tsx", "TypeScript React", 0, 0, 0, 0, 39, 0, 0, 0, 0, 0, 0, 1, 7, 47
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/pages/video/all.tsx", "TypeScript React", 0, 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 1, 5, 37
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/pages/video/category/[slug].tsx", "TypeScript React", 0, 0, 0, 0, 52, 0, 0, 0, 0, 0, 0, 1, 4, 57
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/pages/video/favorites.tsx", "TypeScript React", 0, 0, 0, 0, 33, 0, 0, 0, 0, 0, 0, 1, 5, 39
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/pages/video/unwatched.tsx", "TypeScript React", 0, 0, 0, 0, 33, 0, 0, 0, 0, 0, 0, 1, 5, 39
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/pages/video/watched.tsx", "TypeScript React", 0, 0, 0, 0, 33, 0, 0, 0, 0, 0, 0, 1, 5, 39
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/types.d/index.d.ts", "TypeScript", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 2
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/types.d/react-i18next.d.ts", "TypeScript", 0, 0, 0, 0, 0, 14, 0, 0, 0, 0, 0, 6, 2, 22
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/src/types.d/react-svgr.d.ts", "TypeScript", 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 18, 2, 25
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/tailwind.config.js", "JavaScript", 0, 0, 0, 33, 0, 0, 0, 0, 0, 0, 0, 5, 2, 40
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/tsconfig.jest.json", "JSON", 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 18
+"/Users/Nils 1/Desktop/Contredanse/life-art/apps/halprin-web-app/tsconfig.json", "JSON with Comments", 0, 0, 0, 0, 0, 0, 19, 0, 0, 0, 0, 12, 1, 32
+"/Users/Nils 1/Desktop/Contredanse/life-art/commitlint.config.js", "JavaScript", 0, 0, 0, 40, 0, 0, 0, 0, 0, 0, 0, 0, 1, 41
+"/Users/Nils 1/Desktop/Contredanse/life-art/docker-compose.override.sample.yml", "YAML", 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 9
+"/Users/Nils 1/Desktop/Contredanse/life-art/docker-compose.yml", "YAML", 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 7, 78
+"/Users/Nils 1/Desktop/Contredanse/life-art/docs/deploy/deploy-vercel.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 7, 18
+"/Users/Nils 1/Desktop/Contredanse/life-art/docs/docker/docker.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 0, 0, 12, 36
+"/Users/Nils 1/Desktop/Contredanse/life-art/docs/dx-atlassian-changeset.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 7, 13
+"/Users/Nils 1/Desktop/Contredanse/life-art/lint-staged.config.base.js", "JavaScript", 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 14, 4, 32
+"/Users/Nils 1/Desktop/Contredanse/life-art/package.json", "JSON", 0, 0, 44, 0, 0, 0, 0, 0, 0, 0, 0, 32, 1, 77
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/.eslintrc.json", "JSON", 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 13
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/README.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 3, 6
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/jest.config.js", "JavaScript", 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 17, 4, 53
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/lint-staged.config.js", "JavaScript", 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/package.json", "JSON", 0, 0, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 79
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/api/json-api/__tests__/json-api-response.factory.test.ts", "TypeScript", 0, 0, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 4, 68
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/api/json-api/__tests__/json-api-typeguard.test.ts", "TypeScript", 0, 0, 0, 0, 0, 59, 0, 0, 0, 0, 0, 0, 7, 66
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/api/json-api/index.ts", "TypeScript", 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 1, 14
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/api/json-api/json-api-error.factory.ts", "TypeScript", 0, 0, 0, 0, 0, 31, 0, 0, 0, 0, 0, 1, 3, 35
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/api/json-api/json-api-response.factory.ts", "TypeScript", 0, 0, 0, 0, 0, 35, 0, 0, 0, 0, 0, 1, 2, 38
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/api/json-api/json-api-response.types.ts", "TypeScript", 0, 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 10, 5, 40
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/api/json-api/json-api.typeguard.ts", "TypeScript", 0, 0, 0, 0, 0, 28, 0, 0, 0, 0, 0, 0, 4, 32
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/component/info-card.tsx", "TypeScript React", 0, 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 2, 21
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/hooks/__tests__/use-deep-compare-memoize.test.ts", "TypeScript", 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 2, 14
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/hooks/__tests__/use-promise.test.tsx", "TypeScript React", 0, 0, 0, 0, 133, 0, 0, 0, 0, 0, 0, 13, 27, 173
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/hooks/index.ts", "TypeScript", 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 1, 3
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/hooks/use-deep-compare-memoize.ts", "TypeScript", 0, 0, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 3, 18
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/hooks/use-promise.ts", "TypeScript", 0, 0, 0, 0, 0, 72, 0, 0, 0, 0, 0, 5, 13, 90
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/index.ts", "TypeScript", 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 2, 7
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/utils/__tests__/array-utils.test.ts", "TypeScript", 0, 0, 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 2, 33
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/utils/__tests__/asserts.test.ts", "TypeScript", 0, 0, 0, 0, 0, 18, 0, 0, 0, 0, 0, 0, 2, 20
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/utils/__tests__/string-convert.test.ts", "TypeScript", 0, 0, 0, 0, 0, 30, 0, 0, 0, 0, 0, 0, 3, 33
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/utils/__tests__/typeguards.test.ts", "TypeScript", 0, 0, 0, 0, 0, 59, 0, 0, 0, 0, 0, 0, 3, 62
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/utils/array-utils.ts", "TypeScript", 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 3, 16
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/utils/asserts.ts", "TypeScript", 0, 0, 0, 0, 0, 51, 0, 0, 0, 0, 0, 1, 6, 58
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/utils/random-utils.ts", "TypeScript", 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 7, 1, 15
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/utils/string-convert.ts", "TypeScript", 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 3, 25
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/utils/type-utils.ts", "TypeScript", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 2
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/src/utils/typeguards.ts", "TypeScript", 0, 0, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 6, 41
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/tsconfig.build.json", "JSON", 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 9
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/tsconfig.jest.json", "JSON", 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 17
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/common/tsconfig.json", "JSON with Comments", 0, 0, 0, 0, 0, 0, 15, 0, 0, 0, 0, 0, 1, 16
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/db-main/.env", "Properties", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 7, 4, 12
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/db-main/.eslintrc.json", "JSON", 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 9
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/db-main/README.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 47, 0, 0, 25, 72
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/db-main/lint-staged.config.js", "JavaScript", 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/db-main/package.json", "JSON", 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 64
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/db-main/prisma/seed.ts", "TypeScript", 0, 0, 0, 0, 0, 55, 0, 0, 0, 0, 0, 2, 5, 62
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/db-main/prisma/seeds/poem/poems.seed.ts", "TypeScript", 0, 0, 0, 0, 0, 298, 0, 0, 0, 0, 0, 1, 5, 304
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/db-main/src/index.ts", "TypeScript", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/db-main/src/prisma-manager.ts", "TypeScript", 0, 0, 0, 0, 0, 32, 0, 0, 0, 0, 0, 15, 4, 51
+"/Users/Nils 1/Desktop/Contredanse/life-art/packages/db-main/tsconfig.json", "JSON with Comments", 0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 16, 1, 30
+"/Users/Nils 1/Desktop/Contredanse/life-art/static/locales/en/common.json", "JSON", 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 11
+"/Users/Nils 1/Desktop/Contredanse/life-art/tsconfig.base.json", "JSON", 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17
+"Total", "-", 355, 24, 692, 1344, 6199, 11634, 47, 10, 2534, 421, 46, 951, 1443, 25700

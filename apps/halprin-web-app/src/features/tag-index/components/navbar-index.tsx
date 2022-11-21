@@ -120,7 +120,7 @@ export const NavbarIndex: FC<Props> = (props) => {
                   );
                 })}
               </div>
-              <div className="top-right">
+              {/* <div className="top-right">
                 {indexMedia.type === 'date' ? (
                   <button
                     className="link"
@@ -147,7 +147,7 @@ export const NavbarIndex: FC<Props> = (props) => {
                     MEDIA
                   </button>
                 )}
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="mobile">

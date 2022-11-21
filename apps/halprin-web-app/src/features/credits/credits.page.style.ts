@@ -8,7 +8,7 @@ export const Ctn = styled.div`
     height: 90%;
         overflow-y:scroll;
     right: 10%;
-    color: #0e111c;
+    color: #1;
     @media (min-width: 600px) {
         left: 20%;
         right: 20%;

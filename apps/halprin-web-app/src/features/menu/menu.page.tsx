@@ -69,10 +69,12 @@ export const MenuPage: React.FC<Props> = (props) => {
     }
   };
 
+
+
   return (
     <>
       {content === 'menu' ? (
-        <MainLayout lang={lang} source="menu" setContent={setContent}>
+        <MainLayout lang={lang} source={content} setContent={setContent}>
           <div>
             <S.Ctn>
               {!infoWorkshop && !infoRoadmaps && !infoIndex && !infoLifeart ? (
@@ -419,7 +421,7 @@ export const MenuPage: React.FC<Props> = (props) => {
           </div>
         </MainLayout>
       ) : (
-        <MainLayout lang={lang} source="menu" setContent={setContent}>
+        <MainLayout lang={lang} source={content} setContent={setContent}>
           <S.Video>
             <iframe
               src={content}

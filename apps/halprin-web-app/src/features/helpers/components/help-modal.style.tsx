@@ -20,6 +20,15 @@ export const Modal = styled.div`
   .intro {
     max-width: 500px;
   }
+  .begin {
+    max-width: 600px;
+  }
+  .ending {
+    max-width: 600px;
+  }
+  .tour {
+    max-width: 600px;
+  }
   .centered {
     padding: 5px;
     display: inline-block;
