@@ -35,7 +35,7 @@ export const LoginForm: React.FC<LoginFormProps> = (props) => {
         email: email,
         password: password,
       });
-      
+
       if (res.data.token) {
         setSession(res.data.token);
         setError(false);
@@ -44,7 +44,7 @@ export const LoginForm: React.FC<LoginFormProps> = (props) => {
         setLoading(false);
       }
     } catch (e) {
-        setLoading(false);
+      setLoading(false);
       setError(true);
     }
   };
