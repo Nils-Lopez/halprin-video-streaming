@@ -13,7 +13,7 @@ export const Layout = styled.div`
   .bg-blue {
     height: 100%;
     width: 100%;
-    background: #1D1C22;
+    background: #1d1c22;
   }
 
   position: fixed;
@@ -28,7 +28,7 @@ export const Layout = styled.div`
       margin-left: 15px;
       padding: 4px;
       border: 1px solid white;
-      background: #1D1C22;
+      background: #1d1c22;
     }
   }
   .helpers {
@@ -173,7 +173,7 @@ export const Layout = styled.div`
     width: 100%;
     background: #fffce5;
     #menuToggle .brgr {
-      background: #1D1C22;
+      background: #1d1c22;
     }
   }
 
@@ -224,7 +224,7 @@ export const Layout = styled.div`
     padding-right: 0;
     padding-bottom: 0;
     margin-top: 30px;
-    background: #1D1C22;
+    background: #1d1c22;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */

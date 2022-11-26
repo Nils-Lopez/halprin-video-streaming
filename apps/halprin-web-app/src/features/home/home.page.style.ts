@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const HomeLayout = styled.div`
-  background: #1D1C22;
+  background: #1d1c22;
   height: 100%;
   position: fixed;
   width: 100%;

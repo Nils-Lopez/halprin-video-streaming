@@ -28,10 +28,17 @@ export const HomePage: React.FC<Props> = ({ lang }) => {
 
   useEffect(() => {
     setTimeout(() => {
-      const newGif = gifImage === "mouth" ? "eye" : gifImage === "eye" ? "hand" : gifImage === "hand" ? "round" : "mouth"
-      setGifImage(newGif)
-    }, 2000)
-  }, [gifImage])
+      const newGif =
+        gifImage === 'mouth'
+          ? 'eye'
+          : gifImage === 'eye'
+          ? 'hand'
+          : gifImage === 'hand'
+          ? 'round'
+          : 'mouth';
+      setGifImage(newGif);
+    }, 2000);
+  }, [gifImage]);
 
   const gifArray = ['mouth', 'eye', 'hand', 'round'];
 
@@ -82,8 +89,12 @@ export const HomePage: React.FC<Props> = ({ lang }) => {
                       <img src={"/images/ui/menu/" + gifArray[gifArray.indexOf(gifImage) === 0 ? 2 : gifArray.indexOf(gifImage) === 1 ? 3 : gifArray.indexOf(gifImage) === 2 ? 0 : 1] + ".png"} className={"top-gif desktop-gif-" + gifArray[gifArray.indexOf(gifImage) === 0 ? 2 : gifArray.indexOf(gifImage) === 1 ? 3 : gifArray.indexOf(gifImage) === 2 ? 0 : 1]} alt="tsb" />
                       <img src={"/images/ui/menu/" + gifArray[gifArray.indexOf(gifImage) === 0 ? 3 : gifArray.indexOf(gifImage) === 1 ? 0 : gifArray.indexOf(gifImage) === 2 ? 1 : 2] + ".png"} className={"right-gif desktop-gif-" + gifArray[gifArray.indexOf(gifImage) === 0 ? 3 : gifArray.indexOf(gifImage) === 1 ? 0 : gifArray.indexOf(gifImage) === 2 ? 1 : 2]} alt="tsb" />
                     </div>*/}
-                    
-                    <img src={"/images/ui/menu/" + gifImage + ".png"} className={"mobile-gif gif-" + gifImage} alt="tsb"/> 
+
+                    <img
+                      src={'/images/ui/menu/' + gifImage + '.png'}
+                      className={'mobile-gif gif-' + gifImage}
+                      alt="tsb"
+                    />
                     <img
                       src="/images/ui/elements/gif_pc.gif"
                       alt=""

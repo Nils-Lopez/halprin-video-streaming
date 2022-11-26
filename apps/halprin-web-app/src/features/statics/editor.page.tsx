@@ -261,10 +261,14 @@ export const EditorPage: React.FC<Props> = (props) => {
             </p>
             <ul>
               <li>
-                1 <a href="https://contredanse.org/product/mouvements-de-vie
-">« Mouvements de Vie »</a> Anna Halprin, traduit de l’anglais par
-                Elise Argaud et Denise Luccioni, éditions Contredanse,
-                Bruxelles, 2009.
+                1{' '}
+                <a
+                  href="https://contredanse.org/product/mouvements-de-vie
+">
+                  « Mouvements de Vie »
+                </a>{' '}
+                Anna Halprin, traduit de l’anglais par Elise Argaud et Denise
+                Luccioni, éditions Contredanse, Bruxelles, 2009.
               </li>
               <li>
                 2  Peter Hulton est réalisateur de films documentaires et
@@ -274,8 +278,11 @@ export const EditorPage: React.FC<Props> = (props) => {
                 pour les arts vivants.
               </li>
               <li>
-                3 <a href="https://www.weslpress.org/9780819562869/moving-toward-life/">“Moving towards Life”</a> Anna Halprin, Wesleyan Univesrity
-                Press, 1995.
+                3{' '}
+                <a href="https://www.weslpress.org/9780819562869/moving-toward-life/">
+                  “Moving towards Life”
+                </a>{' '}
+                Anna Halprin, Wesleyan Univesrity Press, 1995.
               </li>
               <li>
                 4  In « De l’une à l'autre - Composer, apprendre et partager en
@@ -539,13 +546,16 @@ export const EditorPage: React.FC<Props> = (props) => {
               <li>
                 2  Peter Hulton is a documentary film-maker and writer,
                 responsible for Theatre Papers (publishing Anna Halprin’s
-                writings in the UK in 1978) and Arts Archives -
-                an international digital moving image resource for performance
-                research initiated by the Council of Europe.{' '}
+                writings in the UK in 1978) and Arts Archives - an international
+                digital moving image resource for performance research initiated
+                by the Council of Europe.{' '}
               </li>
               <li>
-                3 <a href="https://www.weslpress.org/9780819562869/moving-toward-life/">“Moving towards Life”</a> by Anna Halprin, Wesleyan University
-                Press, 1995.{' '}
+                3{' '}
+                <a href="https://www.weslpress.org/9780819562869/moving-toward-life/">
+                  “Moving towards Life”
+                </a>{' '}
+                by Anna Halprin, Wesleyan University Press, 1995.{' '}
               </li>
               <li>
                 4 In{' '}

@@ -58,7 +58,7 @@ export const Ctn = styled.div`
     }
     @media (max-width: 380px) {
       top: 7%;
-      left: 20  %;
+      left: 20 %;
     }
     &:hover {
       scale: 1.05;

@@ -64,10 +64,13 @@ export const CreditsPage: React.FC<Props> = (props) => {
                   </p>
                 </div>
                 <div className="logo-partners">
-                    <img src="/images/ui/elements/cocof_logo.png" alt="Cocof" />
-                    <img src="/images/ui/elements/fwb_logo.png" alt="FWB" />
-                    <img src="/images/ui/elements/partner_logo.png" alt="Partner" />
-                  </div>
+                  <img src="/images/ui/elements/cocof_logo.png" alt="Cocof" />
+                  <img src="/images/ui/elements/fwb_logo.png" alt="FWB" />
+                  <img
+                    src="/images/ui/elements/partner_logo.png"
+                    alt="Partner"
+                  />
+                </div>
                 <br />
                 <div>
                   <h3>Resources</h3>
@@ -154,12 +157,15 @@ export const CreditsPage: React.FC<Props> = (props) => {
                     Tous droits réservés. <br /> Pour usage privé et domestique
                     seulement. <br /> Editions Contredanse © 2014-2022
                   </p>
-                  </div>
-                  <div className="logo-partners">
-                    <img src="/images/ui/elements/cocof_logo.png" alt="Cocof" />
-                    <img src="/images/ui/elements/fwb_logo.png" alt="FWB" />
-                    <img src="/images/ui/elements/partner_logo.png" alt="Partner" />
-                  </div>
+                </div>
+                <div className="logo-partners">
+                  <img src="/images/ui/elements/cocof_logo.png" alt="Cocof" />
+                  <img src="/images/ui/elements/fwb_logo.png" alt="FWB" />
+                  <img
+                    src="/images/ui/elements/partner_logo.png"
+                    alt="Partner"
+                  />
+                </div>
                 <br />
                 <div>
                   <h3>Ressources</h3>

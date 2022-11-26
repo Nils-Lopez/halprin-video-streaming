@@ -5,7 +5,7 @@ export const Ctn = styled.div`
   width: 100%;
   bottom: 20px;
   height: 200px;
-  background: #1D1C22;
+  background: #1d1c22;
   z-index: 10000;
   .topBar {
     width: 97%;
@@ -188,6 +188,5 @@ export const Ctn = styled.div`
   }
   @media screen and (max-height: 610px) {
     margin-bottom: -30px;
-  
   }
 `;

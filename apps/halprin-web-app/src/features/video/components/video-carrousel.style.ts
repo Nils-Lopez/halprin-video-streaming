@@ -35,7 +35,7 @@ export const Carrousel = styled.div`
     }
     .video-title {
       width: 150px;
-      background: #1D1C22;
+      background: #1d1c22;
       transition: height 0.5s ease-in-out;
     }
     min-width: 150px;
@@ -44,16 +44,15 @@ export const Carrousel = styled.div`
     margin-left: 15px;
     margin-right: 15px;
     @media screen and (max-height: 610px) {
-          min-width: 100px;
-          
-        }
+      min-width: 100px;
+    }
   }
   .slide:hover {
     .video-title {
       position: relative;
       bottom: 30px;
       height: 50px;
-      background-color: #1D1C22;
+      background-color: #1d1c22;
       width: 150px;
       text-align: center;
       padding-top: 3px;
@@ -62,14 +61,13 @@ export const Carrousel = styled.div`
   .main {
     min-width: 150px;
     @media screen and (max-height: 610px) {
-          min-width: 100px;
-          
-        }
+      min-width: 100px;
+    }
     margin-left: 15px;
     margin-right: 15px;
     .video-title {
       max-width: 150px;
-      background: #1D1C22;
+      background: #1d1c22;
       transition: height 0.5s ease-in-out;
     }
     .now-playing {
@@ -96,16 +94,14 @@ export const Carrousel = styled.div`
         width: 130px;
         height: 60px;
         object-fit: cover;
-        
       }
       .video-title {
-        
         width: 130px;
-        background: #1D1C22;
+        background: #1d1c22;
         transition: height 0.5s ease-in-out;
       }
       min-width: 130px;
-      
+
       text-align: center;
       cursor: pointer;
       margin-left: 15px;
@@ -135,7 +131,7 @@ export const Carrousel = styled.div`
       .video-title {
         width: 150px;
         height: 30px;
-        background: #1D1C22;
+        background: #1d1c22;
         transition: height 0.5s ease-in-out;
         font-size: 20px;
       }
@@ -164,7 +160,7 @@ export const Carrousel = styled.div`
       min-width: 180px;
       .video-title {
         max-width: 180;
-        background: #1D1C22;
+        background: #1d1c22;
         transition: height 0.5s ease-in-out;
       }
     }

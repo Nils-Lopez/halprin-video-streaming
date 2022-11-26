@@ -69,8 +69,6 @@ export const MenuPage: React.FC<Props> = (props) => {
     }
   };
 
-
-
   return (
     <>
       {content === 'menu' ? (

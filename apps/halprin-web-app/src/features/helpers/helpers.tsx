@@ -24,21 +24,30 @@ export const Helpers: React.FC<Props> = (props) => {
 
   let helpSrc =
     router.pathname === '/menu' && source
-      ? "menu" : router.pathname === '/menu' ? "menu"
+      ? 'menu'
+      : router.pathname === '/menu'
+      ? 'menu'
       : router.pathname === '/' && source
       ? source
       : router.pathname === '/tag-index'
       ? 'index'
       : 'video';
 
-  if (helpSrc === "menu") {
-    helpSrc = source === "menu" ? "menu" : source === 'https://player.vimeo.com/video/582111408?autoplay=1' ? "begin" : source === 'https://player.vimeo.com/video/584898888?autoplay=1' ? "tour" : "ending"
+  if (helpSrc === 'menu') {
+    helpSrc =
+      source === 'menu'
+        ? 'menu'
+        : source === 'https://player.vimeo.com/video/582111408?autoplay=1'
+        ? 'begin'
+        : source === 'https://player.vimeo.com/video/584898888?autoplay=1'
+        ? 'tour'
+        : 'ending';
   }
 
   useEffect(() => {
-    console.log('src : ', helpSrc, source)
-  }, [source])
-  
+    console.log('src : ', helpSrc, source);
+  }, [source]);
+
   return (
     <S.TopBar>
       <div className="right">
