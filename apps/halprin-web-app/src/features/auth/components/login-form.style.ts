@@ -67,6 +67,7 @@ export const Container = styled.div`
     .alert {
       margin-top: 20px;
       color: #c0392b;
+      margin-left: 5%;
     }
     .btn {
       margin-top: 25px;
