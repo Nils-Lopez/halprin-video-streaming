@@ -32,10 +32,10 @@ export const HomePage: React.FC<Props> = ({ lang }) => {
         gifImage === 'mouth'
           ? 'eye'
           : gifImage === 'eye'
-          ? 'hand'
-          : gifImage === 'hand'
-          ? 'round'
-          : 'mouth';
+            ? 'hand'
+            : gifImage === 'hand'
+              ? 'round'
+              : 'mouth';
       setGifImage(newGif);
     }, 2000);
   }, [gifImage]);
@@ -173,12 +173,13 @@ export const HomePage: React.FC<Props> = ({ lang }) => {
                     'https://player.vimeo.com/external/583334078.sd.mp4?s=685558fc99397ec030c0866c145927d29e602e30&profile_id=165'
                   }></iframe>
                 <div className="nextBtn">
-                  {content !==
-                  'https://player.vimeo.com/video/582111408?autoplay=1' ? (
+                  {content.includes('582111408') ? (
                     <button
                       onClick={() => {
                         setContent(
-                          'https://player.vimeo.com/video/582111408?autoplay=1'
+                          lang === 'fr'
+                            ? 'https://player.vimeo.com/video/582111408?autoplay=1'
+                            : 'https://player.vimeo.com/video/582111408?autoplay=1&texttrack=fr-BE'
                         );
                         setSource('tour');
                       }}>

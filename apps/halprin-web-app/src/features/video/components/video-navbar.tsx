@@ -22,6 +22,8 @@ export const VideoNavbar: FC<Props> = (props) => {
     }
   }, [categories]);
 
+  console.log('sec: ', showSection);
+
   return (
     <>
       <S.Ctn>
@@ -70,6 +72,9 @@ export const VideoNavbar: FC<Props> = (props) => {
                             strokeLinecap="round"
                             strokeLinejoin="round"
                             onClick={() => {
+                              console.log(index);
+                              console.log(categories.length);
+
                               if (
                                 JSON.stringify((index - 7) / 7).charAt(0) ==
                                 JSON.stringify((index - 7) / 7)
@@ -77,18 +82,7 @@ export const VideoNavbar: FC<Props> = (props) => {
                                 setShowSection(index - 7);
                               } else {
                                 setShowSection(
-                                  categories.length -
-                                    1 -
-                                    Number(
-                                      JSON.stringify(
-                                        Number(
-                                          '0.' +
-                                            JSON.stringify(
-                                              categories.length / 7
-                                            ).split('.')[1]
-                                        ) * 7
-                                      ).charAt(0)
-                                    )
+                                  categories.length - (categories.length % 7)
                                 );
                               }
                             }}>

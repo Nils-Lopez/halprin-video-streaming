@@ -8,6 +8,8 @@ import Link from 'next/link';
 import useCookie from 'react-use-cookie';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopyright, faStar } from '@fortawesome/free-solid-svg-icons';
+import { faStar as faStarOutlined } from '@fortawesome/free-regular-svg-icons';
+
 import { CredModal } from '../../helpers/components/cred-modal';
 import { Credit } from '@/data/data.types';
 import { CreditsRepo } from '../repository/credits.repo';
@@ -19,11 +21,14 @@ type Props = {
   media: Media[];
   lang: SupportedLang;
   selectedVideo: Media;
+  fav: boolean;
+  setFav: (media: boolean) => void;
+
   selectVideo: (media: Media) => void;
 };
 
 export const VideoFooter: React.FC<Props> = (props) => {
-  const { media, lang, selectedVideo, selectVideo } = props;
+  const { media, lang, selectedVideo, selectVideo, fav, setFav } = props;
   const [userToken, setUserToken] = useCookie('token', '0');
   const [session, setSession] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
@@ -136,19 +141,21 @@ export const VideoFooter: React.FC<Props> = (props) => {
       <div className="topBar">
         <div className="desktop">
           <div className="left">
-            {media[0] && media[0].category} -{' '}
-            {selectedVideo &&
-            selectedVideo.title &&
-            selectedVideo.title[lang].length >= 19
-              ? selectedVideo.title[lang].substring(0, 15) + '...'
-              : selectedVideo && selectedVideo.title
-              ? selectedVideo.title[lang]
-              : null}{' '}
+            {media[0] && media[0].category?.toUpperCase()}
             {userToken && userToken !== '0' ? (
               <div>
-                <button className="favBtn" onClick={() => addToFav()}>
-                  <FontAwesomeIcon icon={faStar} />
-                </button>
+                {!fav ? (
+                  <button className="favBtn" onClick={() => {
+                    addToFav()
+                    setFav(true)
+                  }}>
+                    <FontAwesomeIcon icon={faStar} />
+                  </button>
+                ) : (
+                  <button className="favBtn" onClick={() => setFav(false)}>
+                    <FontAwesomeIcon icon={faStarOutlined} color="#cc8e35" />
+                  </button>
+                )}
                 <button
                   className={'credBtn'}
                   onClick={() => {

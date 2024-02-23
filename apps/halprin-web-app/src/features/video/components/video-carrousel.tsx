@@ -1,4 +1,4 @@
-import { Fragment, FC } from 'react';
+import { Fragment, FC, useEffect } from 'react';
 import * as S from './video-carrousel.style';
 import { Media } from '@/data/data.types';
 import { SupportedLang } from '@/features/video/types';
@@ -12,7 +12,11 @@ type Props = {
 
 export const VideoCarrousel: FC<Props> = (props) => {
   const { media, lang, selectedVideo, selectVideo } = props;
-
+  useEffect(() => {
+    if (media.length > 0) {
+      selectVideo(media[0]);
+    }
+  }, [media]);
   return (
     <>
       <S.Carrousel>

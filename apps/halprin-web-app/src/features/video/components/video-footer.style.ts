@@ -6,7 +6,7 @@ export const Ctn = styled.div`
   bottom: 20px;
   height: 200px;
   background: #1d1c22;
-  z-index: 10000;
+  z-index: 1;
   .topBar {
     width: 97%;
     border-top: 1px solid #95a5a6;

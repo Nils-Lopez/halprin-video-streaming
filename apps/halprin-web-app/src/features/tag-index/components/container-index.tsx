@@ -14,6 +14,7 @@ type Props = {
   selectCred: (cred: CleanedCredit) => void;
   credits: CleanedCredit[];
   selectMedia: (media: Media) => void;
+  setFav: (fav: boolean) => void;
   tags: { slug: string; tag: Tag }[];
   lang: SupportedLang;
   chronologicMedia: Map<number, Media[]>;
@@ -411,66 +412,68 @@ export const ContainerIndex: FC<Props> = (props) => {
                     }
                   })
                 : indexMedia.type === 'date'
-                ? array.map((a, index) => {
-                    const elements: ReactFragment[] = [];
-                    chronologicMedia.forEach((media: Media[], year: number) => {
-                      const titles: string[] = [];
-                      media.map((m) => {
-                        if (m.title) {
-                          titles.push(m.title[lang]);
+                  ? array.map((a, index) => {
+                      const elements: ReactFragment[] = [];
+                      chronologicMedia.forEach(
+                        (media: Media[], year: number) => {
+                          const titles: string[] = [];
+                          media.map((m) => {
+                            if (m.title) {
+                              titles.push(m.title[lang]);
+                            }
+                          });
+                          titles.sort();
+                          elements.push(
+                            <Fragment key={year}>
+                              <tr className="letterTitle">
+                                <th colSpan={3}>{year}</th>
+                              </tr>
+                              <TagsDisplayer titles={titles} letter={'FALSE'} />
+                            </Fragment>
+                          );
                         }
-                      });
-                      titles.sort();
-                      elements.push(
-                        <Fragment key={year}>
-                          <tr className="letterTitle">
-                            <th colSpan={3}>{year}</th>
-                          </tr>
-                          <TagsDisplayer titles={titles} letter={'FALSE'} />
-                        </Fragment>
                       );
-                    });
 
-                    return (
-                      <Fragment key={index}>
-                        {elements.map((e, index) => {
-                          return <Fragment key={index}>{e}</Fragment>;
-                        })}
-                      </Fragment>
-                    );
-                  })
-                : orderedLabels.map((label: string, index: number) => {
-                    if (
-                      index === 0 ||
-                      label
-                        .charAt(0)
-                        .normalize('NFD')
-                        .replace(/[\u0300-\u036f]/g, '') !==
-                        orderedLabels[index - 1]
-                          .charAt(0)
-                          .normalize('NFD')
-                          .replace(/[\u0300-\u036f]/g, '')
-                    ) {
                       return (
                         <Fragment key={index}>
-                          <tr
-                            className="letterTitle"
-                            id={label.charAt(0).toUpperCase()}>
-                            <th colSpan={3}>
-                              {label
-                                .charAt(0)
-                                .toUpperCase()
-                                .normalize('NFD')
-                                .replace(/[\u0300-\u036f]/g, '')}
-                            </th>
-                          </tr>
-                          <TagsDisplayer
-                            letter={label.charAt(0).toUpperCase()}
-                          />
+                          {elements.map((e, index) => {
+                            return <Fragment key={index}>{e}</Fragment>;
+                          })}
                         </Fragment>
                       );
-                    }
-                  })}
+                    })
+                  : orderedLabels.map((label: string, index: number) => {
+                      if (
+                        index === 0 ||
+                        label
+                          .charAt(0)
+                          .normalize('NFD')
+                          .replace(/[\u0300-\u036f]/g, '') !==
+                          orderedLabels[index - 1]
+                            .charAt(0)
+                            .normalize('NFD')
+                            .replace(/[\u0300-\u036f]/g, '')
+                      ) {
+                        return (
+                          <Fragment key={index}>
+                            <tr
+                              className="letterTitle"
+                              id={label.charAt(0).toUpperCase()}>
+                              <th colSpan={3}>
+                                {label
+                                  .charAt(0)
+                                  .toUpperCase()
+                                  .normalize('NFD')
+                                  .replace(/[\u0300-\u036f]/g, '')}
+                              </th>
+                            </tr>
+                            <TagsDisplayer
+                              letter={label.charAt(0).toUpperCase()}
+                            />
+                          </Fragment>
+                        );
+                      }
+                    })}
             </tbody>
           </table>
         </div>
@@ -481,6 +484,7 @@ export const ContainerIndex: FC<Props> = (props) => {
               source="index"
               video={selectedVideo}
               lang={lang}
+              setFav={props.setFav}
               selectVideo={selectVideo}
               media={selectedTag.media}
             />

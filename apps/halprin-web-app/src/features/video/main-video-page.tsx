@@ -34,7 +34,7 @@ export const MainVideoPage: React.FC<Props> = (props) => {
   const [media, setMedia] = useState<Media[]>([{ thumb: 'false' }]);
   const [emptyList, setEmptyList] = useState({ en: '', fr: '' });
   const [session, setSession] = useState<boolean | string>(false);
-
+  const [fav, setFav] = useState<boolean>(false);
   const token = getCookie('token');
 
   useEffect(() => {
@@ -266,6 +266,7 @@ export const MainVideoPage: React.FC<Props> = (props) => {
                       video={selectedVideo}
                       lang={lang}
                       media={media}
+                      setFav={setFav}
                       selectVideo={selectVideo}
                     />
                   ) : (
@@ -281,6 +282,8 @@ export const MainVideoPage: React.FC<Props> = (props) => {
             <VideoFooter
               lang={lang}
               media={media}
+              fav={fav}
+              setFav={setFav}
               selectedVideo={selectedVideo}
               selectVideo={selectVideo}
             />

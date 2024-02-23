@@ -28,6 +28,7 @@ export const TagIndexPage: React.FC<Props> = (props) => {
     index: true,
     id: 0,
   });
+  const [fav, setFav] = useState<boolean>(false);
   const [selectedMedia, selectMedia] = useState<Media>({ thumb: 'false' });
   const [selectedVideo, selectVideo] = useState<Media>({ thumb: 'false' });
   const [videoTags, setVideoTags] = useState<Tag[]>([]);
@@ -174,6 +175,7 @@ export const TagIndexPage: React.FC<Props> = (props) => {
             tags={tags}
             credits={creditsLabel}
             lang={lang}
+            setFav={setFav}
             indexMedia={indexMedia}
             chronologicMedia={chronologicMedia}
           />
@@ -181,8 +183,10 @@ export const TagIndexPage: React.FC<Props> = (props) => {
             selectedTag={selectedTag}
             selectedVideo={selectedVideo}
             selectVideo={selectVideo}
+            setFav={setFav}
             selectedMedia={selectedMedia}
             lang={lang}
+            fav={fav}
           />
         </S.Ctn>
       </div>

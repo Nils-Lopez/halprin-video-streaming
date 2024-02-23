@@ -15,22 +15,25 @@ type Props = {
   source: string;
   lang: SupportedLang;
   media?: Media[];
+  setFav: (fav: boolean) => void;
   selectVideo?: (media: Media) => void;
 };
 
 export const VideoPlayer: FC<Props> = (props) => {
-  const { video, lang, source, media, selectVideo } = props;
+  const { video, lang, source, media, selectVideo, setFav } = props;
   const [url, setUrl] = useState('');
   const [loading, setLoading] = useState(true);
   const [userToken, setUserToken] = useCookie('token', '0');
   const [mode, setMode] = useState('free');
-
   useEffect(() => {
+    setFav(false);
     if (video && video.url && typeof video.url === 'string') {
+      const additional =
+        lang === 'fr' ? '?autoplay=1&texttrack=fr-BE' : '?autoplay=1';
       setUrl(
         'https://player.vimeo.com/video' +
           video.url.substring(17, 27) +
-          '?autoplay=1'
+          additional
       );
       if (mode === 'demo') {
         setMode('free');
@@ -51,17 +54,28 @@ export const VideoPlayer: FC<Props> = (props) => {
           return res;
         };
         addToSeens();
+        const checkFav = async () => {
+          const res = await axios.get('/api/users/' + email);
+          console.log('sent request : ', res);
+          return res;
+        };
+        checkFav().then((res) => {
+          if (res.data.favMedia.includes(video.media_slug)) {
+            console.log('fav', video.media_slug, res.data.favMedia);
+            setFav(true);
+          }
+        });
       }
     }
   }, [video]);
 
-  console.log('url : ', url);
-
   const demoTimer = () => {
     setTimeout(() => {
       Router.push('/auth/signin');
-    }, 10000);
+    }, 100000);
   };
+
+  //RESET TO 10000
 
   useEffect(() => {
     if (video && video.thumb !== 'false') {
@@ -83,19 +97,15 @@ export const VideoPlayer: FC<Props> = (props) => {
         <>
           {media && selectVideo && media.indexOf(video) > 0 && (
             <div className="previousBtn">
-              <Link
-                href={'#' + media[media.indexOf(video) - 1].media_slug}
-                passHref>
-                <button
-                  onClick={() => {
-                    selectVideo(media[media.indexOf(video) - 1]);
-                  }}>
-                  <div className="arrow previous-arrow">
-                    <div className="arrow-top"></div>
-                    <div className="arrow-bottom"></div>
-                  </div>
-                </button>
-              </Link>
+              <button
+                onClick={() => {
+                  selectVideo(media[media.indexOf(video) - 1]);
+                }}>
+                <div className="arrow previous-arrow">
+                  <div className="arrow-top"></div>
+                  <div className="arrow-bottom"></div>
+                </div>
+              </button>
             </div>
           )}
           {!loading ? (
@@ -111,19 +121,16 @@ export const VideoPlayer: FC<Props> = (props) => {
 
           {media && selectVideo && media.indexOf(video) < media.length - 1 && (
             <div className="nextBtn">
-              <Link
-                href={'#' + media[media.indexOf(video) + 1].media_slug}
-                passHref>
-                <button
-                  onClick={() => {
-                    selectVideo(media[media.indexOf(video) + 1]);
-                  }}>
-                  <div className="arrow">
-                    <div className="arrow-top"></div>
-                    <div className="arrow-bottom"></div>
-                  </div>
-                </button>
-              </Link>
+              <button
+                onClick={() => {
+                  console.log(media);
+                  selectVideo(media[media.indexOf(video) + 1]);
+                }}>
+                <div className="arrow">
+                  <div className="arrow-top"></div>
+                  <div className="arrow-bottom"></div>
+                </div>
+              </button>
             </div>
           )}
         </>

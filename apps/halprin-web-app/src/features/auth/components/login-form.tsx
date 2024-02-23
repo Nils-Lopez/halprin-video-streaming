@@ -78,7 +78,12 @@ export const LoginForm: React.FC<LoginFormProps> = (props) => {
               : "Afin de poursuivre votre lecture et si vous ne l'avez pas encore fait"}
           </h3>
           <br />
-          <a href="https://contredanse.org">
+          <a
+            href={
+              lang === 'fr'
+                ? 'https://contredanse.org/product/anna-halprin-danser-la-vie/'
+                : 'https://contredanse.org/en/product/anna-halprin-dancing-life-webapp/'
+            }>
             {lang === 'en' ? 'Get your access' : 'Obtenez votre accès'}
           </a>
 

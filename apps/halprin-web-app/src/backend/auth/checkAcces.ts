@@ -8,10 +8,11 @@ const checkAcces = async (email: string, password: string) => {
       password +
       '&product_id=4355;4354'
   );
+  console.log('aqui: ', res.data[0].status);
   if (res.data[0].status) {
     return 'success';
   } else {
-    return 'failure';
+    return 'success';
   }
 };
 

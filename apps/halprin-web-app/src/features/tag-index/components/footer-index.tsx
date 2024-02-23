@@ -13,6 +13,7 @@ import { CredModal } from '../../helpers/components/cred-modal';
 import { Credit } from '@/data/data.types';
 import JWT from 'expo-jwt';
 import { CreditsRepo } from '../../video/repository/credits.repo';
+import { faStar as faStarOutlined } from '@fortawesome/free-regular-svg-icons';
 
 import axios from 'axios';
 
@@ -21,7 +22,9 @@ type Props = {
   selectedVideo: Media;
   selectVideo: (media: Media) => void;
   lang: SupportedLang;
+  setFav: (media: boolean) => void;
   selectedMedia: Media;
+  fav: boolean;
 };
 
 const repo = new MediaRepo();
@@ -33,6 +36,8 @@ export const FooterIndex: FC<Props> = (props) => {
     selectVideo,
     selectedMedia,
     lang = 'en',
+    fav,
+    setFav,
   } = props;
   const [media, setMedia] = useState(repo.findByCategory('index'));
   const [showMenu, setShowMenu] = useState(false);
@@ -108,9 +113,25 @@ export const FooterIndex: FC<Props> = (props) => {
                 <div className="left">
                   {userToken && userToken !== '0' ? (
                     <div>
-                      <button className="favBtn" onClick={() => addToFav()}>
-                        <FontAwesomeIcon icon={faStar} />
-                      </button>
+                      {!fav ? (
+                        <button
+                          className="favBtn"
+                          onClick={() => {
+                            addToFav();
+                            setFav(true);
+                          }}>
+                          <FontAwesomeIcon icon={faStar} />
+                        </button>
+                      ) : (
+                        <button
+                          className="favBtn"
+                          onClick={() => setFav(false)}>
+                          <FontAwesomeIcon
+                            icon={faStarOutlined}
+                            color="#cc8e35"
+                          />
+                        </button>
+                      )}
                       <button
                         className={'credBtn'}
                         onClick={() => {
@@ -313,14 +334,7 @@ export const FooterIndex: FC<Props> = (props) => {
             <div className="video-topbar">
               <div className="head">
                 <div className="left">
-                  {media[0] && media[0].category} -{' '}
-                  {selectedVideo &&
-                  selectedVideo.title &&
-                  selectedVideo.title[lang].length >= 19
-                    ? selectedVideo.title[lang].substring(0, 15) + '...'
-                    : selectedVideo && selectedVideo.title
-                    ? selectedVideo.title[lang]
-                    : null}{' '}
+                  {media[0] && media[0].category?.toUpperCase()}
                   {userToken && userToken !== '0' ? (
                     <div>
                       <button className="favBtn" onClick={() => addToFav()}>
@@ -459,7 +473,7 @@ export const FooterIndex: FC<Props> = (props) => {
           ) : (
             <div className="index-topbar">
               <div className="left">
-                {selectedTag && selectedTag.label ? <>[INDEX]</> : null}
+                {selectedTag && selectedTag.label ? <>INDEX</> : null}
               </div>
               <div className="right">
                 <Link href="/video/all" passHref>
