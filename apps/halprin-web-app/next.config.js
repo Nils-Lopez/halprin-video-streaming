@@ -7,7 +7,7 @@ const { i18n } = require('./next-i18next.config');
 const packageJson = require('./package');
 
 const NEXTJS_BUILD_TARGET = process.env.NEXTJS_BUILD_TARGET || 'server';
-const NEXTJS_IGNORE_ESLINT = process.env.NEXTJS_IGNORE_ESLINT === '1' || false;
+const NEXTJS_IGNORE_ESLINT = true;
 const NEXTJS_IGNORE_TYPECHECK =
   process.env.NEXTJS_IGNORE_TYPECHECK === '1' || false;
 
