@@ -74,7 +74,6 @@ const secureHeaders = createSecureHeaders({
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  target: NEXTJS_BUILD_TARGET,
   reactStrictMode: true,
   // @ts-ignore
   webpack5: true,
