@@ -6,7 +6,9 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { AppProviders } from '../../src/app-providers';
 
-const AllTheProviders: React.FC = ({ children }) => {
+const AllTheProviders: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
   return <AppProviders>{children}</AppProviders>;
 };
 

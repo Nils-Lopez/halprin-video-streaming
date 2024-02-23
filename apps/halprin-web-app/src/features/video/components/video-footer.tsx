@@ -145,10 +145,12 @@ export const VideoFooter: React.FC<Props> = (props) => {
             {userToken && userToken !== '0' ? (
               <div>
                 {!fav ? (
-                  <button className="favBtn" onClick={() => {
-                    addToFav()
-                    setFav(true)
-                  }}>
+                  <button
+                    className="favBtn"
+                    onClick={() => {
+                      addToFav();
+                      setFav(true);
+                    }}>
                     <FontAwesomeIcon icon={faStar} />
                   </button>
                 ) : (

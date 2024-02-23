@@ -19,10 +19,10 @@ export const EmbedMobile: React.FC<Props> = (props) => {
     source === 'roadmaps'
       ? 'hand'
       : source === 'workshops'
-      ? 'round'
-      : source === 'life-art'
-      ? 'eye'
-      : 'mouth';
+        ? 'round'
+        : source === 'life-art'
+          ? 'eye'
+          : 'mouth';
 
   return (
     <MobileMenu>

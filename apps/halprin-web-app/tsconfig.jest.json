@@ -12,6 +12,12 @@
     "declaration": false,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "isolatedModules": true
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
   }
 }

@@ -195,10 +195,10 @@ export const MenuPage: React.FC<Props> = (props) => {
                     infoWorkshop
                       ? menuConfig.menuLinks.videoWorkshops
                       : infoRoadmaps
-                      ? menuConfig.menuLinks.videoRoadmaps
-                      : infoIndex
-                      ? menuConfig.menuLinks.videoIndex
-                      : menuConfig.menuLinks.videoLifeArt
+                        ? menuConfig.menuLinks.videoRoadmaps
+                        : infoIndex
+                          ? menuConfig.menuLinks.videoIndex
+                          : menuConfig.menuLinks.videoLifeArt
                   }
                   passHref>
                   <div className="mobileDesc">

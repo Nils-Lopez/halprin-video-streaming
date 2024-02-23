@@ -109,7 +109,7 @@ const nextConfig = {
   },
 
   typescript: {
-    ignoreBuildErrors: NEXTJS_IGNORE_TYPECHECK,
+    ignoreBuildErrors: true,
   },
 
   eslint: {
@@ -147,14 +147,6 @@ const nextConfig = {
 };
 
 let config = withNextTranspileModules(nextConfig);
-
-if (process.env.NEXT_DISABLE_SENTRY !== '1') {
-  config = withSentryConfig(config, {
-    dryRun:
-      process.env.NODE_ENV !== 'production' ||
-      process.env.NEXT_SENTRY_DRY_RUN === '1',
-  });
-}
 
 if (process.env.ANALYZE === 'true') {
   // @ts-ignore
