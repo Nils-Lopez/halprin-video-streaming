@@ -6,8 +6,8 @@ export const creditsData: Credit[] = [
     index: true,
     year: 1971,
     htmlLabel: {
-      en: '<b><i>Ann: A Portrait</i></b><br>Filmed and directed by Coni Beeson, sound by Richard Friendman, produced by American Film Institute, 21 minutes, black and white, 1971. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
-      fr: '<b><i>Ann: A Portrait</i></b><br>Filmé et réalisé par Coni Beeson, son : Richard Friendman, produit par American Film Institute, 21 minutes, noir et blanc, 1971. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
+      en: '<b><i>Ann: A Portrait</i></b><br>Filmed and directed by Coni Beeson, sound by Richard Friendman, produced by American Film Institute, 21 minutes, black and white, 1971. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
+      fr: '<b><i>Ann: A Portrait</i></b><br>Filmé et réalisé par Coni Beeson, son : Richard Friendman, produit par American Film Institute, 21 minutes, noir et blanc, 1971. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
     },
   },
   {
@@ -15,8 +15,8 @@ export const creditsData: Credit[] = [
     index: true,
     year: 1970,
     htmlLabel: {
-      en: '<b><i>A workshop. Ann Halprin</i></b><br>Directed by Eton E. Churchill, black and white, 20 minutes, 1970. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
-      fr: '<b><i>A workshop. Ann Halprin</i></b><br>Réalisé par Eton E. Churchill, noir et blanc, 20 minutes, 1970. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
+      en: '<b><i>A workshop. Ann Halprin</i></b><br>Directed by Eton E. Churchill, black and white, 20 minutes, 1970. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
+      fr: '<b><i>A workshop. Ann Halprin</i></b><br>Réalisé par Eton E. Churchill, noir et blanc, 20 minutes, 1970. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
     },
   },
   {
@@ -24,8 +24,8 @@ export const creditsData: Credit[] = [
     index: true,
     year: 1980,
     htmlLabel: {
-      en: '<b><i>ADF lecture</i></b><br>A lecture by Anna Halprin, color, unknown date. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
-      fr: '<b><i>ADF lecture</i></b><br>Une conférence par Anna Halprin, couleur, date inconnue. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
+      en: '<b><i>ADF lecture</i></b><br>A lecture by Anna Halprin, color, unknown date. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
+      fr: '<b><i>ADF lecture</i></b><br>Une conférence par Anna Halprin, couleur, date inconnue. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
     },
   },
   {
@@ -60,8 +60,8 @@ export const creditsData: Credit[] = [
     index: true,
     year: 1976,
     htmlLabel: {
-      en: '<b><i>How Sweet It Is</i></b> <br>With the San Francisco Dancers\' Workshop. Directed by Lawrence Halprin, produced by RoundHouse, 12 minutes, color, 1976. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
-      fr: '<b><i>How Sweet It Is</i></b> <br>Avec le San Francisco Dancers\' Workshop. Réalisé par Lawrence Halprin, produit par RoundHouse, 12 minutes, couleur, 1976. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
+      en: '<b><i>How Sweet It Is</i></b> <br>With the San Francisco Dancers\' Workshop. Directed by Lawrence Halprin, produced by RoundHouse, 12 minutes, color, 1976. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
+      fr: '<b><i>How Sweet It Is</i></b> <br>Avec le San Francisco Dancers\' Workshop. Réalisé par Lawrence Halprin, produit par RoundHouse, 12 minutes, couleur, 1976. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
     },
   },
   {
@@ -69,8 +69,8 @@ export const creditsData: Credit[] = [
     index: true,
     year: 1991,
     htmlLabel: {
-      en: '<b><i>Inner Landscapes</i></b><br>Directed by Joan Saffer, produced by KQED-TV, 60 minutes, color, 1991. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
-      fr: '<b><i>Inner Landscapes</i></b><br>Réalisé par Joan Saffer, produit par KQED-TV, 60 minutes, couleur, 1991. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
+      en: '<b><i>Inner Landscapes</i></b><br>Directed by Joan Saffer, produced by KQED-TV, 60 minutes, color, 1991. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
+      fr: '<b><i>Inner Landscapes</i></b><br>Réalisé par Joan Saffer, produit par KQED-TV, 60 minutes, couleur, 1991. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
     },
   },
   {
@@ -78,8 +78,8 @@ export const creditsData: Credit[] = [
     index: true,
     year: 1986,
     htmlLabel: {
-      en: '<b><i>Lawrence Halprin at the Museum of Modern Art</i></b><br>San Francisco, 80 minutes, color, 1986.<br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
-      fr: '<b><i>Lawrence Halprin at the Museum of Modern Art</i></b><br>San Francisco, 80 minutes, color, 1986. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
+      en: '<b><i>Lawrence Halprin at the Museum of Modern Art</i></b><br>San Francisco, 80 minutes, color, 1986.<br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
+      fr: '<b><i>Lawrence Halprin at the Museum of Modern Art</i></b><br>San Francisco, 80 minutes, color, 1986. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
     },
   },
   {
@@ -87,8 +87,8 @@ export const creditsData: Credit[] = [
     index: true,
     year: 1984,
     htmlLabel: {
-      en: '<b><i>Dance with Life. Anna, a Living Legend</i></b><br>Edited by Coni Beeson, funded by the National Endowment for the Arts and Tamalpa Institute, color, 40 minutes, 1984.  <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
-      fr: '<b><i>Dance with Life. Anna, a Living Legend</i></b><br>Réalisé par Coni Beeson, produit par le National Endowment for the Arts et le Tamalpa Institute, couleur, 40 minutes, 1984.  <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
+      en: '<b><i>Dance with Life. Anna, a Living Legend</i></b><br>Edited by Coni Beeson, funded by the National Endowment for the Arts and Tamalpa Institute, color, 40 minutes, 1984.  <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
+      fr: '<b><i>Dance with Life. Anna, a Living Legend</i></b><br>Réalisé par Coni Beeson, produit par le National Endowment for the Arts et le Tamalpa Institute, couleur, 40 minutes, 1984.  <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
     },
   },
   {
@@ -105,8 +105,8 @@ export const creditsData: Credit[] = [
     index: true,
     year: 1987,
     htmlLabel: {
-      en: '<b><i>An Evening Lecture by Anna Halprin</i></b> <br>95 minutes, color, unknown date. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
-      fr: '<b><i>An Evening Lecture by Anna Halprin</i></b> <br>95 minutes, couleur, date inconnue. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
+      en: '<b><i>An Evening Lecture by Anna Halprin</i></b> <br>95 minutes, color, unknown date. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
+      fr: '<b><i>An Evening Lecture by Anna Halprin</i></b> <br>95 minutes, couleur, date inconnue. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
     },
   },
   {
@@ -114,8 +114,8 @@ export const creditsData: Credit[] = [
     index: true,
     year: 1977,
     htmlLabel: {
-      en: '<b><i>Exorcism of Cancer</i></b><br>Directed by Coni Beeson, 23 minutes, black and white, 1977.  <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
-      fr: '<b><i>Exorcism of Cancer</i></b><br>Réalisé par Coni Beeson, 23 minutes, noir et blanc, 1977.  <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
+      en: '<b><i>Exorcism of Cancer</i></b><br>Directed by Coni Beeson, 23 minutes, black and white, 1977.  <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
+      fr: '<b><i>Exorcism of Cancer</i></b><br>Réalisé par Coni Beeson, 23 minutes, noir et blanc, 1977.  <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
     },
   },
   {
@@ -123,8 +123,8 @@ export const creditsData: Credit[] = [
     index: true,
     year: 1988,
     htmlLabel: {
-      en: '<b><i>Living Myths and Rituals, Circle the Earth</i></b> <br>Produced by Tamalpa Institute, 20 minutes, color, 1988. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
-      fr: '<b><i>Living Myths and Rituals, Circle the Earth</i></b><br>Produit par Tamalpa Institute, 20 minutes, couleur, 1988. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
+      en: '<b><i>Living Myths and Rituals, Circle the Earth</i></b> <br>Produced by Tamalpa Institute, 20 minutes, color, 1988. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
+      fr: '<b><i>Living Myths and Rituals, Circle the Earth</i></b><br>Produit par Tamalpa Institute, 20 minutes, couleur, 1988. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
     },
   },
   {
@@ -132,8 +132,8 @@ export const creditsData: Credit[] = [
     index: true,
     year: 1988,
     htmlLabel: {
-      en: '<b><i>Dance for your Life</i></b><br>With the Steps Theater Company. Directed by David A. Karp, produced by Audio/Video Access Productions, 15 minutes, color, 1988. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
-      fr: '<b><i>Dance for your Life</i></b><br>Avec the Steps Theater Company. Réalisé par David A. Karp, produit par Audio/Video Access Productions, 15 minutes, couleur, 1988. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
+      en: '<b><i>Dance for your Life</i></b><br>With the Steps Theater Company. Directed by David A. Karp, produced by Audio/Video Access Productions, 15 minutes, color, 1988. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
+      fr: '<b><i>Dance for your Life</i></b><br>Avec the Steps Theater Company. Réalisé par David A. Karp, produit par Audio/Video Access Productions, 15 minutes, couleur, 1988. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
     },
   },
   {
@@ -141,8 +141,8 @@ export const creditsData: Credit[] = [
     index: true,
     year: 1989,
     htmlLabel: {
-      en: '<b><i>Circle the Earth: Dancing with Life on the Line</i></b> <br>Directed by Anna Halprin, produced by Media Arts West, 36 minutes, color, 1989. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
-      fr: '<b><i>Circle the Earth: Dancing with Life on the Line</i></b><br>Réalisé par Anna Halprin, produit par Media Arts West, 36 minutes, couleur, 1989. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
+      en: '<b><i>Circle the Earth: Dancing with Life on the Line</i></b> <br>Directed by Anna Halprin, produced by Media Arts West, 36 minutes, color, 1989. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
+      fr: '<b><i>Circle the Earth: Dancing with Life on the Line</i></b><br>Réalisé par Anna Halprin, produit par Media Arts West, 36 minutes, couleur, 1989. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
     },
   },
   {
@@ -195,8 +195,8 @@ export const creditsData: Credit[] = [
     index: true,
     year: 1970,
     htmlLabel: {
-      en: '<b><i>Right On </i></b> <br>(Ceremony of Us) with the San Francisco Dancers\' Workshop. A film by Seth Hill, directed by Ann Halprin, produced by KQED-TV, 31 minutes, black and white, 1970. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
-      fr: '<b><i>Right On </i> </b> <br>(Ceremony of Us) with the San Francisco Dancers\' Workshop. Un film de Seth Hill, sous la direction de Ann Halprin, produit par KQED-TV, 31 minutes, noir et blanc, 1970. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
+      en: '<b><i>Right On </i></b> <br>(Ceremony of Us) with the San Francisco Dancers\' Workshop. A film by Seth Hill, directed by Ann Halprin, produced by KQED-TV, 31 minutes, black and white, 1970. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
+      fr: '<b><i>Right On </i> </b> <br>(Ceremony of Us) with the San Francisco Dancers\' Workshop. Un film de Seth Hill, sous la direction de Ann Halprin, produit par KQED-TV, 31 minutes, noir et blanc, 1970. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
     },
   },
   {
@@ -204,8 +204,8 @@ export const creditsData: Credit[] = [
     index: true,
     year: 1966,
     htmlLabel: {
-      en: '<b><i>Parades and Changes</i></b> <br>Directed by Arne Arneborn, produced by National Swedish Television, 35 minutes, black and white, 1966. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
-      fr: '<b><i>Parades and Changes</i></b><br>Réalisé par Arne Arneborn, produit par National Swedish Television, 35 minutes, noir et blanc, 1966. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
+      en: '<b><i>Parades and Changes</i></b> <br>Directed by Arne Arneborn, produced by National Swedish Television, 35 minutes, black and white, 1966. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
+      fr: '<b><i>Parades and Changes</i></b><br>Réalisé par Arne Arneborn, produit par National Swedish Television, 35 minutes, noir et blanc, 1966. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
     },
   },
   {
@@ -213,8 +213,8 @@ export const creditsData: Credit[] = [
     index: true,
     year: 1988,
     htmlLabel: {
-      en: '<b><i>Anna Halprin, Theater as Ritual</i></b> <br>Directed by David. A. Karp, produced by Audio/Video Access Productions, 80 minutes, color, 1988. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
-      fr: '<b><i>Anna Halprin, Theater as Ritual</i></b> <br>Réalisé par David. A. Karp, produit par Audio/Video Access Productions, 80 minutes, couleur, 1988. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
+      en: '<b><i>Anna Halprin, Theater as Ritual</i></b> <br>Directed by David. A. Karp, produced by Audio/Video Access Productions, 80 minutes, color, 1988. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
+      fr: '<b><i>Anna Halprin, Theater as Ritual</i></b> <br>Réalisé par David. A. Karp, produit par Audio/Video Access Productions, 80 minutes, couleur, 1988. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
     },
   },
   {
@@ -222,8 +222,8 @@ export const creditsData: Credit[] = [
     index: true,
     year: 1999,
     htmlLabel: {
-      en: '<b><i>Grandfather Dances </i></b><br>Directed by D. Rosenberg, 20 minutes, color, 1999. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
-      fr: '<b><i>Grandfather Dances </i></b><br>Réalisé par D. Rosenberg, 20 minutes, couleur, 1999. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
+      en: '<b><i>Grandfather Dances </i></b><br>Directed by D. Rosenberg, 20 minutes, color, 1999. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
+      fr: '<b><i>Grandfather Dances </i></b><br>Réalisé par D. Rosenberg, 20 minutes, couleur, 1999. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
     },
   },
   {
@@ -231,8 +231,8 @@ export const creditsData: Credit[] = [
     index: true,
     year: 2003,
     htmlLabel: {
-      en: '<b><i>A Planetary Dance in 2003</i></b><br>Filmed by John Veltryt, produced by Earthalive Communications, color, 2003. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
-      fr: '<b><i>Une Planetary Dance en 2003</i></b><br>Filmé par John Veltryt, produit par Earthalive Communications, couleur, 2003. <br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
+      en: '<b><i>A Planetary Dance in 2003</i></b><br>Filmed by John Veltryt, produced by Earthalive Communications, color, 2003. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
+      fr: '<b><i>Une Planetary Dance en 2003</i></b><br>Filmé par John Veltryt, produit par Earthalive Communications, couleur, 2003. <br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
     },
   },
   {
@@ -386,8 +386,8 @@ export const creditsData: Credit[] = [
     index: false,
     year: 1979,
     htmlLabel: {
-      en: '<b><i>Movement Ritual 1</i></b><br>Illustration by Charlene Koonce, 1979.<br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
-      fr: '<b><i>Movement Ritual 1</i></b><br>Illustration de Charlene Koonce, 1979.<br><a href="http://www.annahalprin.org">www.annahalprin.org</a>',
+      en: '<b><i>Movement Ritual 1</i></b><br>Illustration by Charlene Koonce, 1979.<br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
+      fr: '<b><i>Movement Ritual 1</i></b><br>Illustration de Charlene Koonce, 1979.<br><a href="http://www.tamalpa.org">www.tamalpa.org</a>',
     },
   },
   {

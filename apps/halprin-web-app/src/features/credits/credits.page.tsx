@@ -33,8 +33,7 @@ export const CreditsPage: React.FC<Props> = (props) => {
                     Mix: Aurélien Lebourg. <br />
                     Original DVD-ROM programming: Émeric Florence –{' '}
                     <a href="https://minimal.be">minimal.be</a>. <br /> Webapp
-                    development: Nils Lopez -{' '}
-                    <a href="https://oqto.tech">OQTO Tech</a>, Sébastien
+                    development: Nils Lopez, Sébastien
                     Vanvelthem. <br /> Graphic design: Philippe Koeune –{' '}
                     <a href="https://valleythevalley.com">
                       valleythevalley.com
@@ -79,8 +78,6 @@ export const CreditsPage: React.FC<Props> = (props) => {
                     <a href="https://contredanse.org">www.contredanse.org</a>
                   </p>
                   <p>Anna Halprin, Tamalpa Institute and Daria Halprin: </p>
-                  <a href="https://annahalprin.org">www.annahalprin.org</a>{' '}
-                  <br />
                   <a href="https://tamalpa.org">www.tamalpa.org</a> <br />
                   <a href="https://dariahalprin.org ">www.dariahalprin.org </a>
                   <br />
@@ -119,8 +116,7 @@ export const CreditsPage: React.FC<Props> = (props) => {
                     <br />
                     Programmation du DVD-ROM original : Emeric Florence –{' '}
                     <a href="https://minimal.be">minimal.be</a>. <br />{' '}
-                    Développement web app : Nils Lopez -{' '}
-                    <a href="https://oqto.tech">OQTO Tech</a>, Sébastien
+                    Développement web app : Nils Lopez, Sébastien
                     Vanvelthem. <br /> Graphisme : Philippe Koeune –{' '}
                     <a href="https://valleythevalley.com">
                       valleythevalley.com
@@ -174,8 +170,6 @@ export const CreditsPage: React.FC<Props> = (props) => {
                     <a href="https://contredanse.org">www.contredanse.org</a>
                   </p>
                   <p>Anna Halprin, Tamalpa Institute et Daria Halprin: </p>
-                  <a href="https://annahalprin.org">www.annahalprin.org</a>{' '}
-                  <br />
                   <a href="https://tamalpa.org">www.tamalpa.org</a> <br />
                   <a href="https://dariahalprin.org ">www.dariahalprin.org </a>
                   <br />

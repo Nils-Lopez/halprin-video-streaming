@@ -1,6 +1,8 @@
 import * as S from './embed-menu.style';
 import Link from 'next/link';
 import { Media } from '@/data/data.types';
+import {useState, useEffect} from 'react';
+import { set } from 'mongoose';
 
 type Props = {
   selectVideo?: (media: Media) => void;
@@ -10,10 +12,20 @@ type Props = {
 
 export const EmbedMenu: React.FC<Props> = (props) => {
   const { selectVideo, selectedVideo, page } = props;
+  const [category, setCategory] = useState(page);
+
+  useEffect(() => {
+    console.log(selectedVideo?.category);
+    if (selectedVideo && selectedVideo.category !== "archives") {
+      setCategory(selectedVideo.category?.replaceAll('-', ''));
+    } else {
+      setCategory(page);
+    }
+  }, []);
 
   return (
     <S.Circle>
-      {!page ? (
+      {!category ? (
         <>
           <div className="topIcon">
             <Link href={'/video/category/workshops'} passHref>
@@ -90,7 +102,7 @@ export const EmbedMenu: React.FC<Props> = (props) => {
             )}
           </div>
         </>
-      ) : page === 'roadmaps' ? (
+      ) : category === 'roadmaps' ? (
         <>
           <div className="topIcon-road">
             <Link href={'/video/category/life-art'} passHref>
@@ -152,7 +164,7 @@ export const EmbedMenu: React.FC<Props> = (props) => {
             </Link>
           </div>
         </>
-      ) : page === 'lifeart' ? (
+      ) : category === 'lifeart' ? (
         <>
           <div className="topIcon-lifeart">
             <Link href={'/video/category/roadmaps'} passHref>

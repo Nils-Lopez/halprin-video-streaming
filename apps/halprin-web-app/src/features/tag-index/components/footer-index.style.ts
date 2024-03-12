@@ -18,6 +18,19 @@ export const FooterContainer = styled.div`
         height: 30px;
         margin-top: 90px;
       }
+      .toggle-road {
+      margin-top: 79px;
+      margin-left: 34px;
+
+      height: 45px;
+      width: 30px;
+    }
+    .toggle-workshop {
+      margin-top: 79px;
+      margin-left: 27px;
+
+      height: 45px;
+    }
       position: fixed;
     }
     .index-topbar {

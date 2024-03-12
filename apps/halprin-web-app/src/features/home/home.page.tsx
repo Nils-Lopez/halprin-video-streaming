@@ -40,8 +40,6 @@ export const HomePage: React.FC<Props> = ({ lang }) => {
     }, 2000);
   }, [gifImage]);
 
-  const gifArray = ['mouth', 'eye', 'hand', 'round'];
-
   return (
     <>
       <MainLayout lang={lang} source={source} setContent={setContent}>
@@ -54,7 +52,9 @@ export const HomePage: React.FC<Props> = ({ lang }) => {
                     <button
                       onClick={() =>
                         setContent(
-                          'https://player.vimeo.com/video/582151572?autoplay=1'
+                           lang !== 'fr'
+                            ? 'https://player.vimeo.com/video/582151572?autoplay=1'
+                            : 'https://player.vimeo.com/video/582151572?autoplay=1&texttrack=fr-BE'
                         )
                       }>
                       <div className="centered logo">
@@ -173,11 +173,11 @@ export const HomePage: React.FC<Props> = ({ lang }) => {
                     'https://player.vimeo.com/external/583334078.sd.mp4?s=685558fc99397ec030c0866c145927d29e602e30&profile_id=165'
                   }></iframe>
                 <div className="nextBtn">
-                  {content.includes('582111408') ? (
+                  {content.includes('582151572') ? (
                     <button
                       onClick={() => {
                         setContent(
-                          lang === 'fr'
+                          lang !== 'fr'
                             ? 'https://player.vimeo.com/video/582111408?autoplay=1'
                             : 'https://player.vimeo.com/video/582111408?autoplay=1&texttrack=fr-BE'
                         );

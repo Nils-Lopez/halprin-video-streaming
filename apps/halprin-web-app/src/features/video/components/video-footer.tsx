@@ -141,7 +141,9 @@ export const VideoFooter: React.FC<Props> = (props) => {
       <div className="topBar">
         <div className="desktop">
           <div className="left">
-            {media[0] && media[0].category?.toUpperCase()}
+            {selectedVideo
+              ? capitalizeFirstLetter(selectedVideo.category, page)
+              : media[0] && capitalizeFirstLetter(media[0].category, page)}
             {userToken && userToken !== '0' ? (
               <div>
                 {!fav ? (
@@ -394,3 +396,7 @@ export const VideoFooter: React.FC<Props> = (props) => {
     </S.Ctn>
   );
 };
+
+function capitalizeFirstLetter(string, page) {
+  return string ? string.charAt(0).toUpperCase() + string.slice(1) : page;
+}

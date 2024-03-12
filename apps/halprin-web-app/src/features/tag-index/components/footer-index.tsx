@@ -324,9 +324,15 @@ export const FooterIndex: FC<Props> = (props) => {
               />
             ) : (
               <img
-                src="/images/ui/menu/mouth.png"
+                src={
+                  selectedVideo?.category === 'life-art'
+                      ? '/images/ui/menu/eye.png'
+                      : selectedVideo?.category === 'roadmaps'
+                        ? '/images/ui/menu/hand.png'
+                        : selectedVideo?.category === "workshops" ? '/images/ui/menu/round.png' : '/images/ui/menu/mouth.png'
+                }
                 alt="menu"
-                className="toggle"
+                className={selectedVideo?.category === "workshops" ? "toggle-workshop" : selectedVideo?.category === "roadmaps" ? "toggle-road" : "toggle"}
               />
             )}
           </div>
@@ -334,7 +340,7 @@ export const FooterIndex: FC<Props> = (props) => {
             <div className="video-topbar">
               <div className="head">
                 <div className="left">
-                  {media[0] && media[0].category?.toUpperCase()}
+                  {selectedVideo ? capitalizeFirstLetter(selectedVideo.category) : media[0] && capitalizeFirstLetter(media[0].category)}
                   {userToken && userToken !== '0' ? (
                     <div>
                       <button className="favBtn" onClick={() => addToFav()}>
@@ -535,3 +541,8 @@ export const FooterIndex: FC<Props> = (props) => {
     </>
   );
 };
+
+
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
