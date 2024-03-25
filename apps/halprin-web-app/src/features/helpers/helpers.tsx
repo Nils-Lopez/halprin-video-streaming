@@ -7,6 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleQuestion } from '@fortawesome/free-solid-svg-icons';
 import Router from 'next/router';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
+import { useTranslation } from 'next-i18next';
 
 type Props = {
   help?: { title: string; content: string };
@@ -14,13 +16,15 @@ type Props = {
   lang: SupportedLang;
   source?: string;
   categorySlug?: string;
+  setContent?: (content: string) => void;
 };
 
 export const Helpers: React.FC<Props> = (props) => {
-  const { help, lang = 'en', source, categorySlug } = props;
+  const { help, lang = 'en', source, categorySlug, setContent } = props;
 
   const [helpModal, setHelpModal] = useState('');
   const router = useRouter();
+  const { i18n } = useTranslation();
 
   let helpSrc =
     router.pathname === '/menu' && source
@@ -44,9 +48,13 @@ export const Helpers: React.FC<Props> = (props) => {
             : 'ending';
   }
 
-  useEffect(() => {
-    console.log('src : ', helpSrc, source);
-  }, [source]);
+  
+
+  const { pathname, asPath, query } = router;
+
+  const handleLanguageChange = (langValue: string) => {
+    router.push({ pathname, query }, asPath, { locale: langValue });
+  };
 
   return (
     <S.TopBar>
@@ -68,21 +76,7 @@ export const Helpers: React.FC<Props> = (props) => {
         <span className="dot">
           <button
             onClick={() => {
-              const newLang = lang === 'en' ? 'fr' : 'en';
-              // Router.push('/' + newLang + router.pathname);
-              let path = '/' + newLang;
-              if (router.pathname.includes('[') && categorySlug) {
-                const name = router.pathname.split('[')[0];
-                path = path + name + categorySlug;
-              } else {
-                path = path + router.pathname;
-              }
-              if (path.includes('/fr/en') || path.includes('/en/fr')) {
-                console.log('=================');
-                console.log('c bon frr');
-                console.log('=================');
-              }
-              Router.push(path);
+              handleLanguageChange(lang === 'en' ? 'fr' : 'en');
             }}>
             {lang === 'en' ? 'Français' : 'English'}
           </button>

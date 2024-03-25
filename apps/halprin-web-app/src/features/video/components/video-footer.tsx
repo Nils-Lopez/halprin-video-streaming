@@ -100,6 +100,13 @@ export const VideoFooter: React.FC<Props> = (props) => {
   const creditsData: Credit[] | boolean | undefined =
     selectedVideo && selectedVideo.thumb !== 'false' ? getCreditsData() : false;
 
+  const videoTitle = {
+    'Life-art': lang === 'en' ? 'My life & arts themes' : "Ma vie et l'art",
+    Roadmaps: lang === 'en' ? 'Roadmaps' : 'Feuilles de route',
+    Workshops: lang === 'en' ? 'A workshop' : 'Un atelier',
+    INDEX: lang === 'en' ? 'Index' : 'Index',
+  };
+
   return (
     <S.Ctn>
       <div
@@ -142,8 +149,10 @@ export const VideoFooter: React.FC<Props> = (props) => {
         <div className="desktop">
           <div className="left">
             {selectedVideo
-              ? capitalizeFirstLetter(selectedVideo.category, page)
-              : media[0] && capitalizeFirstLetter(media[0].category, page)}
+              ? videoTitle[capitalizeFirstLetter(selectedVideo.category, page)]
+              : videoTitle[
+                  media[0] && capitalizeFirstLetter(media[0].category, page)
+                ]}
             {userToken && userToken !== '0' ? (
               <div>
                 {!fav ? (

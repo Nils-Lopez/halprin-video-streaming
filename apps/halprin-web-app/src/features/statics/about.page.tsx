@@ -133,8 +133,8 @@ export const AboutPage: React.FC<Props> = (props) => {
                 De nombreuses collaborations ont façonné mon voyage à travers la
                 danse, en m’entraînant sur des voies que je n’avais jamais
                 imaginées. Pendant septante années, mon mari, Lawrence Halprin,
-                aujourd’hui disparu, a partagé sa penséesur l’environnement
-                extérieur et le processus créatif, laquellea imprégné tout mon
+                aujourd’hui disparu, a partagé sa pensée sur l’environnement
+                extérieur et le processus créatif, laquelle a imprégné tout mon
                 travail. Ma fille, Daria Halprin, m’a aussi beaucoup appris, en
                 développant avec grande précision une méthode d’intégration des
                 niveaux d’expression du physique, de l’émotionnel et du mental

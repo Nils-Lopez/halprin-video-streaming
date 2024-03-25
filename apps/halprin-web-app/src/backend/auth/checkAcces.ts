@@ -12,8 +12,9 @@ const checkAcces = async (email: string, password: string) => {
   if (res.data[0].status) {
     return 'success';
   } else {
-    return 'success';
+    return 'false';
   }
 };
 
 export default checkAcces;
+ 

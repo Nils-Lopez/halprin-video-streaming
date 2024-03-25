@@ -29,7 +29,7 @@ export const MainLayout: React.FC<Props> = (props) => {
       setSession(token);
     }
   }, [token]);
-
+  console.log('source', source);
   return (
     <Layout>
       {menu ? (
@@ -66,18 +66,39 @@ export const MainLayout: React.FC<Props> = (props) => {
                     </button>
                   </li>
                 </Link>
-                <Link href={'/' + lang + '/menu'} passHref>
-                  <li>
-                    <button
-                      onClick={() => {
-                        if (source && setContent && source === 'menu') {
-                          setContent('menu');
-                        }
-                      }}>
-                      {lang === 'en' ? 'Content' : 'Contenu'}
-                    </button>
-                  </li>
-                </Link>
+
+                {source ===
+                  'https://player.vimeo.com/video/582147532?autoplay=1' ||
+                source ===
+                  'https://player.vimeo.com/video/582111408?autoplay=1' ? (
+                  <>
+                    <li>
+                      <button
+                        onClick={() => {
+                          if (source && setContent) {
+                            setContent('menu');
+                            setMenu(false);
+                          }
+                        }}>
+                        {lang === 'en' ? 'Content' : 'Contenu'}
+                      </button>
+                    </li>
+                  </>
+                ) : (
+                  <Link href={'/' + lang + '/menu'} passHref>
+                    <li>
+                      <button
+                        onClick={() => {
+                          if (source && setContent && source === 'menu') {
+                            setContent('menu');
+                            setMenu(false)
+                          }
+                        }}>
+                        {lang === 'en' ? 'Content' : 'Contenu'}
+                      </button>
+                    </li>
+                  </Link>
+                )}
                 <Link href={'/' + lang + '/bio'} passHref>
                   <li>{lang === 'en' ? 'Biography' : 'Biographie'}</li>
                 </Link>
