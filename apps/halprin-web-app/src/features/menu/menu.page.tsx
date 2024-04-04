@@ -69,6 +69,8 @@ export const MenuPage: React.FC<Props> = (props) => {
     }
   };
 
+  const additional =
+    lang === 'fr' ? '?autoplay=1&texttrack=fr-BE' : '?autoplay=1';
   return (
     <>
       {content === 'menu' ? (
@@ -79,7 +81,9 @@ export const MenuPage: React.FC<Props> = (props) => {
                 <button
                   onClick={() =>
                     setContent(
-                      'https://player.vimeo.com/video/582111408?autoplay=1'
+                      lang === 'en'
+                        ? 'https://player.vimeo.com/video/582111408?autoplay=1'
+                        : 'https://player.vimeo.com/video/910339296?h=b1fc08ff1a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1'
                     )
                   }
                   className={'beginBtn-' + lang}>
@@ -93,7 +97,10 @@ export const MenuPage: React.FC<Props> = (props) => {
                 <button
                   onClick={() =>
                     setContent(
-                      'https://player.vimeo.com/video/584898888?autoplay=1'
+                      lang === 'fr'
+                        ? 'https://player.vimeo.com/video/924928804?h=957e9a4176&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1&texttrack=fr'
+                        : 'https://player.vimeo.com/video/584898888' +
+                            additional
                     )
                   }
                   className="logo">
@@ -172,7 +179,9 @@ export const MenuPage: React.FC<Props> = (props) => {
                 <button
                   onClick={() =>
                     setContent(
-                      'https://player.vimeo.com/video/582147532?autoplay=1'
+                      lang === 'en'
+                        ? 'https://player.vimeo.com/video/582147532?autoplay=1'
+                        : 'https://player.vimeo.com/video/910339248?h=86bc73104e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1'
                     )
                   }
                   className={'endBtn-' + lang}>
@@ -426,7 +435,6 @@ export const MenuPage: React.FC<Props> = (props) => {
               className="video-player"
               frameBorder="0"
               allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
               title={
                 'https://player.vimeo.com/external/583334078.sd.mp4?s=685558fc99397ec030c0866c145927d29e602e30&profile_id=165'
               }></iframe>

@@ -179,7 +179,7 @@ export const HomePage: React.FC<Props> = ({ lang }) => {
                         setContent(
                           lang !== 'fr'
                             ? 'https://player.vimeo.com/video/582111408?autoplay=1'
-                            : 'https://player.vimeo.com/video/582111408?autoplay=1&texttrack=fr-BE'
+                            : 'https://player.vimeo.com/video/910339296?h=b1fc08ff1a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1'
                         );
                         setSource('tour');
                       }}>

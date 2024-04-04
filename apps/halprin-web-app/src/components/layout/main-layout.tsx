@@ -29,7 +29,7 @@ export const MainLayout: React.FC<Props> = (props) => {
       setSession(token);
     }
   }, [token]);
-  console.log('source', source);
+
   return (
     <Layout>
       {menu ? (
@@ -91,7 +91,11 @@ export const MainLayout: React.FC<Props> = (props) => {
                         onClick={() => {
                           if (source && setContent && source === 'menu') {
                             setContent('menu');
-                            setMenu(false)
+                            setMenu(false);
+                            console.log('source my bruv ', source);
+                          }
+                          if (window.location.pathname.includes('/menu')) {
+                            window.location.reload();
                           }
                         }}>
                         {lang === 'en' ? 'Content' : 'Contenu'}
